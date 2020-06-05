@@ -1,0 +1,110 @@
+#####################################
+## Minecraft Advancements Disturber
+## MC-Version: JE 1.14-1.15
+## Author    : @potage00
+## Author    : @KizahashiLuca
+## Date      : 31 May 2020
+## Version   : α-0.1
+#####################################
+
+## Store time for bossbar
+execute as @s[scores={Participant=1}] run bossbar remove minecraft:bossbar001
+execute as @s[scores={Participant=2}] run bossbar remove minecraft:bossbar002
+execute as @s[scores={Participant=3}] run bossbar remove minecraft:bossbar003
+execute as @s[scores={Participant=4}] run bossbar remove minecraft:bossbar004
+execute as @s[scores={Participant=5}] run bossbar remove minecraft:bossbar005
+execute as @s[scores={Participant=6}] run bossbar remove minecraft:bossbar006
+execute as @s[scores={Participant=7}] run bossbar remove minecraft:bossbar007
+execute as @s[scores={Participant=8}] run bossbar remove minecraft:bossbar008
+execute as @s[scores={Participant=9}] run bossbar remove minecraft:bossbar009
+execute as @s[scores={Participant=10}] run bossbar remove minecraft:bossbar010
+execute as @s[scores={Participant=11}] run bossbar remove minecraft:bossbar011
+execute as @s[scores={Participant=12}] run bossbar remove minecraft:bossbar012
+execute as @s[scores={Participant=13}] run bossbar remove minecraft:bossbar013
+execute as @s[scores={Participant=14}] run bossbar remove minecraft:bossbar014
+execute as @s[scores={Participant=15}] run bossbar remove minecraft:bossbar015
+execute as @s[scores={Participant=16}] run bossbar remove minecraft:bossbar016
+execute as @s[scores={Participant=17}] run bossbar remove minecraft:bossbar017
+execute as @s[scores={Participant=18}] run bossbar remove minecraft:bossbar018
+execute as @s[scores={Participant=19}] run bossbar remove minecraft:bossbar019
+execute as @s[scores={Participant=20}] run bossbar remove minecraft:bossbar020
+execute as @s[scores={Participant=21}] run bossbar remove minecraft:bossbar021
+execute as @s[scores={Participant=22}] run bossbar remove minecraft:bossbar022
+execute as @s[scores={Participant=23}] run bossbar remove minecraft:bossbar023
+execute as @s[scores={Participant=24}] run bossbar remove minecraft:bossbar024
+execute as @s[scores={Participant=25}] run bossbar remove minecraft:bossbar025
+execute as @s[scores={Participant=26}] run bossbar remove minecraft:bossbar026
+execute as @s[scores={Participant=27}] run bossbar remove minecraft:bossbar027
+execute as @s[scores={Participant=28}] run bossbar remove minecraft:bossbar028
+execute as @s[scores={Participant=29}] run bossbar remove minecraft:bossbar029
+execute as @s[scores={Participant=30}] run bossbar remove minecraft:bossbar030
+execute as @s[scores={Participant=31}] run bossbar remove minecraft:bossbar031
+execute as @s[scores={Participant=32}] run bossbar remove minecraft:bossbar032
+execute as @s[scores={Participant=33}] run bossbar remove minecraft:bossbar033
+execute as @s[scores={Participant=34}] run bossbar remove minecraft:bossbar034
+execute as @s[scores={Participant=35}] run bossbar remove minecraft:bossbar035
+execute as @s[scores={Participant=36}] run bossbar remove minecraft:bossbar036
+execute as @s[scores={Participant=37}] run bossbar remove minecraft:bossbar037
+execute as @s[scores={Participant=38}] run bossbar remove minecraft:bossbar038
+execute as @s[scores={Participant=39}] run bossbar remove minecraft:bossbar039
+execute as @s[scores={Participant=40}] run bossbar remove minecraft:bossbar040
+execute as @s[scores={Participant=41}] run bossbar remove minecraft:bossbar041
+execute as @s[scores={Participant=42}] run bossbar remove minecraft:bossbar042
+execute as @s[scores={Participant=43}] run bossbar remove minecraft:bossbar043
+execute as @s[scores={Participant=44}] run bossbar remove minecraft:bossbar044
+execute as @s[scores={Participant=45}] run bossbar remove minecraft:bossbar045
+execute as @s[scores={Participant=46}] run bossbar remove minecraft:bossbar046
+execute as @s[scores={Participant=47}] run bossbar remove minecraft:bossbar047
+execute as @s[scores={Participant=48}] run bossbar remove minecraft:bossbar048
+execute as @s[scores={Participant=49}] run bossbar remove minecraft:bossbar049
+execute as @s[scores={Participant=50}] run bossbar remove minecraft:bossbar050
+execute as @s[scores={Participant=51}] run bossbar remove minecraft:bossbar051
+execute as @s[scores={Participant=52}] run bossbar remove minecraft:bossbar052
+execute as @s[scores={Participant=53}] run bossbar remove minecraft:bossbar053
+execute as @s[scores={Participant=54}] run bossbar remove minecraft:bossbar054
+execute as @s[scores={Participant=55}] run bossbar remove minecraft:bossbar055
+execute as @s[scores={Participant=56}] run bossbar remove minecraft:bossbar056
+execute as @s[scores={Participant=57}] run bossbar remove minecraft:bossbar057
+execute as @s[scores={Participant=58}] run bossbar remove minecraft:bossbar058
+execute as @s[scores={Participant=59}] run bossbar remove minecraft:bossbar059
+execute as @s[scores={Participant=60}] run bossbar remove minecraft:bossbar060
+execute as @s[scores={Participant=61}] run bossbar remove minecraft:bossbar061
+execute as @s[scores={Participant=62}] run bossbar remove minecraft:bossbar062
+execute as @s[scores={Participant=63}] run bossbar remove minecraft:bossbar063
+execute as @s[scores={Participant=64}] run bossbar remove minecraft:bossbar064
+execute as @s[scores={Participant=65}] run bossbar remove minecraft:bossbar065
+execute as @s[scores={Participant=66}] run bossbar remove minecraft:bossbar066
+execute as @s[scores={Participant=67}] run bossbar remove minecraft:bossbar067
+execute as @s[scores={Participant=68}] run bossbar remove minecraft:bossbar068
+execute as @s[scores={Participant=69}] run bossbar remove minecraft:bossbar069
+execute as @s[scores={Participant=70}] run bossbar remove minecraft:bossbar070
+execute as @s[scores={Participant=71}] run bossbar remove minecraft:bossbar071
+execute as @s[scores={Participant=72}] run bossbar remove minecraft:bossbar072
+execute as @s[scores={Participant=73}] run bossbar remove minecraft:bossbar073
+execute as @s[scores={Participant=74}] run bossbar remove minecraft:bossbar074
+execute as @s[scores={Participant=75}] run bossbar remove minecraft:bossbar075
+execute as @s[scores={Participant=76}] run bossbar remove minecraft:bossbar076
+execute as @s[scores={Participant=77}] run bossbar remove minecraft:bossbar077
+execute as @s[scores={Participant=78}] run bossbar remove minecraft:bossbar078
+execute as @s[scores={Participant=79}] run bossbar remove minecraft:bossbar079
+execute as @s[scores={Participant=80}] run bossbar remove minecraft:bossbar080
+execute as @s[scores={Participant=81}] run bossbar remove minecraft:bossbar081
+execute as @s[scores={Participant=82}] run bossbar remove minecraft:bossbar082
+execute as @s[scores={Participant=83}] run bossbar remove minecraft:bossbar083
+execute as @s[scores={Participant=84}] run bossbar remove minecraft:bossbar084
+execute as @s[scores={Participant=85}] run bossbar remove minecraft:bossbar085
+execute as @s[scores={Participant=86}] run bossbar remove minecraft:bossbar086
+execute as @s[scores={Participant=87}] run bossbar remove minecraft:bossbar087
+execute as @s[scores={Participant=88}] run bossbar remove minecraft:bossbar088
+execute as @s[scores={Participant=89}] run bossbar remove minecraft:bossbar089
+execute as @s[scores={Participant=90}] run bossbar remove minecraft:bossbar090
+execute as @s[scores={Participant=91}] run bossbar remove minecraft:bossbar091
+execute as @s[scores={Participant=92}] run bossbar remove minecraft:bossbar092
+execute as @s[scores={Participant=93}] run bossbar remove minecraft:bossbar093
+execute as @s[scores={Participant=94}] run bossbar remove minecraft:bossbar094
+execute as @s[scores={Participant=95}] run bossbar remove minecraft:bossbar095
+execute as @s[scores={Participant=96}] run bossbar remove minecraft:bossbar096
+execute as @s[scores={Participant=97}] run bossbar remove minecraft:bossbar097
+execute as @s[scores={Participant=98}] run bossbar remove minecraft:bossbar098
+execute as @s[scores={Participant=99}] run bossbar remove minecraft:bossbar099
+execute as @s[scores={Participant=100}] run bossbar remove minecraft:bossbar100
