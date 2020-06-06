@@ -13,7 +13,7 @@ scoreboard players set @s[scores={Second=..-1}] Second 0
 
 ## Store time for bossbar
 execute as @s[scores={Participant=1..10}] run function mad:system/time/participant/branch_10
-execute as @s[scores={Participant=11..10}] run function mad:system/time/participant/branch_20
+execute as @s[scores={Participant=11..20}] run function mad:system/time/participant/branch_20
 execute as @s[scores={Participant=21..30}] run function mad:system/time/participant/branch_30
 execute as @s[scores={Participant=31..40}] run function mad:system/time/participant/branch_40
 execute as @s[scores={Participant=41..50}] run function mad:system/time/participant/branch_50

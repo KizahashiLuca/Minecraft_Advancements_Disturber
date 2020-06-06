@@ -12,4 +12,3 @@ title @a title ["",{"text":"DRAW","color":"white","bold":true}]
 
 ## Display Winners
 tellraw @a ["",{"text":"  ","color":"white"},{"text":"勝者なし","bold":true,"color":"white"},{"text":" です！","color":"white"}]
-tellraw @a ["",{"text":"-----------------------------","color":"white"}]

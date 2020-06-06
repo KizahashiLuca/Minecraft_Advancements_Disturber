@@ -57,7 +57,7 @@ execute as @a[team=Participant] run function mad:system/preparation/random_telep
 clear @a[team=Participant]
 effect clear @a[team=Participant]
 effect give @a[team=Participant] minecraft:resistance 1000000 6 true
-effect give @a[team=Participant] minecraft:slow_falling 1000000 1 true
+effect give @a[team=Participant] minecraft:slow_falling 1000000 3 true
 
 ## Set player number
 scoreboard players set #mad Participant 1

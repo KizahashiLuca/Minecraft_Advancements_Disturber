@@ -13,5 +13,7 @@ function mad:system/finish/message_exit
 execute if score #mad NumAlive matches 0 run function mad:system/finish/winner_none
 execute if score #mad NumAlive matches 1 run function mad:system/finish/winner_detect
 
+function mad:system/finish/statics
+
 ## Reset game
 function mad:system/finish/reset_game
