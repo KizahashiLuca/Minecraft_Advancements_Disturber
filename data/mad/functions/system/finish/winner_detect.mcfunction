@@ -1,10 +1,11 @@
-###############################
-## Minecraft Version 1.15.2
-## Minecraft Werewolf Light
-## Author : KizahashiLuca
-## Date   : 24 February 2020
-## Version: beta-1.6
-###############################
+#####################################
+## Minecraft Advancements Disturber
+## MC-Version: JE 1.14-1.15
+## Author    : @potage00
+## Author    : @KizahashiLuca
+## Date      : 06 Jun 2020
+## Version   : α-0.2
+#####################################
 
 ## Title
 title @a times 20 40 20

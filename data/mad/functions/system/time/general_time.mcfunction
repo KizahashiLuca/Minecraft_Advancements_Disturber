@@ -8,8 +8,8 @@
 #####################################
 
 ## Calculate time every tick
-scoreboard players remove @s Tick 1
-scoreboard players set @s[scores={Tick=..-1}] Tick 19
+scoreboard players add #mad Tick 1
+execute if score #mad Tick matches 20 run scoreboard players set #mad Tick 0
 
 ## Calculate time every second
-execute as @s[scores={Tick=0}] run function mad:system/time/second
+execute if score #mad Tick matches 0 run function mad:system/time/general_second

@@ -3,31 +3,42 @@
 ## MC-Version: JE 1.14-1.15
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 31 May 2020
-## Version   : α-0.1
+## Date      : 06 Jun 2020
+## Version   : α-0.2
 #####################################
 
 ## Set gamerule
+gamemode adventure @a[gamemode=!spectator]
 gamerule announceAdvancements false
 gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
 gamerule showDeathMessages false
 gamerule doLimitedCrafting false
+gamerule doDaylightCycle true
+gamerule doWeatherCycle true
+gamerule doMobSpawning true
 gamerule keepInventory false
 difficulty peaceful
+
+## Set time
+time set noon
+
+## Set weather
+weather clear
 
 ## Set world
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
+
+## Set player
 clear @a
-effect clear @a
+experience set @a 0 levels
 experience set @a 0 points
-gamemode adventure @a[gamemode=!spectator]
-time set noon
 
 ## Set effect
+effect clear @a
 effect give @a[gamemode=!spectator] minecraft:resistance 1000000 6 true
 
 ## Add tags

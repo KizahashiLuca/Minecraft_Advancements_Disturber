@@ -3,12 +3,13 @@
 ## MC-Version: JE 1.14-1.15
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 31 May 2020
-## Version   : α-0.1
+## Date      : 06 Jun 2020
+## Version   : α-0.2
 #####################################
 
 ## Process timer system
 execute as @a[team=Participant,scores={Phase=21,Death=0}] run function mad:system/time/time
+function mad:system/time/general_time
 
 ## Detect advancements
 execute as @a[team=Participant,scores={Phase=21,Death=0}] run function mad:system/ongame/detect_advancements
@@ -21,6 +22,9 @@ execute as @a[team=Participant,scores={Phase=21,Death=1}] run function mad:syste
 
 ## Detect time over
 execute as @a[team=Participant,scores={Phase=21,Death=0,Second=0,Tick=0}] run kill @s
+
+## Summon minecart
+#execute if score #mad Tick matches 0 if score #mad SecondTemp matches 0 run scoreboard players set #mad Tick 0
 
 ## Game Finish
 scoreboard players set #mad NumAlive 0

@@ -3,8 +3,8 @@
 ## MC-Version: JE 1.14-1.15
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 31 May 2020
-## Version   : α-0.1
+## Date      : 06 Jun 2020
+## Version   : α-0.2
 #####################################
 
 ## Detect dropping
@@ -32,5 +32,6 @@ scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:struc
 execute as @p[tag=Host,scores={Select21=1}] run function mad:system/setting/choose_initial_time/change_to
 execute as @p[tag=Host,scores={Select22=1}] run function mad:system/setting/choose_difficulty/change_to
 execute as @p[tag=Host,scores={Select23=1}] run function mad:system/setting/choose_world_border/change_to
+execute as @p[tag=Host,scores={Select28=1}] run clear @a
 execute as @p[tag=Host,scores={Select28=1}] run function mad:stop
 execute as @p[tag=Host,scores={Select34=1}] run function mad:system/setting/choose_setting/send_message

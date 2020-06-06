@@ -3,8 +3,8 @@
 ## MC-Version: JE 1.14-1.15
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 31 May 2020
-## Version   : α-0.1
+## Date      : 06 Jun 2020
+## Version   : α-0.2
 #####################################
 
 ## Remove scoreboards for game phase
@@ -150,6 +150,10 @@ scoreboard objectives remove AD_hb_harv_honey
 scoreboard objectives remove AD_hb_silk_nest
 scoreboard objectives remove AD_hb_tacti_fish
 scoreboard objectives remove AD_hb_tame_anima
+## Remove scoreboards for summons minecart
+scoreboard objectives remove 300
+scoreboard objectives remove SecondSummon
+scoreboard objectives remove SecondEliminate
 
 ## Remove players
 scoreboard players reset @a

@@ -3,8 +3,8 @@
 ## MC-Version: JE 1.14-1.15
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 31 May 2020
-## Version   : α-0.1
+## Date      : 06 Jun 2020
+## Version   : α-0.2
 #####################################
 
 ## Set scoreboard
@@ -12,4 +12,4 @@ scoreboard players set @s AD_ed_end_city 1
 scoreboard players add @s HasAdvancements 1
 scoreboard players add @s TimeLimit 100
 scoreboard players add @s Second 100
-
+tellraw @s ["",{"translate":"chat.type.advancement.task","with":[{"selector":"@s"},{"translate":"[%s]","color":"green","with":[{"translate":"advancements.end.find_end_city.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"advancements.end.find_end_city.title"},{"translate":"advancements.end.find_end_city.description"}]}]}}]}]}]

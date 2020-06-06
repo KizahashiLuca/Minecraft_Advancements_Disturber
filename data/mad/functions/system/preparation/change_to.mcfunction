@@ -3,15 +3,9 @@
 ## MC-Version: JE 1.14-1.15
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 31 May 2020
-## Version   : α-0.1
+## Date      : 06 Jun 2020
+## Version   : α-0.2
 #####################################
-
-## Remove advancements
-advancement revoke @a everything
-
-## Take recipes
-recipe take @a *
 
 ## Forceload chunks
 execute as @p[tag=Host] at @s run forceload add ~ ~
@@ -53,8 +47,30 @@ execute if score #mad WorldBorder matches 2000 run worldborder set 2002
 scoreboard players operation #mad WorldBorder /= #mad 2
 execute as @a[team=Participant] run function mad:system/preparation/random_teleport/main
 
-## Clear inventory
+## Set time
+time set noon
+
+## Set weather
+weather clear
+
+## Set world
+kill @e[type=minecraft:item]
+kill @e[type=minecraft:arrow]
+kill @e[type=minecraft:spectral_arrow]
+kill @e[type=minecraft:area_effect_cloud]
+
+## Set player
 clear @a[team=Participant]
+experience set @a[team=Participant] 0 levels
+experience set @a[team=Participant] 0 points
+
+## Remove advancements
+advancement revoke @a everything
+
+## Take recipes
+recipe take @a *
+
+## Set effect
 effect clear @a[team=Participant]
 effect give @a[team=Participant] minecraft:resistance 1000000 6 true
 effect give @a[team=Participant] minecraft:slow_falling 1000000 3 true
@@ -66,6 +82,8 @@ function mad:system/preparation/numbering
 tag @a[team=Participant] remove Numbered
 
 ## Set scoreboards
+scoreboard players set #mad Tick 0
+scoreboard players set #mad Second 0
 scoreboard players set @a[team=Participant] Tick 0
 scoreboard players operation @a[team=Participant] TimeLimit = #mad TimeLimit
 scoreboard players operation @a[team=Participant] Second = #mad TimeLimit

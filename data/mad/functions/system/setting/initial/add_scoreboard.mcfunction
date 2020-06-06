@@ -3,8 +3,8 @@
 ## MC-Version: JE 1.14-1.15
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 31 May 2020
-## Version   : α-0.1
+## Date      : 06 Jun 2020
+## Version   : α-0.2
 #####################################
 
 ## Add scoreboards for game phase
@@ -150,6 +150,10 @@ scoreboard objectives add AD_hb_harv_honey dummy {"text":"大切なお客様"}
 scoreboard objectives add AD_hb_silk_nest dummy {"text":"完全な引越し"}
 scoreboard objectives add AD_hb_tacti_fish dummy {"text":"戦術的漁業"}
 scoreboard objectives add AD_hb_tame_anima dummy {"text":"永遠の親友となるだろう"}
+## Add scoreboards for summons minecart
+scoreboard objectives add 300 dummy
+scoreboard objectives add SecondSummon dummy
+scoreboard objectives add SecondEliminate dummy
 
 ## Set scoreboards for game phase
 scoreboard players set #mad Phase 0
@@ -187,6 +191,10 @@ scoreboard players set #mad WorldBorderPrv 1000
 ## Set scoreboards for setting phase - choose difficulty
 scoreboard players set #mad Difficulty 2
 scoreboard players set #mad DifficultyPrv 2
+## Add scoreboards for summons minecart
+scoreboard players set #mad 300 0
+scoreboard players set #mad SecondSummon 0
+scoreboard players set #mad SecondEliminate 0
 
 ## Set scoreboards for game phase
 scoreboard players set @a Phase 0
