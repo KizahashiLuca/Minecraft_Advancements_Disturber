@@ -7,6 +7,12 @@
 ## Version   : α-0.2
 #####################################
 
+## Set world
+kill @e[type=minecraft:item]
+kill @e[type=minecraft:arrow]
+kill @e[type=minecraft:spectral_arrow]
+kill @e[type=minecraft:area_effect_cloud]
+
 ## Forceload chunks
 execute as @p[tag=Host] at @s run forceload add ~ ~
 
@@ -16,6 +22,7 @@ execute as @p[tag=Host] at @s align y store result score #mad OriginY run data g
 execute as @p[tag=Host] at @s align z store result score #mad OriginZ run data get entity @s Pos[2] 1.0
 
 ## Set world spawn
+execute as @p[tag=Host] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["WorldSpawn"],NoGravity:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
 execute as @p[tag=Host] at @s run setworldspawn ~ ~ ~
 execute as @p[tag=Host] at @s run spawnpoint @a ~ ~ ~
 
@@ -52,12 +59,6 @@ time set noon
 
 ## Set weather
 weather clear
-
-## Set world
-kill @e[type=minecraft:item]
-kill @e[type=minecraft:arrow]
-kill @e[type=minecraft:spectral_arrow]
-kill @e[type=minecraft:area_effect_cloud]
 
 ## Set player
 clear @a[team=Participant]

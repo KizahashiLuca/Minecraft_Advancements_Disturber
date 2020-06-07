@@ -45,6 +45,7 @@ kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
+kill @e[type=minecraft:chest_minecart,tag=Minecart]
 
 ## Reset time
 time set noon

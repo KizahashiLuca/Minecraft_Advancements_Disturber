@@ -25,7 +25,7 @@ effect clear @a[team=Participant]
 
 ## Give items
 give @a[team=Participant] minecraft:stone_sword
-give @a[team=Participant] minecraft:stone_pickaxe
+give @a[team=Participant] minecraft:stone_axe
 give @a[team=Participant] minecraft:stone_shovel
 
 ## Set scoreboards
