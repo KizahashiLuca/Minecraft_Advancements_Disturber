@@ -31,6 +31,8 @@ tag @a remove Host
 tag @a remove Numbered
 tag @a remove Participant
 tag @a remove Teleporter
+tag @a remove Teleported
+tag @a remove TeleportToMinecart
 
 ## Reset effect
 effect clear @a
@@ -41,11 +43,11 @@ experience set @a 0 levels
 experience set @a 0 points
 
 ## Reset world
+kill @e[type=minecraft:chest_minecart,tag=Minecart]
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
-kill @e[type=minecraft:chest_minecart,tag=Minecart]
 
 ## Reset time
 time set noon

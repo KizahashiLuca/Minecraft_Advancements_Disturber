@@ -7,7 +7,11 @@
 ## Version   : α-0.2
 #####################################
 
-## Eliminate minecart
-forceload remove ~ ~ ~ ~
-execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn] run forceload add ~ ~ ~ ~
-kill @s
+## Add tag
+tag @s add TeleportToMinecart
+
+## Teleport
+execute at @e[type=minecraft:chest_minecart,nbt={Tags:["Minecart"]}] run tp @p[tag=TeleportToMinecart] ~ ~10 ~
+
+## Remove tag
+tag @p[tag=Teleport] remove TeleportToMinecart

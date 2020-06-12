@@ -7,6 +7,15 @@
 ## Version   : α-0.2
 #####################################
 
+## Delete minecart
+execute as @e[type=minecraft:chest_minecart,tag=Minecart] run kill @s
+
 ## Summon minecart
 execute as @e[type=minecraft:area_effect_cloud,tag=WorldSpawn] at @s run summon minecraft:chest_minecart ~ 140 ~ {LootTable:"mad:chest_minecart",Tags:["Minecart"]}
-execute as @e[type=minecraft:chest_minecart,tag=Minecart] run function mad:system/ongame/minecart/teleport_minecart
+execute as @e[type=minecraft:chest_minecart,tag=Minecart,tag=!Teleported] run function mad:system/ongame/minecart/teleport_minecart
+
+## Send messages
+execute as @e[type=minecraft:chest_minecart,tag=Minecart] store result score @s PosX align x run data get entity @s Pos[0] 1
+execute as @e[type=minecraft:chest_minecart,tag=Minecart] store result score @s PosZ align z run data get entity @s Pos[2] 1
+execute as @e[type=minecraft:chest_minecart,tag=Minecart] run tellraw @a[gamemode=survival] ["",{"text":"[物資投下] 物資が","color":"green"},{"translate":"[%s, 140, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"score":{"name":"@s","objective":"PosZ"}}],"color":"green"},{"text":" に投下されました。","color":"green"}]
+execute as @e[type=minecraft:chest_minecart,tag=Minecart] run tellraw @a[gamemode=!survival] ["",{"text":"[物資投下] 物資が","color":"green"},{"translate":"[%s, 140, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"score":{"name":"@s","objective":"PosZ"}}],"color":"green","hoverEvent":{"action":"show_text","value":"クリックしてテレポート"},"clickEvent":{"action":"run_command","value":"/trigger TeleportMessage set 1"}},{"text":" に投下されました。","color":"green"}]

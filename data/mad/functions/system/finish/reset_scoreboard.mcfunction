@@ -14,6 +14,7 @@ scoreboard objectives remove Death
 scoreboard objectives remove SpawnTime
 scoreboard objectives remove Kill
 scoreboard objectives remove KillTemp
+scoreboard objectives remove TeleportMessage
 scoreboard objectives remove ExitMessage
 ## Remove scoreboards for timer
 scoreboard objectives remove Second

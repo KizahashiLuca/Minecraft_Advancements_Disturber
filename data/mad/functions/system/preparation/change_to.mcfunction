@@ -52,7 +52,7 @@ execute if score #mad WorldBorder matches 2000 run worldborder set 2002
 
 ## Teleport
 scoreboard players operation #mad WorldBorder /= #mad 2
-execute as @a[team=Participant] run function mad:system/preparation/random_teleport/main
+execute if entity @p[tag=!Teleported] run function mad:system/preparation/random_teleport/main
 
 ## Set time
 time set noon

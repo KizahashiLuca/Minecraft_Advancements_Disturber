@@ -14,6 +14,7 @@ scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add SpawnTime minecraft.custom:minecraft.time_since_death
 scoreboard objectives add Kill dummy
 scoreboard objectives add KillTemp minecraft.custom:minecraft.player_kills
+scoreboard objectives add TeleportMessage trigger
 scoreboard objectives add ExitMessage trigger
 ## Add scoreboards for timer
 scoreboard objectives add Second dummy
@@ -206,7 +207,7 @@ scoreboard players set #mad WorldBorderPrv 1000
 scoreboard players set #mad Difficulty 2
 scoreboard players set #mad DifficultyPrv 2
 ## Add scoreboards for summons minecart
-scoreboard players set #mad 300 0
+scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 0
 scoreboard players set #mad SecondEliminate 0
 
@@ -216,6 +217,8 @@ scoreboard players set @a Death 0
 scoreboard players set @a SpawnTime 0
 scoreboard players set @a Kill 0
 scoreboard players set @a KillTemp 0
+scoreboard players set @a TeleportMessage 0
+scoreboard players enable @a TeleportMessage
 scoreboard players set @a ExitMessage 0
 scoreboard players enable @a ExitMessage
 ## Set scoreboards for timer
