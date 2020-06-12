@@ -8,6 +8,7 @@
 #####################################
 
 ## Remove scoreboards for game phase
+scoreboard objectives remove Version
 scoreboard objectives remove Phase
 scoreboard objectives remove Death
 scoreboard objectives remove SpawnTime
@@ -150,6 +151,18 @@ scoreboard objectives remove AD_hb_harv_honey
 scoreboard objectives remove AD_hb_silk_nest
 scoreboard objectives remove AD_hb_tacti_fish
 scoreboard objectives remove AD_hb_tame_anima
+## Remove scoreboards for advancements - potage00
+scoreboard objectives remove AD_pg_root
+scoreboard objectives remove AD_pg_tsutenkaku
+scoreboard objectives remove AD_pg_treasure
+scoreboard objectives remove AD_pg_treasure_t
+scoreboard objectives remove AD_pg_treasure_e
+scoreboard objectives remove AD_pg_treasure_d
+scoreboard objectives remove AD_pg_treasure_g
+scoreboard objectives remove AD_pg_treasure_i
+scoreboard objectives remove AD_pg_treasure_r
+scoreboard objectives remove AD_pg_treasure_l
+scoreboard objectives remove AD_pg_treasure_q
 ## Remove scoreboards for summons minecart
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon

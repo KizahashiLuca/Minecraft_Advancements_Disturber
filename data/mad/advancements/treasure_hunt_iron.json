@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "treasure_iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["treasure_iron"]
+  ]
+}

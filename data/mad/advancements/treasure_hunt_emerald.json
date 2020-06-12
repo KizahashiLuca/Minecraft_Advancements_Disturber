@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "treasure_emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:emerald"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["treasure_emerald"]
+  ]
+}

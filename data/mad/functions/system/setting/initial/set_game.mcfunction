@@ -56,9 +56,16 @@ team modify Participant deathMessageVisibility never
 ## Add scoreboards
 function mad:system/setting/initial/add_scoreboard
 
+## Detect version
+function mad:system/setting/initial/detect_version/branch
+
 ## Count players
 execute as @a[team=Participant] run scoreboard players add #mad NumParticipant 1
 
+## Test
+scoreboard players set #mad NumParticipant 3
+
 ## Send messages
-execute if score #mad NumParticipant matches 1.. run function mad:system/setting/initial/send_message
-execute if score #mad NumParticipant matches ..0 run function mad:system/finish/game_short
+execute if score #mad NumParticipant matches 3..100 run function mad:system/setting/initial/send_message
+execute if score #mad NumParticipant matches ..2 run function mad:system/finish/game_short
+execute if score #mad NumParticipant matches 101.. run function mad:system/finish/game_short

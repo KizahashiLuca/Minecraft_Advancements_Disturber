@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "treasure_lapis_lazuli": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lapis_lazuli"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["treasure_lapis_lazuli"]
+  ]
+}

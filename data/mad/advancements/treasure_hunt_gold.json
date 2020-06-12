@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "treasure_gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gold_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["treasure_gold"]
+  ]
+}

@@ -16,4 +16,4 @@ execute as @a[scores={OnGround=1}] at @s run function mad:system/preparation/tel
 execute as @a[scores={OnGround=2}] run function mad:system/preparation/teleport
 
 ## Change phase
-execute unless entity @p[scores={OnGround=0..1}] run function mad:system/ongame/change_to
+execute unless entity @p[scores={OnGround=0..1}] run function mad:system/preparation/send_message

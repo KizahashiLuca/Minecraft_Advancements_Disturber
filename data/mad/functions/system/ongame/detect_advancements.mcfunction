@@ -11,7 +11,6 @@
 execute as @s[scores={AD_ad_adven_time=0},advancements={minecraft:adventure/adventuring_time=true}] run function mad:system/ongame/advancements/adventure/adventuring_time
 execute as @s[scores={AD_ad_arbalistic=0},advancements={minecraft:adventure/arbalistic=true}] run function mad:system/ongame/advancements/adventure/arbalistic
 execute as @s[scores={AD_ad_hero_villa=0},advancements={minecraft:adventure/hero_of_the_village=true}] run function mad:system/ongame/advancements/adventure/hero_of_the_village
-# execute as @s[scores={AD_ad_honey_slid=0},advancements={minecraft:adventure/honey_block_slide=true}] run function mad:system/ongame/advancements/adventure/honey_block_slide
 execute as @s[scores={AD_ad_kill_a_mob=0},advancements={minecraft:adventure/kill_a_mob=true}] run function mad:system/ongame/advancements/adventure/kill_a_mob
 execute as @s[scores={AD_ad_kill_all=0},advancements={minecraft:adventure/kill_all_mobs=true}] run function mad:system/ongame/advancements/adventure/kill_all_mobs
 execute as @s[scores={AD_ad_ol_betsy=0},advancements={minecraft:adventure/ol_besty=true}] run function mad:system/ongame/advancements/adventure/ol_besty
@@ -81,7 +80,17 @@ execute as @s[scores={AD_hb_catalogue=0},advancements={minecraft:husbandry/compl
 execute as @s[scores={AD_hb_fishy=0},advancements={minecraft:husbandry/fishy_business=true}] run function mad:system/ongame/advancements/husbandry/fishy_business
 execute as @s[scores={AD_hb_plant_seed=0},advancements={minecraft:husbandry/plant_seed=true}] run function mad:system/ongame/advancements/husbandry/plant_seed
 execute as @s[scores={AD_hb_root=0},advancements={minecraft:husbandry/root=true}] run function mad:system/ongame/advancements/husbandry/root
-# execute as @s[scores={AD_hb_harv_honey=0},advancements={minecraft:husbandry/safely_harvest_honey=true}] run function mad:system/ongame/advancements/husbandry/safely_harvest_honey
-# execute as @s[scores={AD_hb_silk_nest=0},advancements={minecraft:husbandry/silk_touch_nest=true}] run function mad:system/ongame/advancements/husbandry/silk_touch_nest
 execute as @s[scores={AD_hb_tacti_fish=0},advancements={minecraft:husbandry/tactical_fishing=true}] run function mad:system/ongame/advancements/husbandry/tactical_fishing
 execute as @s[scores={AD_hb_tame_anima=0},advancements={minecraft:husbandry/tame_an_animal=true}] run function mad:system/ongame/advancements/husbandry/tame_an_animal
+
+## Detect advancements - potage00
+execute as @s[scores={AD_pg_root=0},advancements={mad:root=true}] run function mad:system/ongame/advancements/potage00/root
+execute as @s[scores={AD_pg_tsutenkaku=0},advancements={mad:tsutenkaku=true}] run function mad:system/ongame/advancements/potage00/tsutenkaku
+execute as @s[scores={AD_pg_treasure=0},advancements={mad:treasure_hunt=false}] run function mad:system/ongame/advancements/potage00/treasure_hunt_detect
+execute as @s[scores={AD_pg_treasure=0},advancements={mad:treasure_hunt=true}] run function mad:system/ongame/advancements/potage00/treasure_hunt
+
+## Detect version 1.15 advancements
+execute if score #mad Version matches 15.. run function mad:system/ongame/advancements/branch_1.15
+
+## Detect version 1.16 advancements
+execute if score #mad Version matches 16.. run function mad:system/ongame/advancements/branch_1.16

@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "treasure_quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:quartz"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["treasure_quartz"]
+  ]
+}

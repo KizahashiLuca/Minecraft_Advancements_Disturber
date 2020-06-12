@@ -8,6 +8,7 @@
 #####################################
 
 ## Add scoreboards for game phase
+scoreboard objectives add Version dummy
 scoreboard objectives add Phase dummy
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add SpawnTime minecraft.custom:minecraft.time_since_death
@@ -150,12 +151,25 @@ scoreboard objectives add AD_hb_harv_honey dummy {"text":"大切なお客様"}
 scoreboard objectives add AD_hb_silk_nest dummy {"text":"完全な引越し"}
 scoreboard objectives add AD_hb_tacti_fish dummy {"text":"戦術的漁業"}
 scoreboard objectives add AD_hb_tame_anima dummy {"text":"永遠の親友となるだろう"}
+## Add scoreboards for advancements - potage00
+scoreboard objectives add AD_pg_root dummy {"text":"首狩りぽたーじゅ"}
+scoreboard objectives add AD_pg_tsutenkaku dummy {"text":"通天閣からの眺め"}
+scoreboard objectives add AD_pg_treasure dummy {"text":"宝探し"}
+scoreboard objectives add AD_pg_treasure_t dummy
+scoreboard objectives add AD_pg_treasure_e dummy {"text":"エメラルド"}
+scoreboard objectives add AD_pg_treasure_d dummy {"text":"ダイヤモンド"}
+scoreboard objectives add AD_pg_treasure_g dummy {"text":"金"}
+scoreboard objectives add AD_pg_treasure_i dummy {"text":"鉄"}
+scoreboard objectives add AD_pg_treasure_r dummy {"text":"レッドストーン"}
+scoreboard objectives add AD_pg_treasure_l dummy {"text":"ラピスラズリ"}
+scoreboard objectives add AD_pg_treasure_q dummy {"text":"クォーツ"}
 ## Add scoreboards for summons minecart
 scoreboard objectives add 300 dummy
 scoreboard objectives add SecondSummon dummy
 scoreboard objectives add SecondEliminate dummy
 
 ## Set scoreboards for game phase
+scoreboard players set #mad Version 14
 scoreboard players set #mad Phase 0
 scoreboard players set #mad Difficulty 0
 scoreboard players set #mad ExitMessage 0
@@ -318,6 +332,18 @@ scoreboard players set @a AD_hb_harv_honey 0
 scoreboard players set @a AD_hb_silk_nest 0
 scoreboard players set @a AD_hb_tacti_fish 0
 scoreboard players set @a AD_hb_tame_anima 0
+## Set scoreboards for advancements - potage00
+scoreboard players set @a AD_pg_root 0
+scoreboard players set @a AD_pg_tsutenkaku 0
+scoreboard players set @a AD_pg_treasure 0
+scoreboard players set @a AD_pg_treasure_t 0
+scoreboard players set @a AD_pg_treasure_e 0
+scoreboard players set @a AD_pg_treasure_d 0
+scoreboard players set @a AD_pg_treasure_g 0
+scoreboard players set @a AD_pg_treasure_i 0
+scoreboard players set @a AD_pg_treasure_r 0
+scoreboard players set @a AD_pg_treasure_l 0
+scoreboard players set @a AD_pg_treasure_q 0
 
 ## Random
 function mad:system/random_generator/initialize
