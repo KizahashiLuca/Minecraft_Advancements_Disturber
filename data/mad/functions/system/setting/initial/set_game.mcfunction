@@ -63,7 +63,7 @@ function mad:system/setting/initial/detect_version/branch
 execute as @a[team=Participant] run scoreboard players add #mad NumParticipant 1
 
 ## Test
-scoreboard players set #mad NumParticipant 3
+#scoreboard players set #mad NumParticipant 3
 
 ## Send messages
 execute if score #mad NumParticipant matches 3..100 run function mad:system/setting/initial/send_message
