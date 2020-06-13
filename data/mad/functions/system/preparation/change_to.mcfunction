@@ -83,6 +83,7 @@ function mad:system/preparation/numbering
 tag @a[team=Participant] remove Numbered
 
 ## Set scoreboards
+scoreboard objectives setdisplay list Second
 scoreboard players set #mad Tick 0
 scoreboard players set #mad Second 0
 scoreboard players set @a[team=Participant] Tick 0

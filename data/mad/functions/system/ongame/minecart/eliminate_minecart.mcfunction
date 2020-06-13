@@ -7,7 +7,11 @@
 ## Version   : α-0.3
 #####################################
 
-## Eliminate minecart
-forceload remove ~ ~ ~ ~
+## Unload all chunk
+forceload remove all
+
+## Load chunk
 execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn] run forceload add ~ ~ ~ ~
-kill @s
+
+## Set scoreboard
+scoreboard players set #mad SummonMinecart 0

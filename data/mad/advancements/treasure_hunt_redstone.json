@@ -1,17 +1,17 @@
 {
-  "criteria": {
-    "treasure_redstone": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:redstone"
-          }
-        ]
-      }
-    }
-  },
-  "requirements": [
-    ["treasure_redstone"]
-  ]
+    "criteria": {
+        "treasure_redstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:redstone"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["treasure_redstone"]
+    ]
 }

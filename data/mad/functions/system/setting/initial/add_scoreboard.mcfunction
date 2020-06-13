@@ -168,6 +168,12 @@ scoreboard objectives add AD_pg_treasure_q dummy {"text":"クォーツ"}
 scoreboard objectives add 300 dummy
 scoreboard objectives add SecondSummon dummy
 scoreboard objectives add SecondEliminate dummy
+scoreboard objectives add SummonMinecart dummy
+## Add scoreboards for transmitter
+scoreboard objectives add UseTransmitter trigger
+scoreboard objectives add TransmitterPosX dummy
+scoreboard objectives add TransmitterPosY dummy
+scoreboard objectives add TransmitterPosZ dummy
 
 ## Set scoreboards for game phase
 scoreboard players set #mad Version 14
@@ -210,6 +216,7 @@ scoreboard players set #mad DifficultyPrv 2
 scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 0
 scoreboard players set #mad SecondEliminate 0
+scoreboard players set #mad SummonMinecart 0
 
 ## Set scoreboards for game phase
 scoreboard players set @a Phase 0
@@ -347,6 +354,12 @@ scoreboard players set @a AD_pg_treasure_i 0
 scoreboard players set @a AD_pg_treasure_r 0
 scoreboard players set @a AD_pg_treasure_l 0
 scoreboard players set @a AD_pg_treasure_q 0
+## Add scoreboards for transmitter
+scoreboard players set @a UseTransmitter 0
+scoreboard players enable @a UseTransmitter
+scoreboard players set @a TransmitterPosX 0
+scoreboard players set @a TransmitterPosY 0
+scoreboard players set @a TransmitterPosZ 0
 
 ## Random
 function mad:system/random_generator/initialize

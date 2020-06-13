@@ -1,36 +1,34 @@
 {
-  "parent": "mad:root",
-  "display": {
-    "icon": {
-      "item": "minecraft:golden_boots",
-      "nbt": "{Damage:0}"
+    "parent": "mad:root",
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_boots",
+            "nbt": "{Damage:0}"
+        },
+        "title": {
+            "translate": "通天閣からの眺め"
+        },
+        "description": {
+            "translate": "海抜3m+108mの高さ\n(Y=174)に達する"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
     },
-    "title": {
-      "translate": "通天閣からの眺め"
-    },
-    "description": {
-      "translate": "海抜3m+108mの高さ\n(Y=174)に達する"
-    },
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "criteria": {
-    "tsutenkaku": {
-      "trigger": "minecraft:location",
-      "conditions": {
-        "position": {
-          "y": {
-            "min": 174 
-          }
+    "criteria": {
+        "tsutenkaku": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "position": {
+                    "y": {
+                        "min": 174 
+                    }
+                }
+            }
         }
-      }
-    }
-  },
-  "requirements": [
-    [
-      "tsutenkaku"
+    },
+    "requirements": [
+        ["tsutenkaku"]
     ]
-  ]
 }

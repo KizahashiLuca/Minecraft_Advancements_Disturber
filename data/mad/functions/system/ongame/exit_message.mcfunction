@@ -17,8 +17,8 @@ tellraw @a ["",{"text":"  企画 : ","color":"green","bold":true},{"text":"ぽ�
 tellraw @a ["",{"text":"  制作 : ","color":"green","bold":true},{"text":"KizahashiLuca","color":"green","bold":true,"hoverEvent":{"action":"show_text","value":"Twitter @KizahashiLuca"},"clickEvent":{"action":"open_url","value":"http://twitter.com/KizahashiLuca"}}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a ["",{"text":"  勝者が決定しました。","color":"white"}]
-tellraw @a ["",{"text":"  ゲームを終了する場合は、","color":"white"}]
-tellraw @a ["",{"text":"  ","color":"white"},{"text":"こちら","color":"light_purple","bold":true,"hoverEvent":{"action":"show_text","value":"クリックしてゲーム終了"},"clickEvent":{"action":"run_command","value":"/trigger ExitMessage set 1"}},{"text":"を押してください。","color":"white"}]
+tellraw @p[tag=Host] ["",{"text":"  ゲームを終了する場合は、","color":"white"}]
+tellraw @p[tag=Host] ["",{"text":"  ","color":"white"},{"text":"こちら","color":"light_purple","bold":true,"hoverEvent":{"action":"show_text","value":"クリックしてゲーム終了"},"clickEvent":{"action":"run_command","value":"/trigger ExitMessage set 1"}},{"text":"を押してください。","color":"white"}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a [""]
 

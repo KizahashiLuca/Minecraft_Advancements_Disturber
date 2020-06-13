@@ -1,39 +1,43 @@
 {
-  "parent": "mad:tsutenkaku",
-  "display": {
-    "icon": {
-      "item": "minecraft:golden_pickaxe",
-      "nbt": "{Damage:0}"
+    "parent": "mad:tsutenkaku",
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_pickaxe",
+            "nbt": "{Damage:0}"
+        },
+        "title": {
+            "text": "宝探し"
+        },
+        "description": {
+            "text": "エメラルド, ダイヤモンド, 金, 鉄, ラピスラズリ, レッドストーン, ネザークォーツ\n7種類のアイテムのうち、5種類を手に入れる。"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
     },
-    "title": {
-      "text": "宝探し"
+    "criteria": {
+        "treasure01": {
+            "trigger": "minecraft:impossible"
+        },
+        "treasure02": {
+            "trigger": "minecraft:impossible"
+        },
+        "treasure03": {
+            "trigger": "minecraft:impossible"
+        },
+        "treasure04": {
+            "trigger": "minecraft:impossible"
+        },
+        "treasure05": {
+            "trigger": "minecraft:impossible"
+        }
     },
-    "description": {
-      "text": "エメラルド, ダイヤモンド, 金, 鉄, ラピスラズリ, レッドストーン, ネザークォーツ\n7種類のアイテムのうち、5種類を手に入れる。"
-    },
-    "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "criteria": {
-    "treasure01": {
-      "trigger": "minecraft:impossible"
-    },
-    "treasure02": {
-      "trigger": "minecraft:impossible"
-    },
-    "treasure03": {
-      "trigger": "minecraft:impossible"
-    },
-    "treasure04": {
-      "trigger": "minecraft:impossible"
-    },
-    "treasure05": {
-      "trigger": "minecraft:impossible"
-    }
-  },
-  "requirements": [
-    ["treasure01"],["treasure02"],["treasure03"],["treasure04"],["treasure05"]
-  ]
+    "requirements": [
+        ["treasure01"],
+        ["treasure02"],
+        ["treasure03"],
+        ["treasure04"],
+        ["treasure05"]
+    ]
 }

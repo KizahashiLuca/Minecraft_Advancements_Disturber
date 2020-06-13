@@ -168,6 +168,12 @@ scoreboard objectives remove AD_pg_treasure_q
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon
 scoreboard objectives remove SecondEliminate
+scoreboard objectives remove SummonMinecart
+## Remove scoreboards for transmitter
+scoreboard objectives remove UseTransmitter
+scoreboard objectives remove TransmitterPosX
+scoreboard objectives remove TransmitterPosY
+scoreboard objectives remove TransmitterPosZ
 
 ## Remove players
 scoreboard players reset @a

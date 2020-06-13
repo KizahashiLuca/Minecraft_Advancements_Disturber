@@ -9,14 +9,10 @@
                     "weight": 1,
                     "name": "minecraft:arrow",
                     "functions": [
-                      {
-                        "function": "minecraft:set_count",
-                        "count": {
-                          "min": 16.0,
-                          "max": 16.0,
-                          "type": "minecraft:uniform"
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 16
                         }
-                      }
                     ]
                 }
             ]

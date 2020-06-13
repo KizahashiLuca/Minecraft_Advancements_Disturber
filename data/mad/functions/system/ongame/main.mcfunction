@@ -23,14 +23,13 @@ execute as @a[team=Participant,scores={Phase=21,Death=1}] run function mad:syste
 ## Detect time over
 execute as @a[team=Participant,scores={Phase=21,Death=0,Second=0,Tick=0}] run kill @s
 
-## Detect teleport
+## Detect teleport to minecart
 execute as @a[gamemode=spectator,scores={TeleportMessage=1..}] run function mad:system/ongame/minecart/player_teleport
 scoreboard players set @a TeleportMessage 0
 scoreboard players enable @a TeleportMessage
 
-## Summon minecart
-execute if score #mad Tick matches 0 if score #mad SecondSummon matches 0 run function mad:system/ongame/minecart/summon_minecart
-execute if score #mad Tick matches 0 if score #mad SecondEliminate matches 0 as @e[type=minecraft:chest_minecart,tag=Minecart] at @s run function mad:system/ongame/minecart/eliminate_minecart
+## Detect transmitter
+execute as @a[team=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame/transmitter/detect_transmitter
 
 ## Game Finish
 scoreboard players set #mad NumAlive 0

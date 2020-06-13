@@ -17,12 +17,27 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{title:\"発信機\",author:\"potage00\",HideFlags:39,display:{Name:\"\\\"\\\\u00A7r\\\\u00A7d発信機\\\"\"},pages:[\"[\\\"\\\",{\\\"text\\\":\\\"発信機\\\",\\\"color\\\":\\\"reset\\\",\\\"bold\\\":true,\\\"underlined\\\":true},{\\\"text\\\":\\\"\\\\n\\\\u0020\\\\u0020\\\",\\\"color\\\":\\\"reset\\\"},{\\\"text\\\":\\\"使用すると、一番近くの\\\",\\\"color\\\":\\\"reset\\\"},{\\\"text\\\":\\\"\\\\n\\\\u0020\\\\u0020\\\",\\\"color\\\":\\\"reset\\\"},{\\\"text\\\":\\\"プレイヤーの位置を知る\\\",\\\"color\\\":\\\"reset\\\"},{\\\"text\\\":\\\"\\\\n\\\\u0020\\\\u0020\\\",\\\"color\\\":\\\"reset\\\"},{\\\"text\\\":\\\"ことができる。\\\",\\\"color\\\":\\\"reset\\\"},{\\\"text\\\":\\\"\\\\n\\\\n\\\\u0020\\\\u0020\\\",\\\"color\\\":\\\"reset\\\"},{\\\"text\\\":\\\">\\\\u0020使用\\\",\\\"color\\\":\\\"red\\\",\\\"bold\\\":true,\\\"underlined\\\":true,\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"/trigger UseTransmitter set 1\\\"}}]\"]}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
                     "name": "minecraft:player_head",
                     "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{SkullOwner:\"potage00\"}"
-                      }
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{SkullOwner:\"potage00\"}"
+                        }
                     ]
                 },
                 {
@@ -35,10 +50,10 @@
                     "weight": 1,
                     "name": "minecraft:diamond_pickaxe",
                     "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:3s}]}"
-                      }
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:3s}]}"
+                        }
                     ]
                 },
                 {
@@ -46,10 +61,10 @@
                     "weight": 1,
                     "name": "minecraft:diamond_boots",
                     "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{AttributeModifiers:[{AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:0.5,Operation:0,UUIDLeast:377462,UUIDMost:386522,Slot:\"feet\"}]}"
-                      }
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AttributeModifiers:[{AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:0.5,Operation:0,UUIDLeast:377462,UUIDMost:386522,Slot:\"feet\"}]}"
+                        }
                     ]
                 },
                 {
@@ -62,10 +77,10 @@
                     "weight": 1,
                     "name": "minecraft:potion",
                     "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{display:{Name:\"\\\"\\\\u00A7r栄養ドリンク\\\"\"},CustomPotionEffects:[{Id:10,Amplifier:3,Duration:1200},{Id:23,Amplifier:20,Duration:1200},{Id:1,Amplifier:0,Duration:1200},{Id:3,Amplifier:0,Duration:1200}],CustomPotionColor:3470848}"
-                      }
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:\"\\\"\\\\u00A7r栄養ドリンク\\\"\"},CustomPotionEffects:[{Id:10,Amplifier:3,Duration:1200},{Id:23,Amplifier:20,Duration:1200},{Id:1,Amplifier:0,Duration:1200},{Id:3,Amplifier:0,Duration:1200}],CustomPotionColor:3470848}"
+                        }
                     ]
                 }
             ]
