@@ -22,7 +22,7 @@ tellraw @a ["",{"text":"  企画 : ","color":"green","bold":true},{"text":"ぽ�
 tellraw @a ["",{"text":"  制作 : ","color":"green","bold":true},{"text":"KizahashiLuca","color":"green","bold":true,"hoverEvent":{"action":"show_text","value":"Twitter @KizahashiLuca"},"clickEvent":{"action":"open_url","value":"http://twitter.com/KizahashiLuca"}}]
 tellraw @a ["",{"text":"  Thank you for Downloading!","color":"white"}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
-tellraw @a ["",{"text":"  ゲームの必要人数は","color":"white"},{"text":" 3 ","color":"red","bold":true},{"text":"人からです。","color":"white"}]
+tellraw @a ["",{"text":"  ゲームの必要人数は","color":"white"},{"text":" 100 ","color":"red","bold":true},{"text":"人までです。","color":"white"}]
 tellraw @a ["",{"text":"  以下のコマンドで、ゲームを開始して","color":"white"}]
 tellraw @a ["",{"text":"  ください。","color":"white"}]
 tellraw @a ["",{"text":"      ","color":"white"},{"text":"/function #mad:start","color":"light_purple","hoverEvent":{"action":"show_text","value":"クリックしてゲーム開始"},"clickEvent":{"action":"suggest_command","value":"/function #mad:start"}}]

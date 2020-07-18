@@ -7,6 +7,9 @@
 ## Version   : α-0.3
 #####################################
 
+## Set gamerule
+gamerule announceAdvancements false
+
 ## Process timer system
 execute as @a[team=Participant,scores={Phase=21,Death=0}] run function mad:system/time/time
 function mad:system/time/general_time
@@ -21,7 +24,7 @@ execute as @a[team=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run funct
 execute as @a[team=Participant,scores={Phase=21,Death=1}] run function mad:system/ongame/detect_death
 
 ## Detect time over
-execute as @a[team=Participant,scores={Phase=21,Death=0,Second=0,Tick=0}] run kill @s
+execute as @a[team=Participant,scores={Phase=21,Death=0,Second=..0,Tick=0}] run kill @s
 
 ## Detect teleport to minecart
 execute as @a[gamemode=spectator,scores={TeleportMessage=1..}] run function mad:system/ongame/minecart/player_teleport

@@ -52,7 +52,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:3s}]}"
+                            "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:10s}]}"
                         }
                     ]
                 },
