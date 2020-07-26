@@ -65,6 +65,7 @@ scoreboard objectives add Select24 dummy
 scoreboard objectives add Select25 dummy
 scoreboard objectives add Select26 dummy
 scoreboard objectives add Select28 dummy
+scoreboard objectives add Select31 dummy
 scoreboard objectives add Select34 dummy
 scoreboard objectives add Selected dummy
 ## Add scoreboards for setting phase - choose time limit
@@ -76,11 +77,32 @@ scoreboard objectives add WorldBorderPrv dummy
 ## Add scoreboards for setting phase - choose difficulty
 scoreboard objectives add Difficulty dummy
 scoreboard objectives add DifficultyPrv dummy
+## Add scoreboards for setting phase - choose adding time
+scoreboard objectives add AddingTime dummy
+scoreboard objectives add AddingTimePrv dummy
+## Add scoreboards for setting phase - choose gamerule
+scoreboard objectives add WeatherCycle dummy
+scoreboard objectives add DaylightCycle dummy
+scoreboard objectives add WeatherCyclePrv dummy
+scoreboard objectives add DaylightCyclePrv dummy
+## Add scoreboards for setting phase - choose team setting
+scoreboard objectives add IsTeam dummy
+scoreboard objectives add friendlyFire dummy
+scoreboard objectives add collisionRule dummy
+scoreboard objectives add VisibleName dummy
+scoreboard objectives add VisibleInvis dummy
+scoreboard objectives add VisibleDeath dummy
+scoreboard objectives add friendlyFirePrv dummy
+scoreboard objectives add collisionRulePrv dummy
+scoreboard objectives add VisibleNamePrv dummy
+scoreboard objectives add VisibleInvisPrv dummy
+scoreboard objectives add VisibleDeathPrv dummy
 ## Add scoreboards for advancements
 scoreboard objectives add HasAdvancements dummy
 ## Add scoreboards for advancements - adventure
 scoreboard objectives add AD_ad_adven_time dummy {"text":"冒険の時間"}
 scoreboard objectives add AD_ad_arbalistic dummy {"text":"クロスボウの達人"}
+scoreboard objectives add AD_ad_bullseye dummy {"text":"的中"}
 scoreboard objectives add AD_ad_hero_villa dummy {"text":"村の英雄"}
 scoreboard objectives add AD_ad_honey_slid dummy {"text":"べとべとな状況"}
 scoreboard objectives add AD_ad_kill_a_mob dummy {"text":"モンスターハンター"}
@@ -119,16 +141,26 @@ scoreboard objectives add AD_mc_upgrade dummy {"text":"アップグレード"}
 scoreboard objectives add AD_nt_all_effect dummy {"text":"どうやってここまで？"}
 scoreboard objectives add AD_nt_all_potion dummy {"text":"猛烈なカクテル"}
 scoreboard objectives add AD_nt_brew_potio dummy {"text":"町のお薬屋さん"}
+scoreboard objectives add AD_nt_respawn dummy {"text":"不死身とまではいかない"}
 scoreboard objectives add AD_nt_create_bc dummy {"text":"生活のビーコン"}
 scoreboard objectives add AD_nt_create_fbc dummy {"text":"ビーコネーター"}
+scoreboard objectives add AD_nt_distract dummy {"text":"わーいぴかぴか！"}
+scoreboard objectives add AD_nt_explore dummy {"text":"ホットな観光地"}
 scoreboard objectives add AD_nt_fast_travl dummy {"text":"亜空間バブル"}
+scoreboard objectives add AD_nt_bastion dummy {"text":"兵どもが夢の跡"}
 scoreboard objectives add AD_nt_fortress dummy {"text":"恐ろしい要塞"}
 scoreboard objectives add AD_nt_get_wtskul dummy {"text":"不気味で怖いスケルトン"}
+scoreboard objectives add AD_nt_loot_bastn dummy {"text":"ブタ戦争"}
+scoreboard objectives add AD_nt_ntrt_armor dummy {"text":"残骸で私を覆って"}
+scoreboard objectives add AD_nt_ancient_db dummy {"text":"深淵に隠されしもの"}
 scoreboard objectives add AD_nt_blaze_rod dummy {"text":"炎の中へ"}
+scoreboard objectives add AD_nt_cry_obsidn dummy {"text":"玉ねぎを切っているのは誰？"}
 scoreboard objectives add AD_nt_rtrn_ghast dummy {"text":"差出人に返送"}
+scoreboard objectives add AD_nt_strider dummy {"text":"足の生えたボート"}
 scoreboard objectives add AD_nt_root dummy {"text":"ネザー"}
 scoreboard objectives add AD_nt_smn_wither dummy {"text":"荒が丘"}
 scoreboard objectives add AD_nt_uneasy_alc dummy {"text":"不安な同盟"}
+scoreboard objectives add AD_nt_lodestone dummy {"text":"この道をずっとゆけば"}
 ## Add scoreboards for advancements - end
 scoreboard objectives add AD_ed_drg_breath dummy {"text":"口臭に気をつけよう"}
 scoreboard objectives add AD_ed_dragon_egg dummy {"text":"ザ・ネクストジェネレーション"}
@@ -146,6 +178,7 @@ scoreboard objectives add AD_hb_bred_all dummy {"text":"二匹ずつ"}
 scoreboard objectives add AD_hb_bred_anima dummy {"text":"コウノトリの贈り物"}
 scoreboard objectives add AD_hb_catalogue dummy {"text":"猫大全集"}
 scoreboard objectives add AD_hb_fishy dummy {"text":"生臭い仕事"}
+scoreboard objectives add AD_hb_nether_hoe dummy {"text":"真面目な献身"}
 scoreboard objectives add AD_hb_plant_seed dummy {"text":"種だらけの場所"}
 scoreboard objectives add AD_hb_root dummy {"text":"農業"}
 scoreboard objectives add AD_hb_harv_honey dummy {"text":"大切なお客様"}
@@ -156,14 +189,6 @@ scoreboard objectives add AD_hb_tame_anima dummy {"text":"永遠の親友とな�
 scoreboard objectives add AD_pg_root dummy {"text":"首狩りぽたーじゅ"}
 scoreboard objectives add AD_pg_tsutenkaku dummy {"text":"通天閣からの眺め"}
 scoreboard objectives add AD_pg_treasure dummy {"text":"宝探し"}
-scoreboard objectives add AD_pg_treasure_t dummy
-scoreboard objectives add AD_pg_treasure_e dummy {"text":"エメラルド"}
-scoreboard objectives add AD_pg_treasure_d dummy {"text":"ダイヤモンド"}
-scoreboard objectives add AD_pg_treasure_g dummy {"text":"金"}
-scoreboard objectives add AD_pg_treasure_i dummy {"text":"鉄"}
-scoreboard objectives add AD_pg_treasure_r dummy {"text":"レッドストーン"}
-scoreboard objectives add AD_pg_treasure_l dummy {"text":"ラピスラズリ"}
-scoreboard objectives add AD_pg_treasure_q dummy {"text":"クォーツ"}
 ## Add scoreboards for summons minecart
 scoreboard objectives add 300 dummy
 scoreboard objectives add SecondSummon dummy
@@ -212,9 +237,29 @@ scoreboard players set #mad WorldBorderPrv 1000
 ## Set scoreboards for setting phase - choose difficulty
 scoreboard players set #mad Difficulty 2
 scoreboard players set #mad DifficultyPrv 2
-## Add scoreboards for summons minecart
+## Set scoreboards for setting phase - choose adding time
+scoreboard players set #mad AddingTime 100
+scoreboard players set #mad AddingTimePrv 100
+## Set scoreboards for setting phase - choose gamerule
+scoreboard players set #mad WeatherCycle 1
+scoreboard players set #mad DaylightCycle 1
+scoreboard players set #mad WeatherCyclePrv 1
+scoreboard players set #mad DaylightCyclePrv 1
+## Set scoreboards for setting phase - choose team setting
+scoreboard players set #mad IsTeam 0
+scoreboard players set #mad friendlyFire 1
+scoreboard players set #mad collisionRule 1
+scoreboard players set #mad VisibleName 0
+scoreboard players set #mad VisibleInvis 0
+scoreboard players set #mad VisibleDeath 0
+scoreboard players set #mad friendlyFirePrv 1
+scoreboard players set #mad collisionRulePrv 1
+scoreboard players set #mad VisibleNamePrv 0
+scoreboard players set #mad VisibleInvisPrv 0
+scoreboard players set #mad VisibleDeathPrv 0
+## Set scoreboards for summons minecart
 scoreboard players set #mad 300 300
-scoreboard players set #mad SecondSummon 0
+scoreboard players set #mad SecondSummon 100
 scoreboard players set #mad SecondEliminate 0
 scoreboard players set #mad SummonMinecart 0
 
@@ -235,7 +280,7 @@ scoreboard players set @a Tick 0
 scoreboard players set @a Participant 0
 scoreboard players set @a NumParticipant 0
 scoreboard players set @a NumAlive 0
-## Add scoreboards for onground
+## Set scoreboards for onground
 scoreboard players set @a OnGround 0
 ## Set scoreboards for area
 scoreboard players set @a PlusMinus 0
@@ -264,6 +309,7 @@ scoreboard players set @a Select24 0
 scoreboard players set @a Select25 0
 scoreboard players set @a Select26 0
 scoreboard players set @a Select28 0
+scoreboard players set @a Select31 0
 scoreboard players set @a Select34 0
 scoreboard players set @a Selected 0
 ## Set scoreboards for advancements
@@ -271,6 +317,7 @@ scoreboard players set @a HasAdvancements 0
 ## Set scoreboards for advancements - adventure
 scoreboard players set @a AD_ad_adven_time 0
 scoreboard players set @a AD_ad_arbalistic 0
+scoreboard players set @a AD_ad_bullseye 0
 scoreboard players set @a AD_ad_hero_villa 0
 scoreboard players set @a AD_ad_honey_slid 0
 scoreboard players set @a AD_ad_kill_a_mob 0
@@ -309,16 +356,26 @@ scoreboard players set @a AD_mc_upgrade 0
 scoreboard players set @a AD_nt_all_effect 0
 scoreboard players set @a AD_nt_all_potion 0
 scoreboard players set @a AD_nt_brew_potio 0
+scoreboard players set @a AD_nt_respawn 0
 scoreboard players set @a AD_nt_create_bc 0
 scoreboard players set @a AD_nt_create_fbc 0
+scoreboard players set @a AD_nt_distract 0
+scoreboard players set @a AD_nt_explore 0
 scoreboard players set @a AD_nt_fast_travl 0
+scoreboard players set @a AD_nt_bastion 0
 scoreboard players set @a AD_nt_fortress 0
 scoreboard players set @a AD_nt_get_wtskul 0
+scoreboard players set @a AD_nt_loot_bastn 0
+scoreboard players set @a AD_nt_ntrt_armor 0
+scoreboard players set @a AD_nt_ancient_db 0
 scoreboard players set @a AD_nt_blaze_rod 0
+scoreboard players set @a AD_nt_cry_obsidn 0
 scoreboard players set @a AD_nt_rtrn_ghast 0
+scoreboard players set @a AD_nt_strider 0
 scoreboard players set @a AD_nt_root 0
 scoreboard players set @a AD_nt_smn_wither 0
 scoreboard players set @a AD_nt_uneasy_alc 0
+scoreboard players set @a AD_nt_lodestone 0
 ## Set scoreboards for advancements - end
 scoreboard players set @a AD_ed_drg_breath 0
 scoreboard players set @a AD_ed_dragon_egg 0
@@ -336,6 +393,7 @@ scoreboard players set @a AD_hb_bred_all 0
 scoreboard players set @a AD_hb_bred_anima 0
 scoreboard players set @a AD_hb_catalogue 0
 scoreboard players set @a AD_hb_fishy 0
+scoreboard players set @a AD_hb_nether_hoe 0
 scoreboard players set @a AD_hb_plant_seed 0
 scoreboard players set @a AD_hb_root 0
 scoreboard players set @a AD_hb_harv_honey 0
@@ -346,15 +404,7 @@ scoreboard players set @a AD_hb_tame_anima 0
 scoreboard players set @a AD_pg_root 0
 scoreboard players set @a AD_pg_tsutenkaku 0
 scoreboard players set @a AD_pg_treasure 0
-scoreboard players set @a AD_pg_treasure_t 0
-scoreboard players set @a AD_pg_treasure_e 0
-scoreboard players set @a AD_pg_treasure_d 0
-scoreboard players set @a AD_pg_treasure_g 0
-scoreboard players set @a AD_pg_treasure_i 0
-scoreboard players set @a AD_pg_treasure_r 0
-scoreboard players set @a AD_pg_treasure_l 0
-scoreboard players set @a AD_pg_treasure_q 0
-## Add scoreboards for transmitter
+## Set scoreboards for transmitter
 scoreboard players set @a UseTransmitter 0
 scoreboard players enable @a UseTransmitter
 scoreboard players set @a TransmitterPosX 0

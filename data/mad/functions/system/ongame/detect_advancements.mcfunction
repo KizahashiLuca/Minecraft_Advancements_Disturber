@@ -73,7 +73,6 @@ execute as @s[scores={AD_ed_root=0},advancements={minecraft:end/root=true}] run 
 
 ## Detect advancements - husbandry
 execute as @s[scores={AD_hb_balanced=0},advancements={minecraft:husbandry/balanced_diet=true}] run function mad:system/ongame/advancements/husbandry/balanced_diet
-execute as @s[scores={AD_hb_break_hoe=0},advancements={minecraft:husbandry/break_diamond_hoe=true}] run function mad:system/ongame/advancements/husbandry/break_diamond_hoe
 execute as @s[scores={AD_hb_bred_all=0},advancements={minecraft:husbandry/bred_all_animals=true}] run function mad:system/ongame/advancements/husbandry/bred_all_animals
 execute as @s[scores={AD_hb_bred_anima=0},advancements={minecraft:husbandry/breed_an_animal=true}] run function mad:system/ongame/advancements/husbandry/breed_an_animal
 execute as @s[scores={AD_hb_catalogue=0},advancements={minecraft:husbandry/complete_catalogue=true}] run function mad:system/ongame/advancements/husbandry/complete_catalogue
@@ -86,8 +85,10 @@ execute as @s[scores={AD_hb_tame_anima=0},advancements={minecraft:husbandry/tame
 ## Detect advancements - potage00
 execute as @s[scores={AD_pg_root=0},advancements={mad:root=true}] run function mad:system/ongame/advancements/potage00/root
 execute as @s[scores={AD_pg_tsutenkaku=0},advancements={mad:tsutenkaku=true}] run function mad:system/ongame/advancements/potage00/tsutenkaku
-execute as @s[scores={AD_pg_treasure=0},advancements={mad:treasure_hunt=false}] run function mad:system/ongame/advancements/potage00/treasure_hunt_detect
 execute as @s[scores={AD_pg_treasure=0},advancements={mad:treasure_hunt=true}] run function mad:system/ongame/advancements/potage00/treasure_hunt
+
+## Detect version 1.14 advancements
+execute if score #mad Version matches 14..15 run function mad:system/ongame/advancements/branch_1.14
 
 ## Detect version 1.15 advancements
 execute if score #mad Version matches 15.. run function mad:system/ongame/advancements/branch_1.15

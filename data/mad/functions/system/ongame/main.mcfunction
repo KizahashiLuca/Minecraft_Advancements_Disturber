@@ -26,7 +26,13 @@ execute as @a[team=Participant,scores={Phase=21,Death=1}] run function mad:syste
 ## Detect time over
 execute as @a[team=Participant,scores={Phase=21,Death=0,Second=..0,Tick=0}] run kill @s
 
-## Detect teleport to minecart
+## Detect minecart landed
+execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] run function mad:system/ongame/minecart/detect_minecart_landed
+
+## Detect minecart
+execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s if entity @p[team=Participant,scores={Phase=21,Death=0},distance=..2] run function mad:system/ongame/minecart/explode_minecart
+
+## Detect player teleport to minecart
 execute as @a[gamemode=spectator,scores={TeleportMessage=1..}] run function mad:system/ongame/minecart/player_teleport
 scoreboard players set @a TeleportMessage 0
 scoreboard players enable @a TeleportMessage

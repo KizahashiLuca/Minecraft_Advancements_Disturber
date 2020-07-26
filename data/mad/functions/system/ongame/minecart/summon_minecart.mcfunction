@@ -11,8 +11,8 @@
 execute as @e[type=minecraft:chest_minecart,tag=Minecart] run kill @s
 
 ## Summon minecart
-execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn] run summon minecraft:chest_minecart ~ 140 ~ {LootTable:"mad:chest_minecart",Tags:["Minecart"]}
-execute as @e[type=minecraft:chest_minecart,tag=Minecart,tag=!Teleported] run function mad:system/ongame/minecart/teleport_minecart
+execute if score #mad Version matches ..15 at @e[type=minecraft:area_effect_cloud,tag=Minecart] run summon minecraft:chest_minecart ~ 140 ~ {LootTable:"mad:chest_minecart_14",Invulnerable:1b,Tags:["Minecart"]}
+execute if score #mad Version matches 16.. at @e[type=minecraft:area_effect_cloud,tag=Minecart] run summon minecraft:chest_minecart ~ 140 ~ {LootTable:"mad:chest_minecart_16",Invulnerable:1b,Tags:["Minecart"]}
 
 ## Send messages
 execute as @e[type=minecraft:chest_minecart,tag=Minecart] store result score @s PosX align x run data get entity @s Pos[0] 1

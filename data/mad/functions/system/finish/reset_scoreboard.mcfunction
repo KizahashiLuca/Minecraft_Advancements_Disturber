@@ -65,6 +65,7 @@ scoreboard objectives remove Select24
 scoreboard objectives remove Select25
 scoreboard objectives remove Select26
 scoreboard objectives remove Select28
+scoreboard objectives remove Select31
 scoreboard objectives remove Select34
 scoreboard objectives remove Selected
 ## Remove scoreboards for setting phase - choose time limit
@@ -76,11 +77,32 @@ scoreboard objectives remove WorldBorderPrv
 ## Remove scoreboards for setting phase - choose difficulty
 scoreboard objectives remove Difficulty
 scoreboard objectives remove DifficultyPrv
+## Remove scoreboards for setting phase - choose adding time
+scoreboard objectives remove AddingTime
+scoreboard objectives remove AddingTimePrv
+## Remove scoreboards for setting phase - choose gamerule
+scoreboard objectives remove WeatherCycle
+scoreboard objectives remove DaylightCycle
+scoreboard objectives remove WeatherCyclePrv
+scoreboard objectives remove DaylightCyclePrv
+## Remove scoreboards for setting phase - choose team setting
+scoreboard objectives remove IsTeam
+scoreboard objectives remove friendlyFire
+scoreboard objectives remove collisionRule
+scoreboard objectives remove VisibleName
+scoreboard objectives remove VisibleInvis
+scoreboard objectives remove VisibleDeath
+scoreboard objectives remove friendlyFirePrv
+scoreboard objectives remove collisionRulePrv
+scoreboard objectives remove VisibleNamePrv
+scoreboard objectives remove VisibleInvisPrv
+scoreboard objectives remove VisibleDeathPrv
 ## Remove scoreboards for advancements
 scoreboard objectives remove HasAdvancements
 ## Remove scoreboards for advancements - adventure
 scoreboard objectives remove AD_ad_adven_time
 scoreboard objectives remove AD_ad_arbalistic
+scoreboard objectives remove AD_ad_bullseye
 scoreboard objectives remove AD_ad_hero_villa
 scoreboard objectives remove AD_ad_honey_slid
 scoreboard objectives remove AD_ad_kill_a_mob
@@ -119,16 +141,26 @@ scoreboard objectives remove AD_mc_upgrade
 scoreboard objectives remove AD_nt_all_effect
 scoreboard objectives remove AD_nt_all_potion
 scoreboard objectives remove AD_nt_brew_potio
+scoreboard objectives remove AD_nt_respawn
 scoreboard objectives remove AD_nt_create_bc
 scoreboard objectives remove AD_nt_create_fbc
+scoreboard objectives remove AD_nt_distract
+scoreboard objectives remove AD_nt_explore
 scoreboard objectives remove AD_nt_fast_travl
+scoreboard objectives remove AD_nt_bastion
 scoreboard objectives remove AD_nt_fortress
 scoreboard objectives remove AD_nt_get_wtskul
+scoreboard objectives remove AD_nt_loot_bastn
+scoreboard objectives remove AD_nt_ntrt_armor
+scoreboard objectives remove AD_nt_ancient_db
 scoreboard objectives remove AD_nt_blaze_rod
+scoreboard objectives remove AD_nt_cry_obsidn
 scoreboard objectives remove AD_nt_rtrn_ghast
+scoreboard objectives remove AD_nt_strider
 scoreboard objectives remove AD_nt_root
 scoreboard objectives remove AD_nt_smn_wither
 scoreboard objectives remove AD_nt_uneasy_alc
+scoreboard objectives remove AD_nt_lodestone
 ## Remove scoreboards for advancements - end
 scoreboard objectives remove AD_ed_drg_breath
 scoreboard objectives remove AD_ed_dragon_egg
@@ -146,6 +178,7 @@ scoreboard objectives remove AD_hb_bred_all
 scoreboard objectives remove AD_hb_bred_anima
 scoreboard objectives remove AD_hb_catalogue
 scoreboard objectives remove AD_hb_fishy
+scoreboard objectives remove AD_hb_nether_hoe
 scoreboard objectives remove AD_hb_plant_seed
 scoreboard objectives remove AD_hb_root
 scoreboard objectives remove AD_hb_harv_honey
@@ -156,14 +189,6 @@ scoreboard objectives remove AD_hb_tame_anima
 scoreboard objectives remove AD_pg_root
 scoreboard objectives remove AD_pg_tsutenkaku
 scoreboard objectives remove AD_pg_treasure
-scoreboard objectives remove AD_pg_treasure_t
-scoreboard objectives remove AD_pg_treasure_e
-scoreboard objectives remove AD_pg_treasure_d
-scoreboard objectives remove AD_pg_treasure_g
-scoreboard objectives remove AD_pg_treasure_i
-scoreboard objectives remove AD_pg_treasure_r
-scoreboard objectives remove AD_pg_treasure_l
-scoreboard objectives remove AD_pg_treasure_q
 ## Remove scoreboards for summons minecart
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon

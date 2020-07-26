@@ -9,15 +9,11 @@
 
 ## Set gamerule
 gamemode adventure @a[gamemode=!spectator]
-gamerule announceAdvancements false
-gamerule sendCommandFeedback false
-gamerule commandBlockOutput false
-gamerule showDeathMessages false
-gamerule doLimitedCrafting false
-gamerule doDaylightCycle true
-gamerule doWeatherCycle true
-gamerule doMobSpawning true
-gamerule keepInventory false
+gamerule doLimitedCrafting true
+gamerule doDaylightCycle false
+gamerule doWeatherCycle false
+gamerule doMobSpawning false
+gamerule keepInventory true
 difficulty peaceful
 
 ## Set time
@@ -41,6 +37,9 @@ experience set @a 0 points
 effect clear @a
 effect give @a[gamemode=!spectator] minecraft:resistance 1000000 6 true
 
+## Remove advancements
+advancement revoke @a everything
+
 ## Add tags
 tag @p[sort=nearest] add Host
 
@@ -52,6 +51,22 @@ team modify Participant collisionRule always
 team modify Participant nametagVisibility never
 team modify Participant seeFriendlyInvisibles false
 team modify Participant deathMessageVisibility never
+
+## Add teams
+team add TeamA {"text":"TeamA"}
+team modify TeamA friendlyFire true
+team modify TeamA collisionRule always
+team modify TeamA nametagVisibility never
+team modify TeamA seeFriendlyInvisibles false
+team modify TeamA deathMessageVisibility never
+
+## Add teams
+team add TeamB {"text":"TeamB"}
+team modify TeamB friendlyFire true
+team modify TeamB collisionRule always
+team modify TeamB nametagVisibility never
+team modify TeamB seeFriendlyInvisibles false
+team modify TeamB deathMessageVisibility never
 
 ## Add scoreboards
 function mad:system/setting/initial/add_scoreboard

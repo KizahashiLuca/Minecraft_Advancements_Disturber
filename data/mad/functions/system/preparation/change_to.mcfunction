@@ -7,6 +7,19 @@
 ## Version   : α-0.3
 #####################################
 
+## Set gamerule
+gamerule announceAdvancements false
+gamerule sendCommandFeedback false
+gamerule commandBlockOutput false
+gamerule showDeathMessages false
+gamerule doLimitedCrafting false
+execute if score #mad WeatherCycle matches 1 run gamerule doWeatherCycle true
+execute if score #mad WeatherCycle matches 0 run gamerule doWeatherCycle false
+execute if score #mad DaylightCycle matches 1 run gamerule doDaylightCycle true
+execute if score #mad DaylightCycle matches 0 run gamerule doDaylightCycle false
+gamerule doMobSpawning true
+gamerule keepInventory false
+
 ## Set world
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
@@ -28,7 +41,7 @@ execute as @p[tag=Host] at @s run spawnpoint @a ~ ~ ~
 
 ## Set world border
 execute as @p[tag=Host] at @s run worldborder center ~ ~
-execute if score #mad WorldBorder matches 0 run worldborder set 60000002
+execute if score #mad WorldBorder matches 0 run worldborder set 60000000
 execute if score #mad WorldBorder matches 100 run worldborder set 102
 execute if score #mad WorldBorder matches 200 run worldborder set 202
 execute if score #mad WorldBorder matches 300 run worldborder set 302
@@ -97,6 +110,9 @@ scoreboard players set @a KillTemp 0
 
 ## Set bossbar
 execute as @a[team=Participant] run function mad:system/preparation/participant/branch
+
+## Team
+execute if score #mad IsTeam matches 1 run function mad:system/preparation/team_setting
 
 ## Change phase
 scoreboard players set #mad Phase 20

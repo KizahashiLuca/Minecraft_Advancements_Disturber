@@ -9,7 +9,7 @@
             "text": "宝探し"
         },
         "description": {
-            "text": "エメラルド, ダイヤモンド, 金, 鉄, ラピスラズリ, レッドストーン, ネザークォーツ\n7種類のアイテムのうち、5種類を手に入れる。"
+            "text": "エメラルド, ダイヤモンド, 金, 鉄, ラピスラズリ, レッドストーン, ネザークォーツ\n7種類のアイテムを全て手に入れる。"
         },
         "frame": "challenge",
         "show_toast": true,
@@ -17,27 +17,78 @@
         "hidden": false
     },
     "criteria": {
-        "treasure01": {
-            "trigger": "minecraft:impossible"
+        "treasure_emerald": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:emerald"
+                    }
+                ]
+            }
         },
-        "treasure02": {
-            "trigger": "minecraft:impossible"
+        "treasure_diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond"
+                    }
+                ]
+            }
         },
-        "treasure03": {
-            "trigger": "minecraft:impossible"
+        "treasure_gold": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:gold_ingot"
+                    }
+                ]
+            }
         },
-        "treasure04": {
-            "trigger": "minecraft:impossible"
+        "treasure_iron": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_ingot"
+                    }
+                ]
+            }
         },
-        "treasure05": {
-            "trigger": "minecraft:impossible"
+        "treasure_lapis_lazuli": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:lapis_lazuli"
+                    }
+                ]
+            }
+        },
+        "treasure_redstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:redstone"
+                    }
+                ]
+            }
+        },
+        "treasure_quartz": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:quartz"
+                    }
+                ]
+            }
         }
     },
     "requirements": [
-        ["treasure01"],
-        ["treasure02"],
-        ["treasure03"],
-        ["treasure04"],
-        ["treasure05"]
+        ["treasure_emerald"], ["treasure_diamond"], ["treasure_gold"], ["treasure_iron"], ["treasure_lapis_lazuli"], ["treasure_redstone"], ["treasure_quartz"]
     ]
 }

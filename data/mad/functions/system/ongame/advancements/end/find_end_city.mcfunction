@@ -10,6 +10,6 @@
 ## Set scoreboard
 scoreboard players set @s AD_ed_end_city 1
 scoreboard players add @s HasAdvancements 1
-scoreboard players add @s TimeLimit 100
-scoreboard players add @s Second 100
+scoreboard players operation @s TimeLimit += #mad AddingTime
+scoreboard players operation @s Second += #mad AddingTime
 tellraw @s ["",{"translate":"chat.type.advancement.task","with":[{"selector":"@s"},{"translate":"[%s]","color":"green","with":[{"translate":"advancements.end.find_end_city.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"advancements.end.find_end_city.title"},{"translate":"advancements.end.find_end_city.description"}]}]}}]}]}]
