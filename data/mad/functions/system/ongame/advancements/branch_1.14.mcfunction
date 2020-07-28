@@ -8,4 +8,4 @@
 #####################################
 
 ## Detect version 1.14 advancements
-execute as @s[scores={AD_hb_break_hoe=0},advancements={minecraft:husbandry/break_diamond_hoe=true}] run function mad:system/ongame/advancements/husbandry/break_diamond_hoe
+execute as @a[team=Participant,scores={Phase=21,Death=0,AD_hb_break_hoe=0},advancements={minecraft:husbandry/break_diamond_hoe=true}] run function mad:system/ongame/advancements/husbandry/break_diamond_hoe

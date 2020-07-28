@@ -11,11 +11,11 @@
 gamerule announceAdvancements false
 
 ## Process timer system
-execute as @a[team=Participant,scores={Phase=21,Death=0}] run function mad:system/time/time
+function mad:system/time/time
 function mad:system/time/general_time
 
 ## Detect advancements
-execute as @a[team=Participant,scores={Phase=21,Death=0}] run function mad:system/ongame/detect_advancements
+function mad:system/ongame/detect_advancements
 
 ## Detect kill / death
 execute as @a[team=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run function mad:system/ongame/detect_kill
@@ -23,19 +23,14 @@ execute as @a[team=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run funct
 ## Detect death
 execute as @a[team=Participant,scores={Phase=21,Death=1}] run function mad:system/ongame/detect_death
 
-## Detect time over
-execute as @a[team=Participant,scores={Phase=21,Death=0,Second=..0,Tick=0}] run kill @s
+## Time over
+kill @a[team=Participant,scores={Phase=21,Death=0,Second=..0,Tick=0}]
 
-## Detect minecart landed
-execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] run function mad:system/ongame/minecart/detect_minecart_landed
+## Minecart
+execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame/minecart/main
 
-## Detect minecart
-execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s if entity @p[team=Participant,scores={Phase=21,Death=0},distance=..2] run function mad:system/ongame/minecart/explode_minecart
-
-## Detect player teleport to minecart
-execute as @a[gamemode=spectator,scores={TeleportMessage=1..}] run function mad:system/ongame/minecart/player_teleport
-scoreboard players set @a TeleportMessage 0
-scoreboard players enable @a TeleportMessage
+## Teleport player
+function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
 execute as @a[team=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame/transmitter/detect_transmitter

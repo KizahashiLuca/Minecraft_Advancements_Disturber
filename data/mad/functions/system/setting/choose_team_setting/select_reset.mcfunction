@@ -13,6 +13,8 @@ scoreboard players set #mad collisionRule 1
 scoreboard players set #mad VisibleName 0
 scoreboard players set #mad VisibleInvis 0
 scoreboard players set #mad VisibleDeath 0
+scoreboard players set #mad SetTeamManual 0
+scoreboard players set #mad TeamNumber 2
 
 ## Send messages
 function mad:system/setting/choose_team_setting/change_to

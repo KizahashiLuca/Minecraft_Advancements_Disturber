@@ -27,6 +27,7 @@ scoreboard objectives add NumAlive dummy
 scoreboard objectives add OnGround dummy
 ## Add scoreboards for area
 scoreboard objectives add 2 dummy
+scoreboard objectives add 100 dummy
 scoreboard objectives add PlusMinus dummy
 scoreboard objectives add 1_meter dummy
 scoreboard objectives add 10_meter dummy
@@ -50,11 +51,15 @@ scoreboard objectives add ThrowItem dummy
 scoreboard objectives add Select02 dummy
 scoreboard objectives add Select04 dummy
 scoreboard objectives add Select06 dummy
+scoreboard objectives add Select09 dummy
+scoreboard objectives add Select10 dummy
 scoreboard objectives add Select11 dummy
 scoreboard objectives add Select12 dummy
 scoreboard objectives add Select13 dummy
 scoreboard objectives add Select14 dummy
 scoreboard objectives add Select15 dummy
+scoreboard objectives add Select16 dummy
+scoreboard objectives add Select17 dummy
 scoreboard objectives add Select18 dummy
 scoreboard objectives add Select19 dummy
 scoreboard objectives add Select20 dummy
@@ -92,11 +97,15 @@ scoreboard objectives add collisionRule dummy
 scoreboard objectives add VisibleName dummy
 scoreboard objectives add VisibleInvis dummy
 scoreboard objectives add VisibleDeath dummy
+scoreboard objectives add SetTeamManual dummy
+scoreboard objectives add TeamNumber dummy
 scoreboard objectives add friendlyFirePrv dummy
 scoreboard objectives add collisionRulePrv dummy
 scoreboard objectives add VisibleNamePrv dummy
 scoreboard objectives add VisibleInvisPrv dummy
 scoreboard objectives add VisibleDeathPrv dummy
+scoreboard objectives add SetTeamManualPrv dummy
+scoreboard objectives add TeamNumberPrv dummy
 ## Add scoreboards for advancements
 scoreboard objectives add HasAdvancements dummy
 ## Add scoreboards for advancements - adventure
@@ -211,6 +220,7 @@ scoreboard players set #mad NumParticipant 0
 scoreboard players set #mad NumAlive 0
 ## Set scoreboards for area
 scoreboard players set #mad 2 2
+scoreboard players set #mad 100 100
 scoreboard players set #mad 1_meter 1
 scoreboard players set #mad 10_meter 10
 scoreboard players set #mad 100_meter 100
@@ -252,11 +262,15 @@ scoreboard players set #mad collisionRule 1
 scoreboard players set #mad VisibleName 0
 scoreboard players set #mad VisibleInvis 0
 scoreboard players set #mad VisibleDeath 0
+scoreboard players set #mad SetTeamManual 0
+scoreboard players set #mad TeamNumber 2
 scoreboard players set #mad friendlyFirePrv 1
 scoreboard players set #mad collisionRulePrv 1
 scoreboard players set #mad VisibleNamePrv 0
 scoreboard players set #mad VisibleInvisPrv 0
 scoreboard players set #mad VisibleDeathPrv 0
+scoreboard players set #mad SetTeamManualPrv 0
+scoreboard players set #mad TeamNumberPrv 2
 ## Set scoreboards for summons minecart
 scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 100
@@ -294,11 +308,15 @@ scoreboard players set @a ThrowItem 0
 scoreboard players set @a Select02 0
 scoreboard players set @a Select04 0
 scoreboard players set @a Select06 0
+scoreboard players set @a Select09 0
+scoreboard players set @a Select10 0
 scoreboard players set @a Select11 0
 scoreboard players set @a Select12 0
 scoreboard players set @a Select13 0
 scoreboard players set @a Select14 0
 scoreboard players set @a Select15 0
+scoreboard players set @a Select16 0
+scoreboard players set @a Select17 0
 scoreboard players set @a Select18 0
 scoreboard players set @a Select19 0
 scoreboard players set @a Select20 0

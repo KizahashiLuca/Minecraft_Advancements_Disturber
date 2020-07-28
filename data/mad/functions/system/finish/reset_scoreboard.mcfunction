@@ -27,6 +27,7 @@ scoreboard objectives remove NumAlive
 scoreboard objectives remove OnGround
 ## Remove scoreboards for area
 scoreboard objectives remove 2
+scoreboard objectives remove 100
 scoreboard objectives remove PlusMinus
 scoreboard objectives remove 1_meter
 scoreboard objectives remove 10_meter
@@ -50,11 +51,15 @@ scoreboard objectives remove ThrowItem
 scoreboard objectives remove Select02
 scoreboard objectives remove Select04
 scoreboard objectives remove Select06
+scoreboard objectives remove Select09
+scoreboard objectives remove Select10
 scoreboard objectives remove Select11
 scoreboard objectives remove Select12
 scoreboard objectives remove Select13
 scoreboard objectives remove Select14
 scoreboard objectives remove Select15
+scoreboard objectives remove Select16
+scoreboard objectives remove Select17
 scoreboard objectives remove Select18
 scoreboard objectives remove Select19
 scoreboard objectives remove Select20
@@ -92,11 +97,15 @@ scoreboard objectives remove collisionRule
 scoreboard objectives remove VisibleName
 scoreboard objectives remove VisibleInvis
 scoreboard objectives remove VisibleDeath
+scoreboard objectives remove SetTeamManual
+scoreboard objectives remove TeamNumber
 scoreboard objectives remove friendlyFirePrv
 scoreboard objectives remove collisionRulePrv
 scoreboard objectives remove VisibleNamePrv
 scoreboard objectives remove VisibleInvisPrv
 scoreboard objectives remove VisibleDeathPrv
+scoreboard objectives remove SetTeamManualPrv
+scoreboard objectives remove TeamNumberPrv
 ## Remove scoreboards for advancements
 scoreboard objectives remove HasAdvancements
 ## Remove scoreboards for advancements - adventure

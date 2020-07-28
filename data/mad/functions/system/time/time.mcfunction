@@ -8,8 +8,8 @@
 #####################################
 
 ## Calculate time every tick
-scoreboard players remove @s Tick 1
-scoreboard players set @s[scores={Tick=..-1}] Tick 19
+scoreboard players remove @a[team=Participant,scores={Phase=21,Death=0}] Tick 1
+scoreboard players set @a[team=Participant,scores={Phase=21,Death=0,Tick=..-1}] Tick 19
 
 ## Calculate time every second
-execute as @s[scores={Tick=0}] run function mad:system/time/second
+execute as @a[team=Participant,scores={Phase=21,Death=0,Tick=0}] run function mad:system/time/second

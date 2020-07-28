@@ -13,6 +13,8 @@ scoreboard players operation #mad collisionRulePrv = #mad collisionRule
 scoreboard players operation #mad VisibleNamePrv = #mad VisibleName
 scoreboard players operation #mad VisibleInvisPrv = #mad VisibleInvis
 scoreboard players operation #mad VisibleDeathPrv = #mad VisibleDeath
+scoreboard players operation #mad SetTeamManualPrv = #mad SetTeamManual
+scoreboard players operation #mad TeamNumberPrv = #mad TeamNumber
 
 ## Send messages
 function mad:system/setting/choose_team_setting/send_message

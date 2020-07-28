@@ -52,4 +52,5 @@ execute as @p[tag=Host,scores={Select24=1}] run function mad:system/setting/choo
 execute as @p[tag=Host,scores={Select26=1}] run function mad:system/setting/choose_team_setting/change_to
 execute as @p[tag=Host,scores={Select28=1}] run clear @a
 execute as @p[tag=Host,scores={Select28=1}] run function mad:stop
-execute as @p[tag=Host,scores={Select34=1}] run function mad:system/setting/choose_setting/send_message
+execute as @p[tag=Host,scores={Select34=1}] if score #mad SetTeamManual matches 0 run function mad:system/setting/choose_setting/send_message
+execute as @p[tag=Host,scores={Select34=1}] if score #mad SetTeamManual matches 1 run function mad:system/setting/choose_setting/send_message
