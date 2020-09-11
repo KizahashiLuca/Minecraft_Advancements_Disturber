@@ -34,38 +34,14 @@ execute as @p[tag=Host] at @s align x store result score #mad OriginX run data g
 execute as @p[tag=Host] at @s align y store result score #mad OriginY run data get entity @s Pos[1] 1.0
 execute as @p[tag=Host] at @s align z store result score #mad OriginZ run data get entity @s Pos[2] 1.0
 
-## Set world spawn
+## Summon world spawn
 execute as @p[tag=Host] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["WorldSpawn"],NoGravity:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute as @p[tag=Host] at @s run setworldspawn ~ ~ ~
-execute as @p[tag=Host] at @s run spawnpoint @a ~ ~ ~
 
-## Set world border
-execute as @p[tag=Host] at @s run worldborder center ~ ~
-execute if score #mad WorldBorder matches 0 run worldborder set 60000000
-execute if score #mad WorldBorder matches 100 run worldborder set 102
-execute if score #mad WorldBorder matches 200 run worldborder set 202
-execute if score #mad WorldBorder matches 300 run worldborder set 302
-execute if score #mad WorldBorder matches 400 run worldborder set 402
-execute if score #mad WorldBorder matches 500 run worldborder set 502
-execute if score #mad WorldBorder matches 600 run worldborder set 602
-execute if score #mad WorldBorder matches 700 run worldborder set 702
-execute if score #mad WorldBorder matches 800 run worldborder set 802
-execute if score #mad WorldBorder matches 900 run worldborder set 902
-execute if score #mad WorldBorder matches 1000 run worldborder set 1002
-execute if score #mad WorldBorder matches 1100 run worldborder set 1102
-execute if score #mad WorldBorder matches 1200 run worldborder set 1202
-execute if score #mad WorldBorder matches 1300 run worldborder set 1302
-execute if score #mad WorldBorder matches 1400 run worldborder set 1402
-execute if score #mad WorldBorder matches 1500 run worldborder set 1502
-execute if score #mad WorldBorder matches 1600 run worldborder set 1602
-execute if score #mad WorldBorder matches 1700 run worldborder set 1702
-execute if score #mad WorldBorder matches 1800 run worldborder set 1802
-execute if score #mad WorldBorder matches 1900 run worldborder set 1902
-execute if score #mad WorldBorder matches 2000 run worldborder set 2002
+## Set world spawn
+execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] run function mad:system/preparation/set_world_border
 
 ## Teleport
-scoreboard players operation #mad WorldBorder /= #mad 2
-execute if entity @p[tag=!Teleported] run function mad:system/preparation/random_teleport/main
+execute if entity @p[tag=!Teleported] run function mad:system/preparation/random_teleport
 
 ## Set time
 time set noon

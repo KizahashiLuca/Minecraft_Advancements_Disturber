@@ -51,7 +51,7 @@ execute if score #mad WorldBorder matches 2000 run scoreboard players set @p[tag
 
 ## Change to each phase
 execute as @p[tag=Host,scores={Select20=1}] run function mad:system/setting/choose_world_border/select_left_arrow
-execute as @p[tag=Host,scores={Select22=1}] run function mad:system/setting/choose_world_border/change_to
+execute as @p[tag=Host,scores={Select22=1}] run function mad:system/setting/choose_world_border/select_right_arrow
 execute as @p[tag=Host,scores={Select24=1}] run function mad:system/setting/choose_world_border/select_right_arrow
 execute as @p[tag=Host,scores={Select28=1}] run function mad:system/setting/choose_world_border/select_cancel
 execute as @p[tag=Host,scores={Select34=1}] run function mad:system/setting/choose_world_border/select_ok

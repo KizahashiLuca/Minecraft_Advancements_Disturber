@@ -26,13 +26,7 @@ scoreboard objectives add NumAlive dummy
 ## Add scoreboards for onground
 scoreboard objectives add OnGround dummy
 ## Add scoreboards for area
-scoreboard objectives add 2 dummy
 scoreboard objectives add 100 dummy
-scoreboard objectives add PlusMinus dummy
-scoreboard objectives add 1_meter dummy
-scoreboard objectives add 10_meter dummy
-scoreboard objectives add 100_meter dummy
-scoreboard objectives add 1000_meter dummy
 scoreboard objectives add OriginX dummy
 scoreboard objectives add OriginY dummy
 scoreboard objectives add OriginZ dummy
@@ -49,7 +43,9 @@ scoreboard objectives add RandomMultiplier dummy
 ## Add scoreboards for setting phase - common
 scoreboard objectives add ThrowItem dummy
 scoreboard objectives add Select02 dummy
+scoreboard objectives add Select03 dummy
 scoreboard objectives add Select04 dummy
+scoreboard objectives add Select05 dummy
 scoreboard objectives add Select06 dummy
 scoreboard objectives add Select09 dummy
 scoreboard objectives add Select10 dummy
@@ -219,12 +215,7 @@ scoreboard players set #mad Participant 0
 scoreboard players set #mad NumParticipant 0
 scoreboard players set #mad NumAlive 0
 ## Set scoreboards for area
-scoreboard players set #mad 2 2
 scoreboard players set #mad 100 100
-scoreboard players set #mad 1_meter 1
-scoreboard players set #mad 10_meter 10
-scoreboard players set #mad 100_meter 100
-scoreboard players set #mad 1000_meter 1000
 scoreboard players set #mad OriginX 0
 scoreboard players set #mad OriginY 63
 scoreboard players set #mad OriginZ 0
@@ -297,16 +288,13 @@ scoreboard players set @a NumAlive 0
 ## Set scoreboards for onground
 scoreboard players set @a OnGround 0
 ## Set scoreboards for area
-scoreboard players set @a PlusMinus 0
-scoreboard players set @a 1_meter 0
-scoreboard players set @a 10_meter 0
-scoreboard players set @a 100_meter 0
-scoreboard players set @a 1000_meter 0
 scoreboard players set @a SummonPosition 0
 ## Set scoreboards for setting phase - common
 scoreboard players set @a ThrowItem 0
 scoreboard players set @a Select02 0
+scoreboard players set @a Select03 0
 scoreboard players set @a Select04 0
+scoreboard players set @a Select05 0
 scoreboard players set @a Select06 0
 scoreboard players set @a Select09 0
 scoreboard players set @a Select10 0

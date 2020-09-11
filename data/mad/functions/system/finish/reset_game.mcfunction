@@ -15,7 +15,7 @@ tp @a @r[team=Participant,scores={Phase=21,Death=0}]
 
 ## Reset world border
 worldborder center 0 0
-worldborder set 60000002
+worldborder set 60000000
 
 ## Forceload remove
 forceload remove all
@@ -25,6 +25,11 @@ function mad:system/finish/reset_scoreboard
 
 ## Remove teams
 team remove Participant
+team remove TeamA
+team remove TeamB
+team remove TeamC
+team remove TeamD
+team remove TeamE
 
 ## Remove tags
 tag @a remove Host

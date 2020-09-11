@@ -28,11 +28,6 @@ scoreboard objectives remove OnGround
 ## Remove scoreboards for area
 scoreboard objectives remove 2
 scoreboard objectives remove 100
-scoreboard objectives remove PlusMinus
-scoreboard objectives remove 1_meter
-scoreboard objectives remove 10_meter
-scoreboard objectives remove 100_meter
-scoreboard objectives remove 1000_meter
 scoreboard objectives remove OriginX
 scoreboard objectives remove OriginY
 scoreboard objectives remove OriginZ
@@ -49,7 +44,9 @@ scoreboard objectives remove RandomMultiplier
 ## Remove scoreboards for setting phase - common
 scoreboard objectives remove ThrowItem
 scoreboard objectives remove Select02
+scoreboard objectives remove Select03
 scoreboard objectives remove Select04
+scoreboard objectives remove Select05
 scoreboard objectives remove Select06
 scoreboard objectives remove Select09
 scoreboard objectives remove Select10
