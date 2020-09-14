@@ -8,4 +8,4 @@
 #####################################
 
 ## Log in the mid of the game
-execute as @a[team=!Participant,gamemode=!spectator] run gamemode spectator @s
+execute as @a[team=!Participant,team=!TeamA,team=!TeamB,team=!TeamC,team=!TeamD,team=!TeamE,gamemode=!spectator] run gamemode spectator @s

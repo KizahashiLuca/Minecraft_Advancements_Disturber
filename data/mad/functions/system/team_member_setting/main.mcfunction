@@ -7,6 +7,14 @@
 ## Version   : α-0.3
 #####################################
 
+## Detect advancements
+execute as @a[advancements={mad:set_team/be_hit_by_team_a=true}] run function mad:system/team_member_setting/set_own_team_a
+execute as @a[advancements={mad:set_team/be_hit_by_team_b=true}] run function mad:system/team_member_setting/set_own_team_b
+execute as @a[advancements={mad:set_team/be_hit_by_team_c=true}] run function mad:system/team_member_setting/set_own_team_c
+execute as @a[advancements={mad:set_team/be_hit_by_team_d=true}] run function mad:system/team_member_setting/set_own_team_d
+execute as @a[advancements={mad:set_team/be_hit_by_team_e=true}] run function mad:system/team_member_setting/set_own_team_e
+advancement revoke @a everything
+
 ## Detect dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:pink_dye",tag:{display:{Name:'"\\u00A7r\\u00A7c赤チーム"'},HideFlags:39}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:light_blue_dye",tag:{display:{Name:'"\\u00A7r\\u00A79青チーム"'},HideFlags:39}}}] ThrowItem 1
@@ -68,11 +76,12 @@ execute as @p[tag=Host,scores={Select03=1}] run function mad:system/team_member_
 execute as @p[tag=Host,scores={Select04=1}] run function mad:system/team_member_setting/change_to
 execute as @p[tag=Host,scores={Select05=1}] run function mad:system/team_member_setting/change_to
 execute as @p[tag=Host,scores={Select06=1}] run function mad:system/team_member_setting/change_to
-execute as @p[tag=Host,scores={Select20=1}] run function mad:system/team_member_setting/set_team_a
-execute as @p[tag=Host,scores={Select21=1}] run function mad:system/team_member_setting/set_team_b
-execute as @p[tag=Host,scores={Select22=1}] run function mad:system/team_member_setting/set_team_c
-execute as @p[tag=Host,scores={Select23=1}] run function mad:system/team_member_setting/set_team_d
-execute as @p[tag=Host,scores={Select24=1}] run function mad:system/team_member_setting/set_team_e
-execute as @p[tag=Host,scores={Select28=1}] run function mad:system/team_member_setting/select_cancel
+execute as @p[tag=Host,scores={Select20=1}] run function mad:system/team_member_setting/set_own_team_a
+execute as @p[tag=Host,scores={Select21=1}] run function mad:system/team_member_setting/set_own_team_b
+execute as @p[tag=Host,scores={Select22=1}] run function mad:system/team_member_setting/set_own_team_c
+execute as @p[tag=Host,scores={Select23=1}] run function mad:system/team_member_setting/set_own_team_d
+execute as @p[tag=Host,scores={Select24=1}] run function mad:system/team_member_setting/set_own_team_e
+execute as @p[tag=Host,scores={Select28=1}] run clear @a
+execute as @p[tag=Host,scores={Select28=1}] run function mad:stop
 execute as @p[tag=Host,scores={Select31=1}] run function mad:system/team_member_setting/select_reset
-execute as @p[tag=Host,scores={Select34=1}] run function mad:system/team_member_setting/select_ok
+execute as @p[tag=Host,scores={Select34=1}] run function mad:system/preparation_team/change_to

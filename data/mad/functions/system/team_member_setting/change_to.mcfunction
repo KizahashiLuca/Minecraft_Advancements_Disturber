@@ -30,5 +30,9 @@ scoreboard players set @p[tag=Host] Select28 0
 scoreboard players set @p[tag=Host] Select31 0
 scoreboard players set @p[tag=Host] Select34 0
 
+## Set team
+execute if score #mad Phase matches 10 run team join TeamA @p[tag=Host]
+execute if score #mad Phase matches 10 run replaceitem entity @s armor.head minecraft:pink_dye
+
 ## Change phase
-scoreboard players set #mad Phase 16
+scoreboard players set #mad Phase 17

@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "be_hit_by_team_d": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "source_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "item": "minecraft:lime_dye"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["be_hit_by_team_d"]
+  ]
+}

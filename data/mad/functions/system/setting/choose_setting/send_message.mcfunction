@@ -24,4 +24,4 @@ tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a [""]
 
 ## Change to start
-function mad:system/preparation/change_to
+function mad:system/preparation_indivisual/change_to

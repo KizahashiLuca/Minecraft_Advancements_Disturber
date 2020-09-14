@@ -19,10 +19,14 @@ scoreboard objectives add ExitMessage trigger
 ## Add scoreboards for timer
 scoreboard objectives add Second dummy
 scoreboard objectives add Tick dummy
+scoreboard objectives add GeneralSecond dummy
+scoreboard objectives add GeneralTick dummy
+scoreboard objectives add SecondPerSurvive dummy
 ## Add scoreboards for participants
 scoreboard objectives add Participant dummy
 scoreboard objectives add NumParticipant dummy
 scoreboard objectives add NumAlive dummy
+scoreboard objectives add NumDead dummy
 ## Add scoreboards for onground
 scoreboard objectives add OnGround dummy
 ## Add scoreboards for area
@@ -204,6 +208,8 @@ scoreboard objectives add UseTransmitter trigger
 scoreboard objectives add TransmitterPosX dummy
 scoreboard objectives add TransmitterPosY dummy
 scoreboard objectives add TransmitterPosZ dummy
+## Add scoreboards for team
+scoreboard objectives add NumOfTeamPlayer dummy
 
 ## Set scoreboards for game phase
 scoreboard players set #mad Version 14
@@ -214,6 +220,7 @@ scoreboard players set #mad ExitMessage 0
 scoreboard players set #mad Participant 0
 scoreboard players set #mad NumParticipant 0
 scoreboard players set #mad NumAlive 0
+scoreboard players set #mad NumDead 0
 ## Set scoreboards for area
 scoreboard players set #mad 100 100
 scoreboard players set #mad OriginX 0
@@ -281,10 +288,14 @@ scoreboard players enable @a ExitMessage
 ## Set scoreboards for timer
 scoreboard players set @a Second 0
 scoreboard players set @a Tick 0
+scoreboard players set @a GeneralSecond 0
+scoreboard players set @a GeneralTick 0
+scoreboard players set @a SecondPerSurvive 0
 ## Set scoreboards for participants
 scoreboard players set @a Participant 0
 scoreboard players set @a NumParticipant 0
 scoreboard players set @a NumAlive 0
+scoreboard players set @a NumDead 0
 ## Set scoreboards for onground
 scoreboard players set @a OnGround 0
 ## Set scoreboards for area
@@ -416,6 +427,8 @@ scoreboard players enable @a UseTransmitter
 scoreboard players set @a TransmitterPosX 0
 scoreboard players set @a TransmitterPosY 0
 scoreboard players set @a TransmitterPosZ 0
+## Set scoreboards for team
+scoreboard players set @a NumOfTeamPlayer 0
 
 ## Random
 function mad:system/random_generator/initialize

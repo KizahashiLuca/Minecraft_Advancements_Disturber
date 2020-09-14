@@ -8,4 +8,4 @@
 #####################################
 
 ## Stop game
-execute if score #mad Phase matches 1..100 run function mad:system/finish/game_stop
+execute if score #mad Phase matches 1..100 run function mad:system/finish_indivisual/game_stop
