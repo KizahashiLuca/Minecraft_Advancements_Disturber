@@ -48,7 +48,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:10s}],Tags:[\"Minecart\"]}"
+                            "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:5s}],Tags:[\"Minecart\"]}"
                         }
                     ]
                 },

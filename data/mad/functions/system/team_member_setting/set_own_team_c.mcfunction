@@ -10,6 +10,6 @@
 ## Set own team c
 team join TeamC @s
 tellraw @s ["",{"text":"[チーム設定] あなたは ","color":"green"},{"text":"黄チーム","color":"yellow","bold":true},{"text":" に設定されました。","color":"green"}]
-replaceitem entity @s armor.head minecraft:yellow_dye
+replaceitem entity @s armor.head minecraft:yellow_dye{Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],HideFlags:39}
 
 function mad:system/team_member_setting/change_to

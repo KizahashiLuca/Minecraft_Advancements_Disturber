@@ -11,10 +11,10 @@
 scoreboard players set #mad Version 14
 
 ## Minecraft 1.15
-function mwj:system/setting/initial/detect_version/v15
+function mad:system/setting/initial/detect_version/v15
 
 ## Minecraft 1.16
-function mwj:system/setting/initial/detect_version/v16
+function mad:system/setting/initial/detect_version/v16
 
 ## Clear inventory
 replaceitem entity @p[tag=Host] inventory.0 minecraft:air

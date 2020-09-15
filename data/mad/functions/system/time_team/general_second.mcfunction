@@ -29,7 +29,7 @@ execute as @a[team=TeamB,scores={Phase=21,Death=0}] run scoreboard players add @
 execute as @a[team=TeamC,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamC,tag=Leader] NumOfTeamPlayer 1
 execute as @a[team=TeamD,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamD,tag=Leader] NumOfTeamPlayer 1
 execute as @a[team=TeamE,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamE,tag=Leader] NumOfTeamPlayer 1
-execute as @p[tag=Leader] run scoreboard players operation @s SecondPerSurvive /= @s NumOfTeamPlayer
+execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive /= @s NumOfTeamPlayer
 
 ## Summon minecart
 execute if score #mad Second = #mad SecondSummon run function mad:system/ongame_team/minecart/summon_minecart

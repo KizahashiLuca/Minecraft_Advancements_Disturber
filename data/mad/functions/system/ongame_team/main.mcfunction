@@ -24,11 +24,11 @@ execute as @a[tag=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run functi
 execute as @a[tag=Participant,scores={Phase=21,Death=1}] run function mad:system/ongame_team/detect_death
 
 ## Time over
-execute as @a[tag=Leader,scores={Second=..0},team=TeamA] run kill @a[team=TeamA]
-execute as @a[tag=Leader,scores={Second=..0},team=TeamB] run kill @a[team=TeamB]
-execute as @a[tag=Leader,scores={Second=..0},team=TeamC] run kill @a[team=TeamC]
-execute as @a[tag=Leader,scores={Second=..0},team=TeamD] run kill @a[team=TeamD]
-execute as @a[tag=Leader,scores={Second=..0},team=TeamE] run kill @a[team=TeamE]
+execute as @a[tag=Leader,scores={Second=..0},team=TeamA,gamemode=!spectator] run kill @a[team=TeamA]
+execute as @a[tag=Leader,scores={Second=..0},team=TeamB,gamemode=!spectator] run kill @a[team=TeamB]
+execute as @a[tag=Leader,scores={Second=..0},team=TeamC,gamemode=!spectator] run kill @a[team=TeamC]
+execute as @a[tag=Leader,scores={Second=..0},team=TeamD,gamemode=!spectator] run kill @a[team=TeamD]
+execute as @a[tag=Leader,scores={Second=..0},team=TeamE,gamemode=!spectator] run kill @a[team=TeamE]
 
 ## Minecart
 execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame_team/minecart/main

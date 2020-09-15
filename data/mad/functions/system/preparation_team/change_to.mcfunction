@@ -93,6 +93,12 @@ effect give @a[tag=Participant] minecraft:resistance 1000000 6 true
 effect give @a[tag=Participant] minecraft:slow_falling 1000000 3 true
 
 ## Set player number
+scoreboard players set #mad Participant 1
+scoreboard players set @a[team=Participant] Participant 0
+function mad:system/preparation_team/numbering
+tag @a[team=Participant] remove Numbered
+
+## Set player number
 tag @r[team=TeamA] add Leader
 tag @r[team=TeamB] add Leader
 tag @r[team=TeamC] add Leader
