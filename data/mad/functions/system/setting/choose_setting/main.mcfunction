@@ -53,5 +53,5 @@ execute as @p[tag=Host,scores={Select26=1}] run function mad:system/setting/choo
 execute as @p[tag=Host,scores={Select28=1}] run clear @a
 execute as @p[tag=Host,scores={Select28=1}] run function mad:stop
 execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 0 if score #mad SetTeamManual matches 0 run function mad:system/pre_preparation_indivisual/change_to
-execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 1 if score #mad SetTeamManual matches 0 run function mad:system/pre_preparation_indivisual/change_to
+execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 1 if score #mad SetTeamManual matches 0 run function mad:system/team_member_setting/random_member_set
 execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 1 if score #mad SetTeamManual matches 1 run function mad:system/team_member_setting/change_to

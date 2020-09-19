@@ -76,7 +76,7 @@ execute as @p[tag=Host,scores={Select24=1}] run function mad:system/team_member_
 execute as @p[tag=Host,scores={Select28=1}] run clear @a
 execute as @p[tag=Host,scores={Select28=1}] run function mad:stop
 execute as @p[tag=Host,scores={Select31=1}] run function mad:system/team_member_setting/select_reset
-execute as @p[tag=Host,scores={Select34=1}] run function mad:system/pre_preparation_team/change_to
+execute as @p[tag=Host,scores={Select34=1}] run function mad:system/team_member_setting/random_member_set
 
 ## Detect advancements
 execute as @a[advancements={mad:set_team/be_hit_by_team_a=true}] run function mad:system/team_member_setting/set_own_team_a
