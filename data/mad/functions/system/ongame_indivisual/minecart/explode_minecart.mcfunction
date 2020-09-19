@@ -17,6 +17,7 @@ scoreboard players set #mad RandomCount 10
 function mad:system/random_generator/randomizing
 scoreboard players operation #mad RandomAnswer %= #mad 100
 scoreboard players operation @p[team=Participant,scores={Phase=21,Death=0},distance=..2] Second += #mad RandomAnswer
+scoreboard players operation @p[team=Participant,scores={Phase=21,Death=0},distance=..2] TimeLimit += #mad RandomAnswer
 tellraw @p[team=Participant,scores={Phase=21,Death=0},distance=..2] ["",{"text":"[物資投下] ","color":"green"},{"selector":"@p[team=Participant,scores={Phase=21,Death=0},distance=..2]","color":"green","bold":true},{"text":"に","color":"green"},{"score":{"name":"#mad","objective":"RandomAnswer"},"color":"green"},{"text":"秒のボーナスタイムが付与されました。","color":"green"}]
 
 ## next summon decided

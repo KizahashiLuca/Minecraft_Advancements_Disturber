@@ -12,16 +12,7 @@ scoreboard players remove @s Second 1
 scoreboard players set @s[scores={Second=..-1}] Second 0
 
 ## Store time for bossbar
-execute as @s[scores={Participant=1..10}] run function mad:system/time_indivisual/participant/branch_10
-execute as @s[scores={Participant=11..20}] run function mad:system/time_indivisual/participant/branch_20
-execute as @s[scores={Participant=21..30}] run function mad:system/time_indivisual/participant/branch_30
-execute as @s[scores={Participant=31..40}] run function mad:system/time_indivisual/participant/branch_40
-execute as @s[scores={Participant=41..50}] run function mad:system/time_indivisual/participant/branch_50
-execute as @s[scores={Participant=51..60}] run function mad:system/time_indivisual/participant/branch_60
-execute as @s[scores={Participant=61..70}] run function mad:system/time_indivisual/participant/branch_70
-execute as @s[scores={Participant=71..80}] run function mad:system/time_indivisual/participant/branch_80
-execute as @s[scores={Participant=81..90}] run function mad:system/time_indivisual/participant/branch_90
-execute as @s[scores={Participant=91..100}] run function mad:system/time_indivisual/participant/branch_100
+function mad:system/time_indivisual/participant/branch
 
 ## Process the sound system
 playsound minecraft:item.trident.return master @s[scores={Second=4..10}] ~ ~ ~ 1 1 1

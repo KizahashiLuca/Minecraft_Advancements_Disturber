@@ -33,6 +33,7 @@ team remove TeamE
 
 ## Remove tags
 tag @a remove Host
+tag @a remove Leader
 tag @a remove Numbered
 tag @a remove Participant
 tag @a remove Teleporter

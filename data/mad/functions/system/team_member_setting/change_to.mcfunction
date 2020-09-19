@@ -10,6 +10,15 @@
 ## Clear inventory
 clear @p[tag=Host]
 
+## Count team
+scoreboard players set #mad TeamBoolean 0
+execute if score #mad TeamNumber matches 1.. unless entity @p[team=TeamA] run scoreboard players add #mad TeamBoolean 1
+execute if score #mad TeamNumber matches 2.. unless entity @p[team=TeamB] run scoreboard players add #mad TeamBoolean 1
+execute if score #mad TeamNumber matches 3.. unless entity @p[team=TeamC] run scoreboard players add #mad TeamBoolean 1
+execute if score #mad TeamNumber matches 4.. unless entity @p[team=TeamD] run scoreboard players add #mad TeamBoolean 1
+execute if score #mad TeamNumber matches 5.. unless entity @p[team=TeamE] run scoreboard players add #mad TeamBoolean 1
+execute if entity @p[team=Participant] run scoreboard players add #mad TeamBoolean 1
+
 ## Set inventory
 function mad:system/team_member_setting/set_inventory
 

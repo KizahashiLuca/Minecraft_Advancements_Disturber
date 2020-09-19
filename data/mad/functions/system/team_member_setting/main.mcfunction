@@ -7,14 +7,6 @@
 ## Version   : α-0.3
 #####################################
 
-## Detect advancements
-execute as @a[advancements={mad:set_team/be_hit_by_team_a=true}] run function mad:system/team_member_setting/set_own_team_a
-execute as @a[advancements={mad:set_team/be_hit_by_team_b=true}] run function mad:system/team_member_setting/set_own_team_b
-execute as @a[advancements={mad:set_team/be_hit_by_team_c=true}] run function mad:system/team_member_setting/set_own_team_c
-execute as @a[advancements={mad:set_team/be_hit_by_team_d=true}] run function mad:system/team_member_setting/set_own_team_d
-execute as @a[advancements={mad:set_team/be_hit_by_team_e=true}] run function mad:system/team_member_setting/set_own_team_e
-advancement revoke @a everything
-
 ## Detect dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:pink_dye",tag:{display:{Name:'"\\u00A7r\\u00A7c赤チーム"'},HideFlags:39}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:light_blue_dye",tag:{display:{Name:'"\\u00A7r\\u00A79青チーム"'},HideFlags:39}}}] ThrowItem 1
@@ -46,7 +38,7 @@ execute if score #mad TeamNumber matches 4.. run scoreboard players set @p[tag=H
 execute if score #mad TeamNumber matches 5.. run scoreboard players set @p[tag=Host] Select24 1
 scoreboard players set @p[tag=Host] Select28 1
 scoreboard players set @p[tag=Host] Select31 1
-scoreboard players set @p[tag=Host] Select34 1
+execute if score #mad TeamBoolean matches 0 run scoreboard players set @p[tag=Host] Select34 1
 
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:2b,id:"minecraft:pink_dye",tag:{display:{Name:'"\\u00A7r\\u00A7c赤チーム"'},HideFlags:39}}]}] Select02 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:3b,id:"minecraft:light_blue_dye",tag:{display:{Name:'"\\u00A7r\\u00A79青チーム"'},HideFlags:39}}]}] Select03 0
@@ -84,4 +76,12 @@ execute as @p[tag=Host,scores={Select24=1}] run function mad:system/team_member_
 execute as @p[tag=Host,scores={Select28=1}] run clear @a
 execute as @p[tag=Host,scores={Select28=1}] run function mad:stop
 execute as @p[tag=Host,scores={Select31=1}] run function mad:system/team_member_setting/select_reset
-execute as @p[tag=Host,scores={Select34=1}] run function mad:system/preparation_team/change_to
+execute as @p[tag=Host,scores={Select34=1}] run function mad:system/pre_preparation_team/change_to
+
+## Detect advancements
+execute as @a[advancements={mad:set_team/be_hit_by_team_a=true}] run function mad:system/team_member_setting/set_own_team_a
+execute as @a[advancements={mad:set_team/be_hit_by_team_b=true}] run function mad:system/team_member_setting/set_own_team_b
+execute as @a[advancements={mad:set_team/be_hit_by_team_c=true}] run function mad:system/team_member_setting/set_own_team_c
+execute as @a[advancements={mad:set_team/be_hit_by_team_d=true}] run function mad:system/team_member_setting/set_own_team_d
+execute as @a[advancements={mad:set_team/be_hit_by_team_e=true}] run function mad:system/team_member_setting/set_own_team_e
+advancement revoke @a everything

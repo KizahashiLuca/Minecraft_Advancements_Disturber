@@ -23,6 +23,16 @@ execute as @a[tag=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run functi
 ## Detect death
 execute as @a[tag=Participant,scores={Phase=21,Death=1}] run function mad:system/ongame_team/detect_death
 
+## Calculate time per players
+scoreboard players set @a[tag=Leader] NumOfTeamPlayer 0
+execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive = @s Second
+execute as @a[team=TeamA,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamA,tag=Leader] NumOfTeamPlayer 1
+execute as @a[team=TeamB,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamB,tag=Leader] NumOfTeamPlayer 1
+execute as @a[team=TeamC,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamC,tag=Leader] NumOfTeamPlayer 1
+execute as @a[team=TeamD,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamD,tag=Leader] NumOfTeamPlayer 1
+execute as @a[team=TeamE,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamE,tag=Leader] NumOfTeamPlayer 1
+execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive /= @s NumOfTeamPlayer
+
 ## Time over
 execute as @a[tag=Leader,scores={Second=..0},team=TeamA,gamemode=!spectator] run kill @a[team=TeamA]
 execute as @a[tag=Leader,scores={Second=..0},team=TeamB,gamemode=!spectator] run kill @a[team=TeamB]

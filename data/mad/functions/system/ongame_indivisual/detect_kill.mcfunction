@@ -12,6 +12,7 @@ tag @s add Killer
 
 ## Detect killed
 execute as @a[team=Participant,scores={Death=1}] run scoreboard players operation @p[team=Participant,tag=Killer] Second += @s Second
+execute as @a[team=Participant,scores={Death=1}] run scoreboard players operation @p[team=Participant,tag=Killer] TimeLimit += @s Second
 scoreboard players operation @p[team=Participant,tag=Killer] Kill += @p[team=Participant,tag=Killer] KillTemp
 scoreboard players set @p[team=Participant,tag=Killer] KillTemp 0
 

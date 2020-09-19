@@ -209,6 +209,7 @@ scoreboard objectives add TransmitterPosX dummy
 scoreboard objectives add TransmitterPosY dummy
 scoreboard objectives add TransmitterPosZ dummy
 ## Add scoreboards for team
+scoreboard objectives add TeamBoolean dummy
 scoreboard objectives add NumOfTeamPlayer dummy
 
 ## Set scoreboards for game phase
@@ -274,6 +275,8 @@ scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 100
 scoreboard players set #mad SecondEliminate 0
 scoreboard players set #mad SummonMinecart 0
+## Set scoreboards for team
+scoreboard players set #mad TeamBoolean 0
 
 ## Set scoreboards for game phase
 scoreboard players set @a Phase 0

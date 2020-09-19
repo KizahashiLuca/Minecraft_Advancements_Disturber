@@ -14,6 +14,7 @@ team join Participant @a[team=TeamC]
 team join Participant @a[team=TeamD]
 team join Participant @a[team=TeamE]
 
+clear @a
 team join TeamA @p[tag=Host]
 
 function mad:system/team_member_setting/change_to

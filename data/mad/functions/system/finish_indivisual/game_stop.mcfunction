@@ -10,5 +10,10 @@
 ## Send stop messages
 function mad:system/finish_indivisual/message_stop
 
+execute if score #mad NumAlive matches 0 run function mad:system/finish_indivisual/winner_none
+execute if score #mad NumAlive matches 1 run function mad:system/finish_indivisual/winner_detect
+
+function mad:system/finish_indivisual/statics
+
 ## Reset game
 function mad:system/finish_indivisual/reset_game
