@@ -18,4 +18,3 @@ tellraw @a ["",{"text":"  制作 : ","color":"green","bold":true},{"text":"Kizah
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ゲームを中断します。","color":"white"}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
-tellraw @a [""]

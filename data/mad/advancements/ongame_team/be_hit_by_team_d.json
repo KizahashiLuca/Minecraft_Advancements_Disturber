@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "be_hit_by_team_d": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "team": "TeamD"
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["be_hit_by_team_d"]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame_team/move_time/team_d"
+  }
+}

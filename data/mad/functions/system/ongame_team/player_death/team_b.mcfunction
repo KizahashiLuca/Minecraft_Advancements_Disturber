@@ -7,6 +7,7 @@
 ## Version   : α-0.3
 #####################################
 
-## Calculate killing player number
-scoreboard players operation @s Kill += @s KillTemp
-scoreboard players set @s KillTemp 0
+## Set scoreboard
+scoreboard players add #mad NumDead 1
+scoreboard players set #mad DeadTeamB 1
+scoreboard players set @p[team=TeamB,tag=Leader] Second 0

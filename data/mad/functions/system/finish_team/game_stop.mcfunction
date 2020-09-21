@@ -12,6 +12,7 @@ function mad:system/finish_team/message_stop
 
 execute if score #mad NumAlive matches 0 run function mad:system/finish_team/winner_none
 execute if score #mad NumAlive matches 1 run function mad:system/finish_team/winner_detect
+execute if score #mad NumAlive matches 2.. run function mad:system/finish_team/winner_none
 
 function mad:system/finish_team/statics
 

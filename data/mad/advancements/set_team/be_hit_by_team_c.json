@@ -20,5 +20,8 @@
   },
   "requirements": [
     ["be_hit_by_team_c"]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/team_member_setting/set_own_team_c"
+  }
 }

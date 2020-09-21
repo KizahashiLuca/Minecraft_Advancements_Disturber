@@ -8,6 +8,7 @@
 #####################################
 
 ## Remove bossbar
+execute as @a[team=Participant] run function mad:system/finish_indivisual/bossbar_remove
 function mad:system/finish_team/bossbar_remove
 
 ## Teleport

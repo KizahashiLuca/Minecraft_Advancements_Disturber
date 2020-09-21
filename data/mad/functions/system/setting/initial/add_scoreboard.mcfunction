@@ -76,6 +76,7 @@ scoreboard objectives add Selected dummy
 ## Add scoreboards for setting phase - choose time limit
 scoreboard objectives add TimeLimit dummy
 scoreboard objectives add TimeLimitPrv dummy
+scoreboard objectives add GetTimeLimit dummy
 ## Add scoreboards for setting phase - choose area
 scoreboard objectives add WorldBorder dummy
 scoreboard objectives add WorldBorderPrv dummy
@@ -210,6 +211,11 @@ scoreboard objectives add TransmitterPosY dummy
 scoreboard objectives add TransmitterPosZ dummy
 ## Add scoreboards for team
 scoreboard objectives add TeamBoolean dummy
+scoreboard objectives add DeadTeamA dummy
+scoreboard objectives add DeadTeamB dummy
+scoreboard objectives add DeadTeamC dummy
+scoreboard objectives add DeadTeamD dummy
+scoreboard objectives add DeadTeamE dummy
 scoreboard objectives add NumOfTeamPlayer dummy
 
 ## Set scoreboards for game phase
@@ -277,6 +283,11 @@ scoreboard players set #mad SecondEliminate 0
 scoreboard players set #mad SummonMinecart 0
 ## Set scoreboards for team
 scoreboard players set #mad TeamBoolean 0
+scoreboard players set #mad DeadTeamA 0
+scoreboard players set #mad DeadTeamB 0
+scoreboard players set #mad DeadTeamC 0
+scoreboard players set #mad DeadTeamD 0
+scoreboard players set #mad DeadTeamE 0
 
 ## Set scoreboards for game phase
 scoreboard players set @a Phase 0

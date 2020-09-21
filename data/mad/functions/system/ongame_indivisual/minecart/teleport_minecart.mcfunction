@@ -29,7 +29,7 @@ execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] if score 
 execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] if score #mad WorldBorder matches 1800 run spreadplayers ~ ~ 0 900 true @s
 execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] if score #mad WorldBorder matches 1900 run spreadplayers ~ ~ 0 950 true @s
 execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] if score #mad WorldBorder matches 2000 run spreadplayers ~ ~ 0 1000 true @s
-execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] run tp @s ~ 160 ~
+execute at @e[type=minecraft:area_effect_cloud,tag=Minecart,limit=1] run tp @s ~ 160 ~
 
 ## Detect air  
 execute at @s if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air run tag @s add Teleported

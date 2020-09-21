@@ -211,6 +211,11 @@ scoreboard objectives remove TransmitterPosY
 scoreboard objectives remove TransmitterPosZ
 ## Remove scoreboards for team
 scoreboard objectives remove TeamBoolean
+scoreboard objectives remove DeadTeamA
+scoreboard objectives remove DeadTeamB
+scoreboard objectives remove DeadTeamC
+scoreboard objectives remove DeadTeamD
+scoreboard objectives remove DeadTeamE
 scoreboard objectives remove NumOfTeamPlayer
 
 ## Remove players

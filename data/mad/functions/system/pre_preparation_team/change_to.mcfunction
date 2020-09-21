@@ -81,11 +81,18 @@ scoreboard players set #mad Second 10
 scoreboard players set @a[tag=Leader] Tick 0
 scoreboard players operation @a[tag=Leader] TimeLimit = #mad TimeLimit
 scoreboard players operation @a[tag=Leader] Second = #mad TimeLimit
+scoreboard players set @a[tag=Leader] GetTimeLimit 0
 scoreboard players set @a OnGround 0
 scoreboard players set @a Death 0
 scoreboard players set @a SpawnTime 0
 scoreboard players set @a Kill 0
 scoreboard players set @a KillTemp 0
+
+scoreboard players set #mad DeadTeamA 0
+scoreboard players set #mad DeadTeamB 0
+scoreboard players set #mad DeadTeamC 0
+scoreboard players set #mad DeadTeamD 0
+scoreboard players set #mad DeadTeamE 0
 
 ## Set bossbar
 function mad:system/pre_preparation_team/set_bossbar

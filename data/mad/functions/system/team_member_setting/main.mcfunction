@@ -79,9 +79,9 @@ execute as @p[tag=Host,scores={Select31=1}] run function mad:system/team_member_
 execute as @p[tag=Host,scores={Select34=1}] run function mad:system/team_member_setting/random_member_set
 
 ## Detect advancements
-execute as @a[advancements={mad:set_team/be_hit_by_team_a=true}] run function mad:system/team_member_setting/set_own_team_a
-execute as @a[advancements={mad:set_team/be_hit_by_team_b=true}] run function mad:system/team_member_setting/set_own_team_b
-execute as @a[advancements={mad:set_team/be_hit_by_team_c=true}] run function mad:system/team_member_setting/set_own_team_c
-execute as @a[advancements={mad:set_team/be_hit_by_team_d=true}] run function mad:system/team_member_setting/set_own_team_d
-execute as @a[advancements={mad:set_team/be_hit_by_team_e=true}] run function mad:system/team_member_setting/set_own_team_e
-advancement revoke @a everything
+#execute as @a[advancements={mad:set_team/be_hit_by_team_a=true}] run function mad:system/team_member_setting/set_own_team_a
+#execute as @a[advancements={mad:set_team/be_hit_by_team_b=true}] run function mad:system/team_member_setting/set_own_team_b
+#execute as @a[advancements={mad:set_team/be_hit_by_team_c=true}] run function mad:system/team_member_setting/set_own_team_c
+#execute as @a[advancements={mad:set_team/be_hit_by_team_d=true}] run function mad:system/team_member_setting/set_own_team_d
+#execute as @a[advancements={mad:set_team/be_hit_by_team_e=true}] run function mad:system/team_member_setting/set_own_team_e
+#advancement revoke @a everything

@@ -24,9 +24,9 @@ clear @a[team=Participant]
 effect clear @a[team=Participant]
 
 ## Give items
-give @a[team=Participant] minecraft:stone_sword
-give @a[team=Participant] minecraft:stone_axe
-give @a[team=Participant] minecraft:stone_shovel
+give @a[team=Participant] minecraft:golden_pickaxe
+give @a[team=Participant] minecraft:golden_axe
+give @a[team=Participant] minecraft:golden_shovel
 
 ## Minecart
 scoreboard players set #mad SecondSummon 100

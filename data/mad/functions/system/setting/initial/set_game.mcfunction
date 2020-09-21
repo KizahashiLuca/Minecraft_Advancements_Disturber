@@ -7,6 +7,9 @@
 ## Version   : α-0.3
 #####################################
 
+## Scoreboard
+function mad:system/finish_indivisual/reset_game
+
 ## Set gamerule
 gamemode adventure @a[gamemode=!spectator]
 gamerule doLimitedCrafting true

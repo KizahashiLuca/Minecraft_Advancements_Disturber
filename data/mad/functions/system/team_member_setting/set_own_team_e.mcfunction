@@ -12,4 +12,6 @@ team join TeamE @s
 tellraw @s ["",{"text":"[チーム設定] あなたは ","color":"green"},{"text":"紫チーム","color":"dark_purple","bold":true},{"text":" に設定されました。","color":"green"}]
 replaceitem entity @s armor.head minecraft:purple_dye{Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],HideFlags:39} 1
 
+advancement revoke @s only mad:set_team/be_hit_by_team_e
+
 function mad:system/team_member_setting/change_to
