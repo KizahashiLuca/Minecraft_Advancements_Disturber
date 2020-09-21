@@ -19,6 +19,7 @@ function mad:system/ongame_team/detect_advancements
 
 ## Detect kill / death
 execute as @a[tag=Participant,scores={KillTemp=1..}] run function mad:system/ongame_team/detect_kill
+execute as @a[tag=Participant,scores={Phase=21,Death=1}] run function mad:system/ongame_team/detect_death
 
 ## Calculate time per players
 scoreboard players set @a[tag=Leader] NumOfTeamPlayer 0
