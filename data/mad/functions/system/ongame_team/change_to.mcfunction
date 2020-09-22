@@ -41,5 +41,7 @@ scoreboard players operation #mad NumAlive = #mad TeamNumber
 scoreboard players set #mad NumDead 0
 scoreboard players set @a[tag=Participant] Phase 21
 
+scoreboard players set @a Sneak 0
+
 ## Change phase
 scoreboard players set #mad Phase 21

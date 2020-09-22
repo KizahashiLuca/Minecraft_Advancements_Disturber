@@ -77,6 +77,7 @@ scoreboard objectives remove Selected
 ## Remove scoreboards for setting phase - choose time limit
 scoreboard objectives remove TimeLimit
 scoreboard objectives remove TimeLimitPrv
+scoreboard objectives remove GetTimeLimit
 ## Remove scoreboards for setting phase - choose area
 scoreboard objectives remove WorldBorder
 scoreboard objectives remove WorldBorderPrv
