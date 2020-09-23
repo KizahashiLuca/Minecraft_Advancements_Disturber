@@ -17,17 +17,17 @@ execute as @s[scores={TurnPageLeft=1,NumRespawnBeacon=1..}] run function mad:sys
 execute as @s[scores={TurnPageRight=1,NumRespawnBeacon=0}] run function mad:system/ongame_team/respawn_beacon/message_error
 execute as @s[scores={TurnPageLeft=1,NumRespawnBeacon=0}] run function mad:system/ongame_team/respawn_beacon/message_error
 
-## Send a Result to Fake Seer
+## Send a Result to respawn beacon
 execute as @s[scores={RespawnTrigger=1..10,NumRespawnBeacon=1..}] run function mad:system/ongame_team/respawn_beacon/calculation
 execute as @s[scores={RespawnTrigger=1..10,NumRespawnBeacon=0}] run function mad:system/ongame_team/respawn_beacon/message_error
 
-## Send a Result Message to Fake Seer
+## Send a Result Message to respawn beacon
 execute as @a[tag=Participant] if score @p[scores={NumRespawnBeacon=1..,Role=1}] TargetOfRespawn = @s NumOfRespawn run function mad:system/ongame_team/respawn_beacon/result
 
 ## Reset Scoreboard
 scoreboard players reset @s Role
 
-## Enable Fake Seer Trigger
+## Enable respawn beacon Trigger
 scoreboard players reset @s TurnPageRight
 scoreboard players reset @s TurnPageLeft
 scoreboard players reset @s RespawnTrigger

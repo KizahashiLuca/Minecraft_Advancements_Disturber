@@ -23,8 +23,7 @@ tag @a[tag=RespawnTeam] remove Numbered
 
 ## Setblock
 fill ~-1 ~ ~-1 ~1 ~2 ~1 minecraft:air
-setblock ~ ~ ~ minecraft:observer[facing=up]
-setblock ~ ~1 ~ minecraft:observer[facing=down]
+function mad:system/ongame_team/respawn_beacon/set_beacon
 
 ## Set scoreboard
 scoreboard players operation @s TurnPageMax = @p[tag=RespawnTeam,tag=Leader] NumDead
