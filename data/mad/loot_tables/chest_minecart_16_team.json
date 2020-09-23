@@ -39,7 +39,7 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "minecraft:oak_sign",
+                    "name": "minecraft:armor_stand",
                     "functions": [
                         {
                             "function":"minecraft:set_name",
@@ -48,7 +48,7 @@
                             ]
                         },{
                             "function":"minecraft:set_nbt",
-                            "tag": "{BlockEntityTag:{Text1:'[{\"text\":\"リスポーンビーコン\",\"color\":\"light_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger UseRespawnBeacon set 1\"}}]',Text3:'[{\"text\":\"クリックして、\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/setblock ~ ~ ~ minecraft:air\"}}]',Text4:'[{\"text\":\"復活者を選択\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[\\\\\"RespawnBeacon\\\\\"],NoGravity:1b,Particle:\\\\\"block minecraft:air\\\\\",Radius:0.5f,Duration:2147483647}\"}}]'},Tags:[\"Minecart\"]}"
+                            "tag": "{EntityTag:{NoGravity:1b,Invulnerable:1b,CustomName:'{\"text\":\"リスポーンビーコン\"}'},Tags:[\"Minecart\"]}"
                         }
                     ]
                 },

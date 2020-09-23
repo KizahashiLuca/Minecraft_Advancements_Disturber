@@ -210,7 +210,7 @@ scoreboard objectives add TransmitterPosX dummy
 scoreboard objectives add TransmitterPosY dummy
 scoreboard objectives add TransmitterPosZ dummy
 ## Add scoreboards for respawn beacon
-scoreboard objectives add UseRespawnBeacon trigger
+scoreboard objectives add UseRespawnBeacon minecraft.used:minecraft.armor_stand
 scoreboard objectives add NumRespawnBeacon dummy
 scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add Role dummy

@@ -11,7 +11,7 @@ tellraw @p[scores={NumRespawnBeacon=1..,Role=1}] ["",{"text":"\n----------------
 tellraw @p[scores={NumRespawnBeacon=1..,Role=1}] ["",{"text":"リスポーンビーコン 起動","color":"white","bold":true}]
 
 ## Send a Message that Suspect is always White
-tellraw @p[scores={NumRespawnBeacon=1..,Role=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","bold":true}]
+tellraw @p[scores={NumRespawnBeacon=1..,Role=1}] ["",{"text":"    対象者 : ","color":"white"},{"selector":"@s","bold":true}]
 
 ## Send a Common Message
 tellraw @p[scores={NumRespawnBeacon=1..,Role=1}] ["",{"text":"----------------------------------\n","color":"white"}]

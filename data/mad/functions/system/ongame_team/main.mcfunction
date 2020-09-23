@@ -14,9 +14,10 @@ gamerule announceAdvancements false
 function mad:system/time_team/time
 function mad:system/time_team/general_time
 
-execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s if entity @p[scores={Sneak=1..},distance=..1.5] run function mad:system/ongame_team/respawn_beacon/time/tick
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s if entity @p[scores={Phase=21,Death=0,Sneak=1..},distance=..1.5] run function mad:system/ongame_team/respawn_beacon/time/tick
 scoreboard players set @a Sneak 0
 execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s run function mad:system/ongame_team/respawn_beacon/set_beacon
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s run function mad:system/ongame_team/respawn_beacon/send_gauge
 
 ## Detect advancements
 function mad:system/ongame_team/detect_advancements
@@ -58,8 +59,9 @@ function mad:system/ongame_team/teleport_player/main
 ## Detect transmitter
 execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame_team/transmitter/detect_transmitter
 
-## Detect transmitter
-execute as @a[tag=Participant,scores={Phase=21,Death=0,UseRespawnBeacon=1..}] run function mad:system/ongame_team/respawn_beacon/detect_respawn_beacon
+## Detect respawn beacon
+execute as @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンビーコン"}'}] at @s run function mad:system/ongame_team/respawn_beacon/detect_respawn_beacon
+execute as @a[tag=Participant,scores={Phase=21,Death=0,UseRespawnBeacon=1..}] run function mad:system/ongame_team/respawn_beacon/settle_respawn_beacon
 execute as @a[tag=Participant,scores={NumRespawnBeacon=1..}] run function mad:system/ongame_team/respawn_beacon/main
 
 ## Game Finish

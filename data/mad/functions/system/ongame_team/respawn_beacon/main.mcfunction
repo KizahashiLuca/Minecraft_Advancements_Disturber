@@ -36,4 +36,4 @@ scoreboard players enable @s TurnPageLeft
 scoreboard players enable @s RespawnTrigger
 
 ## Death
-scoreboard players set @s[scores={Phase=22,Death=1..2}] NumRespawnBeacon 0
+scoreboard players set @s[scores={Phase=22,Death=1..3}] NumRespawnBeacon 0

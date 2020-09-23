@@ -49,11 +49,13 @@ experience set @a 0 levels
 experience set @a 0 points
 
 ## Reset world
+execute at @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:observer
 kill @e[type=minecraft:chest_minecart,tag=Minecart]
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
+kill @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンビーコン"}'}]
 
 ## Reset time
 time set noon

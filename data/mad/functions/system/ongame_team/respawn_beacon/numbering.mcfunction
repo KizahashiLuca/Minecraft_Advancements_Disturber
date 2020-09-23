@@ -8,8 +8,8 @@
 #####################################
 
 ## Number the players
-scoreboard players operation @r[tag=RespawnTeam,scores={Phase=22,Death=1..2},tag=!Numbered] NumOfRespawn = #mad NumOfRespawn
-execute as @a[tag=RespawnTeam,scores={Phase=22,Death=1..2},tag=!Numbered] if score @s NumOfRespawn = #mad NumOfRespawn run tag @s add Numbered
+scoreboard players operation @r[tag=RespawnTeam,scores={Phase=22,Death=1..3},tag=!Numbered] NumOfRespawn = #mad NumOfRespawn
+execute as @a[tag=RespawnTeam,scores={Phase=22,Death=1..3},tag=!Numbered] if score @s NumOfRespawn = #mad NumOfRespawn run tag @s add Numbered
 
 ## Loop
 scoreboard players add #mad NumOfRespawn 1
