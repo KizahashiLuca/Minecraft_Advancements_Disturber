@@ -11,3 +11,4 @@
 gamemode spectator @s
 scoreboard players set @s Death 2
 scoreboard players set @s Phase 22
+tag @s add NotSetPlayerResBeacon

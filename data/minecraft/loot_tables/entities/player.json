@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:entity",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:structure_void",
+          "functions": [
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"selector":"@s"},{"text":"のリスポーンコイン"}]
+              ],
+              "entity": "this"
+            },{
+              "function":"minecraft:set_nbt",
+              "tag": "{Tags:[\"RespawnCoinByDead\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

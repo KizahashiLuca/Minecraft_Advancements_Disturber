@@ -8,7 +8,7 @@
 #####################################
 
 ## Scoreboard
-function mad:system/finish_indivisual/reset_game
+function mad:system/finish_individual/reset_game
 
 ## Set gamerule
 gamemode adventure @a[gamemode=!spectator]
@@ -115,4 +115,4 @@ execute if entity @p[tag=MADtest] run scoreboard players set #mad NumParticipant
 
 ## Send messages
 execute if score #mad NumParticipant matches 1..100 run function mad:system/setting/initial/send_message
-execute if score #mad NumParticipant matches 101.. run function mad:system/finish_indivisual/game_short
+execute if score #mad NumParticipant matches 101.. run function mad:system/finish_individual/game_short

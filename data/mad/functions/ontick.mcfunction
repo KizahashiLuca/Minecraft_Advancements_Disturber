@@ -11,9 +11,9 @@
 execute if score #mad Phase matches 1..100 run function mad:system/midgame
 
 ## ongame main
-execute if score #mad Phase matches 21..22 if score #mad IsTeam matches 0 run function mad:system/ongame_indivisual/main
-execute if score #mad Phase matches 20 if score #mad IsTeam matches 0 run function mad:system/preparation_indivisual/main
-execute if score #mad Phase matches 19 if score #mad IsTeam matches 0 run function mad:system/pre_preparation_indivisual/main
+execute if score #mad Phase matches 21..22 if score #mad IsTeam matches 0 run function mad:system/ongame_individual/main
+execute if score #mad Phase matches 20 if score #mad IsTeam matches 0 run function mad:system/preparation_individual/main
+execute if score #mad Phase matches 19 if score #mad IsTeam matches 0 run function mad:system/pre_preparation_individual/main
 execute if score #mad Phase matches 21..22 if score #mad IsTeam matches 1 run function mad:system/ongame_team/main
 execute if score #mad Phase matches 20 if score #mad IsTeam matches 1 run function mad:system/preparation_team/main
 execute if score #mad Phase matches 19 if score #mad IsTeam matches 1 run function mad:system/pre_preparation_team/main

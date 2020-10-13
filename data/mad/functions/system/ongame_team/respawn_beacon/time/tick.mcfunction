@@ -7,9 +7,14 @@
 ## Version   : α-0.3
 #####################################
 
+## Add a tag
+tag @s add RespawnBeaconTick
+
 ## Calculate time every tick
-scoreboard players remove @s Tick 1
-scoreboard players set @s[scores={Tick=..-1}] Tick 19
+execute as @a[scores={Phase=21,Death=0,Sneak=1..},distance=..1.5] run scoreboard players remove @e[tag=RespawnBeaconTick] Tick 1
+scoreboard players set @s[tag=RespawnBeaconTick,scores={Tick=..-1}] Tick 19
 
 ## Calculate time every second
 execute as @s[scores={Tick=0}] run function mad:system/ongame_team/respawn_beacon/time/second
+
+tag @s remove RespawnBeaconTick

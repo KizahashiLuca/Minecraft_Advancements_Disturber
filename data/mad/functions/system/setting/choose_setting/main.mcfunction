@@ -8,16 +8,7 @@
 #####################################
 
 ## Detect dropping
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin",tag:{display:{Name:'"\\u00A7r\\u00A7f個人戦"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:jack_o_lantern",tag:{display:{Name:'"\\u00A7r\\u00A7fチーム戦"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:clock",tag:{display:{Name:'"\\u00A7r\\u00A7f初期時間制限設定"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_sword",tag:{display:{Name:'"\\u00A7r\\u00A7f難易度設定"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7fワールドボーダー設定"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:writable_book",tag:{display:{Name:'"\\u00A7r\\u00A7fゲームルール設定"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:emerald",tag:{display:{Name:'"\\u00A7r\\u00A7f追加時間設定"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:phantom_membrane",tag:{display:{Name:'"\\u00A7r\\u00A7fチーム戦設定"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:'"\\u00A7r\\u00A7dゲームキャンセル"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7bゲームスタート"'},HideFlags:39}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MADsetting"]}}}] ThrowItem 1
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mad:system/setting/choose_setting/drop
 
 ## Detect inventory
@@ -31,16 +22,18 @@ execute if score #mad IsTeam matches 1 run scoreboard players set @p[tag=Host] S
 scoreboard players set @p[tag=Host] Select28 1
 scoreboard players set @p[tag=Host] Select34 1
 
-execute if score #mad IsTeam matches 0 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:carved_pumpkin",tag:{display:{Name:'"\\u00A7r\\u00A7f個人戦"'},HideFlags:39}}]}] Select13 0
-execute if score #mad IsTeam matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:jack_o_lantern",tag:{display:{Name:'"\\u00A7r\\u00A7fチーム戦"'},HideFlags:39}}]}] Select13 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:clock",tag:{display:{Name:'"\\u00A7r\\u00A7f初期時間制限設定"'},HideFlags:39}}]}] Select20 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:iron_sword",tag:{display:{Name:'"\\u00A7r\\u00A7f難易度設定"'},HideFlags:39}}]}] Select21 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7fワールドボーダー設定"'},HideFlags:39}}]}] Select22 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:writable_book",tag:{display:{Name:'"\\u00A7r\\u00A7fゲームルール設定"'},HideFlags:39}}]}] Select23 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:emerald",tag:{display:{Name:'"\\u00A7r\\u00A7f追加時間設定"'},HideFlags:39}}]}] Select24 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:26b,id:"minecraft:phantom_membrane",tag:{display:{Name:'"\\u00A7r\\u00A7fチーム戦設定"'},HideFlags:39}}]}] Select26 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:'"\\u00A7r\\u00A7dゲームキャンセル"'},HideFlags:39}}]}] Select28 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7bゲームスタート"'},HideFlags:39}}]}] Select34 0
+execute if score #mad IsTeam matches 0 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:carved_pumpkin",tag:{Tags:["MADsetting","is_individual"]}}]}] Select13 0
+execute if score #mad IsTeam matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:jack_o_lantern",tag:{Tags:["MADsetting","is_team"]}}]}] Select13 0
+
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:clock",tag:{Tags:["MADsetting","choose_initial_time"]}}]}] Select20 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:iron_sword",tag:{Tags:["MADsetting","choose_difficulty"]}}]}] Select21 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:map",tag:{Tags:["MADsetting","choose_world_border"]}}]}] Select22 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:writable_book",tag:{Tags:["MADsetting","choose_gamerule"]}}]}] Select23 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:emerald",tag:{Tags:["MADsetting","choose_adding_time"]}}]}] Select24 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:26b,id:"minecraft:phantom_membrane",tag:{Tags:["MADsetting","choose_team_setting"]}}]}] Select26 0
+
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{Tags:["MADsetting","cancel_game"]}}]}] Select28 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{Tags:["MADsetting","start_game"]}}]}] Select34 0
 
 ## Change to each phase
 execute as @p[tag=Host,scores={Select13=1}] run function mad:system/setting/choose_setting/change_competition
@@ -52,6 +45,6 @@ execute as @p[tag=Host,scores={Select24=1}] run function mad:system/setting/choo
 execute as @p[tag=Host,scores={Select26=1}] run function mad:system/setting/choose_team_setting/change_to
 execute as @p[tag=Host,scores={Select28=1}] run clear @a
 execute as @p[tag=Host,scores={Select28=1}] run function mad:stop
-execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 0 if score #mad SetTeamManual matches 0 run function mad:system/pre_preparation_indivisual/change_to
+execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 0 if score #mad SetTeamManual matches 0 run function mad:system/pre_preparation_individual/change_to
 execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 1 if score #mad SetTeamManual matches 0 run function mad:system/team_member_setting/random_member_set
 execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 1 if score #mad SetTeamManual matches 1 run function mad:system/team_member_setting/change_to

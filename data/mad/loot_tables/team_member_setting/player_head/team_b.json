@@ -1,0 +1,28 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:light_blue_dye",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"青チーム","color":"blue","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"team_b\",\"player_head\"]}"
+            },{
+              "function": "minecraft:enchant_randomly",
+              "enchantments": ["minecraft:binding_curse"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

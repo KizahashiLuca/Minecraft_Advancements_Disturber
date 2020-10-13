@@ -1,0 +1,27 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function":"minecraft:set_name",
+              "name": [
+              ["",{"text":"栄養ドリンク","color":"light_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:10,Amplifier:3,Duration:1200},{Id:23,Amplifier:20,Duration:1200},{Id:1,Amplifier:0,Duration:1200},{Id:3,Amplifier:0,Duration:1200}],CustomPotionColor:3470848}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

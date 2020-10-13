@@ -8,14 +8,14 @@
 #####################################
 
 ## Set inventory
-replaceitem entity @p[tag=Host] inventory.12 minecraft:tube_coral_fan{display:{Name:'"\\u00A7r\\u00A7f天気サイクル"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.14 minecraft:fire_coral_fan{display:{Name:'"\\u00A7r\\u00A7f昼夜サイクル"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:'"\\u00A7r\\u00A7dキャンセル"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.22 minecraft:map{display:{Name:'"\\u00A7r\\u00A7eリセット"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39} 1
+loot replace entity @p[tag=Host] inventory.12 loot mad:setting/choose_gamerule/weather_cycle
+loot replace entity @p[tag=Host] inventory.14 loot mad:setting/choose_gamerule/daylight_cycle
+loot replace entity @p[tag=Host] inventory.19 loot mad:setting/common/cancel
+loot replace entity @p[tag=Host] inventory.22 loot mad:setting/common/reset
+loot replace entity @p[tag=Host] inventory.25 loot mad:setting/common/determine
 
 ## Set nether_star above selected time limit
-execute if score #mad WeatherCycle matches 0 run replaceitem entity @p[tag=Host] inventory.3 minecraft:redstone_lamp{display:{Name:'"\\u00A7r\\u00A7fOFF"'},HideFlags:39} 1
-execute if score #mad DaylightCycle matches 0 run replaceitem entity @p[tag=Host] inventory.5 minecraft:redstone_lamp{display:{Name:'"\\u00A7r\\u00A7fOFF"'},HideFlags:39} 1
-execute if score #mad WeatherCycle matches 1 run replaceitem entity @p[tag=Host] inventory.3 minecraft:glowstone{display:{Name:'"\\u00A7r\\u00A7fON"'},HideFlags:39} 1
-execute if score #mad DaylightCycle matches 1 run replaceitem entity @p[tag=Host] inventory.5 minecraft:glowstone{display:{Name:'"\\u00A7r\\u00A7fON"'},HideFlags:39} 1
+execute if score #mad WeatherCycle matches 0 run loot replace entity @p[tag=Host] inventory.3 loot mad:setting/common/off
+execute if score #mad WeatherCycle matches 1 run loot replace entity @p[tag=Host] inventory.3 loot mad:setting/common/on
+execute if score #mad DaylightCycle matches 0 run loot replace entity @p[tag=Host] inventory.5 loot mad:setting/common/off
+execute if score #mad DaylightCycle matches 1 run loot replace entity @p[tag=Host] inventory.5 loot mad:setting/common/on

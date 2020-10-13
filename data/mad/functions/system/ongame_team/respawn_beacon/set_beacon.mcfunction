@@ -10,3 +10,4 @@
 ## Set beacon
 setblock ~ ~ ~ minecraft:observer[facing=up]
 setblock ~ ~1 ~ minecraft:observer[facing=down]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:observer"}},distance=..1.5]

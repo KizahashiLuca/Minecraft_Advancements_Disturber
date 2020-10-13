@@ -54,10 +54,10 @@ execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamE matches 0 u
 execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame_team/minecart/main
 
 ## Teleport player
-function mad:system/ongame_team/teleport_player/main
+function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
-execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame_team/transmitter/detect_transmitter
+execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame/transmitter/detect_transmitter
 
 ## Detect respawn beacon
 execute as @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンビーコン"}'}] at @s run function mad:system/ongame_team/respawn_beacon/detect_respawn_beacon

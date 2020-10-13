@@ -8,13 +8,13 @@
 #####################################
 
 ## Set inventory
-replaceitem entity @p[tag=Host] inventory.12 minecraft:wooden_sword{display:{Name:'"\\u00A7r\\u00A7fイージー"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.13 minecraft:stone_sword{display:{Name:'"\\u00A7r\\u00A7fノーマル"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.14 minecraft:diamond_sword{display:{Name:'"\\u00A7r\\u00A7fハード"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:'"\\u00A7r\\u00A7dキャンセル"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39} 1
+loot replace entity @p[tag=Host] inventory.12 loot mad:setting/choose_difficulty/choose_easy
+loot replace entity @p[tag=Host] inventory.13 loot mad:setting/choose_difficulty/choose_normal
+loot replace entity @p[tag=Host] inventory.14 loot mad:setting/choose_difficulty/choose_hard
+loot replace entity @p[tag=Host] inventory.19 loot mad:setting/common/cancel
+loot replace entity @p[tag=Host] inventory.25 loot mad:setting/common/determine
 
 ## Set nether_star above selected difficulty
-execute if score #mad Difficulty matches 1 run replaceitem entity @p[tag=Host] inventory.3 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7f選択済"'},HideFlags:39} 1
-execute if score #mad Difficulty matches 2 run replaceitem entity @p[tag=Host] inventory.4 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7f選択済"'},HideFlags:39} 1
-execute if score #mad Difficulty matches 3 run replaceitem entity @p[tag=Host] inventory.5 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7f選択済"'},HideFlags:39} 1
+execute if score #mad Difficulty matches 1 run loot replace entity @p[tag=Host] inventory.3 loot mad:setting/common/selected
+execute if score #mad Difficulty matches 2 run loot replace entity @p[tag=Host] inventory.4 loot mad:setting/common/selected
+execute if score #mad Difficulty matches 3 run loot replace entity @p[tag=Host] inventory.5 loot mad:setting/common/selected

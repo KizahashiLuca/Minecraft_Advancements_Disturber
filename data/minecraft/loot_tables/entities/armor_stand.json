@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"リスポーンビーコン","color":"light_purple","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag": "{EntityTag:{NoGravity:1b,ShowArms:1b,DisabledSlots:2031616,CustomName:'{\"text\":\"リスポーンビーコン\",\"color\":\"light_purple\"}',CustomNameVisible:1b},Tags:[\"MinecartItem\"]}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "predicate": {
+            "type": "minecraft:armor_stand",
+            "nbt": "{CustomName:'{\"color\":\"light_purple\",\"text\":\"リスポーンビーコン\"}',CustomNameVisible:1b}"
+          },
+          "entity": "this"
+        }
+      ]
+    }
+  ]
+}
