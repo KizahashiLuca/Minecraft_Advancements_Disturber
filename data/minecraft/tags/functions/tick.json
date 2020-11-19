@@ -1,8 +1,8 @@
 {
     "replace": false,
     "values": [
-      "mad:ontick",
-      "mad:system/ongame/respawn_beacon/kill_armor_stand",
-      "mad:system/ongame/respawn_beacon/set_respawn_coin"
+        "mad:ontick",
+        "mad:system/ongame/respawn_beacon/kill_armor_stand",
+        "mad:system/ongame/respawn_beacon/set_respawn_beacon"
     ]
 }

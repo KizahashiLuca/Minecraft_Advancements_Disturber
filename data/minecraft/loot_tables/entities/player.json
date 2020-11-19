@@ -7,17 +7,17 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:structure_void",
+          "name": "minecraft:armor_stand",
           "functions": [
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"selector":"@s"},{"text":"のリスポーンコイン"}]
+                ["",{"selector":"@s","color":"light_purple","bold":false,"italic":false},{"text":"のリスポーンビーコン","color":"light_purple","bold":false,"italic":false}]
               ],
               "entity": "this"
             },{
               "function":"minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnCoinByDead\"]}"
+              "tag": "{Tags:[\"RespawnBeaconByDead\"]}"
             }
           ]
         }

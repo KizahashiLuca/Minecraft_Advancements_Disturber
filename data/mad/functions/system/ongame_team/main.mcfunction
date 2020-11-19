@@ -37,11 +37,11 @@ execute as @a[team=TeamE,scores={Phase=21,Death=0}] run scoreboard players add @
 execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive /= @s NumOfTeamPlayer
 
 ## Time over
-execute as @a[tag=Leader,scores={Second=..0},team=TeamA] run kill @a[team=TeamA,gamemode=!spectator]
-execute as @a[tag=Leader,scores={Second=..0},team=TeamB] run kill @a[team=TeamB,gamemode=!spectator]
-execute as @a[tag=Leader,scores={Second=..0},team=TeamC] run kill @a[team=TeamC,gamemode=!spectator]
-execute as @a[tag=Leader,scores={Second=..0},team=TeamD] run kill @a[team=TeamD,gamemode=!spectator]
-execute as @a[tag=Leader,scores={Second=..0},team=TeamE] run kill @a[team=TeamE,gamemode=!spectator]
+execute as @a[tag=Leader,scores={Phase=21,Death=0,Second=..0},team=TeamA] run kill @a[team=TeamA,gamemode=!spectator]
+execute as @a[tag=Leader,scores={Phase=21,Death=0,Second=..0},team=TeamB] run kill @a[team=TeamB,gamemode=!spectator]
+execute as @a[tag=Leader,scores={Phase=21,Death=0,Second=..0},team=TeamC] run kill @a[team=TeamC,gamemode=!spectator]
+execute as @a[tag=Leader,scores={Phase=21,Death=0,Second=..0},team=TeamD] run kill @a[team=TeamD,gamemode=!spectator]
+execute as @a[tag=Leader,scores={Phase=21,Death=0,Second=..0},team=TeamE] run kill @a[team=TeamE,gamemode=!spectator]
 
 ## Detect team end
 execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamA matches 0 unless entity @p[team=TeamA,scores={Phase=21,Death=0}] run function mad:system/ongame_team/player_death/team_a
