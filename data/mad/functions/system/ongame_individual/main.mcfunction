@@ -30,7 +30,7 @@ kill @a[team=Participant,scores={Phase=21,Death=0,Second=..0}]
 execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame_individual/minecart/main
 
 ## Teleport player
-function mad:system/ongame/teleport_player/main
+execute as @a[gamemode=!survival,scores={TeleportMessage=1}] run function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
 execute as @a[team=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame/transmitter/detect_transmitter

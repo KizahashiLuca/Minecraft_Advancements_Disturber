@@ -7,13 +7,11 @@
 ## Version   : α-0.3
 #####################################
 
-## Set gamerule
-gamerule announceAdvancements false
-
 ## Process timer system
 function mad:system/time_team/time
 function mad:system/time_team/general_time
 
+## Respawn beacon system
 execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s if entity @p[scores={Phase=21,Death=0,Sneak=1..},distance=..1.5] run function mad:system/ongame_team/respawn_beacon/time/tick
 scoreboard players set @a Sneak 0
 execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s run function mad:system/ongame_team/respawn_beacon/set_beacon
@@ -26,35 +24,25 @@ function mad:system/ongame_team/detect_advancements
 execute as @a[tag=Participant,scores={KillTemp=1..}] run function mad:system/ongame_team/detect_kill
 execute as @a[tag=Participant,scores={Phase=21,Death=1}] run function mad:system/ongame_team/detect_death
 
-## Calculate time per players
+## Set scoreboard
 scoreboard players set @a[tag=Leader] NumOfTeamPlayer 0
+
+## Team function
+execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamA matches 0 run function mad:system/ongame_team/team_function/team_a
+execute if score #mad TeamNumber matches 2.. if score #mad DeadTeamB matches 0 run function mad:system/ongame_team/team_function/team_b
+execute if score #mad TeamNumber matches 3.. if score #mad DeadTeamC matches 0 run function mad:system/ongame_team/team_function/team_c
+execute if score #mad TeamNumber matches 4.. if score #mad DeadTeamD matches 0 run function mad:system/ongame_team/team_function/team_d
+execute if score #mad TeamNumber matches 5.. if score #mad DeadTeamE matches 0 run function mad:system/ongame_team/team_function/team_e
+
+## Calculate time per players
 execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive = @s Second
-execute as @a[team=TeamA,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamA,tag=Leader] NumOfTeamPlayer 1
-execute as @a[team=TeamB,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamB,tag=Leader] NumOfTeamPlayer 1
-execute as @a[team=TeamC,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamC,tag=Leader] NumOfTeamPlayer 1
-execute as @a[team=TeamD,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamD,tag=Leader] NumOfTeamPlayer 1
-execute as @a[team=TeamE,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamE,tag=Leader] NumOfTeamPlayer 1
 execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive /= @s NumOfTeamPlayer
-
-## Time over
-execute as @a[tag=Leader,scores={Phase=21,Death=0,Second=..0},team=TeamA] run kill @a[team=TeamA,gamemode=!spectator]
-execute as @a[tag=Leader,scores={Phase=21,Death=0,Second=..0},team=TeamB] run kill @a[team=TeamB,gamemode=!spectator]
-execute as @a[tag=Leader,scores={Phase=21,Death=0,Second=..0},team=TeamC] run kill @a[team=TeamC,gamemode=!spectator]
-execute as @a[tag=Leader,scores={Phase=21,Death=0,Second=..0},team=TeamD] run kill @a[team=TeamD,gamemode=!spectator]
-execute as @a[tag=Leader,scores={Phase=21,Death=0,Second=..0},team=TeamE] run kill @a[team=TeamE,gamemode=!spectator]
-
-## Detect team end
-execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamA matches 0 unless entity @p[team=TeamA,scores={Phase=21,Death=0}] run function mad:system/ongame_team/player_death/team_a
-execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamB matches 0 unless entity @p[team=TeamB,scores={Phase=21,Death=0}] run function mad:system/ongame_team/player_death/team_b
-execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamC matches 0 unless entity @p[team=TeamC,scores={Phase=21,Death=0}] run function mad:system/ongame_team/player_death/team_c
-execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamD matches 0 unless entity @p[team=TeamD,scores={Phase=21,Death=0}] run function mad:system/ongame_team/player_death/team_d
-execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamE matches 0 unless entity @p[team=TeamE,scores={Phase=21,Death=0}] run function mad:system/ongame_team/player_death/team_e
 
 ## Minecart
 execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame_team/minecart/main
 
 ## Teleport player
-function mad:system/ongame/teleport_player/main
+execute as @a[gamemode=!survival,scores={TeleportMessage=1}] run function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
 execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame/transmitter/detect_transmitter

@@ -8,7 +8,6 @@
 #####################################
 
 ## Detect teleport
-execute as @a[gamemode=!survival,scores={TeleportMessage=1}] at @e[type=minecraft:chest_minecart,nbt={Tags:["Minecart"]}] run tp @s ~ ~10 ~
-execute as @a[gamemode=!survival,scores={TeleportMessage=2}] at @e[type=minecraft:area_effect_cloud,nbt={Tags:["Minecart"]}] run tp @s ~ ~ ~
-scoreboard players set @a TeleportMessage 0
-scoreboard players enable @a TeleportMessage
+execute at @e[type=minecraft:chest_minecart,nbt={Tags:["Minecart"]}] run tp @s ~ ~10 ~
+scoreboard players set @s TeleportMessage 0
+scoreboard players enable @s TeleportMessage
