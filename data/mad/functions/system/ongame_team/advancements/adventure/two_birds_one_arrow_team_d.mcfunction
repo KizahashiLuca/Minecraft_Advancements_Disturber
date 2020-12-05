@@ -8,7 +8,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamD] AD_ad_two_birds 1
+advancement grant @a[team=TeamD] only minecraft:adventure/two_birds_one_arrow
 scoreboard players add @a[team=TeamD] HasAdvancements 1
 scoreboard players operation @p[team=TeamD,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamD,tag=Leader] Second += #mad AddingTime

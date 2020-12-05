@@ -8,7 +8,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamE] AD_mc_upgrade 1
+advancement grant @a[team=TeamE] only minecraft:story/upgrade_tools
 scoreboard players add @a[team=TeamE] HasAdvancements 1
 scoreboard players operation @p[team=TeamE,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamE,tag=Leader] Second += #mad AddingTime

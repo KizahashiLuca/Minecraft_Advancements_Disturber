@@ -8,7 +8,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamA] AD_nt_create_bc 1
+advancement grant @a[team=TeamA] only minecraft:nether/create_beacon
 scoreboard players add @a[team=TeamA] HasAdvancements 1
 scoreboard players operation @p[team=TeamA,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamA,tag=Leader] Second += #mad AddingTime

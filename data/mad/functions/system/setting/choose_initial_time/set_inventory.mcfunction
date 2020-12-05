@@ -9,10 +9,10 @@
 
 ## Set inventory
 loot replace entity @p[tag=Host] inventory.11 loot mad:setting/choose_initial_time/choose_100secs
-loot replace entity @p[tag=Host] inventory.12 loot mad:setting/choose_initial_time/choose_100secs
-loot replace entity @p[tag=Host] inventory.13 loot mad:setting/choose_initial_time/choose_100secs
-loot replace entity @p[tag=Host] inventory.14 loot mad:setting/choose_initial_time/choose_100secs
-loot replace entity @p[tag=Host] inventory.15 loot mad:setting/choose_initial_time/choose_100secs
+loot replace entity @p[tag=Host] inventory.12 loot mad:setting/choose_initial_time/choose_200secs
+loot replace entity @p[tag=Host] inventory.13 loot mad:setting/choose_initial_time/choose_300secs
+loot replace entity @p[tag=Host] inventory.14 loot mad:setting/choose_initial_time/choose_400secs
+loot replace entity @p[tag=Host] inventory.15 loot mad:setting/choose_initial_time/choose_500secs
 loot replace entity @p[tag=Host] inventory.19 loot mad:setting/common/cancel
 loot replace entity @p[tag=Host] inventory.25 loot mad:setting/common/determine
 

@@ -8,7 +8,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamA] AD_nt_rtrn_ghast 1
+advancement grant @a[team=TeamA] only minecraft:nether/return_to_sender
 scoreboard players add @a[team=TeamA] HasAdvancements 1
 scoreboard players operation @p[team=TeamA,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamA,tag=Leader] Second += #mad AddingTime

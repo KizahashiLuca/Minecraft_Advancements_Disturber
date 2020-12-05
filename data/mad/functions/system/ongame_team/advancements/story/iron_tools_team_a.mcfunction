@@ -8,7 +8,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamA] AD_mc_iron_tools 1
+advancement grant @a[team=TeamA] only minecraft:story/iron_tools
 scoreboard players add @a[team=TeamA] HasAdvancements 1
 scoreboard players operation @p[team=TeamA,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamA,tag=Leader] Second += #mad AddingTime

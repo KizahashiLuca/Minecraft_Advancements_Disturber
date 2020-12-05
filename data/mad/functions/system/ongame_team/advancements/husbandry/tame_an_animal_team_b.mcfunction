@@ -8,7 +8,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamB] AD_hb_tame_anima 1
+advancement grant @a[team=TeamB] only minecraft:husbandry/tame_an_animal
 scoreboard players add @a[team=TeamB] HasAdvancements 1
 scoreboard players operation @p[team=TeamB,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamB,tag=Leader] Second += #mad AddingTime

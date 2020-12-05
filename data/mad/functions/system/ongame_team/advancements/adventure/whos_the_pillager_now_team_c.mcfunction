@@ -8,7 +8,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamC] AD_ad_whos_pilla 1
+advancement grant @a[team=TeamC] only minecraft:adventure/whos_the_pillager_now
 scoreboard players add @a[team=TeamC] HasAdvancements 1
 scoreboard players operation @p[team=TeamC,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamC,tag=Leader] Second += #mad AddingTime

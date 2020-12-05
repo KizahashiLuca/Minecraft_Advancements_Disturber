@@ -8,7 +8,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamA] AD_hb_balanced 1
+advancement grant @a[team=TeamA] only minecraft:husbandry/balanced_diet
 scoreboard players add @a[team=TeamA] HasAdvancements 1
 scoreboard players operation @p[team=TeamA,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamA,tag=Leader] Second += #mad AddingTime

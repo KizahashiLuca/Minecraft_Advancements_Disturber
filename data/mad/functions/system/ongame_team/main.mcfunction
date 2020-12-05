@@ -17,9 +17,6 @@ scoreboard players set @a Sneak 0
 execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s run function mad:system/ongame_team/respawn_beacon/set_beacon
 execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s run function mad:system/ongame_team/respawn_beacon/send_gauge
 
-## Detect advancements
-function mad:system/ongame_team/detect_advancements
-
 ## Detect kill / death
 execute as @a[tag=Participant,scores={KillTemp=1..}] run function mad:system/ongame_team/detect_kill
 execute as @a[tag=Participant,scores={Phase=21,Death=1}] run function mad:system/ongame_team/detect_death

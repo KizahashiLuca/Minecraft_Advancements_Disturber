@@ -8,7 +8,6 @@
 #####################################
 
 ## Add scoreboards for game phase
-scoreboard objectives add Version dummy
 scoreboard objectives add Phase dummy
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add SpawnTime minecraft.custom:minecraft.time_since_death
@@ -109,96 +108,6 @@ scoreboard objectives add SetTeamManualPrv dummy
 scoreboard objectives add TeamNumberPrv dummy
 ## Add scoreboards for advancements
 scoreboard objectives add HasAdvancements dummy
-## Add scoreboards for advancements - adventure
-scoreboard objectives add AD_ad_adven_time dummy {"text":"冒険の時間"}
-scoreboard objectives add AD_ad_arbalistic dummy {"text":"クロスボウの達人"}
-scoreboard objectives add AD_ad_bullseye dummy {"text":"的中"}
-scoreboard objectives add AD_ad_hero_villa dummy {"text":"村の英雄"}
-scoreboard objectives add AD_ad_honey_slid dummy {"text":"べとべとな状況"}
-scoreboard objectives add AD_ad_kill_a_mob dummy {"text":"モンスターハンター"}
-scoreboard objectives add AD_ad_kill_all dummy {"text":"モンスター狩りの達人"}
-scoreboard objectives add AD_ad_ol_betsy dummy {"text":"おてんば"}
-scoreboard objectives add AD_ad_root dummy {"text":"冒険"}
-scoreboard objectives add AD_ad_shot_arrow dummy {"text":"狙いを定めて"}
-scoreboard objectives add AD_ad_sleep dummy {"text":"良い夢見てね"}
-scoreboard objectives add AD_ad_sniper dummy {"text":"スナイパー対決"}
-scoreboard objectives add AD_ad_iron_golem dummy {"text":"お手伝いさん"}
-scoreboard objectives add AD_ad_trident dummy {"text":"もったいぶった一言"}
-scoreboard objectives add AD_ad_totem dummy {"text":"死を超えて"}
-scoreboard objectives add AD_ad_trade dummy {"text":"良い取引だ！"}
-scoreboard objectives add AD_ad_two_birds dummy {"text":"一石二鳥"}
-scoreboard objectives add AD_ad_very_very dummy {"text":"とてもとても恐ろしい"}
-scoreboard objectives add AD_ad_voluntary dummy {"text":"自主的な亡命"}
-scoreboard objectives add AD_ad_whos_pilla dummy {"text":"どっちが略奪者？"}
-## Add scoreboards for advancements - minecraft
-scoreboard objectives add AD_mc_cure_zombi dummy {"text":"ゾンビドクター"}
-scoreboard objectives add AD_mc_deflect dummy {"text":"今日はやめておきます"}
-scoreboard objectives add AD_mc_enchant dummy {"text":"エンチャントの使い手"}
-scoreboard objectives add AD_mc_enter_end dummy {"text":"おしまい？"}
-scoreboard objectives add AD_mc_enter_hell dummy {"text":"さらなる深みへ"}
-scoreboard objectives add AD_mc_ender_eye dummy {"text":"アイ・スパイ"}
-scoreboard objectives add AD_mc_obsidian dummy {"text":"アイス・バケツ・チャレンジ"}
-scoreboard objectives add AD_mc_iron_tools dummy {"text":"鉄のツルハシで決まり"}
-scoreboard objectives add AD_mc_lava_bucke dummy {"text":"ホットスタッフ"}
-scoreboard objectives add AD_mc_mine_dia dummy {"text":"ダイヤモンド!"}
-scoreboard objectives add AD_mc_mine_stone dummy {"text":"石器時代"}
-scoreboard objectives add AD_mc_armor dummy {"text":"装備せよ"}
-scoreboard objectives add AD_mc_root dummy {"text":"Minecraft"}
-scoreboard objectives add AD_mc_shiny_gear dummy {"text":"ダイヤモンドで私を覆って"}
-scoreboard objectives add AD_mc_smelt_iron dummy {"text":"金属を手に入れる"}
-scoreboard objectives add AD_mc_upgrade dummy {"text":"アップグレード"}
-## Add scoreboards for advancements - nether
-scoreboard objectives add AD_nt_all_effect dummy {"text":"どうやってここまで？"}
-scoreboard objectives add AD_nt_all_potion dummy {"text":"猛烈なカクテル"}
-scoreboard objectives add AD_nt_brew_potio dummy {"text":"町のお薬屋さん"}
-scoreboard objectives add AD_nt_respawn dummy {"text":"不死身とまではいかない"}
-scoreboard objectives add AD_nt_create_bc dummy {"text":"生活のビーコン"}
-scoreboard objectives add AD_nt_create_fbc dummy {"text":"ビーコネーター"}
-scoreboard objectives add AD_nt_distract dummy {"text":"わーいぴかぴか！"}
-scoreboard objectives add AD_nt_explore dummy {"text":"ホットな観光地"}
-scoreboard objectives add AD_nt_fast_travl dummy {"text":"亜空間バブル"}
-scoreboard objectives add AD_nt_bastion dummy {"text":"兵どもが夢の跡"}
-scoreboard objectives add AD_nt_fortress dummy {"text":"恐ろしい要塞"}
-scoreboard objectives add AD_nt_get_wtskul dummy {"text":"不気味で怖いスケルトン"}
-scoreboard objectives add AD_nt_loot_bastn dummy {"text":"ブタ戦争"}
-scoreboard objectives add AD_nt_ntrt_armor dummy {"text":"残骸で私を覆って"}
-scoreboard objectives add AD_nt_ancient_db dummy {"text":"深淵に隠されしもの"}
-scoreboard objectives add AD_nt_blaze_rod dummy {"text":"炎の中へ"}
-scoreboard objectives add AD_nt_cry_obsidn dummy {"text":"玉ねぎを切っているのは誰？"}
-scoreboard objectives add AD_nt_rtrn_ghast dummy {"text":"差出人に返送"}
-scoreboard objectives add AD_nt_strider dummy {"text":"足の生えたボート"}
-scoreboard objectives add AD_nt_root dummy {"text":"ネザー"}
-scoreboard objectives add AD_nt_smn_wither dummy {"text":"荒が丘"}
-scoreboard objectives add AD_nt_uneasy_alc dummy {"text":"不安な同盟"}
-scoreboard objectives add AD_nt_lodestone dummy {"text":"この道をずっとゆけば"}
-## Add scoreboards for advancements - end
-scoreboard objectives add AD_ed_drg_breath dummy {"text":"口臭に気をつけよう"}
-scoreboard objectives add AD_ed_dragon_egg dummy {"text":"ザ・ネクストジェネレーション"}
-scoreboard objectives add AD_ed_elytra dummy {"text":"空はどこまでも高く"}
-scoreboard objectives add AD_ed_end_gate dummy {"text":"遠方への逃走"}
-scoreboard objectives add AD_ed_end_city dummy {"text":"ゲームの果ての都市"}
-scoreboard objectives add AD_ed_kill_dragn dummy {"text":"エンドの解放"}
-scoreboard objectives add AD_ed_legitate dummy {"text":"ここからの素晴らしい眺め"}
-scoreboard objectives add AD_ed_resp_dragn dummy {"text":"おしまい…再び…"}
-scoreboard objectives add AD_ed_root dummy {"text":"ジ・エンド"}
-## Add scoreboards for advancements - husbandry
-scoreboard objectives add AD_hb_balanced dummy {"text":"バランスの取れた食事"}
-scoreboard objectives add AD_hb_break_hoe dummy {"text":"真面目な献身"}
-scoreboard objectives add AD_hb_bred_all dummy {"text":"二匹ずつ"}
-scoreboard objectives add AD_hb_bred_anima dummy {"text":"コウノトリの贈り物"}
-scoreboard objectives add AD_hb_catalogue dummy {"text":"猫大全集"}
-scoreboard objectives add AD_hb_fishy dummy {"text":"生臭い仕事"}
-scoreboard objectives add AD_hb_nether_hoe dummy {"text":"真面目な献身"}
-scoreboard objectives add AD_hb_plant_seed dummy {"text":"種だらけの場所"}
-scoreboard objectives add AD_hb_root dummy {"text":"農業"}
-scoreboard objectives add AD_hb_harv_honey dummy {"text":"大切なお客様"}
-scoreboard objectives add AD_hb_silk_nest dummy {"text":"完全な引越し"}
-scoreboard objectives add AD_hb_tacti_fish dummy {"text":"戦術的漁業"}
-scoreboard objectives add AD_hb_tame_anima dummy {"text":"永遠の親友となるだろう"}
-## Add scoreboards for advancements - potage00
-scoreboard objectives add AD_pg_root dummy {"text":"首狩りぽたーじゅ"}
-scoreboard objectives add AD_pg_tsutenkaku dummy {"text":"通天閣からの眺め"}
-scoreboard objectives add AD_pg_treasure dummy {"text":"宝探し"}
 ## Add scoreboards for summons minecart
 scoreboard objectives add 300 dummy
 scoreboard objectives add SecondSummon dummy
@@ -234,7 +143,6 @@ scoreboard objectives add DeadTeamE dummy
 scoreboard objectives add NumOfTeamPlayer dummy
 
 ## Set scoreboards for game phase
-scoreboard players set #mad Version 14
 scoreboard players set #mad Phase 0
 scoreboard players set #mad Difficulty 0
 scoreboard players set #mad ExitMessage 0
@@ -362,96 +270,6 @@ scoreboard players set @a Select34 0
 scoreboard players set @a Selected 0
 ## Set scoreboards for advancements
 scoreboard players set @a HasAdvancements 0
-## Set scoreboards for advancements - adventure
-scoreboard players set @a AD_ad_adven_time 0
-scoreboard players set @a AD_ad_arbalistic 0
-scoreboard players set @a AD_ad_bullseye 0
-scoreboard players set @a AD_ad_hero_villa 0
-scoreboard players set @a AD_ad_honey_slid 0
-scoreboard players set @a AD_ad_kill_a_mob 0
-scoreboard players set @a AD_ad_kill_all 0
-scoreboard players set @a AD_ad_ol_betsy 0
-scoreboard players set @a AD_ad_root 0
-scoreboard players set @a AD_ad_shot_arrow 0
-scoreboard players set @a AD_ad_sleep 0
-scoreboard players set @a AD_ad_sniper 0
-scoreboard players set @a AD_ad_iron_golem 0
-scoreboard players set @a AD_ad_trident 0
-scoreboard players set @a AD_ad_totem 0
-scoreboard players set @a AD_ad_trade 0
-scoreboard players set @a AD_ad_two_birds 0
-scoreboard players set @a AD_ad_very_very 0
-scoreboard players set @a AD_ad_voluntary 0
-scoreboard players set @a AD_ad_whos_pilla 0
-## Set scoreboards for advancements - minecraft
-scoreboard players set @a AD_mc_cure_zombi 0
-scoreboard players set @a AD_mc_deflect 0
-scoreboard players set @a AD_mc_enchant 0
-scoreboard players set @a AD_mc_enter_end 0
-scoreboard players set @a AD_mc_enter_hell 0
-scoreboard players set @a AD_mc_ender_eye 0
-scoreboard players set @a AD_mc_obsidian 0
-scoreboard players set @a AD_mc_iron_tools 0
-scoreboard players set @a AD_mc_lava_bucke 0
-scoreboard players set @a AD_mc_mine_dia 0
-scoreboard players set @a AD_mc_mine_stone 0
-scoreboard players set @a AD_mc_armor 0
-scoreboard players set @a AD_mc_root 0
-scoreboard players set @a AD_mc_shiny_gear 0
-scoreboard players set @a AD_mc_smelt_iron 0
-scoreboard players set @a AD_mc_upgrade 0
-## Set scoreboards for advancements - nether
-scoreboard players set @a AD_nt_all_effect 0
-scoreboard players set @a AD_nt_all_potion 0
-scoreboard players set @a AD_nt_brew_potio 0
-scoreboard players set @a AD_nt_respawn 0
-scoreboard players set @a AD_nt_create_bc 0
-scoreboard players set @a AD_nt_create_fbc 0
-scoreboard players set @a AD_nt_distract 0
-scoreboard players set @a AD_nt_explore 0
-scoreboard players set @a AD_nt_fast_travl 0
-scoreboard players set @a AD_nt_bastion 0
-scoreboard players set @a AD_nt_fortress 0
-scoreboard players set @a AD_nt_get_wtskul 0
-scoreboard players set @a AD_nt_loot_bastn 0
-scoreboard players set @a AD_nt_ntrt_armor 0
-scoreboard players set @a AD_nt_ancient_db 0
-scoreboard players set @a AD_nt_blaze_rod 0
-scoreboard players set @a AD_nt_cry_obsidn 0
-scoreboard players set @a AD_nt_rtrn_ghast 0
-scoreboard players set @a AD_nt_strider 0
-scoreboard players set @a AD_nt_root 0
-scoreboard players set @a AD_nt_smn_wither 0
-scoreboard players set @a AD_nt_uneasy_alc 0
-scoreboard players set @a AD_nt_lodestone 0
-## Set scoreboards for advancements - end
-scoreboard players set @a AD_ed_drg_breath 0
-scoreboard players set @a AD_ed_dragon_egg 0
-scoreboard players set @a AD_ed_elytra 0
-scoreboard players set @a AD_ed_end_gate 0
-scoreboard players set @a AD_ed_end_city 0
-scoreboard players set @a AD_ed_kill_dragn 0
-scoreboard players set @a AD_ed_legitate 0
-scoreboard players set @a AD_ed_resp_dragn 0
-scoreboard players set @a AD_ed_root 0
-## Set scoreboards for advancements - husbandry
-scoreboard players set @a AD_hb_balanced 0
-scoreboard players set @a AD_hb_break_hoe 0
-scoreboard players set @a AD_hb_bred_all 0
-scoreboard players set @a AD_hb_bred_anima 0
-scoreboard players set @a AD_hb_catalogue 0
-scoreboard players set @a AD_hb_fishy 0
-scoreboard players set @a AD_hb_nether_hoe 0
-scoreboard players set @a AD_hb_plant_seed 0
-scoreboard players set @a AD_hb_root 0
-scoreboard players set @a AD_hb_harv_honey 0
-scoreboard players set @a AD_hb_silk_nest 0
-scoreboard players set @a AD_hb_tacti_fish 0
-scoreboard players set @a AD_hb_tame_anima 0
-## Set scoreboards for advancements - potage00
-scoreboard players set @a AD_pg_root 0
-scoreboard players set @a AD_pg_tsutenkaku 0
-scoreboard players set @a AD_pg_treasure 0
 ## Set scoreboards for transmitter
 scoreboard players set @a UseTransmitter 0
 scoreboard players enable @a UseTransmitter

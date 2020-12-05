@@ -14,9 +14,6 @@ gamerule announceAdvancements false
 function mad:system/time_individual/time
 function mad:system/time_individual/general_time
 
-## Detect advancements
-function mad:system/ongame_individual/detect_advancements
-
 ## Detect kill / death
 execute as @a[team=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run function mad:system/ongame_individual/detect_kill
 

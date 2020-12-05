@@ -90,5 +90,8 @@
     },
     "requirements": [
         ["treasure_emerald"], ["treasure_diamond"], ["treasure_gold"], ["treasure_iron"], ["treasure_lapis_lazuli"], ["treasure_redstone"], ["treasure_quartz"]
-    ]
+    ],
+    "rewards": {
+        "function": "mad:system/ongame/advancements/potage00/treasure_hunt"
+    }
 }

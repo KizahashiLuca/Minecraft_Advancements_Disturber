@@ -7,9 +7,6 @@
 ## Version   : α-0.3
 #####################################
 
-## Replace item
-clear @a[scores={Phase=22,Death=2}]
-
 ## Set armor_stand
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:armor_stand",tag:{Tags:["RespawnBeaconByDead"]}}},tag=!SetArmorStand] run function mad:system/ongame/respawn_beacon/set_beacon
 

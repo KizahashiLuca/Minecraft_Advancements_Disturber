@@ -11,8 +11,7 @@
 execute as @e[type=minecraft:chest_minecart,tag=Minecart] run kill @s
 
 ## Summon minecart
-execute if score #mad Version matches ..15 at @e[type=minecraft:area_effect_cloud,tag=Minecart] run summon minecraft:chest_minecart ~ 160 ~ {LootTable:"mad:ongame/chest_minecart_individual/until_1_15",Invulnerable:1b,Tags:["Minecart"]}
-execute if score #mad Version matches 16.. at @e[type=minecraft:area_effect_cloud,tag=Minecart] run summon minecraft:chest_minecart ~ 160 ~ {LootTable:"mad:ongame/chest_minecart_individual/since_1_16",Invulnerable:1b,Tags:["Minecart"]}
+summon minecraft:chest_minecart ~ 160 ~ {LootTable:"mad:ongame/chest_minecart_individual",Invulnerable:1b,Tags:["Minecart"]}
 scoreboard players operation @e[type=minecraft:chest_minecart,tag=Minecart] IsTeam = #mad IsTeam
 
 ## Send messages

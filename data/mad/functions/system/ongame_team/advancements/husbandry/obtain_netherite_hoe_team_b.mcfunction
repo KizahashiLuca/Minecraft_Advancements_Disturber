@@ -8,7 +8,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamB] AD_hb_nether_hoe 1
+advancement grant @a[team=TeamB] only minecraft:husbandry/obtain_netherite_hoe
 scoreboard players add @a[team=TeamB] HasAdvancements 1
 scoreboard players operation @p[team=TeamB,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamB,tag=Leader] Second += #mad AddingTime

@@ -31,5 +31,8 @@
     },
     "requirements": [
         ["potage_head"]
-    ]
+    ],
+    "rewards": {
+        "function": "mad:system/ongame/advancements/potage00/root"
+    }
 }

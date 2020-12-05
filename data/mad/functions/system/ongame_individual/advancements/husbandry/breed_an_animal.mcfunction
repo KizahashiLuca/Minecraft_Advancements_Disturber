@@ -8,7 +8,6 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @s AD_hb_bred_anima 1
 scoreboard players add @s HasAdvancements 1
 scoreboard players operation @s TimeLimit += #mad AddingTime
 scoreboard players operation @s Second += #mad AddingTime
