@@ -7,14 +7,11 @@
 ## Version   : α-0.3
 #####################################
 
-## Set gamerule
-gamerule announceAdvancements false
-
 ## Process timer system
 function mad:system/time_individual/time
 function mad:system/time_individual/general_time
 
-## Detect kill / death
+## Detect kill
 execute as @a[team=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run function mad:system/ongame_individual/detect_kill
 
 ## Detect death

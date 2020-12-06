@@ -114,6 +114,7 @@ scoreboard objectives remove HasAdvancements
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon
 scoreboard objectives remove SecondEliminate
+scoreboard objectives remove SummonInterval
 scoreboard objectives remove SummonMinecart
 ## Remove scoreboards for transmitter
 scoreboard objectives remove UseTransmitter

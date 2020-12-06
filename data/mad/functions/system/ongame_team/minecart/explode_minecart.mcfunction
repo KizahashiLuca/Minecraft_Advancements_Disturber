@@ -23,8 +23,8 @@ execute if entity @p[team=TeamD,scores={Phase=21,Death=0},distance=..2] run func
 execute if entity @p[team=TeamE,scores={Phase=21,Death=0},distance=..2] run function mad:system/ongame_team/minecart/bonus_time/team_e
 
 ## next summon decided
-scoreboard players set #mad SecondSummon 100
-summon minecraft:area_effect_cloud ~ 140 ~ {Tags:["Minecart"],NoGravity:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
+scoreboard players operation #mad SecondSummon = #mad SummonInterval
+summon minecraft:area_effect_cloud ~ 160 ~ {Tags:["Minecart"],NoGravity:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart,tag=!Teleported] run function mad:system/ongame_team/minecart/teleport_minecart
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] store result score @s PosX align x run data get entity @s Pos[0] 1
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] store result score @s PosZ align z run data get entity @s Pos[2] 1

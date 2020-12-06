@@ -21,8 +21,8 @@ scoreboard players operation @p[team=Participant,scores={Phase=21,Death=0},dista
 tellraw @p[team=Participant,scores={Phase=21,Death=0},distance=..2] ["",{"text":"[物資投下] ","color":"green"},{"selector":"@p[team=Participant,scores={Phase=21,Death=0},distance=..2]","color":"green","bold":true},{"text":"に","color":"green"},{"score":{"name":"#mad","objective":"RandomAnswer"},"color":"green"},{"text":"秒のボーナスタイムが付与されました。","color":"green"}]
 
 ## next summon decided
-scoreboard players set #mad SecondSummon 100
-summon minecraft:area_effect_cloud ~ 140 ~ {Tags:["Minecart"],NoGravity:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
+scoreboard players operation #mad SecondSummon = #mad SummonInterval
+summon minecraft:area_effect_cloud ~ 160 ~ {Tags:["Minecart"],NoGravity:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart,tag=!Teleported] run function mad:system/ongame_individual/minecart/teleport_minecart
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] store result score @s PosX align x run data get entity @s Pos[0] 1
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] store result score @s PosZ align z run data get entity @s Pos[2] 1

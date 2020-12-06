@@ -112,6 +112,7 @@ scoreboard objectives add HasAdvancements dummy
 scoreboard objectives add 300 dummy
 scoreboard objectives add SecondSummon dummy
 scoreboard objectives add SecondEliminate dummy
+scoreboard objectives add SummonInterval dummy
 scoreboard objectives add SummonMinecart dummy
 ## Add scoreboards for transmitter
 scoreboard objectives add UseTransmitter trigger
@@ -203,6 +204,7 @@ scoreboard players set #mad TeamNumberPrv 2
 scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 100
 scoreboard players set #mad SecondEliminate 0
+scoreboard players set #mad SummonInterval 100
 scoreboard players set #mad SummonMinecart 0
 ## Set scoreboards for team
 scoreboard players set #mad TeamBoolean 0

@@ -109,16 +109,11 @@ scoreboard objectives remove SetTeamManualPrv
 scoreboard objectives remove TeamNumberPrv
 ## Remove scoreboards for advancements
 scoreboard objectives remove HasAdvancements
-## Remove scoreboards for advancements - adventure
-## Remove scoreboards for advancements - minecraft
-## Remove scoreboards for advancements - nether
-## Remove scoreboards for advancements - end
-## Remove scoreboards for advancements - husbandry
-## Remove scoreboards for advancements - potage00
 ## Remove scoreboards for summons minecart
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon
 scoreboard objectives remove SecondEliminate
+scoreboard objectives remove SummonInterval
 scoreboard objectives remove SummonMinecart
 ## Remove scoreboards for transmitter
 scoreboard objectives remove UseTransmitter
