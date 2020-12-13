@@ -22,7 +22,7 @@ execute if score #mad TeamNumber matches 5.. run loot replace entity @p[tag=Host
 
 loot replace entity @p[tag=Host] inventory.19 loot mad:setting/common/cancel
 loot replace entity @p[tag=Host] inventory.22 loot mad:setting/common/reset
-loot replace entity @p[tag=Host] inventory.25 loot mad:setting/common/determine
+execute if score #mad TeamBoolean matches 0 run loot replace entity @p[tag=Host] inventory.25 loot mad:setting/common/determine
 
 ## Set nether_star above selected time limit
 loot replace entity @p[tag=Host,team=TeamA] inventory.2 loot mad:team_member_setting/host_inventory/nether_star_team_a
