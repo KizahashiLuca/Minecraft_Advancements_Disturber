@@ -8,8 +8,9 @@
 #####################################
 
 ## Set scoreboard
-advancement grant @a[team=TeamD] only minecraft:story/smelt_iron
+scoreboard players set @a[team=TeamD] AD_mc_smelt_iron 1
 scoreboard players add @a[team=TeamD] HasAdvancements 1
 scoreboard players operation @p[team=TeamD,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamD,tag=Leader] Second += #mad AddingTime
+advancement grant @a[team=TeamD] only minecraft:story/smelt_iron
 tellraw @a[team=TeamD] ["",{"translate":"chat.type.advancement.task","with":[{"text":"緑チーム","color":"green","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"advancements.story.smelt_iron.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"advancements.story.smelt_iron.title"},{"translate":"advancements.story.smelt_iron.description"}]}]}}]}]}]

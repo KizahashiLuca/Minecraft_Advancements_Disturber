@@ -8,8 +8,9 @@
 #####################################
 
 ## Set scoreboard
-advancement grant @a[team=TeamD] only minecraft:husbandry/tame_an_animal
+scoreboard players set @a[team=TeamD] AD_hb_tame_anima 1
 scoreboard players add @a[team=TeamD] HasAdvancements 1
 scoreboard players operation @p[team=TeamD,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamD,tag=Leader] Second += #mad AddingTime
+advancement grant @a[team=TeamD] only minecraft:husbandry/tame_an_animal
 tellraw @a[team=TeamD] ["",{"translate":"chat.type.advancement.task","with":[{"text":"緑チーム","color":"green","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"advancements.husbandry.tame_an_animal.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"advancements.husbandry.tame_an_animal.title"},{"translate":"advancements.husbandry.tame_an_animal.description"}]}]}}]}]}]

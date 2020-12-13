@@ -7,9 +7,15 @@
 ## Version   : α-0.3
 #####################################
 
+## Set gamerule
+gamerule announceAdvancements false
+
 ## Process timer system
 function mad:system/time_team/time
 function mad:system/time_team/general_time
+
+## Position
+function mad:system/ongame/set_position
 
 ## Respawn beacon system
 execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s if entity @p[scores={Phase=21,Death=0,Sneak=1..},distance=..1.5] run function mad:system/ongame_team/respawn_beacon/time/tick

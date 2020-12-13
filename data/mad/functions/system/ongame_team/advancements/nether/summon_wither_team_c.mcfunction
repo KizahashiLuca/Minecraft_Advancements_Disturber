@@ -8,8 +8,9 @@
 #####################################
 
 ## Set scoreboard
-advancement grant @a[team=TeamC] only minecraft:nether/summon_wither
+scoreboard players set @a[team=TeamC] AD_nt_smn_wither 1
 scoreboard players add @a[team=TeamC] HasAdvancements 1
 scoreboard players operation @p[team=TeamC,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamC,tag=Leader] Second += #mad AddingTime
+advancement grant @a[team=TeamC] only minecraft:nether/summon_wither
 tellraw @a[team=TeamC] ["",{"translate":"chat.type.advancement.task","with":[{"text":"黄チーム","color":"yellow","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"advancements.nether.summon_wither.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"advancements.nether.summon_wither.title"},{"translate":"advancements.nether.summon_wither.description"}]}]}}]}]}]

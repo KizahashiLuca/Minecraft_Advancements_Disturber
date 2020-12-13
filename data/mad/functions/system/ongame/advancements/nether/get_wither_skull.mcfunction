@@ -8,9 +8,9 @@
 #####################################
 
 ## Branch team
-execute if score #mad IsTeam matches 0 run function mad:system/ongame_individual/advancements/nether/get_wither_skull
-execute if score #mad IsTeam matches 1 as @s[team=TeamA] run function mad:system/ongame_team/advancements/nether/get_wither_skull_team_a
-execute if score #mad IsTeam matches 1 as @s[team=TeamB] run function mad:system/ongame_team/advancements/nether/get_wither_skull_team_b
-execute if score #mad IsTeam matches 1 as @s[team=TeamC] run function mad:system/ongame_team/advancements/nether/get_wither_skull_team_c
-execute if score #mad IsTeam matches 1 as @s[team=TeamD] run function mad:system/ongame_team/advancements/nether/get_wither_skull_team_d
-execute if score #mad IsTeam matches 1 as @s[team=TeamE] run function mad:system/ongame_team/advancements/nether/get_wither_skull_team_e
+execute if score #mad IsTeam matches 0 as @s[scores={AD_nt_get_wtskul=0,Phase=21,Death=0}] run function mad:system/ongame_individual/advancements/nether/get_wither_skull
+execute if score #mad IsTeam matches 1 as @s[scores={AD_nt_get_wtskul=0,Phase=21,Death=0},team=TeamA] run function mad:system/ongame_team/advancements/nether/get_wither_skull_team_a
+execute if score #mad IsTeam matches 1 as @s[scores={AD_nt_get_wtskul=0,Phase=21,Death=0},team=TeamB] run function mad:system/ongame_team/advancements/nether/get_wither_skull_team_b
+execute if score #mad IsTeam matches 1 as @s[scores={AD_nt_get_wtskul=0,Phase=21,Death=0},team=TeamC] run function mad:system/ongame_team/advancements/nether/get_wither_skull_team_c
+execute if score #mad IsTeam matches 1 as @s[scores={AD_nt_get_wtskul=0,Phase=21,Death=0},team=TeamD] run function mad:system/ongame_team/advancements/nether/get_wither_skull_team_d
+execute if score #mad IsTeam matches 1 as @s[scores={AD_nt_get_wtskul=0,Phase=21,Death=0},team=TeamE] run function mad:system/ongame_team/advancements/nether/get_wither_skull_team_e

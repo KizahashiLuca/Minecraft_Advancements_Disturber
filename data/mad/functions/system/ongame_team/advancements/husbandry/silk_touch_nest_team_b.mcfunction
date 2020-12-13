@@ -8,8 +8,9 @@
 #####################################
 
 ## Set scoreboard
-advancement grant @a[team=TeamB] only minecraft:husbandry/silk_touch_nest
+scoreboard players set @a[team=TeamB] AD_hb_silk_nest 1
 scoreboard players add @a[team=TeamB] HasAdvancements 1
 scoreboard players operation @p[team=TeamB,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamB,tag=Leader] Second += #mad AddingTime
+advancement grant @a[team=TeamB] only minecraft:husbandry/silk_touch_nest
 tellraw @a[team=TeamB] ["",{"translate":"chat.type.advancement.task","with":[{"text":"青チーム","color":"blue","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"advancements.husbandry.silk_touch_nest.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"advancements.husbandry.silk_touch_nest.title"},{"translate":"advancements.husbandry.silk_touch_nest.description"}]}]}}]}]}]

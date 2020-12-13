@@ -8,6 +8,7 @@
 #####################################
 
 ## Set scoreboard
+scoreboard players set @s AD_nt_explore 1
 scoreboard players add @s HasAdvancements 1
 scoreboard players operation @s TimeLimit += #mad AddingTime
 scoreboard players operation @s Second += #mad AddingTime
