@@ -67,6 +67,7 @@ weather clear
 
 ## Reset gamerule
 gamemode adventure @a
+gamerule doImmediateRespawn false
 gamerule announceAdvancements true
 gamerule sendCommandFeedback true
 gamerule commandBlockOutput true

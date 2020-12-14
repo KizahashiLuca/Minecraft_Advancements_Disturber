@@ -8,6 +8,7 @@
 #####################################
 
 ## Set gamerule
+gamerule doImmediateRespawn true
 gamerule announceAdvancements false
 gamerule sendCommandFeedback false
 gamerule commandBlockOutput false

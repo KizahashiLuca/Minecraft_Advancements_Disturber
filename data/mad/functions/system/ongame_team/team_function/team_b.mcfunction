@@ -13,6 +13,9 @@ execute as @a[team=TeamB,scores={Phase=21,Death=0}] run scoreboard players add @
 ## Kill - time over
 execute as @p[team=TeamB,scores={Phase=21,Death=0,Second=..0},tag=Leader] run kill @a[team=TeamB,scores={Phase=21,Death=0}]
 
+## Spectate
+execute as @a[team=TeamB,scores={Phase=22,Death=2},gamemode=spectator] run spectate @p[team=TeamB,scores={Phase=21,Death=0},gamemode=adventure,sort=nearest] @s
+
 ## Detect team end
 execute unless entity @p[team=TeamB,scores={Phase=21,Death=0}] run scoreboard players set #mad DeadTeamB 1
 execute if score #mad DeadTeamB matches 1 run scoreboard players add #mad NumDead 1
