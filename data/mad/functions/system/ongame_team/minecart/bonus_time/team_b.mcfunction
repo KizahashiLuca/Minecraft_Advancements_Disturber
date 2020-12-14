@@ -11,3 +11,6 @@
 scoreboard players operation @p[team=TeamB,tag=Leader] Second += #mad RandomAnswer
 scoreboard players operation @p[team=TeamB,tag=Leader] TimeLimit += #mad RandomAnswer
 tellraw @a[team=TeamB] ["",{"text":"[物資投下] ","color":"green"},{"text":"青チーム","color":"blue","bold":true},{"text":"に","color":"green"},{"score":{"name":"#mad","objective":"RandomAnswer"},"color":"green","bold":true},{"text":"秒のボーナスタイムが付与されました。","color":"green"}]
+
+## Grant advancement
+advancement grant @p[team=TeamB,tag=Leader] only mad:find_minecart

@@ -16,11 +16,14 @@ kill @s
 scoreboard players set #mad RandomCount 10
 function mad:system/random_generator/randomizing
 scoreboard players operation #mad RandomAnswer %= #mad 100
-execute if entity @p[team=TeamA,scores={Phase=21,Death=0},distance=..2] run function mad:system/ongame_team/minecart/bonus_time/team_a
-execute if entity @p[team=TeamB,scores={Phase=21,Death=0},distance=..2] run function mad:system/ongame_team/minecart/bonus_time/team_b
-execute if entity @p[team=TeamC,scores={Phase=21,Death=0},distance=..2] run function mad:system/ongame_team/minecart/bonus_time/team_c
-execute if entity @p[team=TeamD,scores={Phase=21,Death=0},distance=..2] run function mad:system/ongame_team/minecart/bonus_time/team_d
-execute if entity @p[team=TeamE,scores={Phase=21,Death=0},distance=..2] run function mad:system/ongame_team/minecart/bonus_time/team_e
+
+tag @p[tag=Participant,scores={Phase=21,Death=0},distance=..2] add GiveTimeRandomly
+execute if entity @p[tag=GiveTimeRandomly,team=TeamA] run function mad:system/ongame_team/minecart/bonus_time/team_a
+execute if entity @p[tag=GiveTimeRandomly,team=TeamB] run function mad:system/ongame_team/minecart/bonus_time/team_b
+execute if entity @p[tag=GiveTimeRandomly,team=TeamC] run function mad:system/ongame_team/minecart/bonus_time/team_c
+execute if entity @p[tag=GiveTimeRandomly,team=TeamD] run function mad:system/ongame_team/minecart/bonus_time/team_d
+execute if entity @p[tag=GiveTimeRandomly,team=TeamE] run function mad:system/ongame_team/minecart/bonus_time/team_e
+tag @a remove GiveTimeRandomly
 
 ## next summon decided
 scoreboard players operation #mad SecondSummon = #mad SummonInterval

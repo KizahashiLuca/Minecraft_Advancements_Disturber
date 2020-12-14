@@ -196,7 +196,8 @@ scoreboard objectives remove AD_hb_silk_nest
 scoreboard objectives remove AD_hb_tacti_fish
 scoreboard objectives remove AD_hb_tame_anima
 ## Remove scoreboards for advancements - potage00
-scoreboard objectives remove AD_pg_root
+scoreboard objectives remove AD_pg_minecart
+scoreboard objectives remove AD_pg_kubikari
 scoreboard objectives remove AD_pg_tsutenkaku
 scoreboard objectives remove AD_pg_treasure
 ## Remove scoreboards for summons minecart

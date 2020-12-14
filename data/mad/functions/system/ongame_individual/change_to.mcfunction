@@ -9,6 +9,7 @@
 
 ## Remove advancements
 advancement revoke @a everything
+advancement grant @a only mad:root
 
 ## Take recipes
 recipe take @a *

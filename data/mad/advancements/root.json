@@ -5,34 +5,23 @@
             "nbt": "{SkullOwner:\"potage00\"}"
         },
         "title": {
-            "text": "首狩りぽたーじゅ"
+            "text": "MAD"
         },
         "description": {
-            "text": "ぽたーじゅの頭を手に入れろ！"
+            "text": "ゲームをはじめる"
         },
         "frame": "task",
-        "show_toast": false,
-        "announce_to_chat": false,
+        "show_toast": true,
+        "announce_to_chat": true,
         "hidden": false,
         "background": "minecraft:textures/block/magma.png"
     },
     "criteria": {
-        "potage_head": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "item": "minecraft:player_head",
-                        "nbt": "{SkullOwner:\"potage00\"}"
-                    }
-                ]
-            }
+        "game_start": {
+            "trigger": "minecraft:impossible"
         }
     },
     "requirements": [
-        ["potage_head"]
-    ],
-    "rewards": {
-        "function": "mad:system/ongame/advancements/potage00/root"
-    }
+        ["game_start"]
+    ]
 }

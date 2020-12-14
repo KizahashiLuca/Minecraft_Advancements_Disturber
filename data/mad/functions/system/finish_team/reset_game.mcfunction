@@ -40,6 +40,7 @@ tag @a remove Participant
 tag @a remove Teleporter
 tag @a remove Teleported
 tag @a remove TeleportToMinecart
+tag @a remove GiveTimeRandomly
 
 ## Reset effect
 effect clear @a

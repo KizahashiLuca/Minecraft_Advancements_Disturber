@@ -16,9 +16,15 @@ kill @s
 scoreboard players set #mad RandomCount 10
 function mad:system/random_generator/randomizing
 scoreboard players operation #mad RandomAnswer %= #mad 100
-scoreboard players operation @p[team=Participant,scores={Phase=21,Death=0},distance=..2] Second += #mad RandomAnswer
-scoreboard players operation @p[team=Participant,scores={Phase=21,Death=0},distance=..2] TimeLimit += #mad RandomAnswer
-tellraw @p[team=Participant,scores={Phase=21,Death=0},distance=..2] ["",{"text":"[物資投下] ","color":"green"},{"selector":"@p[team=Participant,scores={Phase=21,Death=0},distance=..2]","color":"green","bold":true},{"text":"に","color":"green"},{"score":{"name":"#mad","objective":"RandomAnswer"},"color":"green"},{"text":"秒のボーナスタイムが付与されました。","color":"green"}]
+
+tag @p[team=Participant,scores={Phase=21,Death=0},distance=..2] add GiveTimeRandomly
+scoreboard players operation @p[tag=GiveTimeRandomly] Second += #mad RandomAnswer
+scoreboard players operation @p[tag=GiveTimeRandomly] TimeLimit += #mad RandomAnswer
+tellraw @p[tag=GiveTimeRandomly] ["",{"text":"[物資投下] ","color":"green"},{"selector":"@p[tag=GiveTimeRandomly]","color":"green","bold":true},{"text":"に","color":"green"},{"score":{"name":"#mad","objective":"RandomAnswer"},"color":"green"},{"text":"秒のボーナスタイムが付与されました。","color":"green"}]
+
+## Grant advancement
+advancement grant @p[tag=GiveTimeRandomly] only mad:find_minecart
+tag @a remove GiveTimeRandomly
 
 ## next summon decided
 scoreboard players operation #mad SecondSummon = #mad SummonInterval

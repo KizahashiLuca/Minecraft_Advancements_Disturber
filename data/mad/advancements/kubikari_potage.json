@@ -1,0 +1,38 @@
+{
+    "parent": "mad:find_minecart",
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:\"potage00\"}"
+        },
+        "title": {
+            "text": "首狩りぽたーじゅ"
+        },
+        "description": {
+            "text": "ぽたーじゅの頭を手に入れろ！"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "potage_head": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:player_head",
+                        "nbt": "{SkullOwner:\"potage00\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["potage_head"]
+    ],
+    "rewards": {
+        "function": "mad:system/ongame/advancements/potage00/kubikari_potage"
+    }
+}

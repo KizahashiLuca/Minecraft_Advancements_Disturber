@@ -195,7 +195,8 @@ scoreboard objectives add AD_hb_silk_nest dummy {"text":"完全な引越し"}
 scoreboard objectives add AD_hb_tacti_fish dummy {"text":"戦術的漁業"}
 scoreboard objectives add AD_hb_tame_anima dummy {"text":"永遠の親友となるだろう"}
 ## Add scoreboards for advancements - potage00
-scoreboard objectives add AD_pg_root dummy {"text":"首狩りぽたーじゅ"}
+scoreboard objectives add AD_pg_minecart dummy {"text":"支援物資だ!"}
+scoreboard objectives add AD_pg_kubikari dummy {"text":"首狩りぽたーじゅ"}
 scoreboard objectives add AD_pg_tsutenkaku dummy {"text":"通天閣からの眺め"}
 scoreboard objectives add AD_pg_treasure dummy {"text":"宝探し"}
 ## Add scoreboards for summons minecart
@@ -448,7 +449,8 @@ scoreboard players set @a AD_hb_silk_nest 0
 scoreboard players set @a AD_hb_tacti_fish 0
 scoreboard players set @a AD_hb_tame_anima 0
 ## Set scoreboards for advancements - potage00
-scoreboard players set @a AD_pg_root 0
+scoreboard players set @a AD_pg_minecart 0
+scoreboard players set @a AD_pg_kubikari 0
 scoreboard players set @a AD_pg_tsutenkaku 0
 scoreboard players set @a AD_pg_treasure 0
 ## Set scoreboards for transmitter
