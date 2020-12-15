@@ -69,7 +69,7 @@ scoreboard players set @a[tag=Participant] Participant 0
 function mad:system/pre_preparation_team/numbering
 tag @a[tag=Participant] remove Numbered
 
-## Set player number
+## Set team leader
 execute if score #mad TeamNumber matches 1.. run tag @r[team=TeamA] add Leader
 execute if score #mad TeamNumber matches 1.. run tag @r[team=TeamB] add Leader
 execute if score #mad TeamNumber matches 1.. run tag @r[team=TeamC] add Leader

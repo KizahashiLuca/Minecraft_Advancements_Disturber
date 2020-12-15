@@ -2,22 +2,135 @@
   "type": "minecraft:entity",
   "pools":[
     {
-      "rolls":0,
+      "rolls":1,
       "entries":[
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:armor_stand",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "team": "TeamA"
+              },
+              "entity": "this"
+            }
+          ],
+          "name": "minecraft:red_banner",
           "functions": [
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"selector":"@s","color":"light_purple","bold":false,"italic":false},{"text":"のリスポーンビーコン","color":"light_purple","bold":false,"italic":false}]
+                ["",{"selector":"@s","color":"red","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"red","bold":false,"italic":false}]
               ],
               "entity": "this"
             },{
               "function":"minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBeaconByDead\"]}"
+              "tag": "{Tags:[\"RespawnBannerByDead\"]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "team": "TeamB"
+              },
+              "entity": "this"
+            }
+          ],
+          "name": "minecraft:blue_banner",
+          "functions": [
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"selector":"@s","color":"blue","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"blue","bold":false,"italic":false}]
+              ],
+              "entity": "this"
+            },{
+              "function":"minecraft:set_nbt",
+              "tag": "{Tags:[\"RespawnBannerByDead\"]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "team": "TeamC"
+              },
+              "entity": "this"
+            }
+          ],
+          "name": "minecraft:yellow_banner",
+          "functions": [
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"selector":"@s","color":"yellow","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"yellow","bold":false,"italic":false}]
+              ],
+              "entity": "this"
+            },{
+              "function":"minecraft:set_nbt",
+              "tag": "{Tags:[\"RespawnBannerByDead\"]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "team": "TeamD"
+              },
+              "entity": "this"
+            }
+          ],
+          "name": "minecraft:green_banner",
+          "functions": [
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"selector":"@s","color":"green","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"green","bold":false,"italic":false}]
+              ],
+              "entity": "this"
+            },{
+              "function":"minecraft:set_nbt",
+              "tag": "{Tags:[\"RespawnBannerByDead\"]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "team": "TeamE"
+              },
+              "entity": "this"
+            }
+          ],
+          "name": "minecraft:purple_banner",
+          "functions": [
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"selector":"@s","color":"dark_purple","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"dark_purple","bold":false,"italic":false}]
+              ],
+              "entity": "this"
+            },{
+              "function":"minecraft:set_nbt",
+              "tag": "{Tags:[\"RespawnBannerByDead\"]}"
             }
           ]
         }
