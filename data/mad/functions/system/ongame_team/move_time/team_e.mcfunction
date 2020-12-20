@@ -23,7 +23,6 @@ scoreboard players operation @p[tag=Leader,tag=CalculateTime] Second -= @p[tag=L
 gamemode spectator @s
 scoreboard players set @s Death 2
 scoreboard players set @s Phase 22
-tag @s add NotSetPlayerResBeacon
 
 ## Remove tag
 tag @a remove CalculateTime

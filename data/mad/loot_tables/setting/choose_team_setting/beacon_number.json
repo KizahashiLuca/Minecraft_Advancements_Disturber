@@ -1,0 +1,145 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:nether_star",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "BeaconNumber": 1
+              }
+            }
+          ],
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"1か所","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"respawn_beacon\"]}"
+            },{
+              "function":"minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:nether_star",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "BeaconNumber": 2
+              }
+            }
+          ],
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"2か所","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"respawn_beacon\"]}"
+            },{
+              "function":"minecraft:set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:nether_star",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "BeaconNumber": 3
+              }
+            }
+          ],
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"3か所","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"respawn_beacon\"]}"
+            },{
+              "function":"minecraft:set_count",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:nether_star",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "BeaconNumber": 4
+              }
+            }
+          ],
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"4か所","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"respawn_beacon\"]}"
+            },{
+              "function":"minecraft:set_count",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:nether_star",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "BeaconNumber": 5
+              }
+            }
+          ],
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"5か所","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"respawn_beacon\"]}"
+            },{
+              "function":"minecraft:set_count",
+              "count": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

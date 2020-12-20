@@ -6,19 +6,16 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"minecraft:nether_star",
+          "name":"minecraft:beacon",
           "functions":[
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"2チーム","color":"white","bold":false,"italic":false}]
+                ["",{"text":"リスポーンビーコン数","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"2_team\"]}"
-            },{
-              "function":"minecraft:set_count",
-              "count": 2
+              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"choose_respawn_beacon_number\"]}"
             }
           ]
         }

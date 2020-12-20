@@ -22,7 +22,6 @@ execute as @e[type=minecraft:armor_stand] if score @s Participant = @p[tag=Compa
 
 ## Remove a tag
 tag @s remove CompareArmorStand
-tag @s remove NotSetPlayerResBeacon
 
 ## Remove scoreboard
 scoreboard objectives remove CompareResult

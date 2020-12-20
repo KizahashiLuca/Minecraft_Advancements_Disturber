@@ -15,6 +15,8 @@ scoreboard players set #mad VisibleInvis 0
 scoreboard players set #mad VisibleDeath 0
 scoreboard players set #mad SetTeamManual 0
 scoreboard players set #mad TeamNumber 2
+scoreboard players set #mad BeaconNumber 1
+scoreboard players set #mad RespawnTime 300
 
 ## Send messages
 function mad:system/setting/choose_team_setting/change_to

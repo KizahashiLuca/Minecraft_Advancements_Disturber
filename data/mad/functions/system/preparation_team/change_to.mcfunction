@@ -38,6 +38,9 @@ tellraw @a [""]
 execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] run function mad:system/preparation_team/random_teleport
 execute as @a[tag=Participant] at @s run tp @s ~ 160 ~
 
+## Set respawn beacon
+execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] run function mad:system/ongame/respawn_beacon/set_respawn_beacon_position
+
 ## Set time
 time set noon
 

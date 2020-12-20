@@ -8,9 +8,9 @@
 #####################################
 
 ## Detect respawn structure
-setblock ~ ~ ~ air destroy
+fill ~ ~ ~ ~ ~1 ~ minecraft:air destroy
 kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:chest"}},sort=nearest,limit=1]
-kill @e[type=minecraft:villager,nbt={Tags:["RespawnStructure"]},sort=nearest,limit=1]
+kill @e[type=minecraft:area_effect_cloud,tag=RespawnBanner,sort=nearest,limit=1]
 
-## Kill cloud
+## Kill armor stand
 kill @s

@@ -28,5 +28,9 @@ execute if score #mad SetTeamManual matches 1 run tellraw @a ["",{"text":"[初�
 
 tellraw @a ["",{"text":"[初期設定] チーム数は ","color":"green"},{"score":{"name":"#mad","objective":"TeamNumber"},"color":"green","bold":true},{"text":" チームに設定されました。","color":"green"}]
 
+tellraw @a ["",{"text":"[初期設定] リスポーンビーコン数は ","color":"green"},{"score":{"name":"#mad","objective":"BeaconNumber"},"color":"green","bold":true},{"text":" か所に設定されました。","color":"green"}]
+
+tellraw @a ["",{"text":"[初期設定] リスポーンバナー残存時間は ","color":"green"},{"score":{"name":"#mad","objective":"RespawnTime"},"color":"green","bold":true},{"text":" 秒に設定されました。","color":"green"}]
+
 ## Change to choose setting
 function mad:system/setting/choose_setting/change_to

@@ -7,7 +7,9 @@
 ## Version   : α-0.3
 #####################################
 
-## Detect respawn beacon
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["RespawnBeacon"],NoGravity:1b,Invulnerable:1b,Particle:"block minecraft:air",Radius:0.5f,Duration:2147483647}
+## Change RespawnTime
+scoreboard players add #mad RespawnTime 30
+execute if score #mad RespawnTime matches 330 run scoreboard players set #mad RespawnTime 0
 
-kill @s
+## Set inventory
+function mad:system/setting/choose_team_setting/change_to

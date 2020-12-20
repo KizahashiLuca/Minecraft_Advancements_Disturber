@@ -17,14 +17,11 @@ function mad:system/time_team/general_time
 ## Position
 function mad:system/ongame/set_position
 
-## Set respawn banner
-execute as @a[tag=Participant,scores={Phase=21,Death=1}] run function mad:system/ongame_team/respawn_beacon/set_respawn_banner
-
 ## Respawn beacon system
-execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s if entity @p[scores={Phase=21,Death=0,Sneak=1..},distance=..1.5] run function mad:system/ongame_team/respawn_beacon/time/tick
-scoreboard players set @a Sneak 0
-execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s run function mad:system/ongame_team/respawn_beacon/set_beacon
-execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s run function mad:system/ongame_team/respawn_beacon/send_gauge
+# execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s if entity @p[scores={Phase=21,Death=0,Sneak=1..},distance=..1.5] run function mad:system/ongame_team/respawn_beacon/time/tick
+# scoreboard players set @a Sneak 0
+# execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s run function mad:system/ongame_team/respawn_beacon/set_beacon
+# execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] at @s run function mad:system/ongame_team/respawn_beacon/send_gauge
 
 ## Detect kill / death
 execute as @a[tag=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run function mad:system/ongame_team/detect_kill
@@ -60,13 +57,18 @@ execute if score #mad TeamNumber matches 5.. if score #mad DeadTeamE matches 1 a
 execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame/transmitter/detect_transmitter
 
 ## Detect respawn beacon
-execute as @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンビーコン"}'}] at @s run function mad:system/ongame_team/respawn_beacon/detect_respawn_beacon
-execute as @a[tag=Participant,scores={Phase=21,Death=0,UseRespawnBeacon=1..}] run function mad:system/ongame_team/respawn_beacon/settle_respawn_beacon
-execute as @a[tag=Participant,scores={NumRespawnBeacon=1..}] run function mad:system/ongame_team/respawn_beacon/main
+execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,tag=!SetRespawnBanner] at @s if block ~ ~1 ~ #mad:banner run function mad:system/ongame/respawn_beacon/detect_respawn_beacon
+execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,tag=SetRespawnBanner] at @s unless block ~ ~1 ~ #mad:banner run function mad:system/ongame/respawn_beacon/reset_respawn_beacon
+execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run data modify block ~ ~-1 ~ Age set value 200L
+
+# execute as @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンビーコン"}'}] at @s run function mad:system/ongame_team/respawn_beacon/detect_respawn_beacon
+# execute as @a[tag=Participant,scores={Phase=21,Death=0,UseRespawnBeacon=1..}] run function mad:system/ongame_team/respawn_beacon/settle_respawn_beacon
+# execute as @a[tag=Participant,scores={NumRespawnBeacon=1..}] run function mad:system/ongame_team/respawn_beacon/main
 
 ## Set respawn banner
-execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}}}] at @s run function mad:system/ongame/respawn_beacon/set_respawn_structure
-execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBanner] at @s unless block ~ ~ ~ minecraft:chest{Items:[{tag:{Tags:["RespawnBannerFromChest"]}}]} run function mad:system/ongame/respawn_beacon/detect_respawn_structure
+execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}}}] at @s run function mad:system/ongame/respawn_beacon/set_respawn_banner
+execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s unless block ~ ~ ~ minecraft:chest{Items:[{tag:{Tags:["RespawnBannerFromChest"]}}]} run function mad:system/ongame/respawn_beacon/detect_respawn_banner
+execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s unless entity @e[type=minecraft:area_effect_cloud,distance=..0.2,tag=RespawnBanner] run function mad:system/ongame/respawn_beacon/break_respawn_banner
 
 ## Game Finish
 scoreboard players operation #mad NumAlive = #mad TeamNumber

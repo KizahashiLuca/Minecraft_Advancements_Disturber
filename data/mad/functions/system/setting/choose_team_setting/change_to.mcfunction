@@ -10,9 +10,6 @@
 ## Clear inventory
 clear @p[tag=Host]
 
-## Set inventory
-function mad:system/setting/choose_team_setting/set_inventory
-
 ## Set scoreboard
 scoreboard players set @p[tag=Host] ThrowItem 0
 scoreboard players set @p[tag=Host] Select09 0
@@ -36,6 +33,13 @@ scoreboard players set @p[tag=Host] Select26 0
 scoreboard players set @p[tag=Host] Select28 0
 scoreboard players set @p[tag=Host] Select31 0
 scoreboard players set @p[tag=Host] Select34 0
+
+scoreboard players operation @p[tag=Host] TeamNumber = #mad TeamNumber
+scoreboard players operation @p[tag=Host] BeaconNumber = #mad BeaconNumber
+scoreboard players operation @p[tag=Host] RespawnTime = #mad RespawnTime
+
+## Set inventory
+function mad:system/setting/choose_team_setting/set_inventory
 
 ## Change phase
 scoreboard players set #mad Phase 16

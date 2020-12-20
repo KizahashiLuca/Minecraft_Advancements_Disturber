@@ -99,6 +99,8 @@ scoreboard objectives add VisibleInvis dummy
 scoreboard objectives add VisibleDeath dummy
 scoreboard objectives add SetTeamManual dummy
 scoreboard objectives add TeamNumber dummy
+scoreboard objectives add BeaconNumber dummy
+scoreboard objectives add RespawnTime dummy
 scoreboard objectives add friendlyFirePrv dummy
 scoreboard objectives add collisionRulePrv dummy
 scoreboard objectives add VisibleNamePrv dummy
@@ -106,6 +108,8 @@ scoreboard objectives add VisibleInvisPrv dummy
 scoreboard objectives add VisibleDeathPrv dummy
 scoreboard objectives add SetTeamManualPrv dummy
 scoreboard objectives add TeamNumberPrv dummy
+scoreboard objectives add BeaconNumberPrv dummy
+scoreboard objectives add RespawnTimePrv dummy
 ## Add scoreboards for advancements
 scoreboard objectives add HasAdvancements dummy
 ## Add scoreboards for advancements - adventure
@@ -182,7 +186,6 @@ scoreboard objectives add AD_ed_resp_dragn dummy {"text":"おしまい…再び�
 scoreboard objectives add AD_ed_root dummy {"text":"ジ・エンド"}
 ## Add scoreboards for advancements - husbandry
 scoreboard objectives add AD_hb_balanced dummy {"text":"バランスの取れた食事"}
-scoreboard objectives add AD_hb_break_hoe dummy {"text":"真面目な献身"}
 scoreboard objectives add AD_hb_bred_all dummy {"text":"二匹ずつ"}
 scoreboard objectives add AD_hb_bred_anima dummy {"text":"コウノトリの贈り物"}
 scoreboard objectives add AD_hb_catalogue dummy {"text":"猫大全集"}
@@ -284,6 +287,8 @@ scoreboard players set #mad VisibleInvis 0
 scoreboard players set #mad VisibleDeath 0
 scoreboard players set #mad SetTeamManual 0
 scoreboard players set #mad TeamNumber 2
+scoreboard players set #mad BeaconNumber 1
+scoreboard players set #mad RespawnTime 300
 scoreboard players set #mad friendlyFirePrv 1
 scoreboard players set #mad collisionRulePrv 1
 scoreboard players set #mad VisibleNamePrv 0
@@ -291,6 +296,8 @@ scoreboard players set #mad VisibleInvisPrv 0
 scoreboard players set #mad VisibleDeathPrv 0
 scoreboard players set #mad SetTeamManualPrv 0
 scoreboard players set #mad TeamNumberPrv 2
+scoreboard players set #mad BeaconNumberPrv 1
+scoreboard players set #mad RespawnTimePrv 300
 ## Set scoreboards for summons minecart
 scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 100
@@ -361,6 +368,8 @@ scoreboard players set @a Select28 0
 scoreboard players set @a Select31 0
 scoreboard players set @a Select34 0
 scoreboard players set @a Selected 0
+## Add scoreboards for setting phase - choose time limit
+scoreboard players set @a GetTimeLimit 0
 ## Set scoreboards for advancements
 scoreboard players set @a HasAdvancements 0
 ## Set scoreboards for advancements - adventure

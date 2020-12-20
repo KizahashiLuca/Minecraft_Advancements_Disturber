@@ -7,7 +7,6 @@
 ## Version   : α-0.3
 #####################################
 
-## Detect respawn beacon
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["RespawnBeacon"],NoGravity:1b,Invulnerable:1b,Particle:"block minecraft:air",Radius:0.5f,Duration:2147483647}
-
+## Break respawn banner
+fill ~ ~ ~ ~ ~1 ~ minecraft:air replace
 kill @s

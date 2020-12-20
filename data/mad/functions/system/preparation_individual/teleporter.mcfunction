@@ -17,7 +17,7 @@ effect clear @s minecraft:slow_falling
 tag @s add Teleporter
 
 ## Teleport
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["Teleporter"],NoGravity:1b,Particle:"block air",Radius:0.5f,Duration:10000000}
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["Teleporter"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
 execute as @e[type=minecraft:area_effect_cloud,tag=Teleporter] run scoreboard players operation @s Participant = @p[team=Participant,tag=Teleporter] Participant
 
 ## Remove a tag

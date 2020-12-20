@@ -101,6 +101,8 @@ scoreboard objectives remove VisibleInvis
 scoreboard objectives remove VisibleDeath
 scoreboard objectives remove SetTeamManual
 scoreboard objectives remove TeamNumber
+scoreboard objectives remove BeaconNumber
+scoreboard objectives remove RespawnTime
 scoreboard objectives remove friendlyFirePrv
 scoreboard objectives remove collisionRulePrv
 scoreboard objectives remove VisibleNamePrv
@@ -108,6 +110,8 @@ scoreboard objectives remove VisibleInvisPrv
 scoreboard objectives remove VisibleDeathPrv
 scoreboard objectives remove SetTeamManualPrv
 scoreboard objectives remove TeamNumberPrv
+scoreboard objectives remove BeaconNumberPrv
+scoreboard objectives remove RespawnTimePrv
 ## Remove scoreboards for advancements
 scoreboard objectives remove HasAdvancements
 ## Remove scoreboards for advancements - adventure

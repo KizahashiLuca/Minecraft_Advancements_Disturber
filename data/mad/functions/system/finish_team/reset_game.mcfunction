@@ -21,6 +21,10 @@ worldborder set 60000000
 ## Forceload remove
 forceload remove all
 
+## Reset respawn banner
+execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s run function mad:system/ongame/respawn_beacon/break_respawn_banner
+execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run function mad:system/ongame/respawn_beacon/break_respawn_beacon
+
 ## Remove scoreboards
 function mad:system/finish_team/reset_scoreboard
 
@@ -41,6 +45,12 @@ tag @a remove Teleporter
 tag @a remove Teleported
 tag @a remove TeleportToMinecart
 tag @a remove GiveTimeRandomly
+tag @a remove RespawnBannerSet
+tag @a remove RespawnBannerSet1
+tag @a remove RespawnBannerSet2
+tag @a remove RespawnBannerSet3
+tag @a remove RespawnBannerSet4
+tag @a remove RespawnBannerSet5
 
 ## Reset effect
 effect clear @a
@@ -51,13 +61,12 @@ experience set @a 0 levels
 experience set @a 0 points
 
 ## Reset world
-execute at @e[type=minecraft:area_effect_cloud,nbt={Tags:["RespawnBeacon"]}] run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:observer
 kill @e[type=minecraft:chest_minecart,tag=Minecart]
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
-kill @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンビーコン"}'}]
+kill @e[type=minecraft:armor_stand,tag=RespawnBeaconPosition]
 
 ## Reset time
 time set noon

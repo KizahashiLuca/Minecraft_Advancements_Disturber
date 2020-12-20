@@ -22,4 +22,4 @@ scoreboard players set @p[tag=Host] Select28 0
 scoreboard players set @p[tag=Host] Select34 0
 
 ## Change phase
-scoreboard players set #mad Phase 13
+scoreboard players set #mad Phase 10
