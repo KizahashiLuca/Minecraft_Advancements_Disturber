@@ -23,6 +23,10 @@ execute as @s[scores={BeaconNumber=4}] run tag @a[tag=RespawnBannerSet4] remove 
 execute as @s[scores={BeaconNumber=5}] run tag @a[tag=RespawnBannerSet5] remove RespawnBannerSet
 execute as @s[scores={BeaconNumber=5}] run tag @a[tag=RespawnBannerSet5] remove RespawnBannerSet5
 
+## Scoreboard
+scoreboard players set @s Second 20
+scoreboard players set @s Tick 0
+
 ## Reset data 
 data modify entity @s CustomName set value '{"text":"リスポーンビーコン"}'
 

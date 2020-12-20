@@ -20,15 +20,28 @@ data modify entity @s CustomName set from block ~ ~1 ~ CustomName
 ## Detect respawn banner set
 execute as @a[tag=Participant,scores={Phase=22,Death=2}] run function mad:system/ongame/respawn_beacon/detect_respawn_banner_set
 
-## Detect player
-scoreboard players operation @s Participant = @p[tag=Participant,tag=RespawnBannerSetTmp,scores={Phase=22,Death=2}] Participant
-tag @p[tag=Participant,tag=RespawnBannerSetTmp,scores={Phase=22,Death=2}] remove RespawnBannerSetTmp
+## Scoreboard
+scoreboard players set @s Second 20
+scoreboard players set @s Tick 0
+
+## Send message
+title @a[distance=..2] title [""]
+execute if score @s BeaconNumber matches 1 run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSet1]"}]
+execute if score @s BeaconNumber matches 2 run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSet2]"}]
+execute if score @s BeaconNumber matches 3 run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSet3]"}]
+execute if score @s BeaconNumber matches 4 run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSet4]"}]
+execute if score @s BeaconNumber matches 5 run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSet5]"}]
+title @a[distance=..2] times 2 20 2
 
 ## Reset data
 data modify entity @s CustomName set value '{"text":"リスポーンビーコン"}'
 
-## Remove a tag
+## Remove tags
 tag @s remove DetectRespawnBeacon
+tag @p[tag=RespawnBannerSetTmp] remove RespawnBannerSetTmp
+
+## Remove temporarily scoreboard
+scoreboard objectives remove ResultTmp
 
 ## Add a tag
 tag @s add SetRespawnBanner
