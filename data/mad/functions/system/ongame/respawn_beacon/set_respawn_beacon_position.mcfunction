@@ -48,4 +48,5 @@ execute if score #mad WorldBorder matches 2000 run spreadplayers ~ ~ 0 998 false
 
 ## Set respawn beacon
 execute as @e[type=minecraft:armor_stand,tag=RespawnBeaconPosition] at @s align x align z run tp @s ~0.5 ~ ~0.5
+execute as @e[type=minecraft:armor_stand,tag=RespawnBeaconPosition] at @s run forceload add ~ ~ ~ ~
 execute as @e[type=minecraft:armor_stand,tag=RespawnBeaconPosition] at @s run function mad:system/ongame/respawn_beacon/construct_respawn_beacon

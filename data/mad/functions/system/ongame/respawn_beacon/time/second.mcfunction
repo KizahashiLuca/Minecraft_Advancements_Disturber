@@ -8,8 +8,8 @@
 #####################################
 
 ## Calculate time
-scoreboard players remove @s Second 1
-scoreboard players set @s[scores={Second=..-1}] Second 0
+scoreboard players remove @s[tag=RespawnBeaconTick] Second 1
+scoreboard players set @s[tag=RespawnBeaconTick,scores={Second=..-1}] Second 0
 
 ## Execute time for beacon
-execute as @s[scores={Second=0}] at @s run function mad:system/ongame/respawn_beacon/time/execute_beacon
+execute as @s[tag=RespawnBeaconTick,scores={Second=0}] at @s run function mad:system/ongame/respawn_beacon/time/execute_beacon

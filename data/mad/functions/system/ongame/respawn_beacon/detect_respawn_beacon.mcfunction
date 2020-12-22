@@ -18,7 +18,7 @@ scoreboard players set #mad ResultTmp 1
 data modify entity @s CustomName set from block ~ ~1 ~ CustomName
 
 ## Detect respawn banner set
-execute as @a[tag=Participant,scores={Phase=22,Death=2}] run function mad:system/ongame/respawn_beacon/detect_respawn_banner_set
+execute as @a[tag=Participant,scores={Phase=22,Death=2..}] run function mad:system/ongame/respawn_beacon/detect_respawn_banner_set
 
 ## Scoreboard
 scoreboard players set @s Second 20
@@ -38,7 +38,6 @@ data modify entity @s CustomName set value '{"text":"リスポーンビーコン
 
 ## Remove tags
 tag @s remove DetectRespawnBeacon
-tag @p[tag=RespawnBannerSetTmp] remove RespawnBannerSetTmp
 
 ## Remove temporarily scoreboard
 scoreboard objectives remove ResultTmp

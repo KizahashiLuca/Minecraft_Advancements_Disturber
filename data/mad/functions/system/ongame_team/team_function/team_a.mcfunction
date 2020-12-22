@@ -11,10 +11,10 @@
 execute as @a[team=TeamA,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamA,tag=Leader] NumOfTeamPlayer 1
 
 ## Kill - time over
-execute as @p[team=TeamA,scores={Phase=21,Death=0,Second=..0},tag=Leader] run kill @a[team=TeamA,scores={Phase=21,Death=0}]
+execute as @p[team=TeamA,scores={Second=..0},tag=Leader] run kill @a[team=TeamA,scores={Phase=21,Death=0}]
 
 ## Spectate
-execute as @a[team=TeamA,scores={Phase=22,Death=2},gamemode=spectator] run spectate @p[team=TeamA,scores={Phase=21,Death=0},sort=nearest] @s
+execute as @a[team=TeamA,scores={Phase=22,Death=2..},gamemode=spectator] run spectate @p[team=TeamA,scores={Phase=21,Death=0},sort=nearest] @s
 
 ## Detect team end
 execute unless entity @p[team=TeamA,scores={Phase=21,Death=0}] run scoreboard players set #mad DeadTeamA 1
