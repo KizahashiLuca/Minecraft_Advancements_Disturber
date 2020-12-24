@@ -40,6 +40,13 @@ tag @a remove Teleporter
 tag @a remove Teleported
 tag @a remove TeleportToMinecart
 tag @a remove GiveTimeRandomly
+tag @a remove RespawnBannerSet
+tag @a remove RespawnBannerSetTmp
+tag @a remove RespawnBannerSet1
+tag @a remove RespawnBannerSet2
+tag @a remove RespawnBannerSet3
+tag @a remove RespawnBannerSet4
+tag @a remove RespawnBannerSet5
 
 ## Reset effect
 effect clear @a

@@ -46,6 +46,7 @@ tag @a remove Teleported
 tag @a remove TeleportToMinecart
 tag @a remove GiveTimeRandomly
 tag @a remove RespawnBannerSet
+tag @a remove RespawnBannerSetTmp
 tag @a remove RespawnBannerSet1
 tag @a remove RespawnBannerSet2
 tag @a remove RespawnBannerSet3
