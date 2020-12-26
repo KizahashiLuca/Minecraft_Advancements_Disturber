@@ -198,10 +198,18 @@ scoreboard objectives add AD_hb_silk_nest dummy {"text":"完全な引越し"}
 scoreboard objectives add AD_hb_tacti_fish dummy {"text":"戦術的漁業"}
 scoreboard objectives add AD_hb_tame_anima dummy {"text":"永遠の親友となるだろう"}
 ## Add scoreboards for advancements - potage00
+scoreboard objectives add AD_pg_root dummy {"text":"MAD"}
 scoreboard objectives add AD_pg_minecart dummy {"text":"支援物資だ!"}
 scoreboard objectives add AD_pg_kubikari dummy {"text":"首狩りぽたーじゅ"}
 scoreboard objectives add AD_pg_tsutenkaku dummy {"text":"通天閣からの眺め"}
 scoreboard objectives add AD_pg_treasure dummy {"text":"宝探し"}
+scoreboard objectives add AD_pg_3litpigs dummy {"text":"3匹の子豚"}
+scoreboard objectives add AD_pg_brk_spawn dummy {"text":"君子危うきに近寄らず"}
+scoreboard objectives add AD_pg_near_bord dummy {"text":"この世界の片隅に"}
+scoreboard objectives add AD_pg_kill_phant dummy {"text":"NO BED NO LIFE"}
+scoreboard objectives add AD_pg_kill_ender dummy {"text":"消える暗闇"}
+scoreboard objectives add AD_pg_frinedship dummy {"text":"仲間思い"}
+scoreboard objectives add BreakSpawner minecraft.mined:minecraft.spawner
 ## Add scoreboards for summons minecart
 scoreboard objectives add 300 dummy
 scoreboard objectives add SecondSummon dummy
@@ -213,6 +221,10 @@ scoreboard objectives add UseTransmitter trigger
 scoreboard objectives add TransmitterPosX dummy
 scoreboard objectives add TransmitterPosY dummy
 scoreboard objectives add TransmitterPosZ dummy
+## Add scoreboards for emergency call
+scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse_spawn_egg
+## Add scoreboards for upgrader
+scoreboard objectives add UseUpgrader minecraft.used:minecraft.bat_spawn_egg
 ## Add scoreboards for respawn beacon
 scoreboard objectives add UseRespawnBeacon minecraft.used:minecraft.armor_stand
 scoreboard objectives add NumRespawnBeacon dummy
@@ -302,7 +314,7 @@ scoreboard players set #mad RespawnTimePrv 300
 scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 100
 scoreboard players set #mad SecondEliminate 0
-scoreboard players set #mad SummonInterval 100
+scoreboard players set #mad SummonInterval 20
 scoreboard players set #mad SummonMinecart 0
 ## Set scoreboards for team
 scoreboard players set #mad TeamBoolean 0
@@ -458,16 +470,28 @@ scoreboard players set @a AD_hb_silk_nest 0
 scoreboard players set @a AD_hb_tacti_fish 0
 scoreboard players set @a AD_hb_tame_anima 0
 ## Set scoreboards for advancements - potage00
+scoreboard players set @a AD_pg_root 0
 scoreboard players set @a AD_pg_minecart 0
 scoreboard players set @a AD_pg_kubikari 0
 scoreboard players set @a AD_pg_tsutenkaku 0
 scoreboard players set @a AD_pg_treasure 0
+scoreboard players set @a AD_pg_3litpigs 0
+scoreboard players set @a AD_pg_brk_spawn 0
+scoreboard players set @a AD_pg_near_bord 0
+scoreboard players set @a AD_pg_kill_phant 0
+scoreboard players set @a AD_pg_kill_ender 0
+scoreboard players set @a AD_pg_frinedship 0
+scoreboard players set @a BreakSpawner 0
 ## Set scoreboards for transmitter
 scoreboard players set @a UseTransmitter 0
 scoreboard players enable @a UseTransmitter
 scoreboard players set @a TransmitterPosX 0
 scoreboard players set @a TransmitterPosY 0
 scoreboard players set @a TransmitterPosZ 0
+## Set scoreboards for emergency call
+scoreboard players set @a UseEmergencyCall 0
+## Set scoreboards for upgrader
+scoreboard players set @a UseUpgrader 0
 ## Set scoreboards for respawn beacon
 scoreboard players set @a UseRespawnBeacon 0
 scoreboard players set @a NumRespawnBeacon 0

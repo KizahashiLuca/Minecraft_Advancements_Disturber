@@ -39,6 +39,11 @@
           "type": "minecraft:loot_table",
           "weight": 1,
           "name": "mad:ongame/chest_minecart_item/energy_drink"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:ongame/chest_minecart_item/upgrader"
         }
       ]
     }

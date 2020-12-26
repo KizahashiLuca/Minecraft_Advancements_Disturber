@@ -199,10 +199,18 @@ scoreboard objectives remove AD_hb_silk_nest
 scoreboard objectives remove AD_hb_tacti_fish
 scoreboard objectives remove AD_hb_tame_anima
 ## Remove scoreboards for advancements - potage00
+scoreboard objectives remove AD_pg_root
 scoreboard objectives remove AD_pg_minecart
 scoreboard objectives remove AD_pg_kubikari
 scoreboard objectives remove AD_pg_tsutenkaku
 scoreboard objectives remove AD_pg_treasure
+scoreboard objectives remove AD_pg_3litpigs
+scoreboard objectives remove AD_pg_brk_spawn
+scoreboard objectives remove AD_pg_near_bord
+scoreboard objectives remove AD_pg_kill_phant
+scoreboard objectives remove AD_pg_kill_ender
+scoreboard objectives remove AD_pg_frinedship
+scoreboard objectives remove BreakSpawner
 ## Remove scoreboards for summons minecart
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon
@@ -214,6 +222,10 @@ scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX
 scoreboard objectives remove TransmitterPosY
 scoreboard objectives remove TransmitterPosZ
+## Add scoreboards for emergency call
+scoreboard objectives remove UseEmergencyCall
+## Add scoreboards for upgrader
+scoreboard objectives remove UseUpgrader
 ## Remove scoreboards for respawn beacon
 scoreboard objectives remove UseRespawnBeacon
 scoreboard objectives remove NumRespawnBeacon

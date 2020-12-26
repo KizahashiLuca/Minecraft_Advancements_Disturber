@@ -19,12 +19,21 @@ gamemode survival @p[tag=RespawnSoon]
 scoreboard players set @p[tag=RespawnSoon] Phase 21
 scoreboard players set @p[tag=RespawnSoon] Death 0
 
+## Send messages
 execute as @p[tag=RespawnSoon,team=TeamA] run tellraw @a[team=TeamA] ["",{"text":"[リスポーン] ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":"がリスポーンしました。","color":"green"}]
 execute as @p[tag=RespawnSoon,team=TeamB] run tellraw @a[team=TeamB] ["",{"text":"[リスポーン] ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":"がリスポーンしました。","color":"green"}]
 execute as @p[tag=RespawnSoon,team=TeamC] run tellraw @a[team=TeamC] ["",{"text":"[リスポーン] ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":"がリスポーンしました。","color":"green"}]
 execute as @p[tag=RespawnSoon,team=TeamD] run tellraw @a[team=TeamD] ["",{"text":"[リスポーン] ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":"がリスポーンしました。","color":"green"}]
 execute as @p[tag=RespawnSoon,team=TeamE] run tellraw @a[team=TeamE] ["",{"text":"[リスポーン] ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":"がリスポーンしました。","color":"green"}]
 
+## Grand advancement
+execute as @p[tag=RespawnSoon,team=TeamA] run advancement grant @p[team=TeamA,scores={Phase=21,Death=0},sort=nearest] only mad:friendship
+execute as @p[tag=RespawnSoon,team=TeamB] run advancement grant @p[team=TeamA,scores={Phase=21,Death=0},sort=nearest] only mad:friendship
+execute as @p[tag=RespawnSoon,team=TeamC] run advancement grant @p[team=TeamA,scores={Phase=21,Death=0},sort=nearest] only mad:friendship
+execute as @p[tag=RespawnSoon,team=TeamD] run advancement grant @p[team=TeamA,scores={Phase=21,Death=0},sort=nearest] only mad:friendship
+execute as @p[tag=RespawnSoon,team=TeamE] run advancement grant @p[team=TeamA,scores={Phase=21,Death=0},sort=nearest] only mad:friendship
+
+## Remove tags
 tag @p[tag=RespawnSoon] remove RespawnBannerSet1
 tag @p[tag=RespawnSoon] remove RespawnBannerSet2
 tag @p[tag=RespawnSoon] remove RespawnBannerSet3
@@ -33,6 +42,7 @@ tag @p[tag=RespawnSoon] remove RespawnBannerSet5
 tag @p[tag=RespawnSoon] remove RespawnBannerSet
 tag @p[tag=RespawnSoon] remove RespawnSoon
 
+## Particle
 particle minecraft:soul_fire_flame ~ ~1 ~ 0.2 0.8 0.2 0.05 1000 normal @a
 playsound minecraft:block.beacon.power_select master @a ~ ~1 ~ 1.0 2.0
 data modify block ~ ~-1 ~ Age set value 0L

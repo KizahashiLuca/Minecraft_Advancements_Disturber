@@ -23,7 +23,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "mad:ongame/chest_minecart_item/respawn_beacon"
+          "name": "mad:ongame/chest_minecart_item/mobile_respawn_beacon"
         },
         {
           "type": "minecraft:loot_table",
@@ -44,6 +44,16 @@
           "type": "minecraft:loot_table",
           "weight": 1,
           "name": "mad:ongame/chest_minecart_item/energy_drink"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:ongame/chest_minecart_item/emergency_call"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:ongame/chest_minecart_item/upgrader"
         }
       ]
     }

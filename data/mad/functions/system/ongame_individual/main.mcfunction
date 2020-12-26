@@ -17,6 +17,9 @@ function mad:system/time_individual/general_time
 ## Position
 function mad:system/ongame/set_position
 
+## Execute advancements
+function mad:system/ongame/advancements/potage00/execute_advancements
+
 ## Detect kill
 execute as @a[team=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run function mad:system/ongame_individual/detect_kill
 
@@ -34,6 +37,9 @@ execute as @a[gamemode=!survival,scores={TeleportMessage=1}] run function mad:sy
 
 ## Detect transmitter
 execute as @a[team=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame/transmitter/detect_transmitter
+
+## Detect upgrader
+execute as @a[team=Participant,scores={Phase=21,Death=0,UseUpgrader=1..}] run function mad:system/ongame/upgrader/main
 
 ## Game Finish
 scoreboard players operation #mad NumAlive = #mad NumParticipant

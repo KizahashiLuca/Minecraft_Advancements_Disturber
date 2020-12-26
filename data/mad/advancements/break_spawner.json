@@ -1,0 +1,29 @@
+{
+    "parent": "mad:root",
+    "display": {
+        "icon": {
+            "item": "minecraft:spawner"
+        },
+        "title": {
+            "text": "君子危うきに近寄らず"
+        },
+        "description": {
+            "text": "スポナーの破壊"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "break_spawner": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        ["break_spawner"]
+    ],
+    "rewards": {
+        "function": "mad:system/ongame/advancements/potage00/break_spawner"
+    }
+}

@@ -17,6 +17,9 @@ function mad:system/time_team/general_time
 ## Position
 function mad:system/ongame/set_position
 
+## Execute advancements
+function mad:system/ongame/advancements/potage00/execute_advancements
+
 ## Detect kill / death
 execute as @a[tag=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run function mad:system/ongame_team/detect_kill
 
@@ -49,6 +52,12 @@ execute if score #mad TeamNumber matches 5.. if score #mad DeadTeamE matches 1 a
 
 ## Detect transmitter
 execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame/transmitter/detect_transmitter
+
+## Detect upgrader
+execute as @a[tag=Participant,scores={Phase=21,Death=0,UseUpgrader=1..}] at @s run function mad:system/ongame/upgrader/main
+
+## Detect emergency_call
+execute as @a[tag=Participant,scores={Phase=21,Death=0,UseEmergencyCall=1..}] at @s run function mad:system/ongame/emergency_call/main
 
 ## Detect respawn beacon
 execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,tag=!SetRespawnBanner] at @s if block ~ ~1 ~ #mad:banner run function mad:system/ongame/respawn_beacon/detect_respawn_beacon

@@ -1,0 +1,40 @@
+{
+    "parent": "mad:root",
+    "display": {
+        "icon": {
+            "item": "minecraft:black_bed"
+        },
+        "title": {
+            "text": "NO BED NO LIFE"
+        },
+        "description": {
+            "text": "ファントムを倒す"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "no_bed_no_life": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "predicate": {
+                            "type": "minecraft:phantom"
+                        },
+                        "entity": "this"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["no_bed_no_life"]
+    ],
+    "rewards": {
+        "function": "mad:system/ongame/advancements/potage00/no_bed_no_life"
+    }
+}

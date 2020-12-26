@@ -1,0 +1,40 @@
+{
+    "parent": "mad:root",
+    "display": {
+        "icon": {
+            "item": "minecraft:ender_pearl"
+        },
+        "title": {
+            "text": "消える暗闇"
+        },
+        "description": {
+            "text": "エンダーマンを倒す"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "disappear_darkness": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "predicate": {
+                            "type": "minecraft:enderman"
+                        },
+                        "entity": "this"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["disappear_darkness"]
+    ],
+    "rewards": {
+        "function": "mad:system/ongame/advancements/potage00/disappear_darkness"
+    }
+}
