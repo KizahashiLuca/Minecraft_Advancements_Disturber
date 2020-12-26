@@ -1,5 +1,5 @@
 {
-    "parent": "mad:root",
+    "parent": "mad:adventure",
     "display": {
         "icon": {
             "item": "minecraft:black_bed"
@@ -10,7 +10,7 @@
         "description": {
             "text": "ファントムを倒す"
         },
-        "frame": "task",
+        "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false

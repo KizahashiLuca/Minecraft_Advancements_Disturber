@@ -7,26 +7,25 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:zombie_horse_spawn_egg",
+          "name": "minecraft:armor_stand",
           "functions": [
             {
               "function": "minecraft:set_name",
               "name": [
-                ["",{"text":"緊急招集","color":"light_purple","bold":false,"italic":false}]
+                ["",{"text":"モバイルリスポーンビーコン","color":"light_purple","bold":false,"italic":false}]
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                ["",{"text":"使用者の場所に同じチームの人を","color":"white","bold":false,"italic":false}],
-                ["",{"text":"テレポートさせる。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"簡易リスポーンビーコンを設置。","color":"white","bold":false,"italic":false}],
                 [""],
                 ["",{"text":"右クリックで使用","color":"","bold":false,"italic":false}]
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MinecartItem\"]}"
+              "tag": "{Tags:[\"MinecartItem\"],EntityTag:{Invisible:1b,Marker:0b,Invulnerable:0b,Health:1.0f,Silent:1b,NoAI:1b,DeathLootTable:\"\",CustomNameVisible:false}}"
             }
           ]
         }

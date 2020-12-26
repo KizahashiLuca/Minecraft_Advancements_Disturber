@@ -1,5 +1,5 @@
 {
-    "parent": "mad:root",
+    "parent": "mad:adventure",
     "display": {
         "icon": {
             "item": "minecraft:leather_boots"
@@ -10,7 +10,7 @@
         "description": {
             "text": "ボーダーの端へ到達"
         },
-        "frame": "task",
+        "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false

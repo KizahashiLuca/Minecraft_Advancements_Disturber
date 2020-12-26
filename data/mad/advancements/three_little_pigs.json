@@ -1,5 +1,5 @@
 {
-    "parent": "mad:root",
+    "parent": "mad:collect",
     "display": {
         "icon": {
             "item": "minecraft:oak_door"
@@ -10,7 +10,7 @@
         "description": {
             "text": "干し草の俵、木材、レンガブロックを集める"
         },
-        "frame": "task",
+        "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false

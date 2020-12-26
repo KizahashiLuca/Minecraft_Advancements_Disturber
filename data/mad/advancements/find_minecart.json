@@ -1,5 +1,5 @@
 {
-    "parent": "mad:root",
+    "parent": "mad:original",
     "display": {
         "icon": {
             "item": "minecraft:chest_minecart"
@@ -10,7 +10,7 @@
         "description": {
             "text": "支援物資を受け取る"
         },
-        "frame": "task",
+        "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false

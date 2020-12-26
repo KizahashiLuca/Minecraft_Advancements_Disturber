@@ -1,27 +1,27 @@
 {
+    "parent": "mad:root",
     "display": {
         "icon": {
             "item": "minecraft:player_head",
             "nbt": "{SkullOwner:\"potage00\"}"
         },
         "title": {
-            "text": "MAD STAT"
+            "text": "収集"
         },
         "description": {
-            "text": "ゲームをはじめる"
+            "text": ""
         },
         "frame": "task",
         "show_toast": false,
         "announce_to_chat": false,
-        "hidden": false,
-        "background": "minecraft:textures/block/magma.png"
+        "hidden": false
     },
     "criteria": {
-        "game_start": {
+        "collect": {
             "trigger": "minecraft:impossible"
         }
     },
     "requirements": [
-        ["game_start"]
+        ["collect"]
     ]
 }

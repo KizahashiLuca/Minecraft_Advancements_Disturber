@@ -1,5 +1,5 @@
 {
-    "parent": "mad:root",
+    "parent": "mad:adventure",
     "display": {
         "icon": {
             "item": "minecraft:ender_pearl"
@@ -10,7 +10,7 @@
         "description": {
             "text": "エンダーマンを倒す"
         },
-        "frame": "task",
+        "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false

@@ -1,5 +1,5 @@
 {
-    "parent": "mad:root",
+    "parent": "mad:adventure",
     "display": {
         "icon": {
             "item": "minecraft:golden_boots",
@@ -11,7 +11,7 @@
         "description": {
             "translate": "海抜63m+108mの高さ\n(Y=171)に達する"
         },
-        "frame": "task",
+        "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false

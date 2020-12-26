@@ -18,7 +18,7 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
-                ["",{"text":"使用者の着用した防具をアップグレード","color":"white","bold":false,"italic":false}],
+                ["",{"text":"使用者の着用した防具をアップグレード。","color":"white","bold":false,"italic":false}],
                 ["",{"text":"  無着用 → 革防具","color":"white","bold":false,"italic":false}],
                 ["",{"text":"  革防具 → 金防具","color":"white","bold":false,"italic":false}],
                 ["",{"text":"  金防具 → チェーン防具","color":"white","bold":false,"italic":false}],
