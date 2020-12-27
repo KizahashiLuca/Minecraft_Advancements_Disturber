@@ -303,7 +303,7 @@ scoreboard players set #mad RespawnTimePrv 300
 scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 100
 scoreboard players set #mad SecondEliminate 0
-scoreboard players set #mad SummonInterval 20
+scoreboard players set #mad SummonInterval 100
 scoreboard players set #mad SummonMinecart 0
 ## Set scoreboards for team
 scoreboard players set #mad TeamBoolean 0
