@@ -51,7 +51,7 @@ execute if score #mad TeamNumber matches 4.. if score #mad DeadTeamD matches 1 a
 execute if score #mad TeamNumber matches 5.. if score #mad DeadTeamE matches 1 as @a[scores={TeleportMessage=1},team=TeamE] run function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
-execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] run function mad:system/ongame/transmitter/detect_transmitter
+execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter/detect_transmitter
 
 ## Detect upgrader
 execute as @a[tag=Participant,scores={Phase=21,Death=0,UseUpgrader=1..}] at @s run function mad:system/ongame/upgrader/main

@@ -13,4 +13,4 @@ scoreboard players add @a[team=TeamD] HasAdvancements 1
 scoreboard players operation @p[team=TeamD,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamD,tag=Leader] Second += #mad AddingTime
 advancement grant @a[team=TeamD] only mad:break_spawner
-tellraw @a[team=TeamD] ["",{"translate":"chat.type.advancement.challenge","with":[{"text":"緑チーム","color":"green","bold":true},{"translate":"[%s]","color":"dark_purple","with":[{"text":"君子危うきに近寄らず","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"dark_purple","with":[{"text":"君子危うきに近寄らず"},{"text":"スポナーの破壊"}]}]}}]}]}]
+tellraw @a[team=TeamD] ["",{"translate":"chat.type.advancement.task","with":[{"text":"緑チーム","color":"green","bold":true},{"translate":"[%s]","color":"green","with":[{"text":"君子危うきに近寄らず","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"text":"君子危うきに近寄らず"},{"text":"スポナーの破壊"}]}]}}]}]}]

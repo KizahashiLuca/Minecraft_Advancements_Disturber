@@ -10,7 +10,7 @@
         "description": {
             "text": "ボーダーの端へ到達"
         },
-        "frame": "challenge",
+        "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false

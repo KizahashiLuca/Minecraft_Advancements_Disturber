@@ -13,4 +13,4 @@ scoreboard players add @a[team=TeamE] HasAdvancements 1
 scoreboard players operation @p[team=TeamE,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamE,tag=Leader] Second += #mad AddingTime
 advancement grant @a[team=TeamE] only mad:no_bed_no_life
-tellraw @a[team=TeamE] ["",{"translate":"chat.type.advancement.challenge","with":[{"text":"紫チーム","color":"dark_purple","bold":true},{"translate":"[%s]","color":"dark_purple","with":[{"text":"NO BED NO LIFE","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"dark_purple","with":[{"text":"NO BED NO LIFE"},{"text":"ファントムを倒す"}]}]}}]}]}]
+tellraw @a[team=TeamE] ["",{"translate":"chat.type.advancement.task","with":[{"text":"紫チーム","color":"dark_purple","bold":true},{"translate":"[%s]","color":"green","with":[{"text":"NO BED NO LIFE","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"text":"NO BED NO LIFE"},{"text":"ファントムを倒す"}]}]}}]}]}]
