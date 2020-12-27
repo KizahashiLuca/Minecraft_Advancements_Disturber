@@ -19,7 +19,7 @@ setblock ~ ~ ~ minecraft:barrier
 
 ## Summon cloud
 summon minecraft:area_effect_cloud ~0.0 ~ ~0.0 {Tags:["MobileRespawnBeacon"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,CustomName:'{"text":"モバイルリスポーンビーコン"}',CustomNameVisible:1b,Duration:2147483647}
-scoreboard players operation @e[type=minecraft:area_effect_cloud,distance=..0.2,tag=RespawnBeacon] MobileBeaconNum = #mad MobileBeaconNum
+scoreboard players operation @e[type=minecraft:area_effect_cloud,distance=..0.2,tag=MobileRespawnBeacon] MobileBeaconNum = #mad MobileBeaconNum
 scoreboard players add #mad MobileBeaconNum 1
 
 ## Kill armor stand

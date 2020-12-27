@@ -22,8 +22,9 @@ worldborder set 60000000
 forceload remove all
 
 ## Reset respawn banner
-execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s run function mad:system/ongame/respawn_beacon/break_respawn_banner
+execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s run function mad:system/ongame/respawn_banner/break_respawn_banner
 execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run function mad:system/ongame/respawn_beacon/break_respawn_beacon
+execute as @e[type=minecraft:area_effect_cloud,tag=MobileRespawnBeacon] at @s run fill ~-1 ~ ~-1 ~1 ~1 ~1 minecraft:air replace
 
 ## Remove scoreboards
 function mad:system/finish_team/reset_scoreboard
@@ -52,6 +53,11 @@ tag @a remove RespawnBannerSet2
 tag @a remove RespawnBannerSet3
 tag @a remove RespawnBannerSet4
 tag @a remove RespawnBannerSet5
+tag @a remove MobileRespawnBannerSet
+tag @a remove MobileRespawnBannerSetTmp
+tag @a remove DetectMobileBeaconTag
+tag @a remove DetectRespawnPlayer
+tag @a remove RespawnSoon
 
 ## Reset effect
 effect clear @a
