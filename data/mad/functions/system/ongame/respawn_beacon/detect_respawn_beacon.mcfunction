@@ -34,19 +34,15 @@ scoreboard players set @s Tick 0
 
 ## Send message
 execute as @s[scores={ResultTmp=1}] run title @a[distance=..2] title [""]
-execute as @s[scores={BeaconNumber=1,ResultTmp=1}] run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSet1]"}]
-execute as @s[scores={BeaconNumber=2,ResultTmp=1}] run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSet2]"}]
-execute as @s[scores={BeaconNumber=3,ResultTmp=1}] run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSet3]"}]
-execute as @s[scores={BeaconNumber=4,ResultTmp=1}] run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSet4]"}]
-execute as @s[scores={BeaconNumber=5,ResultTmp=1}] run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSet5]"}]
+execute as @s[scores={ResultTmp=1}] run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSetTmp]"}]
 execute as @s[scores={ResultTmp=1}] run title @a[distance=..2] times 2 20 2
 
 ## Reset data
 data modify entity @s CustomName set value '{"text":"リスポーンビーコン"}'
 
 ## Remove tags
+tag @a remove RespawnBannerSetTmp
 tag @s remove DetectRespawnBeacon
-tag @s remove RespawnBannerSetTmp
 
 ## Remove temporarily scoreboard
 scoreboard objectives remove ResultTmp

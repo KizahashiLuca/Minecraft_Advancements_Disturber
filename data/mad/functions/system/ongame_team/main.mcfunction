@@ -60,18 +60,18 @@ execute as @a[tag=Participant,scores={Phase=21,Death=0,UseUpgrader=1..}] at @s r
 execute as @a[tag=Participant,scores={Phase=21,Death=0,UseEmergencyCall=1..}] at @s run function mad:system/ongame/emergency_call/main
 
 ## Detect respawn beacon
-execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,tag=!SetRespawnBanner] at @s if block ~ ~1 ~ #mad:banner run function mad:system/ongame/respawn_beacon/detect_respawn_beacon
-execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,tag=SetRespawnBanner] at @s unless block ~ ~1 ~ #mad:banner run function mad:system/ongame/respawn_beacon/reset_respawn_beacon
-execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run data modify block ~ ~-1 ~ Age set value 200L
+execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run function mad:system/ongame/respawn_beacon/main
 
-execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,tag=SetRespawnBanner] at @s if entity @p[scores={Phase=21,Death=0,Sneak=1..},distance=..2] run function mad:system/ongame/respawn_beacon/time/tick
+## Detect mobile respawn beacon
+execute as @e[type=minecraft:armor_stand,tag=MinecartItem,tag=MobileRespawnBeacon] at @s run function mad:system/ongame/mobile_respawn_beacon/construct_mobile_beacon
+execute as @e[type=minecraft:area_effect_cloud,tag=MobileRespawnBeacon] at @s run function mad:system/ongame/mobile_respawn_beacon/main
+
+## Detect respawn banner
+execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}}}] at @s run function mad:system/ongame/respawn_banner/set_respawn_banner
+execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s run function mad:system/ongame/respawn_banner/main
+
+## Set scoreboard
 scoreboard players set @a Sneak 0
-execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,tag=SetRespawnBanner] at @s run function mad:system/ongame/respawn_beacon/send_gauge
-
-## Set respawn banner
-execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}}}] at @s run function mad:system/ongame/respawn_beacon/set_respawn_banner
-execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s unless block ~ ~ ~ minecraft:chest{Items:[{tag:{Tags:["RespawnBannerFromChest"]}}]} run function mad:system/ongame/respawn_beacon/detect_respawn_banner
-execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s unless entity @e[type=minecraft:area_effect_cloud,distance=..0.2,tag=RespawnBanner] run function mad:system/ongame/respawn_beacon/break_respawn_banner
 
 ## Game Finish
 scoreboard players operation #mad NumAlive = #mad TeamNumber

@@ -226,20 +226,9 @@ scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse
 ## Add scoreboards for upgrader
 scoreboard objectives add UseUpgrader minecraft.used:minecraft.bat_spawn_egg
 ## Add scoreboards for respawn beacon
-scoreboard objectives add UseRespawnBeacon minecraft.used:minecraft.armor_stand
-scoreboard objectives add NumRespawnBeacon dummy
 scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
-scoreboard objectives add Role dummy
-scoreboard objectives add NumOfRespawn dummy
-scoreboard objectives add 10 dummy
-scoreboard objectives add PageNumer dummy
-scoreboard objectives add PageDenom dummy
-scoreboard objectives add TurnPageNum dummy
-scoreboard objectives add TurnPageMax dummy
-scoreboard objectives add TargetOfRespawn dummy
-scoreboard objectives add TurnPageRight trigger
-scoreboard objectives add TurnPageLeft trigger
-scoreboard objectives add RespawnTrigger trigger
+## Add scoreboards for mobile respawn beacon
+scoreboard objectives add MobileBeaconNum dummy
 ## Add scoreboards for team
 scoreboard objectives add TeamBoolean dummy
 scoreboard objectives add DeadTeamA dummy
@@ -323,8 +312,8 @@ scoreboard players set #mad DeadTeamB 0
 scoreboard players set #mad DeadTeamC 0
 scoreboard players set #mad DeadTeamD 0
 scoreboard players set #mad DeadTeamE 0
-## Set scoreboards for respawn beacon
-scoreboard players set #mad 10 10
+## Set scoreboards for mobile respawn beacon
+scoreboard players set #mad MobileBeaconNum 1
 
 ## Set scoreboards for game phase
 scoreboard players set @a Phase 0
@@ -492,22 +481,8 @@ scoreboard players set @a TransmitterPosZ 0
 scoreboard players set @a UseEmergencyCall 0
 ## Set scoreboards for upgrader
 scoreboard players set @a UseUpgrader 0
-## Set scoreboards for respawn beacon
-scoreboard players set @a UseRespawnBeacon 0
-scoreboard players set @a NumRespawnBeacon 0
-scoreboard players enable @a UseRespawnBeacon
-scoreboard players set @a NumOfRespawn 0
-scoreboard players set @a Role 0
-scoreboard players set @a PageNumer 0
-scoreboard players set @a PageDenom 0
-scoreboard players set @a TurnPageNum 0
-scoreboard players set @a TargetOfRespawn 0
-scoreboard players set @a TurnPageRight 0
-scoreboard players set @a TurnPageLeft 0
-scoreboard players set @a RespawnTrigger 0
-scoreboard players enable @a TurnPageRight
-scoreboard players enable @a TurnPageLeft
-scoreboard players enable @a RespawnTrigger
+## Set scoreboards for mobile respawn beacon
+scoreboard players set @a MobileBeaconNum 0
 ## Set scoreboards for team
 scoreboard players set @a NumOfTeamPlayer 0
 

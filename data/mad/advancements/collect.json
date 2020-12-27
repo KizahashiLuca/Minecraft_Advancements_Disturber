@@ -2,8 +2,7 @@
     "parent": "mad:root",
     "display": {
         "icon": {
-            "item": "minecraft:player_head",
-            "nbt": "{SkullOwner:\"potage00\"}"
+            "item": "minecraft:chest"
         },
         "title": {
             "text": "収集"

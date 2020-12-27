@@ -223,25 +223,14 @@ scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX
 scoreboard objectives remove TransmitterPosY
 scoreboard objectives remove TransmitterPosZ
-## Add scoreboards for emergency call
+## Remove scoreboards for emergency call
 scoreboard objectives remove UseEmergencyCall
-## Add scoreboards for upgrader
+## Remove scoreboards for upgrader
 scoreboard objectives remove UseUpgrader
 ## Remove scoreboards for respawn beacon
-scoreboard objectives remove UseRespawnBeacon
-scoreboard objectives remove NumRespawnBeacon
 scoreboard objectives remove Sneak
-scoreboard objectives remove Role
-scoreboard objectives remove NumOfRespawn
-scoreboard objectives remove 10
-scoreboard objectives remove PageNumer
-scoreboard objectives remove PageDenom
-scoreboard objectives remove TurnPageNum
-scoreboard objectives remove TurnPageMax
-scoreboard objectives remove TargetOfRespawn
-scoreboard objectives remove TurnPageRight
-scoreboard objectives remove TurnPageLeft
-scoreboard objectives remove RespawnTrigger
+## Remove scoreboards for mobile respawn beacon
+scoreboard objectives remove MobileBeaconNum
 ## Remove scoreboards for team
 scoreboard objectives remove TeamBoolean
 scoreboard objectives remove DeadTeamA
