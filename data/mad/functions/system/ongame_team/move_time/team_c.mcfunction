@@ -19,10 +19,16 @@ scoreboard players operation @p[team=TeamC,tag=Leader] TimeLimit += @p[tag=Leade
 scoreboard players operation @p[team=TeamC,tag=Leader] GetTimeLimit += @p[tag=Leader,tag=CalculateTime] SecondPerSurvive
 scoreboard players operation @p[tag=Leader,tag=CalculateTime] Second -= @p[tag=Leader,tag=CalculateTime] SecondPerSurvive
 
+## Title
+title @s title ["",{"text":"死んでしまった！","color":"red","bold": true}]
+
 ## Detect death
 gamemode spectator @s
-scoreboard players set @s Death 2
+scoreboard players set @s Death 1
 scoreboard players set @s Phase 22
+
+## replaceitem
+loot replace entity @s inventory.0 loot minecraft:entities/player
 
 ## Remove tag
 tag @a remove CalculateTime

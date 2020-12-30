@@ -37,19 +37,21 @@ execute as @s[scores={ResultTmp=1}] run title @a[distance=..2] title [""]
 execute as @s[scores={ResultTmp=1}] run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSetTmp]"}]
 execute as @s[scores={ResultTmp=1}] run title @a[distance=..2] times 2 20 2
 
+## Break banner
+execute as @s[scores={ResultTmp=0}] run setblock ~ ~1 ~ air destroy
+
+## Remove tags
+execute as @s[scores={ResultTmp=0}] run function mad:system/ongame/respawn_beacon/reset_respawn_beacon
+
 ## Reset data
 data modify entity @s CustomName set value '{"text":"リスポーンビーコン"}'
 
-## Remove tags
-tag @a remove RespawnBannerSetTmp
-tag @s remove DetectRespawnBeacon
+## Add a tag
+execute as @s[scores={ResultTmp=1}] run tag @s add SetRespawnBanner
 
 ## Remove temporarily scoreboard
 scoreboard objectives remove ResultTmp
 
-## Add a tag
-tag @s add SetRespawnBanner
-
-## Break banner
-execute as @s[scores={ResultTmp=0}] run function mad:system/ongame/respawn_beacon/reset_respawn_beacon
-execute as @s[scores={ResultTmp=0}] run setblock ~ ~1 ~ air destroy
+## Remove tags
+tag @a remove RespawnBannerSetTmp
+tag @s remove DetectRespawnBeacon

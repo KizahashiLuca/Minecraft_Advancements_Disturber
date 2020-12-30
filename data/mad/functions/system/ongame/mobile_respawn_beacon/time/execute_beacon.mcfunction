@@ -41,6 +41,9 @@ playsound minecraft:block.beacon.power_select master @a ~ ~1 ~ 1.0 2.0
 ## Reset a beacon
 scoreboard players set @s Second 20
 scoreboard players set @s Tick 0
+setblock ~ ~1 ~ minecraft:air replace
+
+## Reset data 
 fill ~-1 ~ ~-1 ~1 ~1 ~1 minecraft:air replace
 
 ## Remove a tag
