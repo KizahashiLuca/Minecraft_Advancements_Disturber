@@ -51,13 +51,16 @@ execute if score #mad TeamNumber matches 4.. if score #mad DeadTeamD matches 1 a
 execute if score #mad TeamNumber matches 5.. if score #mad DeadTeamE matches 1 as @a[scores={TeleportMessage=1},team=TeamE] run function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
-execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter/detect_transmitter
+execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter/main
 
 ## Detect upgrader
 execute as @a[tag=Participant,scores={Phase=21,Death=0,UseUpgrader=1..}] at @s run function mad:system/ongame/upgrader/main
 
 ## Detect emergency_call
 execute as @a[tag=Participant,scores={Phase=21,Death=0,UseEmergencyCall=1..}] at @s run function mad:system/ongame/emergency_call/main
+
+## Detect notice_of_thief
+execute as @a[tag=Participant] at @s run function mad:system/ongame/notice_of_thief/main
 
 ## Detect respawn beacon
 execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run function mad:system/ongame/respawn_beacon/main

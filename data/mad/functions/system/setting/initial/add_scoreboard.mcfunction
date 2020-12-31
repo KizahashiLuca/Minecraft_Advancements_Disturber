@@ -225,6 +225,11 @@ scoreboard objectives add TransmitterPosZ dummy
 scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse_spawn_egg
 ## Add scoreboards for upgrader
 scoreboard objectives add UseUpgrader minecraft.used:minecraft.bat_spawn_egg
+## Add scoreboards for notice of thief
+scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn_egg
+scoreboard objectives add StealItemPlayer dummy
+scoreboard objectives add ThiefTick dummy
+scoreboard objectives add ThiefSecond dummy
 ## Add scoreboards for respawn beacon
 scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
 ## Add scoreboards for mobile respawn beacon
@@ -481,6 +486,11 @@ scoreboard players set @a TransmitterPosZ 0
 scoreboard players set @a UseEmergencyCall 0
 ## Set scoreboards for upgrader
 scoreboard players set @a UseUpgrader 0
+## Set scoreboards for notice of thief
+scoreboard players set @a UseNoticeOfThief 0
+scoreboard players set @a StealItemPlayer 0
+scoreboard players set @a ThiefTick 0
+scoreboard players set @a ThiefSecond 5
 ## Set scoreboards for mobile respawn beacon
 scoreboard players set @a MobileBeaconNum 0
 ## Set scoreboards for team

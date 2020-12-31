@@ -59,6 +59,11 @@
           "type": "minecraft:loot_table",
           "weight": 1,
           "name": "mad:ongame/chest_minecart_item/upgrader"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:ongame/chest_minecart_item/notice_of_thief"
         }
       ]
     }

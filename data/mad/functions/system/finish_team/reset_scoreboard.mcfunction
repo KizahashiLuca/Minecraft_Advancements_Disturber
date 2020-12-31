@@ -226,6 +226,11 @@ scoreboard objectives remove TransmitterPosZ
 scoreboard objectives remove UseEmergencyCall
 ## Remove scoreboards for upgrader
 scoreboard objectives remove UseUpgrader
+## Remove scoreboards for notice of thief
+scoreboard objectives remove UseNoticeOfThief
+scoreboard objectives remove StealItemPlayer
+scoreboard objectives remove ThiefTick
+scoreboard objectives remove ThiefSecond
 ## Remove scoreboards for respawn beacon
 scoreboard objectives remove Sneak
 ## Remove scoreboards for mobile respawn beacon

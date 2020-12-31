@@ -17,11 +17,11 @@ scoreboard players set @p[tag=RespawnSoon] Phase 21
 scoreboard players set @p[tag=RespawnSoon] Death 0
 
 ## Send messages
-execute as @p[tag=RespawnSoon,team=TeamA] run tellraw @a[team=TeamA] ["",{"text":"[リスポーン] ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":"がリスポーンしました。","color":"green"}]
-execute as @p[tag=RespawnSoon,team=TeamB] run tellraw @a[team=TeamB] ["",{"text":"[リスポーン] ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":"がリスポーンしました。","color":"green"}]
-execute as @p[tag=RespawnSoon,team=TeamC] run tellraw @a[team=TeamC] ["",{"text":"[リスポーン] ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":"がリスポーンしました。","color":"green"}]
-execute as @p[tag=RespawnSoon,team=TeamD] run tellraw @a[team=TeamD] ["",{"text":"[リスポーン] ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":"がリスポーンしました。","color":"green"}]
-execute as @p[tag=RespawnSoon,team=TeamE] run tellraw @a[team=TeamE] ["",{"text":"[リスポーン] ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":"がリスポーンしました。","color":"green"}]
+execute as @p[tag=RespawnSoon,team=TeamA] run tellraw @a[team=TeamA] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
+execute as @p[tag=RespawnSoon,team=TeamB] run tellraw @a[team=TeamB] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
+execute as @p[tag=RespawnSoon,team=TeamC] run tellraw @a[team=TeamC] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
+execute as @p[tag=RespawnSoon,team=TeamD] run tellraw @a[team=TeamD] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
+execute as @p[tag=RespawnSoon,team=TeamE] run tellraw @a[team=TeamE] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
 
 ## Grand advancement
 execute as @p[tag=RespawnSoon,team=TeamA] run advancement grant @p[team=TeamA,scores={Phase=21,Death=0},sort=nearest] only mad:friendship

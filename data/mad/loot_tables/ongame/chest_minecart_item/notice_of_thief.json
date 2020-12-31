@@ -1,0 +1,37 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:rabbit_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"怪盗予告","color":"light_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                ["",{"text":"他プレイヤー全員に怪盗予告を発する。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"他プレイヤーのうち誰か1人が手に持って","color":"white","bold":false,"italic":false}],
+                ["",{"text":"いるアイテムを5秒後に奪う。","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"text":"右クリックで使用","color":"","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MinecartItem\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -37,6 +37,12 @@ tag @a remove Host
 tag @a remove Numbered
 tag @a remove Participant
 tag @a remove Teleporter
+tag @a remove DetectTransmitter
+tag @a remove DetectEmergencyCall
+tag @a remove DetectThief
+tag @a remove SetThief
+tag @a remove NotStealPlayer
+tag @a remove StolenPlayer
 tag @a remove Teleported
 tag @a remove TeleportToMinecart
 tag @a remove GiveTimeRandomly

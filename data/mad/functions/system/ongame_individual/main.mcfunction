@@ -36,10 +36,13 @@ execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @
 execute as @a[gamemode=!survival,scores={TeleportMessage=1}] run function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
-execute as @a[team=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter/detect_transmitter
+execute as @a[team=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter/main
 
 ## Detect upgrader
 execute as @a[team=Participant,scores={Phase=21,Death=0,UseUpgrader=1..}] at @s run function mad:system/ongame/upgrader/main
+
+## Detect notice_of_thief
+execute as @a[team=Participant] at @s run function mad:system/ongame/notice_of_thief/main
 
 ## Game Finish
 scoreboard players operation #mad NumAlive = #mad NumParticipant
