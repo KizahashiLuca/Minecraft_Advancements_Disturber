@@ -14,6 +14,7 @@ execute as @a[team=TeamC,scores={Phase=21,Death=0}] run scoreboard players add @
 execute as @p[team=TeamC,scores={Second=..0},tag=Leader] run kill @a[team=TeamC,scores={Phase=21,Death=0}]
 
 ## Spectate
+execute as @a[team=TeamC,scores={Phase=22,Death=2..},gamemode=spectator] at @s run tp @s @p[team=TeamC,scores={Phase=21,Death=0},sort=nearest]
 execute as @a[team=TeamC,scores={Phase=22,Death=2..},gamemode=spectator] at @s run spectate @p[team=TeamC,scores={Phase=21,Death=0},sort=nearest] @s
 
 ## Detect team end

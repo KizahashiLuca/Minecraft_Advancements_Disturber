@@ -244,6 +244,8 @@ scoreboard objectives remove DeadTeamC
 scoreboard objectives remove DeadTeamD
 scoreboard objectives remove DeadTeamE
 scoreboard objectives remove NumOfTeamPlayer
+## Remove scoreboards for result
+scoreboard objectives remove ResultTmp
 
 ## Remove players
 scoreboard players reset @a

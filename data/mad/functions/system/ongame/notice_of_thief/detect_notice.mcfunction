@@ -25,3 +25,8 @@ scoreboard players set @s ThiefSecond 5
 
 ## Remove a tag
 tag @s remove DetectThief
+
+## Kill rabbit
+data modify entity @e[type=minecraft:rabbit,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"怪盗予告"}],"text":""}'},sort=nearest,limit=1] CustomNameVisible set value 0b
+effect give @e[type=minecraft:rabbit,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"怪盗予告"}],"text":""}'},sort=nearest,limit=1] minecraft:invisibility 100000 1 true
+kill @e[type=minecraft:rabbit,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"怪盗予告"}],"text":""}'},sort=nearest,limit=1]

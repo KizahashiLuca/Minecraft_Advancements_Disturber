@@ -242,6 +242,8 @@ scoreboard objectives add DeadTeamC dummy
 scoreboard objectives add DeadTeamD dummy
 scoreboard objectives add DeadTeamE dummy
 scoreboard objectives add NumOfTeamPlayer dummy
+## Add scoreboards for result
+scoreboard objectives add ResultTmp dummy
 
 ## Set scoreboards for game phase
 scoreboard players set #mad Phase 0
@@ -495,6 +497,8 @@ scoreboard players set @a ThiefSecond 5
 scoreboard players set @a MobileBeaconNum 0
 ## Set scoreboards for team
 scoreboard players set @a NumOfTeamPlayer 0
+## Set scoreboards for team
+scoreboard players set @a ResultTmp 0
 
 ## Random
 function mad:system/random_generator/initialize

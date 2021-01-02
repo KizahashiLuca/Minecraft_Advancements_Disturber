@@ -11,7 +11,6 @@
 tag @s add DetectRespawnBeacon
 
 ## Set temporarily scoreboard
-scoreboard objectives add ResultTmp dummy
 scoreboard players set @s ResultTmp 1
 
 ## Modify data from banner to cloud
@@ -51,9 +50,6 @@ data modify entity @s CustomName set value '{"text":"モバイルリスポーン
 
 ## Add a tag
 execute as @s[scores={ResultTmp=1}] run tag @s add SetRespawnBanner
-
-## Remove temporarily scoreboard
-scoreboard objectives remove ResultTmp
 
 ## Remove tags
 tag @a remove MobileRespawnBannerSetTmp
