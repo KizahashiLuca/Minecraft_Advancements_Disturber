@@ -3,8 +3,8 @@
 ## MC-Version: JE 1.16
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 21 Dec 2020
-## Version   : β-1.0
+## Date      : 03 Jan 2021
+## Version   : β-1.2
 #####################################
 
 ## Add a tag 
