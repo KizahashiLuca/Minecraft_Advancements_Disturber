@@ -13,7 +13,7 @@ tag @s add DetectThief
 execute if score #mad IsTeam matches 0 run tag @s add NotStealPlayer
 execute if score #mad IsTeam matches 1 run function mad:system/ongame/notice_of_thief/add_tag_team
 
-tag @r[tag=!NotStealPlayer,scores={Phase=21,Death=0}] add StolenPlayer
+tag @r[tag=Participant,tag=!NotStealPlayer,scores={Phase=21,Death=0}] add StolenPlayer
 
 ## Set scoreboard
 scoreboard players set @s ResultTmp 0
