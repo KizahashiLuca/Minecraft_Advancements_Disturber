@@ -82,6 +82,7 @@ weather clear
 
 ## Reset gamerule
 gamemode adventure @a
+gamerule spectatorsGenerateChunks false
 gamerule doImmediateRespawn false
 gamerule announceAdvancements true
 gamerule sendCommandFeedback true

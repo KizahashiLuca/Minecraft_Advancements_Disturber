@@ -20,14 +20,14 @@ function mad:system/ongame/set_position
 ## Execute advancements
 function mad:system/ongame/advancements/potage00/execute_advancements
 
-## Detect kill / death
-execute as @a[tag=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run function mad:system/ongame_team/detect_kill
-
 ## Detect death
 execute as @a[tag=Participant,scores={Phase=21,Death=1}] run function mad:system/ongame_team/detect_death
 
 ## Set scoreboard
 scoreboard players set @a[tag=Leader] NumOfTeamPlayer 0
+
+## Detect time over
+execute as @a[tag=Participant,tag=Leader,scores={Second=..0}] run function mad:system/ongame_team/detect_time_over
 
 ## Team function
 execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamA matches 0 run function mad:system/ongame_team/team_function/team_a
@@ -44,11 +44,7 @@ execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive /
 execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame_team/minecart/main
 
 ## Teleport player
-execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamA matches 1 as @a[scores={TeleportMessage=1},team=TeamA] run function mad:system/ongame/teleport_player/main
-execute if score #mad TeamNumber matches 2.. if score #mad DeadTeamB matches 1 as @a[scores={TeleportMessage=1},team=TeamB] run function mad:system/ongame/teleport_player/main
-execute if score #mad TeamNumber matches 3.. if score #mad DeadTeamC matches 1 as @a[scores={TeleportMessage=1},team=TeamC] run function mad:system/ongame/teleport_player/main
-execute if score #mad TeamNumber matches 4.. if score #mad DeadTeamD matches 1 as @a[scores={TeleportMessage=1},team=TeamD] run function mad:system/ongame/teleport_player/main
-execute if score #mad TeamNumber matches 5.. if score #mad DeadTeamE matches 1 as @a[scores={TeleportMessage=1},team=TeamE] run function mad:system/ongame/teleport_player/main
+execute as @a[tag=Participant,scores={TeleportMessage=1}] run function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
 execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter/main

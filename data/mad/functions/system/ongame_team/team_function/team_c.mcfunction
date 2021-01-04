@@ -10,14 +10,8 @@
 ## Count alive member
 execute as @a[team=TeamC,scores={Phase=21,Death=0}] run scoreboard players add @p[team=TeamC,tag=Leader] NumOfTeamPlayer 1
 
-## Kill - time over
-execute as @p[team=TeamC,scores={Second=..0},tag=Leader] run kill @a[team=TeamC,scores={Phase=21,Death=0}]
-
 ## Spectate
-execute as @a[team=TeamC,scores={Phase=22,Death=2..},gamemode=spectator] at @s run tp @s @p[team=TeamC,scores={Phase=21,Death=0},sort=nearest]
-execute as @a[team=TeamC,scores={Phase=22,Death=2..},gamemode=spectator] at @s run spectate @p[team=TeamC,scores={Phase=21,Death=0},sort=nearest] @s
+execute as @a[team=TeamC,scores={Phase=22,Death=2..},gamemode=spectator] at @s run function mad:system/ongame_team/spectate_player/team_c
 
 ## Detect team end
-execute unless entity @p[team=TeamC,scores={Phase=21,Death=0}] run scoreboard players set #mad DeadTeamC 1
-execute if score #mad DeadTeamC matches 1 run scoreboard players add #mad NumDead 1
-execute if score #mad DeadTeamC matches 1 run scoreboard players set @p[team=TeamC,tag=Leader] Second 0
+execute unless entity @p[team=TeamC,scores={Phase=21,Death=0}] run function mad:system/ongame_team/detect_death/team_c

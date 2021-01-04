@@ -26,11 +26,12 @@ execute if score #mad VisibleDeath matches 1 run tellraw @a ["",{"text":"[初期
 execute if score #mad SetTeamManual matches 0 run tellraw @a ["",{"text":"[初期設定] チームメンバー選択は ","color":"green"},{"text":"ランダム","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
 execute if score #mad SetTeamManual matches 1 run tellraw @a ["",{"text":"[初期設定] チームメンバー選択は ","color":"green"},{"text":"手動","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
 
-tellraw @a ["",{"text":"[初期設定] チーム数は ","color":"green"},{"score":{"name":"#mad","objective":"TeamNumber"},"color":"green","bold":true},{"text":" チームに設定されました。","color":"green"}]
+tellraw @a ["",{"text":"[初期設定] チーム数は ","color":"green"},{"score":{"name":"#mad","objective":"TeamNumber"},"color":"green","bold":true},{"text":"チーム","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
 
-tellraw @a ["",{"text":"[初期設定] リスポーンビーコン数は ","color":"green"},{"score":{"name":"#mad","objective":"BeaconNumber"},"color":"green","bold":true},{"text":" か所に設定されました。","color":"green"}]
+tellraw @a ["",{"text":"[初期設定] リスポーンビーコン数は ","color":"green"},{"score":{"name":"#mad","objective":"BeaconNumber"},"color":"green","bold":true},{"text":"か所","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
 
-tellraw @a ["",{"text":"[初期設定] リスポーンバナー残存時間は ","color":"green"},{"score":{"name":"#mad","objective":"RespawnTime"},"color":"green","bold":true},{"text":" 秒に設定されました。","color":"green"}]
+execute unless score #mad RespawnTime matches 0 run tellraw @a ["",{"text":"[初期設定] リスポーンバナー残存時間は ","color":"green"},{"score":{"name":"#mad","objective":"RespawnTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
+execute if score #mad RespawnTime matches 0 run tellraw @a ["",{"text":"[初期設定] リスポーンバナー残存時間は ","color":"green"},{"text":"無制限","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
 
 ## Change to choose setting
 function mad:system/setting/choose_setting/change_to

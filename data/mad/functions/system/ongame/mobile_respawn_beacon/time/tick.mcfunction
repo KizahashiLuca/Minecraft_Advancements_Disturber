@@ -12,9 +12,10 @@ tag @s add RespawnBeaconTick
 
 ## Calculate time every tick
 execute as @a[scores={Phase=21,Death=0,Sneak=1..},distance=..2] run scoreboard players remove @e[tag=RespawnBeaconTick] Tick 1
-scoreboard players set @s[tag=RespawnBeaconTick,scores={Tick=..-1}] Tick 19
 
 ## Calculate time every second
-execute as @s[tag=RespawnBeaconTick,scores={Tick=0}] run function mad:system/ongame/mobile_respawn_beacon/time/second
+execute as @s[tag=RespawnBeaconTick,scores={Tick=..-1}] run function mad:system/ongame/mobile_respawn_beacon/time/second
+
+scoreboard players add @s[tag=RespawnBeaconTick,scores={Tick=..-1}] Tick 20
 
 tag @s remove RespawnBeaconTick
