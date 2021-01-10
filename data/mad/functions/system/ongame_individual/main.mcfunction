@@ -7,9 +7,6 @@
 ## Version   : β-1.2
 #####################################
 
-## Set gamerule
-gamerule announceAdvancements false
-
 ## Process timer system
 function mad:system/time_individual/time
 function mad:system/time_individual/general_time
