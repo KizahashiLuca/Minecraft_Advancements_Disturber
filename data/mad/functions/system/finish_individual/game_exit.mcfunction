@@ -17,3 +17,4 @@ function mad:system/finish_individual/statics
 
 ## Reset game
 function mad:system/finish_individual/reset_game
+gamemode adventure @a

@@ -12,3 +12,4 @@ function mad:system/finish_individual/message_reject
 
 ## Reset game
 function mad:system/finish_individual/reset_game
+gamemode adventure @a

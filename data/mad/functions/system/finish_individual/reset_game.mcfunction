@@ -81,7 +81,6 @@ time set noon
 weather clear
 
 ## Reset gamerule
-gamemode adventure @a
 gamerule spectatorsGenerateChunks false
 gamerule doImmediateRespawn false
 gamerule announceAdvancements true

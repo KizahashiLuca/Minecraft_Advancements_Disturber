@@ -14,5 +14,5 @@ execute if score #mad TeamNumber matches 3.. run team join TeamC @r[team=Partici
 execute if score #mad TeamNumber matches 4.. run team join TeamD @r[team=Participant]
 execute if score #mad TeamNumber matches 5.. run team join TeamE @r[team=Participant]
 
-execute unless entity @p[team=Participant] run function mad:system/pre_preparation_team/change_to
+execute unless entity @p[team=Participant] run function mad:system/pre_preparation/change_to
 execute if entity @p[team=Participant] run function mad:system/team_member_setting/random_member_set

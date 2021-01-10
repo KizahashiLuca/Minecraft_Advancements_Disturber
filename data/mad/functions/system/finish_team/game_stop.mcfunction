@@ -18,3 +18,4 @@ function mad:system/finish_team/statics
 
 ## Reset game
 function mad:system/finish_team/reset_game
+gamemode adventure @a

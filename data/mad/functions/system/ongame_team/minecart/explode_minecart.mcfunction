@@ -13,7 +13,7 @@ particle minecraft:explosion ~ ~ ~ 1 1 1 0.5 10 force @a
 kill @s
 
 ## give time randomly
-scoreboard players set #mad RandomCount 10
+scoreboard players set #mad RandomCount 1
 function mad:system/random_generator/randomizing
 scoreboard players operation #mad RandomAnswer %= #mad 100
 
@@ -28,7 +28,7 @@ tag @a remove GiveTimeRandomly
 ## next summon decided
 scoreboard players operation #mad SecondSummon = #mad SummonInterval
 summon minecraft:area_effect_cloud ~ 160 ~ {Tags:["Minecart"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute as @e[type=minecraft:area_effect_cloud,tag=Minecart,tag=!Teleported] run function mad:system/ongame_team/minecart/teleport_minecart
+execute as @e[type=minecraft:area_effect_cloud,tag=Minecart,tag=!Teleported] run function mad:system/ongame/minecart/teleport_minecart
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] store result score @s PosX align x run data get entity @s Pos[0] 1
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] store result score @s PosZ align z run data get entity @s Pos[2] 1
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] run tellraw @a[gamemode=survival] ["",{"text":"[支援物資] 物資が ","color":"green"},{"score":{"name":"#mad","objective":"SecondSummon"},"color":"green"},{"text":" 秒後に ","color":"green"},{"translate":"[%s, 160, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"score":{"name":"@s","objective":"PosZ"}}],"color":"green"},{"text":" に投下されます。","color":"green"}]
