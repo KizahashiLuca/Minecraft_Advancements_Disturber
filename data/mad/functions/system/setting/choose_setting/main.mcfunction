@@ -18,7 +18,7 @@ scoreboard players set @p[tag=Host] Select21 1
 scoreboard players set @p[tag=Host] Select22 1
 scoreboard players set @p[tag=Host] Select23 1
 scoreboard players set @p[tag=Host] Select24 1
-execute if score #mad IsTeam matches 1 run scoreboard players set @p[tag=Host] Select26 1
+scoreboard players operation @p[tag=Host] Select26 = #mad IsTeam
 scoreboard players set @p[tag=Host] Select28 1
 scoreboard players set @p[tag=Host] Select34 1
 

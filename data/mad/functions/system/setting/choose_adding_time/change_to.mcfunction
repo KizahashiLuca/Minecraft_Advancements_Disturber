@@ -10,19 +10,18 @@
 ## Clear inventory
 clear @p[tag=Host]
 
+## Set scoreboard
+scoreboard players operation @p[tag=Host] digit_100 = #mad AddingTime
+scoreboard players operation @p[tag=Host] digit_100 /= #mad 100
+scoreboard players operation @p[tag=Host] digit_010 = #mad AddingTime
+scoreboard players operation @p[tag=Host] digit_010 %= #mad 100
+scoreboard players operation @p[tag=Host] digit_010 /= #mad 10
+scoreboard players operation @p[tag=Host] digit_001 = #mad AddingTime
+scoreboard players operation @p[tag=Host] digit_001 %= #mad 100
+scoreboard players operation @p[tag=Host] digit_001 %= #mad 10
+
 ## Set inventory
 function mad:system/setting/choose_adding_time/set_inventory
-
-## Set scoreboard
-scoreboard players set @p[tag=Host] ThrowItem 0
-scoreboard players set @p[tag=Host] Select20 0
-scoreboard players set @p[tag=Host] Select21 0
-scoreboard players set @p[tag=Host] Select22 0
-scoreboard players set @p[tag=Host] Select23 0
-scoreboard players set @p[tag=Host] Select24 0
-scoreboard players set @p[tag=Host] Select28 0
-scoreboard players set @p[tag=Host] Select34 0
-scoreboard players set @p[tag=Host] Selected 0
 
 ## Change phase
 scoreboard players set #mad Phase 7

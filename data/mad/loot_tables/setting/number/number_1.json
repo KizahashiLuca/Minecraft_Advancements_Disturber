@@ -6,16 +6,16 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"minecraft:map",
+          "name":"minecraft:white_banner",
           "functions":[
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"1100×1100","color":"white","bold":false,"italic":false}]
+                ["",{"text":"1","color":"reset","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"1100×1100\"]}"
+              "tag":"{BlockEntityTag:{Patterns:[{Pattern:tl,Color:15},{Pattern:cs,Color:15},{Pattern:bs,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MADsetting\",\"number\"]}"
             }
           ]
         }

@@ -7,6 +7,8 @@
 ## Version   : β-1.2
 #####################################
 
-## Set 500secs
-scoreboard players set #mad AddingTime 500
-function mad:system/setting/choose_adding_time/change_to
+## Reset choice
+scoreboard players set #mad TimeLimit 100
+
+## Send messages
+function mad:system/setting/choose_initial_time/change_to

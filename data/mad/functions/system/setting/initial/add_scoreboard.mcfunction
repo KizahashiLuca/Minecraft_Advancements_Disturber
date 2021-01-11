@@ -73,12 +73,18 @@ scoreboard objectives add Select31 dummy
 scoreboard objectives add Select34 dummy
 scoreboard objectives add Selected dummy
 ## Add scoreboards for setting phase - choose time limit
+scoreboard objectives add 10 dummy
+scoreboard objectives add digit_001 dummy
+scoreboard objectives add digit_010 dummy
+scoreboard objectives add digit_100 dummy
 scoreboard objectives add TimeLimit dummy
 scoreboard objectives add TimeLimitPrv dummy
 scoreboard objectives add GetTimeLimit dummy
 ## Add scoreboards for setting phase - choose area
 scoreboard objectives add WorldBorder dummy
 scoreboard objectives add WorldBorderPrv dummy
+scoreboard objectives add WorldBorderUp dummy
+scoreboard objectives add WorldBorderDown dummy
 ## Add scoreboards for setting phase - choose difficulty
 scoreboard objectives add Difficulty dummy
 scoreboard objectives add DifficultyPrv dummy
@@ -270,11 +276,14 @@ scoreboard players set #mad RandomAnswer 0
 scoreboard players set #mad RandomModder 2147483647
 scoreboard players set #mad RandomMultiplier 48271
 ## Set scoreboards for setting phase - choose time limit
+scoreboard players set #mad 10 10
 scoreboard players set #mad TimeLimit 100
 scoreboard players set #mad TimeLimitPrv 100
 ## Set scoreboards for setting phase - choose area
 scoreboard players set #mad WorldBorder 1000
 scoreboard players set #mad WorldBorderPrv 1000
+scoreboard players set #mad WorldBorderUp 1100
+scoreboard players set #mad WorldBorderDown 900
 ## Set scoreboards for setting phase - choose difficulty
 scoreboard players set #mad Difficulty 2
 scoreboard players set #mad DifficultyPrv 2
@@ -376,8 +385,13 @@ scoreboard players set @a Select28 0
 scoreboard players set @a Select31 0
 scoreboard players set @a Select34 0
 scoreboard players set @a Selected 0
-## Add scoreboards for setting phase - choose time limit
+## Set scoreboards for setting phase - choose time limit
 scoreboard players set @a GetTimeLimit 0
+## Set scoreboards for setting phase - choose area
+scoreboard players set @a WorldBorder 1000
+scoreboard players set @a WorldBorderPrv 1000
+scoreboard players set @a WorldBorderUp 1100
+scoreboard players set @a WorldBorderDown 900
 ## Set scoreboards for advancements
 scoreboard players set @a HasAdvancements 0
 ## Set scoreboards for advancements - adventure

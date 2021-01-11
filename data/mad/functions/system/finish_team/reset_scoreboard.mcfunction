@@ -74,12 +74,18 @@ scoreboard objectives remove Select31
 scoreboard objectives remove Select34
 scoreboard objectives remove Selected
 ## Remove scoreboards for setting phase - choose time limit
+scoreboard objectives remove 10
+scoreboard objectives remove digit_001
+scoreboard objectives remove digit_010
+scoreboard objectives remove digit_100
 scoreboard objectives remove TimeLimit
 scoreboard objectives remove TimeLimitPrv
 scoreboard objectives remove GetTimeLimit
 ## Remove scoreboards for setting phase - choose area
 scoreboard objectives remove WorldBorder
 scoreboard objectives remove WorldBorderPrv
+scoreboard objectives remove WorldBorderUp
+scoreboard objectives remove WorldBorderDown
 ## Remove scoreboards for setting phase - choose difficulty
 scoreboard objectives remove Difficulty
 scoreboard objectives remove DifficultyPrv

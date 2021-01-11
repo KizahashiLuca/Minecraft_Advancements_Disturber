@@ -6,16 +6,16 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"minecraft:emerald",
+          "name":"minecraft:white_banner",
           "functions":[
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"500秒","color":"white","bold":false,"italic":false}]
+                ["",{"text":"4","color":"reset","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"500secs\"]}"
+              "tag":"{BlockEntityTag:{Patterns:[{Pattern:hh,Color:15},{Pattern:cs,Color:0},{Pattern:ms,Color:15},{Pattern:rs,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MADsetting\",\"number\"]}"
             }
           ]
         }

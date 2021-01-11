@@ -15,7 +15,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"competition\",\"is_team\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MADsetting\",\"is_team\"]}"
             }
           ]
         }

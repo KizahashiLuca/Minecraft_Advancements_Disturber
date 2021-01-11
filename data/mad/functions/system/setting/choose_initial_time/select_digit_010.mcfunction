@@ -7,6 +7,7 @@
 ## Version   : β-1.2
 #####################################
 
-## Set 300secs
-scoreboard players set #mad TimeLimit 300
+## Add 10secs
+scoreboard players add #mad TimeLimit 10
+execute if score #mad TimeLimit matches 1000.. run scoreboard players remove #mad TimeLimit 1000
 function mad:system/setting/choose_initial_time/change_to

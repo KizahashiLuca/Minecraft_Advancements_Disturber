@@ -19,12 +19,11 @@ scoreboard players set @p[tag=Host] Select28 1
 scoreboard players set @p[tag=Host] Select34 1
 
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:white_banner",tag:{Tags:["MADsetting","left_arrow"]}}]}] Select20 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:map",tag:{Tags:["MADsetting","world_border"]}}]}] Select22 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:white_banner",tag:{Tags:["MADsetting","right_arrow"]}}]}] Select24 0
 
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{Tags:["MADsetting","cancel"]}}]}] Select28 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{Tags:["MADsetting","determine"]}}]}] Select34 0
-
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:map"}]}] Select22 0
 
 ## Change to each phase
 execute as @p[tag=Host,scores={Select20=1}] run function mad:system/setting/choose_world_border/select_left_arrow
