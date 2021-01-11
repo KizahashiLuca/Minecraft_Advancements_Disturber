@@ -100,4 +100,5 @@ gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule doMobSpawning false
 gamerule keepInventory true
+gamerule doFireTick false
 difficulty peaceful

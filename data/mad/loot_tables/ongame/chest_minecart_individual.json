@@ -54,6 +54,11 @@
           "type": "minecraft:loot_table",
           "weight": 1,
           "name": "mad:ongame/chest_minecart_item/notice_of_thief"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:ongame/chest_minecart_item/end_portal_frame"
         }
       ]
     }

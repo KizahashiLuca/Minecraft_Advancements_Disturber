@@ -1,0 +1,40 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:end_portal_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:ender_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 6
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

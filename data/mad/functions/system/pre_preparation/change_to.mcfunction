@@ -21,6 +21,7 @@ execute if score #mad DaylightCycle matches 1 run gamerule doDaylightCycle true
 execute if score #mad DaylightCycle matches 0 run gamerule doDaylightCycle false
 gamerule doMobSpawning true
 gamerule keepInventory false
+gamerule doFireTick true
 team modify Participant nametagVisibility never
 
 ## Set world
