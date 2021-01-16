@@ -7,6 +7,10 @@
 ## Version   : β-1.2.1
 #####################################
 
+## Log in the mid of the game
+gamemode spectator @a[team=!Participant,gamemode=!spectator]
+team leave @a[team=!Participant,team=!]
+
 ## Process timer system
 function mad:system/time_individual/time
 function mad:system/time_individual/general_time
@@ -27,7 +31,8 @@ execute as @a[team=Participant,scores={Phase=21,Death=1}] run function mad:syste
 kill @a[team=Participant,scores={Phase=21,Death=0,Second=..0}]
 
 ## Minecart
-execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame_individual/minecart/main
+execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:0b}] at @s run function mad:system/ongame/minecart/main_not_onground
+execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame/minecart/main_onground
 
 ## Teleport player
 execute as @a[gamemode=!survival,scores={TeleportMessage=1}] run function mad:system/ongame/teleport_player/main
@@ -44,6 +49,6 @@ execute as @a[team=Participant] at @s run function mad:system/ongame/notice_of_t
 ## Game Finish
 scoreboard players operation #mad NumAlive = #mad NumParticipant
 scoreboard players operation #mad NumAlive -= #mad NumDead
-execute if score #mad NumAlive matches 0..1 if score #mad ExitMessage matches 0 run function mad:system/ongame_individual/exit_message
+execute if score #mad NumAlive matches 0..1 if score #mad ExitMessage matches 0 run function mad:system/ongame/exit_message
 execute as @p[tag=Host,scores={ExitMessage=1}] run scoreboard players set #mad Phase 22
-execute if score #mad Phase matches 22 run function mad:system/finish_individual/game_exit
+execute if score #mad Phase matches 22 run function mad:system/finish/game_exit

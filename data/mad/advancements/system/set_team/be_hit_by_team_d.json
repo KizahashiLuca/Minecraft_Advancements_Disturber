@@ -22,6 +22,6 @@
     ["be_hit_by_team_d"]
   ],
   "rewards": {
-    "function": "mad:system/team_member_setting/set_own_team_d"
+    "function": "mad:system/setting/team_member_setting/set_own_team_d"
   }
 }

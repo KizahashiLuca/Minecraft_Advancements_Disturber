@@ -21,3 +21,6 @@ execute as @e[type=minecraft:chest_minecart,tag=Minecart] run tellraw @a[gamemod
 
 ## Set scoreboard
 scoreboard players set #mad SummonMinecart 1
+
+## Kill cloud
+kill @e[type=minecraft:area_effect_cloud,tag=Minecart]

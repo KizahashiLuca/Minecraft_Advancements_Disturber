@@ -7,6 +7,11 @@
 ## Version   : β-1.2.1
 #####################################
 
+## Log in the mid of the game
+gamemode spectator @a[team=!Participant,team=!TeamA,team=!TeamB,team=!TeamC,team=!TeamD,team=!TeamE,gamemode=!spectator]
+execute if score #mad IsTeam matches 0 run team leave @a[team=!Participant,team=]
+execute if score #mad IsTeam matches 1 run team leave @a[team=!TeamA,team=!TeamB,team=!TeamC,team=!TeamD,team=!TeamE,team=]
+
 ## Time system
 function mad:system/pre_preparation/tick
 

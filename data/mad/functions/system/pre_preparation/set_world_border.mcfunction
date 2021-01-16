@@ -11,26 +11,26 @@
 setworldspawn ~ ~ ~
 spawnpoint @a ~ ~ ~
 
-## Set world border
+## Set world border & cloud
 worldborder center ~ ~
 execute if score #mad WorldBorder matches 0 run worldborder set 60000000
-execute if score #mad WorldBorder matches 100 run worldborder set 102
-execute if score #mad WorldBorder matches 200 run worldborder set 202
-execute if score #mad WorldBorder matches 300 run worldborder set 302
-execute if score #mad WorldBorder matches 400 run worldborder set 402
-execute if score #mad WorldBorder matches 500 run worldborder set 502
-execute if score #mad WorldBorder matches 600 run worldborder set 602
-execute if score #mad WorldBorder matches 700 run worldborder set 702
-execute if score #mad WorldBorder matches 800 run worldborder set 802
-execute if score #mad WorldBorder matches 900 run worldborder set 902
-execute if score #mad WorldBorder matches 1000 run worldborder set 1002
-execute if score #mad WorldBorder matches 1100 run worldborder set 1102
-execute if score #mad WorldBorder matches 1200 run worldborder set 1202
-execute if score #mad WorldBorder matches 1300 run worldborder set 1302
-execute if score #mad WorldBorder matches 1400 run worldborder set 1402
-execute if score #mad WorldBorder matches 1500 run worldborder set 1502
-execute if score #mad WorldBorder matches 1600 run worldborder set 1602
-execute if score #mad WorldBorder matches 1700 run worldborder set 1702
-execute if score #mad WorldBorder matches 1800 run worldborder set 1802
-execute if score #mad WorldBorder matches 1900 run worldborder set 1902
-execute if score #mad WorldBorder matches 2000 run worldborder set 2002
+execute if score #mad WorldBorder matches 100 run function mad:system/pre_preparation/world_border/0100
+execute if score #mad WorldBorder matches 200 run function mad:system/pre_preparation/world_border/0200
+execute if score #mad WorldBorder matches 300 run function mad:system/pre_preparation/world_border/0300
+execute if score #mad WorldBorder matches 400 run function mad:system/pre_preparation/world_border/0400
+execute if score #mad WorldBorder matches 500 run function mad:system/pre_preparation/world_border/0500
+execute if score #mad WorldBorder matches 600 run function mad:system/pre_preparation/world_border/0600
+execute if score #mad WorldBorder matches 700 run function mad:system/pre_preparation/world_border/0700
+execute if score #mad WorldBorder matches 800 run function mad:system/pre_preparation/world_border/0800
+execute if score #mad WorldBorder matches 900 run function mad:system/pre_preparation/world_border/0900
+execute if score #mad WorldBorder matches 1000 run function mad:system/pre_preparation/world_border/1000
+execute if score #mad WorldBorder matches 1100 run function mad:system/pre_preparation/world_border/1100
+execute if score #mad WorldBorder matches 1200 run function mad:system/pre_preparation/world_border/1200
+execute if score #mad WorldBorder matches 1300 run function mad:system/pre_preparation/world_border/1300
+execute if score #mad WorldBorder matches 1400 run function mad:system/pre_preparation/world_border/1400
+execute if score #mad WorldBorder matches 1500 run function mad:system/pre_preparation/world_border/1500
+execute if score #mad WorldBorder matches 1600 run function mad:system/pre_preparation/world_border/1600
+execute if score #mad WorldBorder matches 1700 run function mad:system/pre_preparation/world_border/1700
+execute if score #mad WorldBorder matches 1800 run function mad:system/pre_preparation/world_border/1800
+execute if score #mad WorldBorder matches 1900 run function mad:system/pre_preparation/world_border/1900
+execute if score #mad WorldBorder matches 2000 run function mad:system/pre_preparation/world_border/2000

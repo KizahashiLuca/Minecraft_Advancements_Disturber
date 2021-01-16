@@ -7,6 +7,10 @@
 ## Version   : β-1.2.1
 #####################################
 
+## Log in the mid of the game
+gamemode spectator @a[team=!TeamA,team=!TeamB,team=!TeamC,team=!TeamD,team=!TeamE,gamemode=!spectator]
+team leave @a[team=!TeamA,team=!TeamB,team=!TeamC,team=!TeamD,team=!TeamE,team=!]
+
 ## Process timer system
 function mad:system/time_team/time
 function mad:system/time_team/general_time
@@ -38,7 +42,8 @@ execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive =
 execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive /= @s NumOfTeamPlayer
 
 ## Minecart
-execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame_team/minecart/main
+execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:0b}] at @s run function mad:system/ongame/minecart/main_not_onground
+execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame/minecart/main_onground
 
 ## Teleport player
 execute as @a[tag=Participant,scores={TeleportMessage=1}] run function mad:system/ongame/teleport_player/main
@@ -63,8 +68,9 @@ execute as @e[type=minecraft:armor_stand,tag=MinecartItem,tag=MobileRespawnBeaco
 execute as @e[type=minecraft:area_effect_cloud,tag=MobileRespawnBeacon] at @s run function mad:system/ongame/mobile_respawn_beacon/main
 
 ## Detect respawn banner
-execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}}}] at @s run function mad:system/ongame/respawn_banner/set_respawn_banner
 execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s run function mad:system/ongame/respawn_banner/main
+execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}}}] run data modify entity @s PickupDelay set value 32767s
+execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}},Age:2s}] at @s run function mad:system/ongame/respawn_banner/set_respawn_banner
 
 ## Set scoreboard
 scoreboard players set @a Sneak 0
@@ -72,6 +78,6 @@ scoreboard players set @a Sneak 0
 ## Game Finish
 scoreboard players operation #mad NumAlive = #mad TeamNumber
 scoreboard players operation #mad NumAlive -= #mad NumDead
-execute if score #mad NumAlive matches 0..1 if score #mad ExitMessage matches 0 run function mad:system/ongame_team/exit_message
+execute if score #mad NumAlive matches 0..1 if score #mad ExitMessage matches 0 run function mad:system/ongame/exit_message
 execute as @p[tag=Host,scores={ExitMessage=1}] run scoreboard players set #mad Phase 22
-execute if score #mad Phase matches 22 run function mad:system/finish_team/game_exit
+execute if score #mad Phase matches 22 run function mad:system/finish/game_exit

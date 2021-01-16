@@ -9,8 +9,12 @@
 
 ## Set gamerule
 gamerule doImmediateRespawn true
-gamerule spectatorsGenerateChunks true
-gamerule announceAdvancements false
+execute in minecraft:overworld run gamerule spectatorsGenerateChunks true
+execute in minecraft:the_nether run gamerule spectatorsGenerateChunks true
+execute in minecraft:the_end run gamerule spectatorsGenerateChunks true
+execute in minecraft:overworld run gamerule announceAdvancements false
+execute in minecraft:the_nether run gamerule announceAdvancements false
+execute in minecraft:the_end run gamerule announceAdvancements false
 gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
 gamerule showDeathMessages false
@@ -39,7 +43,7 @@ execute at @p[tag=Host] align y store result score #mad OriginY run data get ent
 execute at @p[tag=Host] align z store result score #mad OriginZ run data get entity @s Pos[2] 1.0
 
 ## Summon world spawn
-execute at @p[tag=Host] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["WorldSpawn"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
+execute at @p[tag=Host] align xyz run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["WorldSpawn"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
 
 ## Set world spawn
 execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] run function mad:system/pre_preparation/set_world_border
