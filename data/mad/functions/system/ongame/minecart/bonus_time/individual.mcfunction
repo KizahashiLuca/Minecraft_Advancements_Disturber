@@ -13,4 +13,4 @@ scoreboard players operation @p[tag=GiveTimeRandomly] TimeLimit += #mad RandomAn
 tellraw @p[tag=GiveTimeRandomly] ["",{"text":"[支援物資]  ","color":"green"},{"text":"紫チーム","color":"dark_purple","bold":true},{"text":" に ","color":"green"},{"score":{"name":"#mad","objective":"RandomAnswer"},"color":"green","bold":true},{"text":" 秒のボーナスタイムが付与されました。","color":"green"}]
 
 ## Grant advancement
-advancement grant @p[tag=GiveTimeRandomly] only mad:find_minecart
+advancement grant @p[tag=GiveTimeRandomly] only mad:potage00/find_minecart

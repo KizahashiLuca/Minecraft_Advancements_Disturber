@@ -1,14 +1,14 @@
 {
-    "parent": "mad:original",
+    "parent": "mad:potage00/original",
     "display": {
         "icon": {
-            "item": "minecraft:red_banner"
+            "item": "minecraft:chest_minecart"
         },
         "title": {
-            "text": "仲間思い"
+            "text": "支援物資だ"
         },
         "description": {
-            "text": "味方を復活"
+            "text": "支援物資を受け取る"
         },
         "frame": "task",
         "show_toast": true,
@@ -16,14 +16,14 @@
         "hidden": false
     },
     "criteria": {
-        "friendship": {
+        "find_minecart": {
             "trigger": "minecraft:impossible"
         }
     },
     "requirements": [
-        ["friendship"]
+        ["find_minecart"]
     ],
     "rewards": {
-        "function": "mad:system/ongame/advancements/potage00/friendship"
+        "function": "mad:system/ongame/advancements/potage00/find_minecart"
     }
 }

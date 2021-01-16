@@ -12,5 +12,5 @@ scoreboard players set @a[team=TeamA] AD_pg_kill_phant 1
 scoreboard players add @a[team=TeamA] HasAdvancements 1
 scoreboard players operation @p[team=TeamA,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamA,tag=Leader] Second += #mad AddingTime
-advancement grant @a[team=TeamA] only mad:no_bed_no_life
+advancement grant @a[team=TeamA] only mad:potage00/no_bed_no_life
 tellraw @a[team=TeamA] ["",{"translate":"chat.type.advancement.task","with":[{"text":"赤チーム","color":"red","bold":true},{"translate":"[%s]","color":"green","with":[{"text":"NO BED NO LIFE","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"text":"NO BED NO LIFE"},{"text":"ファントムを倒す"}]}]}}]}]}]

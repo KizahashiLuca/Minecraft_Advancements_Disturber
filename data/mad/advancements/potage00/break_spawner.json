@@ -1,14 +1,14 @@
 {
-    "parent": "mad:adventure",
+    "parent": "mad:potage00/adventure",
     "display": {
         "icon": {
-            "item": "minecraft:leather_boots"
+            "item": "minecraft:spawner"
         },
         "title": {
-            "text": "この世界の片隅に"
+            "text": "君子危うきに近寄らず"
         },
         "description": {
-            "text": "ボーダーの端へ到達"
+            "text": "スポナーの破壊"
         },
         "frame": "task",
         "show_toast": true,
@@ -16,14 +16,14 @@
         "hidden": false
     },
     "criteria": {
-        "in_this_corner_of_the_world": {
+        "break_spawner": {
             "trigger": "minecraft:impossible"
         }
     },
     "requirements": [
-        ["in_this_corner_of_the_world"]
+        ["break_spawner"]
     ],
     "rewards": {
-        "function": "mad:system/ongame/advancements/potage00/in_this_corner_of_the_world"
+        "function": "mad:system/ongame/advancements/potage00/break_spawner"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "parent": "mad:adventure",
+    "parent": "mad:potage00/adventure",
     "display": {
         "icon": {
             "item": "minecraft:black_bed"

@@ -1,5 +1,5 @@
 {
-    "parent": "mad:find_minecart",
+    "parent": "mad:potage00/find_minecart",
     "display": {
         "icon": {
             "item": "minecraft:player_head",

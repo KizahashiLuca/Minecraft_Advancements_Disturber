@@ -1,5 +1,5 @@
 {
-    "parent": "mad:collect",
+    "parent": "mad:potage00/collect",
     "display": {
         "icon": {
             "item": "minecraft:oak_door"

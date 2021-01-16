@@ -1,14 +1,14 @@
 {
-    "parent": "mad:original",
+    "parent": "mad:potage00/adventure",
     "display": {
         "icon": {
-            "item": "minecraft:chest_minecart"
+            "item": "minecraft:leather_boots"
         },
         "title": {
-            "text": "支援物資だ"
+            "text": "この世界の片隅に"
         },
         "description": {
-            "text": "支援物資を受け取る"
+            "text": "ボーダーの端へ到達"
         },
         "frame": "task",
         "show_toast": true,
@@ -16,14 +16,14 @@
         "hidden": false
     },
     "criteria": {
-        "find_minecart": {
+        "in_this_corner_of_the_world": {
             "trigger": "minecraft:impossible"
         }
     },
     "requirements": [
-        ["find_minecart"]
+        ["in_this_corner_of_the_world"]
     ],
     "rewards": {
-        "function": "mad:system/ongame/advancements/potage00/find_minecart"
+        "function": "mad:system/ongame/advancements/potage00/in_this_corner_of_the_world"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "parent": "mad:root",
+    "parent": "mad:potage00/root",
     "display": {
         "icon": {
             "item": "minecraft:iron_sword"
