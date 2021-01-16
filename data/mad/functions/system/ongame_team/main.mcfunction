@@ -16,7 +16,13 @@ function mad:system/time_team/time
 function mad:system/time_team/general_time
 
 ## Position
-execute as @a run function mad:system/ongame/set_position
+execute as @a[team=TeamA,gamemode=!spectator] run function mad:system/ongame/position/set_position/team_a
+execute as @a[team=TeamB,gamemode=!spectator] run function mad:system/ongame/position/set_position/team_b
+execute as @a[team=TeamC,gamemode=!spectator] run function mad:system/ongame/position/set_position/team_c
+execute as @a[team=TeamD,gamemode=!spectator] run function mad:system/ongame/position/set_position/team_d
+execute as @a[team=TeamE,gamemode=!spectator] run function mad:system/ongame/position/set_position/team_e
+execute as @a[team=TeamE,gamemode=!spectator] run function mad:system/ongame/position/set_position/team_e
+execute as @a[gamemode=spectator] run function mad:system/ongame/position/set_position
 
 ## Execute advancements
 function mad:system/ongame/advancements/potage00/execute_advancements
@@ -70,7 +76,7 @@ execute as @e[type=minecraft:area_effect_cloud,tag=MobileRespawnBeacon] at @s ru
 ## Detect respawn banner
 execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s run function mad:system/ongame/respawn_banner/main
 execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}}}] run data modify entity @s PickupDelay set value 32767s
-execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}},Age:2s}] at @s run function mad:system/ongame/respawn_banner/set_respawn_banner
+execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}},Age:2s}] at @s align xyz run function mad:system/ongame/respawn_banner/set_respawn_banner
 
 ## Set scoreboard
 scoreboard players set @a Sneak 0

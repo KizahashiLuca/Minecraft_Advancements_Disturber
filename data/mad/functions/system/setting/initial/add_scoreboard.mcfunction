@@ -28,15 +28,18 @@ scoreboard objectives add NumAlive dummy
 scoreboard objectives add NumDead dummy
 ## Add scoreboards for onground
 scoreboard objectives add OnGround dummy
-## Add scoreboards for area
+## Add scoreboards for position
 scoreboard objectives add 100 dummy
-scoreboard objectives add OriginX dummy
-scoreboard objectives add OriginY dummy
-scoreboard objectives add OriginZ dummy
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy
-scoreboard objectives add SummonPosition dummy
+scoreboard objectives add BannerPosX dummy
+scoreboard objectives add BannerPosY dummy
+scoreboard objectives add BannerPosZ dummy
+scoreboard objectives add BannerDistance dummy
+scoreboard objectives add SquareRootI dummy
+scoreboard objectives add SquareRootX dummy
+scoreboard objectives add Distance dummy
 ## Add scoreboards for randomizer
 scoreboard objectives add RandomSeed dummy
 scoreboard objectives add RandomCount dummy
@@ -260,15 +263,11 @@ scoreboard players set #mad Participant 0
 scoreboard players set #mad NumParticipant 0
 scoreboard players set #mad NumAlive 0
 scoreboard players set #mad NumDead 0
-## Set scoreboards for area
+## Set scoreboards for position
 scoreboard players set #mad 100 100
-scoreboard players set #mad OriginX 0
-scoreboard players set #mad OriginY 63
-scoreboard players set #mad OriginZ 0
 scoreboard players set #mad PosX 0
 scoreboard players set #mad PosY 63
 scoreboard players set #mad PosZ 0
-scoreboard players set #mad SummonPosition 0
 ## Set scoreboards for randomizer
 scoreboard players set #mad RandomSeed 0
 scoreboard players set #mad RandomCount 10
@@ -354,8 +353,6 @@ scoreboard players set @a NumAlive 0
 scoreboard players set @a NumDead 0
 ## Set scoreboards for onground
 scoreboard players set @a OnGround 0
-## Set scoreboards for area
-scoreboard players set @a SummonPosition 0
 ## Set scoreboards for setting phase - common
 scoreboard players set @a ThrowItem 0
 scoreboard players set @a Select02 0

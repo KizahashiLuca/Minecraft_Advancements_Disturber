@@ -16,7 +16,7 @@ function mad:system/time_individual/time
 function mad:system/time_individual/general_time
 
 ## Position
-execute as @a run function mad:system/ongame/set_position
+execute as @a run function mad:system/ongame/position/set_position
 
 ## Execute advancements
 function mad:system/ongame/advancements/potage00/execute_advancements
