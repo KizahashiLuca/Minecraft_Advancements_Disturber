@@ -37,11 +37,6 @@ kill @e[type=minecraft:area_effect_cloud]
 ## Forceload chunks
 execute at @p[tag=Host] run forceload add ~ ~
 
-## Save world spawn
-execute at @p[tag=Host] align x store result score #mad OriginX run data get entity @s Pos[0] 1.0
-execute at @p[tag=Host] align y store result score #mad OriginY run data get entity @s Pos[1] 1.0
-execute at @p[tag=Host] align z store result score #mad OriginZ run data get entity @s Pos[2] 1.0
-
 ## Summon world spawn
 execute at @p[tag=Host] align xyz run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["WorldSpawn"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
 

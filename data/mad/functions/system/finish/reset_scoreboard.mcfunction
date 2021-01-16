@@ -29,16 +29,11 @@ scoreboard objectives remove NumAlive
 scoreboard objectives remove NumDead
 ## Remove scoreboards for onground
 scoreboard objectives remove OnGround
-## Remove scoreboards for area
-scoreboard objectives remove 2
+## Remove scoreboards for position
 scoreboard objectives remove 100
-scoreboard objectives remove OriginX
-scoreboard objectives remove OriginY
-scoreboard objectives remove OriginZ
 scoreboard objectives remove PosX
 scoreboard objectives remove PosY
 scoreboard objectives remove PosZ
-scoreboard objectives remove SummonPosition
 ## Remove scoreboards for randomizer
 scoreboard objectives remove RandomSeed
 scoreboard objectives remove RandomCount
