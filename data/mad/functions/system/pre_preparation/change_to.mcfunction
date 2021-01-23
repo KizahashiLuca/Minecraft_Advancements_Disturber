@@ -40,9 +40,6 @@ execute at @p[tag=Host] run forceload add ~ ~
 ## Summon world spawn
 execute at @p[tag=Host] align xyz run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["WorldSpawn"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
 
-## Set world spawn
-execute at @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] run function mad:system/pre_preparation/set_world_border
-
 ## Set time
 time set noon
 
@@ -73,7 +70,7 @@ tag @a[tag=Participant] remove Numbered
 
 ## Set scoreboards
 scoreboard players set #mad Tick 19
-scoreboard players set #mad Second 10
+scoreboard players set #mad Second 31
 scoreboard players operation @a TimeLimit = #mad TimeLimit
 scoreboard players operation @a Second = #mad TimeLimit
 scoreboard players set @a Tick 0
@@ -85,16 +82,6 @@ scoreboard players set @a Death 0
 scoreboard players set @a SpawnTime 0
 scoreboard players set @a Kill 0
 scoreboard players set @a KillTemp 0
-
-## Set bossbar
-execute if score #mad IsTeam matches 0 as @a[tag=Participant] run function mad:system/pre_preparation/individual/branch
-
-## Set bossbar & gamerule
-execute if score #mad IsTeam matches 1 if score #mad TeamNumber matches 1.. run function mad:system/pre_preparation/team/team_a
-execute if score #mad IsTeam matches 1 if score #mad TeamNumber matches 2.. run function mad:system/pre_preparation/team/team_b
-execute if score #mad IsTeam matches 1 if score #mad TeamNumber matches 3.. run function mad:system/pre_preparation/team/team_c
-execute if score #mad IsTeam matches 1 if score #mad TeamNumber matches 4.. run function mad:system/pre_preparation/team/team_d
-execute if score #mad IsTeam matches 1 if score #mad TeamNumber matches 5.. run function mad:system/pre_preparation/team/team_e
 
 ## Change phase
 scoreboard players set #mad Phase 19

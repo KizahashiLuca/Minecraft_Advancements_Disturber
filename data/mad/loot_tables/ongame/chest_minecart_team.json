@@ -12,7 +12,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "mad:ongame/chest_minecart_item/transmitter",
+          "name": "mad:ongame/chest_minecart_item/transmitter_team",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -43,7 +43,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "mad:ongame/chest_minecart_item/diamond_boots"
+          "name": "mad:ongame/chest_minecart_item/chainmail_boots"
         },
         {
           "type": "minecraft:loot_table",

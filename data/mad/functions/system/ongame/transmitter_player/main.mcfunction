@@ -16,7 +16,7 @@ clear @s minecraft:written_book{title:"発信機",Tags:["MinecartItem"]} 1
 
 ## Add a tag
 execute if score #mad IsTeam matches 0 run tag @s add DetectTransmitter
-execute if score #mad IsTeam matches 1 run function mad:system/ongame/transmitter/add_tag_team
+execute if score #mad IsTeam matches 1 run function mad:system/ongame/transmitter_player/add_tag_team
 
 ## Send messages
 execute store result score @s TransmitterPosX align x run data get entity @p[scores={Phase=21,Death=0},limit=1,sort=nearest,tag=!DetectTransmitter] Pos[0] 1

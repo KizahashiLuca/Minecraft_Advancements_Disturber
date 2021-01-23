@@ -49,10 +49,14 @@ execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @
 execute as @a[tag=Participant,scores={TeleportMessage=1}] run function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
-execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter/main
+execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=1}] at @s run function mad:system/ongame/transmitter_player/main
+execute as @a[tag=Participant,scores={Phase=21,Death=0,UseTransmitter=2..}] at @s run function mad:system/ongame/transmitter_banner/main
 
-## Detect upgrader
-execute as @a[tag=Participant,scores={Phase=21,Death=0,UseUpgrader=1..}] at @s run function mad:system/ongame/upgrader/main
+## Detect armor upgrader
+execute as @a[tag=Participant,scores={Phase=21,Death=0,UseArmorUpgrader=1..}] at @s run function mad:system/ongame/armor_upgrader/main
+
+## Detect tool upgrader
+execute as @a[tag=Participant,scores={Phase=21,Death=0,UseToolUpgrader=1..}] at @s run function mad:system/ongame/tool_upgrader/main
 
 ## Detect emergency_call
 execute as @a[tag=Participant,scores={Phase=21,Death=0,UseEmergencyCall=1..}] at @s run function mad:system/ongame/emergency_call/main

@@ -78,6 +78,7 @@ kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
+kill @e[type=minecraft:armor_stand,tag=DetectUpgrader]
 kill @e[type=minecraft:armor_stand,tag=RespawnBeaconPosition]
 
 ## Reset time

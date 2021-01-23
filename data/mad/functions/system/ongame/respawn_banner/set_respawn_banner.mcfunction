@@ -16,6 +16,11 @@ execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","T
 execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","TeamC"]}}}] run replaceitem block ~ ~ ~ container.13 minecraft:yellow_banner
 execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","TeamD"]}}}] run replaceitem block ~ ~ ~ container.13 minecraft:green_banner
 execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","TeamE"]}}}] run replaceitem block ~ ~ ~ container.13 minecraft:purple_banner
+execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","TeamA"]}}}] run team join TeamA @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンバナー"}'},sort=nearest,limit=1]
+execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","TeamB"]}}}] run team join TeamB @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンバナー"}'},sort=nearest,limit=1]
+execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","TeamC"]}}}] run team join TeamC @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンバナー"}'},sort=nearest,limit=1]
+execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","TeamD"]}}}] run team join TeamD @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンバナー"}'},sort=nearest,limit=1]
+execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","TeamE"]}}}] run team join TeamE @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンバナー"}'},sort=nearest,limit=1]
 data modify entity @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンバナー"}'},sort=nearest,limit=1] CustomName set from entity @s Item.tag.display.Name
 data modify block ~ ~ ~ Items[0].tag merge from entity @s Item.tag
 data modify block ~ ~ ~ Items[0].tag.Tags[0] set value "RespawnBannerFromChest"

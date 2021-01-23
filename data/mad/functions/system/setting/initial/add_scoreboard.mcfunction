@@ -223,10 +223,16 @@ scoreboard objectives add UseTransmitter trigger
 scoreboard objectives add TransmitterPosX dummy
 scoreboard objectives add TransmitterPosY dummy
 scoreboard objectives add TransmitterPosZ dummy
+scoreboard objectives add BannerDistance dummy
+scoreboard objectives add SquareRootI dummy
+scoreboard objectives add SquareRootX dummy
+scoreboard objectives add Distance dummy
 ## Add scoreboards for emergency call
 scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse_spawn_egg
-## Add scoreboards for upgrader
-scoreboard objectives add UseUpgrader minecraft.used:minecraft.bat_spawn_egg
+## Add scoreboards for armor upgrader
+scoreboard objectives add UseArmorUpgrader minecraft.used:minecraft.bat_spawn_egg
+## Add scoreboards for tool upgrader
+scoreboard objectives add UseToolUpgrader minecraft.used:minecraft.turtle_spawn_egg
 ## Add scoreboards for notice of thief
 scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn_egg
 scoreboard objectives add StealItemPlayer dummy
@@ -490,8 +496,10 @@ scoreboard players set @a TransmitterPosY 0
 scoreboard players set @a TransmitterPosZ 0
 ## Set scoreboards for emergency call
 scoreboard players set @a UseEmergencyCall 0
-## Set scoreboards for upgrader
-scoreboard players set @a UseUpgrader 0
+## Set scoreboards for armor upgrader
+scoreboard players set @a UseArmorUpgrader 0
+## Set scoreboards for tool upgrader
+scoreboard players set @a UseToolUpgrader 0
 ## Set scoreboards for notice of thief
 scoreboard players set @a UseNoticeOfThief 0
 scoreboard players set @a StealItemPlayer 0

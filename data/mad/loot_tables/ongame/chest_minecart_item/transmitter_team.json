@@ -1,0 +1,27 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"発信機","color":"light_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{title:\"発信機\",author:\"potage00\",HideFlags:39,pages:['[\"\",{\"text\":\"発信機\",\"color\":\"reset\",\"bold\":true,\"underlined\":true},{\"text\":\"\\\\n\\\\u0020\\\\u0020\",\"color\":\"reset\"},{\"text\":\"使用すると、一番近くの\",\"color\":\"reset\"},{\"text\":\"\\\\n\\\\u0020\\\\u0020\",\"color\":\"reset\"},{\"text\":\"敵チームプレイヤーの座\",\"color\":\"reset\"},{\"text\":\"\\\\n\\\\u0020\\\\u0020\",\"color\":\"reset\"},{\"text\":\"標を知ることができる。\",\"color\":\"reset\"},{\"text\":\"\\\\n\\\\u0020\\\\u0020\\\\u0020\\\\u0020\\\\u0020\\\\u0020\",\"color\":\"reset\"},{\"text\":\">\\\\u0020使用\",\"color\":\"red\",\"bold\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger UseTransmitter set 1\"}},{\"text\":\"\\\\n\\\\n\\\\n\\\\u0020\\\\u0020\",\"color\":\"reset\"},{\"text\":\"使用すると、一番近くの\",\"color\":\"reset\"},{\"text\":\"\\\\n\\\\u0020\\\\u0020\",\"color\":\"reset\"},{\"text\":\"仲間チームプレイヤーの\",\"color\":\"reset\"},{\"text\":\"\\\\n\\\\u0020\\\\u0020\",\"color\":\"reset\"},{\"text\":\"リスポーンバナーの距離\",\"color\":\"reset\"},{\"text\":\"\\\\n\\\\u0020\\\\u0020\",\"color\":\"reset\"},{\"text\":\"を知ることができる。\",\"color\":\"reset\"},{\"text\":\"\\\\n\\\\u0020\\\\u0020\\\\u0020\\\\u0020\\\\u0020\\\\u0020\",\"color\":\"reset\"},{\"text\":\">\\\\u0020使用\",\"color\":\"red\",\"bold\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger UseTransmitter set 2\"}}]'],Tags:[\"MinecartItem\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

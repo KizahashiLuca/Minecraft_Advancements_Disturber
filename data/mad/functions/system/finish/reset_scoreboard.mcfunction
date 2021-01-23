@@ -224,10 +224,16 @@ scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX
 scoreboard objectives remove TransmitterPosY
 scoreboard objectives remove TransmitterPosZ
+scoreboard objectives remove BannerDistance
+scoreboard objectives remove SquareRootI
+scoreboard objectives remove SquareRootX
+scoreboard objectives remove Distance
 ## Remove scoreboards for emergency call
 scoreboard objectives remove UseEmergencyCall
-## Remove scoreboards for upgrader
-scoreboard objectives remove UseUpgrader
+## Remove scoreboards for armor upgrader
+scoreboard objectives remove UseArmorUpgrader
+## Remove scoreboards for tool upgrader
+scoreboard objectives remove UseToolUpgrader
 ## Remove scoreboards for notice of thief
 scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove StealItemPlayer
