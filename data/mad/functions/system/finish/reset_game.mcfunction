@@ -80,6 +80,8 @@ kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
 kill @e[type=minecraft:armor_stand,tag=DetectUpgrader]
 kill @e[type=minecraft:armor_stand,tag=RespawnBeaconPosition]
+kill @e[type=minecraft:armor_stand,tag=ReturnPortal]
+kill @e[type=minecraft:armor_stand,tag=MinecartItem]
 
 ## Reset time
 time set noon

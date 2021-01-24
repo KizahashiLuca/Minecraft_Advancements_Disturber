@@ -7,9 +7,6 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Save area
-setblock ~ ~ ~ minecraft:structure_block{mode:"SAVE",powered:0b,posX:-1,posY:-2,posZ:-1,sizeX:3,sizeY:6,sizeZ:3,showboundingbox:1b,showair:1b}
-
 ## Create respawn beacon
 fill ~-1 ~ ~-1 ~1 ~2 ~1 minecraft:bedrock
 fill ~-1 ~1 ~ ~1 ~2 ~ minecraft:air

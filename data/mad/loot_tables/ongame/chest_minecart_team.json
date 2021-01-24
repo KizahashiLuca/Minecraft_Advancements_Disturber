@@ -43,7 +43,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "mad:ongame/chest_minecart_item/chainmail_boots"
+          "name": "mad:ongame/chest_minecart_item/golden_boots"
         },
         {
           "type": "minecraft:loot_table",
@@ -79,6 +79,11 @@
           "type": "minecraft:loot_table",
           "weight": 1,
           "name": "mad:ongame/chest_minecart_item/broken_elytra"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:ongame/chest_minecart_item/return_portal"
         }
       ]
     }

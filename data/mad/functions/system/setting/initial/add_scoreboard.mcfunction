@@ -212,6 +212,15 @@ scoreboard objectives add AD_pg_kill_phant dummy {"text":"NO BED NO LIFE"}
 scoreboard objectives add AD_pg_kill_ender dummy {"text":"消える暗闇"}
 scoreboard objectives add AD_pg_frinedship dummy {"text":"仲間思い"}
 scoreboard objectives add BreakSpawner minecraft.mined:minecraft.spawner
+## Add scoreboards for advancements - achievements
+scoreboard objectives add AD_ac_root dummy {"text":"実績"}
+scoreboard objectives add AD_ac_buildsword dummy {"text":"いざ突撃！"}
+scoreboard objectives add AD_ac_diamonds2u dummy {"text":"ダイヤモンドをあなたに！"}
+scoreboard objectives add AD_ac_fly_pig dummy {"text":"ブタさんの飛ぶ頃に"}
+scoreboard objectives add AD_ac_kill_cow dummy {"text":"牛転がし"}
+scoreboard objectives add AD_ac_on_a_rail dummy {"text":"世界のトロッコから"}
+scoreboard objectives add FallDistance dummy
+scoreboard objectives add RailDistance minecraft.custom:minecraft.minecart_one_cm
 ## Add scoreboards for summons minecart
 scoreboard objectives add 300 dummy
 scoreboard objectives add SecondSummon dummy
@@ -488,6 +497,15 @@ scoreboard players set @a AD_pg_kill_phant 0
 scoreboard players set @a AD_pg_kill_ender 0
 scoreboard players set @a AD_pg_frinedship 0
 scoreboard players set @a BreakSpawner 0
+## Set scoreboards for advancements - achievements
+scoreboard players set @a AD_ac_root 0
+scoreboard players set @a AD_ac_buildsword 0
+scoreboard players set @a AD_ac_diamonds2u 0
+scoreboard players set @a AD_ac_fly_pig 0
+scoreboard players set @a AD_ac_kill_cow 0
+scoreboard players set @a AD_ac_on_a_rail 0
+scoreboard players set @a FallDistance 0
+scoreboard players set @a RailDistance 0
 ## Set scoreboards for transmitter
 scoreboard players set @a UseTransmitter 0
 scoreboard players enable @a UseTransmitter

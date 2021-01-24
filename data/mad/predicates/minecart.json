@@ -1,0 +1,17 @@
+{
+    "condition": "minecraft:inverted",
+    "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "distance": {
+                "absolute": {
+                    "max": 10,
+                    "min": 0
+                }
+            },
+            "nbt": "{Tags:[\"SetNext\",\"Minecart\"],OnGround:1b}",
+            "type": "minecraft:chest_minecart"
+        }
+    }
+}

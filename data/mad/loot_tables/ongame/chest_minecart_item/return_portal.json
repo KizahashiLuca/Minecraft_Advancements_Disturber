@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"帰還ポータル","color":"light_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                ["",{"text":"エンドからの帰還ポータルを設置。","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"text":"右クリックで使用","color":"","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{EntityTag:{Tags:[\"MinecartItem\",\"ReturnPortal\"],CustomName:'{\"text\":\"帰還ポータル\",\"color\":\"light_purple\",\"bold\":false,\"italic\":false}',CustomNameVisible:1b}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -20,6 +20,7 @@ execute as @a run function mad:system/ongame/set_position
 
 ## Execute advancements
 function mad:system/ongame/advancements/potage00/execute_advancements
+function mad:system/ongame/advancements/achievements/execute_advancements
 
 ## Detect kill
 execute as @a[team=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run function mad:system/ongame_individual/detect_kill
@@ -48,6 +49,9 @@ execute as @a[team=Participant,scores={Phase=21,Death=0,UseToolUpgrader=1..}] at
 
 ## Detect notice_of_thief
 execute as @a[team=Participant] at @s run function mad:system/ongame/notice_of_thief/main
+
+## Detect return portal
+execute as @e[type=minecraft:armor_stand,tag=MinecartItem,tag=ReturnPortal] at @s run function mad:system/ongame/return_portal/main
 
 ## Game Finish
 scoreboard players operation #mad NumAlive = #mad NumParticipant
