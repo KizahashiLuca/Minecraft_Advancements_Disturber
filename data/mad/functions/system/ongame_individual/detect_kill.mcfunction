@@ -11,9 +11,11 @@
 tag @s add Killer
 
 ## Detect killed
-execute as @a[team=Participant,scores={Death=1}] run scoreboard players operation @p[team=Participant,tag=Killer] Second += @s Second
-execute as @a[team=Participant,scores={Death=1}] run scoreboard players operation @p[team=Participant,tag=Killer] TimeLimit += @s Second
-execute as @a[team=Participant,scores={Death=1}] run scoreboard players operation @p[team=Participant,tag=Killer] GetTimeLimit += @s Second
+execute as @a[team=Participant,scores={Death=1}] at @s run scoreboard players operation @s SecondPerSurvive += @s Second
+execute as @a[team=Participant,scores={Death=1}] at @s run scoreboard players operation @s SecondPerSurvive /= #mad 2
+execute as @a[team=Participant,scores={Death=1}] at @s run scoreboard players operation @p[team=Participant,tag=Killer,sort=nearest] Second += @s SecondPerSurvive
+execute as @a[team=Participant,scores={Death=1}] at @s run scoreboard players operation @p[team=Participant,tag=Killer,sort=nearest] TimeLimit += @s SecondPerSurvive
+execute as @a[team=Participant,scores={Death=1}] at @s run scoreboard players operation @p[team=Participant,tag=Killer,sort=nearest] GetTimeLimit += @s SecondPerSurvive
 scoreboard players operation @p[team=Participant,tag=Killer] Kill += @p[team=Participant,tag=Killer] KillTemp
 scoreboard players set @p[team=Participant,tag=Killer] KillTemp 0
 

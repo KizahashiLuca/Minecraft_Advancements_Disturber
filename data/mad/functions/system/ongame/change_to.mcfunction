@@ -24,7 +24,8 @@ execute if score #mad Difficulty matches 3 run difficulty hard
 
 ## Clear inventory
 clear @a[tag=Participant]
-effect clear @a[tag=Participant]
+effect clear @a
+effect give @a[tag=!Participant] minecraft:night_vision 1000000 1 true
 
 ## Give items
 give @a[tag=Participant] minecraft:golden_pickaxe

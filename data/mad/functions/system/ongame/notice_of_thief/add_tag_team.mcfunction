@@ -8,8 +8,8 @@
 #####################################
 
 ## Add a tag
-execute as @s[team=TeamA] run tag @a[team=TeamA] add NotStealPlayer
-execute as @s[team=TeamB] run tag @a[team=TeamB] add NotStealPlayer
-execute as @s[team=TeamC] run tag @a[team=TeamC] add NotStealPlayer
-execute as @s[team=TeamD] run tag @a[team=TeamD] add NotStealPlayer
-execute as @s[team=TeamE] run tag @a[team=TeamE] add NotStealPlayer
+execute as @s[tag=DetectThief,team=TeamA] run tag @a[team=TeamA] add NotStealPlayer
+execute as @s[tag=DetectThief,team=TeamB] run tag @a[team=TeamB] add NotStealPlayer
+execute as @s[tag=DetectThief,team=TeamC] run tag @a[team=TeamC] add NotStealPlayer
+execute as @s[tag=DetectThief,team=TeamD] run tag @a[team=TeamD] add NotStealPlayer
+execute as @s[tag=DetectThief,team=TeamE] run tag @a[team=TeamE] add NotStealPlayer

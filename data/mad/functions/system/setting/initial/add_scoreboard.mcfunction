@@ -16,6 +16,7 @@ scoreboard objectives add KillTemp minecraft.custom:minecraft.player_kills
 scoreboard objectives add TeleportMessage trigger
 scoreboard objectives add ExitMessage trigger
 ## Add scoreboards for timer
+scoreboard objectives add 2 dummy
 scoreboard objectives add Second dummy
 scoreboard objectives add Tick dummy
 scoreboard objectives add GeneralSecond dummy
@@ -266,6 +267,8 @@ scoreboard objectives add ResultTmp dummy
 scoreboard players set #mad Phase 0
 scoreboard players set #mad Difficulty 0
 scoreboard players set #mad ExitMessage 0
+## Set scoreboards for timer
+scoreboard players set #mad 2 2
 ## Set scoreboards for participants
 scoreboard players set #mad Participant 0
 scoreboard players set #mad NumParticipant 0

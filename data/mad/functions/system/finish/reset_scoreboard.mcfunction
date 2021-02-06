@@ -17,6 +17,7 @@ scoreboard objectives remove KillTemp
 scoreboard objectives remove TeleportMessage
 scoreboard objectives remove ExitMessage
 ## Remove scoreboards for timer
+scoreboard objectives remove 2
 scoreboard objectives remove Second
 scoreboard objectives remove Tick
 scoreboard objectives remove GeneralSecond

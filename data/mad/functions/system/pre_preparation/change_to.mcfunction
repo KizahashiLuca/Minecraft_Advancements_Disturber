@@ -61,6 +61,7 @@ recipe take @a *
 effect clear @a
 effect give @a minecraft:resistance 1000000 6 true
 effect give @a minecraft:slow_falling 1000000 3 true
+effect give @a minecraft:invisibility 1000000 1 true
 
 ## Set player number
 scoreboard players set #mad Participant 1

@@ -15,9 +15,8 @@ tag @s add DetectThief
 tag @s add SetThief
 
 ## Send messages
-tellraw @s ["",{"text":"[怪盗予告] 全員に怪盗予告しました。5秒後に誰かからアイテムを盗みます。","color":"green"}]
-execute if score #mad IsTeam matches 0 run tellraw @a[tag=!DetectThief] ["",{"text":"[怪盗予告] 怪盗予告が誰かから出されました。","color":"green"}]
-execute if score #mad IsTeam matches 1 run function mad:system/ongame/notice_of_thief/message_notice
+execute if score #mad IsTeam matches 0 run function mad:system/ongame/notice_of_thief/message_notice_individual
+execute if score #mad IsTeam matches 1 run function mad:system/ongame/notice_of_thief/message_notice_team
 
 ## Set scoreboard
 scoreboard players set @s ThiefTick 0
