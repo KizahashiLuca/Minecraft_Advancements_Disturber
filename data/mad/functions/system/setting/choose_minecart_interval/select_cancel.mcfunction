@@ -7,11 +7,8 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Clear inventory
-clear @p[tag=Host]
+## Reset choice
+scoreboard players operation #mad CartInterval = #mad CartIntervalPrv
 
-## Set inventory
-function mad:system/setting/choose_gamerule/set_inventory
-
-## Change phase
-scoreboard players set #mad Phase 9
+## Send messages
+function mad:system/setting/choose_minecart_interval/send_message

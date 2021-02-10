@@ -9,6 +9,7 @@
 
 ## Add scoreboards for game phase
 scoreboard objectives add Phase dummy
+scoreboard objectives add PrevPhase dummy
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add SpawnTime minecraft.custom:minecraft.time_since_death
 scoreboard objectives add Kill dummy
@@ -30,7 +31,6 @@ scoreboard objectives add NumDead dummy
 ## Add scoreboards for onground
 scoreboard objectives add OnGround dummy
 ## Add scoreboards for position
-scoreboard objectives add 100 dummy
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy
@@ -71,9 +71,12 @@ scoreboard objectives add Select34 dummy
 scoreboard objectives add Selected dummy
 ## Add scoreboards for setting phase - choose time limit
 scoreboard objectives add 10 dummy
-scoreboard objectives add digit_001 dummy
-scoreboard objectives add digit_010 dummy
-scoreboard objectives add digit_100 dummy
+scoreboard objectives add 100 dummy
+scoreboard objectives add 1000 dummy
+scoreboard objectives add digit_0001 dummy
+scoreboard objectives add digit_0010 dummy
+scoreboard objectives add digit_0100 dummy
+scoreboard objectives add digit_1000 dummy
 scoreboard objectives add TimeLimit dummy
 scoreboard objectives add TimeLimitPrv dummy
 scoreboard objectives add GetTimeLimit dummy
@@ -88,6 +91,9 @@ scoreboard objectives add DifficultyPrv dummy
 ## Add scoreboards for setting phase - choose adding time
 scoreboard objectives add AddingTime dummy
 scoreboard objectives add AddingTimePrv dummy
+## Add scoreboards for setting phase - choose minecart interval
+scoreboard objectives add CartInterval dummy
+scoreboard objectives add CartIntervalPrv dummy
 ## Add scoreboards for setting phase - choose gamerule
 scoreboard objectives add WeatherCycle dummy
 scoreboard objectives add DaylightCycle dummy
@@ -265,6 +271,7 @@ scoreboard objectives add ResultTmp dummy
 
 ## Set scoreboards for game phase
 scoreboard players set #mad Phase 0
+scoreboard players set #mad PrevPhase 0
 scoreboard players set #mad Difficulty 0
 scoreboard players set #mad ExitMessage 0
 ## Set scoreboards for timer
@@ -275,7 +282,6 @@ scoreboard players set #mad NumParticipant 0
 scoreboard players set #mad NumAlive 0
 scoreboard players set #mad NumDead 0
 ## Set scoreboards for position
-scoreboard players set #mad 100 100
 scoreboard players set #mad PosX 0
 scoreboard players set #mad PosY 63
 scoreboard players set #mad PosZ 0
@@ -287,6 +293,8 @@ scoreboard players set #mad RandomModder 2147483647
 scoreboard players set #mad RandomMultiplier 48271
 ## Set scoreboards for setting phase - choose time limit
 scoreboard players set #mad 10 10
+scoreboard players set #mad 100 100
+scoreboard players set #mad 1000 1000
 scoreboard players set #mad TimeLimit 100
 scoreboard players set #mad TimeLimitPrv 100
 ## Set scoreboards for setting phase - choose area
@@ -300,6 +308,9 @@ scoreboard players set #mad DifficultyPrv 2
 ## Set scoreboards for setting phase - choose adding time
 scoreboard players set #mad AddingTime 100
 scoreboard players set #mad AddingTimePrv 100
+## Set scoreboards for setting phase - choose minecart interval
+scoreboard players set #mad CartInterval 100
+scoreboard players set #mad CartIntervalPrv 100
 ## Set scoreboards for setting phase - choose gamerule
 scoreboard players set #mad WeatherCycle 1
 scoreboard players set #mad DaylightCycle 1

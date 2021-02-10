@@ -7,8 +7,8 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Right arrow
-scoreboard players add #mad WorldBorder 100
-execute if score #mad WorldBorder matches 2100 run scoreboard players set #mad WorldBorder 0
+## Reset choice
+scoreboard players set #mad WorldBorder 1000
 
+## Send messages
 function mad:system/setting/choose_world_border/change_to

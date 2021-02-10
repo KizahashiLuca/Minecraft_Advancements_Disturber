@@ -11,14 +11,14 @@
 clear @p[tag=Host]
 
 ## Set scoreboard
-scoreboard players operation @p[tag=Host] digit_100 = #mad TimeLimit
-scoreboard players operation @p[tag=Host] digit_100 /= #mad 100
-scoreboard players operation @p[tag=Host] digit_010 = #mad TimeLimit
-scoreboard players operation @p[tag=Host] digit_010 %= #mad 100
-scoreboard players operation @p[tag=Host] digit_010 /= #mad 10
-scoreboard players operation @p[tag=Host] digit_001 = #mad TimeLimit
-scoreboard players operation @p[tag=Host] digit_001 %= #mad 100
-scoreboard players operation @p[tag=Host] digit_001 %= #mad 10
+scoreboard players operation @p[tag=Host] digit_0100 = #mad TimeLimit
+scoreboard players operation @p[tag=Host] digit_0100 /= #mad 100
+scoreboard players operation @p[tag=Host] digit_0010 = #mad TimeLimit
+scoreboard players operation @p[tag=Host] digit_0010 %= #mad 100
+scoreboard players operation @p[tag=Host] digit_0010 /= #mad 10
+scoreboard players operation @p[tag=Host] digit_0001 = #mad TimeLimit
+scoreboard players operation @p[tag=Host] digit_0001 %= #mad 100
+scoreboard players operation @p[tag=Host] digit_0001 %= #mad 10
 
 ## Set inventory
 function mad:system/setting/choose_initial_time/set_inventory

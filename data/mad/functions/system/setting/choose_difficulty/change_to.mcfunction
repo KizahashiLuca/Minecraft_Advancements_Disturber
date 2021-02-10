@@ -14,4 +14,4 @@ clear @p[tag=Host]
 function mad:system/setting/choose_difficulty/set_inventory
 
 ## Change phase
-scoreboard players set #mad Phase 9
+scoreboard players set #mad Phase 10

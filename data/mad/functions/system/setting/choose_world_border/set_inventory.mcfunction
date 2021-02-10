@@ -8,9 +8,9 @@
 #####################################
 
 ## Set inventory
-loot replace entity @p[tag=Host] inventory.11 loot mad:setting/choose_world_border/left_arrow
-loot replace entity @p[tag=Host] inventory.13 loot mad:setting/choose_world_border/world_border
-loot replace entity @p[tag=Host] inventory.15 loot mad:setting/choose_world_border/right_arrow
-
+loot replace entity @p[tag=Host] inventory.4 loot mad:setting/choose_setting/choose_world_border
+execute if score #mad WorldBorder matches 1.. run function mad:system/setting/choose_world_border/set_world_border_number
+execute if score #mad WorldBorder matches 0 run function mad:system/setting/choose_world_border/set_world_border_limitless
 loot replace entity @p[tag=Host] inventory.19 loot mad:setting/common/cancel
+loot replace entity @p[tag=Host] inventory.22 loot mad:setting/common/reset
 loot replace entity @p[tag=Host] inventory.25 loot mad:setting/common/determine

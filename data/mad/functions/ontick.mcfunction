@@ -8,6 +8,7 @@
 #####################################
 
 ## ongame main
+execute if score #mad Phase matches 99 run function mad:system/onpause/main
 execute if score #mad Phase matches 21..22 if score #mad IsTeam matches 0 run function mad:system/ongame_individual/main
 execute if score #mad Phase matches 21..22 if score #mad IsTeam matches 1 run function mad:system/ongame_team/main
 execute if score #mad Phase matches 20 run function mad:system/preparation/main

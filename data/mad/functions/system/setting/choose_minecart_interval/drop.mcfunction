@@ -7,11 +7,6 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Clear inventory
-clear @p[tag=Host]
-
-## Set inventory
-function mad:system/setting/choose_gamerule/set_inventory
-
-## Change phase
-scoreboard players set #mad Phase 9
+## Detect dropping
+kill @s
+function mad:system/setting/choose_minecart_interval/set_inventory

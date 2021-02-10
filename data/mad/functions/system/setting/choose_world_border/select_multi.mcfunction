@@ -7,8 +7,7 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Left arrow
-scoreboard players remove #mad WorldBorder 100
-execute if score #mad WorldBorder matches -100 run scoreboard players set #mad WorldBorder 2000
-
+## Add 1000m
+execute if score #mad WorldBorder matches 0 run scoreboard players set #mad WorldBorder 100
+execute if score #mad WorldBorder matches 2001.. run scoreboard players set #mad WorldBorder 0
 function mad:system/setting/choose_world_border/change_to

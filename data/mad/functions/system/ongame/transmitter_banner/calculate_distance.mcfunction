@@ -30,4 +30,4 @@ scoreboard players set @s Distance 0
 execute if score @s BannerDistance > @s SquareRootX run function mad:system/ongame/transmitter_banner/square_root
 
 ## Tell message
-tellraw @s ["",{"text":"[発 信 機] 仲間のリスポーンバナーが ","color":"green"},{"score":{"name":"@s","objective":"BannerDistance"},"color":"green"},{"text":"m 先にあります。","color":"green"}]
+tellraw @s ["",{"text":"[発 信 機] 仲間のリスポーンバナーが ","color":"green"},{"score":{"name":"@s","objective":"Distance"},"color":"green"},{"text":"m 先にあります。","color":"green"}]

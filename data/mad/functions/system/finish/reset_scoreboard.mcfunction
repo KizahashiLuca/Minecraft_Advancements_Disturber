@@ -8,8 +8,8 @@
 #####################################
 
 ## Remove scoreboards for game phase
-scoreboard objectives remove Version
 scoreboard objectives remove Phase
+scoreboard objectives remove PrevPhase
 scoreboard objectives remove Death
 scoreboard objectives remove SpawnTime
 scoreboard objectives remove Kill
@@ -31,7 +31,6 @@ scoreboard objectives remove NumDead
 ## Remove scoreboards for onground
 scoreboard objectives remove OnGround
 ## Remove scoreboards for position
-scoreboard objectives remove 100
 scoreboard objectives remove PosX
 scoreboard objectives remove PosY
 scoreboard objectives remove PosZ
@@ -72,9 +71,12 @@ scoreboard objectives remove Select34
 scoreboard objectives remove Selected
 ## Remove scoreboards for setting phase - choose time limit
 scoreboard objectives remove 10
-scoreboard objectives remove digit_001
-scoreboard objectives remove digit_010
-scoreboard objectives remove digit_100
+scoreboard objectives remove 100
+scoreboard objectives remove 1000
+scoreboard objectives remove digit_0001
+scoreboard objectives remove digit_0010
+scoreboard objectives remove digit_0100
+scoreboard objectives remove digit_1000
 scoreboard objectives remove TimeLimit
 scoreboard objectives remove TimeLimitPrv
 scoreboard objectives remove GetTimeLimit
@@ -89,6 +91,9 @@ scoreboard objectives remove DifficultyPrv
 ## Remove scoreboards for setting phase - choose adding time
 scoreboard objectives remove AddingTime
 scoreboard objectives remove AddingTimePrv
+## Remove scoreboards for setting phase - choose minecart interval
+scoreboard objectives remove CartInterval
+scoreboard objectives remove CartIntervalPrv
 ## Remove scoreboards for setting phase - choose gamerule
 scoreboard objectives remove WeatherCycle
 scoreboard objectives remove DaylightCycle

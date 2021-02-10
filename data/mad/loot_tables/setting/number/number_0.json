@@ -11,7 +11,7 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"0","color":"reset","bold":false,"italic":false}]
+                ["",{"text":"","color":"reset","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",

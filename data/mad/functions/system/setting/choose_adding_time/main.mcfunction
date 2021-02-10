@@ -32,9 +32,9 @@ scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:struc
 
 ## Change to each phase
 execute as @p[tag=Host,scores={Select13=1}] run function mad:system/setting/choose_adding_time/change_to
-execute as @p[tag=Host,scores={Select21=1}] run function mad:system/setting/choose_adding_time/select_digit_100
-execute as @p[tag=Host,scores={Select22=1}] run function mad:system/setting/choose_adding_time/select_digit_010
-execute as @p[tag=Host,scores={Select23=1}] run function mad:system/setting/choose_adding_time/select_digit_001
+execute as @p[tag=Host,scores={Select21=1}] run function mad:system/setting/choose_adding_time/select_digit_0100
+execute as @p[tag=Host,scores={Select22=1}] run function mad:system/setting/choose_adding_time/select_digit_0010
+execute as @p[tag=Host,scores={Select23=1}] run function mad:system/setting/choose_adding_time/select_digit_0001
 execute as @p[tag=Host,scores={Select28=1}] run function mad:system/setting/choose_adding_time/select_cancel
 execute as @p[tag=Host,scores={Select31=1}] run function mad:system/setting/choose_adding_time/select_reset
 execute as @p[tag=Host,scores={Select34=1}] run function mad:system/setting/choose_adding_time/select_ok

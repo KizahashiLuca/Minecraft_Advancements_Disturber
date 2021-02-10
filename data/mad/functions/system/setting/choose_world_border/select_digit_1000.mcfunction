@@ -7,11 +7,7 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Clear inventory
-clear @p[tag=Host]
-
-## Set inventory
-function mad:system/setting/choose_gamerule/set_inventory
-
-## Change phase
-scoreboard players set #mad Phase 9
+## Add 1000m
+scoreboard players add #mad WorldBorder 1000
+execute if score #mad WorldBorder matches 2001.. run scoreboard players set #mad WorldBorder 0
+function mad:system/setting/choose_world_border/change_to

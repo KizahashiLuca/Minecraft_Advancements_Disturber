@@ -15,7 +15,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{BlockEntityTag:{Patterns:[{Pattern:rs,Color:15},{Pattern:ts,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MADsetting\",\"number\"]}"
+              "tag":"{BlockEntityTag:{Patterns:[{Pattern:ls,Color:15},{Pattern:ts,Color:15},{Pattern:ms,Color:15},{Pattern:bs,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MADsetting\",\"number\"]}"
             }
           ]
         }

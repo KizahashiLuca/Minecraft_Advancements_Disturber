@@ -36,7 +36,7 @@ execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:0b}] at @
 execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame/minecart/main_onground
 
 ## Teleport player
-execute as @a[gamemode=!survival,scores={TeleportMessage=1}] run function mad:system/ongame/teleport_player/main
+execute as @a[scores={TeleportMessage=1..2}] run function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
 execute as @a[team=Participant,scores={Phase=21,Death=0,UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter_player/main

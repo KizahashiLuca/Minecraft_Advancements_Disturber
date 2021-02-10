@@ -7,11 +7,7 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Clear inventory
-clear @p[tag=Host]
-
-## Set inventory
-function mad:system/setting/choose_gamerule/set_inventory
-
-## Change phase
-scoreboard players set #mad Phase 9
+## Add 100secs
+scoreboard players add #mad CartInterval 100
+execute if score #mad CartInterval matches 1000.. run scoreboard players remove #mad CartInterval 1000
+function mad:system/setting/choose_minecart_interval/change_to
