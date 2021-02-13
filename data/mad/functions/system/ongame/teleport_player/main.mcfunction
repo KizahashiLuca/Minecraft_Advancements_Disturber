@@ -8,17 +8,7 @@
 #####################################
 
 ## Detect teleport
-execute if score #mad IsTeam matches 0 at @e[type=minecraft:chest_minecart,tag=Minecart] run tp @s[scores={TeleportMessage=1}] ~ ~10 ~
-execute if score #mad IsTeam matches 0 at @e[type=minecraft:area_effect_cloud,tag=Minecart] run tp @s[scores={TeleportMessage=2}] ~ ~10 ~
-execute if score #mad IsTeam matches 1 if score #mad DeadTeamA matches 1 at @e[type=minecraft:chest_minecart,tag=Minecart] run tp @s[team=TeamA,scores={TeleportMessage=1}] ~ ~10 ~
-execute if score #mad IsTeam matches 1 if score #mad DeadTeamB matches 1 at @e[type=minecraft:chest_minecart,tag=Minecart] run tp @s[team=TeamB,scores={TeleportMessage=1}] ~ ~10 ~
-execute if score #mad IsTeam matches 1 if score #mad DeadTeamC matches 1 at @e[type=minecraft:chest_minecart,tag=Minecart] run tp @s[team=TeamC,scores={TeleportMessage=1}] ~ ~10 ~
-execute if score #mad IsTeam matches 1 if score #mad DeadTeamD matches 1 at @e[type=minecraft:chest_minecart,tag=Minecart] run tp @s[team=TeamD,scores={TeleportMessage=1}] ~ ~10 ~
-execute if score #mad IsTeam matches 1 if score #mad DeadTeamE matches 1 at @e[type=minecraft:chest_minecart,tag=Minecart] run tp @s[team=TeamE,scores={TeleportMessage=1}] ~ ~10 ~
-execute if score #mad IsTeam matches 1 if score #mad DeadTeamA matches 1 at @e[type=minecraft:area_effect_cloud,tag=Minecart] run tp @s[team=TeamA,scores={TeleportMessage=2}] ~ ~10 ~
-execute if score #mad IsTeam matches 1 if score #mad DeadTeamB matches 1 at @e[type=minecraft:area_effect_cloud,tag=Minecart] run tp @s[team=TeamB,scores={TeleportMessage=2}] ~ ~10 ~
-execute if score #mad IsTeam matches 1 if score #mad DeadTeamC matches 1 at @e[type=minecraft:area_effect_cloud,tag=Minecart] run tp @s[team=TeamC,scores={TeleportMessage=2}] ~ ~10 ~
-execute if score #mad IsTeam matches 1 if score #mad DeadTeamD matches 1 at @e[type=minecraft:area_effect_cloud,tag=Minecart] run tp @s[team=TeamD,scores={TeleportMessage=2}] ~ ~10 ~
-execute if score #mad IsTeam matches 1 if score #mad DeadTeamE matches 1 at @e[type=minecraft:area_effect_cloud,tag=Minecart] run tp @s[team=TeamE,scores={TeleportMessage=2}] ~ ~10 ~
+execute at @e[type=minecraft:chest_minecart,tag=Minecart] if entity @e[type=minecraft:chest_minecart,tag=Minecart] run tp @s[scores={DeadOwnTeam=1}] ~ ~ ~
+execute at @e[type=minecraft:area_effect_cloud,tag=Minecart] unless entity @e[type=minecraft:chest_minecart,tag=Minecart] run tp @s[scores={DeadOwnTeam=1}] ~ ~ ~
 scoreboard players set @s TeleportMessage 0
 scoreboard players enable @s TeleportMessage

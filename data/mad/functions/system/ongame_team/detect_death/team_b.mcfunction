@@ -10,4 +10,5 @@
 ## Set scoreboard
 scoreboard players set #mad DeadTeamB 1
 scoreboard players add #mad NumDead 1
+scoreboard players set @a[team=TeamB] DeadOwnTeam 1
 scoreboard players set @p[team=TeamB,tag=Leader] Second 0

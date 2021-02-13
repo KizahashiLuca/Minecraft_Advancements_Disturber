@@ -8,7 +8,7 @@
 #####################################
 
 ## Remove bossbar
-function mad:system/finish/bossbar_remove
+function mad:system/finish/reset_bossbar
 
 ## Teleport
 tp @a @r[tag=Participant,scores={Phase=21,Death=0}]
@@ -42,12 +42,15 @@ tag @a remove Leader
 tag @a remove Numbered
 tag @a remove Participant
 tag @a remove Teleporter
+tag @a remove TransmitPlayer
 tag @a remove DetectTransmitter
+tag @a remove EmergencyCallee
 tag @a remove DetectEmergencyCall
 tag @a remove DetectThief
 tag @a remove SetThief
 tag @a remove NotStealPlayer
 tag @a remove StolenPlayer
+tag @a remove ThiefTeam
 tag @a remove Teleported
 tag @a remove TeleportToMinecart
 tag @a remove GiveTimeRandomly

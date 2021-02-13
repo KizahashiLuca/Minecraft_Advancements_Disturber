@@ -11,4 +11,4 @@
 scoreboard players operation @s SquareRootX += @s SquareRootI
 scoreboard players add @s Distance 1
 scoreboard players add @s SquareRootI 2
-execute if score @s BannerDistance > @s SquareRootX run function mad:system/ongame/transmitter_banner/square_root
+execute if score @s BannerDistance > @s SquareRootX run function mad:system/ongame/transmitter_player/square_root

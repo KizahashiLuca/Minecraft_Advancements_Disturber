@@ -14,7 +14,7 @@ scoreboard players set @s UseToolUpgrader 0
 summon minecraft:armor_stand ~ ~ ~ {Invisible:0b,Marker:0b,Invulnerable:0b,Health:1.0f,Fire:100s,Tags:["DetectUpgrader"]}
 
 ## Branch
-execute unless predicate mad:items/mainhand/axe unless predicate mad:items/mainhand/hoe unless predicate mad:items/mainhand/pickaxe unless predicate mad:items/mainhand/shovel unless predicate mad:items/mainhand/sword unless predicate mad:items/offhand/axe unless predicate mad:items/offhand/hoe unless predicate mad:items/offhand/pickaxe unless predicate mad:items/offhand/shovel unless predicate mad:items/offhand/sword run function mad:system/ongame/tool_upgrader/not_upgrade
+execute if predicate mad:items/mainhand/none if predicate mad:items/mainhand/none run function mad:system/ongame/tool_upgrader/not_upgrade
 execute if predicate mad:items/mainhand/axe run function mad:system/ongame/tool_upgrader/upgrade_mainhand_axe
 execute if predicate mad:items/mainhand/hoe run function mad:system/ongame/tool_upgrader/upgrade_mainhand_hoe
 execute if predicate mad:items/mainhand/pickaxe run function mad:system/ongame/tool_upgrader/upgrade_mainhand_pickaxe

@@ -7,5 +7,5 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Send exit messages
-function mad:system/finish/message_common_begin
+## Send reject messages
+function mad:system/onpause/message_pause_reject

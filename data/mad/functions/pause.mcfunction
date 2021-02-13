@@ -7,5 +7,6 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Send exit messages
-function mad:system/finish/message_common_begin
+## Pause game
+execute if score #mad Phase matches 19..22 run function mad:system/onpause/game_pause
+execute unless score #mad Phase matches 19..22 run function mad:system/onpause/game_pause_reject

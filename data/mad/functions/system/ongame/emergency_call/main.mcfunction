@@ -10,18 +10,27 @@
 ## Scoreboard
 scoreboard players set @s UseEmergencyCall 0
 
+## Add tags
+tag @s add DetectEmergencyCall
+
+execute as @s[team=TeamA] run tag @a[team=TeamA,tag=!DetectEmergencyCall] add EmergencyCallee
+execute as @s[team=TeamB] run tag @a[team=TeamB,tag=!DetectEmergencyCall] add EmergencyCallee
+execute as @s[team=TeamC] run tag @a[team=TeamC,tag=!DetectEmergencyCall] add EmergencyCallee
+execute as @s[team=TeamD] run tag @a[team=TeamD,tag=!DetectEmergencyCall] add EmergencyCallee
+execute as @s[team=TeamE] run tag @a[team=TeamE,tag=!DetectEmergencyCall] add EmergencyCallee
+
 ## Teleport
-tp @a[team=TeamA] @s[team=TeamA]
-tp @a[team=TeamB] @s[team=TeamB]
-tp @a[team=TeamC] @s[team=TeamC]
-tp @a[team=TeamD] @s[team=TeamD]
-tp @a[team=TeamE] @s[team=TeamE]
+tp @a[tag=EmergencyCallee] @s
+
+## Message
+tellraw @s ["",{"text":"[緊急招集] チームメンバーを緊急招集しました。","color":"green"}]
+tellraw @a[tag=EmergencyCallee] ["",{"text":"[緊急招集]  ","color":"green"},{"selector":"@s","color":"green"},{"text":" から緊急招集を受けました。","color":"green"}]
 
 ## Kill zombie_horse
 data modify entity @e[type=minecraft:zombie_horse,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"緊急招集"}],"text":""}'},sort=nearest,limit=1] CustomNameVisible set value 0b
 effect give @e[type=minecraft:zombie_horse,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"緊急招集"}],"text":""}'},sort=nearest,limit=1] minecraft:invisibility 100000 1 true
 kill @e[type=minecraft:zombie_horse,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"緊急招集"}],"text":""}'},sort=nearest,limit=1]
 
-## Message
-tellraw @s ["",{"text":"[緊急招集] チームメンバーを緊急招集しました。","color":"green"}]
-function mad:system/ongame/emergency_call/message_emergency_call
+## Remove tags
+tag @a remove EmergencyCallee
+tag @s remove DetectEmergencyCall

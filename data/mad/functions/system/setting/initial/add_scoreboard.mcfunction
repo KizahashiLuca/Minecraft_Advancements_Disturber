@@ -34,6 +34,8 @@ scoreboard objectives add OnGround dummy
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy
+scoreboard objectives add 45 dummy
+scoreboard objectives add Angle dummy
 ## Add scoreboards for randomizer
 scoreboard objectives add RandomSeed dummy
 scoreboard objectives add RandomCount dummy
@@ -73,6 +75,7 @@ scoreboard objectives add Selected dummy
 scoreboard objectives add 10 dummy
 scoreboard objectives add 100 dummy
 scoreboard objectives add 1000 dummy
+scoreboard objectives add 10000 dummy
 scoreboard objectives add digit_0001 dummy
 scoreboard objectives add digit_0010 dummy
 scoreboard objectives add digit_0100 dummy
@@ -239,6 +242,9 @@ scoreboard objectives add UseTransmitter trigger
 scoreboard objectives add TransmitterPosX dummy
 scoreboard objectives add TransmitterPosY dummy
 scoreboard objectives add TransmitterPosZ dummy
+scoreboard objectives add PosXDiff dummy
+scoreboard objectives add PosZDiff dummy
+scoreboard objectives add TanTheta dummy
 scoreboard objectives add BannerDistance dummy
 scoreboard objectives add SquareRootI dummy
 scoreboard objectives add SquareRootX dummy
@@ -260,6 +266,7 @@ scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add MobileBeaconNum dummy
 ## Add scoreboards for team
 scoreboard objectives add TeamBoolean dummy
+scoreboard objectives add DeadOwnTeam dummy
 scoreboard objectives add DeadTeamA dummy
 scoreboard objectives add DeadTeamB dummy
 scoreboard objectives add DeadTeamC dummy
@@ -285,6 +292,7 @@ scoreboard players set #mad NumDead 0
 scoreboard players set #mad PosX 0
 scoreboard players set #mad PosY 63
 scoreboard players set #mad PosZ 0
+scoreboard players set #mad 45 45
 ## Set scoreboards for randomizer
 scoreboard players set #mad RandomSeed 0
 scoreboard players set #mad RandomCount 10
@@ -295,6 +303,7 @@ scoreboard players set #mad RandomMultiplier 48271
 scoreboard players set #mad 10 10
 scoreboard players set #mad 100 100
 scoreboard players set #mad 1000 1000
+scoreboard players set #mad 10000 10000
 scoreboard players set #mad TimeLimit 100
 scoreboard players set #mad TimeLimitPrv 100
 ## Set scoreboards for setting phase - choose area
@@ -526,6 +535,9 @@ scoreboard players enable @a UseTransmitter
 scoreboard players set @a TransmitterPosX 0
 scoreboard players set @a TransmitterPosY 0
 scoreboard players set @a TransmitterPosZ 0
+scoreboard players set @a PosXDiff 0
+scoreboard players set @a PosZDiff 0
+scoreboard players set @a TanTheta 0
 ## Set scoreboards for emergency call
 scoreboard players set @a UseEmergencyCall 0
 ## Set scoreboards for armor upgrader
@@ -540,8 +552,14 @@ scoreboard players set @a ThiefSecond 5
 ## Set scoreboards for mobile respawn beacon
 scoreboard players set @a MobileBeaconNum 0
 ## Set scoreboards for team
+scoreboard players set @a DeadOwnTeam 0
+scoreboard players set @a DeadTeamA 0
+scoreboard players set @a DeadTeamB 0
+scoreboard players set @a DeadTeamC 0
+scoreboard players set @a DeadTeamD 0
+scoreboard players set @a DeadTeamE 0
 scoreboard players set @a NumOfTeamPlayer 0
-## Set scoreboards for team
+## Set scoreboards for result
 scoreboard players set @a ResultTmp 0
 
 ## Random

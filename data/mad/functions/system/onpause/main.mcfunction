@@ -7,5 +7,5 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Send exit messages
-function mad:system/finish/message_common_begin
+## Teleport
+execute as @a[tag=Participant] run tp @s @e[type=minecraft:area_effect_cloud,tag=PausePosition,sort=nearest,limit=1]

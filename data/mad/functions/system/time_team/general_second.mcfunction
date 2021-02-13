@@ -22,4 +22,4 @@ scoreboard players add #mad Second 1
 scoreboard players operation @a[tag=Leader] GeneralSecond = #mad Second
 
 ## Summon minecart
-execute if score #mad Second = #mad SecondSummon run function mad:system/ongame_team/minecart/summon_minecart
+execute if score #mad Second = #mad SecondSummon run function mad:system/ongame/minecart/summon_minecart

@@ -18,4 +18,4 @@ scoreboard players add #mad Second 1
 scoreboard players operation @a[team=Participant,scores={Phase=21,Death=0}] GeneralSecond = #mad Second
 
 ## Summon minecart
-execute if score #mad Second = #mad SecondSummon run function mad:system/ongame_individual/minecart/summon_minecart
+execute if score #mad Second = #mad SecondSummon run function mad:system/ongame/minecart/summon_minecart

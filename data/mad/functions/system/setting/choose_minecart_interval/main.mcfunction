@@ -20,7 +20,7 @@ scoreboard players set @p[tag=Host] Select28 1
 scoreboard players set @p[tag=Host] Select31 1
 execute if score #mad CartInterval matches 1.. run scoreboard players set @p[tag=Host] Select34 1
 
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:clock",tag:{Tags:["MADsetting","choose_choose_minecart_interval"]}}]}] Select13 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:chest_minecart",tag:{Tags:["MADsetting","choose_minecart_interval"]}}]}] Select13 0
 
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:white_banner",tag:{Tags:["MADsetting","number"]}}]}] Select21 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:white_banner",tag:{Tags:["MADsetting","number"]}}]}] Select22 0

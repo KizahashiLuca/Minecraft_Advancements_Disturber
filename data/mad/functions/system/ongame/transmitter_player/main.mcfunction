@@ -17,13 +17,14 @@ clear @s minecraft:written_book{title:"発信機",Tags:["MinecartItem"]} 1
 ## Add a tag
 execute if score #mad IsTeam matches 0 run tag @s add DetectTransmitter
 execute if score #mad IsTeam matches 1 run function mad:system/ongame/transmitter_player/add_tag_team
+tag @p[scores={Phase=21,Death=0},limit=1,sort=nearest,tag=!DetectTransmitter] add TransmitPlayer
 
 ## Send messages
-execute store result score @s TransmitterPosX align x run data get entity @p[scores={Phase=21,Death=0},limit=1,sort=nearest,tag=!DetectTransmitter] Pos[0] 1
-execute store result score @s TransmitterPosY align y run data get entity @p[scores={Phase=21,Death=0},limit=1,sort=nearest,tag=!DetectTransmitter] Pos[1] 1
-execute store result score @s TransmitterPosZ align z run data get entity @p[scores={Phase=21,Death=0},limit=1,sort=nearest,tag=!DetectTransmitter] Pos[2] 1
-execute if entity @p[scores={Phase=21,Death=0},limit=1,sort=nearest,tag=!DetectTransmitter] run tellraw @s ["",{"text":"[発 信 機] ","color":"green"},{"selector":"@p[scores={Phase=21,Death=0},limit=1,sort=nearest,tag=!DetectTransmitter]","color":"green"},{"text":" が ","color":"green"},{"translate":"[%s, %s, %s]","with":[{"score":{"name":"@s","objective":"TransmitterPosX"}},{"score":{"name":"@s","objective":"TransmitterPosY"}},{"score":{"name":"@s","objective":"TransmitterPosZ"}}],"color":"green"},{"text":" にいます。","color":"green"}]
-execute unless entity @p[scores={Phase=21,Death=0},limit=1,sort=nearest,tag=!DetectTransmitter] run tellraw @s ["",{"text":"[発 信 機] 近くには誰もいないようです…。","color":"green"}]
+execute if entity @p[tag=TransmitPlayer] run function mad:system/ongame/transmitter_player/calculate_distance
+execute if entity @p[tag=TransmitPlayer] run function mad:system/ongame/transmitter_player/calculate_angle
+execute if entity @p[tag=TransmitPlayer] run function mad:system/ongame/transmitter_player/send_message
+execute unless entity @p[tag=TransmitPlayer] run tellraw @s ["",{"text":"[発 信 機] 近くには誰もいないようです…。","color":"green"}]
 
 ## Remove a tag
+tag @a remove TransmitPlayer
 tag @a remove DetectTransmitter

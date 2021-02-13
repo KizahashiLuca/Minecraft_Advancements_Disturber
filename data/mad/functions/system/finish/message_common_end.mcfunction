@@ -7,5 +7,6 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Send exit messages
-function mad:system/finish/message_common_begin
+## Send messages common end
+tellraw @a ["",{"text":"-----------------------------","color":"white"}]
+tellraw @a [""]

@@ -9,10 +9,10 @@
 
 ## Detect death
 gamemode spectator @s
-function mad:system/finish_individual/bossbar_remove
 scoreboard players add #mad NumDead 1
 scoreboard players set @s Death 2
 scoreboard players set @s Phase 22
+scoreboard players set @s DeadOwnTeam 1
 
 scoreboard players reset @s Second
 scoreboard players reset @s Tick

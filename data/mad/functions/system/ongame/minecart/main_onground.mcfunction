@@ -11,4 +11,5 @@
 execute if entity @e[type=minecraft:area_effect_cloud,tag=Minecart] run function mad:system/ongame/minecart/detect_minecart_landed
 
 ## Detect minecart
+execute as @s[nbt={Items:[]}] run function mad:system/ongame/minecart/explode_minecart
 execute if entity @p[tag=Participant,scores={Phase=21,Death=0},distance=..2] run function mad:system/ongame/minecart/explode_minecart

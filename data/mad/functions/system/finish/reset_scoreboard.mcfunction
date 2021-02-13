@@ -34,6 +34,8 @@ scoreboard objectives remove OnGround
 scoreboard objectives remove PosX
 scoreboard objectives remove PosY
 scoreboard objectives remove PosZ
+scoreboard objectives remove 45
+scoreboard objectives remove Angle
 ## Remove scoreboards for randomizer
 scoreboard objectives remove RandomSeed
 scoreboard objectives remove RandomCount
@@ -73,6 +75,7 @@ scoreboard objectives remove Selected
 scoreboard objectives remove 10
 scoreboard objectives remove 100
 scoreboard objectives remove 1000
+scoreboard objectives remove 10000
 scoreboard objectives remove digit_0001
 scoreboard objectives remove digit_0010
 scoreboard objectives remove digit_0100
@@ -239,6 +242,9 @@ scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX
 scoreboard objectives remove TransmitterPosY
 scoreboard objectives remove TransmitterPosZ
+scoreboard objectives remove PosXDiff
+scoreboard objectives remove PosZDiff
+scoreboard objectives remove TanTheta
 scoreboard objectives remove BannerDistance
 scoreboard objectives remove SquareRootI
 scoreboard objectives remove SquareRootX
@@ -260,6 +266,7 @@ scoreboard objectives remove Sneak
 scoreboard objectives remove MobileBeaconNum
 ## Remove scoreboards for team
 scoreboard objectives remove TeamBoolean
+scoreboard objectives remove DeadOwnTeam
 scoreboard objectives remove DeadTeamA
 scoreboard objectives remove DeadTeamB
 scoreboard objectives remove DeadTeamC

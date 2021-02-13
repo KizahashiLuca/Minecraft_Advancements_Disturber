@@ -16,23 +16,23 @@ scoreboard players set @p[tag=RespawnSoon] MobileBeaconNum 0
 scoreboard players set @p[tag=RespawnSoon] Phase 21
 scoreboard players set @p[tag=RespawnSoon] Death 0
 
+## Add tags
+execute as @p[tag=RespawnSoon,team=TeamA] run tag @a[team=TeamA] add RespawnTeam
+execute as @p[tag=RespawnSoon,team=TeamB] run tag @a[team=TeamB] add RespawnTeam
+execute as @p[tag=RespawnSoon,team=TeamC] run tag @a[team=TeamC] add RespawnTeam
+execute as @p[tag=RespawnSoon,team=TeamD] run tag @a[team=TeamD] add RespawnTeam
+execute as @p[tag=RespawnSoon,team=TeamE] run tag @a[team=TeamE] add RespawnTeam
+
 ## Send messages
-execute as @p[tag=RespawnSoon,team=TeamA] run tellraw @a[team=TeamA] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
-execute as @p[tag=RespawnSoon,team=TeamB] run tellraw @a[team=TeamB] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
-execute as @p[tag=RespawnSoon,team=TeamC] run tellraw @a[team=TeamC] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
-execute as @p[tag=RespawnSoon,team=TeamD] run tellraw @a[team=TeamD] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
-execute as @p[tag=RespawnSoon,team=TeamE] run tellraw @a[team=TeamE] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
+tellraw @a[tag=RespawnTeam] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
 
 ## Grand advancement
-execute as @p[tag=RespawnSoon,team=TeamA] run advancement grant @p[team=TeamA,scores={Phase=21,Death=0},sort=nearest] only mad:potage00/friendship
-execute as @p[tag=RespawnSoon,team=TeamB] run advancement grant @p[team=TeamB,scores={Phase=21,Death=0},sort=nearest] only mad:potage00/friendship
-execute as @p[tag=RespawnSoon,team=TeamC] run advancement grant @p[team=TeamC,scores={Phase=21,Death=0},sort=nearest] only mad:potage00/friendship
-execute as @p[tag=RespawnSoon,team=TeamD] run advancement grant @p[team=TeamD,scores={Phase=21,Death=0},sort=nearest] only mad:potage00/friendship
-execute as @p[tag=RespawnSoon,team=TeamE] run advancement grant @p[team=TeamE,scores={Phase=21,Death=0},sort=nearest] only mad:potage00/friendship
+advancement grant @p[tag=RespawnTeam,scores={Phase=21,Death=0},sort=nearest] only mad:potage00/friendship
 
 ## Remove tags
 tag @p[tag=RespawnSoon] remove MobileRespawnBannerSet
 tag @p[tag=RespawnSoon] remove RespawnSoon
+tag @a remove RespawnTeam
 
 ## Particle
 particle minecraft:soul_fire_flame ~ ~1 ~ 0.2 0.8 0.2 0.05 1000 normal @a
