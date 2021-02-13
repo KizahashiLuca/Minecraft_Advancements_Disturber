@@ -20,7 +20,9 @@ execute as @a run function mad:system/ongame/set_position/main
 
 ## Execute advancements
 function mad:system/ongame/advancements/potage00/execute_advancements
-function mad:system/ongame/advancements/achievements/execute_advancements
+
+## Adding pack
+function mad-plus:system/ongame/advancements/achievements/execute_advancements
 
 ## Detect death
 execute as @a[tag=Participant,scores={Phase=21,Death=1}] run function mad:system/ongame_team/detect_death

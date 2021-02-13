@@ -11,7 +11,7 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
      - YouTube : [https://youtube.com/c/potage00](https://youtube.com/c/potage00)
    - 作成者 : きざはしるか
      - Twitter : [https://twitter.com/KizahashiLuca](https://twitter.com/KizahashiLuca)
-   - 配布元URL : [https://github.com/KizahashiLuca/minecraft_advancements_disturber](https://github.com/KizahashiLuca/minecraft_keidoro)
+   - 配布元URL : [https://github.com/KizahashiLuca/minecraft_advancements_disturber](https://github.com/KizahashiLuca/minecraft_advancements_disturber)
  - 良識の範囲内で、ルールとマナーを守って遊びましょう。
  - 配布に関して問題があれば削除いたします。ご了承ください。
  - 再配布は禁止です。

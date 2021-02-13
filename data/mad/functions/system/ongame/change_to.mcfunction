@@ -7,12 +7,14 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Remove advancements
+## Grant advancements
 advancement revoke @a everything
 advancement grant @a until mad:potage00/adventure
 advancement grant @a until mad:potage00/collect
 advancement grant @a until mad:potage00/original
-advancement grant @a until mad:achievements/root
+
+## Adding pack
+advancement grant @a until mad-plus:achievements/root
 
 ## Take recipes
 recipe take @a *

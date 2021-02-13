@@ -222,15 +222,6 @@ scoreboard objectives remove AD_pg_kill_phant
 scoreboard objectives remove AD_pg_kill_ender
 scoreboard objectives remove AD_pg_frinedship
 scoreboard objectives remove BreakSpawner
-## Add scoreboards for advancements - achievements
-scoreboard objectives remove AD_ac_root
-scoreboard objectives remove AD_ac_buildsword
-scoreboard objectives remove AD_ac_diamonds2u
-scoreboard objectives remove AD_ac_fly_pig
-scoreboard objectives remove AD_ac_kill_cow
-scoreboard objectives remove AD_ac_on_a_rail
-scoreboard objectives remove FallDistance
-scoreboard objectives remove RailDistance
 ## Remove scoreboards for summons minecart
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon
@@ -275,6 +266,9 @@ scoreboard objectives remove DeadTeamE
 scoreboard objectives remove NumOfTeamPlayer
 ## Remove scoreboards for result
 scoreboard objectives remove ResultTmp
+
+## Adding pack
+function mad-plus:system/finish/reset_scoreboard
 
 ## Remove players
 scoreboard players reset @a

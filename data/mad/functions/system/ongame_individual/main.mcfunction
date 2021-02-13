@@ -20,7 +20,9 @@ execute as @a run function mad:system/ongame/set_position/main
 
 ## Execute advancements
 function mad:system/ongame/advancements/potage00/execute_advancements
-function mad:system/ongame/advancements/achievements/execute_advancements
+
+## Adding pack
+function mad-plus:system/ongame/advancements/achievements/execute_advancements
 
 ## Detect kill
 execute as @a[team=Participant,scores={Phase=21,Death=0,KillTemp=1..}] run function mad:system/ongame_individual/detect_kill
