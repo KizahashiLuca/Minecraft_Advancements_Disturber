@@ -109,9 +109,6 @@ team modify TeamE deathMessageVisibility never
 ## Add scoreboards
 function mad:system/setting/initial/add_scoreboard
 
-## Adding pack
-function mad-plus:system/setting/initial/add_scoreboard
-
 ## Count players
 execute as @a[tag=Participant] run scoreboard players add #mad NumParticipant 1
 

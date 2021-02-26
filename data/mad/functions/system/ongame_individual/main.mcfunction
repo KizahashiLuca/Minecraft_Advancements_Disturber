@@ -7,6 +7,9 @@
 ## Version   : β-1.2.2
 #####################################
 
+## Load add-on
+execute if score #mad LoadAddon matches 1.. run scoreboard players remove #mad LoadAddon 1
+
 ## Log in the mid of the game
 gamemode spectator @a[tag=!Participant,gamemode=!spectator]
 
@@ -19,9 +22,6 @@ execute as @a run function mad:system/ongame/set_position/main
 
 ## Execute advancements
 function mad:system/ongame/advancements/potage00/execute_advancements
-
-## Adding pack
-function mad-plus:system/ongame/advancements/achievements/execute_advancements
 
 ## Detect kill
 execute as @a[predicate=mad:ongame/player/participant_alive,scores={KillTemp=1..}] at @s run function mad:system/ongame_individual/detect_kill
@@ -63,4 +63,3 @@ scoreboard players operation #mad NumAlive = #mad NumParticipant
 scoreboard players operation #mad NumAlive -= #mad NumDead
 execute if score #mad NumAlive matches 0..1 if score #mad ExitMessage matches 0 run function mad:system/ongame/exit_message
 execute as @p[tag=Host,scores={ExitMessage=1}] run scoreboard players set #mad Phase 22
-execute if score #mad Phase matches 22 run function mad:system/finish/game_exit

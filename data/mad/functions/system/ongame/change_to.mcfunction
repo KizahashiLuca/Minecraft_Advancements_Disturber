@@ -13,9 +13,6 @@ advancement grant @a until mad:potage00/adventure
 advancement grant @a until mad:potage00/collect
 advancement grant @a until mad:potage00/original
 
-## Adding pack
-advancement grant @a until mad-plus:achievements/root
-
 ## Take recipes
 recipe take @a *
 
@@ -51,6 +48,9 @@ scoreboard players set #mad NumDead 0
 scoreboard players set @a[tag=Participant] Phase 21
 
 scoreboard players set @a Sneak 0
+
+## Set scoreboards for add-on
+execute if score #mad Phase matches 20 run scoreboard players set #mad LoadAddon 2
 
 ## Change phase
 scoreboard players set #mad Phase 21

@@ -13,5 +13,8 @@ clear @p[tag=Host]
 ## Set inventory
 function mad:system/setting/choose_setting/set_inventory
 
+## Set scoreboards for add-on
+execute if score #mad Phase matches 0 run scoreboard players set #mad LoadAddon 2
+
 ## Change phase
 scoreboard players set #mad Phase 5

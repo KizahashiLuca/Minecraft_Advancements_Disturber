@@ -267,6 +267,8 @@ scoreboard objectives add DeadTeamE dummy
 scoreboard objectives add NumOfTeamPlayer dummy
 ## Add scoreboards for result
 scoreboard objectives add ResultTmp dummy
+## Add scoreboards for add-on
+scoreboard objectives add LoadAddon dummy
 
 ## Set scoreboards for game phase
 scoreboard players set #mad Phase 0
@@ -351,6 +353,8 @@ scoreboard players set #mad DeadTeamD 0
 scoreboard players set #mad DeadTeamE 0
 ## Set scoreboards for mobile respawn beacon
 scoreboard players set #mad MobileBeaconNum 1
+## Set scoreboards for add-on
+scoreboard players set #mad LoadAddon 0
 
 ## Set scoreboards for game phase
 scoreboard players set @a Phase 0

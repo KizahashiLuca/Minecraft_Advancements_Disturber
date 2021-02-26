@@ -7,6 +7,9 @@
 ## Version   : β-1.2.2
 #####################################
 
+## Load add-on
+execute if score #mad LoadAddon matches 1.. run scoreboard players remove #mad LoadAddon 1
+
 ## Detect dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MADsetting"]}}}] ThrowItem 1
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mad:system/setting/choose_setting/drop

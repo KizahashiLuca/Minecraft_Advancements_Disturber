@@ -25,9 +25,6 @@ execute as @e[predicate=mad:ongame/respawn_banner] at @s run function mad:system
 execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run function mad:system/ongame/respawn_beacon/break_respawn_beacon
 execute as @e[type=minecraft:area_effect_cloud,tag=MobileRespawnBeacon] at @s run fill ~-1 ~ ~-1 ~1 ~1 ~1 minecraft:air replace
 
-## Adding pack
-function mad-plus:system/finish/reset_scoreboard
-
 ## Remove scoreboards
 function mad:system/finish/reset_scoreboard
 

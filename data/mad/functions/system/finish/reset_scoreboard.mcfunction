@@ -267,6 +267,8 @@ scoreboard objectives remove DeadTeamE
 scoreboard objectives remove NumOfTeamPlayer
 ## Remove scoreboards for result
 scoreboard objectives remove ResultTmp
+## Remove scoreboards for add-on
+scoreboard objectives remove LoadAddon
 
 ## Remove players
 scoreboard players reset @a
