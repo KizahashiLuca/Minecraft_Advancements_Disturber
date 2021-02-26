@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_nt_get_wtskul=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/nether/get_wither_skull_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_get_wtskul=0}] run function mad:system/ongame/advancements/nether/get_wither_skull_branch

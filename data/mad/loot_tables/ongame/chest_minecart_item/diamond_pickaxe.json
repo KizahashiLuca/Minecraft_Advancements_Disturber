@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:5s}]}"
+              "tag": "{Tags:[\"MinecartItem\"],Enchantments:[{id:\"minecraft:efficiency\",lvl:5s}]}"
             }
           ]
         }

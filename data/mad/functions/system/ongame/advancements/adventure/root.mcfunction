@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_ad_root=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/adventure/root_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_root=0}] run function mad:system/ongame/advancements/adventure/root_branch

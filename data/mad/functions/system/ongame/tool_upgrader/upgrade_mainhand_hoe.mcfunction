@@ -8,18 +8,18 @@
 #####################################
 
 ## Replace item 
-data modify entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] HandItems[0] merge from entity @s SelectedItem
+data modify entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] HandItems[0] merge from entity @s SelectedItem
 
 ## Replace item
-execute as @s[nbt={SelectedItem:{id:"minecraft:wooden_hoe"}}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:stone_hoe
-execute as @s[nbt={SelectedItem:{id:"minecraft:stone_hoe"}}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:golden_hoe
-execute as @s[nbt={SelectedItem:{id:"minecraft:golden_hoe"}}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:iron_hoe
-execute as @s[nbt={SelectedItem:{id:"minecraft:iron_hoe"}}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:diamond_hoe
-execute as @s[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:netherite_hoe
-execute as @s[nbt={SelectedItem:{id:"minecraft:netherite_hoe"}}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:netherite_hoe
+execute as @s[nbt={SelectedItem:{id:"minecraft:wooden_hoe"}}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:stone_hoe
+execute as @s[nbt={SelectedItem:{id:"minecraft:stone_hoe"}}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:golden_hoe
+execute as @s[nbt={SelectedItem:{id:"minecraft:golden_hoe"}}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:iron_hoe
+execute as @s[nbt={SelectedItem:{id:"minecraft:iron_hoe"}}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:diamond_hoe
+execute as @s[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:netherite_hoe
+execute as @s[nbt={SelectedItem:{id:"minecraft:netherite_hoe"}}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:netherite_hoe
 
 ## Merge data
-data modify entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] HandItems[0].tag set from entity @s SelectedItem.tag
+data modify entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] HandItems[0].tag set from entity @s SelectedItem.tag
 
 ## Upgrader
 replaceitem entity @s weapon.mainhand minecraft:air

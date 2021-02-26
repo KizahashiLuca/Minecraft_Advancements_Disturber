@@ -17,7 +17,9 @@ execute in minecraft:the_nether run gamerule announceAdvancements false
 execute in minecraft:the_end run gamerule announceAdvancements false
 gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
-gamerule showDeathMessages false
+execute if score #mad IsTeam matches 0 run gamerule showDeathMessages false
+execute if score #mad IsTeam matches 0 if score #mad VisibleDeath matches 0 run gamerule showDeathMessages false
+execute if score #mad IsTeam matches 1 if score #mad VisibleDeath matches 1 run gamerule showDeathMessages true
 gamerule doLimitedCrafting false
 execute if score #mad WeatherCycle matches 1 run gamerule doWeatherCycle true
 execute if score #mad WeatherCycle matches 0 run gamerule doWeatherCycle false
@@ -39,6 +41,7 @@ execute at @p[tag=Host] run forceload add ~ ~
 
 ## Summon world spawn
 execute at @p[tag=Host] align xyz run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["WorldSpawn"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
+execute as @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] at @s run function mad:system/pre_preparation/detect_world_border
 
 ## Set time
 time set noon
@@ -77,10 +80,8 @@ scoreboard players operation @a Second = #mad TimeLimit
 scoreboard players set @a Tick 0
 scoreboard players set @a GetTimeLimit 0
 scoreboard players set @a GeneralSecond 0
-scoreboard players set @a GeneralTick 0
 scoreboard players set @a OnGround 0
 scoreboard players set @a Death 0
-scoreboard players set @a SpawnTime 0
 scoreboard players set @a Kill 0
 scoreboard players set @a KillTemp 0
 

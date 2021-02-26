@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_mc_lava_bucke=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/story/lava_bucket_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_lava_bucke=0}] run function mad:system/ongame/advancements/story/lava_bucket_branch

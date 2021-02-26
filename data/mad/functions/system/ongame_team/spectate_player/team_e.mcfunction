@@ -8,7 +8,7 @@
 #####################################
 
 ## Teleport between dimensions
-tp @s @p[team=TeamE,scores={Phase=21,Death=0},sort=nearest]
+tp @s @p[predicate=mad:ongame/player/team_e_alive,sort=nearest]
 
 ## Spectate
-spectate @p[team=TeamE,scores={Phase=21,Death=0},sort=nearest] @s
+spectate @p[predicate=mad:ongame/player/team_e_alive,sort=nearest] @s

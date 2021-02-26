@@ -11,7 +11,6 @@
 scoreboard objectives add Phase dummy
 scoreboard objectives add PrevPhase dummy
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
-scoreboard objectives add SpawnTime minecraft.custom:minecraft.time_since_death
 scoreboard objectives add Kill dummy
 scoreboard objectives add KillTemp minecraft.custom:minecraft.player_kills
 scoreboard objectives add TeleportMessage trigger
@@ -21,7 +20,6 @@ scoreboard objectives add 2 dummy
 scoreboard objectives add Second dummy
 scoreboard objectives add Tick dummy
 scoreboard objectives add GeneralSecond dummy
-scoreboard objectives add GeneralTick dummy
 scoreboard objectives add SecondPerSurvive dummy
 ## Add scoreboards for participants
 scoreboard objectives add Participant dummy
@@ -86,8 +84,11 @@ scoreboard objectives add GetTimeLimit dummy
 ## Add scoreboards for setting phase - choose area
 scoreboard objectives add WorldBorder dummy
 scoreboard objectives add WorldBorderPrv dummy
-scoreboard objectives add WorldBorderUp dummy
-scoreboard objectives add WorldBorderDown dummy
+scoreboard objectives add WorldBorderEnd dummy
+scoreboard objectives add PosXCeil dummy
+scoreboard objectives add PosZCeil dummy
+scoreboard objectives add PosXFloor dummy
+scoreboard objectives add PosZFloor dummy
 ## Add scoreboards for setting phase - choose difficulty
 scoreboard objectives add Difficulty dummy
 scoreboard objectives add DifficultyPrv dummy
@@ -300,8 +301,7 @@ scoreboard players set #mad TimeLimitPrv 100
 ## Set scoreboards for setting phase - choose area
 scoreboard players set #mad WorldBorder 1000
 scoreboard players set #mad WorldBorderPrv 1000
-scoreboard players set #mad WorldBorderUp 1100
-scoreboard players set #mad WorldBorderDown 900
+scoreboard players set #mad WorldBorderEnd 0
 ## Set scoreboards for setting phase - choose difficulty
 scoreboard players set #mad Difficulty 2
 scoreboard players set #mad DifficultyPrv 2
@@ -355,7 +355,6 @@ scoreboard players set #mad MobileBeaconNum 1
 ## Set scoreboards for game phase
 scoreboard players set @a Phase 0
 scoreboard players set @a Death 0
-scoreboard players set @a SpawnTime 0
 scoreboard players set @a Kill 0
 scoreboard players set @a KillTemp 0
 scoreboard players set @a TeleportMessage 0
@@ -366,7 +365,6 @@ scoreboard players enable @a ExitMessage
 scoreboard players set @a Second 0
 scoreboard players set @a Tick 0
 scoreboard players set @a GeneralSecond 0
-scoreboard players set @a GeneralTick 0
 scoreboard players set @a SecondPerSurvive 0
 ## Set scoreboards for participants
 scoreboard players set @a Participant 0
@@ -409,8 +407,6 @@ scoreboard players set @a GetTimeLimit 0
 ## Set scoreboards for setting phase - choose area
 scoreboard players set @a WorldBorder 1000
 scoreboard players set @a WorldBorderPrv 1000
-scoreboard players set @a WorldBorderUp 1100
-scoreboard players set @a WorldBorderDown 900
 ## Set scoreboards for advancements
 scoreboard players set @a HasAdvancements 0
 ## Set scoreboards for advancements - adventure
@@ -543,9 +539,6 @@ scoreboard players set @a DeadTeamE 0
 scoreboard players set @a NumOfTeamPlayer 0
 ## Set scoreboards for result
 scoreboard players set @a ResultTmp 0
-
-## Adding pack
-function mad-plus:system/setting/initial/add_scoreboard
 
 ## Random
 function mad:system/random_generator/initialize

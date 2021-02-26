@@ -8,8 +8,8 @@
 #####################################
 
 ## Detect time over
-execute as @s[team=TeamA] run kill @a[team=TeamA,scores={Phase=21,Death=0}]
-execute as @s[team=TeamB] run kill @a[team=TeamB,scores={Phase=21,Death=0}]
-execute as @s[team=TeamC] run kill @a[team=TeamC,scores={Phase=21,Death=0}]
-execute as @s[team=TeamD] run kill @a[team=TeamD,scores={Phase=21,Death=0}]
-execute as @s[team=TeamE] run kill @a[team=TeamE,scores={Phase=21,Death=0}]
+execute as @s[team=TeamA] run kill @a[predicate=mad:ongame/player/team_a_alive]
+execute as @s[team=TeamB] run kill @a[predicate=mad:ongame/player/team_b_alive]
+execute as @s[team=TeamC] run kill @a[predicate=mad:ongame/player/team_c_alive]
+execute as @s[team=TeamD] run kill @a[predicate=mad:ongame/player/team_d_alive]
+execute as @s[team=TeamE] run kill @a[predicate=mad:ongame/player/team_e_alive]

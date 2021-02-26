@@ -12,6 +12,7 @@ execute as @e[type=minecraft:chest_minecart,tag=Minecart] run kill @s
 
 ## Summon minecart
 scoreboard players operation @e[type=minecraft:chest_minecart,tag=Minecart] IsTeam = #mad IsTeam
+scoreboard players operation @e[type=minecraft:chest_minecart,tag=Minecart] WorldBorderEnd = #mad WorldBorderEnd
 execute at @e[type=minecraft:area_effect_cloud,tag=Minecart] run summon minecraft:chest_minecart ~ 160 ~ {LootTable:"mad:ongame/chest_minecart",Invulnerable:1b,Tags:["Minecart"]}
 
 ## Send messages

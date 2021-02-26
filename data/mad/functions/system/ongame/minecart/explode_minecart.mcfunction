@@ -13,13 +13,13 @@ particle minecraft:explosion ~ ~ ~ 1 1 1 0.5 10 force @a
 kill @s
 
 ## give time randomly
-tag @p[tag=Participant,scores={Phase=21,Death=0},distance=..2] add GiveTimeRandomly
+tag @p[predicate=mad:ongame/player/participant_alive,sort=nearest] add GiveTimeRandomly
 execute if entity @p[tag=GiveTimeRandomly,team=TeamA] run function mad:system/ongame/minecart/bonus_time/team_a
 execute if entity @p[tag=GiveTimeRandomly,team=TeamB] run function mad:system/ongame/minecart/bonus_time/team_b
 execute if entity @p[tag=GiveTimeRandomly,team=TeamC] run function mad:system/ongame/minecart/bonus_time/team_c
 execute if entity @p[tag=GiveTimeRandomly,team=TeamD] run function mad:system/ongame/minecart/bonus_time/team_d
 execute if entity @p[tag=GiveTimeRandomly,team=TeamE] run function mad:system/ongame/minecart/bonus_time/team_e
-execute if entity @p[tag=GiveTimeRandomly,team=Participant] run function mad:system/ongame/minecart/bonus_time/individual
+execute if score #mad IsTeam matches 0 if entity @p[tag=GiveTimeRandomly] run function mad:system/ongame/minecart/bonus_time/individual
 tag @a remove GiveTimeRandomly
 
 ## next summon decided

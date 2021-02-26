@@ -25,7 +25,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{EntityTag:{Tags:[\"MinecartItem\",\"MobileRespawnBeacon\"],CustomName:'{\"text\":\"モバイルリスポーンビーコン\",\"color\":\"light_purple\",\"bold\":false,\"italic\":false}',CustomNameVisible:1b}}"
+              "tag": "{Tags:[\"MinecartItem\"],EntityTag:{Tags:[\"MinecartItem\",\"MobileRespawnBeacon\"],CustomName:'{\"text\":\"モバイルリスポーンビーコン\",\"color\":\"light_purple\",\"bold\":false,\"italic\":false}',CustomNameVisible:1b}}"
             }
           ]
         }

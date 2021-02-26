@@ -11,13 +11,13 @@
 tag @s add Killer
 
 ## Detect killed
-execute as @a[team=Participant,scores={Death=1}] at @s run scoreboard players operation @s SecondPerSurvive += @s Second
-execute as @a[team=Participant,scores={Death=1}] at @s run scoreboard players operation @s SecondPerSurvive /= #mad 2
-execute as @a[team=Participant,scores={Death=1}] at @s run scoreboard players operation @p[team=Participant,tag=Killer,sort=nearest] Second += @s SecondPerSurvive
-execute as @a[team=Participant,scores={Death=1}] at @s run scoreboard players operation @p[team=Participant,tag=Killer,sort=nearest] TimeLimit += @s SecondPerSurvive
-execute as @a[team=Participant,scores={Death=1}] at @s run scoreboard players operation @p[team=Participant,tag=Killer,sort=nearest] GetTimeLimit += @s SecondPerSurvive
-scoreboard players operation @p[team=Participant,tag=Killer] Kill += @p[team=Participant,tag=Killer] KillTemp
-scoreboard players set @p[team=Participant,tag=Killer] KillTemp 0
+scoreboard players operation @p[predicate=mad:ongame/player/participant_dying,sort=nearest] SecondPerSurvive += @p[predicate=mad:ongame/player/participant_dying,sort=nearest] Second
+scoreboard players operation @p[predicate=mad:ongame/player/participant_dying,sort=nearest] SecondPerSurvive /= #mad 2
+scoreboard players operation @p[tag=Killer] Second += @p[predicate=mad:ongame/player/participant_dying,sort=nearest] SecondPerSurvive
+scoreboard players operation @p[tag=Killer] TimeLimit += @p[predicate=mad:ongame/player/participant_dying,sort=nearest] SecondPerSurvive
+scoreboard players operation @p[tag=Killer] GetTimeLimit += @p[predicate=mad:ongame/player/participant_dying,sort=nearest] SecondPerSurvive
+scoreboard players operation @p[tag=Killer] Kill += @p[tag=Killer] KillTemp
+scoreboard players set @p[tag=Killer] KillTemp 0
 
 ## Remove a tag
-tag @p[team=Participant,tag=Killer] remove Killer
+tag @a remove Killer

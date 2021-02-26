@@ -11,19 +11,22 @@
 function mad:system/finish/reset_bossbar
 
 ## Teleport
-tp @a @r[tag=Participant,scores={Phase=21,Death=0}]
+tp @a @p[predicate=mad:ongame/player/participant_alive,sort=random]
 
 ## Reset world border
-worldborder center 0 0
-worldborder set 60000000
+execute in minecraft:overworld run worldborder center 0 0
+execute in minecraft:overworld run worldborder set 60000000
 
 ## Forceload remove
 forceload remove all
 
 ## Reset respawn banner
-execute as @e[type=minecraft:armor_stand,tag=RespawnBanner] at @s run function mad:system/ongame/respawn_banner/break_respawn_banner
+execute as @e[predicate=mad:ongame/respawn_banner] at @s run function mad:system/ongame/respawn_banner/break_respawn_banner
 execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run function mad:system/ongame/respawn_beacon/break_respawn_beacon
 execute as @e[type=minecraft:area_effect_cloud,tag=MobileRespawnBeacon] at @s run fill ~-1 ~ ~-1 ~1 ~1 ~1 minecraft:air replace
+
+## Adding pack
+function mad-plus:system/finish/reset_scoreboard
 
 ## Remove scoreboards
 function mad:system/finish/reset_scoreboard
@@ -41,6 +44,7 @@ tag @a remove Host
 tag @a remove Leader
 tag @a remove Numbered
 tag @a remove Participant
+tag @a remove NotSetTeam
 tag @a remove Teleporter
 tag @a remove TransmitPlayer
 tag @a remove DetectTransmitter
@@ -81,10 +85,14 @@ kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
-kill @e[type=minecraft:armor_stand,tag=DetectUpgrader]
-kill @e[type=minecraft:armor_stand,tag=RespawnBeaconPosition]
-kill @e[type=minecraft:armor_stand,tag=ReturnPortal]
+kill @e[predicate=mad:ongame/respawn_banner]
+kill @e[predicate=mad:ongame/tool_upgrader]
+kill @e[predicate=mad:ongame/armor_upgrader]
+kill @e[predicate=mad:ongame/respawn_beacon_position]
+kill @e[predicate=mad:ongame/return_portal]
+kill @e[predicate=mad:ongame/mobile_respawn_beacon_position]
 kill @e[type=minecraft:armor_stand,tag=MinecartItem]
+execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
 
 ## Reset time
 time set noon

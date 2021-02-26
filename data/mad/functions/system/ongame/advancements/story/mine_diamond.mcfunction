@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_mc_mine_dia=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/story/mine_diamond_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_mine_dia=0}] run function mad:system/ongame/advancements/story/mine_diamond_branch

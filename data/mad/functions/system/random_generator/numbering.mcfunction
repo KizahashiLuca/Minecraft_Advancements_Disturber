@@ -8,8 +8,8 @@
 #####################################
 
 ## Number the players
-scoreboard players operation @r[team=Participant,tag=!Numbered] Participant = #mad Participant
-execute as @a[team=Participant,tag=!Numbered] if score @s Participant = #mad Participant run tag @s add Numbered
+scoreboard players operation @p[tag=Participant,tag=!Numbered,sort=random] Participant = #mad Participant
+execute as @a[tag=Participant,tag=!Numbered] if score @s Participant = #mad Participant run tag @s add Numbered
 
 ## Loop
 scoreboard players add #mad Participant 1

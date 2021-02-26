@@ -7,8 +7,25 @@
 ## Version   : β-1.2.2
 #####################################
 
-## Notice of thief
-execute as @s[scores={Phase=21,Death=0,UseNoticeOfThief=1..}] run function mad:system/ongame/notice_of_thief/detect_notice
+## Set scoreboard
+scoreboard players set @s UseNoticeOfThief 0
 
-## Time
-execute as @s[tag=SetThief] run function mad:system/ongame/notice_of_thief/time/tick
+## Add a tag
+tag @s add DetectThief
+tag @s add SetThief
+
+## Send messages
+execute if score #mad IsTeam matches 0 run function mad:system/ongame/notice_of_thief/message_notice_individual
+execute if score #mad IsTeam matches 1 run function mad:system/ongame/notice_of_thief/message_notice_team
+
+## Set scoreboard
+scoreboard players set @s ThiefTick 0
+scoreboard players set @s ThiefSecond 5
+
+## Remove a tag
+tag @s remove DetectThief
+
+## Kill rabbit
+data modify entity @e[type=minecraft:rabbit,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"怪盗予告"}],"text":""}'},sort=nearest,limit=1] CustomNameVisible set value 0b
+effect give @e[type=minecraft:rabbit,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"怪盗予告"}],"text":""}'},sort=nearest,limit=1] minecraft:invisibility 100000 1 true
+kill @e[type=minecraft:rabbit,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"怪盗予告"}],"text":""}'},sort=nearest,limit=1]

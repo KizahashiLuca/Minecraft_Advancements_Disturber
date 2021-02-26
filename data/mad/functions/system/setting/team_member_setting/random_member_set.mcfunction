@@ -8,11 +8,11 @@
 #####################################
 
 ## Random member set
-execute if score #mad TeamNumber matches 1.. run team join TeamA @r[team=Participant]
-execute if score #mad TeamNumber matches 2.. run team join TeamB @r[team=Participant]
-execute if score #mad TeamNumber matches 3.. run team join TeamC @r[team=Participant]
-execute if score #mad TeamNumber matches 4.. run team join TeamD @r[team=Participant]
-execute if score #mad TeamNumber matches 5.. run team join TeamE @r[team=Participant]
+execute if score #mad TeamNumber matches 1.. as @p[tag=Participant,tag=NotSetTeam,sort=random] run function mad:system/setting/team_member_setting/set_team_random/team_a
+execute if score #mad TeamNumber matches 2.. as @p[tag=Participant,tag=NotSetTeam,sort=random] run function mad:system/setting/team_member_setting/set_team_random/team_b
+execute if score #mad TeamNumber matches 3.. as @p[tag=Participant,tag=NotSetTeam,sort=random] run function mad:system/setting/team_member_setting/set_team_random/team_c
+execute if score #mad TeamNumber matches 4.. as @p[tag=Participant,tag=NotSetTeam,sort=random] run function mad:system/setting/team_member_setting/set_team_random/team_d
+execute if score #mad TeamNumber matches 5.. as @p[tag=Participant,tag=NotSetTeam,sort=random] run function mad:system/setting/team_member_setting/set_team_random/team_e
 
-execute unless entity @p[team=Participant] run function mad:system/pre_preparation/change_to
-execute if entity @p[team=Participant] run function mad:system/setting/team_member_setting/random_member_set
+execute unless entity @p[tag=Participant] run function mad:system/pre_preparation/change_to
+execute if entity @p[tag=Participant] run function mad:system/setting/team_member_setting/random_member_set

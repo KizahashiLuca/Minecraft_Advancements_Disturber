@@ -8,11 +8,8 @@
 #####################################
 
 ## Select team member setting
-team join Participant @a[team=TeamA]
-team join Participant @a[team=TeamB]
-team join Participant @a[team=TeamC]
-team join Participant @a[team=TeamD]
-team join Participant @a[team=TeamE]
+team leave @a
+tag @a[tag=Participant] add NotSetTeam
 
 clear @a
 team join TeamA @p[tag=Host]

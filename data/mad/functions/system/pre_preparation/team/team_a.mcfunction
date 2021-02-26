@@ -8,7 +8,7 @@
 #####################################
 
 ## Add a tag
-tag @r[team=TeamA] add Leader
+tag @p[team=TeamA,sort=random] add Leader
 
 ## Set dead team flag
 scoreboard players set #mad DeadTeamA 0

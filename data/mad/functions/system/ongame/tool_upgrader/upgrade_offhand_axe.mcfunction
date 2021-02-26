@@ -8,18 +8,18 @@
 #####################################
 
 ## Replace item 
-data modify entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] HandItems[0] merge from entity @s Inventory[{Slot:-106b}]
+data modify entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] HandItems[0] merge from entity @s Inventory[{Slot:-106b}]
 
 ## Replace item
-execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:wooden_axe"}]}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:stone_axe
-execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:stone_axe"}]}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:golden_axe
-execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:golden_axe"}]}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:iron_axe
-execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_axe"}]}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:diamond_axe
-execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:diamond_axe"}]}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:netherite_axe
-execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:netherite_axe"}]}] run replaceitem entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] weapon.mainhand minecraft:netherite_axe
+execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:wooden_axe"}]}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:stone_axe
+execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:stone_axe"}]}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:golden_axe
+execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:golden_axe"}]}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:iron_axe
+execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_axe"}]}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:diamond_axe
+execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:diamond_axe"}]}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:netherite_axe
+execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:netherite_axe"}]}] run replaceitem entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] weapon.mainhand minecraft:netherite_axe
 
 ## Merge data
-data modify entity @e[type=minecraft:armor_stand,tag=DetectUpgrader,sort=nearest,limit=1] HandItems[0].tag set from entity @s Inventory[{Slot:-106b}].tag
+data modify entity @e[predicate=mad:ongame/tool_upgrader,sort=nearest,limit=1] HandItems[0].tag set from entity @s Inventory[{Slot:-106b}].tag
 
 ## Upgrader
 replaceitem entity @s weapon.offhand minecraft:air

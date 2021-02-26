@@ -7,6 +7,9 @@
 ## Version   : β-1.2.2
 #####################################
 
+## Title
+title @s title ["",{"text":"死んでしまった！","color":"red","bold": true}]
+
 ## Detect death
 gamemode spectator @s
 scoreboard players add #mad NumDead 1

@@ -8,8 +8,8 @@
 #####################################
 
 ## Log in the mid of the game
-gamemode spectator @a[team=!Participant,team=!TeamA,team=!TeamB,team=!TeamC,team=!TeamD,team=!TeamE,gamemode=!spectator]
-team leave @a[team=!Participant,team=!TeamA,team=!TeamB,team=!TeamC,team=!TeamD,team=!TeamE,team=]
+gamemode spectator @a[tag=!Participant,gamemode=!spectator]
+team leave @a[team=!TeamA,team=!TeamB,team=!TeamC,team=!TeamD,team=!TeamE,team=]
 team leave @a[scores={Participant=1..},team=]
 scoreboard players reset @a[scores={Participant=1..}]
 

@@ -8,8 +8,8 @@
 #####################################
 
 ## Title
-title @a title ["",{"selector":"@a[team=Participant,scores={Phase=21,Death=0}]","color":"red","bold":true}]
+title @a title ["",{"selector":"@a[predicate=mad:ongame/player/participant_alive]","color":"red","bold":true}]
 title @a subtitle ["",{"text":"WIN","color":"red","bold":true}]
 
 ## Display Winners
-tellraw @a ["",{"text":"  勝者は ","color":"white"},{"selector":"@a[team=Participant,scores={Phase=21,Death=0}]","bold":true,"color":"red"},{"text":" です！","color":"white"}]
+tellraw @a ["",{"text":"  勝者は ","color":"white"},{"selector":"@a[predicate=mad:ongame/player/participant_alive]","bold":true,"color":"red"},{"text":" です！","color":"white"}]

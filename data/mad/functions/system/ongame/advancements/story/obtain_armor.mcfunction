@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_mc_armor=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/story/obtain_armor_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_armor=0}] run function mad:system/ongame/advancements/story/obtain_armor_branch

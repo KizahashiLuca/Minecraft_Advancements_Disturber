@@ -19,8 +19,8 @@ scoreboard players set @s Phase 22
 loot replace entity @s inventory.0 loot minecraft:entities/player
 
 ## Spectate
-spectate @p[team=TeamA,scores={Phase=21,Death=0},sort=nearest] @s[team=TeamA]
-spectate @p[team=TeamB,scores={Phase=21,Death=0},sort=nearest] @s[team=TeamB]
-spectate @p[team=TeamC,scores={Phase=21,Death=0},sort=nearest] @s[team=TeamC]
-spectate @p[team=TeamD,scores={Phase=21,Death=0},sort=nearest] @s[team=TeamD]
-spectate @p[team=TeamE,scores={Phase=21,Death=0},sort=nearest] @s[team=TeamE]
+spectate @p[predicate=mad:ongame/player/team_a_alive,sort=nearest] @s[team=TeamA]
+spectate @p[predicate=mad:ongame/player/team_b_alive,sort=nearest] @s[team=TeamB]
+spectate @p[predicate=mad:ongame/player/team_c_alive,sort=nearest] @s[team=TeamC]
+spectate @p[predicate=mad:ongame/player/team_d_alive,sort=nearest] @s[team=TeamD]
+spectate @p[predicate=mad:ongame/player/team_e_alive,sort=nearest] @s[team=TeamE]

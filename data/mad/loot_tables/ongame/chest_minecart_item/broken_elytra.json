@@ -15,6 +15,10 @@
                 "min": 0.0023,
                 "max": 0.069
               }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MinecartItem\"]}"
             }
           ]
         }

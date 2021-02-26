@@ -11,7 +11,6 @@
 scoreboard objectives remove Phase
 scoreboard objectives remove PrevPhase
 scoreboard objectives remove Death
-scoreboard objectives remove SpawnTime
 scoreboard objectives remove Kill
 scoreboard objectives remove KillTemp
 scoreboard objectives remove TeleportMessage
@@ -21,7 +20,6 @@ scoreboard objectives remove 2
 scoreboard objectives remove Second
 scoreboard objectives remove Tick
 scoreboard objectives remove GeneralSecond
-scoreboard objectives remove GeneralTick
 scoreboard objectives remove SecondPerSurvive
 ## Remove scoreboards for participants
 scoreboard objectives remove Participant
@@ -86,8 +84,11 @@ scoreboard objectives remove GetTimeLimit
 ## Remove scoreboards for setting phase - choose area
 scoreboard objectives remove WorldBorder
 scoreboard objectives remove WorldBorderPrv
-scoreboard objectives remove WorldBorderUp
-scoreboard objectives remove WorldBorderDown
+scoreboard objectives remove WorldBorderEnd
+scoreboard objectives remove PosXCeil
+scoreboard objectives remove PosZCeil
+scoreboard objectives remove PosXFloor
+scoreboard objectives remove PosZFloor
 ## Remove scoreboards for setting phase - choose difficulty
 scoreboard objectives remove Difficulty
 scoreboard objectives remove DifficultyPrv
@@ -266,9 +267,6 @@ scoreboard objectives remove DeadTeamE
 scoreboard objectives remove NumOfTeamPlayer
 ## Remove scoreboards for result
 scoreboard objectives remove ResultTmp
-
-## Adding pack
-function mad-plus:system/finish/reset_scoreboard
 
 ## Remove players
 scoreboard players reset @a

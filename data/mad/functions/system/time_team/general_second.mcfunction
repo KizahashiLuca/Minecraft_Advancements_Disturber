@@ -8,11 +8,11 @@
 #####################################
 
 ## Detect leaving in midgame
-execute unless entity @p[team=TeamA,scores={Phase=21,Death=0}] run scoreboard players operation @p[team=TeamA,tag=Leader] GeneralSecond -= #mad Second
-execute unless entity @p[team=TeamB,scores={Phase=21,Death=0}] run scoreboard players operation @p[team=TeamB,tag=Leader] GeneralSecond -= #mad Second
-execute unless entity @p[team=TeamC,scores={Phase=21,Death=0}] run scoreboard players operation @p[team=TeamC,tag=Leader] GeneralSecond -= #mad Second
-execute unless entity @p[team=TeamD,scores={Phase=21,Death=0}] run scoreboard players operation @p[team=TeamD,tag=Leader] GeneralSecond -= #mad Second
-execute unless entity @p[team=TeamE,scores={Phase=21,Death=0}] run scoreboard players operation @p[team=TeamE,tag=Leader] GeneralSecond -= #mad Second
+execute unless entity @p[predicate=mad:ongame/player/team_a_alive] run scoreboard players operation @p[team=TeamA,tag=Leader] GeneralSecond -= #mad Second
+execute unless entity @p[predicate=mad:ongame/player/team_b_alive] run scoreboard players operation @p[team=TeamB,tag=Leader] GeneralSecond -= #mad Second
+execute unless entity @p[predicate=mad:ongame/player/team_c_alive] run scoreboard players operation @p[team=TeamC,tag=Leader] GeneralSecond -= #mad Second
+execute unless entity @p[predicate=mad:ongame/player/team_d_alive] run scoreboard players operation @p[team=TeamD,tag=Leader] GeneralSecond -= #mad Second
+execute unless entity @p[predicate=mad:ongame/player/team_e_alive] run scoreboard players operation @p[team=TeamE,tag=Leader] GeneralSecond -= #mad Second
 execute as @a[tag=Leader] if score @s GeneralSecond matches ..-1 run scoreboard players operation @s Second += @s GeneralSecond
 
 ## Calculate time every second

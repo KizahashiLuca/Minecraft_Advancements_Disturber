@@ -1,0 +1,18 @@
+[
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "Phase": 21,
+      "Death": 0
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"Participant\"]}",
+      "team": "TeamE"
+    }
+  }
+]

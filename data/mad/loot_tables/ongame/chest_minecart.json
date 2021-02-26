@@ -57,11 +57,29 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "WorldBorderEnd": 1
+              }
+            }
+          ],
           "name": "mad:ongame/chest_minecart_item/end_portal_frame"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "WorldBorderEnd": 1
+              }
+            }
+          ],
           "name": "mad:ongame/chest_minecart_item/return_portal"
         },
         {
@@ -80,7 +98,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 5
+              "count": 4
             }
           ]
         },
@@ -100,7 +118,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 5
+              "count": 4
             }
           ]
         },

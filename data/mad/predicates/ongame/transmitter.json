@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{SelectedItem:{id:\"minecraft:written_book\",tag:{title:\"発信機\",Tags:[\"MinecartItem\"]}}}"
+  }
+}

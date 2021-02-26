@@ -17,6 +17,10 @@ execute if score #mad NumParticipant matches 2.. if score #mad IsTeam matches 0 
 
 scoreboard players operation #mad IsTeam = #mad IsTeamTmp
 
+## Send message
+execute if score #mad IsTeam matches 0 run tellraw @a ["",{"text":"[初期設定] ","color":"green"},{"text":"個人戦","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
+execute if score #mad IsTeam matches 1 run tellraw @a ["",{"text":"[初期設定] ","color":"green"},{"text":"チーム戦","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
+
 ## Remove scoreboard
 scoreboard objectives remove IsTeamTmp
 

@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_nt_brew_potio=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/nether/brew_potion_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_brew_potio=0}] run function mad:system/ongame/advancements/nether/brew_potion_branch

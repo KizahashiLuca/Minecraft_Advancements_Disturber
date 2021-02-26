@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_hb_bred_anima=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/husbandry/breed_an_animal_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_hb_bred_anima=0}] run function mad:system/ongame/advancements/husbandry/breed_an_animal_branch

@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_hb_silk_nest=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/husbandry/silk_touch_nest_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_hb_silk_nest=0}] run function mad:system/ongame/advancements/husbandry/silk_touch_nest_branch

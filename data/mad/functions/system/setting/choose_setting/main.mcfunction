@@ -46,8 +46,6 @@ execute as @p[tag=Host,scores={Select22=1}] run function mad:system/setting/choo
 execute as @p[tag=Host,scores={Select23=1}] run function mad:system/setting/choose_world_border/change_to
 execute as @p[tag=Host,scores={Select17=1}] run function mad:system/setting/choose_setting/change_competition
 execute as @p[tag=Host,scores={Select26=1}] run function mad:system/setting/choose_team_setting/change_to
-execute as @p[tag=Host,scores={Select28=1}] run clear @a
-execute as @p[tag=Host,scores={Select28=1}] run function mad:stop
-execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 0 if score #mad SetTeamManual matches 0 run function mad:system/pre_preparation/change_to
-execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 1 if score #mad SetTeamManual matches 0 run function mad:system/setting/team_member_setting/random_member_set
-execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 1 if score #mad SetTeamManual matches 1 run function mad:system/setting/team_member_setting/change_to
+execute as @p[tag=Host,scores={Select28=1}] run function mad:system/setting/choose_setting/game_cancel
+execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 0 run function mad:system/pre_preparation/change_to
+execute as @p[tag=Host,scores={Select34=1}] if score #mad IsTeam matches 1 run function mad:system/setting/choose_setting/change_to_team_member

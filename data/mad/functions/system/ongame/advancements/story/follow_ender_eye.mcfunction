@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_mc_ender_eye=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/story/follow_ender_eye_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_ender_eye=0}] run function mad:system/ongame/advancements/story/follow_ender_eye_branch

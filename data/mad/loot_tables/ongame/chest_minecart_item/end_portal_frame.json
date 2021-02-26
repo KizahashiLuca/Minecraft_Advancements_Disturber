@@ -12,6 +12,10 @@
             {
               "function": "minecraft:set_count",
               "count": 12
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MinecartItem\"]}"
             }
           ]
         }

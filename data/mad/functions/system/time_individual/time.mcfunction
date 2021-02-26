@@ -8,8 +8,8 @@
 #####################################
 
 ## Calculate time every tick
-execute if score #mad Tick matches 0 run scoreboard players set @a[team=Paticipant,scores={Phase=21,Death=0}] Tick 20
-scoreboard players remove @a[team=Participant,scores={Phase=21,Death=0}] Tick 1
+execute if score #mad Tick matches 0 run scoreboard players set @a[team=Paticipant,predicate=mad:ongame/player/participant_alive] Tick 20
+scoreboard players remove @a[predicate=mad:ongame/player/participant_alive] Tick 1
 
 ## Calculate time every second
-execute if score #mad Tick matches 0 as @a[team=Participant,scores={Phase=21,Death=0}] run function mad:system/time_individual/second
+execute if score #mad Tick matches 0 as @a[predicate=mad:ongame/player/participant_alive] run function mad:system/time_individual/second

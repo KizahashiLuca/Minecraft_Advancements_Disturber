@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_nt_respawn=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/nether/charge_respawn_anchor_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_respawn=0}] run function mad:system/ongame/advancements/nether/charge_respawn_anchor_branch

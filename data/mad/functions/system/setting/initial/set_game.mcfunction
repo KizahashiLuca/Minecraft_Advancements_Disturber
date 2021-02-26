@@ -33,6 +33,7 @@ kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
+execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
 
 ## Set player
 clear @a
@@ -51,13 +52,14 @@ tag @p[sort=nearest] add Host
 
 ## Add teams
 team add Participant {"text":"参加者"}
-team join Participant @a[gamemode=adventure]
+team modify Participant color white
 team modify Participant friendlyFire true
 team modify Participant collisionRule always
 team modify Participant nametagVisibility always
 team modify Participant seeFriendlyInvisibles false
 team modify Participant deathMessageVisibility never
-tag @a[team=Participant] add Participant 
+team join Participant @a[gamemode=adventure]
+tag @a[gamemode=adventure] add Participant 
 
 ## Add teams
 team add TeamA {"text":"赤チーム"}
@@ -107,8 +109,11 @@ team modify TeamE deathMessageVisibility never
 ## Add scoreboards
 function mad:system/setting/initial/add_scoreboard
 
+## Adding pack
+function mad-plus:system/setting/initial/add_scoreboard
+
 ## Count players
-execute as @a[team=Participant] run scoreboard players add #mad NumParticipant 1
+execute as @a[tag=Participant] run scoreboard players add #mad NumParticipant 1
 
 ## Test
 execute if entity @p[tag=MADtest] run scoreboard players set #mad NumParticipant 5

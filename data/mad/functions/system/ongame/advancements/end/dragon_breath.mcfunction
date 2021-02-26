@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_ed_drg_breath=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/end/dragon_breath_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ed_drg_breath=0}] run function mad:system/ongame/advancements/end/dragon_breath_branch

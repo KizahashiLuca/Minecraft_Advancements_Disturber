@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_hb_fishy=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/husbandry/fishy_business_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_hb_fishy=0}] run function mad:system/ongame/advancements/husbandry/fishy_business_branch

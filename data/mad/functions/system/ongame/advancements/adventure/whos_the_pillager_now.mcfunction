@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_ad_whos_pilla=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/adventure/whos_the_pillager_now_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_whos_pilla=0}] run function mad:system/ongame/advancements/adventure/whos_the_pillager_now_branch

@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_ad_kill_all=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/adventure/kill_all_mobs_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_kill_all=0}] run function mad:system/ongame/advancements/adventure/kill_all_mobs_branch

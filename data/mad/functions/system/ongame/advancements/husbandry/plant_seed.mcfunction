@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_hb_plant_seed=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/husbandry/plant_seed_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_hb_plant_seed=0}] run function mad:system/ongame/advancements/husbandry/plant_seed_branch

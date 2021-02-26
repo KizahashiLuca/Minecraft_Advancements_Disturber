@@ -8,4 +8,4 @@
 #####################################
 
 ## Branch team
-execute as @s[scores={AD_pg_kubikari=0,Phase=21,Death=0}] run function mad:system/ongame/advancements/potage00/kubikari_potage_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_pg_kubikari=0}] run function mad:system/ongame/advancements/potage00/kubikari_potage_branch

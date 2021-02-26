@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{SkullOwner:\"potage00\",AttributeModifiers:[{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I; 42853, 1689024593, -201178, -1559272105],Slot:\"head\"}]}"
+              "tag": "{Tags:[\"MinecartItem\"],SkullOwner:\"potage00\",AttributeModifiers:[{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I; 42853, 1689024593, -201178, -1559272105],Slot:\"head\"}]}"
             }
           ]
         }

@@ -66,8 +66,8 @@ execute if score #mad VisibleDeath matches 1 run scoreboard players set @p[tag=H
 execute if score #mad SetTeamManual matches 0 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:redstone_lamp",tag:{Tags:["MADsetting","off"]}}]}] Select14 0
 execute if score #mad SetTeamManual matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:glowstone",tag:{Tags:["MADsetting","on"]}}]}] Select14 0
 
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{Tags:["MADsetting","team_number"]}}]}] Select15 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:16b,id:"minecraft:nether_star",tag:{Tags:["MADsetting","respawn_beacon"]}}]}] Select16 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:white_banner",tag:{Tags:["MADsetting","team_number"]}}]}] Select15 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:16b,id:"minecraft:white_banner",tag:{Tags:["MADsetting","respawn_beacon"]}}]}] Select16 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:17b,id:"minecraft:clock",tag:{Tags:["MADsetting","respawn_banner_time"]}}]}] Select17 0
 
 ## Change to each phase
