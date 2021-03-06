@@ -8,7 +8,7 @@
 #####################################
 
 ## Send messages
-execute as @s[scores={TanTheta=-4142..4142,PosXDiff=0..}] run tellraw @s ["",{"text":"[発 信 機] リスポーンビーコンが ","color":"green"},{"translate":"東 %sm先","with":[{"score":{"name":"@s","objective":"Distance"}}],"color":"green"},{"text":" にあります。","color":"green"}]
+execute as @s[scores={TanTheta=-4142..4142,PosXDiff=0..}] run tellraw @s ["",{"text":"[発 信 機] リスポーンビーコンが ","color":"green"},{"translate":"東方向 %sm先","with":[{"score":{"name":"@s","objective":"Distance"}}],"color":"green"},{"text":" にあります。","color":"green"}]
 execute as @s[scores={TanTheta=4143..24142,PosXDiff=0..,PosZDiff=0..}] run tellraw @s ["",{"text":"[発 信 機] リスポーンビーコンが ","color":"green"},{"translate":"南東方向 %sm先","with":[{"score":{"name":"@s","objective":"Distance"}}],"color":"green"},{"text":" にあります。","color":"green"}]
 execute as @s[scores={TanTheta=24143..,PosXDiff=0..,PosZDiff=0..}] run tellraw @s ["",{"text":"[発 信 機] リスポーンビーコンが ","color":"green"},{"translate":"南方向 %sm先","with":[{"score":{"name":"@s","objective":"Distance"}}],"color":"green"},{"text":" にあります。","color":"green"}]
 execute as @s[scores={TanTheta=..-24143,PosXDiff=..0,PosZDiff=0..}] run tellraw @s ["",{"text":"[発 信 機] リスポーンビーコンが ","color":"green"},{"translate":"南方向 %sm先","with":[{"score":{"name":"@s","objective":"Distance"}}],"color":"green"},{"text":" にあります。","color":"green"}]

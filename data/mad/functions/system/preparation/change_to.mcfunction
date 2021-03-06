@@ -9,6 +9,7 @@
 
 ## Send title messages
 title @a title ["",{"text":"降下開始","color":"white"}]
+title @a times 20 80 20
 
 ## Send setting messages
 function mad:system/finish/message_common_begin

@@ -8,7 +8,7 @@
 #####################################
 
 ## Title
-title @a times 20 40 20
+title @a times 20 80 20
 title @a title ["",{"text":"DRAW","color":"white","bold":true}]
 
 ## Display Winners

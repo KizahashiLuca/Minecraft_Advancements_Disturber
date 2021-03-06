@@ -9,8 +9,8 @@
 
 ## Set scoreboard
 execute store result score @s TransmitterPosX align x run data get entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,sort=nearest,limit=1] Pos[0] 1
-execute store result score @s TransmitterPosX align x run data get entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,sort=nearest,limit=1] Pos[1] 1
-execute store result score @s TransmitterPosX align x run data get entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,sort=nearest,limit=1] Pos[2] 1
+execute store result score @s TransmitterPosY align x run data get entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,sort=nearest,limit=1] Pos[1] 1
+execute store result score @s TransmitterPosZ align x run data get entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,sort=nearest,limit=1] Pos[2] 1
 
 ## Calculate
 scoreboard players set @s BannerDistance 0

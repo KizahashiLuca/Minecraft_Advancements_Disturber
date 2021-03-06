@@ -15,3 +15,4 @@ function mad:system/finish/message_common_end
 ## Title
 title @a times 20 40 20
 title @a title ["",{"text":"RESTART","color":"white","bold":true}]
+title @a times 20 80 20

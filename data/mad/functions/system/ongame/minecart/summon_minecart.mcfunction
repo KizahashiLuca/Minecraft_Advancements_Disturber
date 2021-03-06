@@ -11,9 +11,11 @@
 execute as @e[type=minecraft:chest_minecart,tag=Minecart] run kill @s
 
 ## Summon minecart
-scoreboard players operation @e[type=minecraft:chest_minecart,tag=Minecart] IsTeam = #mad IsTeam
-scoreboard players operation @e[type=minecraft:chest_minecart,tag=Minecart] WorldBorderEnd = #mad WorldBorderEnd
-execute at @e[type=minecraft:area_effect_cloud,tag=Minecart] run summon minecraft:chest_minecart ~ 160 ~ {LootTable:"mad:ongame/chest_minecart",Invulnerable:1b,Tags:["Minecart"]}
+execute at @e[type=minecraft:area_effect_cloud,tag=Minecart] run summon minecraft:chest_minecart ~ 160 ~ {Invulnerable:1b,Tags:["Minecart"]}
+execute if score #mad MinecartBranch matches 0 run data modify entity @e[type=minecraft:chest_minecart,tag=Minecart,limit=1] LootTable set value "mad:ongame/chest_minecart_branch_0"
+execute if score #mad MinecartBranch matches 1 run data modify entity @e[type=minecraft:chest_minecart,tag=Minecart,limit=1] LootTable set value "mad:ongame/chest_minecart_branch_1"
+execute if score #mad MinecartBranch matches 2 run data modify entity @e[type=minecraft:chest_minecart,tag=Minecart,limit=1] LootTable set value "mad:ongame/chest_minecart_branch_2"
+execute if score #mad MinecartBranch matches 3 run data modify entity @e[type=minecraft:chest_minecart,tag=Minecart,limit=1] LootTable set value "mad:ongame/chest_minecart_branch_3"
 
 ## Send messages
 execute as @e[type=minecraft:chest_minecart,tag=Minecart] store result score @s PosX align x run data get entity @s Pos[0] 1

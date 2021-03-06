@@ -9,6 +9,7 @@
 
 ## Send title messages
 title @a title ["",{"text":"MAD start","color":"red"}]
+title @a times 20 80 20
 
 ## Send setting messages
 function mad:system/finish/message_common_begin

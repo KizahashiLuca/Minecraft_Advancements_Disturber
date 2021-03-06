@@ -21,6 +21,7 @@ scoreboard players operation @p[tag=Leader,tag=CalculateTime] Second -= @p[tag=L
 
 ## Title
 title @s title ["",{"text":"死んでしまった！","color":"red","bold": true}]
+title @a times 20 80 20
 
 ## Detect death
 gamemode spectator @s

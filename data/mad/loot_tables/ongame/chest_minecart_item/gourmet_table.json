@@ -69,6 +69,11 @@
               "count": 1
             }
           ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:ongame/chest_minecart_item/suspicious_stew"
         }
       ]
     }

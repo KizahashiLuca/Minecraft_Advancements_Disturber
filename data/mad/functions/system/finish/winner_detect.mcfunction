@@ -8,7 +8,7 @@
 #####################################
 
 ## Title
-title @a times 20 40 20
+title @a times 20 80 20
 execute if score #mad IsTeam matches 0 if entity @p[predicate=mad:ongame/player/participant_alive] run function mad:system/finish/winner/individual
 execute if entity @p[predicate=mad:ongame/player/team_a_alive] run function mad:system/finish/winner/team_a
 execute if entity @p[predicate=mad:ongame/player/team_b_alive] run function mad:system/finish/winner/team_b

@@ -229,6 +229,7 @@ scoreboard objectives add SecondSummon dummy
 scoreboard objectives add SecondEliminate dummy
 scoreboard objectives add SummonInterval dummy
 scoreboard objectives add SummonMinecart dummy
+scoreboard objectives add MinecartBranch dummy
 ## Add scoreboards for transmitter
 scoreboard objectives add UseTransmitter trigger
 scoreboard objectives add TransmitterPosX dummy
@@ -344,6 +345,7 @@ scoreboard players set #mad SecondSummon 100
 scoreboard players set #mad SecondEliminate 0
 scoreboard players set #mad SummonInterval 100
 scoreboard players set #mad SummonMinecart 0
+scoreboard players set #mad MinecartBranch 0
 ## Set scoreboards for team
 scoreboard players set #mad TeamBoolean 0
 scoreboard players set #mad DeadTeamA 0

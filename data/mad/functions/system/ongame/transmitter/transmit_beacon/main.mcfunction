@@ -22,8 +22,9 @@ execute if entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] run fun
 execute if entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] run function mad:system/ongame/transmitter/transmit_beacon/calculate_angle
 
 ## Send messages
-execute if entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] run function mad:system/ongame/transmitter/transmit_beacon/send_message
-execute unless entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] run tellraw @s ["",{"text":"[発 信 機] 近くに仲間のリスポーンバナーは無いようです…。","color":"green"}]
+execute as @s[nbt={Dimension:"minecraft:overworld"}] if entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] run function mad:system/ongame/transmitter/transmit_beacon/send_message
+execute as @s[nbt={Dimension:"minecraft:overworld"}] unless entity @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] run tellraw @s ["",{"text":"[発 信 機] 近くにリスポーンビーコンは無いようです…。","color":"green"}]
+execute as @s[nbt=!{Dimension:"minecraft:overworld"}] run tellraw @s ["",{"text":"[発 信 機] 近くにリスポーンビーコンは無いようです…。","color":"green"}]
 
 ## Remove a tag
 tag @e remove DetectTransmitter
