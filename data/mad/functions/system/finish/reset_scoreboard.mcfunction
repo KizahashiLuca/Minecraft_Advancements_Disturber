@@ -134,10 +134,14 @@ scoreboard objectives remove AD_ad_honey_slid
 scoreboard objectives remove AD_ad_kill_a_mob
 scoreboard objectives remove AD_ad_kill_all
 scoreboard objectives remove AD_ad_ol_betsy
+scoreboard objectives remove AD_ad_lightrod
 scoreboard objectives remove AD_ad_root
 scoreboard objectives remove AD_ad_shot_arrow
 scoreboard objectives remove AD_ad_sleep
 scoreboard objectives remove AD_ad_sniper
+scoreboard objectives remove AD_ad_spy_dragon
+scoreboard objectives remove AD_ad_spy_ghast
+scoreboard objectives remove AD_ad_spy_parrot
 scoreboard objectives remove AD_ad_iron_golem
 scoreboard objectives remove AD_ad_trident
 scoreboard objectives remove AD_ad_totem
@@ -145,6 +149,7 @@ scoreboard objectives remove AD_ad_trade
 scoreboard objectives remove AD_ad_two_birds
 scoreboard objectives remove AD_ad_very_very
 scoreboard objectives remove AD_ad_voluntary
+scoreboard objectives remove AD_ad_powdersnow
 scoreboard objectives remove AD_ad_whos_pilla
 ## Remove scoreboards for advancements - minecraft
 scoreboard objectives remove AD_mc_cure_zombi
@@ -198,18 +203,24 @@ scoreboard objectives remove AD_ed_levitate
 scoreboard objectives remove AD_ed_resp_dragn
 scoreboard objectives remove AD_ed_root
 ## Remove scoreboards for advancements - husbandry
+scoreboard objectives remove AD_hb_axolotl
 scoreboard objectives remove AD_hb_balanced
 scoreboard objectives remove AD_hb_bred_all
 scoreboard objectives remove AD_hb_bred_anima
 scoreboard objectives remove AD_hb_catalogue
 scoreboard objectives remove AD_hb_fishy
+scoreboard objectives remove AD_hb_axo_target
+scoreboard objectives remove AD_hb_glow_sign
 scoreboard objectives remove AD_hb_nether_hoe
 scoreboard objectives remove AD_hb_plant_seed
+scoreboard objectives remove AD_hb_goat_boat
 scoreboard objectives remove AD_hb_root
 scoreboard objectives remove AD_hb_harv_honey
 scoreboard objectives remove AD_hb_silk_nest
 scoreboard objectives remove AD_hb_tacti_fish
 scoreboard objectives remove AD_hb_tame_anima
+scoreboard objectives remove AD_hb_wax_off
+scoreboard objectives remove AD_hb_wax_on
 ## Remove scoreboards for advancements - potage00
 scoreboard objectives remove AD_pg_root
 scoreboard objectives remove AD_pg_minecart

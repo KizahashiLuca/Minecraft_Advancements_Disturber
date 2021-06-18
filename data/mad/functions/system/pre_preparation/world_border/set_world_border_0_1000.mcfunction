@@ -13,7 +13,7 @@ spawnpoint @a ~ ~ ~
 
 ## Set world border & cloud
 worldborder center ~ ~
-execute if score #mad WorldBorder matches 0 run worldborder set 60000000
+execute if score #mad WorldBorder matches 0 run worldborder set 59999968
 execute if score #mad WorldBorder matches 100 run function mad:system/pre_preparation/world_border/0100
 execute if score #mad WorldBorder matches 200 run function mad:system/pre_preparation/world_border/0200
 execute if score #mad WorldBorder matches 300 run function mad:system/pre_preparation/world_border/0300

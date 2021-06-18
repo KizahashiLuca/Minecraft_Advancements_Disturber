@@ -1,0 +1,159 @@
+{
+  "type": "minecraft:entity",
+  "pools":[
+    {
+      "rolls":1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "item": "minecraft:air"
+              }
+            }
+          }
+        }
+      ],
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:leather_chestplate"
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "item": "minecraft:leather_chestplate"
+              }
+            }
+          }
+        }
+      ],
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:golden_chestplate"
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "item": "minecraft:golden_chestplate"
+              }
+            }
+          }
+        }
+      ],
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:chainmail_chestplate"
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "item": "minecraft:chainmail_chestplate"
+              }
+            }
+          }
+        }
+      ],
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:iron_chestplate"
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "item": "minecraft:iron_chestplate"
+              }
+            }
+          }
+        }
+      ],
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:diamond_chestplate"
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "item": "minecraft:diamond_chestplate"
+              }
+            }
+          }
+        }
+      ],
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:netherite_chestplate"
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "item": "minecraft:netherite_chestplate"
+              }
+            }
+          }
+        }
+      ],
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:netherite_chestplate"
+        }
+      ]
+    }
+  ]
+}

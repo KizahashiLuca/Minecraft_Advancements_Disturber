@@ -9,7 +9,9 @@
               "type": "minecraft:player",
               "equipment": {
                 "mainhand": {
-                  "item": "minecraft:purple_dye"
+                  "items": [
+                    "minecraft:purple_dye"
+                  ]
                 }
               }
             }

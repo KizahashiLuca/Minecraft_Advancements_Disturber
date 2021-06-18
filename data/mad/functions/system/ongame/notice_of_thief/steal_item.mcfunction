@@ -22,7 +22,7 @@ scoreboard players set @s ResultTmp 0
 execute as @s[tag=DetectThief,predicate=mad:ongame/player/participant_alive] at @s run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:structure_void",Count:1b},PickupDelay:0s}
 execute as @s[tag=DetectThief,predicate=mad:ongame/player/participant_alive] store success score @s ResultTmp run data modify entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",Count:1b}},sort=nearest,limit=1] Item set from entity @p[tag=StolenPlayer] SelectedItem
 
-execute as @s[tag=DetectThief,predicate=mad:ongame/player/participant_alive,scores={ResultTmp=1}] run replaceitem entity @p[tag=StolenPlayer] weapon.mainhand air
+execute as @s[tag=DetectThief,predicate=mad:ongame/player/participant_alive,scores={ResultTmp=1}] run item replace entity @p[tag=StolenPlayer] weapon.mainhand with air
 execute as @s[tag=DetectThief,predicate=mad:ongame/player/participant_alive,scores={ResultTmp=0}] run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",Count:1b}},sort=nearest,limit=1]
 
 ## Send messages

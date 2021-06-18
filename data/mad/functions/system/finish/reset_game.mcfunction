@@ -15,7 +15,7 @@ tp @a @p[predicate=mad:ongame/player/participant_alive,sort=random]
 
 ## Reset world border
 execute in minecraft:overworld run worldborder center 0 0
-execute in minecraft:overworld run worldborder set 60000000
+execute in minecraft:overworld run worldborder set 59999968
 
 ## Forceload remove
 forceload remove all

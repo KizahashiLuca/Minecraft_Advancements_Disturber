@@ -16,39 +16,36 @@
         "hidden": false
     },
     "criteria": {
-        "hay_block": {
+        "three_little_pigs": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "item": "minecraft:hay_block"
-                    }
-                ]
-            }
-        },
-        "planks": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
+                        "items": [
+                            "minecraft:hay_block"
+                        ]
+                    },
                     {
-                        "tag": "mad:planks"
-                    }
-                ]
-            }
-        },
-        "bricks": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
+                        "items": [
+                            "minecraft:oak_planks",
+                            "minecraft:spruce_planks",
+                            "minecraft:birch_planks",
+                            "minecraft:jungle_planks",
+                            "minecraft:acacia_planks",
+                            "minecraft:dark_oak_planks"
+                        ]
+                    },
                     {
-                        "item": "minecraft:bricks"
+                        "items": [
+                            "minecraft:bricks"
+                        ]
                     }
                 ]
             }
         }
     },
     "requirements": [
-        ["hay_block"], ["planks"], ["bricks"]
+        ["three_little_pigs"]
     ],
     "rewards": {
         "function": "mad:system/ongame/advancements/potage00/three_little_pigs"

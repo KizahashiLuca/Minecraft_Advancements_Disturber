@@ -3,8 +3,14 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-      "Phase": 21,
-      "Death": 0
+      "Phase": {
+        "max": 21,
+        "min": 21
+      },
+      "Death": {
+        "max": 0,
+        "min": 0
+      }
     }
   },
   {
