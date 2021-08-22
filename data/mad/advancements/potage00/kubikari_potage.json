@@ -22,7 +22,9 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "minecraft:player_head",
+                        "items": [
+                            "minecraft:player_head"
+                        ],
                         "nbt": "{SkullOwner:\"potage00\"}"
                     }
                 ]
