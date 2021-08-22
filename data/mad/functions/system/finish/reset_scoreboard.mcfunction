@@ -241,6 +241,7 @@ scoreboard objectives remove SecondEliminate
 scoreboard objectives remove SummonInterval
 scoreboard objectives remove SummonMinecart
 scoreboard objectives remove MinecartBranch
+scoreboard objectives remove GetMinecartCount
 ## Remove scoreboards for transmitter
 scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX

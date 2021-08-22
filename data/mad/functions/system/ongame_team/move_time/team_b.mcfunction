@@ -19,6 +19,13 @@ scoreboard players operation @p[team=TeamB,tag=Leader] TimeLimit += @p[tag=Leade
 scoreboard players operation @p[team=TeamB,tag=Leader] GetTimeLimit += @p[tag=Leader,tag=CalculateTime] SecondPerSurvive
 scoreboard players operation @p[tag=Leader,tag=CalculateTime] Second -= @p[tag=Leader,tag=CalculateTime] SecondPerSurvive
 
+## Send message
+execute as @s[team=TeamA] run tellraw @a[team=TeamA] ["",{"text":"[時間移動]  ","color":"green"},{"text":"青チーム","color":"blue","bold":true},{"text":" に ","color":"green"},{"score":{"name":"@p[tag=Leader,tag=CalculateTime]","objective":"SecondPerSurvive"},"color":"green","bold":true},{"text":" 秒奪われました。","color":"green"}]
+tellraw @a[team=TeamB] ["",{"text":"[時間移動]  ","color":"green"},{"selector":"@s","bold":true},{"text":" から ","color":"green"},{"score":{"name":"@p[tag=Leader,tag=CalculateTime]","objective":"SecondPerSurvive"},"color":"green","bold":true},{"text":" 秒奪いました。","color":"green"}]
+execute as @s[team=TeamC] run tellraw @a[team=TeamC] ["",{"text":"[時間移動]  ","color":"green"},{"text":"青チーム","color":"blue","bold":true},{"text":" に ","color":"green"},{"score":{"name":"@p[tag=Leader,tag=CalculateTime]","objective":"SecondPerSurvive"},"color":"green","bold":true},{"text":" 秒奪われました。","color":"green"}]
+execute as @s[team=TeamD] run tellraw @a[team=TeamD] ["",{"text":"[時間移動]  ","color":"green"},{"text":"青チーム","color":"blue","bold":true},{"text":" に ","color":"green"},{"score":{"name":"@p[tag=Leader,tag=CalculateTime]","objective":"SecondPerSurvive"},"color":"green","bold":true},{"text":" 秒奪われました。","color":"green"}]
+execute as @s[team=TeamE] run tellraw @a[team=TeamE] ["",{"text":"[時間移動]  ","color":"green"},{"text":"青チーム","color":"blue","bold":true},{"text":" に ","color":"green"},{"score":{"name":"@p[tag=Leader,tag=CalculateTime]","objective":"SecondPerSurvive"},"color":"green","bold":true},{"text":" 秒奪われました。","color":"green"}]
+
 ## Title
 title @s title ["",{"text":"死んでしまった！","color":"red","bold": true}]
 title @a times 20 80 20

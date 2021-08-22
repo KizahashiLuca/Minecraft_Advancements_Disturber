@@ -241,6 +241,7 @@ scoreboard objectives add SecondEliminate dummy
 scoreboard objectives add SummonInterval dummy
 scoreboard objectives add SummonMinecart dummy
 scoreboard objectives add MinecartBranch dummy
+scoreboard objectives add GetMinecartCount dummy
 ## Add scoreboards for transmitter
 scoreboard objectives add UseTransmitter trigger
 scoreboard objectives add TransmitterPosX dummy
@@ -535,6 +536,8 @@ scoreboard players set @a AD_pg_kill_phant 0
 scoreboard players set @a AD_pg_kill_ender 0
 scoreboard players set @a AD_pg_frinedship 0
 scoreboard players set @a BreakSpawner 0
+## Set scoreboards for summons minecart
+scoreboard players set @a GetMinecartCount 0
 ## Set scoreboards for transmitter
 scoreboard players set @a UseTransmitter 0
 scoreboard players enable @a UseTransmitter
