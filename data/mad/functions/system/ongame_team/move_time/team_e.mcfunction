@@ -24,7 +24,7 @@ execute as @s[team=TeamA] run tellraw @a[team=TeamA] ["",{"text":"[時間移動]
 execute as @s[team=TeamB] run tellraw @a[team=TeamB] ["",{"text":"[時間移動]  ","color":"green"},{"text":"紫チーム","color":"dark_purple","bold":true},{"text":" に ","color":"green"},{"score":{"name":"@p[tag=Leader,tag=CalculateTime]","objective":"SecondPerSurvive"},"color":"green","bold":true},{"text":" 秒奪われました。","color":"green"}]
 execute as @s[team=TeamC] run tellraw @a[team=TeamC] ["",{"text":"[時間移動]  ","color":"green"},{"text":"紫チーム","color":"dark_purple","bold":true},{"text":" に ","color":"green"},{"score":{"name":"@p[tag=Leader,tag=CalculateTime]","objective":"SecondPerSurvive"},"color":"green","bold":true},{"text":" 秒奪われました。","color":"green"}]
 execute as @s[team=TeamD] run tellraw @a[team=TeamD] ["",{"text":"[時間移動]  ","color":"green"},{"text":"紫チーム","color":"dark_purple","bold":true},{"text":" に ","color":"green"},{"score":{"name":"@p[tag=Leader,tag=CalculateTime]","objective":"SecondPerSurvive"},"color":"green","bold":true},{"text":" 秒奪われました。","color":"green"}]
-tellraw @a[team=TeamE] ["",{"text":"[時間移動]  ","color":"green"},{"selector":"@s","bold":true},{"text":" から ","color":"green"},{"score":{"name":"@p[tag=Leader,tag=CalculateTime]","objective":"SecondPerSurvive"},"color":"green","bold":true},{"text":" 秒奪いました。","color":"green"}]
+execute as @s[team=!TeamE] run tellraw @a[team=TeamE] ["",{"text":"[時間移動]  ","color":"green"},{"selector":"@s","bold":true},{"text":" から ","color":"green"},{"score":{"name":"@p[tag=Leader,tag=CalculateTime]","objective":"SecondPerSurvive"},"color":"green","bold":true},{"text":" 秒奪いました。","color":"green"}]
 
 ## Title
 title @s title ["",{"text":"死んでしまった！","color":"red","bold": true}]
