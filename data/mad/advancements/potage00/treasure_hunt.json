@@ -17,7 +17,7 @@
         "hidden": false
     },
     "criteria": {
-        "treasure_hunt": {
+        "emerald": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
@@ -25,37 +25,86 @@
                         "items": [
                             "minecraft:emerald"
                         ]
-                    },
+                    }
+                ]
+            }
+        },
+        "diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
                     {
                         "items": [
                             "minecraft:diamond"
                         ]
-                    },
+                    }
+                ]
+            }
+        },
+        "gold_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
                     {
                         "items": [
                             "minecraft:gold_ingot"
                         ]
-                    },
+                    }
+                ]
+            }
+        },
+        "iron_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
                     {
                         "items": [
                             "minecraft:iron_ingot"
                         ]
-                    },
+                    }
+                ]
+            }
+        },
+        "copper_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
                     {
                         "items": [
                             "minecraft:copper_ingot"
                         ]
-                    },
+                    }
+                ]
+            }
+        },
+        "lapis_lazuli": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
                     {
                         "items": [
                             "minecraft:lapis_lazuli"
                         ]
-                    },
+                    }
+                ]
+            }
+        },
+        "redstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
                     {
                         "items": [
                             "minecraft:redstone"
                         ]
-                    },
+                    }
+                ]
+            }
+        },
+        "quartz": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
                     {
                         "items": [
                             "minecraft:quartz"
@@ -66,7 +115,7 @@
         }
     },
     "requirements": [
-        ["treasure_hunt"]
+        ["emerald"], ["diamond"], ["gold_ingot"], ["iron_ingot"], ["copper_ingot"], ["lapis_lazuli"], ["redstone"], ["quartz"]
     ],
     "rewards": {
         "function": "mad:system/ongame/advancements/potage00/treasure_hunt"

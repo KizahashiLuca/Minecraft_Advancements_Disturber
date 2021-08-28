@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MinecartItem\"],AttributeModifiers:[{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.3,Operation:0,UUID:[I; 42853, 1689024593, -201178, -1559272105],Slot:\"feet\"}]}"
+              "tag": "{Tags:[\"MinecartItem\"],AttributeModifiers:[{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.05,Operation:0,UUID:[I; 42853, 1689024593, -201178, -1559272105],Slot:\"feet\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:-0.6,Operation:2,UUID:[I; 42853, 1689024593, -201178, -1559272105],Slot:\"feet\"}]}"
             }
           ]
         }

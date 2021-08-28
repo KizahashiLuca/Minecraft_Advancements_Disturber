@@ -224,7 +224,7 @@ scoreboard objectives add AD_hb_wax_on dummy {"text":"錆止め"}
 ## Add scoreboards for advancements - potage00
 scoreboard objectives add AD_pg_root dummy {"text":"MAD"}
 scoreboard objectives add AD_pg_minecart dummy {"text":"支援物資だ!"}
-scoreboard objectives add AD_pg_kubikari dummy {"text":"首狩りぽたーじゅ"}
+scoreboard objectives add AD_pg_kubikari dummy {"text":"首狩りスティーブ"}
 scoreboard objectives add AD_pg_tsutenkaku dummy {"text":"通天閣からの眺め"}
 scoreboard objectives add AD_pg_treasure dummy {"text":"宝探し"}
 scoreboard objectives add AD_pg_3litpigs dummy {"text":"3匹の子豚"}
