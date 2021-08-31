@@ -34,6 +34,7 @@ give @a[tag=Participant] minecraft:golden_shovel
 
 ## Minecart
 scoreboard players operation #mad SecondSummon = #mad SummonInterval
+scoreboard players add #mad SecondSummon 200
 summon minecraft:area_effect_cloud ~ 160 ~ {Tags:["Minecart"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart,tag=!Teleported] run function mad:system/ongame/minecart/teleport_minecart
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] store result score @s PosX align x run data get entity @s Pos[0] 1
