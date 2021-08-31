@@ -11,7 +11,7 @@
 execute if score #mad LoadAddon matches 1.. run scoreboard players remove #mad LoadAddon 1
 
 ## Log in the mid of the game
-gamemode spectator @a[tag=!Participant,gamemode=!spectator]
+execute as @a[tag=!Participant,gamemode=!spectator] run function mad:system/ongame/mid_login
 
 ## Process timer system
 function mad:system/time_individual/time
@@ -40,10 +40,7 @@ execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @
 execute as @a[scores={TeleportMessage=1..}] run function mad:system/ongame/teleport_player/main
 
 ## Detect transmitter
-execute as @a[predicate=mad:ongame/player/participant_alive,predicate=mad:ongame/transmitter] at @s run function mad:system/ongame/transmitter/main
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseTransmitter=1}] at @s run function mad:system/ongame/transmitter/transmit_player/main
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseTransmitter=2}] at @s run function mad:system/ongame/transmitter/transmit_banner/main
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseTransmitter=3}] at @s run function mad:system/ongame/transmitter/transmit_beacon/main
+execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter/main
 
 ## Detect armor upgrader
 execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseArmorUpgrader=1..}] at @s run function mad:system/ongame/armor_upgrader/main

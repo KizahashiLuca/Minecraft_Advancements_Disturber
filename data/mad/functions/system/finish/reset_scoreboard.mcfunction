@@ -247,13 +247,6 @@ scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX
 scoreboard objectives remove TransmitterPosY
 scoreboard objectives remove TransmitterPosZ
-scoreboard objectives remove PosXDiff
-scoreboard objectives remove PosZDiff
-scoreboard objectives remove TanTheta
-scoreboard objectives remove BannerDistance
-scoreboard objectives remove SquareRootI
-scoreboard objectives remove SquareRootX
-scoreboard objectives remove Distance
 ## Remove scoreboards for emergency call
 scoreboard objectives remove UseEmergencyCall
 ## Remove scoreboards for armor upgrader

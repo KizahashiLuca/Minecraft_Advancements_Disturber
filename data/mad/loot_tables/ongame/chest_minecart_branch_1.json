@@ -17,11 +17,6 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "mad:ongame/chest_minecart_item/player_head_of_steve"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
           "name": "mad:ongame/chest_minecart_item/diamond_pickaxe"
         },
         {
@@ -52,11 +47,11 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "mad:ongame/chest_minecart_item/transmitter_team",
+          "name": "mad:ongame/chest_minecart_item/transmitter",
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 4
+              "count": 3
             }
           ]
         },

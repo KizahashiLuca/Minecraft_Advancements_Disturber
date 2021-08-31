@@ -29,44 +29,11 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:spider_eye",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 10
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:cooked_beef",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": 5
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:poisonous_potato",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 64
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:dried_kelp",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
             }
           ]
         },

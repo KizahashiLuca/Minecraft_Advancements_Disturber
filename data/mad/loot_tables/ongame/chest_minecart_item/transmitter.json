@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:vindicator_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"発信機","color":"light_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                ["",{"text":"近くの敵プレイヤーの現材の座標を通知。","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"text":"右クリックで使用","color":"","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MinecartItem\"],EntityTag:{Invisible:1b,Marker:0b,Invulnerable:0b,Health:1.0f,Silent:1b,NoAI:1b,DeathLootTable:\"mad:ongame/chest_minecart_item/empty\",CustomNameVisible:0b}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

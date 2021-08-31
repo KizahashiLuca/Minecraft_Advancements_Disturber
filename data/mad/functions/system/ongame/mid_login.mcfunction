@@ -7,9 +7,6 @@
 ## Version   : β-1.2.4
 #####################################
 
-## Error message
-tellraw @s ["",{"text":"[発 信 機] 手持ちに発信機が無ければ使用できません。","color":"green"}]
-
-## Set scoreboard
-scoreboard players set @s UseTransmitter 0
-scoreboard players enable @s UseTransmitter
+## Mid log in
+gamemode spectator @s
+team leave @s
