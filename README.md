@@ -7,7 +7,7 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 ## Caution!!
  - 実況でご利用の際は以下項目の記載をお願い致します。
    - 企画者 : ぽたーじゅ
-     - Twitter : [https://twitter.com/potage00](https://twitter.com/potage00)
+     - Twitter : [https://twitter.com/potagegatop](https://twitter.com/potagegatop)
    - 作成者 : きざはしるか
      - Twitter : [https://twitter.com/KizahashiLuca](https://twitter.com/KizahashiLuca)
    - 配布元URL : [https://github.com/KizahashiLuca/minecraft_advancements_disturber](https://github.com/KizahashiLuca/minecraft_advancements_disturber)
@@ -87,6 +87,5 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
  - 怪しげなシチュー ×5
 
 ## スタッフ
- - 企画 : ぽたーじゅ [@potage00](https://twitter.com/potage00)
- - 制作 : きざはしるか [@KizahashiLuca](https://twitter.com/KizahashiLuca)
- - 著作 : ぽたーじゅ [@potage00](https://twitter.com/potage00) / きざはしるか [@KizahashiLuca](https://twitter.com/KizahashiLuca)
+ - 企画 : ぽたーじゅ [@potage00](https://twitter.com/potagegatop)
+ - 制作/著作 : きざはしるか [@KizahashiLuca](https://twitter.com/KizahashiLuca)
