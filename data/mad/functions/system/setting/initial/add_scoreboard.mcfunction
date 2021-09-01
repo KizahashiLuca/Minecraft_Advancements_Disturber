@@ -3,8 +3,9 @@
 ## MC-Version: JE 1.16
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 06 Mar 2021
-## Version   : β-1.2.4
+## Date      : 01 Sep 2021
+## Version   : β-1.3
+## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Add scoreboards for game phase
@@ -317,8 +318,8 @@ scoreboard players set #mad DifficultyPrv 2
 scoreboard players set #mad AddingTime 100
 scoreboard players set #mad AddingTimePrv 100
 ## Set scoreboards for setting phase - choose minecart interval
-scoreboard players set #mad CartInterval 100
-scoreboard players set #mad CartIntervalPrv 100
+scoreboard players set #mad CartInterval 300
+scoreboard players set #mad CartIntervalPrv 300
 ## Set scoreboards for setting phase - choose gamerule
 scoreboard players set #mad WeatherCycle 1
 scoreboard players set #mad DaylightCycle 1
@@ -334,7 +335,7 @@ scoreboard players set #mad VisibleDeath 0
 scoreboard players set #mad SetTeamManual 0
 scoreboard players set #mad TeamNumber 2
 scoreboard players set #mad BeaconNumber 1
-scoreboard players set #mad RespawnTime 300
+scoreboard players set #mad RespawnTime 0
 scoreboard players set #mad friendlyFirePrv 1
 scoreboard players set #mad collisionRulePrv 1
 scoreboard players set #mad VisibleNamePrv 0
@@ -343,12 +344,12 @@ scoreboard players set #mad VisibleDeathPrv 0
 scoreboard players set #mad SetTeamManualPrv 0
 scoreboard players set #mad TeamNumberPrv 2
 scoreboard players set #mad BeaconNumberPrv 1
-scoreboard players set #mad RespawnTimePrv 300
+scoreboard players set #mad RespawnTimePrv 0
 ## Set scoreboards for summons minecart
 scoreboard players set #mad 300 300
-scoreboard players set #mad SecondSummon 100
+scoreboard players set #mad SecondSummon 300
 scoreboard players set #mad SecondEliminate 0
-scoreboard players set #mad SummonInterval 100
+scoreboard players set #mad SummonInterval 300
 scoreboard players set #mad SummonMinecart 0
 scoreboard players set #mad MinecartBranch 0
 ## Set scoreboards for team
