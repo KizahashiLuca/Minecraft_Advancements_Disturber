@@ -3,12 +3,13 @@
 ## MC-Version: JE 1.16
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 06 Mar 2021
-## Version   : β-1.2.4
+## Date      : 01 Sep 2021
+## Version   : β-1.3
+## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Reset choice
-scoreboard players set #mad CartInterval 100
+scoreboard players set #mad CartInterval 300
 
 ## Send messages
 function mad:system/setting/choose_minecart_interval/change_to

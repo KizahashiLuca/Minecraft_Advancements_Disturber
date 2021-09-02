@@ -3,8 +3,9 @@
 ## MC-Version: JE 1.16
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 06 Mar 2021
-## Version   : β-1.2.4
+## Date      : 01 Sep 2021
+## Version   : β-1.3
+## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Remove scoreboards for game phase
@@ -247,13 +248,6 @@ scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX
 scoreboard objectives remove TransmitterPosY
 scoreboard objectives remove TransmitterPosZ
-scoreboard objectives remove PosXDiff
-scoreboard objectives remove PosZDiff
-scoreboard objectives remove TanTheta
-scoreboard objectives remove BannerDistance
-scoreboard objectives remove SquareRootI
-scoreboard objectives remove SquareRootX
-scoreboard objectives remove Distance
 ## Remove scoreboards for emergency call
 scoreboard objectives remove UseEmergencyCall
 ## Remove scoreboards for armor upgrader
