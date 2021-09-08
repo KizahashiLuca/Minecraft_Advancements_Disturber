@@ -39,5 +39,8 @@ scoreboard players set @s Phase 22
 ## replaceitem
 loot replace entity @s inventory.0 loot minecraft:entities/player
 
+## Revoke advancements
+advancement revoke @a only mad:system/ongame_team/be_hit_by_team_b
+
 ## Remove tag
 tag @a remove CalculateTime
