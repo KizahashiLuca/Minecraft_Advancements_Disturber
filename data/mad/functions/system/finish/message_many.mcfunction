@@ -11,5 +11,5 @@
 ## Send reject messages
 function mad:system/finish/message_common_begin
 tellraw @a ["",{"text":"  人数が多すぎます。","color":"white"}]
-tellraw @a ["",{"text":"  ゲームの必要人数は","color":"white"},{"text":" 100 ","color":"red","bold":true},{"text":"人までです。","color":"white"}]
+tellraw @a ["",{"text":"  ゲームの必要人数は","color":"white"},{"text":" 20 ","color":"red","bold":true},{"text":"人までです。","color":"white"}]
 function mad:system/finish/message_common_end
