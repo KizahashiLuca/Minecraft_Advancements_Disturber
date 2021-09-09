@@ -72,6 +72,7 @@ execute as @e[predicate=mad:ongame/return_portal] at @s run function mad:system/
 
 ## Detect respawn beacon
 execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run function mad:system/ongame/respawn_beacon/main
+execute as @e[predicate=mad:ongame/respawn_beacon_position] at @s run function mad:system/ongame/respawn_beacon/construct_respawn_beacon
 
 ## Detect mobile respawn beacon
 execute as @e[predicate=mad:ongame/mobile_respawn_beacon_position] at @s run function mad:system/ongame/mobile_respawn_beacon/construct_mobile_beacon

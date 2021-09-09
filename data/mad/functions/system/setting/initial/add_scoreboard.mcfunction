@@ -243,6 +243,7 @@ scoreboard objectives add SummonInterval dummy
 scoreboard objectives add SummonMinecart dummy
 scoreboard objectives add MinecartBranch dummy
 scoreboard objectives add GetMinecartCount dummy
+scoreboard objectives add HasLootTable dummy
 ## Add scoreboards for transmitter
 scoreboard objectives add UseTransmitter minecraft.used:minecraft.vindicator_spawn_egg
 scoreboard objectives add TransmitterPosX dummy

@@ -9,7 +9,7 @@
 #####################################
 
 ## Send reject messages
-function mad:system/finish/message_common
+function mad:system/finish/message_common_begin
 tellraw @a ["",{"text":"  既にゲームを行っています。","color":"white"}]
 tellraw @a ["",{"text":"  新しいゲームは開始できません。","color":"white"}]
 tellraw @a ["",{"text":"  以下のコマンドで、ゲームを中断して","color":"white"}]

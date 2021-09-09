@@ -243,6 +243,7 @@ scoreboard objectives remove SummonInterval
 scoreboard objectives remove SummonMinecart
 scoreboard objectives remove MinecartBranch
 scoreboard objectives remove GetMinecartCount
+scoreboard objectives remove HasLootTable
 ## Remove scoreboards for transmitter
 scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX
