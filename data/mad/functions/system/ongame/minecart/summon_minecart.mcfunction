@@ -21,7 +21,7 @@ execute if score #mad MinecartBranch matches 3 run data modify entity @e[type=mi
 ## Send messages
 execute as @e[type=minecraft:chest_minecart,tag=Minecart] store result score @s PosX align x run data get entity @s Pos[0] 1
 execute as @e[type=minecraft:chest_minecart,tag=Minecart] store result score @s PosZ align z run data get entity @s Pos[2] 1
-execute as @e[type=minecraft:chest_minecart,tag=Minecart] run tellraw @a ["",{"text":"[支援物資] 物資が ","color":"green"},{"translate":"[%s, 160, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"score":{"name":"@s","objective":"PosZ"}}],"color":"green","hoverEvent":{"action":"show_text","value":"スペクテイター時\nクリックしてテレポート"},"clickEvent":{"action":"run_command","value":"/trigger TeleportMessage set 1"}},{"text":" に投下されました。","color":"green"}]
+execute as @e[type=minecraft:chest_minecart,tag=Minecart] run tellraw @a ["",{"text":"[支援物資] 物資が ","color":"green"},{"translate":"[%s, 160, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"score":{"name":"@s","objective":"PosZ"}}],"color":"green","hoverEvent":{"action":"show_text","value":"スペクテイター時\nクリックしてテレポート"},"clickEvent":{"action":"run_command","value":"/trigger TeleportMinecart set 1"}},{"text":" に投下されました。","color":"green"}]
 
 ## Set scoreboard
 scoreboard players set #mad SummonMinecart 1

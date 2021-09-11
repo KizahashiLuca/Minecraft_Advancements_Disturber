@@ -11,7 +11,7 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"追加時間設定","color":"white","bold":false,"italic":false}]
+                ["",{"text":"追加生存時間設定","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",

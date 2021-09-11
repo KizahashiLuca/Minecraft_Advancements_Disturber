@@ -38,7 +38,8 @@ execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:0b}] at @
 execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame/minecart/main_onground
 
 ## Teleport player
-execute as @a[scores={TeleportMessage=1..}] run function mad:system/ongame/teleport_player/main
+execute as @a[scores={TeleportMinecart=1..}] run function mad:system/ongame/teleport_player/minecart
+execute as @a[scores={TeleportCenter=1..}] run function mad:system/ongame/teleport_player/center_of_world
 
 ## Detect transmitter
 execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter/main

@@ -15,9 +15,9 @@ tag @p[team=TeamA,sort=random] add Leader
 scoreboard players set #mad DeadTeamA 0
 
 ## Set bossbar - team red
-bossbar add minecraft:bossbar_red ["",{"text":"赤チーム ","color":"red","bold":true},{"text":"制限時間  残り "},{"score":{"name":"@p[team=TeamA,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
+bossbar add minecraft:bossbar_red ["",{"text":"赤チーム ","color":"red","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@p[team=TeamA,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
 bossbar set minecraft:bossbar_red players @a[team=TeamA]
-bossbar set minecraft:bossbar_red name ["",{"text":"赤チーム ","color":"red","bold":true},{"text":"制限時間  残り "},{"score":{"name":"@p[team=TeamA,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
+bossbar set minecraft:bossbar_red name ["",{"text":"赤チーム ","color":"red","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@p[team=TeamA,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
 execute store result bossbar minecraft:bossbar_red max run scoreboard players get @p[team=TeamA,tag=Leader] TimeLimit
 execute store result bossbar minecraft:bossbar_red value run scoreboard players get @p[team=TeamA,tag=Leader] Second
 

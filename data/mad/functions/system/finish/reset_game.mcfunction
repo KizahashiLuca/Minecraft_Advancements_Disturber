@@ -99,7 +99,6 @@ time set noon
 weather clear
 
 ## Reset gamerule
-gamemode adventure @a
 gamerule doImmediateRespawn false
 execute in minecraft:overworld run gamerule spectatorsGenerateChunks false
 execute in minecraft:the_nether run gamerule spectatorsGenerateChunks false

@@ -9,7 +9,7 @@
 #####################################
 
 ## Send time limit messages
-tellraw @a ["",{"text":"[初期設定] 初期制限時間は ","color":"green"},{"score":{"name":"#mad","objective":"TimeLimit"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
+tellraw @a ["",{"text":"[初期設定] 初期生存時間は ","color":"green"},{"score":{"name":"#mad","objective":"TimeLimit"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
 
 ## Change to choose setting
 function mad:system/setting/choose_setting/change_to

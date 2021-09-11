@@ -26,6 +26,9 @@ fill ~-1 ~1 ~ ~1 ~2 ~ minecraft:air
 fill ~ ~1 ~-1 ~ ~2 ~1 minecraft:air
 setblock ~ ~ ~ minecraft:barrier
 setblock ~ ~-1 ~ minecraft:end_gateway{Age:0L}
+execute if score @s BeaconNumber matches 1 run fill ~-1 ~4 ~-1 ~1 ~6 ~1 minecraft:barrier
+execute if score @s BeaconNumber matches 1 run fill ~ ~4 ~ ~ ~5 ~ minecraft:air
+execute if score @s BeaconNumber matches 1 run tp @a ~ ~4 ~
 
 ## Summon cloud
 summon minecraft:area_effect_cloud ~0.0 ~ ~0.0 {Tags:["RespawnBeacon"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,CustomName:'{"text":"リスポーンビーコン"}',CustomNameVisible:1b,Duration:2147483647}

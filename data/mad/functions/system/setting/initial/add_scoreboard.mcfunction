@@ -14,7 +14,8 @@ scoreboard objectives add PrevPhase dummy
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add Kill dummy
 scoreboard objectives add KillTemp minecraft.custom:minecraft.player_kills
-scoreboard objectives add TeleportMessage trigger
+scoreboard objectives add TeleportMinecart trigger
+scoreboard objectives add TeleportCenter trigger
 scoreboard objectives add ExitMessage trigger
 ## Add scoreboards for timer
 scoreboard objectives add 2 dummy
@@ -370,8 +371,10 @@ scoreboard players set @a Phase 0
 scoreboard players set @a Death 0
 scoreboard players set @a Kill 0
 scoreboard players set @a KillTemp 0
-scoreboard players set @a TeleportMessage 0
-scoreboard players enable @a TeleportMessage
+scoreboard players set @a TeleportMinecart 0
+scoreboard players enable @a TeleportMinecart
+scoreboard players set @a TeleportCenter 0
+scoreboard players enable @a TeleportCenter
 scoreboard players set @a ExitMessage 0
 scoreboard players enable @a ExitMessage
 ## Set scoreboards for timer

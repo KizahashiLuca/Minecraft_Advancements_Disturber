@@ -42,7 +42,10 @@ execute at @p[tag=Host] run forceload add ~ ~
 
 ## Summon world spawn
 execute at @p[tag=Host] align xyz run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["WorldSpawn"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute as @e[type=minecraft:area_effect_cloud,tag=WorldSpawn,limit=1] at @s run function mad:system/pre_preparation/detect_world_border
+execute as @e[predicate=mad:ongame/entity/world_spawn,limit=1] store result score @s PosX run data get entity @s Pos[0]
+execute as @e[predicate=mad:ongame/entity/world_spawn,limit=1] store result score @s PosY run data get entity @s Pos[1]
+execute as @e[predicate=mad:ongame/entity/world_spawn,limit=1] store result score @s PosZ run data get entity @s Pos[2]
+execute as @e[predicate=mad:ongame/entity/world_spawn,limit=1] at @s run function mad:system/pre_preparation/detect_world_border
 
 ## Set time
 time set noon

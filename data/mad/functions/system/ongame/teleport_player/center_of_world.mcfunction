@@ -8,16 +8,7 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Mid log in
-gamemode spectator @s
-team leave @s
-
-## Set scoreboard
-scoreboard players set @s DeadOwnTeam 1
-scoreboard players set @s TeleportMinecart 0
+## Detect teleport
+execute at @e[predicate=mad:ongame/entity/world_spawn,limit=1] run tp @s[scores={DeadOwnTeam=1}] ~ ~ ~
 scoreboard players set @s TeleportCenter 0
-scoreboard players enable @s TeleportMinecart
 scoreboard players enable @s TeleportCenter
-
-## Give effect
-effect give @s minecraft:night_vision 1000000 1 true

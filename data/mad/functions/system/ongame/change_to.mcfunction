@@ -42,8 +42,10 @@ execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] store result score 
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] run tellraw @a ["",{"text":"[物資投下] 物資が","color":"green"},{"score":{"name":"#mad","objective":"SecondSummon"},"color":"green"},{"text":"秒後に ","color":"green"},{"translate":"[%s, 160, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"score":{"name":"@s","objective":"PosZ"}}],"color":"green"},{"text":" に投下されます。","color":"green"}]
 
 ## Set scoreboards
-scoreboard players set @a TeleportMessage 0
-scoreboard players enable @a TeleportMessage
+scoreboard players set @a TeleportMinecart 0
+scoreboard players set @a TeleportCenter 0
+scoreboard players enable @a TeleportMinecart
+scoreboard players enable @a TeleportCenter
 execute if score #mad IsTeam matches 1 run scoreboard players operation #mad NumAlive = #mad TeamNumber
 scoreboard players set #mad NumDead 0
 scoreboard players set @a[tag=Participant] Phase 21
