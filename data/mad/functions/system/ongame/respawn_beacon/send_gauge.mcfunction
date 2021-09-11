@@ -3,8 +3,8 @@
 ## MC-Version: JE 1.16
 ## Author    : @aotage00
 ## Author    : @KizahashiLuca
-## Date      : 01 Sep 2021
-## Version   : β-1.3
+## Date      : 12 Sep 2021
+## Version   : β-1.3.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
