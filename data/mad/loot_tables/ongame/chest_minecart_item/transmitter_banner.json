@@ -12,20 +12,19 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                ["",{"text":"発信機","color":"light_purple","bold":false,"italic":false}]
+                ["",{"text":"リスポーンバナーコンパス","color":"light_purple","bold":false,"italic":false}]
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                ["",{"text":"近くの敵プレイヤーの現在の座標を通知。","color":"white","bold":false,"italic":false}],
-                [""],
-                ["",{"text":"右クリックで使用","color":"","bold":false,"italic":false}]
+                ["",{"text":"ランダムな味方プレイヤーのリスポーン","color":"white","bold":false,"italic":false}],
+                ["",{"text":"バナーの座標を常に差し続ける。","color":"white","bold":false,"italic":false}]
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MinecartItem\"],EntityTag:{Invisible:1b,Marker:0b,Invulnerable:0b,Health:1.0f,Silent:1b,NoAI:1b,DeathLootTable:\"mad:ongame/chest_minecart_item/empty\",CustomNameVisible:0b}}"
+              "tag": "{Tags:[\"MinecartItem\"],Item:{tag:{LodestoneTracked:1b}}}"
             }
           ]
         }

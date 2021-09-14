@@ -250,6 +250,12 @@ scoreboard objectives add UseTransmitter minecraft.used:minecraft.vindicator_spa
 scoreboard objectives add TransmitterPosX dummy
 scoreboard objectives add TransmitterPosY dummy
 scoreboard objectives add TransmitterPosZ dummy
+scoreboard objectives add BannerDimension dummy
+scoreboard objectives add BannerPosX dummy
+scoreboard objectives add BannerPosY dummy
+scoreboard objectives add BannerPosZ dummy
+scoreboard objectives add SetRespawnBanner dummy
+scoreboard objectives add TempBannerNum dummy
 ## Add scoreboards for emergency call
 scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse_spawn_egg
 ## Add scoreboards for armor upgrader
@@ -541,6 +547,7 @@ scoreboard players set @a UseTransmitter 0
 scoreboard players set @a TransmitterPosX 0
 scoreboard players set @a TransmitterPosY 0
 scoreboard players set @a TransmitterPosZ 0
+scoreboard players set @a SetRespawnBanner 0
 ## Set scoreboards for emergency call
 scoreboard players set @a UseEmergencyCall 0
 ## Set scoreboards for armor upgrader

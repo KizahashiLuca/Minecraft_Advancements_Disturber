@@ -9,5 +9,6 @@
 #####################################
 
 ## Break respawn banner
+setblock ~ 0 ~ minecraft:bedrock
 fill ~ ~ ~ ~ ~1 ~ minecraft:air replace
 kill @s

@@ -250,6 +250,12 @@ scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX
 scoreboard objectives remove TransmitterPosY
 scoreboard objectives remove TransmitterPosZ
+scoreboard objectives remove BannerDimension
+scoreboard objectives remove BannerPosX
+scoreboard objectives remove BannerPosY
+scoreboard objectives remove BannerPosZ
+scoreboard objectives remove SetRespawnBanner
+scoreboard objectives remove TempBannerNum
 ## Remove scoreboards for emergency call
 scoreboard objectives remove UseEmergencyCall
 ## Remove scoreboards for armor upgrader
