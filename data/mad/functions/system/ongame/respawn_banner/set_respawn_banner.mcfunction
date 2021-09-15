@@ -25,21 +25,28 @@ execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","T
 execute as @s[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead","TeamE"]}}}] run item replace block ~ ~ ~ container.13 with minecraft:purple_banner
 
 ## Set lodestone
-execute at @s align x align z unless block ~-0.5 0 ~0.5 minecraft:lodestone run setblock ~-1 0 ~ minecraft:bedrock
-execute at @s align x align z unless block ~1.5 0 ~0.5 minecraft:lodestone run setblock ~1 0 ~ minecraft:bedrock
-execute at @s align x align z unless block ~0.5 0 ~-0.5 minecraft:lodestone run setblock ~ 0 ~-1 minecraft:bedrock
-execute at @s align x align z unless block ~0.5 0 ~1.5 minecraft:lodestone run setblock ~ 0 ~1 minecraft:bedrock
-execute at @s align x align z run setblock ~0.5 1 ~0.5 minecraft:bedrock
-execute at @s align x align z run setblock ~0.5 0 ~0.5 minecraft:lodestone
+# execute at @s align x align z unless block ~-0.5 0 ~0.5 minecraft:lodestone run setblock ~-1 0 ~ minecraft:bedrock
+# execute at @s align x align z unless block ~1.5 0 ~0.5 minecraft:lodestone run setblock ~1 0 ~ minecraft:bedrock
+# execute at @s align x align z unless block ~0.5 0 ~-0.5 minecraft:lodestone run setblock ~ 0 ~-1 minecraft:bedrock
+# execute at @s align x align z unless block ~0.5 0 ~1.5 minecraft:lodestone run setblock ~ 0 ~1 minecraft:bedrock
+# execute at @s align x align z run setblock ~0.5 1 ~0.5 minecraft:bedrock
+# execute at @s align x align z run setblock ~0.5 0 ~0.5 minecraft:lodestone
 
 ## Set scoreboard
 scoreboard players set @a[tag=DetectedBannerOwner] SetRespawnBanner 1
-execute at @s align x align z in minecraft:overworld run scoreboard players set @a[tag=DetectedBannerOwner] BannerDimension 1
-execute at @s align x align z in minecraft:the_nether run scoreboard players set @a[tag=DetectedBannerOwner] BannerDimension 2
-execute at @s align x align z in minecraft:the_end run scoreboard players set @a[tag=DetectedBannerOwner] BannerDimension 3
+execute at @s[predicate=mad:ongame/dimension/overworld] run scoreboard players set @a[tag=DetectedBannerOwner] BannerDimension 1
+execute at @s[predicate=mad:ongame/dimension/the_nether] run scoreboard players set @a[tag=DetectedBannerOwner] BannerDimension 2
+execute at @s[predicate=mad:ongame/dimension/the_end] run scoreboard players set @a[tag=DetectedBannerOwner] BannerDimension 3
 execute at @s align x align z store result score @a[tag=DetectedBannerOwner] BannerPosX run data get entity @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンバナー"}'},sort=nearest,limit=1] Pos[0]
 execute at @s align x align z store result score @a[tag=DetectedBannerOwner] BannerPosY run data get entity @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンバナー"}'},sort=nearest,limit=1] Pos[1]
 execute at @s align x align z store result score @a[tag=DetectedBannerOwner] BannerPosZ run data get entity @e[type=minecraft:armor_stand,nbt={CustomName:'{"text":"リスポーンバナー"}'},sort=nearest,limit=1] Pos[2]
+
+## Message
+execute as @a[tag=DetectedBannerOwner,team=TeamA] run function mad:system/ongame/respawn_banner/team/team_a
+execute as @a[tag=DetectedBannerOwner,team=TeamB] run function mad:system/ongame/respawn_banner/team/team_b
+execute as @a[tag=DetectedBannerOwner,team=TeamC] run function mad:system/ongame/respawn_banner/team/team_c
+execute as @a[tag=DetectedBannerOwner,team=TeamD] run function mad:system/ongame/respawn_banner/team/team_d
+execute as @a[tag=DetectedBannerOwner,team=TeamE] run function mad:system/ongame/respawn_banner/team/team_e
 
 ## Remove a tag
 tag @a remove DetectedBannerOwner
