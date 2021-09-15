@@ -55,4 +55,3 @@ tag @e remove CenterOfWorld
 
 ## Set respawn beacon
 execute as @e[predicate=mad:ongame/respawn_beacon_position] at @s align x align z run tp @s ~0.5 ~ ~0.5
-execute as @e[predicate=mad:ongame/respawn_beacon_position] at @s run forceload add ~ ~ ~ ~
