@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "feet": {
+          "nbt": "{Tags:[\"Lavawalker\"]}"
+        }
+      },
+      "nbt": "{OnGround:1b}"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "player": {
+          "gamemode": "spectator"
+        }
+      }
+    }
+  }
+]
