@@ -9,7 +9,7 @@
 #####################################
 
 ## Set gamerule
-gamerule doImmediateRespawn true
+gamerule doImmediateRespawn false
 execute in minecraft:overworld run gamerule spectatorsGenerateChunks true
 execute in minecraft:the_nether run gamerule spectatorsGenerateChunks true
 execute in minecraft:the_end run gamerule spectatorsGenerateChunks true
