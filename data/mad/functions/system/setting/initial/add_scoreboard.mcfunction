@@ -271,6 +271,7 @@ scoreboard objectives add ThiefSecond dummy
 scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
 ## Add scoreboards for mobile respawn beacon
 scoreboard objectives add MobileBeaconNum dummy
+scoreboard objectives add MobileBeaconTmp dummy
 ## Add scoreboards for team
 scoreboard objectives add TeamBoolean dummy
 scoreboard objectives add DeadOwnTeam dummy

@@ -16,6 +16,7 @@ advancement grant @a until mad:potage00/original
 
 ## Take recipes
 recipe take @a *
+recipe give @a[tag=Participant] mad:mobile_respawn_beacon
 
 ## Set gamemode
 gamemode survival @a[tag=Participant]

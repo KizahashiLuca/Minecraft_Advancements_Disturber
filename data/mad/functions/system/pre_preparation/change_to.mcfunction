@@ -63,6 +63,7 @@ advancement revoke @a everything
 
 ## Take recipes
 recipe take @a *
+recipe give @a[tag=Participant] mad:mobile_respawn_beacon
 
 ## Set effect
 effect clear @a

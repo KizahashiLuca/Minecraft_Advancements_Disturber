@@ -271,6 +271,7 @@ scoreboard objectives remove ThiefSecond
 scoreboard objectives remove Sneak
 ## Remove scoreboards for mobile respawn beacon
 scoreboard objectives remove MobileBeaconNum
+scoreboard objectives remove MobileBeaconTmp
 ## Remove scoreboards for team
 scoreboard objectives remove TeamBoolean
 scoreboard objectives remove DeadOwnTeam

@@ -117,3 +117,6 @@ gamerule doMobSpawning false
 gamerule keepInventory true
 gamerule doFireTick false
 difficulty peaceful
+
+## Reset recipe
+recipe take @a mad:mobile_respawn_beacon

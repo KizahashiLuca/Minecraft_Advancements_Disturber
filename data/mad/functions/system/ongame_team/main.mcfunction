@@ -79,6 +79,7 @@ execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run func
 
 ## Detect mobile respawn beacon
 execute as @e[predicate=mad:ongame/mobile_respawn_beacon_position] at @s run function mad:system/ongame/mobile_respawn_beacon/construct_mobile_beacon
+execute as @e[predicate=mad:ongame/item_of_bedrock] at @s run function mad:system/ongame/mobile_respawn_beacon/summon_mobile_beacon
 execute as @e[type=minecraft:area_effect_cloud,tag=MobileRespawnBeacon] at @s run function mad:system/ongame/mobile_respawn_beacon/main
 
 ## Detect respawn banner
