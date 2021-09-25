@@ -52,8 +52,6 @@ execute if score #mad IsTeam matches 1 run scoreboard players operation #mad Num
 scoreboard players set #mad NumDead 0
 scoreboard players set @a[tag=Participant] Phase 21
 
-scoreboard players set @a Sneak 0
-
 ## Set minecart
 execute if score #mad IsTeam matches 0 if score #mad WorldBorderEnd matches 0 run scoreboard players set #mad MinecartBranch 0
 execute if score #mad IsTeam matches 1 if score #mad WorldBorderEnd matches 0 run scoreboard players set #mad MinecartBranch 1

@@ -86,8 +86,6 @@ execute as @e[type=minecraft:area_effect_cloud,tag=MobileRespawnBeacon] at @s ru
 execute as @e[predicate=mad:ongame/respawn_banner] at @s run function mad:system/ongame/respawn_banner/main
 execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}}}] at @s run function mad:system/ongame/respawn_banner/set_respawn_banner
 
-## Set scoreboard
-scoreboard players set @a Sneak 0
 
 ## Game Finish
 scoreboard players operation #mad NumAlive = #mad TeamNumber

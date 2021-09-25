@@ -267,8 +267,6 @@ scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn
 scoreboard objectives add StealItemPlayer dummy
 scoreboard objectives add ThiefTick dummy
 scoreboard objectives add ThiefSecond dummy
-## Add scoreboards for respawn beacon
-scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
 ## Add scoreboards for mobile respawn beacon
 scoreboard objectives add MobileBeaconNum dummy
 scoreboard objectives add MobileBeaconTmp dummy
