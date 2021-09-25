@@ -20,5 +20,8 @@ summon minecraft:area_effect_cloud ~0.0 ~ ~0.0 {Tags:["MobileRespawnBeacon"],NoG
 scoreboard players operation @e[type=minecraft:area_effect_cloud,distance=..0.2,tag=MobileRespawnBeacon] MobileBeaconNum = #mad MobileBeaconNum
 scoreboard players add #mad MobileBeaconNum 1
 
+## Add a tag
+tag @s add DetectedMobileBeacon
+
 ## Kill armor stand
 kill @s

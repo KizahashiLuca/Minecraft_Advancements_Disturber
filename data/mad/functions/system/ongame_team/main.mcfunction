@@ -80,12 +80,11 @@ execute as @e[predicate=mad:ongame/respawn_beacon/position] at @s run function m
 ## Detect mobile respawn beacon
 execute as @e[predicate=mad:ongame/item_of_bedrock] at @s run function mad:system/ongame/mobile_respawn_beacon/summon_mobile_beacon
 execute as @e[predicate=mad:ongame/mobile_respawn_beacon/structure] at @s run function mad:system/ongame/mobile_respawn_beacon/main
-execute as @e[predicate=mad:ongame/mobile_respawn_beacon/position] at @s unless entity @e[predicate=mad:ongame/respawn_banner/structure,distance=..3] unless entity @e[predicate=mad:ongame/respawn_beacon/structure,distance=..3] run function mad:system/ongame/mobile_respawn_beacon/construct_mobile_beacon
+execute as @e[predicate=mad:ongame/mobile_respawn_beacon/position] at @s run function mad:system/ongame/mobile_respawn_beacon/construct_mobile_beacon/main
 
 ## Detect respawn banner
 execute as @e[predicate=mad:ongame/respawn_banner/structure] at @s run function mad:system/ongame/respawn_banner/main
 execute as @e[predicate=mad:ongame/respawn_banner/position] at @s run function mad:system/ongame/respawn_banner/set_respawn_banner
-
 
 ## Game Finish
 scoreboard players operation #mad NumAlive = #mad TeamNumber
