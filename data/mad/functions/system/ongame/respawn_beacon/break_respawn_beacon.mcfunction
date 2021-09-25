@@ -28,4 +28,4 @@ setblock ~-0.5 ~ ~-0.5 minecraft:air
 setblock ~-0.5 ~1 ~-0.5 minecraft:air
 
 # Kill armor stand
-kill @e[predicate=mad:ongame/respawn_beacon_position,distance=..0.2,sort=nearest,limit=1]
+kill @e[predicate=mad:ongame/respawn_beacon/position,distance=..0.2,sort=nearest,limit=1]

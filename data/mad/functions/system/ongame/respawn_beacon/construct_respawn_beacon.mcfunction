@@ -32,7 +32,7 @@ execute if score @s BeaconNumber matches 1 run tp @a ~ ~4 ~
 
 ## Summon cloud
 summon minecraft:area_effect_cloud ~0.0 ~ ~0.0 {Tags:["RespawnBeacon"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,CustomName:'{"text":"リスポーンビーコン"}',CustomNameVisible:1b,Duration:2147483647}
-scoreboard players operation @e[type=minecraft:area_effect_cloud,distance=..0.2,tag=RespawnBeacon] BeaconNumber = @s BeaconNumber
+scoreboard players operation @e[predicate=mad:ongame/respawn_beacon/structure,distance=..0.2] BeaconNumber = @s BeaconNumber
 
 ## Kill armor stand
 kill @s

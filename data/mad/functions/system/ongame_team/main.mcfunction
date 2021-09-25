@@ -74,17 +74,17 @@ execute as @a[tag=SetThief] run function mad:system/ongame/notice_of_thief/time/
 execute as @e[predicate=mad:ongame/return_portal] at @s run function mad:system/ongame/return_portal/main
 
 ## Detect respawn beacon
-execute as @e[predicate=mad:ongame/respawn_beacon_position] at @s run function mad:system/ongame/respawn_beacon/construct_respawn_beacon
-execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run function mad:system/ongame/respawn_beacon/main
+execute as @e[predicate=mad:ongame/respawn_beacon/structure] at @s run function mad:system/ongame/respawn_beacon/main
+execute as @e[predicate=mad:ongame/respawn_beacon/position] at @s run function mad:system/ongame/respawn_beacon/construct_respawn_beacon
 
 ## Detect mobile respawn beacon
-execute as @e[predicate=mad:ongame/mobile_respawn_beacon_position] at @s run function mad:system/ongame/mobile_respawn_beacon/construct_mobile_beacon
 execute as @e[predicate=mad:ongame/item_of_bedrock] at @s run function mad:system/ongame/mobile_respawn_beacon/summon_mobile_beacon
-execute as @e[type=minecraft:area_effect_cloud,tag=MobileRespawnBeacon] at @s run function mad:system/ongame/mobile_respawn_beacon/main
+execute as @e[predicate=mad:ongame/mobile_respawn_beacon/structure] at @s run function mad:system/ongame/mobile_respawn_beacon/main
+execute as @e[predicate=mad:ongame/mobile_respawn_beacon/position] at @s unless entity @e[predicate=mad:ongame/respawn_banner/structure,distance=..3] unless entity @e[predicate=mad:ongame/respawn_beacon/structure,distance=..3] run function mad:system/ongame/mobile_respawn_beacon/construct_mobile_beacon
 
 ## Detect respawn banner
-execute as @e[predicate=mad:ongame/respawn_banner] at @s run function mad:system/ongame/respawn_banner/main
-execute as @e[type=minecraft:item,nbt={Item:{tag:{Tags:["RespawnBannerByDead"]}}}] at @s run function mad:system/ongame/respawn_banner/set_respawn_banner
+execute as @e[predicate=mad:ongame/respawn_banner/structure] at @s run function mad:system/ongame/respawn_banner/main
+execute as @e[predicate=mad:ongame/respawn_banner/position] at @s run function mad:system/ongame/respawn_banner/set_respawn_banner
 
 
 ## Game Finish

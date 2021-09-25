@@ -25,8 +25,7 @@ execute as @a[scores={OnGround=1},tag=Participant] at @s run function mad:system
 execute as @a[scores={OnGround=2},tag=Participant] run function mad:system/preparation/teleport
 
 ## Detect respawn beacon
-execute as @e[predicate=mad:ongame/respawn_beacon_position] at @s run function mad:system/ongame/respawn_beacon/construct_respawn_beacon
-execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run function mad:system/ongame/respawn_beacon/main
+execute as @e[predicate=mad:ongame/respawn_beacon/position] at @s run function mad:system/ongame/respawn_beacon/construct_respawn_beacon
 
 ## Change phase
 execute unless entity @p[scores={OnGround=0..1},tag=Participant] run function mad:system/preparation/send_message
