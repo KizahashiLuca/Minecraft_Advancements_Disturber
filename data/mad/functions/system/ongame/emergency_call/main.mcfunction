@@ -28,8 +28,6 @@ tellraw @s ["",{"text":"[緊急招集] チームメンバーを緊急招集し�
 tellraw @a[tag=EmergencyCallee] ["",{"text":"[緊急招集]  ","color":"green"},{"selector":"@s","color":"green"},{"text":" から緊急招集を受けました。","color":"green"}]
 
 ## Kill zombie_horse
-data modify entity @e[type=minecraft:zombie_horse,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"緊急招集"}],"text":""}'},sort=nearest,limit=1] CustomNameVisible set value 0b
-effect give @e[type=minecraft:zombie_horse,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"緊急招集"}],"text":""}'},sort=nearest,limit=1] minecraft:invisibility 100000 1 true
 kill @e[type=minecraft:zombie_horse,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"緊急招集"}],"text":""}'},sort=nearest,limit=1]
 
 ## Remove tags

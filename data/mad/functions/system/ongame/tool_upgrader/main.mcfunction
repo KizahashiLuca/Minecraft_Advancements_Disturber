@@ -28,6 +28,4 @@ execute if predicate mad:ongame/tool_upgrader/offhand/shovel run function mad:sy
 execute if predicate mad:ongame/tool_upgrader/offhand/sword run function mad:system/ongame/tool_upgrader/upgrade_offhand_sword
 
 ## Kill turtle
-data modify entity @e[type=minecraft:turtle,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"ツールアップグレードキット"}],"text":""}'},sort=nearest,limit=1] CustomNameVisible set value 0b
-effect give @e[type=minecraft:turtle,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"ツールアップグレードキット"}],"text":""}'},sort=nearest,limit=1] minecraft:invisibility 100000 1 true
 kill @e[type=minecraft:turtle,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"ツールアップグレードキット"}],"text":""}'},sort=nearest,limit=1]
