@@ -17,7 +17,7 @@
   },
   "rewards": {
     "experience": 100,
-    "function": "mad:system/ongame/advancements/husbandry/plant_seed"
+    "function": "mad:system/ongame/advancements/husbandry/balanced_diet"
   },
   "criteria": {
     "apple": {
