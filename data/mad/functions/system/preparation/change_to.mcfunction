@@ -29,7 +29,7 @@ execute if score #mad IsTeam matches 1 run tellraw @a ["",{"text":"  リスポ�
 function mad:system/finish/message_common_end
 
 ## Reset respawn beacon #1
-execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon,scores={BeaconNumber=1}] at @s run fill ~-1 ~4 ~-1 ~1 ~6 ~1 minecraft:air
+execute as @e[predicate=mad:ongame/respawn_beacon/structure,scores={BeaconNumber=1}] at @s run fill ~-1 ~4 ~-1 ~1 ~6 ~1 minecraft:air
 
 ## Teleport
 execute if score #mad IsTeam matches 0 at @e[predicate=mad:ongame/entity/world_spawn,limit=1] run function mad:system/preparation/random_teleport_individual

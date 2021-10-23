@@ -22,9 +22,9 @@ execute in minecraft:overworld run worldborder set 59999968
 forceload remove all
 
 ## Reset respawn banner
-execute as @e[predicate=mad:ongame/respawn_banner] at @s run function mad:system/ongame/respawn_banner/break_respawn_banner
-execute as @e[type=minecraft:area_effect_cloud,tag=RespawnBeacon] at @s run function mad:system/ongame/respawn_beacon/break_respawn_beacon
-execute as @e[type=minecraft:area_effect_cloud,tag=MobileRespawnBeacon] at @s run fill ~-1 ~ ~-1 ~1 ~1 ~1 minecraft:air replace
+execute as @e[predicate=mad:ongame/respawn_banner/structure] at @s run function mad:system/ongame/respawn_banner/break_respawn_banner
+execute as @e[predicate=mad:ongame/respawn_beacon/structure] at @s run function mad:system/ongame/respawn_beacon/break_respawn_beacon
+execute as @e[predicate=mad:ongame/mobile_respawn_beacon/structure] at @s run fill ~-1 ~ ~-1 ~1 ~1 ~1 minecraft:air replace
 
 ## Remove scoreboards
 function mad:system/finish/reset_scoreboard
@@ -63,6 +63,7 @@ tag @a remove RespawnBannerSet2
 tag @a remove RespawnBannerSet3
 tag @a remove RespawnBannerSet4
 tag @a remove RespawnBannerSet5
+tag @a remove DetectedBannerOwner
 tag @a remove MobileRespawnBannerSet
 tag @a remove MobileRespawnBannerSetTmp
 tag @a remove DetectMobileBeaconTag
@@ -83,12 +84,12 @@ kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
-kill @e[predicate=mad:ongame/respawn_banner]
+kill @e[predicate=mad:ongame/respawn_banner/structure]
 kill @e[predicate=mad:ongame/tool_upgrader]
 kill @e[predicate=mad:ongame/armor_upgrader]
-kill @e[predicate=mad:ongame/respawn_beacon_position]
+kill @e[predicate=mad:ongame/respawn_beacon/position]
 kill @e[predicate=mad:ongame/return_portal]
-kill @e[predicate=mad:ongame/mobile_respawn_beacon_position]
+kill @e[predicate=mad:ongame/mobile_respawn_beacon/position]
 kill @e[type=minecraft:armor_stand,tag=MinecartItem]
 execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
 
@@ -116,3 +117,6 @@ gamerule doMobSpawning false
 gamerule keepInventory true
 gamerule doFireTick false
 difficulty peaceful
+
+## Reset recipe
+recipe take @a mad:mobile_respawn_beacon

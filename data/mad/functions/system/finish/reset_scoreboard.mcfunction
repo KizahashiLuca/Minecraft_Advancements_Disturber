@@ -250,6 +250,12 @@ scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX
 scoreboard objectives remove TransmitterPosY
 scoreboard objectives remove TransmitterPosZ
+scoreboard objectives remove BannerDimension
+scoreboard objectives remove BannerPosX
+scoreboard objectives remove BannerPosY
+scoreboard objectives remove BannerPosZ
+scoreboard objectives remove SetRespawnBanner
+scoreboard objectives remove TempBannerNum
 ## Remove scoreboards for emergency call
 scoreboard objectives remove UseEmergencyCall
 ## Remove scoreboards for armor upgrader
@@ -261,10 +267,9 @@ scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove StealItemPlayer
 scoreboard objectives remove ThiefTick
 scoreboard objectives remove ThiefSecond
-## Remove scoreboards for respawn beacon
-scoreboard objectives remove Sneak
 ## Remove scoreboards for mobile respawn beacon
 scoreboard objectives remove MobileBeaconNum
+scoreboard objectives remove MobileBeaconTmp
 ## Remove scoreboards for team
 scoreboard objectives remove TeamBoolean
 scoreboard objectives remove DeadOwnTeam

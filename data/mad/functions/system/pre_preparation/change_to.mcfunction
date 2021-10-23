@@ -9,7 +9,7 @@
 #####################################
 
 ## Set gamerule
-gamerule doImmediateRespawn true
+gamerule doImmediateRespawn false
 execute in minecraft:overworld run gamerule spectatorsGenerateChunks true
 execute in minecraft:the_nether run gamerule spectatorsGenerateChunks true
 execute in minecraft:the_end run gamerule spectatorsGenerateChunks true
@@ -63,6 +63,7 @@ advancement revoke @a everything
 
 ## Take recipes
 recipe take @a *
+recipe give @a[tag=Participant] mad:mobile_respawn_beacon
 
 ## Set effect
 effect clear @a

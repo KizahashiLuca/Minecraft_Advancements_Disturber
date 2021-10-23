@@ -12,7 +12,7 @@
 tag @s add RespawnBeaconTick
 
 ## Calculate time every tick
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={Sneak=1..},distance=..2] run scoreboard players remove @e[tag=RespawnBeaconTick] Tick 1
+execute as @a[predicate=mad:ongame/player/participant_alive_on_sneak,distance=..2] run scoreboard players remove @e[tag=RespawnBeaconTick] Tick 1
 
 ## Calculate time every second
 execute as @s[tag=RespawnBeaconTick,scores={Tick=..-1}] run function mad:system/ongame/respawn_beacon/time/second

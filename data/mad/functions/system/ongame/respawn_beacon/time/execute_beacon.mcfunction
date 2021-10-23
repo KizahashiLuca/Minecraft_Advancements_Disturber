@@ -34,6 +34,9 @@ execute as @p[tag=RespawnSoon,team=TeamC] run advancement grant @p[predicate=mad
 execute as @p[tag=RespawnSoon,team=TeamD] run advancement grant @p[predicate=mad:ongame/player/team_d_alive,sort=nearest] only mad:potage00/friendship
 execute as @p[tag=RespawnSoon,team=TeamE] run advancement grant @p[predicate=mad:ongame/player/team_e_alive,sort=nearest] only mad:potage00/friendship
 
+## Remove scoreboard
+scoreboard players set @p[tag=RespawnSoon] SetRespawnBanner 0
+
 ## Remove tags
 tag @p[tag=RespawnSoon] remove RespawnBannerSet1
 tag @p[tag=RespawnSoon] remove RespawnBannerSet2

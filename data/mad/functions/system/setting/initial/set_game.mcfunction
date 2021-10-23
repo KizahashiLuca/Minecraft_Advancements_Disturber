@@ -14,7 +14,7 @@ function mad:system/finish/reset_game
 ## Set gamerule
 gamemode adventure @a[gamemode=!spectator]
 gamerule spectatorsGenerateChunks true
-gamerule doImmediateRespawn true
+gamerule doImmediateRespawn false
 gamerule doLimitedCrafting true
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false

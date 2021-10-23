@@ -12,11 +12,7 @@
 worldborder set 101
 
 ## Set cloud
-execute align xyz positioned ~50 0 ~50 run forceload add ~ ~ ~ ~
 execute align xyz run summon minecraft:area_effect_cloud ~50 0 ~50 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute align xyz positioned ~-50 0 ~50 run forceload add ~ ~ ~ ~
 execute align xyz run summon minecraft:area_effect_cloud ~-50 0 ~50 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute align xyz positioned ~50 0 ~-50 run forceload add ~ ~ ~ ~
 execute align xyz run summon minecraft:area_effect_cloud ~50 0 ~-50 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute align xyz positioned ~-50 0 ~-50 run forceload add ~ ~ ~ ~
 execute align xyz run summon minecraft:area_effect_cloud ~-50 0 ~-50 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}

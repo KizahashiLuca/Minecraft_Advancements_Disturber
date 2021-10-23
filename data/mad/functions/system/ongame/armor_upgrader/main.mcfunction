@@ -86,6 +86,4 @@ item replace entity @s armor.head with minecraft:air
 tellraw @s ["",{"text":"[防具改修] 防具をアップグレードしました。","color":"green"}]
 
 ## Kill bat
-data modify entity @e[type=minecraft:bat,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"防具アップグレードキット"}],"text":""}'},sort=nearest,limit=1] CustomNameVisible set value 0b
-effect give @e[type=minecraft:bat,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"防具アップグレードキット"}],"text":""}'},sort=nearest,limit=1] minecraft:invisibility 100000 1 true
 kill @e[type=minecraft:bat,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"防具アップグレードキット"}],"text":""}'},sort=nearest,limit=1]

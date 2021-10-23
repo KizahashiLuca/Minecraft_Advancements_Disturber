@@ -16,6 +16,7 @@ advancement grant @a until mad:potage00/original
 
 ## Take recipes
 recipe take @a *
+recipe give @a[tag=Participant] mad:mobile_respawn_beacon
 
 ## Set gamemode
 gamemode survival @a[tag=Participant]
@@ -50,8 +51,6 @@ scoreboard players enable @a TeleportCenter
 execute if score #mad IsTeam matches 1 run scoreboard players operation #mad NumAlive = #mad TeamNumber
 scoreboard players set #mad NumDead 0
 scoreboard players set @a[tag=Participant] Phase 21
-
-scoreboard players set @a Sneak 0
 
 ## Set minecart
 execute if score #mad IsTeam matches 0 if score #mad WorldBorderEnd matches 0 run scoreboard players set #mad MinecartBranch 0

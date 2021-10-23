@@ -27,7 +27,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MinecartItem\"],EntityTag:{Invisible:1b,Marker:0b,Invulnerable:0b,Health:1.0f,Silent:1b,NoAI:1b,DeathLootTable:\"mad:ongame/chest_minecart_item/empty\",CustomNameVisible:0b}}"
+              "tag": "{Tags:[\"MinecartItem\"],EntityTag:{Marker:0b,Invulnerable:1b,Health:1.0f,Silent:1b,NoAI:1b,DeathLootTable:\"mad:ongame/chest_minecart_item/empty\",ActiveEffects:[{Ambient:0b,ShowIcon:0b,ShowParticles:0b,Id:14b,Amplifier:0b,Duration:2147483647}],CustomNameVisible:0b}}"
             }
           ]
         }

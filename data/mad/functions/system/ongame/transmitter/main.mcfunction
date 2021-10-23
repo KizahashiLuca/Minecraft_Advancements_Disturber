@@ -29,7 +29,5 @@ execute unless entity @p[tag=TransmitPlayer] run tellraw @s ["",{"text":"[発 �
 tag @a remove TransmitPlayer
 tag @a remove DetectTransmitter
 
-## Kill bat
-data modify entity @e[type=minecraft:vindicator,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"発信機"}],"text":""}'},sort=nearest,limit=1] CustomNameVisible set value 0b
-effect give @e[type=minecraft:vindicator,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"発信機"}],"text":""}'},sort=nearest,limit=1] minecraft:invisibility 100000 1 true
+## Kill vindicator
 kill @e[type=minecraft:vindicator,nbt={CustomName:'{"extra":[{"bold":false,"italic":false,"color":"light_purple","text":"発信機"}],"text":""}'},sort=nearest,limit=1]

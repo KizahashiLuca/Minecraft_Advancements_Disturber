@@ -250,6 +250,12 @@ scoreboard objectives add UseTransmitter minecraft.used:minecraft.vindicator_spa
 scoreboard objectives add TransmitterPosX dummy
 scoreboard objectives add TransmitterPosY dummy
 scoreboard objectives add TransmitterPosZ dummy
+scoreboard objectives add BannerDimension dummy
+scoreboard objectives add BannerPosX dummy
+scoreboard objectives add BannerPosY dummy
+scoreboard objectives add BannerPosZ dummy
+scoreboard objectives add SetRespawnBanner dummy
+scoreboard objectives add TempBannerNum dummy
 ## Add scoreboards for emergency call
 scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse_spawn_egg
 ## Add scoreboards for armor upgrader
@@ -261,10 +267,9 @@ scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn
 scoreboard objectives add StealItemPlayer dummy
 scoreboard objectives add ThiefTick dummy
 scoreboard objectives add ThiefSecond dummy
-## Add scoreboards for respawn beacon
-scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
 ## Add scoreboards for mobile respawn beacon
 scoreboard objectives add MobileBeaconNum dummy
+scoreboard objectives add MobileBeaconTmp dummy
 ## Add scoreboards for team
 scoreboard objectives add TeamBoolean dummy
 scoreboard objectives add DeadOwnTeam dummy
@@ -541,6 +546,7 @@ scoreboard players set @a UseTransmitter 0
 scoreboard players set @a TransmitterPosX 0
 scoreboard players set @a TransmitterPosY 0
 scoreboard players set @a TransmitterPosZ 0
+scoreboard players set @a SetRespawnBanner 0
 ## Set scoreboards for emergency call
 scoreboard players set @a UseEmergencyCall 0
 ## Set scoreboards for armor upgrader
