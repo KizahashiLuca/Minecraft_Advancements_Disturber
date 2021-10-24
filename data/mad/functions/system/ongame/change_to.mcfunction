@@ -13,10 +13,12 @@ advancement revoke @a everything
 advancement grant @a until mad:potage00/adventure
 advancement grant @a until mad:potage00/collect
 advancement grant @a until mad:potage00/original
+advancement grant @a until mad:achievements/root
 
 ## Take recipes
 recipe take @a *
-recipe give @a[tag=Participant] mad:mobile_respawn_beacon
+execute if score #mad IsTeam matches 1 run recipe give @a[tag=Participant] mad:mobile_respawn_beacon
+recipe give @a[tag=Participant] mad:tnt
 
 ## Set gamemode
 gamemode survival @a[tag=Participant]

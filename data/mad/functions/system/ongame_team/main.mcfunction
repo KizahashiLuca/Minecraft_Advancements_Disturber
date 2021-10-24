@@ -23,6 +23,7 @@ execute as @a run function mad:system/ongame/set_position/main
 
 ## Execute advancements
 function mad:system/ongame/advancements/potage00/execute_advancements
+function mad:system/ongame/advancements/achievements/execute_advancements
 
 ## Detect death
 execute as @a[predicate=mad:ongame/player/participant_dying] run function mad:system/ongame_team/detect_death
