@@ -276,6 +276,21 @@ scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn
 scoreboard objectives add StealItemPlayer dummy
 scoreboard objectives add ThiefTick dummy
 scoreboard objectives add ThiefSecond dummy
+## Add scoreboards for teleporter
+scoreboard objectives add UseTeleporter minecraft.dropped:minecraft.lantern
+scoreboard objectives add UseSetTeleporter minecraft.dropped:minecraft.soul_lantern
+scoreboard objectives add TeleporterTemp1 dummy
+scoreboard objectives add TeleporterTemp2 dummy
+scoreboard objectives add TeleporterTemp3 dummy
+scoreboard objectives add TeleportDimens dummy
+scoreboard objectives add TeleportX dummy
+scoreboard objectives add TeleportY dummy
+scoreboard objectives add TeleportZ dummy
+scoreboard objectives add TeleportTick dummy
+scoreboard objectives add UUID0 dummy
+scoreboard objectives add UUID1 dummy
+scoreboard objectives add UUID2 dummy
+scoreboard objectives add UUID3 dummy
 ## Add scoreboards for mobile respawn beacon
 scoreboard objectives add MobileBeaconNum dummy
 scoreboard objectives add MobileBeaconTmp dummy
@@ -576,6 +591,18 @@ scoreboard players set @a UseNoticeOfThief 0
 scoreboard players set @a StealItemPlayer 0
 scoreboard players set @a ThiefTick 0
 scoreboard players set @a ThiefSecond 5
+## Add scoreboards for teleporter
+scoreboard players set @a UseTeleporter 0
+scoreboard players set @a UseSetTeleporter 0
+scoreboard players set @a TeleportDimens 0
+scoreboard players set @a TeleportX 0
+scoreboard players set @a TeleportY 0
+scoreboard players set @a TeleportZ 0
+scoreboard players set @a TeleportTick 0
+execute as @a store result score @s UUID0 run data get entity @s UUID[0]
+execute as @a store result score @s UUID1 run data get entity @s UUID[1]
+execute as @a store result score @s UUID2 run data get entity @s UUID[2]
+execute as @a store result score @s UUID3 run data get entity @s UUID[3]
 ## Set scoreboards for mobile respawn beacon
 scoreboard players set @a MobileBeaconNum 0
 ## Set scoreboards for team

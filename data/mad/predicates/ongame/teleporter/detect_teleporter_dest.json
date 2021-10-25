@@ -1,0 +1,23 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"DetectUseSetTelep\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "TeleporterTemp2": {
+        "min": 0,
+        "max": 0
+      },
+      "TeleporterTemp3": {
+        "min": 0,
+        "max": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:item",
+      "nbt": "{Item:{id:\"minecraft:soul_lantern\",tag:{Tags:[\"MinecartItem\"]}}}"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{tag:{Tags:[\"UnsetStorage\"]}}"
+      }
+    }
+  }
+]

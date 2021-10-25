@@ -71,6 +71,10 @@ execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseEmergency
 execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseNoticeOfThief=1..}] at @s run function mad:system/ongame/notice_of_thief/main
 execute as @a[tag=SetThief] run function mad:system/ongame/notice_of_thief/time/tick
 
+## Detect teleporter
+execute as @a[predicate=mad:ongame/teleporter/main] at @s run function mad:system/ongame/teleporter/main
+execute as @e[tag=TeleporterDest] at @s run function mad:system/ongame/teleporter/time/tick
+
 ## Detect return portal
 execute as @e[predicate=mad:ongame/return_portal] at @s run function mad:system/ongame/return_portal/main
 

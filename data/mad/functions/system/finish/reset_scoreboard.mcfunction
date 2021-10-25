@@ -276,6 +276,21 @@ scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove StealItemPlayer
 scoreboard objectives remove ThiefTick
 scoreboard objectives remove ThiefSecond
+## Remove scoreboards for teleporter
+scoreboard objectives remove UseTeleporter
+scoreboard objectives remove UseSetTeleporter
+scoreboard objectives remove TeleporterTemp1
+scoreboard objectives remove TeleporterTemp2
+scoreboard objectives remove TeleporterTemp3
+scoreboard objectives remove TeleportDimens
+scoreboard objectives remove TeleportX
+scoreboard objectives remove TeleportY
+scoreboard objectives remove TeleportZ
+scoreboard objectives remove TeleportTick
+scoreboard objectives remove UUID0
+scoreboard objectives remove UUID1
+scoreboard objectives remove UUID2
+scoreboard objectives remove UUID3
 ## Remove scoreboards for mobile respawn beacon
 scoreboard objectives remove MobileBeaconNum
 scoreboard objectives remove MobileBeaconTmp

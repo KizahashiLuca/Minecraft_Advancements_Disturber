@@ -69,9 +69,14 @@ tag @a remove MobileRespawnBannerSetTmp
 tag @a remove DetectMobileBeaconTag
 tag @a remove DetectRespawnPlayer
 tag @a remove RespawnSoon
+tag @a remove DetectUseSetTelep
+tag @a remove DetectTelepPlayer
 
 ## Reset effect
 effect clear @a
+
+## Remove storage
+data remove storage mad:teleporter Teleporter
 
 ## Reset player
 clear @a
@@ -87,6 +92,8 @@ kill @e[type=minecraft:area_effect_cloud]
 kill @e[predicate=mad:ongame/respawn_banner/structure]
 kill @e[predicate=mad:ongame/tool_upgrader]
 kill @e[predicate=mad:ongame/armor_upgrader]
+kill @e[predicate=mad:ongame/teleporter/temp_wolf]
+kill @e[predicate=mad:ongame/teleporter/temp_sheep]
 kill @e[predicate=mad:ongame/respawn_beacon/position]
 kill @e[predicate=mad:ongame/return_portal]
 kill @e[predicate=mad:ongame/mobile_respawn_beacon/position]

@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:lantern",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"テレポーター","color":"light_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                ["",{"text":"テレポート先を指定","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"translate":"(%s)+(%s)の同時押しで使用","with":[{"keybind":"key.sneak","color":"aqua","bold":false,"italic":false},{"keybind":"key.drop","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MinecartItem\"],HideFlags:63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

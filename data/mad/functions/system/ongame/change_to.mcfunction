@@ -15,6 +15,9 @@ advancement grant @a until mad:potage00/collect
 advancement grant @a until mad:potage00/original
 advancement grant @a until mad:achievements/root
 
+## Remove storage
+data remove storage mad:teleporter Teleporter
+
 ## Take recipes
 recipe take @a *
 execute if score #mad IsTeam matches 1 run recipe give @a[tag=Participant] mad:mobile_respawn_beacon

@@ -48,6 +48,9 @@ effect give @a[gamemode=!spectator] minecraft:resistance 1000000 6 true
 ## Remove advancements
 advancement revoke @a everything
 
+## Remove storage
+data remove storage mad:teleporter Teleporter
+
 ## Add tags
 tag @p[sort=nearest] add Host
 

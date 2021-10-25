@@ -1,0 +1,36 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:soul_lantern",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"指定済みテレポーター","color":"aqua","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore":[
+                ["",{"translate":"テレポート先 : %s.","with":[{"nbt":"Teleporter.Temp.Dimension","storage":"mad:teleporter","color":"green","bold":true,"italic":false}],"color":"white","bold":false,"italic":false}],
+                ["",{"translate":" (%s, %s, %s)","with":[{"score":{"name":"@s","objective":"TeleportX"}},{"score":{"name":"@s","objective":"TeleportY"}},{"score":{"name":"@s","objective":"TeleportZ"}}],"color":"green","bold":true,"italic":false}],
+                [""],
+                ["",{"translate":"(%s)+(%s)の同時押しで使用","with":[{"keybind":"key.sneak","color":"aqua","bold":false,"italic":false},{"keybind":"key.drop","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{Tags:[\"MinecartItem\",\"UnsetStorage\"],Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
