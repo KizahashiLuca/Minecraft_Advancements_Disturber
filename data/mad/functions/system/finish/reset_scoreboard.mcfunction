@@ -282,6 +282,7 @@ scoreboard objectives remove UseSetTeleporter
 scoreboard objectives remove TeleporterTemp1
 scoreboard objectives remove TeleporterTemp2
 scoreboard objectives remove TeleporterTemp3
+scoreboard objectives remove TeleporterTemp4
 scoreboard objectives remove TeleportDimens
 scoreboard objectives remove TeleportX
 scoreboard objectives remove TeleportY

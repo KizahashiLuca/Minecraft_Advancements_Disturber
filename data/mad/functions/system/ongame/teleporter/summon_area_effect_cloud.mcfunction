@@ -16,4 +16,4 @@ execute positioned 0 0 0 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["Te
 execute as @e[type=minecraft:area_effect_cloud,tag=TeleporterDest,limit=1] run function mad:system/ongame/teleporter/data_merge_area_effect_cloud
 
 ## Set scoreboard
-scoreboard players set @s TeleportTick 20
+scoreboard players set @e[type=minecraft:area_effect_cloud,tag=TeleporterDest,limit=1] TeleportTick 20

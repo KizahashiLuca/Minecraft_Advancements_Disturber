@@ -19,7 +19,9 @@ execute in minecraft:overworld run worldborder center 0 0
 execute in minecraft:overworld run worldborder set 59999968
 
 ## Forceload remove
-forceload remove all
+execute in minecraft:overworld run forceload remove all
+execute in minecraft:the_nether run forceload remove all
+execute in minecraft:the_end run forceload remove all
 
 ## Reset respawn banner
 execute as @e[predicate=mad:ongame/respawn_banner/structure] at @s run function mad:system/ongame/respawn_banner/break_respawn_banner

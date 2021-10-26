@@ -9,7 +9,7 @@
 #####################################
 
 ## Scoreboard
-scoreboard players remove @s UseTeleporter 1
+scoreboard players set @s UseTeleporter 0
 
 ## Set teleport destination
 execute as @s[predicate=mad:ongame/dimension/overworld] run scoreboard players set @s TeleportDimens 1

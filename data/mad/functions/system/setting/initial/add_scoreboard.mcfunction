@@ -282,6 +282,7 @@ scoreboard objectives add UseSetTeleporter minecraft.dropped:minecraft.soul_lant
 scoreboard objectives add TeleporterTemp1 dummy
 scoreboard objectives add TeleporterTemp2 dummy
 scoreboard objectives add TeleporterTemp3 dummy
+scoreboard objectives add TeleporterTemp4 dummy
 scoreboard objectives add TeleportDimens dummy
 scoreboard objectives add TeleportX dummy
 scoreboard objectives add TeleportY dummy

@@ -9,7 +9,7 @@
 #####################################
 
 ## Scoreboard
-scoreboard players remove @s UseSetTeleporter 1
+scoreboard players set @s UseSetTeleporter 0
 
 ## Add a tag
 tag @s add DetectUseSetTelep
@@ -24,9 +24,7 @@ data remove storage mad:teleporter Teleporter.TempLore
 scoreboard players reset @s TeleporterTemp1
 scoreboard players reset @s TeleporterTemp2
 scoreboard players reset @s TeleporterTemp3
+scoreboard players reset @s TeleporterTemp4
 
 ## Remove a tag
 tag @s remove DetectUseSetTelep
-
-## Kill item
-kill @e[predicate=mad:ongame/teleporter/dropped_soul_lantern_later,sort=nearest,limit=1]
