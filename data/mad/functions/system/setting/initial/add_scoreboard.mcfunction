@@ -9,6 +9,8 @@
 #####################################
 
 ## Add scoreboards for game phase
+scoreboard objectives add DataVersion dummy
+scoreboard objectives add Version dummy
 scoreboard objectives add Phase dummy
 scoreboard objectives add PrevPhase dummy
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
@@ -294,6 +296,8 @@ scoreboard objectives add ResultTmp dummy
 scoreboard objectives add LoadAddon dummy
 
 ## Set scoreboards for game phase
+scoreboard players set #mad DataVersion 2860
+scoreboard players set #mad Version 18
 scoreboard players set #mad Phase 0
 scoreboard players set #mad PrevPhase 0
 scoreboard players set #mad Difficulty 0

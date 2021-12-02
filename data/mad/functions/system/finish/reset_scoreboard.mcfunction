@@ -9,6 +9,8 @@
 #####################################
 
 ## Remove scoreboards for game phase
+scoreboard objectives remove DataVersion
+scoreboard objectives remove Version
 scoreboard objectives remove Phase
 scoreboard objectives remove PrevPhase
 scoreboard objectives remove Death
