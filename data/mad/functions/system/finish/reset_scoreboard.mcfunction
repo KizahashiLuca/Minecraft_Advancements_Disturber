@@ -1,14 +1,16 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: JE 1.16
+## MC-Version: JE 1.17-
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 12 Sep 2021
-## Version   : β-1.3.3
+## Date      : 24 Oct 2021
+## Version   : β-1.4
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Remove scoreboards for game phase
+scoreboard objectives remove DataVersion
+scoreboard objectives remove Version
 scoreboard objectives remove Phase
 scoreboard objectives remove PrevPhase
 scoreboard objectives remove Death
@@ -240,6 +242,15 @@ scoreboard objectives remove AD_pg_kill_phant
 scoreboard objectives remove AD_pg_kill_ender
 scoreboard objectives remove AD_pg_frinedship
 scoreboard objectives remove BreakSpawner
+## Remove scoreboards for advancements - achievements
+scoreboard objectives remove AD_ac_root
+scoreboard objectives remove AD_ac_buildsword
+scoreboard objectives remove AD_ac_diamonds2u
+scoreboard objectives remove AD_ac_fly_pig
+scoreboard objectives remove AD_ac_kill_cow
+scoreboard objectives remove AD_ac_on_a_rail
+scoreboard objectives remove FallDistance
+scoreboard objectives remove RailDistance
 ## Remove scoreboards for summons minecart
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon

@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: JE 1.16
+## MC-Version: JE 1.17-
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 12 Sep 2021
-## Version   : β-1.3.3
+## Date      : 24 Oct 2021
+## Version   : β-1.4
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -110,6 +110,9 @@ team modify TeamE deathMessageVisibility never
 ## Add scoreboards
 function mad:system/setting/initial/add_scoreboard
 
+## Detect version
+function mad:system/setting/initial/detect_version
+
 ## Count players
 execute as @a[tag=Participant] run scoreboard players add #mad NumParticipant 1
 
@@ -117,5 +120,7 @@ execute as @a[tag=Participant] run scoreboard players add #mad NumParticipant 1
 execute if entity @p[tag=MADtest] run scoreboard players set #mad NumParticipant 5
 
 ## Send messages
-execute if score #mad NumParticipant matches 1..100 run function mad:system/setting/initial/send_message
+execute if score #mad Version matches 17 if score #mad NumParticipant matches 1..100 run function mad:system/setting/initial/send_message
+execute if score #mad Version matches ..16 if score #mad NumParticipant matches 1..100 run function mad:system/finish/game_version_error
+execute if score #mad Version matches 18.. if score #mad NumParticipant matches 1..100 run function mad:system/finish/game_version_error
 execute if score #mad NumParticipant matches 101.. run function mad:system/finish/game_many

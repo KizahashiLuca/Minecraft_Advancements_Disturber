@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: JE 1.16
+## MC-Version: JE 1.17-
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 12 Sep 2021
-## Version   : β-1.3.3
+## Date      : 24 Oct 2021
+## Version   : β-1.4
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -23,6 +23,7 @@ execute as @a run function mad:system/ongame/set_position/main
 
 ## Execute advancements
 function mad:system/ongame/advancements/potage00/execute_advancements
+function mad:system/ongame/advancements/achievements/execute_advancements
 
 ## Detect death
 execute as @a[predicate=mad:ongame/player/participant_dying] run function mad:system/ongame_team/detect_death

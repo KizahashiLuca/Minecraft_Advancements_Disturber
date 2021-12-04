@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: JE 1.16
+## MC-Version: JE 1.17-
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 12 Sep 2021
-## Version   : β-1.3.3
+## Date      : 24 Oct 2021
+## Version   : β-1.4
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -13,10 +13,12 @@ advancement revoke @a everything
 advancement grant @a until mad:potage00/adventure
 advancement grant @a until mad:potage00/collect
 advancement grant @a until mad:potage00/original
+advancement grant @a until mad:achievements/root
 
 ## Take recipes
 recipe take @a *
-recipe give @a[tag=Participant] mad:mobile_respawn_beacon
+execute if score #mad IsTeam matches 1 run recipe give @a[tag=Participant] mad:mobile_respawn_beacon
+recipe give @a[tag=Participant] mad:tnt
 
 ## Set gamemode
 gamemode survival @a[tag=Participant]

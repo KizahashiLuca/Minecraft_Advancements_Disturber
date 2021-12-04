@@ -5,6 +5,7 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 最後まで生き残ることを目指すPvPデータパック
 
 ## Caution!!
+ - マインクラフト Java版 v.1.17以降対応です。
  - 実況でご利用の際は以下項目の記載をお願い致します。
    - 企画者 : ぽたーじゅ
      - Twitter : [https://twitter.com/potagegatop](https://twitter.com/potagegatop)
