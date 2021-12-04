@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: JE 1.17-
+## MC-Version: Java Edit. 1.17
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 24 Oct 2021
-## Version   : β-1.4
+## Date      : 04 Dec 2021
+## Version   : β-1.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
