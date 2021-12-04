@@ -9,4 +9,4 @@
 #####################################
 
 ## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_striderover=0}] run function mad:system/ongame/advancements/nether/ride_strider_in_overworld_lava_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_strider_ow=0}] run function mad:system/ongame/advancements/nether/ride_strider_in_overworld_lava_branch
