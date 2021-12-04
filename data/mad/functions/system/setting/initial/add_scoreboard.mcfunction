@@ -139,7 +139,7 @@ scoreboard objectives add AD_ad_honey_slid dummy {"text":"べとべとな状況"
 scoreboard objectives add AD_ad_kill_a_mob dummy {"text":"モンスターハンター"}
 scoreboard objectives add AD_ad_kill_all dummy {"text":"モンスター狩りの達人"}
 scoreboard objectives add AD_ad_ol_betsy dummy {"text":"おてんば"}
-scoreboard objectives add AD_ad_juke_meadows dummy {"text":"サウンド・オブ・ミュージック"}
+scoreboard objectives add AD_ad_jukemeadow dummy {"text":"サウンド・オブ・ミュージック"}
 scoreboard objectives add AD_ad_lightrod dummy {"text":"避雷器"}
 scoreboard objectives add AD_ad_root dummy {"text":"冒険"}
 scoreboard objectives add AD_ad_shot_arrow dummy {"text":"狙いを定めて"}
@@ -151,7 +151,7 @@ scoreboard objectives add AD_ad_spy_parrot dummy {"text":"あれは鳥？"}
 scoreboard objectives add AD_ad_iron_golem dummy {"text":"お手伝いさん"}
 scoreboard objectives add AD_ad_trident dummy {"text":"もったいぶった一言"}
 scoreboard objectives add AD_ad_totem dummy {"text":"死を超えて"}
-scoreboard objectives add AD_ad_tradehighest dummy {"text":"星の商人"}
+scoreboard objectives add AD_ad_tradehigh dummy {"text":"星の商人"}
 scoreboard objectives add AD_ad_trade dummy {"text":"良い取引だ！"}
 scoreboard objectives add AD_ad_two_birds dummy {"text":"一石二鳥"}
 scoreboard objectives add AD_ad_very_very dummy {"text":"とてもとても恐ろしい"}
@@ -194,7 +194,7 @@ scoreboard objectives add AD_nt_ancient_db dummy {"text":"深淵に隠されし�
 scoreboard objectives add AD_nt_blaze_rod dummy {"text":"炎の中へ"}
 scoreboard objectives add AD_nt_cry_obsidn dummy {"text":"玉ねぎを切っているのは誰？"}
 scoreboard objectives add AD_nt_rtrn_ghast dummy {"text":"差出人に返送"}
-scoreboard objectives add AD_nt_striderover dummy {"text":"実家のような安心感"}
+scoreboard objectives add AD_nt_strider_ow dummy {"text":"実家のような安心感"}
 scoreboard objectives add AD_nt_strider dummy {"text":"足の生えたボート"}
 scoreboard objectives add AD_nt_root dummy {"text":"ネザー"}
 scoreboard objectives add AD_nt_smn_wither dummy {"text":"荒が丘"}
@@ -457,7 +457,7 @@ scoreboard players set @a AD_ad_honey_slid 0
 scoreboard players set @a AD_ad_kill_a_mob 0
 scoreboard players set @a AD_ad_kill_all 0
 scoreboard players set @a AD_ad_ol_betsy 0
-scoreboard players set @a AD_ad_juke_meadows 0
+scoreboard players set @a AD_ad_jukemeadow 0
 scoreboard players set @a AD_ad_lightrod 0
 scoreboard players set @a AD_ad_root 0
 scoreboard players set @a AD_ad_shot_arrow 0
@@ -469,7 +469,7 @@ scoreboard players set @a AD_ad_spy_parrot 0
 scoreboard players set @a AD_ad_iron_golem 0
 scoreboard players set @a AD_ad_trident 0
 scoreboard players set @a AD_ad_totem 0
-scoreboard players set @a AD_ad_tradehighest 0
+scoreboard players set @a AD_ad_tradehigh 0
 scoreboard players set @a AD_ad_trade 0
 scoreboard players set @a AD_ad_two_birds 0
 scoreboard players set @a AD_ad_very_very 0
@@ -513,7 +513,7 @@ scoreboard players set @a AD_nt_blaze_rod 0
 scoreboard players set @a AD_nt_cry_obsidn 0
 scoreboard players set @a AD_nt_rtrn_ghast 0
 scoreboard players set @a AD_nt_strider 0
-scoreboard players set @a AD_nt_striderover 0
+scoreboard players set @a AD_nt_strider_ow 0
 scoreboard players set @a AD_nt_root 0
 scoreboard players set @a AD_nt_smn_wither 0
 scoreboard players set @a AD_nt_uneasy_alc 0
