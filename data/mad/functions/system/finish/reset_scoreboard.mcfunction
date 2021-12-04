@@ -137,6 +137,7 @@ scoreboard objectives remove AD_ad_honey_slid
 scoreboard objectives remove AD_ad_kill_a_mob
 scoreboard objectives remove AD_ad_kill_all
 scoreboard objectives remove AD_ad_ol_betsy
+scoreboard objectives remove AD_ad_juke_meadows
 scoreboard objectives remove AD_ad_lightrod
 scoreboard objectives remove AD_ad_root
 scoreboard objectives remove AD_ad_shot_arrow

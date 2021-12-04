@@ -137,6 +137,7 @@ scoreboard objectives add AD_ad_honey_slid dummy {"text":"べとべとな状況"
 scoreboard objectives add AD_ad_kill_a_mob dummy {"text":"モンスターハンター"}
 scoreboard objectives add AD_ad_kill_all dummy {"text":"モンスター狩りの達人"}
 scoreboard objectives add AD_ad_ol_betsy dummy {"text":"おてんば"}
+scoreboard objectives add AD_ad_juke_meadows dummy {"text":"サウンド・オブ・ミュージック"}
 scoreboard objectives add AD_ad_lightrod dummy {"text":"避雷器"}
 scoreboard objectives add AD_ad_root dummy {"text":"冒険"}
 scoreboard objectives add AD_ad_shot_arrow dummy {"text":"狙いを定めて"}
@@ -442,6 +443,7 @@ scoreboard players set @a AD_ad_honey_slid 0
 scoreboard players set @a AD_ad_kill_a_mob 0
 scoreboard players set @a AD_ad_kill_all 0
 scoreboard players set @a AD_ad_ol_betsy 0
+scoreboard players set @a AD_ad_juke_meadows 0
 scoreboard players set @a AD_ad_lightrod 0
 scoreboard players set @a AD_ad_root 0
 scoreboard players set @a AD_ad_shot_arrow 0
