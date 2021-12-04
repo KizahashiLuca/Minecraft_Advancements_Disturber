@@ -9,6 +9,7 @@
 #####################################
 
 ## Detect version
+execute store result score #mad DataVersion run data get entity @p DataVersion
 execute if predicate mad:version/1.13 run scoreboard players set #mad Version 13
 execute if predicate mad:version/1.14 run scoreboard players set #mad Version 14
 execute if predicate mad:version/1.15 run scoreboard players set #mad Version 15
