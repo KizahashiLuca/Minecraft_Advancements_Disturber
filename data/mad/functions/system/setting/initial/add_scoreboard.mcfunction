@@ -131,6 +131,7 @@ scoreboard objectives add HasAdvancements dummy
 scoreboard objectives add AD_ad_adven_time dummy {"text":"冒険の時間"}
 scoreboard objectives add AD_ad_arbalistic dummy {"text":"クロスボウの達人"}
 scoreboard objectives add AD_ad_bullseye dummy {"text":"的中"}
+scoreboard objectives add AD_ad_fallworld dummy {"text":"洞窟と崖"}
 scoreboard objectives add AD_ad_hero_villa dummy {"text":"村の英雄"}
 scoreboard objectives add AD_ad_honey_slid dummy {"text":"べとべとな状況"}
 scoreboard objectives add AD_ad_kill_a_mob dummy {"text":"モンスターハンター"}
@@ -189,8 +190,8 @@ scoreboard objectives add AD_nt_ancient_db dummy {"text":"深淵に隠されし�
 scoreboard objectives add AD_nt_blaze_rod dummy {"text":"炎の中へ"}
 scoreboard objectives add AD_nt_cry_obsidn dummy {"text":"玉ねぎを切っているのは誰？"}
 scoreboard objectives add AD_nt_rtrn_ghast dummy {"text":"差出人に返送"}
-scoreboard objectives add AD_nt_strider dummy {"text":"足の生えたボート"}
 scoreboard objectives add AD_nt_striderover dummy {"text":"実家のような安心感"}
+scoreboard objectives add AD_nt_strider dummy {"text":"足の生えたボート"}
 scoreboard objectives add AD_nt_root dummy {"text":"ネザー"}
 scoreboard objectives add AD_nt_smn_wither dummy {"text":"荒が丘"}
 scoreboard objectives add AD_nt_uneasy_alc dummy {"text":"不安な同盟"}
@@ -435,6 +436,7 @@ scoreboard players set @a HasAdvancements 0
 scoreboard players set @a AD_ad_adven_time 0
 scoreboard players set @a AD_ad_arbalistic 0
 scoreboard players set @a AD_ad_bullseye 0
+scoreboard players set @a AD_ad_fallworld 0
 scoreboard players set @a AD_ad_hero_villa 0
 scoreboard players set @a AD_ad_honey_slid 0
 scoreboard players set @a AD_ad_kill_a_mob 0

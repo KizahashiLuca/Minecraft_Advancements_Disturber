@@ -131,6 +131,7 @@ scoreboard objectives remove HasAdvancements
 scoreboard objectives remove AD_ad_adven_time
 scoreboard objectives remove AD_ad_arbalistic
 scoreboard objectives remove AD_ad_bullseye
+scoreboard objectives remove AD_ad_fallworld
 scoreboard objectives remove AD_ad_hero_villa
 scoreboard objectives remove AD_ad_honey_slid
 scoreboard objectives remove AD_ad_kill_a_mob
@@ -189,8 +190,8 @@ scoreboard objectives remove AD_nt_ancient_db
 scoreboard objectives remove AD_nt_blaze_rod
 scoreboard objectives remove AD_nt_cry_obsidn
 scoreboard objectives remove AD_nt_rtrn_ghast
-scoreboard objectives remove AD_nt_strider
 scoreboard objectives remove AD_nt_striderover
+scoreboard objectives remove AD_nt_strider
 scoreboard objectives remove AD_nt_root
 scoreboard objectives remove AD_nt_smn_wither
 scoreboard objectives remove AD_nt_uneasy_alc
