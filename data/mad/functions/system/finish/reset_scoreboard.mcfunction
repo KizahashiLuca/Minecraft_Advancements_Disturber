@@ -149,6 +149,7 @@ scoreboard objectives remove AD_ad_spy_parrot
 scoreboard objectives remove AD_ad_iron_golem
 scoreboard objectives remove AD_ad_trident
 scoreboard objectives remove AD_ad_totem
+scoreboard objectives remove AD_ad_tradehighest
 scoreboard objectives remove AD_ad_trade
 scoreboard objectives remove AD_ad_two_birds
 scoreboard objectives remove AD_ad_very_very

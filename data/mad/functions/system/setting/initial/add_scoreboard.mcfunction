@@ -149,6 +149,7 @@ scoreboard objectives add AD_ad_spy_parrot dummy {"text":"あれは鳥？"}
 scoreboard objectives add AD_ad_iron_golem dummy {"text":"お手伝いさん"}
 scoreboard objectives add AD_ad_trident dummy {"text":"もったいぶった一言"}
 scoreboard objectives add AD_ad_totem dummy {"text":"死を超えて"}
+scoreboard objectives add AD_ad_tradehighest dummy {"text":"星の商人"}
 scoreboard objectives add AD_ad_trade dummy {"text":"良い取引だ！"}
 scoreboard objectives add AD_ad_two_birds dummy {"text":"一石二鳥"}
 scoreboard objectives add AD_ad_very_very dummy {"text":"とてもとても恐ろしい"}
@@ -455,6 +456,7 @@ scoreboard players set @a AD_ad_spy_parrot 0
 scoreboard players set @a AD_ad_iron_golem 0
 scoreboard players set @a AD_ad_trident 0
 scoreboard players set @a AD_ad_totem 0
+scoreboard players set @a AD_ad_tradehighest 0
 scoreboard players set @a AD_ad_trade 0
 scoreboard players set @a AD_ad_two_birds 0
 scoreboard players set @a AD_ad_very_very 0
