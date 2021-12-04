@@ -5,7 +5,7 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 最後まで生き残ることを目指すPvPデータパック
 
 ## Caution!!
- - マインクラフト Java版 v.1.17以降対応です。
+ - マインクラフト Java版 v1.17以降対応です。
  - 実況でご利用の際は以下項目の記載をお願い致します。
    - 企画者 : ぽたーじゅ
      - Twitter : [https://twitter.com/potagegatop](https://twitter.com/potagegatop)
@@ -13,6 +13,13 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
      - Twitter : [https://twitter.com/KizahashiLuca](https://twitter.com/KizahashiLuca)
    - 配布元URL : [https://github.com/KizahashiLuca/minecraft_advancements_disturber](https://github.com/KizahashiLuca/minecraft_advancements_disturber)
  - このデータパックは、CC BY-SA 4.0 に準拠します。
+
+## Download
+ダウンロードは 以下リンクからお願いします。
+ - Java版 v1.17
+   - [β-1.5 v1.17版](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-1.5_v1.17)
+ - Java版 v1.18
+   - [β-1.5 v1.18版](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-1.5_v1.18)
 
 ## ルール
 マルチのサバイバル環境にて、各プレイヤー進捗を解除しつつ、唯一の生存を目指す

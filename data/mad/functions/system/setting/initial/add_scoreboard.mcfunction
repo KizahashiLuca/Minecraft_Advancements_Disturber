@@ -1,14 +1,16 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: JE 1.17-
+## MC-Version: Java Edit. 1.18
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 24 Oct 2021
-## Version   : β-1.4
+## Date      : 04 Dec 2021
+## Version   : β-1.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Add scoreboards for game phase
+scoreboard objectives add DataVersion dummy
+scoreboard objectives add Version dummy
 scoreboard objectives add Phase dummy
 scoreboard objectives add PrevPhase dummy
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
@@ -131,11 +133,13 @@ scoreboard objectives add HasAdvancements dummy
 scoreboard objectives add AD_ad_adven_time dummy {"text":"冒険の時間"}
 scoreboard objectives add AD_ad_arbalistic dummy {"text":"クロスボウの達人"}
 scoreboard objectives add AD_ad_bullseye dummy {"text":"的中"}
+scoreboard objectives add AD_ad_fallworld dummy {"text":"洞窟と崖"}
 scoreboard objectives add AD_ad_hero_villa dummy {"text":"村の英雄"}
 scoreboard objectives add AD_ad_honey_slid dummy {"text":"べとべとな状況"}
 scoreboard objectives add AD_ad_kill_a_mob dummy {"text":"モンスターハンター"}
 scoreboard objectives add AD_ad_kill_all dummy {"text":"モンスター狩りの達人"}
 scoreboard objectives add AD_ad_ol_betsy dummy {"text":"おてんば"}
+scoreboard objectives add AD_ad_jukemeadow dummy {"text":"サウンド・オブ・ミュージック"}
 scoreboard objectives add AD_ad_lightrod dummy {"text":"避雷器"}
 scoreboard objectives add AD_ad_root dummy {"text":"冒険"}
 scoreboard objectives add AD_ad_shot_arrow dummy {"text":"狙いを定めて"}
@@ -147,6 +151,7 @@ scoreboard objectives add AD_ad_spy_parrot dummy {"text":"あれは鳥？"}
 scoreboard objectives add AD_ad_iron_golem dummy {"text":"お手伝いさん"}
 scoreboard objectives add AD_ad_trident dummy {"text":"もったいぶった一言"}
 scoreboard objectives add AD_ad_totem dummy {"text":"死を超えて"}
+scoreboard objectives add AD_ad_tradehigh dummy {"text":"星の商人"}
 scoreboard objectives add AD_ad_trade dummy {"text":"良い取引だ！"}
 scoreboard objectives add AD_ad_two_birds dummy {"text":"一石二鳥"}
 scoreboard objectives add AD_ad_very_very dummy {"text":"とてもとても恐ろしい"}
@@ -189,6 +194,7 @@ scoreboard objectives add AD_nt_ancient_db dummy {"text":"深淵に隠されし�
 scoreboard objectives add AD_nt_blaze_rod dummy {"text":"炎の中へ"}
 scoreboard objectives add AD_nt_cry_obsidn dummy {"text":"玉ねぎを切っているのは誰？"}
 scoreboard objectives add AD_nt_rtrn_ghast dummy {"text":"差出人に返送"}
+scoreboard objectives add AD_nt_strider_ow dummy {"text":"実家のような安心感"}
 scoreboard objectives add AD_nt_strider dummy {"text":"足の生えたボート"}
 scoreboard objectives add AD_nt_root dummy {"text":"ネザー"}
 scoreboard objectives add AD_nt_smn_wither dummy {"text":"荒が丘"}
@@ -294,6 +300,8 @@ scoreboard objectives add ResultTmp dummy
 scoreboard objectives add LoadAddon dummy
 
 ## Set scoreboards for game phase
+scoreboard players set #mad DataVersion 2860
+scoreboard players set #mad Version 18
 scoreboard players set #mad Phase 0
 scoreboard players set #mad PrevPhase 0
 scoreboard players set #mad Difficulty 0
@@ -443,11 +451,13 @@ scoreboard players set @a HasAdvancements 0
 scoreboard players set @a AD_ad_adven_time 0
 scoreboard players set @a AD_ad_arbalistic 0
 scoreboard players set @a AD_ad_bullseye 0
+scoreboard players set @a AD_ad_fallworld 0
 scoreboard players set @a AD_ad_hero_villa 0
 scoreboard players set @a AD_ad_honey_slid 0
 scoreboard players set @a AD_ad_kill_a_mob 0
 scoreboard players set @a AD_ad_kill_all 0
 scoreboard players set @a AD_ad_ol_betsy 0
+scoreboard players set @a AD_ad_jukemeadow 0
 scoreboard players set @a AD_ad_lightrod 0
 scoreboard players set @a AD_ad_root 0
 scoreboard players set @a AD_ad_shot_arrow 0
@@ -459,6 +469,7 @@ scoreboard players set @a AD_ad_spy_parrot 0
 scoreboard players set @a AD_ad_iron_golem 0
 scoreboard players set @a AD_ad_trident 0
 scoreboard players set @a AD_ad_totem 0
+scoreboard players set @a AD_ad_tradehigh 0
 scoreboard players set @a AD_ad_trade 0
 scoreboard players set @a AD_ad_two_birds 0
 scoreboard players set @a AD_ad_very_very 0
@@ -502,6 +513,7 @@ scoreboard players set @a AD_nt_blaze_rod 0
 scoreboard players set @a AD_nt_cry_obsidn 0
 scoreboard players set @a AD_nt_rtrn_ghast 0
 scoreboard players set @a AD_nt_strider 0
+scoreboard players set @a AD_nt_strider_ow 0
 scoreboard players set @a AD_nt_root 0
 scoreboard players set @a AD_nt_smn_wither 0
 scoreboard players set @a AD_nt_uneasy_alc 0
