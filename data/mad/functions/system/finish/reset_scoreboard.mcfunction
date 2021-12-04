@@ -190,6 +190,7 @@ scoreboard objectives remove AD_nt_blaze_rod
 scoreboard objectives remove AD_nt_cry_obsidn
 scoreboard objectives remove AD_nt_rtrn_ghast
 scoreboard objectives remove AD_nt_strider
+scoreboard objectives remove AD_nt_striderover
 scoreboard objectives remove AD_nt_root
 scoreboard objectives remove AD_nt_smn_wither
 scoreboard objectives remove AD_nt_uneasy_alc

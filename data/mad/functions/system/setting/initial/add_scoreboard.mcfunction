@@ -190,6 +190,7 @@ scoreboard objectives add AD_nt_blaze_rod dummy {"text":"炎の中へ"}
 scoreboard objectives add AD_nt_cry_obsidn dummy {"text":"玉ねぎを切っているのは誰？"}
 scoreboard objectives add AD_nt_rtrn_ghast dummy {"text":"差出人に返送"}
 scoreboard objectives add AD_nt_strider dummy {"text":"足の生えたボート"}
+scoreboard objectives add AD_nt_striderover dummy {"text":"実家のような安心感"}
 scoreboard objectives add AD_nt_root dummy {"text":"ネザー"}
 scoreboard objectives add AD_nt_smn_wither dummy {"text":"荒が丘"}
 scoreboard objectives add AD_nt_uneasy_alc dummy {"text":"不安な同盟"}
@@ -493,6 +494,7 @@ scoreboard players set @a AD_nt_blaze_rod 0
 scoreboard players set @a AD_nt_cry_obsidn 0
 scoreboard players set @a AD_nt_rtrn_ghast 0
 scoreboard players set @a AD_nt_strider 0
+scoreboard players set @a AD_nt_striderover 0
 scoreboard players set @a AD_nt_root 0
 scoreboard players set @a AD_nt_smn_wither 0
 scoreboard players set @a AD_nt_uneasy_alc 0
