@@ -9,4 +9,4 @@
 #####################################
 
 ## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_juke_meadows=0}] run function mad:system/ongame/advancements/adventure/play_jukebox_in_meadows_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_jukemeadow=0}] run function mad:system/ongame/advancements/adventure/play_jukebox_in_meadows_branch

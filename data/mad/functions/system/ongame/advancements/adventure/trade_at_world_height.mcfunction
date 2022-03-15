@@ -9,4 +9,4 @@
 #####################################
 
 ## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_tradehighest=0}] run function mad:system/ongame/advancements/adventure/trade_at_world_height_branch
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_tradehigh=0}] run function mad:system/ongame/advancements/adventure/trade_at_world_height_branch
