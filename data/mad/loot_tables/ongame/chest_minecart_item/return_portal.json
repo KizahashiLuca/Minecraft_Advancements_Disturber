@@ -11,16 +11,18 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 ["",{"text":"帰還ポータル","color":"light_purple","bold":false,"italic":false}]
               ]
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
                 ["",{"text":"エンドからの帰還ポータルを設置。","color":"white","bold":false,"italic":false}],
                 [""],
-                ["",{"text":"右クリックで使用","color":"","bold":false,"italic":false}]
+                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}]
               ]
             },
             {
