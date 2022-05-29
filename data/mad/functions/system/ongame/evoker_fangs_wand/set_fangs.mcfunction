@@ -19,6 +19,7 @@ kill @e[predicate=mad:ongame/evoker_fangs_wand/set_marker,scores={EvokerFangsCou
 
 ## Teleport marker
 execute as @e[predicate=mad:ongame/evoker_fangs_wand/set_marker] at @s run tp ^ ^ ^1.5
+execute as @e[predicate=mad:ongame/evoker_fangs_wand/set_marker] at @s run data modify entity @e[predicate=mad:ongame/evoker_fangs_wand/summoned_fangs,sort=nearest,limit=1] Owner set from entity @s Owner
 
 ## Schedule function
 execute as @e[predicate=mad:ongame/evoker_fangs_wand/set_marker] run schedule function mad:system/ongame/evoker_fangs_wand/set_fangs 1t append
