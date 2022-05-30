@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:iron_pickaxe",
+          "name": "minecraft:diamond_pickaxe",
           "functions": [
             {
               "function": "minecraft:set_nbt",

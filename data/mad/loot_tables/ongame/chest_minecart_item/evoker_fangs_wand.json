@@ -1,0 +1,38 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                ["",{"text":"エヴォーカーの牙の杖","color":"aqua","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                ["",{"text":"エヴォーカーの牙を召喚。","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}],
+                ["",{"text":"使用回数 残り","color":"green","bold":false,"italic":false},{"text":"5","color":"green","bold":true,"italic":false},{"text":"回","color":"green","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MinecartItem\",\"EvokerFangsWand\"],RepairCost:2147483647}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

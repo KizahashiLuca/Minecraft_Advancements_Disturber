@@ -8,7 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Add scoreboards for game phase
+## Add scoreboards
+#### game phase
 scoreboard objectives add DataVersion dummy
 scoreboard objectives add Version dummy
 scoreboard objectives add Phase dummy
@@ -19,32 +20,32 @@ scoreboard objectives add KillTemp minecraft.custom:minecraft.player_kills
 scoreboard objectives add TeleportMinecart trigger
 scoreboard objectives add TeleportCenter trigger
 scoreboard objectives add ExitMessage trigger
-## Add scoreboards for timer
+#### timer
 scoreboard objectives add 2 dummy
 scoreboard objectives add Second dummy
 scoreboard objectives add Tick dummy
 scoreboard objectives add GeneralSecond dummy
 scoreboard objectives add SecondPerSurvive dummy
-## Add scoreboards for participants
+#### participants
 scoreboard objectives add Participant dummy
 scoreboard objectives add NumParticipant dummy
 scoreboard objectives add NumAlive dummy
 scoreboard objectives add NumDead dummy
-## Add scoreboards for onground
+#### onground
 scoreboard objectives add OnGround dummy
-## Add scoreboards for position
+#### position
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy
 scoreboard objectives add 45 dummy
 scoreboard objectives add Angle dummy
-## Add scoreboards for randomizer
+#### randomizer
 scoreboard objectives add RandomSeed dummy
 scoreboard objectives add RandomCount dummy
 scoreboard objectives add RandomAnswer dummy
 scoreboard objectives add RandomModder dummy
 scoreboard objectives add RandomMultiplier dummy
-## Add scoreboards for setting phase - common
+#### setting phase - common
 scoreboard objectives add ThrowItem dummy
 scoreboard objectives add Select02 dummy
 scoreboard objectives add Select03 dummy
@@ -73,7 +74,7 @@ scoreboard objectives add Select28 dummy
 scoreboard objectives add Select31 dummy
 scoreboard objectives add Select34 dummy
 scoreboard objectives add Selected dummy
-## Add scoreboards for setting phase - choose time limit
+#### setting phase - choose time limit
 scoreboard objectives add 10 dummy
 scoreboard objectives add 100 dummy
 scoreboard objectives add 1000 dummy
@@ -85,7 +86,7 @@ scoreboard objectives add digit_1000 dummy
 scoreboard objectives add TimeLimit dummy
 scoreboard objectives add TimeLimitPrv dummy
 scoreboard objectives add GetTimeLimit dummy
-## Add scoreboards for setting phase - choose area
+#### setting phase - choose area
 scoreboard objectives add WorldBorder dummy
 scoreboard objectives add WorldBorderPrv dummy
 scoreboard objectives add WorldBorderEnd dummy
@@ -93,21 +94,21 @@ scoreboard objectives add PosXCeil dummy
 scoreboard objectives add PosZCeil dummy
 scoreboard objectives add PosXFloor dummy
 scoreboard objectives add PosZFloor dummy
-## Add scoreboards for setting phase - choose difficulty
+#### setting phase - choose difficulty
 scoreboard objectives add Difficulty dummy
 scoreboard objectives add DifficultyPrv dummy
-## Add scoreboards for setting phase - choose adding time
+#### setting phase - choose adding time
 scoreboard objectives add AddingTime dummy
 scoreboard objectives add AddingTimePrv dummy
-## Add scoreboards for setting phase - choose minecart interval
+#### setting phase - choose minecart interval
 scoreboard objectives add CartInterval dummy
 scoreboard objectives add CartIntervalPrv dummy
-## Add scoreboards for setting phase - choose gamerule
+#### setting phase - choose gamerule
 scoreboard objectives add WeatherCycle dummy
 scoreboard objectives add DaylightCycle dummy
 scoreboard objectives add WeatherCyclePrv dummy
 scoreboard objectives add DaylightCyclePrv dummy
-## Add scoreboards for setting phase - choose team setting
+#### setting phase - choose team setting
 scoreboard objectives add IsTeam dummy
 scoreboard objectives add friendlyFire dummy
 scoreboard objectives add collisionRule dummy
@@ -127,9 +128,9 @@ scoreboard objectives add SetTeamManualPrv dummy
 scoreboard objectives add TeamNumberPrv dummy
 scoreboard objectives add BeaconNumberPrv dummy
 scoreboard objectives add RespawnTimePrv dummy
-## Add scoreboards for advancements
+#### advancements
 scoreboard objectives add HasAdvancements dummy
-## Add scoreboards for advancements - adventure
+#### advancements - adventure
 scoreboard objectives add AD_ad_adven_time dummy {"text":"冒険の時間"}
 scoreboard objectives add AD_ad_arbalistic dummy {"text":"クロスボウの達人"}
 scoreboard objectives add AD_ad_bullseye dummy {"text":"的中"}
@@ -158,7 +159,7 @@ scoreboard objectives add AD_ad_very_very dummy {"text":"とてもとても恐�
 scoreboard objectives add AD_ad_voluntary dummy {"text":"自主的な亡命"}
 scoreboard objectives add AD_ad_powdersnow dummy {"text":"ウサギのように軽く"}
 scoreboard objectives add AD_ad_whos_pilla dummy {"text":"どっちが略奪者？"}
-## Add scoreboards for advancements - minecraft
+#### advancements - minecraft
 scoreboard objectives add AD_mc_cure_zombi dummy {"text":"ゾンビドクター"}
 scoreboard objectives add AD_mc_deflect dummy {"text":"今日はやめておきます"}
 scoreboard objectives add AD_mc_enchant dummy {"text":"エンチャントの使い手"}
@@ -175,7 +176,7 @@ scoreboard objectives add AD_mc_root dummy {"text":"Minecraft"}
 scoreboard objectives add AD_mc_shiny_gear dummy {"text":"ダイヤモンドで私を覆って"}
 scoreboard objectives add AD_mc_smelt_iron dummy {"text":"金属を手に入れる"}
 scoreboard objectives add AD_mc_upgrade dummy {"text":"アップグレード"}
-## Add scoreboards for advancements - nether
+#### advancements - nether
 scoreboard objectives add AD_nt_all_effect dummy {"text":"どうやってここまで？"}
 scoreboard objectives add AD_nt_all_potion dummy {"text":"猛烈なカクテル"}
 scoreboard objectives add AD_nt_brew_potio dummy {"text":"町のお薬屋さん"}
@@ -200,7 +201,7 @@ scoreboard objectives add AD_nt_root dummy {"text":"ネザー"}
 scoreboard objectives add AD_nt_smn_wither dummy {"text":"荒が丘"}
 scoreboard objectives add AD_nt_uneasy_alc dummy {"text":"不安な同盟"}
 scoreboard objectives add AD_nt_lodestone dummy {"text":"この道をずっとゆけば"}
-## Add scoreboards for advancements - end
+#### advancements - end
 scoreboard objectives add AD_ed_drg_breath dummy {"text":"口臭に気をつけよう"}
 scoreboard objectives add AD_ed_dragon_egg dummy {"text":"ザ・ネクストジェネレーション"}
 scoreboard objectives add AD_ed_elytra dummy {"text":"空はどこまでも高く"}
@@ -210,7 +211,7 @@ scoreboard objectives add AD_ed_kill_dragn dummy {"text":"エンドの解放"}
 scoreboard objectives add AD_ed_levitate dummy {"text":"ここからの素晴らしい眺め"}
 scoreboard objectives add AD_ed_resp_dragn dummy {"text":"おしまい…再び…"}
 scoreboard objectives add AD_ed_root dummy {"text":"ジ・エンド"}
-## Add scoreboards for advancements - husbandry
+#### advancements - husbandry
 scoreboard objectives add AD_hb_axolotl dummy {"text":"いちばんカワイイ捕食者"}
 scoreboard objectives add AD_hb_balanced dummy {"text":"バランスの取れた食事"}
 scoreboard objectives add AD_hb_bred_all dummy {"text":"二匹ずつ"}
@@ -229,7 +230,7 @@ scoreboard objectives add AD_hb_tacti_fish dummy {"text":"戦術的漁業"}
 scoreboard objectives add AD_hb_tame_anima dummy {"text":"永遠の親友となるだろう"}
 scoreboard objectives add AD_hb_wax_off dummy {"text":"錆止め落とし"}
 scoreboard objectives add AD_hb_wax_on dummy {"text":"錆止め"}
-## Add scoreboards for advancements - potage00
+#### advancements - potage00
 scoreboard objectives add AD_pg_root dummy {"text":"MAD"}
 scoreboard objectives add AD_pg_minecart dummy {"text":"支援物資だ!"}
 scoreboard objectives add AD_pg_kubikari dummy {"text":"首狩りスティーブ"}
@@ -242,7 +243,7 @@ scoreboard objectives add AD_pg_kill_phant dummy {"text":"NO BED NO LIFE"}
 scoreboard objectives add AD_pg_kill_ender dummy {"text":"消える暗闇"}
 scoreboard objectives add AD_pg_frinedship dummy {"text":"仲間思い"}
 scoreboard objectives add BreakSpawner minecraft.mined:minecraft.spawner
-## Add scoreboards for advancements - achievements
+#### advancements - achievements
 scoreboard objectives add AD_ac_root dummy {"text":"実績"}
 scoreboard objectives add AD_ac_buildsword dummy {"text":"いざ突撃！"}
 scoreboard objectives add AD_ac_diamonds2u dummy {"text":"ダイヤモンドをあなたに！"}
@@ -251,7 +252,7 @@ scoreboard objectives add AD_ac_kill_cow dummy {"text":"牛転がし"}
 scoreboard objectives add AD_ac_on_a_rail dummy {"text":"世界のトロッコから"}
 scoreboard objectives add FallDistance dummy
 scoreboard objectives add RailDistance minecraft.custom:minecraft.minecart_one_cm
-## Add scoreboards for summons minecart
+#### summons minecart
 scoreboard objectives add 300 dummy
 scoreboard objectives add SecondSummon dummy
 scoreboard objectives add SecondEliminate dummy
@@ -260,7 +261,7 @@ scoreboard objectives add SummonMinecart dummy
 scoreboard objectives add MinecartBranch dummy
 scoreboard objectives add GetMinecartCount dummy
 scoreboard objectives add HasLootTable dummy
-## Add scoreboards for transmitter
+#### transmitter
 scoreboard objectives add UseTransmitter minecraft.used:minecraft.vindicator_spawn_egg
 scoreboard objectives add TransmitterPosX dummy
 scoreboard objectives add TransmitterPosY dummy
@@ -271,21 +272,24 @@ scoreboard objectives add BannerPosY dummy
 scoreboard objectives add BannerPosZ dummy
 scoreboard objectives add SetRespawnBanner dummy
 scoreboard objectives add TempBannerNum dummy
-## Add scoreboards for emergency call
+#### emergency call
 scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse_spawn_egg
-## Add scoreboards for armor upgrader
+#### armor upgrader
 scoreboard objectives add UseArmorUpgrader minecraft.used:minecraft.bat_spawn_egg
-## Add scoreboards for tool upgrader
+#### tool upgrader
 scoreboard objectives add UseToolUpgrader minecraft.used:minecraft.turtle_spawn_egg
-## Add scoreboards for notice of thief
+#### notice of thief
 scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn_egg
 scoreboard objectives add StealItemPlayer dummy
 scoreboard objectives add ThiefTick dummy
 scoreboard objectives add ThiefSecond dummy
-## Add scoreboards for mobile respawn beacon
+#### evoker fangs wand
+scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add EvokerFangsCount dummy
+#### mobile respawn beacon
 scoreboard objectives add MobileBeaconNum dummy
 scoreboard objectives add MobileBeaconTmp dummy
-## Add scoreboards for team
+#### team
 scoreboard objectives add TeamBoolean dummy
 scoreboard objectives add DeadOwnTeam dummy
 scoreboard objectives add DeadTeamA dummy
@@ -294,62 +298,63 @@ scoreboard objectives add DeadTeamC dummy
 scoreboard objectives add DeadTeamD dummy
 scoreboard objectives add DeadTeamE dummy
 scoreboard objectives add NumOfTeamPlayer dummy
-## Add scoreboards for result
+#### result
 scoreboard objectives add ResultTmp dummy
-## Add scoreboards for add-on
+#### add-on
 scoreboard objectives add LoadAddon dummy
 
-## Set scoreboards for game phase
+## Set scoreboards
+#### game phase
 scoreboard players set #mad DataVersion 2860
 scoreboard players set #mad Version 18
 scoreboard players set #mad Phase 0
 scoreboard players set #mad PrevPhase 0
 scoreboard players set #mad Difficulty 0
 scoreboard players set #mad ExitMessage 0
-## Set scoreboards for timer
+#### timer
 scoreboard players set #mad 2 2
-## Set scoreboards for participants
+#### participants
 scoreboard players set #mad Participant 0
 scoreboard players set #mad NumParticipant 0
 scoreboard players set #mad NumAlive 0
 scoreboard players set #mad NumDead 0
-## Set scoreboards for position
+#### position
 scoreboard players set #mad PosX 0
 scoreboard players set #mad PosY 63
 scoreboard players set #mad PosZ 0
 scoreboard players set #mad 45 45
-## Set scoreboards for randomizer
+#### randomizer
 scoreboard players set #mad RandomSeed 0
 scoreboard players set #mad RandomCount 10
 scoreboard players set #mad RandomAnswer 0
 scoreboard players set #mad RandomModder 2147483647
 scoreboard players set #mad RandomMultiplier 48271
-## Set scoreboards for setting phase - choose time limit
+#### setting phase - choose time limit
 scoreboard players set #mad 10 10
 scoreboard players set #mad 100 100
 scoreboard players set #mad 1000 1000
 scoreboard players set #mad 10000 10000
 scoreboard players set #mad TimeLimit 100
 scoreboard players set #mad TimeLimitPrv 100
-## Set scoreboards for setting phase - choose area
+#### setting phase - choose area
 scoreboard players set #mad WorldBorder 1000
 scoreboard players set #mad WorldBorderPrv 1000
 scoreboard players set #mad WorldBorderEnd 0
-## Set scoreboards for setting phase - choose difficulty
+#### setting phase - choose difficulty
 scoreboard players set #mad Difficulty 2
 scoreboard players set #mad DifficultyPrv 2
-## Set scoreboards for setting phase - choose adding time
+#### setting phase - choose adding time
 scoreboard players set #mad AddingTime 100
 scoreboard players set #mad AddingTimePrv 100
-## Set scoreboards for setting phase - choose minecart interval
+#### setting phase - choose minecart interval
 scoreboard players set #mad CartInterval 300
 scoreboard players set #mad CartIntervalPrv 300
-## Set scoreboards for setting phase - choose gamerule
+#### setting phase - choose gamerule
 scoreboard players set #mad WeatherCycle 1
 scoreboard players set #mad DaylightCycle 1
 scoreboard players set #mad WeatherCyclePrv 1
 scoreboard players set #mad DaylightCyclePrv 1
-## Set scoreboards for setting phase - choose team setting
+#### setting phase - choose team setting
 scoreboard players set #mad IsTeam 0
 scoreboard players set #mad friendlyFire 1
 scoreboard players set #mad collisionRule 1
@@ -369,26 +374,26 @@ scoreboard players set #mad SetTeamManualPrv 0
 scoreboard players set #mad TeamNumberPrv 2
 scoreboard players set #mad BeaconNumberPrv 1
 scoreboard players set #mad RespawnTimePrv 0
-## Set scoreboards for summons minecart
+#### summons minecart
 scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 300
 scoreboard players set #mad SecondEliminate 0
 scoreboard players set #mad SummonInterval 300
 scoreboard players set #mad SummonMinecart 0
 scoreboard players set #mad MinecartBranch 0
-## Set scoreboards for team
+#### team
 scoreboard players set #mad TeamBoolean 0
 scoreboard players set #mad DeadTeamA 0
 scoreboard players set #mad DeadTeamB 0
 scoreboard players set #mad DeadTeamC 0
 scoreboard players set #mad DeadTeamD 0
 scoreboard players set #mad DeadTeamE 0
-## Set scoreboards for mobile respawn beacon
+#### mobile respawn beacon
 scoreboard players set #mad MobileBeaconNum 1
-## Set scoreboards for add-on
+#### add-on
 scoreboard players set #mad LoadAddon 0
 
-## Set scoreboards for game phase
+#### game phase
 scoreboard players set @a Phase 0
 scoreboard players set @a Death 0
 scoreboard players set @a Kill 0
@@ -399,19 +404,19 @@ scoreboard players set @a TeleportCenter 0
 scoreboard players enable @a TeleportCenter
 scoreboard players set @a ExitMessage 0
 scoreboard players enable @a ExitMessage
-## Set scoreboards for timer
+#### timer
 scoreboard players set @a Second 0
 scoreboard players set @a Tick 0
 scoreboard players set @a GeneralSecond 0
 scoreboard players set @a SecondPerSurvive 0
-## Set scoreboards for participants
+#### participants
 scoreboard players set @a Participant 0
 scoreboard players set @a NumParticipant 0
 scoreboard players set @a NumAlive 0
 scoreboard players set @a NumDead 0
-## Set scoreboards for onground
+#### onground
 scoreboard players set @a OnGround 0
-## Set scoreboards for setting phase - common
+#### setting phase - common
 scoreboard players set @a ThrowItem 0
 scoreboard players set @a Select02 0
 scoreboard players set @a Select03 0
@@ -440,14 +445,14 @@ scoreboard players set @a Select28 0
 scoreboard players set @a Select31 0
 scoreboard players set @a Select34 0
 scoreboard players set @a Selected 0
-## Set scoreboards for setting phase - choose time limit
+#### setting phase - choose time limit
 scoreboard players set @a GetTimeLimit 0
-## Set scoreboards for setting phase - choose area
+#### setting phase - choose area
 scoreboard players set @a WorldBorder 1000
 scoreboard players set @a WorldBorderPrv 1000
-## Set scoreboards for advancements
+#### advancements
 scoreboard players set @a HasAdvancements 0
-## Set scoreboards for advancements - adventure
+#### advancements - adventure
 scoreboard players set @a AD_ad_adven_time 0
 scoreboard players set @a AD_ad_arbalistic 0
 scoreboard players set @a AD_ad_bullseye 0
@@ -476,7 +481,7 @@ scoreboard players set @a AD_ad_very_very 0
 scoreboard players set @a AD_ad_voluntary 0
 scoreboard players set @a AD_ad_powdersnow 0
 scoreboard players set @a AD_ad_whos_pilla 0
-## Set scoreboards for advancements - minecraft
+#### advancements - minecraft
 scoreboard players set @a AD_mc_cure_zombi 0
 scoreboard players set @a AD_mc_deflect 0
 scoreboard players set @a AD_mc_enchant 0
@@ -493,7 +498,7 @@ scoreboard players set @a AD_mc_root 0
 scoreboard players set @a AD_mc_shiny_gear 0
 scoreboard players set @a AD_mc_smelt_iron 0
 scoreboard players set @a AD_mc_upgrade 0
-## Set scoreboards for advancements - nether
+#### advancements - nether
 scoreboard players set @a AD_nt_all_effect 0
 scoreboard players set @a AD_nt_all_potion 0
 scoreboard players set @a AD_nt_brew_potio 0
@@ -518,7 +523,7 @@ scoreboard players set @a AD_nt_root 0
 scoreboard players set @a AD_nt_smn_wither 0
 scoreboard players set @a AD_nt_uneasy_alc 0
 scoreboard players set @a AD_nt_lodestone 0
-## Set scoreboards for advancements - end
+#### advancements - end
 scoreboard players set @a AD_ed_drg_breath 0
 scoreboard players set @a AD_ed_dragon_egg 0
 scoreboard players set @a AD_ed_elytra 0
@@ -528,7 +533,7 @@ scoreboard players set @a AD_ed_kill_dragn 0
 scoreboard players set @a AD_ed_levitate 0
 scoreboard players set @a AD_ed_resp_dragn 0
 scoreboard players set @a AD_ed_root 0
-## Set scoreboards for advancements - husbandry
+#### advancements - husbandry
 scoreboard players set @a AD_hb_axolotl 0
 scoreboard players set @a AD_hb_balanced 0
 scoreboard players set @a AD_hb_bred_all 0
@@ -547,7 +552,7 @@ scoreboard players set @a AD_hb_tacti_fish 0
 scoreboard players set @a AD_hb_tame_anima 0
 scoreboard players set @a AD_hb_wax_off 0
 scoreboard players set @a AD_hb_wax_on 0
-## Set scoreboards for advancements - potage00
+#### advancements - potage00
 scoreboard players set @a AD_pg_root 0
 scoreboard players set @a AD_pg_minecart 0
 scoreboard players set @a AD_pg_kubikari 0
@@ -560,7 +565,7 @@ scoreboard players set @a AD_pg_kill_phant 0
 scoreboard players set @a AD_pg_kill_ender 0
 scoreboard players set @a AD_pg_frinedship 0
 scoreboard players set @a BreakSpawner 0
-## Set scoreboards for advancements - achievements
+#### advancements - achievements
 scoreboard players set @a AD_ac_root 0
 scoreboard players set @a AD_ac_buildsword 0
 scoreboard players set @a AD_ac_diamonds2u 0
@@ -569,28 +574,30 @@ scoreboard players set @a AD_ac_kill_cow 0
 scoreboard players set @a AD_ac_on_a_rail 0
 scoreboard players set @a FallDistance 0
 scoreboard players set @a RailDistance 0
-## Set scoreboards for summons minecart
+#### summons minecart
 scoreboard players set @a GetMinecartCount 0
-## Set scoreboards for transmitter
+#### transmitter
 scoreboard players set @a UseTransmitter 0
 scoreboard players set @a TransmitterPosX 0
 scoreboard players set @a TransmitterPosY 0
 scoreboard players set @a TransmitterPosZ 0
 scoreboard players set @a SetRespawnBanner 0
-## Set scoreboards for emergency call
+#### emergency call
 scoreboard players set @a UseEmergencyCall 0
-## Set scoreboards for armor upgrader
+#### armor upgrader
 scoreboard players set @a UseArmorUpgrader 0
-## Set scoreboards for tool upgrader
+#### tool upgrader
 scoreboard players set @a UseToolUpgrader 0
-## Set scoreboards for notice of thief
+#### notice of thief
 scoreboard players set @a UseNoticeOfThief 0
 scoreboard players set @a StealItemPlayer 0
 scoreboard players set @a ThiefTick 0
 scoreboard players set @a ThiefSecond 5
-## Set scoreboards for mobile respawn beacon
+#### evoker fangs wand
+scoreboard players set @a UseFungusStick 0
+#### mobile respawn beacon
 scoreboard players set @a MobileBeaconNum 0
-## Set scoreboards for team
+#### team
 scoreboard players set @a DeadOwnTeam 0
 scoreboard players set @a DeadTeamA 0
 scoreboard players set @a DeadTeamB 0
@@ -598,7 +605,7 @@ scoreboard players set @a DeadTeamC 0
 scoreboard players set @a DeadTeamD 0
 scoreboard players set @a DeadTeamE 0
 scoreboard players set @a NumOfTeamPlayer 0
-## Set scoreboards for result
+#### result
 scoreboard players set @a ResultTmp 0
 
 ## Random

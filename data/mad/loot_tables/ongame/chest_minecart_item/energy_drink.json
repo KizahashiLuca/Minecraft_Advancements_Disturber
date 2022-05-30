@@ -11,6 +11,7 @@
           "functions": [
             {
               "function":"minecraft:set_name",
+              "entity": "this",
               "name": [
               ["",{"text":"栄養ドリンク","color":"light_purple","bold":false,"italic":false}]
               ]
