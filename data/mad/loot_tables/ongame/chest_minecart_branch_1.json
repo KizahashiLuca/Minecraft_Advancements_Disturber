@@ -17,7 +17,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "mad:ongame/chest_minecart_item/iron_pickaxe"
+          "name": "mad:ongame/chest_minecart_item/diamond_pickaxe"
         },
         {
           "type": "minecraft:loot_table",
@@ -43,6 +43,11 @@
           "type": "minecraft:loot_table",
           "weight": 1,
           "name": "mad:ongame/chest_minecart_item/broken_elytra"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:ongame/chest_minecart_item/evoker_fangs_wand"
         },
         {
           "type": "minecraft:loot_table",

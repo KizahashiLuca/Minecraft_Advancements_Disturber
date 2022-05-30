@@ -16,6 +16,15 @@
             {
               "function": "minecraft:set_nbt",
               "tag": "{Tags:[\"MinecartItem\"],Effects:[{EffectId:1b,EffectDuration:1200}]}"
+            },
+            {
+              "function": "minecraft:set_stew_effect",
+              "effects": [
+                {
+                  "type": "minecraft:absorption",
+                  "duration": 1200
+                }
+              ]
             }
           ]
         },

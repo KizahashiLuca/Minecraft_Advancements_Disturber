@@ -11,12 +11,14 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 ["",{"text":"防具アップグレードキット","color":"light_purple","bold":false,"italic":false}]
               ]
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
                 ["",{"text":"使用者の着用した防具をアップグレード。","color":"white","bold":false,"italic":false}],
                 ["",{"text":"  無着用 → 革防具","color":"white","bold":false,"italic":false}],
@@ -26,7 +28,7 @@
                 ["",{"text":"  鉄防具 → ダイヤモンド防具","color":"white","bold":false,"italic":false}],
                 ["",{"text":"  ダイヤモンド防具 → ネザライト防具","color":"white","bold":false,"italic":false}],
                 [""],
-                ["",{"text":"右クリックで使用","color":"","bold":false,"italic":false}]
+                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}]
               ]
             },
             {

@@ -8,7 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Remove scoreboards for game phase
+## Remove scoreboards
+#### game phase
 scoreboard objectives remove DataVersion
 scoreboard objectives remove Version
 scoreboard objectives remove Phase
@@ -19,32 +20,32 @@ scoreboard objectives remove KillTemp
 scoreboard objectives remove TeleportMinecart
 scoreboard objectives remove TeleportCenter
 scoreboard objectives remove ExitMessage
-## Remove scoreboards for timer
+#### timer
 scoreboard objectives remove 2
 scoreboard objectives remove Second
 scoreboard objectives remove Tick
 scoreboard objectives remove GeneralSecond
 scoreboard objectives remove SecondPerSurvive
-## Remove scoreboards for participants
+#### participants
 scoreboard objectives remove Participant
 scoreboard objectives remove NumParticipant
 scoreboard objectives remove NumAlive
 scoreboard objectives remove NumDead
-## Remove scoreboards for onground
+#### onground
 scoreboard objectives remove OnGround
-## Remove scoreboards for position
+#### position
 scoreboard objectives remove PosX
 scoreboard objectives remove PosY
 scoreboard objectives remove PosZ
 scoreboard objectives remove 45
 scoreboard objectives remove Angle
-## Remove scoreboards for randomizer
+#### randomizer
 scoreboard objectives remove RandomSeed
 scoreboard objectives remove RandomCount
 scoreboard objectives remove RandomAnswer
 scoreboard objectives remove RandomModder
 scoreboard objectives remove RandomMultiplier
-## Remove scoreboards for setting phase - common
+#### setting phase - common
 scoreboard objectives remove ThrowItem
 scoreboard objectives remove Select02
 scoreboard objectives remove Select03
@@ -73,7 +74,7 @@ scoreboard objectives remove Select28
 scoreboard objectives remove Select31
 scoreboard objectives remove Select34
 scoreboard objectives remove Selected
-## Remove scoreboards for setting phase - choose time limit
+#### setting phase - choose time limit
 scoreboard objectives remove 10
 scoreboard objectives remove 100
 scoreboard objectives remove 1000
@@ -85,7 +86,7 @@ scoreboard objectives remove digit_1000
 scoreboard objectives remove TimeLimit
 scoreboard objectives remove TimeLimitPrv
 scoreboard objectives remove GetTimeLimit
-## Remove scoreboards for setting phase - choose area
+#### setting phase - choose area
 scoreboard objectives remove WorldBorder
 scoreboard objectives remove WorldBorderPrv
 scoreboard objectives remove WorldBorderEnd
@@ -93,21 +94,21 @@ scoreboard objectives remove PosXCeil
 scoreboard objectives remove PosZCeil
 scoreboard objectives remove PosXFloor
 scoreboard objectives remove PosZFloor
-## Remove scoreboards for setting phase - choose difficulty
+#### setting phase - choose difficulty
 scoreboard objectives remove Difficulty
 scoreboard objectives remove DifficultyPrv
-## Remove scoreboards for setting phase - choose adding time
+#### setting phase - choose adding time
 scoreboard objectives remove AddingTime
 scoreboard objectives remove AddingTimePrv
-## Remove scoreboards for setting phase - choose minecart interval
+#### setting phase - choose minecart interval
 scoreboard objectives remove CartInterval
 scoreboard objectives remove CartIntervalPrv
-## Remove scoreboards for setting phase - choose gamerule
+#### setting phase - choose gamerule
 scoreboard objectives remove WeatherCycle
 scoreboard objectives remove DaylightCycle
 scoreboard objectives remove WeatherCyclePrv
 scoreboard objectives remove DaylightCyclePrv
-## Remove scoreboards for setting phase - choose team setting
+#### setting phase - choose team setting
 scoreboard objectives remove IsTeam
 scoreboard objectives remove friendlyFire
 scoreboard objectives remove collisionRule
@@ -127,9 +128,9 @@ scoreboard objectives remove SetTeamManualPrv
 scoreboard objectives remove TeamNumberPrv
 scoreboard objectives remove BeaconNumberPrv
 scoreboard objectives remove RespawnTimePrv
-## Remove scoreboards for advancements
+#### advancements
 scoreboard objectives remove HasAdvancements
-## Remove scoreboards for advancements - adventure
+#### advancements - adventure
 scoreboard objectives remove AD_ad_adven_time
 scoreboard objectives remove AD_ad_arbalistic
 scoreboard objectives remove AD_ad_bullseye
@@ -158,7 +159,7 @@ scoreboard objectives remove AD_ad_very_very
 scoreboard objectives remove AD_ad_voluntary
 scoreboard objectives remove AD_ad_powdersnow
 scoreboard objectives remove AD_ad_whos_pilla
-## Remove scoreboards for advancements - minecraft
+#### advancements - minecraft
 scoreboard objectives remove AD_mc_cure_zombi
 scoreboard objectives remove AD_mc_deflect
 scoreboard objectives remove AD_mc_enchant
@@ -175,7 +176,7 @@ scoreboard objectives remove AD_mc_root
 scoreboard objectives remove AD_mc_shiny_gear
 scoreboard objectives remove AD_mc_smelt_iron
 scoreboard objectives remove AD_mc_upgrade
-## Remove scoreboards for advancements - nether
+#### advancements - nether
 scoreboard objectives remove AD_nt_all_effect
 scoreboard objectives remove AD_nt_all_potion
 scoreboard objectives remove AD_nt_brew_potio
@@ -200,7 +201,7 @@ scoreboard objectives remove AD_nt_root
 scoreboard objectives remove AD_nt_smn_wither
 scoreboard objectives remove AD_nt_uneasy_alc
 scoreboard objectives remove AD_nt_lodestone
-## Remove scoreboards for advancements - end
+#### advancements - end
 scoreboard objectives remove AD_ed_drg_breath
 scoreboard objectives remove AD_ed_dragon_egg
 scoreboard objectives remove AD_ed_elytra
@@ -210,7 +211,7 @@ scoreboard objectives remove AD_ed_kill_dragn
 scoreboard objectives remove AD_ed_levitate
 scoreboard objectives remove AD_ed_resp_dragn
 scoreboard objectives remove AD_ed_root
-## Remove scoreboards for advancements - husbandry
+#### advancements - husbandry
 scoreboard objectives remove AD_hb_axolotl
 scoreboard objectives remove AD_hb_balanced
 scoreboard objectives remove AD_hb_bred_all
@@ -229,7 +230,7 @@ scoreboard objectives remove AD_hb_tacti_fish
 scoreboard objectives remove AD_hb_tame_anima
 scoreboard objectives remove AD_hb_wax_off
 scoreboard objectives remove AD_hb_wax_on
-## Remove scoreboards for advancements - potage00
+#### advancements - potage00
 scoreboard objectives remove AD_pg_root
 scoreboard objectives remove AD_pg_minecart
 scoreboard objectives remove AD_pg_kubikari
@@ -242,7 +243,7 @@ scoreboard objectives remove AD_pg_kill_phant
 scoreboard objectives remove AD_pg_kill_ender
 scoreboard objectives remove AD_pg_frinedship
 scoreboard objectives remove BreakSpawner
-## Remove scoreboards for advancements - achievements
+#### advancements - achievements
 scoreboard objectives remove AD_ac_root
 scoreboard objectives remove AD_ac_buildsword
 scoreboard objectives remove AD_ac_diamonds2u
@@ -251,7 +252,7 @@ scoreboard objectives remove AD_ac_kill_cow
 scoreboard objectives remove AD_ac_on_a_rail
 scoreboard objectives remove FallDistance
 scoreboard objectives remove RailDistance
-## Remove scoreboards for summons minecart
+#### summons minecart
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon
 scoreboard objectives remove SecondEliminate
@@ -260,7 +261,7 @@ scoreboard objectives remove SummonMinecart
 scoreboard objectives remove MinecartBranch
 scoreboard objectives remove GetMinecartCount
 scoreboard objectives remove HasLootTable
-## Remove scoreboards for transmitter
+#### transmitter
 scoreboard objectives remove UseTransmitter
 scoreboard objectives remove TransmitterPosX
 scoreboard objectives remove TransmitterPosY
@@ -271,21 +272,24 @@ scoreboard objectives remove BannerPosY
 scoreboard objectives remove BannerPosZ
 scoreboard objectives remove SetRespawnBanner
 scoreboard objectives remove TempBannerNum
-## Remove scoreboards for emergency call
+#### emergency call
 scoreboard objectives remove UseEmergencyCall
-## Remove scoreboards for armor upgrader
+#### armor upgrader
 scoreboard objectives remove UseArmorUpgrader
-## Remove scoreboards for tool upgrader
+#### tool upgrader
 scoreboard objectives remove UseToolUpgrader
-## Remove scoreboards for notice of thief
+#### notice of thief
 scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove StealItemPlayer
 scoreboard objectives remove ThiefTick
 scoreboard objectives remove ThiefSecond
-## Remove scoreboards for mobile respawn beacon
+#### evoker fangs wand
+scoreboard objectives remove UseFungusStick
+scoreboard objectives remove EvokerFangsCount
+#### mobile respawn beacon
 scoreboard objectives remove MobileBeaconNum
 scoreboard objectives remove MobileBeaconTmp
-## Remove scoreboards for team
+#### team
 scoreboard objectives remove TeamBoolean
 scoreboard objectives remove DeadOwnTeam
 scoreboard objectives remove DeadTeamA
@@ -294,9 +298,9 @@ scoreboard objectives remove DeadTeamC
 scoreboard objectives remove DeadTeamD
 scoreboard objectives remove DeadTeamE
 scoreboard objectives remove NumOfTeamPlayer
-## Remove scoreboards for result
+#### result
 scoreboard objectives remove ResultTmp
-## Remove scoreboards for add-on
+#### add-on
 scoreboard objectives remove LoadAddon
 
 ## Remove players
