@@ -6,6 +6,9 @@
       "offhand": {
         "nbt": "{Tags:[\"MinecartItem\",\"EvokerFangsWand\"]}"
       }
+    },
+    "flags": {
+      "is_sneaking": true
     }
   }
 }
