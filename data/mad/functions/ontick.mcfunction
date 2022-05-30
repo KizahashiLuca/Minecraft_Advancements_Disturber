@@ -16,5 +16,3 @@ execute if score #mad Phase matches 21 if score #mad IsTeam matches 1 run functi
 execute if score #mad Phase matches 20 run function mad:system/preparation/main
 execute if score #mad Phase matches 19 run function mad:system/pre_preparation/main
 execute if score #mad Phase matches 0..17 run function mad:system/setting/branch
-
-execute as @a[scores={UseFungusStick=1..}] at @s run function mad:system/ongame/evoker_fangs_wand/main
