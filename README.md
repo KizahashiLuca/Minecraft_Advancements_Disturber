@@ -5,7 +5,7 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 最後まで生き残ることを目指すPvPデータパック
 
 ## Caution!!
- - マインクラフト Java版 v1.17以降対応です。
+ - マインクラフト Java版 v1.18.2以降対応です。
  - 実況でご利用の際は以下項目の記載をお願い致します。
    - 企画者 : ぽたーじゅ
      - Twitter : [https://twitter.com/potagegatop](https://twitter.com/potagegatop)
@@ -16,10 +16,8 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 
 ## Download
 ダウンロードは 以下リンクからお願いします。
- - Java版 v1.17
-   - [β-1.5 v1.17版](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-1.5_v1.17)
- - Java版 v1.18
-   - [β-1.5 v1.18版](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-1.5_v1.18)
+ - Java Edition v1.18.2 以降対応
+   - [β-1.6](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-1.6)
 
 ## ルール
 マルチのサバイバル環境にて、各プレイヤー進捗を解除しつつ、唯一の生存を目指す
@@ -55,7 +53,7 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 
 ### 支援物資のルートテーブル
  - 不死のトーテム
- - 鉄のピッケル
+ - ダイヤモンドのピッケル
    - 効率強化V
  - 金のブーツ
    - 移動速度 +0.05
@@ -76,6 +74,13 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
    - 右クリックで使用
  - エリトラ
    - 壊れかけ
+ - エヴォーカーの牙の杖
+   - 周囲にエヴォーカーの牙を召喚
+   - 5回使用可能
+   - 右クリックで発動
+     - 前方に、牙が約20m連なって出現
+   - スニーク＋右クリックで発動
+     - 周囲2mに、牙が連なって出現
  - 発信機 ×3
    - 誰かの座標を通知
    - 右クリックで使用
