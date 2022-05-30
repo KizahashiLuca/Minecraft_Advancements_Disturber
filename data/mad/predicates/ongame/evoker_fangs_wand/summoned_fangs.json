@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:evoker_fangs",
+    "distance": {
+      "absolute": {
+        "min": 0,
+        "max": 1
+      }
+    }
+  }
+}

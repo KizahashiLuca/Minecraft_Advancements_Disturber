@@ -11,16 +11,18 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 ["",{"text":"発信機","color":"light_purple","bold":false,"italic":false}]
               ]
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
                 ["",{"text":"近くの敵プレイヤーの現在の座標を通知。","color":"white","bold":false,"italic":false}],
                 [""],
-                ["",{"text":"右クリックで使用","color":"","bold":false,"italic":false}]
+                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}]
               ]
             },
             {
