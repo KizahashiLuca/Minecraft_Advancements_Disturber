@@ -16,3 +16,4 @@ execute if predicate mad:version/1.15 run scoreboard players set #mad Version 15
 execute if predicate mad:version/1.16 run scoreboard players set #mad Version 16
 execute if predicate mad:version/1.17 run scoreboard players set #mad Version 17
 execute if predicate mad:version/1.18 run scoreboard players set #mad Version 18
+execute if predicate mad:version/1.19 run scoreboard players set #mad Version 19
