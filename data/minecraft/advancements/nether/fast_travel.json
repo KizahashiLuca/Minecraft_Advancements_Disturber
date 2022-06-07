@@ -1,39 +1,39 @@
 {
   "parent": "minecraft:nether/root",
+  "criteria": {
+    "travelled": {
+      "conditions": {
+        "distance": {
+          "horizontal": {
+            "min": 7000
+          }
+        }
+      },
+      "trigger": "minecraft:nether_travel"
+    }
+  },
   "display": {
-    "icon": {
-      "item": "minecraft:map"
-    },
-    "title": {
-      "translate": "advancements.nether.fast_travel.title"
-    },
+    "announce_to_chat": true,
     "description": {
       "translate": "advancements.nether.fast_travel.description"
     },
     "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:map"
+    },
     "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "rewards": {
-    "experience": 100,
-    "function": "mad:system/ongame/advancements/nether/fast_travel"
-  },
-  "criteria": {
-    "travelled": {
-      "trigger": "minecraft:nether_travel",
-      "conditions": {
-        "distance": {
-          "horizontal": {
-            "min": 7000.0
-          }
-        }
-      }
+    "title": {
+      "translate": "advancements.nether.fast_travel.title"
     }
   },
   "requirements": [
     [
       "travelled"
     ]
-  ]
+  ],
+  "rewards": {
+    "experience": 100,
+    "function": "mad:system/ongame/advancements/nether/fast_travel"
+  }
 }

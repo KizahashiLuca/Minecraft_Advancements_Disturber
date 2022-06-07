@@ -1,29 +1,31 @@
 {
-    "parent": "mad:potage00/adventure",
-    "display": {
-        "icon": {
-            "item": "minecraft:leather_boots"
-        },
-        "title": {
-            "text": "この世界の片隅に"
-        },
-        "description": {
-            "text": "ボーダーの端へ到達"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
+  "parent": "mad:potage00/adventure",
+  "display": {
+    "icon": {
+      "item": "minecraft:leather_boots"
     },
-    "criteria": {
-        "in_this_corner_of_the_world": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "この世界の片隅に"
     },
-    "requirements": [
-        ["in_this_corner_of_the_world"]
-    ],
-    "rewards": {
-        "function": "mad:system/ongame/advancements/potage00/in_this_corner_of_the_world"
+    "description": {
+      "text": "ボーダーの端へ到達"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "in_this_corner_of_the_world": {
+      "trigger": "minecraft:impossible"
     }
+  },
+  "requirements": [
+    [
+      "in_this_corner_of_the_world"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/potage00/in_this_corner_of_the_world"
+  }
 }

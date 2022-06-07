@@ -1,17 +1,17 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.18.2
+## MC-Version: Java Edit. 1.19
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 30 May 2022
-## Version   : β-1.6
+## Date      : 08 Jun 2022
+## Version   : β-1.7
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamA] AD_nt_lodestone 1
+scoreboard players set @a[team=TeamA] AD_Nether_use_lodestone 1
 scoreboard players add @a[team=TeamA] HasAdvancements 1
 scoreboard players operation @p[team=TeamA,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamA,tag=Leader] Second += #mad AddingTime
 advancement grant @a[team=TeamA] only minecraft:nether/use_lodestone
-tellraw @a[team=TeamA] ["",{"translate":"chat.type.advancement.challenge","with":[{"text":"赤チーム","color":"red","bold":true},{"translate":"[%s]","color":"dark_purple","with":[{"translate":"advancements.nether.use_lodestone.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"dark_purple","with":[{"translate":"advancements.nether.use_lodestone.title"},{"translate":"advancements.nether.use_lodestone.description"}]}]}}]}]}]
+tellraw @a[team=TeamA] ["",{"translate":"chat.type.advancement.task","with":[{"text":"赤チーム","color":"red","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"advancements.nether.use_lodestone.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"advancements.nether.use_lodestone.title"},{"translate":"advancements.nether.use_lodestone.description"}]}]}}]}]}]
