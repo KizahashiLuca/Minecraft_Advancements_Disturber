@@ -1,12 +1,12 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.18.2
+## MC-Version: Java Edit. 1.19
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 30 May 2022
-## Version   : β-1.6
+## Date      : 08 Jun 2022
+## Version   : β-1.7
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_get_wtskul=0}] run function mad:system/ongame/advancements/nether/get_wither_skull_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Nether_get_wither_skull=0}] run function mad:system/ongame/advancements/nether/get_wither_skull_branch

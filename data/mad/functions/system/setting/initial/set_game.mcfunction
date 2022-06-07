@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.18.2
+## MC-Version: Java Edit. 1.19
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 30 May 2022
-## Version   : β-1.6
+## Date      : 08 Jun 2022
+## Version   : β-1.7
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -120,7 +120,7 @@ execute as @a[tag=Participant] run scoreboard players add #mad NumParticipant 1
 execute if entity @p[tag=MADtest] run scoreboard players set #mad NumParticipant 5
 
 ## Send messages
-execute if score #mad Version matches 18 if score #mad NumParticipant matches 1..100 run function mad:system/setting/initial/send_message
-execute if score #mad Version matches ..17 if score #mad NumParticipant matches 1..100 run function mad:system/finish/game_version_error
-execute if score #mad Version matches 19.. if score #mad NumParticipant matches 1..100 run function mad:system/finish/game_version_error
+execute if score #mad Version matches 19 if score #mad NumParticipant matches 1..100 run function mad:system/setting/initial/send_message
+execute if score #mad Version matches ..18 if score #mad NumParticipant matches 1..100 run function mad:system/finish/game_version_error
+execute if score #mad Version matches 20.. if score #mad NumParticipant matches 1..100 run function mad:system/finish/game_version_error
 execute if score #mad NumParticipant matches 101.. run function mad:system/finish/game_many

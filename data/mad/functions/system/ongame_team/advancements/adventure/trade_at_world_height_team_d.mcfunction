@@ -1,15 +1,15 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: JE 1.16
+## MC-Version: Java Edit. 1.19
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 12 Sep 2021
-## Version   : β-1.3.3
+## Date      : 08 Jun 2022
+## Version   : β-1.7
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamD] AD_ad_tradehigh 1
+scoreboard players set @a[team=TeamD] AD_Adventure_trade_at_world_height 1
 scoreboard players add @a[team=TeamD] HasAdvancements 1
 scoreboard players operation @p[team=TeamD,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamD,tag=Leader] Second += #mad AddingTime

@@ -1,26 +1,28 @@
 {
-    "parent": "mad:potage00/root",
-    "display": {
-        "icon": {
-            "item": "minecraft:clock"
-        },
-        "title": {
-            "text": "オリジナル"
-        },
-        "description": {
-            "text": ""
-        },
-        "frame": "task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+  "parent": "mad:potage00/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:clock"
     },
-    "criteria": {
-        "original": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "オリジナル"
     },
-    "requirements": [
-        ["original"]
+    "description": {
+      "text": ""
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "original": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "original"
     ]
+  ]
 }

@@ -1,27 +1,29 @@
 {
-    "display": {
-        "icon": {
-            "item": "minecraft:player_head",
-            "nbt": "{SkullOwner:\"potage00\"}"
-        },
-        "title": {
-            "text": "MAD original"
-        },
-        "description": {
-            "text": "ゲームをはじめる"
-        },
-        "frame": "task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false,
-        "background": "minecraft:textures/block/magma.png"
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:\"potage00\"}"
     },
-    "criteria": {
-        "game_start": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "MAD original"
     },
-    "requirements": [
-        ["game_start"]
+    "description": {
+      "text": "ゲームをはじめる"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/magma.png"
+  },
+  "criteria": {
+    "game_start": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "game_start"
     ]
+  ]
 }
