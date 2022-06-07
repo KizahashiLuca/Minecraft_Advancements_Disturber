@@ -29,5 +29,8 @@
     [
       "beacon"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/nether/create_beacon"
+  }
 }

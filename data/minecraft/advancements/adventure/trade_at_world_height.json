@@ -11,7 +11,7 @@
               "location": {
                 "position": {
                   "y": {
-                    "min": 319.0
+                    "min": 319
                   }
                 }
               }
@@ -41,5 +41,8 @@
     [
       "trade_at_world_height"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/trade_at_world_height"
+  }
 }

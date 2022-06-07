@@ -5,7 +5,7 @@
       "conditions": {
         "distance": {
           "y": {
-            "min": 50.0
+            "min": 50
           }
         }
       },
@@ -33,6 +33,7 @@
     ]
   ],
   "rewards": {
-    "experience": 50
+    "experience": 50,
+    "function": "mad:system/ongame/advancements/end/levitate"
   }
 }

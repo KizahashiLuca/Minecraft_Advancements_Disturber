@@ -25,5 +25,8 @@
     [
       "traded"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/trade"
+  }
 }

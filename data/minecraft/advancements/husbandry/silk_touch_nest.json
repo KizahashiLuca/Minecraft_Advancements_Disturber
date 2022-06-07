@@ -38,5 +38,8 @@
     [
       "silk_touch_nest"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/husbandry/silk_touch_nest"
+  }
 }

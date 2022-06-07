@@ -31,5 +31,8 @@
     [
       "tadpole_bucket"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/husbandry/tadpole_in_a_bucket"
+  }
 }

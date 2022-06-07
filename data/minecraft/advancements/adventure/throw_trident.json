@@ -35,5 +35,8 @@
     [
       "shot_trident"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/throw_trident"
+  }
 }

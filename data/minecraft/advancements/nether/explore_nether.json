@@ -116,6 +116,7 @@
     ]
   ],
   "rewards": {
-    "experience": 500
+    "experience": 500,
+    "function": "mad:system/ongame/advancements/nether/explore_nether"
   }
 }

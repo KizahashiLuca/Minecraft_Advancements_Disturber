@@ -540,6 +540,7 @@
     ]
   ],
   "rewards": {
-    "experience": 100
+    "experience": 100,
+    "function": "mad:system/ongame/advancements/husbandry/balanced_diet"
   }
 }

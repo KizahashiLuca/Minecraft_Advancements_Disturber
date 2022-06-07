@@ -44,5 +44,8 @@
     [
       "voluntary_exile"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/voluntary_exile"
+  }
 }

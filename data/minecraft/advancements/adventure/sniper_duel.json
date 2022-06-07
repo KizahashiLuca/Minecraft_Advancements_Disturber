@@ -11,7 +11,7 @@
               "type": "minecraft:skeleton",
               "distance": {
                 "horizontal": {
-                  "min": 50.0
+                  "min": 50
                 }
               }
             }
@@ -45,6 +45,7 @@
     ]
   ],
   "rewards": {
-    "experience": 50
+    "experience": 50,
+    "function": "mad:system/ongame/advancements/adventure/sniper_duel"
   }
 }

@@ -1009,6 +1009,7 @@
     ]
   ],
   "rewards": {
-    "experience": 500
+    "experience": 500,
+    "function": "mad:system/ongame/advancements/adventure/adventuring_time"
   }
 }

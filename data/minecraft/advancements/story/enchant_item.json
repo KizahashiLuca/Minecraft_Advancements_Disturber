@@ -25,5 +25,8 @@
     [
       "enchanted_item"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/story/enchant_item"
+  }
 }

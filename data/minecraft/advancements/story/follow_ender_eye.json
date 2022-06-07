@@ -37,5 +37,8 @@
     [
       "in_stronghold"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/story/follow_ender_eye"
+  }
 }

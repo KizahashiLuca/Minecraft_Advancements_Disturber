@@ -65,5 +65,8 @@
       "pufferfish",
       "salmon"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/husbandry/fishy_business"
+  }
 }

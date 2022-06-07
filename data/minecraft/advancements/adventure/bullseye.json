@@ -10,7 +10,7 @@
             "predicate": {
               "distance": {
                 "horizontal": {
-                  "min": 30.0
+                  "min": 30
                 }
               }
             }
@@ -42,6 +42,7 @@
     ]
   ],
   "rewards": {
-    "experience": 50
+    "experience": 50,
+    "function": "mad:system/ongame/advancements/adventure/bullseye"
   }
 }

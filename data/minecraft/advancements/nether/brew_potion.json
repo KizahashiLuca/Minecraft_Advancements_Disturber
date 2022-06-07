@@ -25,5 +25,8 @@
     [
       "potion"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/nether/brew_potion"
+  }
 }

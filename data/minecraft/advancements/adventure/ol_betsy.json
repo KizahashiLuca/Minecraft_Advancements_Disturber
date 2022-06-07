@@ -32,5 +32,8 @@
     [
       "shot_crossbow"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/ol_betsy"
+  }
 }

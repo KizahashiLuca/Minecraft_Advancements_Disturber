@@ -28,5 +28,8 @@
     [
       "entered_nether"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/story/enter_the_nether"
+  }
 }

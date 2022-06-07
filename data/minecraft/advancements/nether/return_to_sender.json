@@ -43,6 +43,7 @@
     ]
   ],
   "rewards": {
-    "experience": 50
+    "experience": 50,
+    "function": "mad:system/ongame/advancements/nether/return_to_sender"
   }
 }

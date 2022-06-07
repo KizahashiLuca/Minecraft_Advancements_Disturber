@@ -28,6 +28,7 @@
     ]
   ],
   "rewards": {
-    "experience": 100
+    "experience": 100,
+    "function": "mad:system/ongame/advancements/adventure/hero_of_the_village"
   }
 }

@@ -49,6 +49,7 @@
     ]
   ],
   "rewards": {
-    "experience": 65
+    "experience": 65,
+    "function": "mad:system/ongame/advancements/adventure/two_birds_one_arrow"
   }
 }

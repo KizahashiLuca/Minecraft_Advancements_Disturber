@@ -25,5 +25,8 @@
     [
       "slept_in_bed"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/sleep_in_bed"
+  }
 }

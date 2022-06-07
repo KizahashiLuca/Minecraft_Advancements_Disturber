@@ -35,5 +35,8 @@
     [
       "allay_deliver_item_to_player"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/husbandry/allay_deliver_item_to_player"
+  }
 }

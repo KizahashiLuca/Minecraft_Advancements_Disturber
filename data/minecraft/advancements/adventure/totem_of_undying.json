@@ -31,5 +31,8 @@
     [
       "used_totem"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/totem_of_undying"
+  }
 }

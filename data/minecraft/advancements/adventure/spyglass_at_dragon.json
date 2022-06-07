@@ -45,5 +45,8 @@
     [
       "spyglass_at_dragon"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/spyglass_at_dragon"
+  }
 }

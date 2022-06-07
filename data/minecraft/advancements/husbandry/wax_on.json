@@ -53,5 +53,8 @@
     [
       "wax_on"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/husbandry/wax_on"
+  }
 }

@@ -35,5 +35,8 @@
     [
       "summoned_dragon"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/end/respawn_dragon"
+  }
 }

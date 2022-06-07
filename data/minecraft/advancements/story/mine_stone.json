@@ -32,5 +32,8 @@
     [
       "get_stone"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/story/mine_stone"
+  }
 }

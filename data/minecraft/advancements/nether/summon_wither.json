@@ -35,5 +35,8 @@
     [
       "summoned"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/nether/summon_wither"
+  }
 }

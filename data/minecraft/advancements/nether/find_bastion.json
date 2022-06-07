@@ -37,5 +37,8 @@
     [
       "bastion"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/nether/find_bastion"
+  }
 }

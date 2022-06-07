@@ -33,5 +33,8 @@
     [
       "deflected_projectile"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/story/deflect_arrow"
+  }
 }

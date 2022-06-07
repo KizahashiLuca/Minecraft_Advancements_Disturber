@@ -34,5 +34,8 @@
     [
       "iron_pickaxe"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/story/iron_tools"
+  }
 }

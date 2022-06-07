@@ -34,5 +34,8 @@
     [
       "elytra"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/end/elytra"
+  }
 }

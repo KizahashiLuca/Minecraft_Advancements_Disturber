@@ -38,5 +38,8 @@
     [
       "use_lodestone"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/nether/use_lodestone"
+  }
 }

@@ -37,5 +37,8 @@
     [
       "play_jukebox_in_meadows"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/play_jukebox_in_meadows"
+  }
 }

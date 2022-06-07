@@ -35,5 +35,8 @@
     [
       "killed_dragon"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/end/kill_dragon"
+  }
 }

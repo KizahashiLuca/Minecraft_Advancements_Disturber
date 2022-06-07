@@ -36,5 +36,8 @@
     [
       "make_a_sign_glow"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/husbandry/make_a_sign_glow"
+  }
 }

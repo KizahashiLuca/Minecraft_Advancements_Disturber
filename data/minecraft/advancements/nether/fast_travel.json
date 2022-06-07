@@ -5,7 +5,7 @@
       "conditions": {
         "distance": {
           "horizontal": {
-            "min": 7000.0
+            "min": 7000
           }
         }
       },
@@ -33,6 +33,7 @@
     ]
   ],
   "rewards": {
-    "experience": 100
+    "experience": 100,
+    "function": "mad:system/ongame/advancements/nether/fast_travel"
   }
 }

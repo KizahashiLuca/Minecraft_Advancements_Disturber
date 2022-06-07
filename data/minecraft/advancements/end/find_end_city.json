@@ -37,5 +37,8 @@
     [
       "in_city"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/end/find_end_city"
+  }
 }

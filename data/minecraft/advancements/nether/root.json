@@ -27,5 +27,8 @@
     [
       "entered_nether"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/nether/root"
+  }
 }

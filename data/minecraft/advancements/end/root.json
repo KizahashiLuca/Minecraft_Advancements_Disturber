@@ -27,5 +27,8 @@
     [
       "entered_end"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/end/root"
+  }
 }

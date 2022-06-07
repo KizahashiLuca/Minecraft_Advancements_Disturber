@@ -25,5 +25,8 @@
     [
       "cured_zombie"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/story/cure_zombie_villager"
+  }
 }

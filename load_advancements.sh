@@ -25,7 +25,10 @@ for FILE in `find ${MINECRAFT_DIR} -maxdepth 2 -type f -name *.json`; do
   ## set value
   DIR=`echo "${FILE%/*}" | sed -e "s@${MINECRAFT_DIR}@@"`
   STEM=`echo "${FILE##*/}" | sed -e "s@\.json@@"`
-  cat ${FILE} | jq ".rewards |= .+ {\"function\": \"mad:system/ongame/advancements${DIR}/${STEM}\"}" > ${FILE}
+  TMP=tmp.json
+  cat ${FILE} | jq ".rewards |= .+ {\"function\": \"mad:system/ongame/advancements${DIR}/${STEM}\"}" > ${TMP}
+  cat ${TMP} > ${FILE}
+  rm ${TMP}
   ## addition
   i=$((i+1))
 done

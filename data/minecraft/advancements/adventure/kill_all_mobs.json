@@ -599,6 +599,7 @@
     ]
   ],
   "rewards": {
-    "experience": 100
+    "experience": 100,
+    "function": "mad:system/ongame/advancements/adventure/kill_all_mobs"
   }
 }

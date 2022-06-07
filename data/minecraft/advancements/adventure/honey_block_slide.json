@@ -27,5 +27,8 @@
     [
       "honey_block_slide"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/honey_block_slide"
+  }
 }

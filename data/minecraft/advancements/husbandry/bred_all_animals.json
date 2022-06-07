@@ -412,6 +412,7 @@
     ]
   ],
   "rewards": {
-    "experience": 100
+    "experience": 100,
+    "function": "mad:system/ongame/advancements/husbandry/bred_all_animals"
   }
 }

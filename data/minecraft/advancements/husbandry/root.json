@@ -25,5 +25,8 @@
     [
       "consumed_item"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/husbandry/root"
+  }
 }

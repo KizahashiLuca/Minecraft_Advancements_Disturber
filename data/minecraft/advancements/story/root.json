@@ -33,5 +33,8 @@
     [
       "crafting_table"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/story/root"
+  }
 }

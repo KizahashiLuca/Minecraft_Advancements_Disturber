@@ -33,5 +33,8 @@
     [
       "iron"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/story/smelt_iron"
+  }
 }

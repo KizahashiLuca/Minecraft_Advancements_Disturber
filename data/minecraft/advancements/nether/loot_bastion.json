@@ -48,5 +48,8 @@
       "loot_bastion_hoglin_stable",
       "loot_bastion_bridge"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/nether/loot_bastion"
+  }
 }

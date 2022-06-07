@@ -19,7 +19,7 @@
             "predicate": {
               "distance": {
                 "absolute": {
-                  "max": 30.0
+                  "max": 30
                 }
               },
               "type_specific": {
@@ -52,5 +52,8 @@
     [
       "lightning_rod_with_villager_no_fire"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/adventure/lightning_rod_with_villager_no_fire"
+  }
 }

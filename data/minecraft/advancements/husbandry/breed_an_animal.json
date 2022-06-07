@@ -25,5 +25,8 @@
     [
       "bred"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/husbandry/breed_an_animal"
+  }
 }

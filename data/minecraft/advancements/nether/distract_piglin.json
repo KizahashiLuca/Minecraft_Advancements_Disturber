@@ -196,5 +196,8 @@
       "distract_piglin",
       "distract_piglin_directly"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/nether/distract_piglin"
+  }
 }
