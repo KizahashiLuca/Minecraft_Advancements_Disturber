@@ -20,9 +20,13 @@
     "tsutenkaku": {
       "trigger": "minecraft:location",
       "conditions": {
-        "position": {
-          "y": {
-            "min": 171
+        "player": {
+          "location": {
+            "position": {
+              "y": {
+                "min": 170
+              }
+            }
           }
         }
       }
