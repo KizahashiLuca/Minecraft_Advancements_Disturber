@@ -101,7 +101,7 @@ EOF
   ## make file - team
   j=0
   for team in {A..E}; do
-    team_text=${team_text[j]}
+    text=${team_text[j]}
     FUNC4=${ONGAME_TEAM_DIR}/${DIR}/${STEM}_team_${team,,}.mcfunction
     filecomment "${FUNC4}"
     cat << EOF >> ${FUNC4}
@@ -111,7 +111,7 @@ scoreboard players add @a[team=Team${team}] HasAdvancements 1
 scoreboard players operation @p[team=Team${team},tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=Team${team},tag=Leader] Second += #mad AddingTime
 advancement grant @a[team=Team${team}] only minecraft:${DIR}/${STEM}
-tellraw @a[team=Team${team}] ["",{"translate":"chat.type.advancement.${FRAME}","with":[{${team_text},"bold":true},{"translate":"[%s]","color":"${COLOR}","with":[{"translate":"advancements.${DIR}.${STEM}.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"${COLOR}","with":[{"translate":"advancements.${DIR}.${STEM}.title"},{"translate":"advancements.${DIR}.${STEM}.description"}]}]}}]}]}]
+tellraw @a[team=Team${team}] ["",{"translate":"chat.type.advancement.${FRAME}","with":[{${text},"bold":true},{"translate":"[%s]","color":"${COLOR}","with":[{"translate":"advancements.${DIR}.${STEM}.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"${COLOR}","with":[{"translate":"advancements.${DIR}.${STEM}.title"},{"translate":"advancements.${DIR}.${STEM}.description"}]}]}}]}]}]
 EOF
     j=$((j+1))
   done
