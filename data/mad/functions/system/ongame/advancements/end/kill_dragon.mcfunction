@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ed_kill_dragn=0}] run function mad:system/ongame/advancements/end/kill_dragon_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_End_kill_dragon=0}] run function mad:system/ongame/advancements/end/kill_dragon_branch

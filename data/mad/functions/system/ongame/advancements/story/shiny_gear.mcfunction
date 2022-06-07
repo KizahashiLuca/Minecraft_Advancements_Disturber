@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_shiny_gear=0}] run function mad:system/ongame/advancements/story/shiny_gear_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Story_shiny_gear=0}] run function mad:system/ongame/advancements/story/shiny_gear_branch

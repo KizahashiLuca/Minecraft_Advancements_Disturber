@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_hb_goat_boat=0}] run function mad:system/ongame/advancements/husbandry/ride_a_boat_with_a_goat_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Husbandry_ride_a_boat_with_a_goat=0}] run function mad:system/ongame/advancements/husbandry/ride_a_boat_with_a_goat_branch

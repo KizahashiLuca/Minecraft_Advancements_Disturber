@@ -9,7 +9,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamE] AD_nt_blaze_rod 1
+scoreboard players set @a[team=TeamE] AD_Nether_obtain_blaze_rod 1
 scoreboard players add @a[team=TeamE] HasAdvancements 1
 scoreboard players operation @p[team=TeamE,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamE,tag=Leader] Second += #mad AddingTime

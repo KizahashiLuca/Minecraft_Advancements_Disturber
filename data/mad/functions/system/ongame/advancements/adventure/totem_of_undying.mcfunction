@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_totem=0}] run function mad:system/ongame/advancements/adventure/totem_of_undying_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Adventure_totem_of_undying=0}] run function mad:system/ongame/advancements/adventure/totem_of_undying_branch

@@ -9,7 +9,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamB] AD_hb_tame_anima 1
+scoreboard players set @a[team=TeamB] AD_Husbandry_tame_an_animal 1
 scoreboard players add @a[team=TeamB] HasAdvancements 1
 scoreboard players operation @p[team=TeamB,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamB,tag=Leader] Second += #mad AddingTime

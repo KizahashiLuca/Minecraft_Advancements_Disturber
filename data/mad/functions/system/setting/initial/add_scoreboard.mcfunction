@@ -130,106 +130,109 @@ scoreboard objectives add BeaconNumberPrv dummy
 scoreboard objectives add RespawnTimePrv dummy
 #### advancements
 scoreboard objectives add HasAdvancements dummy
-#### advancements - adventure
-scoreboard objectives add AD_ad_adven_time dummy {"text":"冒険の時間"}
-scoreboard objectives add AD_ad_arbalistic dummy {"text":"クロスボウの達人"}
-scoreboard objectives add AD_ad_bullseye dummy {"text":"的中"}
-scoreboard objectives add AD_ad_fallworld dummy {"text":"洞窟と崖"}
-scoreboard objectives add AD_ad_hero_villa dummy {"text":"村の英雄"}
-scoreboard objectives add AD_ad_honey_slid dummy {"text":"べとべとな状況"}
-scoreboard objectives add AD_ad_kill_a_mob dummy {"text":"モンスターハンター"}
-scoreboard objectives add AD_ad_kill_all dummy {"text":"モンスター狩りの達人"}
-scoreboard objectives add AD_ad_ol_betsy dummy {"text":"おてんば"}
-scoreboard objectives add AD_ad_jukemeadow dummy {"text":"サウンド・オブ・ミュージック"}
-scoreboard objectives add AD_ad_lightrod dummy {"text":"避雷器"}
-scoreboard objectives add AD_ad_root dummy {"text":"冒険"}
-scoreboard objectives add AD_ad_shot_arrow dummy {"text":"狙いを定めて"}
-scoreboard objectives add AD_ad_sleep dummy {"text":"良い夢見てね"}
-scoreboard objectives add AD_ad_sniper dummy {"text":"スナイパー対決"}
-scoreboard objectives add AD_ad_spy_dragon dummy {"text":"あれは飛行機？"}
-scoreboard objectives add AD_ad_spy_ghast dummy {"text":"あれは風船？"}
-scoreboard objectives add AD_ad_spy_parrot dummy {"text":"あれは鳥？"}
-scoreboard objectives add AD_ad_iron_golem dummy {"text":"お手伝いさん"}
-scoreboard objectives add AD_ad_trident dummy {"text":"もったいぶった一言"}
-scoreboard objectives add AD_ad_totem dummy {"text":"死を超えて"}
-scoreboard objectives add AD_ad_tradehigh dummy {"text":"星の商人"}
-scoreboard objectives add AD_ad_trade dummy {"text":"良い取引だ！"}
-scoreboard objectives add AD_ad_two_birds dummy {"text":"一石二鳥"}
-scoreboard objectives add AD_ad_very_very dummy {"text":"とてもとても恐ろしい"}
-scoreboard objectives add AD_ad_voluntary dummy {"text":"自主的な亡命"}
-scoreboard objectives add AD_ad_powdersnow dummy {"text":"ウサギのように軽く"}
-scoreboard objectives add AD_ad_whos_pilla dummy {"text":"どっちが略奪者？"}
-#### advancements - minecraft
-scoreboard objectives add AD_mc_cure_zombi dummy {"text":"ゾンビドクター"}
-scoreboard objectives add AD_mc_deflect dummy {"text":"今日はやめておきます"}
-scoreboard objectives add AD_mc_enchant dummy {"text":"エンチャントの使い手"}
-scoreboard objectives add AD_mc_enter_end dummy {"text":"おしまい？"}
-scoreboard objectives add AD_mc_enter_hell dummy {"text":"さらなる深みへ"}
-scoreboard objectives add AD_mc_ender_eye dummy {"text":"アイ・スパイ"}
-scoreboard objectives add AD_mc_obsidian dummy {"text":"アイス・バケツ・チャレンジ"}
-scoreboard objectives add AD_mc_iron_tools dummy {"text":"鉄のツルハシで決まり"}
-scoreboard objectives add AD_mc_lava_bucke dummy {"text":"ホットスタッフ"}
-scoreboard objectives add AD_mc_mine_dia dummy {"text":"ダイヤモンド!"}
-scoreboard objectives add AD_mc_mine_stone dummy {"text":"石器時代"}
-scoreboard objectives add AD_mc_armor dummy {"text":"装備せよ"}
-scoreboard objectives add AD_mc_root dummy {"text":"Minecraft"}
-scoreboard objectives add AD_mc_shiny_gear dummy {"text":"ダイヤモンドで私を覆って"}
-scoreboard objectives add AD_mc_smelt_iron dummy {"text":"金属を手に入れる"}
-scoreboard objectives add AD_mc_upgrade dummy {"text":"アップグレード"}
-#### advancements - nether
-scoreboard objectives add AD_nt_all_effect dummy {"text":"どうやってここまで？"}
-scoreboard objectives add AD_nt_all_potion dummy {"text":"猛烈なカクテル"}
-scoreboard objectives add AD_nt_brew_potio dummy {"text":"町のお薬屋さん"}
-scoreboard objectives add AD_nt_respawn dummy {"text":"不死身とまではいかない"}
-scoreboard objectives add AD_nt_create_bc dummy {"text":"生活のビーコン"}
-scoreboard objectives add AD_nt_create_fbc dummy {"text":"ビーコネーター"}
-scoreboard objectives add AD_nt_distract dummy {"text":"わーいぴかぴか！"}
-scoreboard objectives add AD_nt_explore dummy {"text":"ホットな観光地"}
-scoreboard objectives add AD_nt_fast_travl dummy {"text":"亜空間バブル"}
-scoreboard objectives add AD_nt_bastion dummy {"text":"兵どもが夢の跡"}
-scoreboard objectives add AD_nt_fortress dummy {"text":"恐ろしい要塞"}
-scoreboard objectives add AD_nt_get_wtskul dummy {"text":"不気味で怖いスケルトン"}
-scoreboard objectives add AD_nt_loot_bastn dummy {"text":"ブタ戦争"}
-scoreboard objectives add AD_nt_ntrt_armor dummy {"text":"残骸で私を覆って"}
-scoreboard objectives add AD_nt_ancient_db dummy {"text":"深淵に隠されしもの"}
-scoreboard objectives add AD_nt_blaze_rod dummy {"text":"炎の中へ"}
-scoreboard objectives add AD_nt_cry_obsidn dummy {"text":"玉ねぎを切っているのは誰？"}
-scoreboard objectives add AD_nt_rtrn_ghast dummy {"text":"差出人に返送"}
-scoreboard objectives add AD_nt_strider_ow dummy {"text":"実家のような安心感"}
-scoreboard objectives add AD_nt_strider dummy {"text":"足の生えたボート"}
-scoreboard objectives add AD_nt_root dummy {"text":"ネザー"}
-scoreboard objectives add AD_nt_smn_wither dummy {"text":"荒が丘"}
-scoreboard objectives add AD_nt_uneasy_alc dummy {"text":"不安な同盟"}
-scoreboard objectives add AD_nt_lodestone dummy {"text":"この道をずっとゆけば"}
-#### advancements - end
-scoreboard objectives add AD_ed_drg_breath dummy {"text":"口臭に気をつけよう"}
-scoreboard objectives add AD_ed_dragon_egg dummy {"text":"ザ・ネクストジェネレーション"}
-scoreboard objectives add AD_ed_elytra dummy {"text":"空はどこまでも高く"}
-scoreboard objectives add AD_ed_end_gate dummy {"text":"遠方への逃走"}
-scoreboard objectives add AD_ed_end_city dummy {"text":"ゲームの果ての都市"}
-scoreboard objectives add AD_ed_kill_dragn dummy {"text":"エンドの解放"}
-scoreboard objectives add AD_ed_levitate dummy {"text":"ここからの素晴らしい眺め"}
-scoreboard objectives add AD_ed_resp_dragn dummy {"text":"おしまい…再び…"}
-scoreboard objectives add AD_ed_root dummy {"text":"ジ・エンド"}
-#### advancements - husbandry
-scoreboard objectives add AD_hb_axolotl dummy {"text":"いちばんカワイイ捕食者"}
-scoreboard objectives add AD_hb_balanced dummy {"text":"バランスの取れた食事"}
-scoreboard objectives add AD_hb_bred_all dummy {"text":"二匹ずつ"}
-scoreboard objectives add AD_hb_bred_anima dummy {"text":"コウノトリの贈り物"}
-scoreboard objectives add AD_hb_catalogue dummy {"text":"猫大全集"}
-scoreboard objectives add AD_hb_fishy dummy {"text":"生臭い仕事"}
-scoreboard objectives add AD_hb_axo_target dummy {"text":"友情の癒しパワー！"}
-scoreboard objectives add AD_hb_glow_sign dummy {"text":"この輝きに驚くことなかれ！"}
-scoreboard objectives add AD_hb_nether_hoe dummy {"text":"真面目な献身"}
-scoreboard objectives add AD_hb_plant_seed dummy {"text":"種だらけの場所"}
-scoreboard objectives add AD_hb_goat_boat dummy {"text":"あなたのヤギたい様に！"}
-scoreboard objectives add AD_hb_root dummy {"text":"農業"}
-scoreboard objectives add AD_hb_harv_honey dummy {"text":"大切なお客様"}
-scoreboard objectives add AD_hb_silk_nest dummy {"text":"完全な引越し"}
-scoreboard objectives add AD_hb_tacti_fish dummy {"text":"戦術的漁業"}
-scoreboard objectives add AD_hb_tame_anima dummy {"text":"永遠の親友となるだろう"}
-scoreboard objectives add AD_hb_wax_off dummy {"text":"錆止め落とし"}
-scoreboard objectives add AD_hb_wax_on dummy {"text":"錆止め"}
+#### advancements
+scoreboard objectives add AD_Adventure_adventuring_time dummy
+scoreboard objectives add AD_Adventure_arbalistic dummy
+scoreboard objectives add AD_Adventure_avoid_vibration dummy
+scoreboard objectives add AD_Adventure_bullseye dummy
+scoreboard objectives add AD_Adventure_fall_from_world_height dummy
+scoreboard objectives add AD_Adventure_hero_of_the_village dummy
+scoreboard objectives add AD_Adventure_honey_block_slide dummy
+scoreboard objectives add AD_Adventure_kill_all_mobs dummy
+scoreboard objectives add AD_Adventure_kill_a_mob dummy
+scoreboard objectives add AD_Adventure_kill_mob_near_sculk_catalyst dummy
+scoreboard objectives add AD_Adventure_lightning_rod_with_villager_no_fire dummy
+scoreboard objectives add AD_Adventure_ol_betsy dummy
+scoreboard objectives add AD_Adventure_play_jukebox_in_meadows dummy
+scoreboard objectives add AD_Adventure_root dummy
+scoreboard objectives add AD_Adventure_shoot_arrow dummy
+scoreboard objectives add AD_Adventure_sleep_in_bed dummy
+scoreboard objectives add AD_Adventure_sniper_duel dummy
+scoreboard objectives add AD_Adventure_spyglass_at_dragon dummy
+scoreboard objectives add AD_Adventure_spyglass_at_ghast dummy
+scoreboard objectives add AD_Adventure_spyglass_at_parrot dummy
+scoreboard objectives add AD_Adventure_summon_iron_golem dummy
+scoreboard objectives add AD_Adventure_throw_trident dummy
+scoreboard objectives add AD_Adventure_totem_of_undying dummy
+scoreboard objectives add AD_Adventure_trade dummy
+scoreboard objectives add AD_Adventure_trade_at_world_height dummy
+scoreboard objectives add AD_Adventure_two_birds_one_arrow dummy
+scoreboard objectives add AD_Adventure_very_very_frightening dummy
+scoreboard objectives add AD_Adventure_voluntary_exile dummy
+scoreboard objectives add AD_Adventure_walk_on_powder_snow_with_leather_boots dummy
+scoreboard objectives add AD_Adventure_whos_the_pillager_now dummy
+scoreboard objectives add AD_End_dragon_breath dummy
+scoreboard objectives add AD_End_dragon_egg dummy
+scoreboard objectives add AD_End_elytra dummy
+scoreboard objectives add AD_End_enter_end_gateway dummy
+scoreboard objectives add AD_End_find_end_city dummy
+scoreboard objectives add AD_End_kill_dragon dummy
+scoreboard objectives add AD_End_levitate dummy
+scoreboard objectives add AD_End_respawn_dragon dummy
+scoreboard objectives add AD_End_root dummy
+scoreboard objectives add AD_Husbandry_allay_deliver_cake_to_note_block dummy
+scoreboard objectives add AD_Husbandry_allay_deliver_item_to_player dummy
+scoreboard objectives add AD_Husbandry_axolotl_in_a_bucket dummy
+scoreboard objectives add AD_Husbandry_balanced_diet dummy
+scoreboard objectives add AD_Husbandry_bred_all_animals dummy
+scoreboard objectives add AD_Husbandry_breed_an_animal dummy
+scoreboard objectives add AD_Husbandry_complete_catalogue dummy
+scoreboard objectives add AD_Husbandry_fishy_business dummy
+scoreboard objectives add AD_Husbandry_froglights dummy
+scoreboard objectives add AD_Husbandry_kill_axolotl_target dummy
+scoreboard objectives add AD_Husbandry_leash_all_frog_variants dummy
+scoreboard objectives add AD_Husbandry_make_a_sign_glow dummy
+scoreboard objectives add AD_Husbandry_obtain_netherite_hoe dummy
+scoreboard objectives add AD_Husbandry_plant_seed dummy
+scoreboard objectives add AD_Husbandry_ride_a_boat_with_a_goat dummy
+scoreboard objectives add AD_Husbandry_root dummy
+scoreboard objectives add AD_Husbandry_safely_harvest_honey dummy
+scoreboard objectives add AD_Husbandry_silk_touch_nest dummy
+scoreboard objectives add AD_Husbandry_tactical_fishing dummy
+scoreboard objectives add AD_Husbandry_tadpole_in_a_bucket dummy
+scoreboard objectives add AD_Husbandry_tame_an_animal dummy
+scoreboard objectives add AD_Husbandry_wax_off dummy
+scoreboard objectives add AD_Husbandry_wax_on dummy
+scoreboard objectives add AD_Nether_all_effects dummy
+scoreboard objectives add AD_Nether_all_potions dummy
+scoreboard objectives add AD_Nether_brew_potion dummy
+scoreboard objectives add AD_Nether_charge_respawn_anchor dummy
+scoreboard objectives add AD_Nether_create_beacon dummy
+scoreboard objectives add AD_Nether_create_full_beacon dummy
+scoreboard objectives add AD_Nether_distract_piglin dummy
+scoreboard objectives add AD_Nether_explore_nether dummy
+scoreboard objectives add AD_Nether_fast_travel dummy
+scoreboard objectives add AD_Nether_find_bastion dummy
+scoreboard objectives add AD_Nether_find_fortress dummy
+scoreboard objectives add AD_Nether_get_wither_skull dummy
+scoreboard objectives add AD_Nether_loot_bastion dummy
+scoreboard objectives add AD_Nether_netherite_armor dummy
+scoreboard objectives add AD_Nether_obtain_ancient_debris dummy
+scoreboard objectives add AD_Nether_obtain_blaze_rod dummy
+scoreboard objectives add AD_Nether_obtain_crying_obsidian dummy
+scoreboard objectives add AD_Nether_return_to_sender dummy
+scoreboard objectives add AD_Nether_ride_strider dummy
+scoreboard objectives add AD_Nether_ride_strider_in_overworld_lava dummy
+scoreboard objectives add AD_Nether_root dummy
+scoreboard objectives add AD_Nether_summon_wither dummy
+scoreboard objectives add AD_Nether_uneasy_alliance dummy
+scoreboard objectives add AD_Nether_use_lodestone dummy
+scoreboard objectives add AD_Story_cure_zombie_villager dummy
+scoreboard objectives add AD_Story_deflect_arrow dummy
+scoreboard objectives add AD_Story_enchant_item dummy
+scoreboard objectives add AD_Story_enter_the_end dummy
+scoreboard objectives add AD_Story_enter_the_nether dummy
+scoreboard objectives add AD_Story_follow_ender_eye dummy
+scoreboard objectives add AD_Story_form_obsidian dummy
+scoreboard objectives add AD_Story_iron_tools dummy
+scoreboard objectives add AD_Story_lava_bucket dummy
+scoreboard objectives add AD_Story_mine_diamond dummy
+scoreboard objectives add AD_Story_mine_stone dummy
+scoreboard objectives add AD_Story_obtain_armor dummy
+scoreboard objectives add AD_Story_root dummy
+scoreboard objectives add AD_Story_shiny_gear dummy
+scoreboard objectives add AD_Story_smelt_iron dummy
+scoreboard objectives add AD_Story_upgrade_tools dummy
 #### advancements - potage00
 scoreboard objectives add AD_pg_root dummy {"text":"MAD"}
 scoreboard objectives add AD_pg_minecart dummy {"text":"支援物資だ!"}
@@ -452,106 +455,109 @@ scoreboard players set @a WorldBorder 1000
 scoreboard players set @a WorldBorderPrv 1000
 #### advancements
 scoreboard players set @a HasAdvancements 0
-#### advancements - adventure
-scoreboard players set @a AD_ad_adven_time 0
-scoreboard players set @a AD_ad_arbalistic 0
-scoreboard players set @a AD_ad_bullseye 0
-scoreboard players set @a AD_ad_fallworld 0
-scoreboard players set @a AD_ad_hero_villa 0
-scoreboard players set @a AD_ad_honey_slid 0
-scoreboard players set @a AD_ad_kill_a_mob 0
-scoreboard players set @a AD_ad_kill_all 0
-scoreboard players set @a AD_ad_ol_betsy 0
-scoreboard players set @a AD_ad_jukemeadow 0
-scoreboard players set @a AD_ad_lightrod 0
-scoreboard players set @a AD_ad_root 0
-scoreboard players set @a AD_ad_shot_arrow 0
-scoreboard players set @a AD_ad_sleep 0
-scoreboard players set @a AD_ad_sniper 0
-scoreboard players set @a AD_ad_spy_dragon 0
-scoreboard players set @a AD_ad_spy_ghast 0
-scoreboard players set @a AD_ad_spy_parrot 0
-scoreboard players set @a AD_ad_iron_golem 0
-scoreboard players set @a AD_ad_trident 0
-scoreboard players set @a AD_ad_totem 0
-scoreboard players set @a AD_ad_tradehigh 0
-scoreboard players set @a AD_ad_trade 0
-scoreboard players set @a AD_ad_two_birds 0
-scoreboard players set @a AD_ad_very_very 0
-scoreboard players set @a AD_ad_voluntary 0
-scoreboard players set @a AD_ad_powdersnow 0
-scoreboard players set @a AD_ad_whos_pilla 0
-#### advancements - minecraft
-scoreboard players set @a AD_mc_cure_zombi 0
-scoreboard players set @a AD_mc_deflect 0
-scoreboard players set @a AD_mc_enchant 0
-scoreboard players set @a AD_mc_enter_end 0
-scoreboard players set @a AD_mc_enter_hell 0
-scoreboard players set @a AD_mc_ender_eye 0
-scoreboard players set @a AD_mc_obsidian 0
-scoreboard players set @a AD_mc_iron_tools 0
-scoreboard players set @a AD_mc_lava_bucke 0
-scoreboard players set @a AD_mc_mine_dia 0
-scoreboard players set @a AD_mc_mine_stone 0
-scoreboard players set @a AD_mc_armor 0
-scoreboard players set @a AD_mc_root 0
-scoreboard players set @a AD_mc_shiny_gear 0
-scoreboard players set @a AD_mc_smelt_iron 0
-scoreboard players set @a AD_mc_upgrade 0
-#### advancements - nether
-scoreboard players set @a AD_nt_all_effect 0
-scoreboard players set @a AD_nt_all_potion 0
-scoreboard players set @a AD_nt_brew_potio 0
-scoreboard players set @a AD_nt_respawn 0
-scoreboard players set @a AD_nt_create_bc 0
-scoreboard players set @a AD_nt_create_fbc 0
-scoreboard players set @a AD_nt_distract 0
-scoreboard players set @a AD_nt_explore 0
-scoreboard players set @a AD_nt_fast_travl 0
-scoreboard players set @a AD_nt_bastion 0
-scoreboard players set @a AD_nt_fortress 0
-scoreboard players set @a AD_nt_get_wtskul 0
-scoreboard players set @a AD_nt_loot_bastn 0
-scoreboard players set @a AD_nt_ntrt_armor 0
-scoreboard players set @a AD_nt_ancient_db 0
-scoreboard players set @a AD_nt_blaze_rod 0
-scoreboard players set @a AD_nt_cry_obsidn 0
-scoreboard players set @a AD_nt_rtrn_ghast 0
-scoreboard players set @a AD_nt_strider 0
-scoreboard players set @a AD_nt_strider_ow 0
-scoreboard players set @a AD_nt_root 0
-scoreboard players set @a AD_nt_smn_wither 0
-scoreboard players set @a AD_nt_uneasy_alc 0
-scoreboard players set @a AD_nt_lodestone 0
-#### advancements - end
-scoreboard players set @a AD_ed_drg_breath 0
-scoreboard players set @a AD_ed_dragon_egg 0
-scoreboard players set @a AD_ed_elytra 0
-scoreboard players set @a AD_ed_end_gate 0
-scoreboard players set @a AD_ed_end_city 0
-scoreboard players set @a AD_ed_kill_dragn 0
-scoreboard players set @a AD_ed_levitate 0
-scoreboard players set @a AD_ed_resp_dragn 0
-scoreboard players set @a AD_ed_root 0
-#### advancements - husbandry
-scoreboard players set @a AD_hb_axolotl 0
-scoreboard players set @a AD_hb_balanced 0
-scoreboard players set @a AD_hb_bred_all 0
-scoreboard players set @a AD_hb_bred_anima 0
-scoreboard players set @a AD_hb_catalogue 0
-scoreboard players set @a AD_hb_fishy 0
-scoreboard players set @a AD_hb_axo_target 0
-scoreboard players set @a AD_hb_glow_sign 0
-scoreboard players set @a AD_hb_nether_hoe 0
-scoreboard players set @a AD_hb_plant_seed 0
-scoreboard players set @a AD_hb_goat_boat 0
-scoreboard players set @a AD_hb_root 0
-scoreboard players set @a AD_hb_harv_honey 0
-scoreboard players set @a AD_hb_silk_nest 0
-scoreboard players set @a AD_hb_tacti_fish 0
-scoreboard players set @a AD_hb_tame_anima 0
-scoreboard players set @a AD_hb_wax_off 0
-scoreboard players set @a AD_hb_wax_on 0
+#### advancements
+scoreboard players set @a AD_Adventure_adventuring_time 0
+scoreboard players set @a AD_Adventure_arbalistic 0
+scoreboard players set @a AD_Adventure_avoid_vibration 0
+scoreboard players set @a AD_Adventure_bullseye 0
+scoreboard players set @a AD_Adventure_fall_from_world_height 0
+scoreboard players set @a AD_Adventure_hero_of_the_village 0
+scoreboard players set @a AD_Adventure_honey_block_slide 0
+scoreboard players set @a AD_Adventure_kill_all_mobs 0
+scoreboard players set @a AD_Adventure_kill_a_mob 0
+scoreboard players set @a AD_Adventure_kill_mob_near_sculk_catalyst 0
+scoreboard players set @a AD_Adventure_lightning_rod_with_villager_no_fire 0
+scoreboard players set @a AD_Adventure_ol_betsy 0
+scoreboard players set @a AD_Adventure_play_jukebox_in_meadows 0
+scoreboard players set @a AD_Adventure_root 0
+scoreboard players set @a AD_Adventure_shoot_arrow 0
+scoreboard players set @a AD_Adventure_sleep_in_bed 0
+scoreboard players set @a AD_Adventure_sniper_duel 0
+scoreboard players set @a AD_Adventure_spyglass_at_dragon 0
+scoreboard players set @a AD_Adventure_spyglass_at_ghast 0
+scoreboard players set @a AD_Adventure_spyglass_at_parrot 0
+scoreboard players set @a AD_Adventure_summon_iron_golem 0
+scoreboard players set @a AD_Adventure_throw_trident 0
+scoreboard players set @a AD_Adventure_totem_of_undying 0
+scoreboard players set @a AD_Adventure_trade 0
+scoreboard players set @a AD_Adventure_trade_at_world_height 0
+scoreboard players set @a AD_Adventure_two_birds_one_arrow 0
+scoreboard players set @a AD_Adventure_very_very_frightening 0
+scoreboard players set @a AD_Adventure_voluntary_exile 0
+scoreboard players set @a AD_Adventure_walk_on_powder_snow_with_leather_boots 0
+scoreboard players set @a AD_Adventure_whos_the_pillager_now 0
+scoreboard players set @a AD_End_dragon_breath 0
+scoreboard players set @a AD_End_dragon_egg 0
+scoreboard players set @a AD_End_elytra 0
+scoreboard players set @a AD_End_enter_end_gateway 0
+scoreboard players set @a AD_End_find_end_city 0
+scoreboard players set @a AD_End_kill_dragon 0
+scoreboard players set @a AD_End_levitate 0
+scoreboard players set @a AD_End_respawn_dragon 0
+scoreboard players set @a AD_End_root 0
+scoreboard players set @a AD_Husbandry_allay_deliver_cake_to_note_block 0
+scoreboard players set @a AD_Husbandry_allay_deliver_item_to_player 0
+scoreboard players set @a AD_Husbandry_axolotl_in_a_bucket 0
+scoreboard players set @a AD_Husbandry_balanced_diet 0
+scoreboard players set @a AD_Husbandry_bred_all_animals 0
+scoreboard players set @a AD_Husbandry_breed_an_animal 0
+scoreboard players set @a AD_Husbandry_complete_catalogue 0
+scoreboard players set @a AD_Husbandry_fishy_business 0
+scoreboard players set @a AD_Husbandry_froglights 0
+scoreboard players set @a AD_Husbandry_kill_axolotl_target 0
+scoreboard players set @a AD_Husbandry_leash_all_frog_variants 0
+scoreboard players set @a AD_Husbandry_make_a_sign_glow 0
+scoreboard players set @a AD_Husbandry_obtain_netherite_hoe 0
+scoreboard players set @a AD_Husbandry_plant_seed 0
+scoreboard players set @a AD_Husbandry_ride_a_boat_with_a_goat 0
+scoreboard players set @a AD_Husbandry_root 0
+scoreboard players set @a AD_Husbandry_safely_harvest_honey 0
+scoreboard players set @a AD_Husbandry_silk_touch_nest 0
+scoreboard players set @a AD_Husbandry_tactical_fishing 0
+scoreboard players set @a AD_Husbandry_tadpole_in_a_bucket 0
+scoreboard players set @a AD_Husbandry_tame_an_animal 0
+scoreboard players set @a AD_Husbandry_wax_off 0
+scoreboard players set @a AD_Husbandry_wax_on 0
+scoreboard players set @a AD_Nether_all_effects 0
+scoreboard players set @a AD_Nether_all_potions 0
+scoreboard players set @a AD_Nether_brew_potion 0
+scoreboard players set @a AD_Nether_charge_respawn_anchor 0
+scoreboard players set @a AD_Nether_create_beacon 0
+scoreboard players set @a AD_Nether_create_full_beacon 0
+scoreboard players set @a AD_Nether_distract_piglin 0
+scoreboard players set @a AD_Nether_explore_nether 0
+scoreboard players set @a AD_Nether_fast_travel 0
+scoreboard players set @a AD_Nether_find_bastion 0
+scoreboard players set @a AD_Nether_find_fortress 0
+scoreboard players set @a AD_Nether_get_wither_skull 0
+scoreboard players set @a AD_Nether_loot_bastion 0
+scoreboard players set @a AD_Nether_netherite_armor 0
+scoreboard players set @a AD_Nether_obtain_ancient_debris 0
+scoreboard players set @a AD_Nether_obtain_blaze_rod 0
+scoreboard players set @a AD_Nether_obtain_crying_obsidian 0
+scoreboard players set @a AD_Nether_return_to_sender 0
+scoreboard players set @a AD_Nether_ride_strider 0
+scoreboard players set @a AD_Nether_ride_strider_in_overworld_lava 0
+scoreboard players set @a AD_Nether_root 0
+scoreboard players set @a AD_Nether_summon_wither 0
+scoreboard players set @a AD_Nether_uneasy_alliance 0
+scoreboard players set @a AD_Nether_use_lodestone 0
+scoreboard players set @a AD_Story_cure_zombie_villager 0
+scoreboard players set @a AD_Story_deflect_arrow 0
+scoreboard players set @a AD_Story_enchant_item 0
+scoreboard players set @a AD_Story_enter_the_end 0
+scoreboard players set @a AD_Story_enter_the_nether 0
+scoreboard players set @a AD_Story_follow_ender_eye 0
+scoreboard players set @a AD_Story_form_obsidian 0
+scoreboard players set @a AD_Story_iron_tools 0
+scoreboard players set @a AD_Story_lava_bucket 0
+scoreboard players set @a AD_Story_mine_diamond 0
+scoreboard players set @a AD_Story_mine_stone 0
+scoreboard players set @a AD_Story_obtain_armor 0
+scoreboard players set @a AD_Story_root 0
+scoreboard players set @a AD_Story_shiny_gear 0
+scoreboard players set @a AD_Story_smelt_iron 0
+scoreboard players set @a AD_Story_upgrade_tools 0
 #### advancements - potage00
 scoreboard players set @a AD_pg_root 0
 scoreboard players set @a AD_pg_minecart 0

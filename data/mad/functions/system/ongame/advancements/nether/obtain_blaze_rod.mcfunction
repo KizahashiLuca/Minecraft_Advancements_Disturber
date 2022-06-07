@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_blaze_rod=0}] run function mad:system/ongame/advancements/nether/obtain_blaze_rod_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Nether_obtain_blaze_rod=0}] run function mad:system/ongame/advancements/nether/obtain_blaze_rod_branch

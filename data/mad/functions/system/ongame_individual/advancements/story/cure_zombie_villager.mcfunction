@@ -9,7 +9,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @s AD_mc_cure_zombi 1
+scoreboard players set @s AD_Story_cure_zombie_villager 1
 scoreboard players add @s HasAdvancements 1
 scoreboard players operation @s TimeLimit += #mad AddingTime
 scoreboard players operation @s Second += #mad AddingTime

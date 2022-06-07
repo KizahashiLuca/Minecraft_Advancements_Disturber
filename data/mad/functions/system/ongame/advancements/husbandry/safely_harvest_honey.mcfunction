@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_hb_harv_honey=0}] run function mad:system/ongame/advancements/husbandry/safely_harvest_honey_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Husbandry_safely_harvest_honey=0}] run function mad:system/ongame/advancements/husbandry/safely_harvest_honey_branch

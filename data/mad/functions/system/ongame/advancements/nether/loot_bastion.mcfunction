@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_loot_bastn=0}] run function mad:system/ongame/advancements/nether/loot_bastion_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Nether_loot_bastion=0}] run function mad:system/ongame/advancements/nether/loot_bastion_branch

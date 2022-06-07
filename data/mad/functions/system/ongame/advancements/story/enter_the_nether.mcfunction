@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_enter_hell=0}] run function mad:system/ongame/advancements/story/enter_the_nether_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Story_enter_the_nether=0}] run function mad:system/ongame/advancements/story/enter_the_nether_branch

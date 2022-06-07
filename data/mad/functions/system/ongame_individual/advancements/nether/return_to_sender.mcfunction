@@ -9,7 +9,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @s AD_nt_rtrn_ghast 1
+scoreboard players set @s AD_Nether_return_to_sender 1
 scoreboard players add @s HasAdvancements 1
 scoreboard players operation @s TimeLimit += #mad AddingTime
 scoreboard players operation @s Second += #mad AddingTime

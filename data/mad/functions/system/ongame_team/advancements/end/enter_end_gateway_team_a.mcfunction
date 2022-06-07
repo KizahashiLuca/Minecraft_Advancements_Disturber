@@ -9,9 +9,9 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamA] AD_ed_end_gate 1
+scoreboard players set @a[team=TeamA] AD_End_enter_end_gateway 1
 scoreboard players add @a[team=TeamA] HasAdvancements 1
 scoreboard players operation @p[team=TeamA,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamA,tag=Leader] Second += #mad AddingTime
 advancement grant @a[team=TeamA] only minecraft:end/enter_end_gateway
-tellraw @a[team=TeamA] ["",{"translate":"chat.type.advancement.task","with":[{"text":"赤チーム","color":"red","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"advancements.end.enter_end_gateway.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"advancements.end.enter_end_gateway.title"},{"translate":"advancements.end.enter_end_gateway.description"}]}]}}]}]}]
+tellraw @a[team=TeamA] ["",{"translate":"chat.type.advancement.task","with":[{"text":"紫チーム","color":"dark_purple","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"advancements.end.enter_end_gateway.title","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"advancements.end.enter_end_gateway.title"},{"translate":"advancements.end.enter_end_gateway.description"}]}]}}]}]}]

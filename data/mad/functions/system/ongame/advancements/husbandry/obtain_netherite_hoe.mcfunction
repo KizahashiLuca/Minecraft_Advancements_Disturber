@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_hb_nether_hoe=0}] run function mad:system/ongame/advancements/husbandry/obtain_netherite_hoe_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Husbandry_obtain_netherite_hoe=0}] run function mad:system/ongame/advancements/husbandry/obtain_netherite_hoe_branch

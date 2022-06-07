@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ed_dragon_egg=0}] run function mad:system/ongame/advancements/end/dragon_egg_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_End_dragon_egg=0}] run function mad:system/ongame/advancements/end/dragon_egg_branch

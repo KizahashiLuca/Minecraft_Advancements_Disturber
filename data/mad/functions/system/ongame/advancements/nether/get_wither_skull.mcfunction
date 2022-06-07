@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_get_wtskul=0}] run function mad:system/ongame/advancements/nether/get_wither_skull_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Nether_get_wither_skull=0}] run function mad:system/ongame/advancements/nether/get_wither_skull_branch

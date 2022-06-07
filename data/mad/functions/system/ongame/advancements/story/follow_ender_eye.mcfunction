@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_ender_eye=0}] run function mad:system/ongame/advancements/story/follow_ender_eye_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Story_follow_ender_eye=0}] run function mad:system/ongame/advancements/story/follow_ender_eye_branch

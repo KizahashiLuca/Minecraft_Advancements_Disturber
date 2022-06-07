@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_obsidian=0}] run function mad:system/ongame/advancements/story/form_obsidian_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Story_form_obsidian=0}] run function mad:system/ongame/advancements/story/form_obsidian_branch

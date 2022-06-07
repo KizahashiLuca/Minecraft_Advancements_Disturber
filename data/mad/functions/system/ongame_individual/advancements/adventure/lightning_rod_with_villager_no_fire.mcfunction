@@ -9,7 +9,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @s AD_ad_lightrod 1
+scoreboard players set @s AD_Adventure_lightning_rod_with_villager_no_fire 1
 scoreboard players add @s HasAdvancements 1
 scoreboard players operation @s TimeLimit += #mad AddingTime
 scoreboard players operation @s Second += #mad AddingTime

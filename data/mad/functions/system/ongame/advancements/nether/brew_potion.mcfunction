@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_brew_potio=0}] run function mad:system/ongame/advancements/nether/brew_potion_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Nether_brew_potion=0}] run function mad:system/ongame/advancements/nether/brew_potion_branch

@@ -9,7 +9,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @s AD_hb_goat_boat 1
+scoreboard players set @s AD_Husbandry_ride_a_boat_with_a_goat 1
 scoreboard players add @s HasAdvancements 1
 scoreboard players operation @s TimeLimit += #mad AddingTime
 scoreboard players operation @s Second += #mad AddingTime

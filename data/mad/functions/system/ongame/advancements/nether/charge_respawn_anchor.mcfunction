@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_respawn=0}] run function mad:system/ongame/advancements/nether/charge_respawn_anchor_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Nether_charge_respawn_anchor=0}] run function mad:system/ongame/advancements/nether/charge_respawn_anchor_branch

@@ -9,7 +9,7 @@
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamD] AD_ad_kill_all 1
+scoreboard players set @a[team=TeamD] AD_Adventure_kill_all_mobs 1
 scoreboard players add @a[team=TeamD] HasAdvancements 1
 scoreboard players operation @p[team=TeamD,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamD,tag=Leader] Second += #mad AddingTime

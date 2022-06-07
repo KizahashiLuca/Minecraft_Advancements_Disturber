@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_whos_pilla=0}] run function mad:system/ongame/advancements/adventure/whos_the_pillager_now_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Adventure_whos_the_pillager_now=0}] run function mad:system/ongame/advancements/adventure/whos_the_pillager_now_branch

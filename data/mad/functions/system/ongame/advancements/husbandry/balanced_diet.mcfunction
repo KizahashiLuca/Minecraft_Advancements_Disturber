@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_hb_balanced=0}] run function mad:system/ongame/advancements/husbandry/balanced_diet_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Husbandry_balanced_diet=0}] run function mad:system/ongame/advancements/husbandry/balanced_diet_branch

@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_fast_travl=0}] run function mad:system/ongame/advancements/nether/fast_travel_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Nether_fast_travel=0}] run function mad:system/ongame/advancements/nether/fast_travel_branch

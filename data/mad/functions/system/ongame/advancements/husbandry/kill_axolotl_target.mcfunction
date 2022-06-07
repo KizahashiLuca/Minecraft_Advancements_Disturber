@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_hb_axo_target=0}] run function mad:system/ongame/advancements/husbandry/kill_axolotl_target_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Husbandry_kill_axolotl_target=0}] run function mad:system/ongame/advancements/husbandry/kill_axolotl_target_branch

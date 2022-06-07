@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_cure_zombi=0}] run function mad:system/ongame/advancements/story/cure_zombie_villager_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Story_cure_zombie_villager=0}] run function mad:system/ongame/advancements/story/cure_zombie_villager_branch

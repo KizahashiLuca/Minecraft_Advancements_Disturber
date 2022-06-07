@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_honey_slid=0}] run function mad:system/ongame/advancements/adventure/honey_block_slide_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Adventure_honey_block_slide=0}] run function mad:system/ongame/advancements/adventure/honey_block_slide_branch

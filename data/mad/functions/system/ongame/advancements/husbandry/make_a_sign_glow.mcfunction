@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_hb_glow_sign=0}] run function mad:system/ongame/advancements/husbandry/make_a_sign_glow_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Husbandry_make_a_sign_glow=0}] run function mad:system/ongame/advancements/husbandry/make_a_sign_glow_branch

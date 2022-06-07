@@ -1,15 +1,15 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: JE 1.16
+## MC-Version: Java Edit. 1.18.2
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 12 Sep 2021
-## Version   : β-1.3.3
+## Date      : 30 May 2022
+## Version   : β-1.6
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Set scoreboard
-scoreboard players set @a[team=TeamC] AD_ad_jukemeadow 1
+scoreboard players set @a[team=TeamC] AD_Adventure_play_jukebox_in_meadows 1
 scoreboard players add @a[team=TeamC] HasAdvancements 1
 scoreboard players operation @p[team=TeamC,tag=Leader] TimeLimit += #mad AddingTime
 scoreboard players operation @p[team=TeamC,tag=Leader] Second += #mad AddingTime

@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_adven_time=0}] run function mad:system/ongame/advancements/adventure/adventuring_time_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Adventure_adventuring_time=0}] run function mad:system/ongame/advancements/adventure/adventuring_time_branch

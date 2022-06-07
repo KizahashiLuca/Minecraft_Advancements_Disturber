@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_nt_uneasy_alc=0}] run function mad:system/ongame/advancements/nether/uneasy_alliance_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Nether_uneasy_alliance=0}] run function mad:system/ongame/advancements/nether/uneasy_alliance_branch

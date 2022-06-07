@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ed_elytra=0}] run function mad:system/ongame/advancements/end/elytra_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_End_elytra=0}] run function mad:system/ongame/advancements/end/elytra_branch

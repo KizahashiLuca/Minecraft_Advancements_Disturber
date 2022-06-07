@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ad_trident=0}] run function mad:system/ongame/advancements/adventure/throw_trident_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Adventure_throw_trident=0}] run function mad:system/ongame/advancements/adventure/throw_trident_branch

@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_mine_dia=0}] run function mad:system/ongame/advancements/story/mine_diamond_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Story_mine_diamond=0}] run function mad:system/ongame/advancements/story/mine_diamond_branch

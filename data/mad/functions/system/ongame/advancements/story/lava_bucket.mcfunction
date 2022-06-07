@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_mc_lava_bucke=0}] run function mad:system/ongame/advancements/story/lava_bucket_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_Story_lava_bucket=0}] run function mad:system/ongame/advancements/story/lava_bucket_branch

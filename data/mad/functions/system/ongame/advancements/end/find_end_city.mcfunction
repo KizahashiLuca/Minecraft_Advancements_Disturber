@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ed_end_city=0}] run function mad:system/ongame/advancements/end/find_end_city_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_End_find_end_city=0}] run function mad:system/ongame/advancements/end/find_end_city_branch

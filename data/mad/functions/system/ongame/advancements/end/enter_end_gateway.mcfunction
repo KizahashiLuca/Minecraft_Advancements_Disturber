@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Branch team
-execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_ed_end_gate=0}] run function mad:system/ongame/advancements/end/enter_end_gateway_branch
+## Detect advancement
+execute as @s[predicate=mad:ongame/player/participant_alive,scores={AD_End_enter_end_gateway=0}] run function mad:system/ongame/advancements/end/enter_end_gateway_branch
