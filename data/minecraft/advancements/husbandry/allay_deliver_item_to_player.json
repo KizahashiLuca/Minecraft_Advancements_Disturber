@@ -1,39 +1,39 @@
 {
-  "parent": "minecraft:nether/get_wither_skull",
+  "parent": "minecraft:husbandry/root",
   "criteria": {
-    "summoned": {
+    "allay_deliver_item_to_player": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:wither"
+              "type": "minecraft:allay"
             }
           }
         ]
       },
-      "trigger": "minecraft:summoned_entity"
+      "trigger": "minecraft:thrown_item_picked_up_by_player"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.nether.summon_wither.description"
+      "translate": "advancements.husbandry.allay_deliver_item_to_player.description"
     },
     "frame": "task",
-    "hidden": false,
+    "hidden": true,
     "icon": {
-      "item": "minecraft:nether_star"
+      "item": "minecraft:cookie"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.nether.summon_wither.title"
+      "translate": "advancements.husbandry.allay_deliver_item_to_player.title"
     }
   },
   "requirements": [
     [
-      "summoned"
+      "allay_deliver_item_to_player"
     ]
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:husbandry/tactical_fishing",
+  "parent": "minecraft:husbandry/root",
   "criteria": {
-    "axolotl_bucket": {
+    "tadpole_bucket": {
       "conditions": {
         "item": {
           "items": [
-            "minecraft:axolotl_bucket"
+            "minecraft:tadpole_bucket"
           ]
         }
       },
@@ -15,21 +15,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.husbandry.axolotl_in_a_bucket.description"
+      "translate": "advancements.husbandry.tadpole_in_a_bucket.description"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:axolotl_bucket"
+      "item": "minecraft:tadpole_bucket"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.husbandry.axolotl_in_a_bucket.title"
+      "translate": "advancements.husbandry.tadpole_in_a_bucket.title"
     }
   },
   "requirements": [
     [
-      "axolotl_bucket"
+      "tadpole_bucket"
     ]
   ]
 }

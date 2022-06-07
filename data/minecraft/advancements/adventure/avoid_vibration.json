@@ -1,29 +1,29 @@
 {
   "parent": "minecraft:adventure/root",
   "criteria": {
-    "slept_in_bed": {
+    "avoid_vibration": {
       "conditions": {},
-      "trigger": "minecraft:slept_in_bed"
+      "trigger": "minecraft:avoid_vibration"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.adventure.sleep_in_bed.description"
+      "translate": "advancements.adventure.avoid_vibration.description"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:red_bed"
+      "item": "minecraft:sculk_sensor"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.adventure.sleep_in_bed.title"
+      "translate": "advancements.adventure.avoid_vibration.title"
     }
   },
   "requirements": [
     [
-      "slept_in_bed"
+      "avoid_vibration"
     ]
   ]
 }
