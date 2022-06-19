@@ -261,6 +261,25 @@
             "entity": "this"
           }
         ]
+      },
+      "diamonds_to_you_allay": {
+        "trigger": "minecraft:thrown_item_picked_up_by_entity",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:diamond"
+            ]
+          },
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "type": "minecraft:allay"
+              },
+              "entity": "this"
+            }
+          ]
+        }
       }
     }
   },
@@ -278,7 +297,8 @@
       "diamonds_to_you_piglin",
       "diamonds_to_you_piglin_brute",
       "diamonds_to_you_fox",
-      "diamonds_to_you_cat"
+      "diamonds_to_you_cat",
+      "diamonds_to_you_allay"
     ]
   ],
   "rewards": {
