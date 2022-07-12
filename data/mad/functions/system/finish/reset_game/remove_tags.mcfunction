@@ -13,7 +13,6 @@ tag @a remove MAD_Host
 tag @a remove Leader
 tag @a remove Numbered
 tag @a remove MAD_Participant
-tag @a remove NotSetTeam
 tag @a remove Teleporter
 tag @a remove TransmitPlayer
 tag @a remove DetectTransmitter

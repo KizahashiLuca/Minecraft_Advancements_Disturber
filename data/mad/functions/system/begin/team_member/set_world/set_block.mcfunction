@@ -9,7 +9,7 @@
 #####################################
 
 ## Set block
-execute in mad:world run setblock 0 1 0 minecraft:beacon
+setblock 0 1 0 minecraft:beacon
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 positioned 7 1 7 run fill ~-2 ~ ~-2 ~2 ~ ~2 minecraft:red_concrete
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 positioned -7 1 -7 run fill ~-2 ~ ~-2 ~2 ~ ~2 minecraft:blue_concrete
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 positioned 7 1 -7 run fill ~-2 ~ ~-2 ~2 ~ ~2 minecraft:yellow_concrete

@@ -8,7 +8,11 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Set own team b
-tag @s remove NotSetTeam
-team join TeamB @s
-tellraw @s ["",{"text":"[チーム設定] あなたは ","color":"green"},{"text":"青チーム","color":"blue","bold":true},{"text":" に設定されました。","color":"green"}]
+## Reset team
+team leave @a
+
+## Reset choice
+scoreboard players set #mad Phase 15
+
+## Set inventory
+function mad:system/begin/team_member/change_to

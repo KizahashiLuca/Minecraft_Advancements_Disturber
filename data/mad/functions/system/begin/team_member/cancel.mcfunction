@@ -8,11 +8,11 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Select team member setting
+## Reset teams
 team leave @a
-tag @a[tag=Participant] add NotSetTeam
 
-clear @a
-team join TeamA @p[predicate=mad:player/host]
+## Reset mad:world
+execute in mad:world positioned 0 1 0 run fill ~-10 ~ ~-10 ~10 ~ ~10 minecraft:iron_block
 
-function mad:system/setting/team_member_setting/change_to
+## Change phase
+function mad:system/begin/gui/root/change_to

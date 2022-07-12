@@ -9,17 +9,12 @@
 #####################################
 
 ## Effect
-particle minecraft:dust 1 1 0 0.4 ~2.5 ~ ~2.5 0.0001 5 0.0001 0 20 force @a
-particle minecraft:dust 1 1 0 0.4 ~-2.5 ~ ~-2.5 0.0001 5 0.0001 0 20 force @a
-particle minecraft:dust 1 1 0 0.4 ~-2.5 ~ ~2.5 0.0001 5 0.0001 0 20 force @a
-particle minecraft:dust 1 1 0 0.4 ~2.5 ~ ~-2.5 0.0001 5 0.0001 0 20 force @a
+particle minecraft:falling_dust minecraft:gold_block ~2.5 ~5 ~2.5 0.0001 0.1 0.0001 0 2 force @a
+particle minecraft:falling_dust minecraft:gold_block ~-2.5 ~5 ~-2.5 0.0001 0.1 0.0001 0 2 force @a
+particle minecraft:falling_dust minecraft:gold_block ~-2.5 ~5 ~2.5 0.0001 0.1 0.0001 0 2 force @a
+particle minecraft:falling_dust minecraft:gold_block ~2.5 ~5 ~-2.5 0.0001 0.1 0.0001 0 2 force @a
 
-particle minecraft:dust 1 1 0 0.4 ~2.5 ~ ~ 0.0001 5 1 0 20 force @a
-particle minecraft:dust 1 1 0 0.4 ~-2.5 ~ ~ 0.0001 5 1 0 20 force @a
-particle minecraft:dust 1 1 0 0.4 ~ ~ ~2.5 1 5 0.0001 0 20 force @a
-particle minecraft:dust 1 1 0 0.4 ~ ~ ~-2.5 1 5 0.0001 0 20 force @a
-
-#particle minecraft:dust 1 1 0 0.4 ~2.5 ~ ~ 0.0001 0.0001 1 0 20 force @a
-#particle minecraft:dust 1 1 0 0.4 ~-2.5 ~ ~ 0.0001 0.0001 1 0 20 force @a
-#particle minecraft:dust 1 1 0 0.4 ~ ~ ~2.5 1 0.0001 0.0001 0 20 force @a
-#particle minecraft:dust 1 1 0 0.4 ~ ~ ~-2.5 1 0.0001 0.0001 0 20 force @a
+particle minecraft:falling_dust minecraft:gold_block ~2.5 ~5 ~ 0.0001 0.1 1 0 2 force @a
+particle minecraft:falling_dust minecraft:gold_block ~-2.5 ~5 ~ 0.0001 0.1 1 0 2 force @a
+particle minecraft:falling_dust minecraft:gold_block ~ ~5 ~2.5 1 0.1 0.0001 0 2 force @a
+particle minecraft:falling_dust minecraft:gold_block ~ ~5 ~-2.5 1 0.1 0.0001 0 2 force @a
