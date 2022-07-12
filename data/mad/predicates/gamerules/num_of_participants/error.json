@@ -1,0 +1,37 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#mad"
+        },
+        "score": "NumOfParticipants",
+        "scale": 1
+      },
+      "range": {
+        "min": -2147483648,
+        "max": 0
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#mad"
+        },
+        "score": "NumOfParticipants",
+        "scale": 1
+      },
+      "range": {
+        "min": 21,
+        "max": 2147483647
+      }
+    }
+  ]
+}

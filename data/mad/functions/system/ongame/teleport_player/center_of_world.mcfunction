@@ -9,6 +9,6 @@
 #####################################
 
 ## Detect teleport
-execute at @e[predicate=mad:ongame/entity/world_spawn,limit=1] run tp @s[scores={DeadOwnTeam=1}] ~ ~ ~
+execute at @e[predicate=mad:marker/world_spawn,limit=1] run tp @s[scores={DeadOwnTeam=1}] ~ ~ ~
 scoreboard players set @s TeleportCenter 0
 scoreboard players enable @s TeleportCenter

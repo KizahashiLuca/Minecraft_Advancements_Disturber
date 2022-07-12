@@ -18,8 +18,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:leather_boots"
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots"
         }
       ]
     },
@@ -40,8 +40,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:golden_boots"
+          "type": "minecraft:item",
+          "name": "minecraft:golden_boots"
         }
       ]
     },
@@ -62,8 +62,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:chainmail_boots"
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_boots"
         }
       ]
     },
@@ -84,8 +84,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:iron_boots"
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots"
         }
       ]
     },
@@ -106,8 +106,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:diamond_boots"
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots"
         }
       ]
     },
@@ -128,8 +128,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:netherite_boots"
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots"
         }
       ]
     },
@@ -150,8 +150,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:netherite_boots"
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots"
         }
       ]
     }

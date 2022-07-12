@@ -9,4 +9,4 @@
 #####################################
 
 ## Stop game
-execute if score #mad Phase matches 1..100 run scoreboard players set #mad Phase 22
+execute if predicate mad:phase/in_game run scoreboard players set #mad Phase 99

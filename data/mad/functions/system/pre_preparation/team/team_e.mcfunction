@@ -15,11 +15,11 @@ tag @p[team=TeamE,sort=random] add Leader
 scoreboard players set #mad DeadTeamE 0
 
 ## Set bossbar - team purple
-bossbar add minecraft:bossbar_purple ["",{"text":"紫チーム ","color":"dark_purple","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@p[team=TeamE,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
-bossbar set minecraft:bossbar_purple players @a[team=TeamE]
-bossbar set minecraft:bossbar_purple name ["",{"text":"紫チーム ","color":"dark_purple","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@p[team=TeamE,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
-execute store result bossbar minecraft:bossbar_purple max run scoreboard players get @p[team=TeamE,tag=Leader] TimeLimit
-execute store result bossbar minecraft:bossbar_purple value run scoreboard players get @p[team=TeamE,tag=Leader] Second
+bossbar add mad:bossbar_purple ["",{"text":"紫チーム ","color":"dark_purple","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@p[team=TeamE,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
+bossbar set mad:bossbar_purple players @a[team=TeamE]
+bossbar set mad:bossbar_purple name ["",{"text":"紫チーム ","color":"dark_purple","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@p[team=TeamE,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
+execute store result bossbar mad:bossbar_purple max run scoreboard players get @p[team=TeamE,tag=Leader] TimeLimit
+execute store result bossbar mad:bossbar_purple value run scoreboard players get @p[team=TeamE,tag=Leader] Second
 
 ## Set gamerule - friendlyFire
 execute if score #mad friendlyFire matches 1 run team modify TeamE friendlyFire true

@@ -10,4 +10,4 @@
 
 ## Unload chunk
 execute at @s run forceload remove ~ ~ ~ ~
-execute at @e[predicate=mad:ongame/entity/world_spawn] run forceload add ~ ~ ~ ~
+execute at @e[predicate=mad:marker/world_spawn] run forceload add ~ ~ ~ ~

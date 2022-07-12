@@ -18,8 +18,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:leather_leggings"
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings"
         }
       ]
     },
@@ -40,8 +40,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:golden_leggings"
+          "type": "minecraft:item",
+          "name": "minecraft:golden_leggings"
         }
       ]
     },
@@ -62,8 +62,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:chainmail_leggings"
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_leggings"
         }
       ]
     },
@@ -84,8 +84,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:iron_leggings"
+          "type": "minecraft:item",
+          "name": "minecraft:iron_leggings"
         }
       ]
     },
@@ -106,8 +106,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:diamond_leggings"
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings"
         }
       ]
     },
@@ -128,8 +128,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:netherite_leggings"
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings"
         }
       ]
     },
@@ -150,8 +150,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:netherite_leggings"
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings"
         }
       ]
     }

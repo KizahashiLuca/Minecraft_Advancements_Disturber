@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#mad"
+    },
+    "score": "RespawnBannerTime",
+    "scale": 1
+  },
+  "range": {
+    "min": 300,
+    "max": 300
+  }
+}

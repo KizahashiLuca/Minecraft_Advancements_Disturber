@@ -9,23 +9,23 @@
 #####################################
 
 ## Summon armor stand
-execute if score #mad BeaconNumber matches 1.. run summon minecraft:armor_stand ~ ~ ~ {NoAI:1b,Invulnerable:1b,NoGravity:0b,Silent:1b,Tags:["RespawnBeaconPosition"]}
-execute if score #mad BeaconNumber matches 1.. run scoreboard players add @e[predicate=mad:ongame/respawn_beacon/position] BeaconNumber 1
+execute if score #mad NumberOfBeacons matches 1.. run summon minecraft:armor_stand ~ ~ ~ {NoAI:1b,Invulnerable:1b,NoGravity:0b,Silent:1b,Tags:["RespawnBeaconPosition"]}
+execute if score #mad NumberOfBeacons matches 1.. run scoreboard players add @e[predicate=mad:ongame/respawn_beacon/position] NumberOfBeacons 1
 
-execute if score #mad BeaconNumber matches 2.. run summon minecraft:armor_stand ~ ~ ~ {NoAI:1b,Invulnerable:1b,NoGravity:0b,Silent:1b,Tags:["RespawnBeaconPosition"]}
-execute if score #mad BeaconNumber matches 2.. run scoreboard players add @e[predicate=mad:ongame/respawn_beacon/position] BeaconNumber 1
+execute if score #mad NumberOfBeacons matches 2.. run summon minecraft:armor_stand ~ ~ ~ {NoAI:1b,Invulnerable:1b,NoGravity:0b,Silent:1b,Tags:["RespawnBeaconPosition"]}
+execute if score #mad NumberOfBeacons matches 2.. run scoreboard players add @e[predicate=mad:ongame/respawn_beacon/position] NumberOfBeacons 1
 
-execute if score #mad BeaconNumber matches 3.. run summon minecraft:armor_stand ~ ~ ~ {NoAI:1b,Invulnerable:1b,NoGravity:0b,Silent:1b,Tags:["RespawnBeaconPosition"]}
-execute if score #mad BeaconNumber matches 3.. run scoreboard players add @e[predicate=mad:ongame/respawn_beacon/position] BeaconNumber 1
+execute if score #mad NumberOfBeacons matches 3.. run summon minecraft:armor_stand ~ ~ ~ {NoAI:1b,Invulnerable:1b,NoGravity:0b,Silent:1b,Tags:["RespawnBeaconPosition"]}
+execute if score #mad NumberOfBeacons matches 3.. run scoreboard players add @e[predicate=mad:ongame/respawn_beacon/position] NumberOfBeacons 1
 
-execute if score #mad BeaconNumber matches 4.. run summon minecraft:armor_stand ~ ~ ~ {NoAI:1b,Invulnerable:1b,NoGravity:0b,Silent:1b,Tags:["RespawnBeaconPosition"]}
-execute if score #mad BeaconNumber matches 4.. run scoreboard players add @e[predicate=mad:ongame/respawn_beacon/position] BeaconNumber 1
+execute if score #mad NumberOfBeacons matches 4.. run summon minecraft:armor_stand ~ ~ ~ {NoAI:1b,Invulnerable:1b,NoGravity:0b,Silent:1b,Tags:["RespawnBeaconPosition"]}
+execute if score #mad NumberOfBeacons matches 4.. run scoreboard players add @e[predicate=mad:ongame/respawn_beacon/position] NumberOfBeacons 1
 
-execute if score #mad BeaconNumber matches 5.. run summon minecraft:armor_stand ~ ~ ~ {NoAI:1b,Invulnerable:1b,NoGravity:0b,Silent:1b,Tags:["RespawnBeaconPosition"]}
-execute if score #mad BeaconNumber matches 5.. run scoreboard players add @e[predicate=mad:ongame/respawn_beacon/position] BeaconNumber 1
+execute if score #mad NumberOfBeacons matches 5.. run summon minecraft:armor_stand ~ ~ ~ {NoAI:1b,Invulnerable:1b,NoGravity:0b,Silent:1b,Tags:["RespawnBeaconPosition"]}
+execute if score #mad NumberOfBeacons matches 5.. run scoreboard players add @e[predicate=mad:ongame/respawn_beacon/position] NumberOfBeacons 1
 
 ## Not teleport
-tag @e[predicate=mad:ongame/respawn_beacon/position,scores={BeaconNumber=1}] add CenterOfWorld
+tag @e[predicate=mad:ongame/respawn_beacon/position,scores={NumberOfBeacons=1}] add CenterOfWorld
 
 ## Teleport randomly
 execute if score #mad WorldBorder matches 0 run spreadplayers ~ ~ 0 998 false @e[predicate=mad:ongame/respawn_beacon/position,tag=!CenterOfWorld]

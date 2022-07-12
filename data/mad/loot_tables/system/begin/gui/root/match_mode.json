@@ -1,0 +1,75 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "name": [
+            [
+              "",
+              {"text":"マッチモード","color":"white","bold":false,"italic":false}
+            ]
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:63,Tags:[\"MAD_setting_item\",\"MAD_match_mode\"]}"
+        }
+      ],
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carved_pumpkin",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/match_mode/individual"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"個人戦","color":"red","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"選択中","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jack_o_lantern",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/match_mode/team"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"チーム戦","color":"green","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"選択中","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

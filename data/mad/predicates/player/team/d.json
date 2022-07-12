@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "team": "TeamD",
+    "nbt": "{Tags:[\"MAD_Participant\"]}"
+  }
+}

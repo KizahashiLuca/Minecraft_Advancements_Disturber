@@ -35,11 +35,11 @@ scoreboard players set @a[tag=Leader] NumOfTeamPlayer 0
 execute as @a[tag=Participant,tag=Leader,scores={Second=..0}] run function mad:system/ongame_team/detect_time_over
 
 ## Team function
-execute if score #mad TeamNumber matches 1.. if score #mad DeadTeamA matches 0 run function mad:system/ongame_team/team_function/team_a
-execute if score #mad TeamNumber matches 2.. if score #mad DeadTeamB matches 0 run function mad:system/ongame_team/team_function/team_b
-execute if score #mad TeamNumber matches 3.. if score #mad DeadTeamC matches 0 run function mad:system/ongame_team/team_function/team_c
-execute if score #mad TeamNumber matches 4.. if score #mad DeadTeamD matches 0 run function mad:system/ongame_team/team_function/team_d
-execute if score #mad TeamNumber matches 5.. if score #mad DeadTeamE matches 0 run function mad:system/ongame_team/team_function/team_e
+execute if score #mad NumberOfTeams matches 1.. if score #mad DeadTeamA matches 0 run function mad:system/ongame_team/team_function/team_a
+execute if score #mad NumberOfTeams matches 2.. if score #mad DeadTeamB matches 0 run function mad:system/ongame_team/team_function/team_b
+execute if score #mad NumberOfTeams matches 3.. if score #mad DeadTeamC matches 0 run function mad:system/ongame_team/team_function/team_c
+execute if score #mad NumberOfTeams matches 4.. if score #mad DeadTeamD matches 0 run function mad:system/ongame_team/team_function/team_d
+execute if score #mad NumberOfTeams matches 5.. if score #mad DeadTeamE matches 0 run function mad:system/ongame_team/team_function/team_e
 
 ## Calculate time per players
 execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive = @s Second
@@ -91,7 +91,7 @@ execute as @e[predicate=mad:ongame/respawn_banner/structure] at @s run function 
 execute as @e[predicate=mad:ongame/respawn_banner/position] at @s run function mad:system/ongame/respawn_banner/set_respawn_banner
 
 ## Game Finish
-scoreboard players operation #mad NumAlive = #mad TeamNumber
+scoreboard players operation #mad NumAlive = #mad NumberOfTeams
 scoreboard players operation #mad NumAlive -= #mad NumDead
 execute if score #mad NumAlive matches 0..1 if score #mad ExitMessage matches 0 run function mad:system/ongame/exit_message
-execute as @p[tag=Host,scores={ExitMessage=1}] run scoreboard players set #mad Phase 22
+execute as @p[predicate=mad:player/host,scores={ExitMessage=1}] run scoreboard players set #mad Phase 22

@@ -19,13 +19,14 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"selector":"@s","color":"red","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"red","bold":false,"italic":false}]
               ],
               "entity": "this"
-            },{
-              "function":"minecraft:set_nbt",
+            },
+            {
+              "function": "minecraft:set_nbt",
               "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamA\"]}"
             }
           ]
@@ -45,13 +46,14 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"selector":"@s","color":"blue","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"blue","bold":false,"italic":false}]
               ],
               "entity": "this"
-            },{
-              "function":"minecraft:set_nbt",
+            },
+            {
+              "function": "minecraft:set_nbt",
               "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamB\"]}"
             }
           ]
@@ -71,13 +73,14 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"selector":"@s","color":"yellow","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"yellow","bold":false,"italic":false}]
               ],
               "entity": "this"
-            },{
-              "function":"minecraft:set_nbt",
+            },
+            {
+              "function": "minecraft:set_nbt",
               "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamC\"]}"
             }
           ]
@@ -97,13 +100,14 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"selector":"@s","color":"green","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"green","bold":false,"italic":false}]
               ],
               "entity": "this"
-            },{
-              "function":"minecraft:set_nbt",
+            },
+            {
+              "function": "minecraft:set_nbt",
               "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamD\"]}"
             }
           ]
@@ -123,13 +127,14 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"selector":"@s","color":"dark_purple","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"dark_purple","bold":false,"italic":false}]
               ],
               "entity": "this"
-            },{
-              "function":"minecraft:set_nbt",
+            },
+            {
+              "function": "minecraft:set_nbt",
               "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamE\"]}"
             }
           ]

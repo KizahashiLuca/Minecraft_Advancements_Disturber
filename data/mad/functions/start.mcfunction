@@ -9,5 +9,5 @@
 #####################################
 
 ## Detect Gamemode
-execute if entity @p[tag=Host] run function mad:system/finish/game_reject
-execute unless entity @p[tag=Host] run function mad:system/setting/initial/set_game
+execute if entity @p[predicate=mad:player/host] run function mad:system/finish/reject_game/main
+execute unless entity @p[predicate=mad:player/host] run function mad:system/begin/set_game/main

@@ -18,8 +18,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:leather_chestplate"
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate"
         }
       ]
     },
@@ -40,8 +40,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:golden_chestplate"
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate"
         }
       ]
     },
@@ -62,8 +62,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:chainmail_chestplate"
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate"
         }
       ]
     },
@@ -84,8 +84,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:iron_chestplate"
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate"
         }
       ]
     },
@@ -106,8 +106,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:diamond_chestplate"
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate"
         }
       ]
     },
@@ -128,8 +128,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:netherite_chestplate"
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate"
         }
       ]
     },
@@ -150,8 +150,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:netherite_chestplate"
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate"
         }
       ]
     }

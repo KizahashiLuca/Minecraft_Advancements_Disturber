@@ -9,11 +9,11 @@
 #####################################
 
 ## Execute a beacon
-execute as @s[scores={BeaconNumber=1}] run tag @p[tag=Participant,tag=RespawnBannerSet1] add RespawnSoon
-execute as @s[scores={BeaconNumber=2}] run tag @p[tag=Participant,tag=RespawnBannerSet2] add RespawnSoon
-execute as @s[scores={BeaconNumber=3}] run tag @p[tag=Participant,tag=RespawnBannerSet3] add RespawnSoon
-execute as @s[scores={BeaconNumber=4}] run tag @p[tag=Participant,tag=RespawnBannerSet4] add RespawnSoon
-execute as @s[scores={BeaconNumber=5}] run tag @p[tag=Participant,tag=RespawnBannerSet5] add RespawnSoon
+execute as @s[scores={NumberOfBeacons=1}] run tag @p[tag=Participant,tag=RespawnBannerSet1] add RespawnSoon
+execute as @s[scores={NumberOfBeacons=2}] run tag @p[tag=Participant,tag=RespawnBannerSet2] add RespawnSoon
+execute as @s[scores={NumberOfBeacons=3}] run tag @p[tag=Participant,tag=RespawnBannerSet3] add RespawnSoon
+execute as @s[scores={NumberOfBeacons=4}] run tag @p[tag=Participant,tag=RespawnBannerSet4] add RespawnSoon
+execute as @s[scores={NumberOfBeacons=5}] run tag @p[tag=Participant,tag=RespawnBannerSet5] add RespawnSoon
 tp @p[tag=RespawnSoon] ~ ~1 ~
 clear @p[tag=RespawnSoon]
 gamemode survival @p[tag=RespawnSoon]

@@ -18,8 +18,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:leather_helmet"
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet"
         }
       ]
     },
@@ -40,8 +40,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:golden_helmet"
+          "type": "minecraft:item",
+          "name": "minecraft:golden_helmet"
         }
       ]
     },
@@ -62,8 +62,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:chainmail_helmet"
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_helmet"
         }
       ]
     },
@@ -84,8 +84,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:iron_helmet"
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet"
         }
       ]
     },
@@ -106,8 +106,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:diamond_helmet"
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet"
         }
       ]
     },
@@ -128,8 +128,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:netherite_helmet"
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet"
         }
       ]
     },
@@ -150,8 +150,8 @@
       ],
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:netherite_helmet"
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet"
         }
       ]
     }

@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/begin/gui/team_match"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/host"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:26b,tag:{Tags:[\"MAD_setting_item\",\"MAD_respawn_banner_time\"]}}]}"
+      }
+    }
+  }
+]

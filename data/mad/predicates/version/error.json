@@ -1,0 +1,29 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:version/1.13"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:version/1.14"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:version/1.15"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:version/1.16"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:version/1.17"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:version/1.18"
+    }
+  ]
+}

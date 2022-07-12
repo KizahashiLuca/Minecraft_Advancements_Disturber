@@ -1,0 +1,35 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/begin/gui/team_match"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/host"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:system/begin/gui/team_match/number_of_teams/1p"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:system/begin/gui/team_match/number_of_teams/2p"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:system/begin/gui/team_match/number_of_teams/3p"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:system/begin/gui/team_match/number_of_teams/4p"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:system/begin/gui/team_match/number_of_teams/5p"
+      }
+    ]
+  }
+]

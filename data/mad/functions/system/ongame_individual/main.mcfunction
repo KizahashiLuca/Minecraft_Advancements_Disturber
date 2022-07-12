@@ -62,7 +62,7 @@ execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseFungusSti
 execute as @e[predicate=mad:ongame/return_portal] at @s run function mad:system/ongame/return_portal/main
 
 ## Game Finish
-scoreboard players operation #mad NumAlive = #mad NumParticipant
+scoreboard players operation #mad NumAlive = #mad NumOfParticipants
 scoreboard players operation #mad NumAlive -= #mad NumDead
 execute if score #mad NumAlive matches 0..1 if score #mad ExitMessage matches 0 run function mad:system/ongame/exit_message
-execute as @p[tag=Host,scores={ExitMessage=1}] run scoreboard players set #mad Phase 22
+execute as @p[predicate=mad:player/host,scores={ExitMessage=1}] run scoreboard players set #mad Phase 22

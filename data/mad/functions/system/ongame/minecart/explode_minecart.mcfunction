@@ -14,7 +14,7 @@ particle minecraft:explosion ~ ~ ~ 1 1 1 0.5 10 force @a
 kill @s
 
 ## give time randomly
-tag @p[predicate=mad:ongame/player/participant_alive,sort=nearest] add GiveTimeRandomly
+tag @p[predicate=mad:ongame/player/participant_alive,sort=nearest] add GiveTimeRandomly 
 execute if entity @p[tag=GiveTimeRandomly,team=TeamA] run function mad:system/ongame/minecart/bonus_time/team_a
 execute if entity @p[tag=GiveTimeRandomly,team=TeamB] run function mad:system/ongame/minecart/bonus_time/team_b
 execute if entity @p[tag=GiveTimeRandomly,team=TeamC] run function mad:system/ongame/minecart/bonus_time/team_c
@@ -27,5 +27,5 @@ tag @a remove GiveTimeRandomly
 scoreboard players operation #mad SecondSummon = #mad SummonInterval
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] store result score @s PosX align x run data get entity @s Pos[0] 1
 execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] store result score @s PosZ align z run data get entity @s Pos[2] 1
-execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] run tellraw @a ["",{"text":"[支援物資] 物資が ","color":"green"},{"score":{"name":"#mad","objective":"SecondSummon"},"color":"green"},{"text":" 秒後に ","color":"green"},{"translate":"[%s, 160, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"score":{"name":"@s","objective":"PosZ"}}],"color":"green","hoverEvent":{"action":"show_text","value":"スペクテイター時\nクリックしてテレポート"},"clickEvent":{"action":"run_command","value":"/trigger TeleportMinecart set 1"}},{"text":" に投下されます。","color":"green"}]
+execute as @e[type=minecraft:area_effect_cloud,tag=Minecart] run tellraw @a ["",{"text":"[支援物資] 物資が ","color":"green"},{"score":{"name":"#mad","objective":"SecondSummon"},"color":"green"},{"text":" 秒後に ","color":"green"},{"translate":"[%s, 320, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"score":{"name":"@s","objective":"PosZ"}}],"color":"green","hoverEvent":{"action":"show_text","value":"スペクテイター時\nクリックしてテレポート"},"clickEvent":{"action":"run_command","value":"/trigger TeleportMinecart set 1"}},{"text":" に投下されます。","color":"green"}]
 scoreboard players operation #mad SecondSummon += #mad Second

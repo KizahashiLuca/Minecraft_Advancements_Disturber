@@ -9,8 +9,8 @@
 #####################################
 
 ## Get time for bossbar
-bossbar add minecraft:bossbar001 [{"text":"生存時間  残り "},{"score":{"name":"@s","objective":"Second"}},{"text":" 秒"}]
-bossbar set minecraft:bossbar001 players @s
-bossbar set minecraft:bossbar001 name [{"text":"生存時間  残り "},{"score":{"name":"@s","objective":"Second"}},{"text":" 秒"}]
-execute store result bossbar minecraft:bossbar001 max run scoreboard players get @s TimeLimit
-execute store result bossbar minecraft:bossbar001 value run scoreboard players get @s Second
+bossbar add mad:bossbar001 [{"text":"生存時間  残り "},{"score":{"name":"@s","objective":"Second"}},{"text":" 秒"}]
+bossbar set mad:bossbar001 players @s
+bossbar set mad:bossbar001 name [{"text":"生存時間  残り "},{"score":{"name":"@s","objective":"Second"}},{"text":" 秒"}]
+execute store result bossbar mad:bossbar001 max run scoreboard players get @s TimeLimit
+execute store result bossbar mad:bossbar001 value run scoreboard players get @s Second

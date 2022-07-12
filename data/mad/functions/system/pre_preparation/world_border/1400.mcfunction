@@ -12,7 +12,7 @@
 worldborder set 1401
 
 ## Set cloud
-execute align xyz run summon minecraft:area_effect_cloud ~700 0 ~700 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute align xyz run summon minecraft:area_effect_cloud ~-700 0 ~700 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute align xyz run summon minecraft:area_effect_cloud ~700 0 ~-700 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute align xyz run summon minecraft:area_effect_cloud ~-700 0 ~-700 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
+execute align xyz run summon minecraft:marker ~700 0 ~700 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b}
+execute align xyz run summon minecraft:marker ~-700 0 ~700 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b}
+execute align xyz run summon minecraft:marker ~700 0 ~-700 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b}
+execute align xyz run summon minecraft:marker ~-700 0 ~-700 {Tags:["WorldCorner"],NoGravity:1b,Invulnerable:1b}

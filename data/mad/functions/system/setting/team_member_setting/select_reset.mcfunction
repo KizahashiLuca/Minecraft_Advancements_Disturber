@@ -13,6 +13,6 @@ team leave @a
 tag @a[tag=Participant] add NotSetTeam
 
 clear @a
-team join TeamA @p[tag=Host]
+team join TeamA @p[predicate=mad:player/host]
 
 function mad:system/setting/team_member_setting/change_to

@@ -15,11 +15,11 @@ scoreboard players set @s OnGround 2
 effect clear @s minecraft:slow_falling
 
 ## Add a tag
-tag @s add Teleporter
+tag @s add Teleportee
 
 ## Teleport
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["Teleporter"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute as @e[type=minecraft:area_effect_cloud,tag=Teleporter] run scoreboard players operation @s Participant = @p[tag=Participant,tag=Teleporter] Participant
+summon minecraft:marker ~ ~ ~ {Tags:["Teleporter"],NoGravity:1b,Invulnerable:1b}
+execute as @e[predicate=mad:preparation/teleport/teleporter] run scoreboard players operation @s Participant = @p[predicate=mad:preparation/teleport/teleportee] Participant
 
 ## Remove a tag
-tag @p[tag=Participant,tag=Teleporter] remove Teleporter
+tag @p[predicate=mad:preparation/teleport/teleportee] remove Teleportee

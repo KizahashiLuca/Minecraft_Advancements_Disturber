@@ -26,6 +26,7 @@ execute if score #mad WeatherCycle matches 1 run gamerule doWeatherCycle true
 execute if score #mad WeatherCycle matches 0 run gamerule doWeatherCycle false
 execute if score #mad DaylightCycle matches 1 run gamerule doDaylightCycle true
 execute if score #mad DaylightCycle matches 0 run gamerule doDaylightCycle false
+gamerule reducedDebugInfo true
 gamerule doMobSpawning true
 gamerule keepInventory false
 gamerule doFireTick true
@@ -35,17 +36,18 @@ team modify Participant nametagVisibility never
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
+kill @e[type=minecraft:marker]
 kill @e[type=minecraft:area_effect_cloud]
 
 ## Forceload chunks
-execute at @p[tag=Host] run forceload add ~ ~
+execute at @p[predicate=mad:player/host] run forceload add ~ ~
 
 ## Summon world spawn
-execute at @p[tag=Host] align xyz run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["WorldSpawn"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.5f,Duration:2147483647}
-execute as @e[predicate=mad:ongame/entity/world_spawn,limit=1] store result score @s PosX run data get entity @s Pos[0]
-execute as @e[predicate=mad:ongame/entity/world_spawn,limit=1] store result score @s PosY run data get entity @s Pos[1]
-execute as @e[predicate=mad:ongame/entity/world_spawn,limit=1] store result score @s PosZ run data get entity @s Pos[2]
-execute as @e[predicate=mad:ongame/entity/world_spawn,limit=1] at @s run function mad:system/pre_preparation/detect_world_border
+execute at @p[predicate=mad:player/host] align xyz run summon minecraft:marker ~ ~ ~ {Tags:["WorldSpawn"],NoGravity:1b,Invulnerable:1b}
+execute as @e[predicate=mad:marker/world_spawn,limit=1] store result score @s PosX run data get entity @s Pos[0]
+execute as @e[predicate=mad:marker/world_spawn,limit=1] store result score @s PosY run data get entity @s Pos[1]
+execute as @e[predicate=mad:marker/world_spawn,limit=1] store result score @s PosZ run data get entity @s Pos[2]
+execute as @e[predicate=mad:marker/world_spawn,limit=1] at @s run function mad:system/pre_preparation/detect_world_border
 
 ## Set time
 time set noon

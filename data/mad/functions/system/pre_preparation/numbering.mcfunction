@@ -14,4 +14,4 @@ execute as @a[tag=Participant,tag=!Numbered] if score @s Participant = #mad Part
 
 ## Loop
 scoreboard players add #mad Participant 1
-execute if score #mad Participant <= #mad NumParticipant run function mad:system/pre_preparation/numbering
+execute if score #mad Participant <= #mad NumOfParticipants run function mad:system/pre_preparation/numbering

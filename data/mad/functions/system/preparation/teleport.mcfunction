@@ -9,10 +9,10 @@
 #####################################
 
 ## Add a tag
-tag @s add Teleporter
+tag @s add Teleportee
 
 ## Teleport
-execute as @e[type=minecraft:area_effect_cloud,tag=Teleporter] at @s if score @s Participant = @p[tag=Participant,tag=Teleporter] Participant run tp @p[tag=Participant,tag=Teleporter] ~ ~ ~
+execute as @e[predicate=mad:preparation/teleport/teleporter] at @s if score @s Participant = @p[predicate=mad:preparation/teleport/teleportee] Participant run tp @p[predicate=mad:preparation/teleport/teleportee] ~ ~ ~
 
 ## Remove a tag
-tag @p[tag=Participant,tag=Teleporter] remove Teleporter
+tag @p[predicate=mad:preparation/teleport/teleportee] remove Teleportee

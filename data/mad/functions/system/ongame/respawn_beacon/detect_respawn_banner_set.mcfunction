@@ -17,11 +17,11 @@ execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon] store re
 ## Add a tag
 execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet
 execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSetTmp
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={BeaconNumber=1,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet1
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={BeaconNumber=2,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet2
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={BeaconNumber=3,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet3
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={BeaconNumber=4,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet4
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={BeaconNumber=5,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet5
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=1,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet1
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=2,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet2
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=3,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet3
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=4,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet4
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=5,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet5
 
 ## Remove a tag
 tag @s remove DetectRespawnPlayer
