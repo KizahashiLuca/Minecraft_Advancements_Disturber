@@ -19,11 +19,11 @@ execute in mad:world run function mad:system/begin/team_member/effect/main
 
 ## Join to team
 execute in mad:world run team leave @a[predicate=mad:player/participant]
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 in mad:world positioned 5.0 1 5.0 run team join TeamA @a[predicate=mad:player/participant,dx=4,dy=5,dz=4]
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 in mad:world positioned -9.0 1 -9.0 run team join TeamB @a[predicate=mad:player/participant,dx=4,dy=5,dz=4]
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 in mad:world positioned 5.0 1 -9.0 run team join TeamC @a[predicate=mad:player/participant,dx=4,dy=5,dz=4]
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 in mad:world positioned -9.0 1 5.0 run team join TeamD @a[predicate=mad:player/participant,dx=4,dy=5,dz=4]
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 in mad:world positioned 5.0 1 -2.0 run team join TeamE @a[predicate=mad:player/participant,dx=4,dy=5,dz=4]
+execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 in mad:world positioned 5.0 1 5.0 as @a[predicate=mad:player/participant,dx=4,dy=5,dz=4] run function mad:system/begin/team_member/join_team/a
+execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 in mad:world positioned -9.0 1 -9.0 as @a[predicate=mad:player/participant,dx=4,dy=5,dz=4] run function mad:system/begin/team_member/join_team/b
+execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 in mad:world positioned 5.0 1 -9.0 as @a[predicate=mad:player/participant,dx=4,dy=5,dz=4] run function mad:system/begin/team_member/join_team/c
+execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 in mad:world positioned -9.0 1 5.0 as @a[predicate=mad:player/participant,dx=4,dy=5,dz=4] run function mad:system/begin/team_member/join_team/d
+execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 in mad:world positioned 5.0 1 -2.0 as @a[predicate=mad:player/participant,dx=4,dy=5,dz=4] run function mad:system/begin/team_member/join_team/e
 
 ## Title message
 title @a times 0 10 0
@@ -39,4 +39,4 @@ title @a[predicate=mad:player/team/e] subtitle ["",{"text":"あなたは 現在 
 execute as @p[predicate=mad:system/begin/team_member/master] run function mad:system/begin/team_member/change_to
 execute as @p[predicate=mad:system/begin/team_member/cancel] run function mad:system/begin/team_member/cancel
 execute as @p[predicate=mad:system/begin/team_member/reset] run function mad:system/begin/team_member/reset
-execute as @p[predicate=mad:system/begin/team_member/ok] run function mad:system/begin/team_member/ok
+execute as @p[predicate=mad:system/begin/team_member/ok,predicate=mad:system/begin/team_member/all_team_exists_member] run function mad:system/begin/team_member/ok
