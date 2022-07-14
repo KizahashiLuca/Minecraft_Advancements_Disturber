@@ -27,7 +27,7 @@ scoreboard objectives add Tick dummy
 scoreboard objectives add GeneralSecond dummy
 scoreboard objectives add SecondPerSurvive dummy
 #### participants
-scoreboard objectives add Participant dummy
+scoreboard objectives add ParticipantNumber dummy
 scoreboard objectives add NumOfParticipants dummy
 scoreboard objectives add NumAlive dummy
 scoreboard objectives add NumDead dummy
@@ -45,35 +45,6 @@ scoreboard objectives add RandomCount dummy
 scoreboard objectives add RandomAnswer dummy
 scoreboard objectives add RandomModder dummy
 scoreboard objectives add RandomMultiplier dummy
-#### setting phase - common
-scoreboard objectives add ThrowItem dummy
-scoreboard objectives add Select02 dummy
-scoreboard objectives add Select03 dummy
-scoreboard objectives add Select04 dummy
-scoreboard objectives add Select05 dummy
-scoreboard objectives add Select06 dummy
-scoreboard objectives add Select09 dummy
-scoreboard objectives add Select10 dummy
-scoreboard objectives add Select11 dummy
-scoreboard objectives add Select12 dummy
-scoreboard objectives add Select13 dummy
-scoreboard objectives add Select14 dummy
-scoreboard objectives add Select15 dummy
-scoreboard objectives add Select16 dummy
-scoreboard objectives add Select17 dummy
-scoreboard objectives add Select18 dummy
-scoreboard objectives add Select19 dummy
-scoreboard objectives add Select20 dummy
-scoreboard objectives add Select21 dummy
-scoreboard objectives add Select22 dummy
-scoreboard objectives add Select23 dummy
-scoreboard objectives add Select24 dummy
-scoreboard objectives add Select25 dummy
-scoreboard objectives add Select26 dummy
-scoreboard objectives add Select28 dummy
-scoreboard objectives add Select31 dummy
-scoreboard objectives add Select34 dummy
-scoreboard objectives add Selected dummy
 #### setting phase - choose time limit
 scoreboard objectives add 10 dummy
 scoreboard objectives add 100 dummy
@@ -88,6 +59,7 @@ scoreboard objectives add TimeLimitPrv dummy
 scoreboard objectives add GetTimeLimit dummy
 #### setting phase - choose area
 scoreboard objectives add WorldBorder dummy
+scoreboard objectives add WorldBorderTmp dummy
 scoreboard objectives add WorldBorderPrv dummy
 scoreboard objectives add WorldBorderEnd dummy
 scoreboard objectives add PosXCeil dummy

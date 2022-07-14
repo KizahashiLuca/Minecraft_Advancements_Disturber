@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Add scoreboard
-scoreboard objectives add WorldBorderTmp dummy
-
 ## Set scoreboard
 scoreboard players operation #mad WorldBorderTmp = #mad WorldBorder
 scoreboard players operation #mad WorldBorderTmp /= #mad 2
@@ -30,6 +27,3 @@ scoreboard players operation @s PosXFloor -= #mad WorldBorderTmp
 scoreboard players operation @s PosZFloor -= #mad WorldBorderTmp
 scoreboard players set #mad WorldBorderEnd 0
 execute as @s[scores={PosXCeil=200..,PosXFloor=..-200,PosZCeil=200..,PosZFloor=..-200}] run scoreboard players set #mad WorldBorderEnd 1
-
-## Remove scoreboard
-scoreboard objectives remove WorldBorderTmp

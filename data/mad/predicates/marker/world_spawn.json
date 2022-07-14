@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:marker",
-    "nbt": "{Tags:[\"WorldSpawn\"]}"
+    "nbt": "{Tags:[\"MAD_WorldSpawn\"]}"
   }
 }

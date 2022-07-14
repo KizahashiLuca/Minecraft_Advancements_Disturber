@@ -9,8 +9,8 @@
 #####################################
 
 ## Store time for bossbar
-execute as @s[scores={Participant=1..4}] run function mad:system/pre_preparation/individual/branch_1
-execute as @s[scores={Participant=5..8}] run function mad:system/pre_preparation/individual/branch_2
-execute as @s[scores={Participant=9..12}] run function mad:system/pre_preparation/individual/branch_3
-execute as @s[scores={Participant=13..16}] run function mad:system/pre_preparation/individual/branch_4
-execute as @s[scores={Participant=17..20}] run function mad:system/pre_preparation/individual/branch_5
+execute as @s[scores={ParticipantNumber=1..4}] run function mad:system/pre_preparation/individual/branch_1
+execute as @s[scores={ParticipantNumber=5..8}] run function mad:system/pre_preparation/individual/branch_2
+execute as @s[scores={ParticipantNumber=9..12}] run function mad:system/pre_preparation/individual/branch_3
+execute as @s[scores={ParticipantNumber=13..16}] run function mad:system/pre_preparation/individual/branch_4
+execute as @s[scores={ParticipantNumber=17..20}] run function mad:system/pre_preparation/individual/branch_5

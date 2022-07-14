@@ -12,7 +12,7 @@
 tag @s add Teleportee
 
 ## Teleport
-execute as @e[predicate=mad:preparation/teleport/teleporter] at @s if score @s Participant = @p[predicate=mad:preparation/teleport/teleportee] Participant run tp @p[predicate=mad:preparation/teleport/teleportee] ~ ~ ~
+execute as @e[predicate=mad:preparation/teleport/teleporter] at @s if score @s ParticipantNumber = @p[predicate=mad:preparation/teleport/teleportee] ParticipantNumber run tp @p[predicate=mad:preparation/teleport/teleportee] ~ ~ ~
 
 ## Remove a tag
 tag @p[predicate=mad:preparation/teleport/teleportee] remove Teleportee

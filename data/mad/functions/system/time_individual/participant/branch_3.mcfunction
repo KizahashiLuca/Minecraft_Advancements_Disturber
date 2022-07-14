@@ -9,7 +9,7 @@
 #####################################
 
 ## Store time for bossbar
-execute as @s[scores={Participant=9}] run function mad:system/time_individual/participant/009
-execute as @s[scores={Participant=10}] run function mad:system/time_individual/participant/010
-execute as @s[scores={Participant=11}] run function mad:system/time_individual/participant/011
-execute as @s[scores={Participant=12}] run function mad:system/time_individual/participant/012
+execute as @s[scores={ParticipantNumber=9}] run function mad:system/time_individual/participant/009
+execute as @s[scores={ParticipantNumber=10}] run function mad:system/time_individual/participant/010
+execute as @s[scores={ParticipantNumber=11}] run function mad:system/time_individual/participant/011
+execute as @s[scores={ParticipantNumber=12}] run function mad:system/time_individual/participant/012

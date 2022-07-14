@@ -19,7 +19,7 @@ tag @s add Teleportee
 
 ## Teleport
 summon minecraft:marker ~ ~ ~ {Tags:["Teleporter"],NoGravity:1b,Invulnerable:1b}
-execute as @e[predicate=mad:preparation/teleport/teleporter] run scoreboard players operation @s Participant = @p[predicate=mad:preparation/teleport/teleportee] Participant
+execute as @e[predicate=mad:preparation/teleport/teleporter] run scoreboard players operation @s ParticipantNumber = @p[predicate=mad:preparation/teleport/teleportee] ParticipantNumber
 
 ## Remove a tag
 tag @p[predicate=mad:preparation/teleport/teleportee] remove Teleportee

@@ -8,5 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Set member randomly
-function mad:system/begin/team_member/set_member_randomly
+## Set game
+function mad:system/wait/set_game/main
+
+## Change phase
+scoreboard players set #mad Phase 19

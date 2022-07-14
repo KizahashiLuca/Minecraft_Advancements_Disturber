@@ -33,11 +33,5 @@ kill @e[predicate=mad:ongame/return_portal]
 kill @e[predicate=mad:ongame/mobile_respawn_beacon/position]
 kill @e[type=minecraft:armor_stand,tag=MinecartItem]
 
-## Forceload chunks
-execute at @p[predicate=mad:player/host] run forceload add ~ ~
-
-## Summon world spawn
-execute at @p[predicate=mad:player/host] align xyz run summon minecraft:marker ~ ~ ~ {Tags:["MAD_WorldSpawn"],NoGravity:1b,Invulnerable:1b}
-execute as @e[predicate=mad:marker/world_spawn,limit=1] store result score @s PosX run data get entity @s Pos[0]
-execute as @e[predicate=mad:marker/world_spawn,limit=1] store result score @s PosY run data get entity @s Pos[1]
-execute as @e[predicate=mad:marker/world_spawn,limit=1] store result score @s PosZ run data get entity @s Pos[2]
+## Set world border
+execute as @e[predicate=mad:marker/world_spawn,limit=1] at @s run function mad:system/wait/set_game/set_world_border

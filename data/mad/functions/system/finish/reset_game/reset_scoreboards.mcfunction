@@ -27,7 +27,7 @@ scoreboard objectives remove Tick
 scoreboard objectives remove GeneralSecond
 scoreboard objectives remove SecondPerSurvive
 #### participants
-scoreboard objectives remove Participant
+scoreboard objectives remove ParticipantNumber
 scoreboard objectives remove NumOfParticipants
 scoreboard objectives remove NumAlive
 scoreboard objectives remove NumDead
@@ -45,35 +45,6 @@ scoreboard objectives remove RandomCount
 scoreboard objectives remove RandomAnswer
 scoreboard objectives remove RandomModder
 scoreboard objectives remove RandomMultiplier
-#### setting phase - common
-scoreboard objectives remove ThrowItem
-scoreboard objectives remove Select02
-scoreboard objectives remove Select03
-scoreboard objectives remove Select04
-scoreboard objectives remove Select05
-scoreboard objectives remove Select06
-scoreboard objectives remove Select09
-scoreboard objectives remove Select10
-scoreboard objectives remove Select11
-scoreboard objectives remove Select12
-scoreboard objectives remove Select13
-scoreboard objectives remove Select14
-scoreboard objectives remove Select15
-scoreboard objectives remove Select16
-scoreboard objectives remove Select17
-scoreboard objectives remove Select18
-scoreboard objectives remove Select19
-scoreboard objectives remove Select20
-scoreboard objectives remove Select21
-scoreboard objectives remove Select22
-scoreboard objectives remove Select23
-scoreboard objectives remove Select24
-scoreboard objectives remove Select25
-scoreboard objectives remove Select26
-scoreboard objectives remove Select28
-scoreboard objectives remove Select31
-scoreboard objectives remove Select34
-scoreboard objectives remove Selected
 #### setting phase - choose time limit
 scoreboard objectives remove 10
 scoreboard objectives remove 100
@@ -88,6 +59,7 @@ scoreboard objectives remove TimeLimitPrv
 scoreboard objectives remove GetTimeLimit
 #### setting phase - choose area
 scoreboard objectives remove WorldBorder
+scoreboard objectives remove WorldBorderTmp
 scoreboard objectives remove WorldBorderPrv
 scoreboard objectives remove WorldBorderEnd
 scoreboard objectives remove PosXCeil

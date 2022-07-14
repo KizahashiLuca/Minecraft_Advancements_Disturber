@@ -8,97 +8,18 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
+## Numbering
+scoreboard players set #mad ParticipantNumber 1
+scoreboard players set @a[predicate=mad:player/participant] ParticipantNumber 0
+function mad:system/wait/set_game/numbering
+tag @a[predicate=mad:player/participant] remove MAD_Numbered
+
 ## Set scoreboards
-#### game phase
-scoreboard players set #mad DataVersion 1444
-scoreboard players set #mad Version 13
-scoreboard players set #mad Phase 0
-scoreboard players set #mad PrevPhase 0
-scoreboard players set #mad Difficulty 0
-scoreboard players set #mad ExitMessage 0
 #### timer
-scoreboard players set #mad 2 2
-#### participants
-scoreboard players set #mad ParticipantNumber 0
-scoreboard players set #mad NumOfParticipants 0
-scoreboard players set #mad NumAlive 0
-scoreboard players set #mad NumDead 0
-#### position
-scoreboard players set #mad PosX 0
-scoreboard players set #mad PosY 63
-scoreboard players set #mad PosZ 0
-scoreboard players set #mad 45 45
-#### randomizer
-scoreboard players set #mad RandomSeed 0
-scoreboard players set #mad RandomCount 10
-scoreboard players set #mad RandomAnswer 0
-scoreboard players set #mad RandomModder 2147483647
-scoreboard players set #mad RandomMultiplier 48271
-#### setting phase - choose time limit
-scoreboard players set #mad 10 10
-scoreboard players set #mad 100 100
-scoreboard players set #mad 1000 1000
-scoreboard players set #mad 10000 10000
-scoreboard players set #mad TimeLimit 300
-scoreboard players set #mad TimeLimitPrv 300
-#### setting phase - choose area
-scoreboard players set #mad WorldBorder 1000
-scoreboard players set #mad WorldBorderPrv 1000
-scoreboard players set #mad WorldBorderEnd 0
-#### setting phase - choose difficulty
-scoreboard players set #mad Difficulty 2
-scoreboard players set #mad DifficultyPrv 2
-#### setting phase - choose adding time
-scoreboard players set #mad AddingTime 100
-scoreboard players set #mad AddingTimePrv 100
-#### setting phase - choose minecart interval
-scoreboard players set #mad CartInterval 300
-scoreboard players set #mad CartIntervalPrv 300
-#### setting phase - choose gamerule
-scoreboard players set #mad WeatherCycle 1
-scoreboard players set #mad DaylightCycle 1
-scoreboard players set #mad WeatherCyclePrv 1
-scoreboard players set #mad DaylightCyclePrv 1
-#### setting phase - choose team setting
-scoreboard players set #mad IsTeam 0
-scoreboard players set #mad friendlyFire 1
-scoreboard players set #mad collisionRule 1
-scoreboard players set #mad VisibleName 1
-scoreboard players set #mad VisibleInvis 1
-scoreboard players set #mad VisibleDeath 1
-scoreboard players set #mad SetTeamManual 0
-scoreboard players set #mad NumberOfTeams 2
-scoreboard players set #mad NumberOfBeacons 5
-scoreboard players set #mad RespawnBannerTime -60
-scoreboard players set #mad friendlyFirePrv 1
-scoreboard players set #mad collisionRulePrv 1
-scoreboard players set #mad VisibleNamePrv 1
-scoreboard players set #mad VisibleInvisPrv 1
-scoreboard players set #mad VisibleDeathPrv 1
-scoreboard players set #mad SetTeamManualPrv 0
-scoreboard players set #mad NumberOfTeamsPrv 2
-scoreboard players set #mad NumberOfBeaconsPrv 5
-scoreboard players set #mad RespawnBannerTimePrv -60
-#### summons minecart
-scoreboard players set #mad 300 300
-scoreboard players set #mad SecondSummon 300
-scoreboard players set #mad SecondEliminate 0
-scoreboard players set #mad SummonInterval 300
-scoreboard players set #mad SummonMinecart 0
-#### team
-scoreboard players set #mad TeamMemberNotExist 0
-scoreboard players set #mad DeadTeamA 0
-scoreboard players set #mad DeadTeamB 0
-scoreboard players set #mad DeadTeamC 0
-scoreboard players set #mad DeadTeamD 0
-scoreboard players set #mad DeadTeamE 0
-#### mobile respawn beacon
-scoreboard players set #mad MobileBeaconNum 1
-#### add-on
-scoreboard players set #mad LoadAddon 0
+scoreboard players set #mad Tick 19
+scoreboard players set #mad Second 31
 
 #### game phase
-scoreboard players set @a Phase 0
 scoreboard players set @a Death 0
 scoreboard players set @a Kill 0
 scoreboard players set @a KillTemp 0
@@ -109,10 +30,10 @@ scoreboard players enable @a TeleportCenter
 scoreboard players set @a ExitMessage 0
 scoreboard players enable @a ExitMessage
 #### timer
-scoreboard players set @a Second 0
+scoreboard players operation @a TimeLimit = #mad TimeLimit
+scoreboard players operation @a Second = #mad TimeLimit
 scoreboard players set @a Tick 0
 scoreboard players set @a GeneralSecond 0
-scoreboard players set @a SecondPerSurvive 0
 #### participants
 scoreboard players set @a ParticipantNumber 0
 scoreboard players set @a NumOfParticipants 0
@@ -120,11 +41,8 @@ scoreboard players set @a NumAlive 0
 scoreboard players set @a NumDead 0
 #### onground
 scoreboard players set @a OnGround 0
-#### setting phase - choose time limit
+#### time limit
 scoreboard players set @a GetTimeLimit 0
-#### setting phase - choose area
-scoreboard players set @a WorldBorder 1000
-scoreboard players set @a WorldBorderPrv 1000
 #### advancements
 scoreboard players set @a HasAdvancements 0
 #### advancements
