@@ -9,7 +9,7 @@
 #####################################
 
 ## Send reject messages
-function mad:system/common/message_begin
+function mad:system/common/message/begin
 tellraw @a ["",{"text":"  人数エラー","color":"yellow","bold":true}]
 tellraw @a ["",{"text":"  ゲームの必要人数は","color":"white"},{"text":" 1 - 20 ","color":"red","bold":true},{"text":"人です。","color":"white"}]
-function mad:system/common/message_end
+function mad:system/common/message/end

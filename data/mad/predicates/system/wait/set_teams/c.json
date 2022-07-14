@@ -1,0 +1,42 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/wait"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:gamerules/team_match/number_of_teams/ge_3"
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "Second",
+      "scale": 1
+    },
+    "range": {
+      "min": 27,
+      "max": 27
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "Tick",
+      "scale": 1
+    },
+    "range": {
+      "min": 0,
+      "max": 0
+    }
+  }
+]

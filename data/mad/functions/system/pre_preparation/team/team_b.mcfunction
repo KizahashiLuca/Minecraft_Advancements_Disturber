@@ -15,11 +15,11 @@ tag @p[team=TeamB,sort=random] add Leader
 scoreboard players set #mad DeadTeamB 0
 
 ## Set bossbar - team blue
-bossbar add mad:bossbar_blue ["",{"text":"青チーム ","color":"blue","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@p[team=TeamB,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
-bossbar set mad:bossbar_blue players @a[team=TeamB]
-bossbar set mad:bossbar_blue name ["",{"text":"青チーム ","color":"blue","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@p[team=TeamB,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
-execute store result bossbar mad:bossbar_blue max run scoreboard players get @p[team=TeamB,tag=Leader] TimeLimit
-execute store result bossbar mad:bossbar_blue value run scoreboard players get @p[team=TeamB,tag=Leader] Second
+bossbar add mad:bossbar/team/b ["",{"text":"青チーム ","color":"blue","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@p[team=TeamB,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
+bossbar set mad:bossbar/team/b players @a[team=TeamB]
+bossbar set mad:bossbar/team/b name ["",{"text":"青チーム ","color":"blue","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@p[team=TeamB,tag=Leader]","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
+execute store result bossbar mad:bossbar/team/b max run scoreboard players get @p[team=TeamB,tag=Leader] TimeLimit
+execute store result bossbar mad:bossbar/team/b value run scoreboard players get @p[team=TeamB,tag=Leader] Second
 
 ## Set gamerule - friendlyFire
 execute if score #mad friendlyFire matches 1 run team modify TeamB friendlyFire true

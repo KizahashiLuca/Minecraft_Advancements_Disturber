@@ -9,4 +9,4 @@
 #####################################
 
 ## Send exit messages
-function mad:system/common/message_begin
+function mad:system/common/message/begin

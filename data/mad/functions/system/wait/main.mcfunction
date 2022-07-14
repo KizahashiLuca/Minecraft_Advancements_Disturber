@@ -15,17 +15,13 @@ execute as @a[predicate=mad:system/begin/team_member/login_midtime] run function
 function mad:system/wait/time/tick
 
 ## Position
-execute as @a run function mad:system/common/set_position/main
+function mad:system/common/set_position/main
 
-## Set bossbar & gamerule
-execute if score #mad Second matches 29 if score #mad Tick matches 0 if score #mad IsTeam matches 1 if score #mad NumberOfTeams matches 1.. run function mad:system/pre_preparation/team/team_a
-execute if score #mad Second matches 28 if score #mad Tick matches 0 if score #mad IsTeam matches 1 if score #mad NumberOfTeams matches 2.. run function mad:system/pre_preparation/team/team_b
-execute if score #mad Second matches 27 if score #mad Tick matches 0 if score #mad IsTeam matches 1 if score #mad NumberOfTeams matches 3.. run function mad:system/pre_preparation/team/team_c
-execute if score #mad Second matches 26 if score #mad Tick matches 0 if score #mad IsTeam matches 1 if score #mad NumberOfTeams matches 4.. run function mad:system/pre_preparation/team/team_d
-execute if score #mad Second matches 25 if score #mad Tick matches 0 if score #mad IsTeam matches 1 if score #mad NumberOfTeams matches 5.. run function mad:system/pre_preparation/team/team_e
+## Set bossbar & gamerule - teams
+execute if predicate mad:system/wait/set_teams run function mad:system/wait/set_teams/main
 
-## Set bossbar
-execute if score #mad Second matches 24 if score #mad Tick matches 0 if score #mad IsTeam matches 0 as @a[tag=Participant] run function mad:system/pre_preparation/individual/branch
+## Set bossbar - individual
+execute if predicate mad:system/wait/set_individuals run function mad:system/wait/set_individuals/main
 
 ## Set world border
 execute if score #mad Second matches 23 if score #mad Tick matches 0 if score #mad WorldBorder matches 0..1000 at @e[predicate=mad:marker/world_spawn,limit=1] run function mad:system/pre_preparation/world_border/set_world_border_0_1000

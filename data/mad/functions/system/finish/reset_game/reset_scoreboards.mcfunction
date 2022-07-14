@@ -100,6 +100,8 @@ scoreboard objectives remove SetTeamManualPrv
 scoreboard objectives remove NumberOfTeamsPrv
 scoreboard objectives remove NumberOfBeaconsPrv
 scoreboard objectives remove RespawnBannerTimePrv
+#### wait phase
+scoreboard objectives remove WaitTime
 #### advancements
 scoreboard objectives remove HasAdvancements
 #### advancements
@@ -266,11 +268,6 @@ scoreboard objectives remove MobileBeaconTmp
 #### team
 scoreboard objectives remove TeamMemberNotExist
 scoreboard objectives remove DeadOwnTeam
-scoreboard objectives remove DeadTeamA
-scoreboard objectives remove DeadTeamB
-scoreboard objectives remove DeadTeamC
-scoreboard objectives remove DeadTeamD
-scoreboard objectives remove DeadTeamE
 scoreboard objectives remove NumOfTeamPlayer
 #### result
 scoreboard objectives remove ResultTmp

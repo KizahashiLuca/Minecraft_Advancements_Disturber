@@ -12,10 +12,7 @@
 execute as @a[predicate=mad:system/begin/gui/login_midtime] run function mad:system/begin/gui/login_midtime
 
 ## Title message
-title @a times 0 10 0
-title @a title ["",{"text":"初期設定フェーズ","color":"white","bold":false,"italic":false}]
-title @a[predicate=!mad:player/host] subtitle ["",{"selector":"@p[predicate=mad:player/host]","color":"white","bold":true,"italic":false},{"text":" が初期設定中です。","color":"white","bold":false,"italic":false}]
-title @a[predicate=mad:player/host] subtitle ["",{"selector":"@p[predicate=mad:player/host]","color":"white","bold":true,"italic":false},{"text":" は初期設定してください。","color":"white","bold":false,"italic":false}]
+function mad:system/begin/gui/title
 
 ## Branch
 execute if predicate mad:phase/begin/gui/team_match run function mad:system/begin/gui/team_match/main

@@ -79,6 +79,8 @@ scoreboard players set #mad SetTeamManualPrv 0
 scoreboard players set #mad NumberOfTeamsPrv 2
 scoreboard players set #mad NumberOfBeaconsPrv 5
 scoreboard players set #mad RespawnBannerTimePrv -60
+#### wait phase
+scoreboard players set #mad WaitTime 30
 #### summons minecart
 scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 300
@@ -87,11 +89,6 @@ scoreboard players set #mad SummonInterval 300
 scoreboard players set #mad SummonMinecart 0
 #### team
 scoreboard players set #mad TeamMemberNotExist 0
-scoreboard players set #mad DeadTeamA 0
-scoreboard players set #mad DeadTeamB 0
-scoreboard players set #mad DeadTeamC 0
-scoreboard players set #mad DeadTeamD 0
-scoreboard players set #mad DeadTeamE 0
 #### mobile respawn beacon
 scoreboard players set #mad MobileBeaconNum 1
 #### add-on
@@ -277,11 +274,6 @@ scoreboard players set @a UseFungusStick 0
 scoreboard players set @a MobileBeaconNum 0
 #### team
 scoreboard players set @a DeadOwnTeam 0
-scoreboard players set @a DeadTeamA 0
-scoreboard players set @a DeadTeamB 0
-scoreboard players set @a DeadTeamC 0
-scoreboard players set @a DeadTeamD 0
-scoreboard players set @a DeadTeamE 0
 scoreboard players set @a NumOfTeamPlayer 0
 #### result
 scoreboard players set @a ResultTmp 0

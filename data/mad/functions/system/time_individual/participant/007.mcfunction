@@ -9,6 +9,6 @@
 #####################################
 
 ## Store time for bossbar
-execute store result bossbar mad:bossbar007 max run scoreboard players get @s TimeLimit
-execute store result bossbar mad:bossbar007 value run scoreboard players get @s Second
-bossbar set mad:bossbar007 name [{"text":"残り "},{"score":{"name":"@s","objective":"Second"}},{"text":" 秒"}]
+execute store result bossbar mad:bossbar/individual/07 max run scoreboard players get @s TimeLimit
+execute store result bossbar mad:bossbar/individual/07 value run scoreboard players get @s Second
+bossbar set mad:bossbar/individual/07 name [{"text":"残り "},{"score":{"name":"@s","objective":"Second"}},{"text":" 秒"}]

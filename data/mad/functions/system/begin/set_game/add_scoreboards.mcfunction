@@ -100,6 +100,8 @@ scoreboard objectives add SetTeamManualPrv dummy
 scoreboard objectives add NumberOfTeamsPrv dummy
 scoreboard objectives add NumberOfBeaconsPrv dummy
 scoreboard objectives add RespawnBannerTimePrv dummy
+#### wait phase
+scoreboard objectives add WaitTime dummy
 #### advancements
 scoreboard objectives add HasAdvancements dummy
 #### advancements
@@ -266,11 +268,6 @@ scoreboard objectives add MobileBeaconTmp dummy
 #### team
 scoreboard objectives add TeamMemberNotExist dummy
 scoreboard objectives add DeadOwnTeam dummy
-scoreboard objectives add DeadTeamA dummy
-scoreboard objectives add DeadTeamB dummy
-scoreboard objectives add DeadTeamC dummy
-scoreboard objectives add DeadTeamD dummy
-scoreboard objectives add DeadTeamE dummy
 scoreboard objectives add NumOfTeamPlayer dummy
 #### result
 scoreboard objectives add ResultTmp dummy

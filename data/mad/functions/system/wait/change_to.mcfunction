@@ -11,5 +11,8 @@
 ## Set game
 function mad:system/wait/set_game/main
 
+## Change bossbar
+bossbar set mad:bossbar name ["",{"text":"待機フェーズ","color":"white","bold":false,"italic":false}]
+
 ## Change phase
 scoreboard players set #mad Phase 19

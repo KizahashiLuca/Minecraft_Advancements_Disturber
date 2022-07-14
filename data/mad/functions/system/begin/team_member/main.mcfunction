@@ -26,14 +26,7 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 in mad:world 
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 in mad:world positioned 5.0 1 -2.0 as @a[predicate=mad:player/participant,dx=4,dy=5,dz=4] run function mad:system/begin/team_member/join_team/e
 
 ## Title message
-title @a times 0 10 0
-title @a title ["",{"text":"チーム設定フェーズ","color":"white","bold":false,"italic":false}]
-title @a[predicate=mad:player/team/no] subtitle [""]
-title @a[predicate=mad:player/team/a] subtitle ["",{"text":"あなたは 現在 ","color":"white","bold":false,"italic":false},{"text":"赤チーム","color":"red","bold":true,"italic":false},{"text":" です。","color":"white","bold":false,"italic":false}]
-title @a[predicate=mad:player/team/b] subtitle ["",{"text":"あなたは 現在 ","color":"white","bold":false,"italic":false},{"text":"青チーム","color":"blue","bold":true,"italic":false},{"text":" です。","color":"white","bold":false,"italic":false}]
-title @a[predicate=mad:player/team/c] subtitle ["",{"text":"あなたは 現在 ","color":"white","bold":false,"italic":false},{"text":"黄チーム","color":"yellow","bold":true,"italic":false},{"text":" です。","color":"white","bold":false,"italic":false}]
-title @a[predicate=mad:player/team/d] subtitle ["",{"text":"あなたは 現在 ","color":"white","bold":false,"italic":false},{"text":"緑チーム","color":"green","bold":true,"italic":false},{"text":" です。","color":"white","bold":false,"italic":false}]
-title @a[predicate=mad:player/team/e] subtitle ["",{"text":"あなたは 現在 ","color":"white","bold":false,"italic":false},{"text":"紫チーム","color":"dark_purple","bold":true,"italic":false},{"text":" です。","color":"white","bold":false,"italic":false}]
+function mad:system/begin/team_member/title
 
 ## Detect inventory
 execute as @p[predicate=mad:system/begin/team_member/master] run function mad:system/begin/team_member/change_to

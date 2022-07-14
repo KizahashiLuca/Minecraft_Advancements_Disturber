@@ -9,12 +9,12 @@
 #####################################
 
 ## Send messages
-function mad:system/common/message_begin
+function mad:system/common/message/begin
 tellraw @a ["",{"text":"  Thank you for Downloading!","color":"white"}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ","color":"white"},{"selector":"@p[predicate=mad:player/host]","color":"green","bold":true},{"text":" はインベントリで","color":"white"}]
 tellraw @a ["",{"text":"  初期設定を開始してください。","color":"white"}]
-function mad:system/common/message_end
+function mad:system/common/message/end
 
 ## Change to choose setting
 function mad:system/begin/gui/root/change_to

@@ -26,7 +26,7 @@ function mad:system/finish/reset_game/remove_tags
 function mad:system/finish/reset_game/remove_teams
 
 ## Remove bossbars
-function mad:system/finish/reset_game/reset_bossbars
+function mad:system/finish/reset_game/remove_bossbars
 
 ## Remove scoreboards
 function mad:system/finish/reset_game/reset_scoreboards

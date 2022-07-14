@@ -9,5 +9,5 @@
 #####################################
 
 ## Send stop messages
-function mad:system/common/message_begin
+function mad:system/common/message/begin
 tellraw @a ["",{"text":"  ゲームを中断します。","color":"white"}]

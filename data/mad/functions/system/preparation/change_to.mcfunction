@@ -16,7 +16,7 @@ title @a title ["",{"text":"降下開始","color":"white"}]
 title @a times 20 80 20
 
 ## Send setting messages
-function mad:system/common/message_begin
+function mad:system/common/message/begin
 tellraw @a ["",{"text":"  降下を開始します。","color":"white"}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 execute as @e[predicate=mad:marker/world_spawn,limit=1] at @s run tellraw @a ["",{"text":"  中心座標 : ","color":"white"},{"translate":"[%s, %s, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"score":{"name":"@s","objective":"PosY"}},{"score":{"name":"@s","objective":"PosZ"}}],"color":"green","hoverEvent":{"action":"show_text","value":"スペクテイター時\nクリックしてテレポート"},"clickEvent":{"action":"run_command","value":"/trigger TeleportCenter set 1"}}]
@@ -26,7 +26,7 @@ tellraw @a ["",{"text":"  支援物資投下間隔 : ","color":"white"},{"score"
 execute unless score #mad WorldBorder matches 0 run tellraw @a ["",{"text":"  ワールドボーダー範囲 : ","color":"white"},{"score":{"name":"#mad","objective":"WorldBorder"},"color":"green"},{"text":"×","color":"green"},{"score":{"name":"#mad","objective":"WorldBorder"},"color":"green"}]
 execute if score #mad WorldBorder matches 0 run tellraw @a ["",{"text":"  ワールドボーダー範囲 : ","color":"white"},{"text":"制限なし","color":"green"}]
 execute if score #mad IsTeam matches 1 run tellraw @a ["",{"text":"  リスポーンビーコン数 : ","color":"white"},{"score":{"name":"#mad","objective":"NumberOfBeacons"},"color":"green"},{"text":"つ","color":"green"}]
-function mad:system/common/message_end
+function mad:system/common/message/end
 
 ## Reset respawn beacon #1
 execute as @e[predicate=mad:ongame/respawn_beacon/structure,scores={NumberOfBeacons=1}] at @s run fill ~-1 ~4 ~-1 ~1 ~6 ~1 minecraft:air

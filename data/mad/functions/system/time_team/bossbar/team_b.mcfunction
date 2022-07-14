@@ -9,6 +9,6 @@
 #####################################
 
 ## Store time for bossbar - blue
-execute store result bossbar mad:bossbar_blue max run scoreboard players get @s TimeLimit
-execute store result bossbar mad:bossbar_blue value run scoreboard players get @s Second
-bossbar set mad:bossbar_blue name ["",{"text":"青チーム ","color":"blue","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@s","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
+execute store result bossbar mad:bossbar/team/b max run scoreboard players get @s TimeLimit
+execute store result bossbar mad:bossbar/team/b value run scoreboard players get @s Second
+bossbar set mad:bossbar/team/b name ["",{"text":"青チーム ","color":"blue","bold":true},{"text":"生存時間  残り "},{"score":{"name":"@s","objective":"Second"},"color":"green","bold":true},{"text":" 秒"}]
