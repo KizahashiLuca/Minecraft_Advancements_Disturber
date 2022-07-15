@@ -14,4 +14,4 @@ tag @a[predicate=mad:system/wait/set_game/add_number] add MAD_Numbered
 
 ## Loop
 scoreboard players add #mad ParticipantNumber 1
-execute if score #mad ParticipantNumber <= #mad NumOfParticipants run function mad:system/pre_preparation/numbering
+execute if score #mad ParticipantNumber <= #mad NumOfParticipants run function mad:system/wait/set_game/numbering

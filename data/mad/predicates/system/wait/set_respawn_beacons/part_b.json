@@ -1,0 +1,31 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/wait"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/world_border/0600"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/world_border/0700"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/world_border/0800"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/world_border/0900"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/world_border/1000"
+      }
+    ]
+  }
+]

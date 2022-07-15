@@ -1,0 +1,63 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/wait"
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "Second",
+      "scale": 1
+    },
+    "range": {
+      "min": 24,
+      "max": 24
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "Tick",
+      "scale": 1
+    },
+    "range": {
+      "min": 10,
+      "max": 10
+    }
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/world_border/0100"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/world_border/0200"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/world_border/0300"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/world_border/0400"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/world_border/0500"
+      }
+    ]
+  }
+]

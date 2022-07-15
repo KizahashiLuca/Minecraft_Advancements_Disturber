@@ -262,6 +262,8 @@ scoreboard objectives remove ThiefSecond
 #### evoker fangs wand
 scoreboard objectives remove UseFungusStick
 scoreboard objectives remove EvokerFangsCount
+#### respawn beacon
+scoreboard objectives remove BeaconNumber
 #### mobile respawn beacon
 scoreboard objectives remove MobileBeaconNum
 scoreboard objectives remove MobileBeaconTmp

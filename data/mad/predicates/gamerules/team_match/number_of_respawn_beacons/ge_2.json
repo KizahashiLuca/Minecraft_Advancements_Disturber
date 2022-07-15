@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:gamerules/match_mode/team"
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "NumberOfBeacons",
+      "scale": 1
+    },
+    "range": {
+      "min": 2,
+      "max": 2147483647
+    }
+  }
+]

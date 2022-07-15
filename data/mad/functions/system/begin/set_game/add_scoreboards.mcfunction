@@ -262,6 +262,8 @@ scoreboard objectives add ThiefSecond dummy
 #### evoker fangs wand
 scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add EvokerFangsCount dummy
+#### respawn beacon
+scoreboard objectives add BeaconNumber dummy
 #### mobile respawn beacon
 scoreboard objectives add MobileBeaconNum dummy
 scoreboard objectives add MobileBeaconTmp dummy
