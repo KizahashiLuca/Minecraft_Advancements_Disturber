@@ -1,5 +1,9 @@
 [
   {
+    "condition": "minecraft:reference",
+    "name": "mad:player/participant"
+  },
+  {
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
@@ -11,13 +15,6 @@
         "min": 2,
         "max": 2147483647
       }
-    }
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{Tags:[\"Participant\"]}"
     }
   }
 ]

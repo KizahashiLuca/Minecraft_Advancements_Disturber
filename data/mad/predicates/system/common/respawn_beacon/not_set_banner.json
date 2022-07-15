@@ -1,0 +1,24 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:area_effect_cloud/respawn_beacon/structure"
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MAD_SetBanner\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "predicate": {
+      "block": {
+        "tag": "mad:banner"
+      }
+    }
+  }
+]
