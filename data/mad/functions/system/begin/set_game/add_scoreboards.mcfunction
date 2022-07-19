@@ -264,6 +264,8 @@ scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_
 scoreboard objectives add EvokerFangsCount dummy
 #### respawn beacon
 scoreboard objectives add BeaconNumber dummy
+scoreboard objectives add CompareNames dummy
+scoreboard objectives add DetectTeamExists dummy
 #### mobile respawn beacon
 scoreboard objectives add MobileBeaconNum dummy
 scoreboard objectives add MobileBeaconTmp dummy
@@ -272,6 +274,6 @@ scoreboard objectives add TeamMemberNotExist dummy
 scoreboard objectives add DeadOwnTeam dummy
 scoreboard objectives add NumOfTeamPlayer dummy
 #### result
-scoreboard objectives add CompareNameResult dummy
+scoreboard objectives add ResultTmp dummy
 #### add-on
 scoreboard objectives add LoadAddon dummy

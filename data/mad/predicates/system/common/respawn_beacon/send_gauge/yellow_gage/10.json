@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/common/respawn_beacon/set_banner"
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "Second",
+      "scale": 1
+    },
+    "range": {
+      "min": 10,
+      "max": 10
+    }
+  }
+]

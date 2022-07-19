@@ -24,7 +24,7 @@ execute as @s[scores={NumberOfBeacons=4}] run tag @a[tag=RespawnBannerSet4] remo
 execute as @s[scores={NumberOfBeacons=5}] run tag @a[tag=RespawnBannerSet5] remove RespawnBannerSet
 execute as @s[scores={NumberOfBeacons=5}] run tag @a[tag=RespawnBannerSet5] remove RespawnBannerSet5
 
-## Scoreboard
+## Set scoreboard
 scoreboard players set @s Second 20
 scoreboard players set @s Tick 0
 

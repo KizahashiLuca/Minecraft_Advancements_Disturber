@@ -89,6 +89,9 @@ scoreboard players set #mad SummonInterval 300
 scoreboard players set #mad SummonMinecart 0
 #### team
 scoreboard players set #mad TeamMemberNotExist 0
+#### respawn beacon
+scoreboard players set #mad CompareNames 1
+scoreboard players set #mad DetectTeamExists 1
 #### mobile respawn beacon
 scoreboard players set #mad MobileBeaconNum 1
 #### add-on
@@ -276,4 +279,4 @@ scoreboard players set @a MobileBeaconNum 0
 scoreboard players set @a DeadOwnTeam 0
 scoreboard players set @a NumOfTeamPlayer 0
 #### result
-scoreboard players set @a CompareNameResult 0
+scoreboard players set @a ResultTmp 0

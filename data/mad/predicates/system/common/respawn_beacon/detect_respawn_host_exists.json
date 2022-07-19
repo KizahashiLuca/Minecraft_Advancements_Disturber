@@ -1,13 +1,14 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:area_effect_cloud/respawn_beacon/structure"
+    "name": "mad:player/dead/dead"
   },
   {
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{Tags:[\"MAD_SetRespawnBanner\"]}"
+      "team": "TeamA",
+      "nbt": "{Tags:[\"MAD_RespawnBannerSetTmp\"]}"
     }
   }
 ]

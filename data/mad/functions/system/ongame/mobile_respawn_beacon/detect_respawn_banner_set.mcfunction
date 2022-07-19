@@ -12,12 +12,12 @@
 tag @s add DetectRespawnPlayer
 
 ## Detect respawn banner set
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon] store result score @s CompareNameResult run data modify entity @s CustomName set from entity @p[tag=DetectRespawnPlayer] Inventory[0].tag.display.Name
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon] store result score @s ResultTmp run data modify entity @s CustomName set from entity @p[tag=DetectRespawnPlayer] Inventory[0].tag.display.Name
 
 ## Add a tag
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={CompareNameResult=0}] run tag @p[tag=DetectRespawnPlayer] add MobileRespawnBannerSet
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={CompareNameResult=0}] run tag @p[tag=DetectRespawnPlayer] add MobileRespawnBannerSetTmp
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={CompareNameResult=0}] run scoreboard players operation @p[tag=DetectRespawnPlayer] MobileBeaconNum = @s MobileBeaconNum
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add MobileRespawnBannerSet
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add MobileRespawnBannerSetTmp
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={ResultTmp=0}] run scoreboard players operation @p[tag=DetectRespawnPlayer] MobileBeaconNum = @s MobileBeaconNum
 
 ## Remove a tag
 tag @s remove DetectRespawnPlayer

@@ -4,10 +4,13 @@
     "name": "mad:area_effect_cloud/respawn_beacon/structure"
   },
   {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{Tags:[\"MAD_SetBanner\"]}"
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Tags:[\"MAD_SetRespawnBanner\"]}"
+      }
     }
   },
   {

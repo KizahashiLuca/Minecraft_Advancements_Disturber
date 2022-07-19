@@ -9,5 +9,19 @@
     "predicate": {
       "nbt": "{Tags:[\"MAD_SetRespawnBanner\"]}"
     }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "tag": "mad:banner"
+        }
+      }
+    }
   }
 ]

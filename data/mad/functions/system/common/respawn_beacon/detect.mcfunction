@@ -15,38 +15,20 @@ tag @s add MAD_BannerSetBeacon
 data modify entity @s CustomName set from block ~ ~ ~ CustomName
 
 ## Detect respawn banner set
-scoreboard players set @s CompareNameResult 1
-execute as @a[predicate=mad:player/dead/dead] run function mad:system/common/respawn_beacon/detect_banner_set
+scoreboard players set #mad CompareNames 1
+execute as @a[predicate=mad:player/dead/dead] run function mad:system/common/respawn_beacon/detect_banner_sets
 
 ## Detect team player exist
-scoreboard players set @s CompareNameResult 1
-execute as @p[team=TeamA,tag=MAD_RespawnBannerSetTmp] unless entity @p[predicate=mad:ongame/player/team_a_alive,distance=..2] run scoreboard players set @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure] CompareNameResult 0
-execute as @p[team=TeamB,tag=MAD_RespawnBannerSetTmp] unless entity @p[predicate=mad:ongame/player/team_b_alive,distance=..2] run scoreboard players set @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure] CompareNameResult 0
-execute as @p[team=TeamC,tag=MAD_RespawnBannerSetTmp] unless entity @p[predicate=mad:ongame/player/team_c_alive,distance=..2] run scoreboard players set @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure] CompareNameResult 0
-execute as @p[team=TeamD,tag=MAD_RespawnBannerSetTmp] unless entity @p[predicate=mad:ongame/player/team_d_alive,distance=..2] run scoreboard players set @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure] CompareNameResult 0
-execute as @p[team=TeamE,tag=MAD_RespawnBannerSetTmp] unless entity @p[predicate=mad:ongame/player/team_e_alive,distance=..2] run scoreboard players set @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure] CompareNameResult 0
-
-## Scoreboard
-scoreboard players set @s Second 20
-scoreboard players set @s Tick 0
+scoreboard players set #mad DetectTeamExists 1
+execute as @a[predicate=mad:system/common/respawn_beacon/respawn_player] run function mad:system/common/respawn_beacon/detect_player_exists
 
 ## Send message
-execute as @s[scores={CompareNameResult=1}] run title @a[distance=..2] title [""]
-execute as @s[scores={CompareNameResult=1}] run title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white"},{"selector":"@p[tag=RespawnBannerSetTmp]"}]
-execute as @s[scores={CompareNameResult=1}] run title @a[distance=..2] times 2 20 2
+execute if predicate mad:system/common/respawn_beacon/set_respawn_player run function mad:system/common/respawn_beacon/set_respawn_player
 
-## Break banner
-execute as @s[scores={CompareNameResult=0}] run setblock ~ ~1 ~ air destroy
-
-## Remove tags
-execute as @s[scores={CompareNameResult=0}] run function mad:system/ongame/respawn_beacon/reset_respawn_beacon
-
-## Reset data
-data modify entity @s CustomName set value '{"text":"リスポーンビーコン"}'
-
-## Add a tag
-execute as @s[scores={CompareNameResult=1}] run tag @s add SetRespawnBanner
+## Send message
+execute if predicate mad:system/common/respawn_beacon/reset_respawn_beacon run setblock ~ ~1 ~ minecraft:air destroy
+execute if predicate mad:system/common/respawn_beacon/reset_respawn_beacon run function mad:system/common/respawn_beacon/reset_respawn_beacon
 
 ## Remove tags
-tag @a remove RespawnBannerSetTmp
-tag @s remove DetectRespawnBeacon
+tag @a remove MAD_RespawnPlayer
+tag @s remove MAD_BannerSetBeacon

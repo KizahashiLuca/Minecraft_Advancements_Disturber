@@ -217,4 +217,4 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboar
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e DeadOwnTeam 0
 scoreboard players set @a NumOfTeamPlayer 0
 #### result
-scoreboard players set @a CompareNameResult 0
+scoreboard players set @a ResultTmp 0

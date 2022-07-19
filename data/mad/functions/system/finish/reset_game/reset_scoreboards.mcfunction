@@ -264,6 +264,8 @@ scoreboard objectives remove UseFungusStick
 scoreboard objectives remove EvokerFangsCount
 #### respawn beacon
 scoreboard objectives remove BeaconNumber
+scoreboard objectives remove CompareNames
+scoreboard objectives remove DetectTeamExists
 #### mobile respawn beacon
 scoreboard objectives remove MobileBeaconNum
 scoreboard objectives remove MobileBeaconTmp
@@ -272,7 +274,7 @@ scoreboard objectives remove TeamMemberNotExist
 scoreboard objectives remove DeadOwnTeam
 scoreboard objectives remove NumOfTeamPlayer
 #### result
-scoreboard objectives remove CompareNameResult
+scoreboard objectives remove ResultTmp
 #### add-on
 scoreboard objectives remove LoadAddon
 

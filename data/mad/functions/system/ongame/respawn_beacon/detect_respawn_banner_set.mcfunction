@@ -12,16 +12,16 @@
 tag @s add DetectRespawnPlayer
 
 ## Detect respawn banner set
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon] store result score @s CompareNameResult run data modify entity @s CustomName set from entity @p[tag=DetectRespawnPlayer] Inventory[0].tag.display.Name
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon] store result score @s ResultTmp run data modify entity @s CustomName set from entity @p[tag=DetectRespawnPlayer] Inventory[0].tag.display.Name
 
 ## Add a tag
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={CompareNameResult=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={CompareNameResult=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSetTmp
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=1,CompareNameResult=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet1
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=2,CompareNameResult=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet2
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=3,CompareNameResult=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet3
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=4,CompareNameResult=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet4
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=5,CompareNameResult=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet5
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSetTmp
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=1,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet1
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=2,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet2
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=3,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet3
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=4,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet4
+execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=5,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet5
 
 ## Remove a tag
 tag @s remove DetectRespawnPlayer
