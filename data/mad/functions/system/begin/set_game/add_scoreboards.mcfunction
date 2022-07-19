@@ -272,6 +272,6 @@ scoreboard objectives add TeamMemberNotExist dummy
 scoreboard objectives add DeadOwnTeam dummy
 scoreboard objectives add NumOfTeamPlayer dummy
 #### result
-scoreboard objectives add ResultTmp dummy
+scoreboard objectives add CompareNameResult dummy
 #### add-on
 scoreboard objectives add LoadAddon dummy

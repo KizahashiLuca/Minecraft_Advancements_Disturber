@@ -11,20 +11,20 @@
 ## Add a tag
 tag @s add MAD_DetectRespawnPlayer
 
-## Detect respawn banner set
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon] store result score @s ResultTmp run data modify entity @s CustomName set from entity @p[tag=DetectRespawnPlayer] Inventory[0].tag.display.Name
+## Compare respawn banner name to player's item's name
+execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure] store result score @s CompareNameResult run data modify entity @s CustomName set from entity @p[predicate=mad:system/common/respawn_beacon/detect_respawn_banner] Inventory[0].tag.display.Name
 
 ## Add a tag
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSetTmp
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=1,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet1
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=2,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet2
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=3,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet3
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=4,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet4
-execute as @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,scores={NumberOfBeacons=5,ResultTmp=0}] run tag @p[tag=DetectRespawnPlayer] add RespawnBannerSet5
+execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure_same_player_name] run tag @p[predicate=mad:system/common/respawn_beacon/detect_respawn_banner] add MAD_RespawnBannerSet
+execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure_same_player_name] run tag @p[predicate=mad:system/common/respawn_beacon/detect_respawn_banner] add MAD_RespawnBannerSetTmp
+execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure_same_player_name,scores={BeaconNumber=1}] run tag @p[predicate=mad:system/common/respawn_beacon/detect_respawn_banner] add MAD_RespawnBannerSet1
+execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure_same_player_name,scores={BeaconNumber=2}] run tag @p[predicate=mad:system/common/respawn_beacon/detect_respawn_banner] add MAD_RespawnBannerSet2
+execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure_same_player_name,scores={BeaconNumber=3}] run tag @p[predicate=mad:system/common/respawn_beacon/detect_respawn_banner] add MAD_RespawnBannerSet3
+execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure_same_player_name,scores={BeaconNumber=4}] run tag @p[predicate=mad:system/common/respawn_beacon/detect_respawn_banner] add MAD_RespawnBannerSet4
+execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure_same_player_name,scores={BeaconNumber=5}] run tag @p[predicate=mad:system/common/respawn_beacon/detect_respawn_banner] add MAD_RespawnBannerSet5
 
 ## Remove a tag
-tag @s remove DetectRespawnPlayer
+tag @s remove MAD_DetectRespawnPlayer
 
 ## Modify data from banner to cloud
-data modify entity @e[type=minecraft:area_effect_cloud,tag=DetectRespawnBeacon,limit=1] CustomName set from block ~ ~1 ~ CustomName
+data modify entity @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure,limit=1] CustomName set from block ~ ~ ~ CustomName

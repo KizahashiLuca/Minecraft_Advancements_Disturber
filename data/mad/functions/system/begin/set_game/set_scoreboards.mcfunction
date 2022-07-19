@@ -276,4 +276,4 @@ scoreboard players set @a MobileBeaconNum 0
 scoreboard players set @a DeadOwnTeam 0
 scoreboard players set @a NumOfTeamPlayer 0
 #### result
-scoreboard players set @a ResultTmp 0
+scoreboard players set @a CompareNameResult 0

@@ -272,7 +272,7 @@ scoreboard objectives remove TeamMemberNotExist
 scoreboard objectives remove DeadOwnTeam
 scoreboard objectives remove NumOfTeamPlayer
 #### result
-scoreboard objectives remove ResultTmp
+scoreboard objectives remove CompareNameResult
 #### add-on
 scoreboard objectives remove LoadAddon
 

@@ -1,0 +1,13 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/dead/dead"
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MAD_DetectRespawnPlayer\"]}"
+    }
+  }
+]
