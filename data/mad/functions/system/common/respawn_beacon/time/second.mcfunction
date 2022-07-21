@@ -9,7 +9,7 @@
 #####################################
 
 ## Calculate time
-scoreboard players remove @s[predicate=mad:system/common/respawn_beacon/time/tick_of_respawn_beacon] Second 1
+scoreboard players remove @s Second 1
 scoreboard players set @s[predicate=mad:system/common/respawn_beacon/time/second/lt_zero] Second 0
 
 ## Execute time for beacon

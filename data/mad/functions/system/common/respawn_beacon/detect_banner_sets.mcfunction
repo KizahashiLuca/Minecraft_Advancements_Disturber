@@ -12,7 +12,7 @@
 tag @s add MAD_DetectRespawnPlayer
 
 ## Compare respawn banner name to player's item's name
-execute store result score #mad CompareNames run data modify entity @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure,limit=1] CustomName set from entity @p[predicate=mad:system/common/respawn_beacon/detect_respawn_player] Inventory[0].tag.display.Name
+execute store result score #mad CompareNames run data modify entity @e[predicate=mad:system/common/respawn_beacon/detect_respawn_banner,limit=1] CustomName set from entity @p[predicate=mad:system/common/respawn_beacon/detect_respawn_player] Inventory[0].tag.display.Name
 
 ## Add tags
 execute if predicate mad:system/common/respawn_beacon/name_is_same as @s[predicate=mad:system/common/respawn_beacon/detect_respawn_player] run function mad:system/common/respawn_beacon/add_tags
@@ -21,4 +21,4 @@ execute if predicate mad:system/common/respawn_beacon/name_is_same as @s[predica
 tag @s remove MAD_DetectRespawnPlayer
 
 ## Modify data from banner to cloud
-data modify entity @e[predicate=mad:area_effect_cloud/respawn_beacon/banner_set_structure,limit=1] CustomName set from block ~ ~ ~ CustomName
+data modify entity @e[predicate=mad:system/common/respawn_beacon/detect_respawn_banner,limit=1] CustomName set from block ~ ~ ~ CustomName

@@ -16,7 +16,7 @@ execute as @s[predicate=mad:system/common/respawn_beacon/time/tick/eq_zero] run 
 
 ## Calculate time every tick
 execute as @a[predicate=mad:player/alive/on_sneak,distance=..2] run scoreboard players remove @e[predicate=mad:system/common/respawn_beacon/time/tick_of_respawn_beacon] Tick 1
-scoreboard players set @s[predicate=mad:system/common/respawn_beacon/time/tick/lt_zero] Tick 19
+scoreboard players add @s[predicate=mad:system/common/respawn_beacon/time/tick/lt_zero] Tick 20
 
 ## Remove a tag
 tag @s remove MAD_TickOfRespawnBeacon

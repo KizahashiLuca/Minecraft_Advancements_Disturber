@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:phase/wait"
+    "name": "mad:system/common/respawn_beacon/time/tick_of_respawn_beacon"
   },
   {
     "condition": "minecraft:value_check",

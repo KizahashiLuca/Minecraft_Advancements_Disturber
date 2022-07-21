@@ -1,10 +1,7 @@
 [
   {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{Tags:[\"MAD_TickOfRespawnBeacon\"]}"
-    }
+    "condition": "minecraft:reference",
+    "name": "mad:system/common/respawn_beacon/time/tick_of_respawn_beacon"
   },
   {
     "condition": "minecraft:value_check",

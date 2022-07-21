@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:system/common/respawn_beacon/set_banner"
+    "name": "mad:system/common/respawn_beacon/set_respawn_banner"
   },
   {
     "condition": "minecraft:value_check",

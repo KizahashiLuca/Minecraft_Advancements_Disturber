@@ -1,18 +1,13 @@
 [
   {
-    "condition": "minecraft:value_check",
-    "value": {
-      "type": "minecraft:score",
-      "target": {
-        "type": "minecraft:fixed",
-        "name": "#mad"
-      },
-      "score": "CompareNames",
-      "scale": 1
-    },
-    "range": {
-      "min": 0,
-      "max": 0
+    "condition": "minecraft:reference",
+    "name": "mad:player/dead/dead"
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MAD_SetRespawnPlayer\"]}"
     }
   },
   {
@@ -21,14 +16,30 @@
       "type": "minecraft:score",
       "target": {
         "type": "minecraft:fixed",
-        "name": "#mad"
+        "name": "@s"
       },
-      "score": "DetectTeamExists",
+      "score": "BeaconNumber",
       "scale": 1
     },
     "range": {
-      "min": 0,
-      "max": 0
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "@e[predicate=mad:system/common/respawn_beacon/detect_respawn_banner,sort=nearest,limit=1]"
+        },
+        "score": "BeaconNumber",
+        "scale": 1
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "@e[predicate=mad:system/common/respawn_beacon/detect_respawn_banner,sort=nearest,limit=1]"
+        },
+        "score": "BeaconNumber",
+        "scale": 1
+      }
     }
   }
 ]
