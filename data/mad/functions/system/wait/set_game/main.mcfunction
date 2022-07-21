@@ -13,6 +13,9 @@ execute in minecraft:overworld run function mad:system/wait/set_game/set_gamerul
 execute in minecraft:the_nether run function mad:system/wait/set_game/set_gamerules
 execute in minecraft:the_end run function mad:system/wait/set_game/set_gamerules
 
+## Change bossbar
+function mad:system/wait/set_game/set_bossbars
+
 ## Set world
 function mad:system/wait/set_game/set_world
 

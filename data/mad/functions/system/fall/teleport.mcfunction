@@ -9,10 +9,10 @@
 #####################################
 
 ## Add a tag
-tag @s add Teleportee
+tag @s add MAD_DetectTeleportee
 
 ## Teleport
-execute as @e[predicate=mad:preparation/teleport/teleporter] at @s if score @s ParticipantNumber = @p[predicate=mad:preparation/teleport/teleportee] ParticipantNumber run tp @p[predicate=mad:preparation/teleport/teleportee] ~ ~ ~
+tp @s @e[predicate=mad:system/fall/teleport/teleporter,limit=1]
 
 ## Remove a tag
-tag @p[predicate=mad:preparation/teleport/teleportee] remove Teleportee
+tag @p[predicate=mad:system/fall/teleport/detect_teleportee] remove MAD_DetectTeleportee

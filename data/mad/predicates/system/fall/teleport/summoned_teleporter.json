@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:marker",
-    "nbt": "{Tags:[\"Teleporter\"]}"
+    "nbt": "{Tags:[\"MAD_Teleporter\",\"MAD_SummonedTeleporter\"]}"
   }
 }

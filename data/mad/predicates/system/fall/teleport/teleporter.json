@@ -1,0 +1,42 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:marker",
+      "nbt": "{Tags:[\"MAD_Teleporter\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "@s"
+      },
+      "score": "ParticipantNumber",
+      "scale": 1
+    },
+    "range": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "@e[predicate=mad:system/fall/teleport/detect_teleportee,sort=nearest,limit=1]"
+        },
+        "score": "ParticipantNumber",
+        "scale": 1
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "@e[predicate=mad:system/fall/teleport/detect_teleportee,sort=nearest,limit=1]"
+        },
+        "score": "ParticipantNumber",
+        "scale": 1
+      }
+    }
+  }
+]

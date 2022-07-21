@@ -10,9 +10,9 @@
 
 ## Set bossbar for settings
 bossbar set mad:bossbar players @a
-bossbar set mad:bossbar name ["",{"text":"待機フェーズ","color":"white","bold":false,"italic":false}]
-execute store result bossbar mad:bossbar max run scoreboard players get #mad WaitTime
-execute store result bossbar mad:bossbar value run scoreboard players get #mad WaitTime
+bossbar set mad:bossbar name ["",{"text":"降下フェーズ","color":"white","bold":false,"italic":false}]
+bossbar set mad:bossbar max 100
+bossbar set mad:bossbar value 100
 bossbar set mad:bossbar color white
 bossbar set mad:bossbar style notched_10
 bossbar set mad:bossbar visible true

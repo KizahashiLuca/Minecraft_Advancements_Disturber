@@ -9,7 +9,7 @@
 #####################################
 
 ## Log in the mid of the game
-execute as @a[predicate=mad:system/begin/team_member/login_midtime] run function mad:system/begin/team_member/login_midtime
+execute as @a[predicate=mad:system/wait/login_midtime] run function mad:system/common/login_midtime
 
 ## Time system
 function mad:system/wait/time/tick

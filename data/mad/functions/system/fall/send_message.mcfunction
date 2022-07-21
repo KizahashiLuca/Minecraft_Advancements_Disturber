@@ -9,8 +9,8 @@
 #####################################
 
 ## Send title messages
-title @a title ["",{"text":"MAD start","color":"red"}]
+title @a title ["",{"text":"MAD START","color":"red","bold":false,"italic":false}]
 title @a times 20 80 20
 
 ## Change to start
-function mad:system/ongame/change_to
+function mad:system/game/change_to
