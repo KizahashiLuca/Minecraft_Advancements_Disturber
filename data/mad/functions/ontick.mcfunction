@@ -15,5 +15,6 @@ execute if score #mad Phase matches 21 if score #mad IsTeam matches 0 run functi
 execute if score #mad Phase matches 21 if score #mad IsTeam matches 1 run function mad:system/ongame_team/main
 execute if score #mad Phase matches 20 run function mad:system/preparation/main
 execute if score #mad Phase matches 19 run function mad:system/pre_preparation/main
+execute if predicate mad:phase/wait run function mad:system/wait/main
 execute if predicate mad:phase/begin/team_member run function mad:system/begin/team_member/main
 execute if predicate mad:phase/begin/gui run function mad:system/begin/gui/branch

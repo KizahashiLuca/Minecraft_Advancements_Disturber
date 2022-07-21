@@ -9,7 +9,10 @@
 #####################################
 
 ## Set difficulty
-difficulty peaceful
+execute if predicate mad:gamerules/difficulty/peaceful run difficulty peaceful
+execute if predicate mad:gamerules/difficulty/easy run difficulty easy
+execute if predicate mad:gamerules/difficulty/normal run difficulty normal
+execute if predicate mad:gamerules/difficulty/hard run difficulty hard
 
 ## Set time
 time set noon
@@ -28,7 +31,6 @@ kill @e[type=minecraft:chest_minecart,tag=Minecart]
 kill @e[predicate=mad:ongame/respawn_banner/structure]
 kill @e[predicate=mad:ongame/tool_upgrader]
 kill @e[predicate=mad:ongame/armor_upgrader]
-kill @e[predicate=mad:ongame/respawn_beacon/position]
 kill @e[predicate=mad:ongame/return_portal]
 kill @e[predicate=mad:ongame/mobile_respawn_beacon/position]
 kill @e[type=minecraft:armor_stand,tag=MinecartItem]

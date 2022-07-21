@@ -8,16 +8,10 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Numbering
-scoreboard players set #mad ParticipantNumber 1
-scoreboard players set @a[predicate=mad:player/participant] ParticipantNumber 0
-function mad:system/wait/set_game/numbering
-tag @a[predicate=mad:player/participant] remove MAD_Numbered
-
 ## Set scoreboards
 #### timer
 scoreboard players set #mad Tick 0
-scoreboard players set #mad Second 30
+scoreboard players set #mad Second 0
 
 #### game phase
 scoreboard players set @a Death 0
