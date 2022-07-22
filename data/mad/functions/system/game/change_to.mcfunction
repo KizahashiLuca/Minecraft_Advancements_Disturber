@@ -12,7 +12,11 @@
 function mad:system/game/set_game/main
 
 ## Decide where to summon minecart
-function mad:system/game/minecart/where_summon_minecart
+execute if predicate mad:gamerules/number_of_minecarts/ge_1 run function mad:system/game/minecart/where_summon_minecart
+execute if predicate mad:gamerules/number_of_minecarts/ge_2 run function mad:system/game/minecart/where_summon_minecart
+execute if predicate mad:gamerules/number_of_minecarts/ge_3 run function mad:system/game/minecart/where_summon_minecart
+execute if predicate mad:gamerules/number_of_minecarts/ge_4 run function mad:system/game/minecart/where_summon_minecart
+execute if predicate mad:gamerules/number_of_minecarts/ge_5 run function mad:system/game/minecart/where_summon_minecart
 
 ## Set scoreboards for add-on
 execute if predicate mad:phase/fall run scoreboard players set #mad LoadAddon 2

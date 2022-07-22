@@ -78,8 +78,10 @@ scoreboard objectives add CartIntervalPrv dummy
 #### setting phase - choose gamerule
 scoreboard objectives add WeatherCycle dummy
 scoreboard objectives add DaylightCycle dummy
+scoreboard objectives add NumberOfMinecarts dummy
 scoreboard objectives add WeatherCyclePrv dummy
 scoreboard objectives add DaylightCyclePrv dummy
+scoreboard objectives add NumberOfMinecartsPrv dummy
 #### setting phase - choose team setting
 scoreboard objectives add IsTeam dummy
 scoreboard objectives add friendlyFire dummy

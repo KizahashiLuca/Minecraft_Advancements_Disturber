@@ -78,8 +78,10 @@ scoreboard objectives remove CartIntervalPrv
 #### setting phase - choose gamerule
 scoreboard objectives remove WeatherCycle
 scoreboard objectives remove DaylightCycle
+scoreboard objectives remove NumberOfMinecarts
 scoreboard objectives remove WeatherCyclePrv
 scoreboard objectives remove DaylightCyclePrv
+scoreboard objectives remove NumberOfMinecartsPrv
 #### setting phase - choose team setting
 scoreboard objectives remove IsTeam
 scoreboard objectives remove friendlyFire

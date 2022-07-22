@@ -57,8 +57,10 @@ scoreboard players set #mad CartIntervalPrv 300
 #### setting phase - choose gamerule
 scoreboard players set #mad WeatherCycle 1
 scoreboard players set #mad DaylightCycle 1
+scoreboard players set #mad NumberOfMinecarts 1
 scoreboard players set #mad WeatherCyclePrv 1
 scoreboard players set #mad DaylightCyclePrv 1
+scoreboard players set #mad NumberOfMinecartsPrv 1
 #### setting phase - choose team setting
 scoreboard players set #mad IsTeam 0
 scoreboard players set #mad friendlyFire 1
