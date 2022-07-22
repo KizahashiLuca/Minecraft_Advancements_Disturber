@@ -32,8 +32,8 @@ function mad:system/common/message/end
 execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/center_of_world_position] at @s run fill ~-1 ~5 ~-1 ~1 ~7 ~1 minecraft:air
 
 ## Teleport
-execute if predicate mad:gamerules/match_mode/individual at @e[predicate=mad:marker/world_spawn,limit=1] run function mad:system/fall/random_teleport_individual
-execute if predicate mad:gamerules/match_mode/team at @e[predicate=mad:marker/world_spawn,limit=1] run function mad:system/fall/random_teleport_team
+execute if predicate mad:gamerules/match_mode/individual at @e[predicate=mad:marker/world_spawn,limit=1] run function mad:system/fall/random_teleport/individual/main
+execute if predicate mad:gamerules/match_mode/team at @e[predicate=mad:marker/world_spawn,limit=1] run function mad:system/fall/random_teleport/team/main
 execute as @a[predicate=mad:player/participant] at @s run tp @s ~ 320 ~
 
 ## Change phase

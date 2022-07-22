@@ -36,28 +36,7 @@
     }
   },
   {
-    "condition": "minecraft:alternative",
-    "terms": [
-      {
-        "condition": "minecraft:reference",
-        "name": "mad:gamerules/world_border/1100"
-      },
-      {
-        "condition": "minecraft:reference",
-        "name": "mad:gamerules/world_border/1200"
-      },
-      {
-        "condition": "minecraft:reference",
-        "name": "mad:gamerules/world_border/1300"
-      },
-      {
-        "condition": "minecraft:reference",
-        "name": "mad:gamerules/world_border/1400"
-      },
-      {
-        "condition": "minecraft:reference",
-        "name": "mad:gamerules/world_border/1500"
-      }
-    ]
+    "condition": "minecraft:reference",
+    "name": "mad:gamerules/world_border/part_c"
   }
 ]

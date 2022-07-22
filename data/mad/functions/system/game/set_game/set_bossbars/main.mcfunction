@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send title messages
-title @a title ["",{"text":"ゲームスタート","color":"red","bold":false,"italic":false}]
-title @a times 20 80 20
-
-## Change to start
-function mad:system/game/change_to
+## Set bossbar
+execute if predicate mad:gamerules/match_mode/individual run function mad:system/game/set_game/set_bossbars/individual/main
+execute if predicate mad:gamerules/match_mode/team run function mad:system/game/set_game/set_bossbars/team/main
