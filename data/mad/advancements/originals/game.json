@@ -1,0 +1,28 @@
+{
+  "parent": "mad:originals/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:clock"
+    },
+    "title": {
+      "text": "ゲーム進行"
+    },
+    "description": {
+      "text": ""
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "original": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "original"
+    ]
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:marker/minecart/where_summon_minecart"
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "Tick",
+      "scale": 1
+    },
+    "range": {
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "Second",
+      "scale": 1
+    },
+    "range": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#mad"
+        },
+        "score": "SecondSummon",
+        "scale": 1
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#mad"
+        },
+        "score": "SecondSummon",
+        "scale": 1
+      }
+    }
+  }
+]

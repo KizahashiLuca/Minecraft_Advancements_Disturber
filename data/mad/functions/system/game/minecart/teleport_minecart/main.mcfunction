@@ -18,8 +18,5 @@ execute store result score @s PosX align x run data get entity @s Pos[0] 1
 execute store result score @s PosY align x run data get entity @s Pos[1] 1
 execute store result score @s PosZ align z run data get entity @s Pos[2] 1
 
-## Send messages
-tellraw @a ["",{"translate":"[物資投下] 物資が %s 秒後に","with":[{"score":{"name":"@s","objective":"SecondSummon"}}],"color":"green","bold":false,"italic":false},{"translate":"[%s, %s, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"score":{"name":"@s","objective":"PosY"}},{"score":{"name":"@s","objective":"PosZ"}}],"hoverEvent":{"action":"show_text","contents":{"text":"スペクテイター時、\nクリックでテレポート","color":"white","bold":false,"italic":false}},"clickEvent":{"action":"run_command","value":"/trigger TeleportMinecart set 1"},"color":"green","bold":false,"italic":false},{"text":" に投下されます。","color":"green","bold":false,"italic":false}]
-
 ## Remove a tag
 tag @s remove MAD_DetectWhereSummonMinecart

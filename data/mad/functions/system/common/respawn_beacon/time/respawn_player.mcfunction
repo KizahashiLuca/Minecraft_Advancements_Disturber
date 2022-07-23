@@ -18,11 +18,11 @@ gamemode survival @s
 clear @s
 
 ## Grant advancement
-execute as @s[predicate=mad:player/team/a] run advancement grant @p[predicate=mad:player/alive/a,sort=nearest] only mad:potage00/friendship
-execute as @s[predicate=mad:player/team/b] run advancement grant @p[predicate=mad:player/alive/b,sort=nearest] only mad:potage00/friendship
-execute as @s[predicate=mad:player/team/c] run advancement grant @p[predicate=mad:player/alive/c,sort=nearest] only mad:potage00/friendship
-execute as @s[predicate=mad:player/team/d] run advancement grant @p[predicate=mad:player/alive/d,sort=nearest] only mad:potage00/friendship
-execute as @s[predicate=mad:player/team/e] run advancement grant @p[predicate=mad:player/alive/e,sort=nearest] only mad:potage00/friendship
+execute as @s[predicate=mad:player/team/a] run advancement grant @p[predicate=mad:player/alive/a,sort=nearest] only mad:originals/friendship
+execute as @s[predicate=mad:player/team/b] run advancement grant @p[predicate=mad:player/alive/b,sort=nearest] only mad:originals/friendship
+execute as @s[predicate=mad:player/team/c] run advancement grant @p[predicate=mad:player/alive/c,sort=nearest] only mad:originals/friendship
+execute as @s[predicate=mad:player/team/d] run advancement grant @p[predicate=mad:player/alive/d,sort=nearest] only mad:originals/friendship
+execute as @s[predicate=mad:player/team/e] run advancement grant @p[predicate=mad:player/alive/e,sort=nearest] only mad:originals/friendship
 
 ## Set scoreboards
 scoreboard players set @s Phase 21

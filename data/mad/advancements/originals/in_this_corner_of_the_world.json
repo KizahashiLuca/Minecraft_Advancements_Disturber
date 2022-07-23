@@ -1,0 +1,31 @@
+{
+  "parent": "mad:originals/adventure",
+  "display": {
+    "icon": {
+      "item": "minecraft:leather_boots"
+    },
+    "title": {
+      "text": "この世界の片隅に"
+    },
+    "description": {
+      "text": "ボーダーの端へ到達"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "in_this_corner_of_the_world": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "in_this_corner_of_the_world"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/in_this_corner_of_the_world"
+  }
+}

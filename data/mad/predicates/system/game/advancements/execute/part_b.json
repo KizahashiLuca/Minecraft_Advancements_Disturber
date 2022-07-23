@@ -1,0 +1,91 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/game"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#mad"
+          },
+          "score": "Tick",
+          "scale": 1
+        },
+        "range": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#mad"
+          },
+          "score": "Tick",
+          "scale": 1
+        },
+        "range": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#mad"
+          },
+          "score": "Tick",
+          "scale": 1
+        },
+        "range": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#mad"
+          },
+          "score": "Tick",
+          "scale": 1
+        },
+        "range": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#mad"
+          },
+          "score": "Tick",
+          "scale": 1
+        },
+        "range": {
+          "min": 17,
+          "max": 17
+        }
+      }
+    ]
+  }
+]

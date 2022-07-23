@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:gamerulesmatch_mode/team"
+    "name": "mad:gamerules/match_mode/team"
   },
   {
     "condition": "minecraft:value_check",

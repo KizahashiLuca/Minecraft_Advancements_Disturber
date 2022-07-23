@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/game"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mad:player/host"
+    }
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:player/not_participant"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:system/fall/not_spectator"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "parent": "mad:originals/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:chest"
+    },
+    "title": {
+      "text": "収集"
+    },
+    "description": {
+      "text": ""
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "collect": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "collect"
+    ]
+  ]
+}

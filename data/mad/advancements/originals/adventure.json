@@ -1,0 +1,28 @@
+{
+  "parent": "mad:originals/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_sword"
+    },
+    "title": {
+      "text": "冒険"
+    },
+    "description": {
+      "text": ""
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "adventure": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "adventure"
+    ]
+  ]
+}

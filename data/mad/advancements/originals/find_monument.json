@@ -1,0 +1,44 @@
+{
+  "parent": "mad:originals/adventure",
+  "display": {
+    "icon": {
+      "item": "minecraft:sea_lantern"
+    },
+    "title": {
+      "text": "アトランティスの発見"
+    },
+    "description": {
+      "text": "海底神殿の攻略を開始する"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "in_monument": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "minecraft:monument"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "in_monument"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/find_monument"
+  }
+}

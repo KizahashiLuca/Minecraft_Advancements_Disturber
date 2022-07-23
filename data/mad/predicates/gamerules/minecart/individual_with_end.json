@@ -1,11 +1,11 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:gamerulesmatch_mode/individual"
+    "name": "mad:gamerules/match_mode/individual"
   },
   {
     "condition": "minecraft:reference",
-    "name": "mad:gamerulesnum_of_participants/not_one"
+    "name": "mad:gamerules/num_of_participants/not_one"
   },
   {
     "condition": "minecraft:value_check",

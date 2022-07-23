@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:chest_minecart",
+    "nbt": "{Tags:[\"MAD_Minecart\"],OnGround:1b}"
+  }
+}
