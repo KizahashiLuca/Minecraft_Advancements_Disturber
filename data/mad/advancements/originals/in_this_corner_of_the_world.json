@@ -1,8 +1,8 @@
 {
-  "parent": "mad:originals/adventure",
+  "parent": "mad:originals/tsutenkaku",
   "display": {
     "icon": {
-      "item": "minecraft:leather_boots"
+      "item": "minecraft:chainmail_boots"
     },
     "title": {
       "text": "この世界の片隅に"
@@ -26,6 +26,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/game/advancements/originals/in_this_corner_of_the_world"
+    "function": "mad:system/ongame/advancements/originals/in_this_corner_of_the_world"
   }
 }

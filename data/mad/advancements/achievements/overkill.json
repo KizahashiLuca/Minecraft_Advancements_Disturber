@@ -1,0 +1,46 @@
+{
+  "parent": "mad:achievements/build_sword",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_sword"
+    },
+    "title": {
+      "text": "やり過ぎ"
+    },
+    "description": {
+      "text": "一撃でハート9個分のダメージを与える"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "overkill": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 18.0,
+            "max": 2147483647
+          },
+          "type": {
+            "is_explosion": false,
+            "is_projectile": false,
+            "is_fire": false,
+            "is_magic": false,
+            "is_lightning": false
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "overkill"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/achievements/overkill"
+  }
+}

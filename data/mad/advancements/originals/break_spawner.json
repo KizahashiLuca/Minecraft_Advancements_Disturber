@@ -40,6 +40,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/game/advancements/originals/break_spawner"
+    "function": "mad:system/ongame/advancements/originals/break_spawner"
   }
 }

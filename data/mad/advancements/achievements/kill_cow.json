@@ -1,5 +1,5 @@
 {
-  "parent": "mad:achievements/build_sword",
+  "parent": "mad:achievements/root",
   "display": {
     "icon": {
       "item": "minecraft:leather"

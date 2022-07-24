@@ -2,7 +2,7 @@
   "parent": "mad:originals/find_monument",
   "display": {
     "icon": {
-      "item": "minecraft:prismarine_shard"
+      "item": "minecraft:sponge"
     },
     "title": {
       "text": "待てば海綿の日和あり"
@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/game/advancements/originals/obtain_sponge"
+    "function": "mad:system/ongame/advancements/originals/obtain_sponge"
   }
 }

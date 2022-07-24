@@ -9,7 +9,7 @@
       "translate": "通天閣からの眺め"
     },
     "description": {
-      "translate": "海抜63m+108mの高さ\n(Y=171)に達する"
+      "translate": "海抜63m+108mの高さ (Y=171) に達する"
     },
     "frame": "task",
     "show_toast": true,
@@ -38,6 +38,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/game/advancements/originals/tsutenkaku"
+    "function": "mad:system/ongame/advancements/originals/tsutenkaku"
   }
 }

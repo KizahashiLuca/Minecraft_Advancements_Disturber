@@ -19,13 +19,13 @@
     "kill_elder_guardian": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
-        "player": [
+        "entity": [
           {
             "condition": "minecraft:entity_properties",
-            "entity": "this",
             "predicate": {
               "type": "minecraft:elder_guardian"
-            }
+            },
+            "entity": "this"
           }
         ]
       }
@@ -37,6 +37,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/game/advancements/originals/kill_elder_guardian"
+    "function": "mad:system/ongame/advancements/originals/kill_elder_guardian"
   }
 }

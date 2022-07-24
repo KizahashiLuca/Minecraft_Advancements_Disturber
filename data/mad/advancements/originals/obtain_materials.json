@@ -1,0 +1,68 @@
+{
+  "parent": "mad:originals/collect",
+  "display": {
+    "icon": {
+      "item": "minecraft:oak_door"
+    },
+    "title": {
+      "text": "3匹の子豚"
+    },
+    "description": {
+      "text": "干し草の俵、木材、レンガブロックを集める"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hay_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:hay_block"
+            ]
+          }
+        ]
+      }
+    },
+    "planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:planks"
+          }
+        ]
+      }
+    },
+    "bricks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bricks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hay_block"
+    ],
+    [
+      "planks"
+    ],
+    [
+      "bricks"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/ongame/advancements/originals/obtain_materials"
+  }
+}

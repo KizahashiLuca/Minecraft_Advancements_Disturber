@@ -1,5 +1,5 @@
 {
-  "parent": "mad:originals/game",
+  "parent": "mad:originals/find_minecart",
   "display": {
     "icon": {
       "item": "minecraft:red_banner"
@@ -26,6 +26,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/game/advancements/originals/friendship"
+    "function": "mad:system/ongame/advancements/originals/friendship"
   }
 }

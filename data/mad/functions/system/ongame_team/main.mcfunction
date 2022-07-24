@@ -22,7 +22,7 @@ function mad:system/time_team/general_time
 execute as @a run function mad:system/ongame/set_position/main
 
 ## Execute advancements
-function mad:system/ongame/advancements/potage00/execute_advancements
+function mad:system/ongame/advancements/originals/execute_advancements
 function mad:system/ongame/advancements/achievements/execute_advancements
 
 ## Detect death

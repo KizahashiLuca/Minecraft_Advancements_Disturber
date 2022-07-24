@@ -28,7 +28,7 @@ execute as @p[tag=RespawnSoon,team=TeamE] run tag @a[team=TeamE] add RespawnTeam
 tellraw @a[tag=RespawnTeam] ["",{"text":"[蘇生措置]  ","color":"green"},{"selector":"@p[tag=RespawnSoon]"},{"text":" がリスポーンしました。","color":"green"}]
 
 ## Grand advancement
-advancement grant @p[tag=RespawnTeam,predicate=mad:ongame/player/participant_alive,sort=nearest] only mad:potage00/friendship
+advancement grant @p[tag=RespawnTeam,predicate=mad:ongame/player/participant_alive,sort=nearest] only mad:originals/friendship
 
 ## Remove tags
 tag @p[tag=RespawnSoon] remove MobileRespawnBannerSet

@@ -44,7 +44,9 @@
     }
   },
   "requirements": [
-    ["fly_pig"]
+    [
+      "fly_pig"
+    ]
   ],
   "rewards": {
     "function": "mad:system/ongame/advancements/achievements/fly_pig"
