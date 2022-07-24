@@ -1,0 +1,20 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:system/game/minecart/items/tool_upgrader"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:system/game/minecart/items/armor_upgrader"
+        }
+      ]
+    }
+  ]
+}

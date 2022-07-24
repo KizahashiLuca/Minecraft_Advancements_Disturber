@@ -14,3 +14,6 @@ execute if predicate mad:gamerules/world_border/0700 run spreadplayers ~ ~ 0 350
 execute if predicate mad:gamerules/world_border/0800 run spreadplayers ~ ~ 0 400 false @s
 execute if predicate mad:gamerules/world_border/0900 run spreadplayers ~ ~ 0 450 false @s
 execute if predicate mad:gamerules/world_border/1000 run spreadplayers ~ ~ 0 500 false @s
+
+## Forceload chunk
+execute at @s run forceload add ~ ~ ~ ~

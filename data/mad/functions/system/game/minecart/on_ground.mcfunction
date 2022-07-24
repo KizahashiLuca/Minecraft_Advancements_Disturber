@@ -9,8 +9,8 @@
 #####################################
 
 ## Detect landing
-execute if entity @e[type=minecraft:area_effect_cloud,tag=Minecart] run function mad:system/ongame/minecart/detect_minecart_landed
+execute as @e[predicate=mad:marker/minecart/where_summon_minecart,sort=nearest,limit=1] run function mad:system/game/minecart/detect_minecart_landed
 
 ## Detect minecart
 execute store success score @s HasLootTable run data get entity @s LootTable
-execute as @s[predicate=mad:ongame/minecart/chest_minecart_exist] run function mad:system/ongame/minecart/explode_minecart
+execute as @s[predicate=mad:minecart/chest_minecart_exist] run function mad:system/game/minecart/explode_minecart

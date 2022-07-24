@@ -12,6 +12,9 @@
 execute at @e[predicate=mad:marker/world_spawn,limit=1] run function mad:system/game/minecart/teleport_minecart/branch
 execute at @e[predicate=mad:marker/minecart/detect_where_summon_minecart,limit=1] run tp @s ~ 320 ~
 
+## Forceload chunk
+execute at @e[predicate=mad:marker/minecart/detect_where_summon_minecart,limit=1] run forceload add ~ ~ ~ ~
+
 ## Set scoreboards
 scoreboard players operation @s SecondSummon = #mad SummonInterval
 execute store result score @s PosX align x run data get entity @s Pos[0] 1

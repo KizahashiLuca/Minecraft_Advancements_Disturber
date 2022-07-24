@@ -23,4 +23,4 @@ function mad:system/game/set_game/set_world
 function mad:system/game/set_game/set_players
 
 ## Set scoreboards
-function mad:system/wait/set_game/set_scoreboards
+function mad:system/game/set_game/set_scoreboards

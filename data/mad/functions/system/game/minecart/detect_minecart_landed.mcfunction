@@ -8,11 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Reset advancements
-advancement revoke @s only mad:system/ongame_team/take_bedrock
+## Unload chunk
+execute at @s run forceload remove ~ ~ ~ ~
+execute at @e[predicate=mad:marker/world_spawn] run forceload add ~ ~ ~ ~
 
-## Clear inventory
-clear @s minecraft:bedrock 1
-
-## Give mobile respawn beacon
-loot give @s loot mad:system/game/minecart/items/mobile_respawn_beacon
+## Kill marker
+kill @s

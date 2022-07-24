@@ -1,0 +1,42 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:golden_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_MinecartItem\"],RepairCost:2147483647}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.movement_speed",
+                  "name": "generic.movement_speed",
+                  "amount": 0.05,
+                  "operation": "addition",
+                  "id": "d4cce7b7-fbae-427b-b5aa-d2afbe8aed33",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:generic.max_health",
+                  "name": "generic.max_health",
+                  "amount": -0.2,
+                  "operation": "multiply_total",
+                  "id": "d4cce7b7-fbae-427b-b5aa-d2afbe8aed33",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

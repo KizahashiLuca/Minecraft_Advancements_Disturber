@@ -9,7 +9,7 @@
 #####################################
 
 ## Loot
-loot spawn ~ ~ ~ loot mad:ongame/chest_minecart_item/return_portal
+loot spawn ~ ~ ~ loot mad:system/game/minecart/items/return_portal
 
 ## message
 execute if predicate mad:ongame/dimension/overworld run tellraw @a[distance=..5] ["",{"text":"[帰還装置] オーバーワールドには帰還ポータルを設置できません。","color":"green"}]

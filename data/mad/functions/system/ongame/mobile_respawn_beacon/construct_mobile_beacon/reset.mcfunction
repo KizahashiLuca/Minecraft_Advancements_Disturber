@@ -9,7 +9,7 @@
 #####################################
 
 ## Spawn item
-loot spawn ~ ~ ~ loot mad:ongame/chest_minecart_item/mobile_respawn_beacon
+loot spawn ~ ~ ~ loot mad:system/game/minecart/items/mobile_respawn_beacon
 
 ## Add a tag
 tag @s add DetectedMobileBeacon

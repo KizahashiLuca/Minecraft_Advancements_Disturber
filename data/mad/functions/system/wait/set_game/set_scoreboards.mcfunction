@@ -18,7 +18,6 @@ tag @a[predicate=mad:player/participant] remove MAD_Numbered
 #### timer
 scoreboard players set #mad Tick 0
 scoreboard players set #mad Second 30
-
 #### game phase
 scoreboard players set @a Death 0
 scoreboard players set @a Kill 0
