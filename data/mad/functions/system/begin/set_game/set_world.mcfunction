@@ -24,14 +24,14 @@ kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:trident]
 kill @e[type=minecraft:marker]
 kill @e[type=minecraft:area_effect_cloud]
-kill @e[type=minecraft:chest_minecart,tag=Minecart]
+kill @e[type=minecraft:chest_minecart,tag=MAD_Minecart]
 kill @e[predicate=mad:ongame/respawn_banner/structure]
 kill @e[predicate=mad:ongame/tool_upgrader]
 kill @e[predicate=mad:ongame/armor_upgrader]
 kill @e[predicate=mad:ongame/respawn_beacon/position]
 kill @e[predicate=mad:ongame/return_portal]
 kill @e[predicate=mad:ongame/mobile_respawn_beacon/position]
-kill @e[type=minecraft:armor_stand,tag=MinecartItem]
+kill @e[type=minecraft:armor_stand,tag=MAD_MinecartItem]
 
 ## Forceload chunks
 execute at @p[predicate=mad:player/host] run forceload add ~ ~
