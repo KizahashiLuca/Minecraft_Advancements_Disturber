@@ -25,7 +25,7 @@ scoreboard players operation @s TransmitterPosZ = @p[predicate=mad:system/common
 execute if entity @e[predicate=mad:system/common/transmitter/transmit_player] run tellraw @s ["",{"translate":"[発 信 機]  %s が ","with":[{"selector":"@p[predicate=mad:system/common/transmitter/transmit_player]"}],"color":"green","bold":false,"italic":false},{"translate":"[%s, %s, %s]","with":[{"score":{"name":"@s","objective":"TransmitterPosX"}},{"score":{"name":"@s","objective":"TransmitterPosY"}},{"score":{"name":"@s","objective":"TransmitterPosZ"}}],"color":"green","bold":false,"italic":false},{"text":" にいます。","color":"green","bold":false,"italic":false}]
 execute unless entity @p[predicate=mad:system/common/transmitter/transmit_player] run tellraw @s ["",{"text":"[発 信 機] 近くには誰もいないようです……。","color":"green","bold":false,"italic":false}]
 
-## Remove a tag
+## Remove tags
 tag @a remove MAD_TransmitPlayer
 tag @a remove MAD_DetectTransmitter
 

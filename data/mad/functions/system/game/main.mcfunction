@@ -39,3 +39,9 @@ execute as @a[predicate=mad:system/common/upgrader/armor/use] at @s run function
 
 ## Tool upgrader
 execute as @a[predicate=mad:system/common/upgrader/tool/use] at @s run function mad:system/common/upgrader/tool/main
+
+## Emergency call
+execute as @a[predicate=mad:system/common/emergency_call/use] at @s run function mad:system/common/emergency_call/main
+
+## Return portal
+execute as @e[predicate=mad:system/common/return_portal/armor_stand] at @s run function mad:system/common/return_portal/main

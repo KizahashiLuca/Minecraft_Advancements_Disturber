@@ -9,8 +9,8 @@
 #####################################
 
 ## Detect dimensions
-execute unless predicate mad:ongame/dimension/the_end run function mad:system/ongame/return_portal/not_construct_return_portal
-execute if predicate mad:ongame/dimension/the_end run function mad:system/ongame/return_portal/construct_return_portal
+execute unless predicate mad:dimension/the_end run function mad:system/common/return_portal/not_construct_return_portal
+execute if predicate mad:dimension/the_end run function mad:system/common/return_portal/construct_return_portal
 
 ## Kill armor stand
 kill @s

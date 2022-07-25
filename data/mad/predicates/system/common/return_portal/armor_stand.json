@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:armor_stand",
-    "nbt": "{Tags:[\"DetectUpgrader\"]}"
+    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_ReturnPortal\"]}"
   }
 }
