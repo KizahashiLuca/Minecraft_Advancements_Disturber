@@ -8,22 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Load add-on
-execute if score #mad LoadAddon matches 1.. run scoreboard players remove #mad LoadAddon 1
-
-## Log in the mid of the game
-execute as @a[team=!TeamA,team=!TeamB,team=!TeamC,team=!TeamD,team=!TeamE,gamemode=!spectator] run function mad:system/ongame/mid_login
-
 ## Process timer system
 function mad:system/time_team/time
 function mad:system/time_team/general_time
-
-## Position
-execute as @a run function mad:system/ongame/set_position/main
-
-## Execute advancements
-function mad:system/ongame/advancements/originals/execute_advancements
-function mad:system/ongame/advancements/achievements/execute_advancements
 
 ## Detect death
 execute as @a[predicate=mad:ongame/player/participant_dying] run function mad:system/ongame_team/detect_death
@@ -44,10 +31,6 @@ execute if score #mad NumberOfTeams matches 5.. if score #mad DeadTeamE matches 
 ## Calculate time per players
 execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive = @s Second
 execute as @a[tag=Leader] run scoreboard players operation @s SecondPerSurvive /= @s NumOfTeamPlayer
-
-## Minecart
-execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:0b}] at @s run function mad:system/ongame/minecart/main_not_onground
-execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame/minecart/main_onground
 
 ## Teleport player
 execute as @a[predicate=mad:ongame/player/participant_dead,scores={TeleportMinecart=1..}] run function mad:system/ongame/teleport_player/minecart

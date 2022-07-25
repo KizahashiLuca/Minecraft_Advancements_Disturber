@@ -8,22 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Load add-on
-execute if score #mad LoadAddon matches 1.. run scoreboard players remove #mad LoadAddon 1
-
-## Log in the mid of the game
-execute as @a[tag=!Participant,gamemode=!spectator] run function mad:system/ongame/mid_login
-
 ## Process timer system
 function mad:system/time_individual/time
 function mad:system/time_individual/general_time
-
-## Position
-execute as @a run function mad:system/ongame/set_position/main
-
-## Execute advancements
-function mad:system/ongame/advancements/originals/execute_advancements
-function mad:system/ongame/advancements/achievements/execute_advancements
 
 ## Detect kill
 execute as @a[predicate=mad:ongame/player/participant_alive,scores={KillTemp=1..}] at @s run function mad:system/ongame_individual/detect_kill
@@ -33,10 +20,6 @@ execute as @a[predicate=mad:ongame/player/participant_dying] run function mad:sy
 
 ## Time over
 kill @a[predicate=mad:ongame/player/participant_alive,scores={Second=..0}]
-
-## Minecart
-execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:0b}] at @s run function mad:system/ongame/minecart/main_not_onground
-execute as @e[type=minecraft:chest_minecart,tag=Minecart,nbt={OnGround:1b}] at @s run function mad:system/ongame/minecart/main_onground
 
 ## Teleport player
 execute as @a[scores={TeleportMinecart=1..}] run function mad:system/ongame/teleport_player/minecart

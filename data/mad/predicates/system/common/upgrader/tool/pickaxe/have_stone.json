@@ -1,0 +1,37 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/alive"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:stone_pickaxe"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": [
+                "minecraft:stone_pickaxe"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+]

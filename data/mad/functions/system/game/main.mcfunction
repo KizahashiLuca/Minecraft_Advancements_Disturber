@@ -30,3 +30,12 @@ execute if predicate mad:system/game/advancements/execute/part_c run function ma
 execute as @e[predicate=mad:system/game/minecart/summon] at @s run function mad:system/game/minecart/summon_minecart
 execute as @e[predicate=mad:minecart/not_on_ground] at @s run function mad:system/game/minecart/not_on_ground
 execute as @e[predicate=mad:minecart/on_ground] at @s run function mad:system/game/minecart/on_ground
+
+## Transmitter
+execute as @a[predicate=mad:system/common/transmitter/use] at @s run function mad:system/common/transmitter/main
+
+## Armor upgrader
+execute as @a[predicate=mad:system/common/upgrader/armor/use] at @s run function mad:system/common/upgrader/armor/main
+
+## Tool upgrader
+execute as @a[predicate=mad:system/common/upgrader/tool/use] at @s run function mad:system/common/upgrader/tool/main

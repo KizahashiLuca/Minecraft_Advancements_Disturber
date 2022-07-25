@@ -18,11 +18,13 @@
   "criteria": {
     "bake_cake": {
       "conditions": {
-        "item": {
-          "items": [
-            "minecraft:cake"
-          ]
-        }
+        "items": [
+          {
+            "items": [
+              "minecraft:cake"
+            ]
+          }
+        ]
       },
       "trigger": "minecraft:inventory_changed"
     }

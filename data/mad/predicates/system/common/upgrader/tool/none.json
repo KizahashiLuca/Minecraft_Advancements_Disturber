@@ -1,0 +1,37 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mad:system/common/upgrader/tool/axe"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mad:system/common/upgrader/tool/hoe"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mad:system/common/upgrader/tool/pickaxe"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mad:system/common/upgrader/tool/shovel"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mad:system/common/upgrader/tool/sword"
+    }
+  }
+]
