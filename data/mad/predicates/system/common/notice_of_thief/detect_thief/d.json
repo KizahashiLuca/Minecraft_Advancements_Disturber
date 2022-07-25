@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/team/d"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/common/notice_of_thief/detect_thief"
+  }
+]

@@ -258,9 +258,9 @@ scoreboard objectives add UseArmorUpgrader minecraft.used:minecraft.bat_spawn_eg
 scoreboard objectives add UseToolUpgrader minecraft.used:minecraft.turtle_spawn_egg
 #### notice of thief
 scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn_egg
-scoreboard objectives add StealItemPlayer dummy
 scoreboard objectives add ThiefTick dummy
 scoreboard objectives add ThiefSecond dummy
+scoreboard objectives add StealResult dummy
 #### evoker fangs wand
 scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add EvokerFangsCount dummy

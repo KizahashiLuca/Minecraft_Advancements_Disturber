@@ -30,4 +30,4 @@ playsound minecraft:block.anvil.use block @s ~ ~ ~ 1.0 1.0 1.0
 tellraw @s ["",{"text":"[防具改修] 防具をアップグレードしました。","color":"green","bold":false,"italic":false}]
 
 ## Kill bat
-kill @e[predicate=mad:system/common/upgrader/armor/bat,sort=nearest,limit=1]
+kill @e[predicate=mad:system/common/upgrader/armor/monster_egg,sort=nearest,limit=1]

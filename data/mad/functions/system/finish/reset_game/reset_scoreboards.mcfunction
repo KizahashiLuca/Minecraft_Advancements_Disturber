@@ -258,9 +258,9 @@ scoreboard objectives remove UseArmorUpgrader
 scoreboard objectives remove UseToolUpgrader
 #### notice of thief
 scoreboard objectives remove UseNoticeOfThief
-scoreboard objectives remove StealItemPlayer
 scoreboard objectives remove ThiefTick
 scoreboard objectives remove ThiefSecond
+scoreboard objectives remove StealResult
 #### evoker fangs wand
 scoreboard objectives remove UseFungusStick
 scoreboard objectives remove EvokerFangsCount

@@ -8,9 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
+## Calculate time every second
+execute as @s[predicate=mad:system/common/notice_of_thief/time/tick/eq_zero] run function mad:system/common/notice_of_thief/time/second
+
 ## Calculate time every tick
 scoreboard players remove @s ThiefTick 1
-scoreboard players set @s[scores={ThiefTick=..-1}] ThiefTick 19
-
-## Calculate time every second
-execute as @s[scores={ThiefTick=0}] run function mad:system/ongame/notice_of_thief/time/second
+scoreboard players set @s[predicate=mad:system/common/notice_of_thief/time/tick/lt_zero] ThiefTick 19

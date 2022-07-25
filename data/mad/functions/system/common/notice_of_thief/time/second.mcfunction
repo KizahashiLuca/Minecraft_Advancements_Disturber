@@ -10,7 +10,7 @@
 
 ## Calculate time
 scoreboard players remove @s ThiefSecond 1
-scoreboard players set @s[scores={ThiefSecond=..-1}] ThiefSecond 0
+scoreboard players set @s[predicate=mad:system/common/notice_of_thief/time/second/lt_zero] ThiefSecond 0
 
 ## Execute time for beacon
-execute as @s[scores={ThiefSecond=0}] run function mad:system/ongame/notice_of_thief/steal_item
+execute as @s[predicate=mad:system/common/notice_of_thief/time/second/eq_zero] run function mad:system/common/notice_of_thief/execute/steal

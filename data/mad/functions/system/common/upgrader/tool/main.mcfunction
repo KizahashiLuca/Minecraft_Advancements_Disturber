@@ -30,10 +30,4 @@ execute as @s[predicate=mad:system/common/upgrader/tool/shovel/main] run functio
 execute as @s[predicate=mad:system/common/upgrader/tool/sword/main] run function mad:system/common/upgrader/tool/sword
 
 ## Kill turtle
-kill @e[predicate=mad:system/common/upgrader/tool/turtle,sort=nearest,limit=1]
-
-## Play sound
-playsound minecraft:block.anvil.destroy block @s ~ ~ ~ 1.0 1.0 1.0
-
-## Send message
-tellraw @s ["",{"text":"[道具改修] ツールをアップグレードしました。","color":"green","bold":false,"italic":false}]
+kill @e[predicate=mad:system/common/upgrader/tool/monster_egg,sort=nearest,limit=1]

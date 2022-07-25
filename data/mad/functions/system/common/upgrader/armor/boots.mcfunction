@@ -9,13 +9,13 @@
 #####################################
 
 ## Replace item 
-execute as @s[predicate=mad:system/common/upgrader/armor/boots/not_wear] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:leather_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_leather] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:golden_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_golden] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:chainmail_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_chainmail] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:iron_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_iron] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:diamond_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_diamond] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_netherite] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"]}
+execute as @s[predicate=mad:system/common/upgrader/armor/boots/not_wear] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:leather_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_leather] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:golden_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_golden] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:chainmail_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_chainmail] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:iron_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_iron] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:diamond_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_diamond] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/armor/boots/wear_netherite] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_boots",Count:1b},Tags:["MAD_DetectBootsUpgrader"],PickupDelay:0s}
 
 ## Merge nbt tag
 data modify entity @e[predicate=mad:system/common/upgrader/armor/boots,sort=nearest,limit=1] Item.tag set from entity @s Inventory[{Slot:100b}].tag

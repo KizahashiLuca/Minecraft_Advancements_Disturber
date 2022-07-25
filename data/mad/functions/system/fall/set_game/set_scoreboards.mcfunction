@@ -199,9 +199,10 @@ scoreboard players set @a UseArmorUpgrader 0
 scoreboard players set @a UseToolUpgrader 0
 #### notice of thief
 scoreboard players set @a UseNoticeOfThief 0
-scoreboard players set @a StealItemPlayer 0
 scoreboard players set @a ThiefTick 0
 scoreboard players set @a ThiefSecond 5
+scoreboard players set #mad ThiefSecond 5
+scoreboard players set @a StealResult 0
 #### evoker fangs wand
 scoreboard players set @a UseFungusStick 0
 #### mobile respawn beacon

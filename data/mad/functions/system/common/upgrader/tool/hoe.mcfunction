@@ -9,12 +9,12 @@
 #####################################
 
 ## Replace item 
-execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_wooden] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:stone_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_stone] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:golden_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_golden] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_iron] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:diamond_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_diamond] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_netherite] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"]}
+execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_wooden] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:stone_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_stone] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:golden_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_golden] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_iron] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:diamond_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_diamond] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/tool/hoe/have_netherite] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_hoe",Count:1b},Tags:["MAD_DetectHoeUpgrader"],PickupDelay:0s}
 
 ## Merge nbt tag
 data modify entity @e[predicate=mad:system/common/upgrader/tool/hoe,sort=nearest,limit=1] Item.tag set from entity @s[predicate=mad:system/common/upgrader/tool/mainhand] SelectedItem.tag

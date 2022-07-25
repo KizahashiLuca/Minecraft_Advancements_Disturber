@@ -31,4 +31,4 @@ tag @a remove MAD_EmergencyCallee
 tag @a remove MAD_DetectEmergencyCall
 
 ## Kill zombie_horse
-kill @e[predicate=mad:system/common/emergency_call/zombie_horse,sort=nearest,limit=1]
+kill @e[predicate=mad:system/common/emergency_call/monster_egg,sort=nearest,limit=1]

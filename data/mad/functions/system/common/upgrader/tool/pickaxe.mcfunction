@@ -9,12 +9,12 @@
 #####################################
 
 ## Replace item 
-execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_wooden] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:stone_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_stone] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:golden_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_golden] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:iron_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_iron] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:diamond_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_diamond] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"]}
-execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_netherite] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"]}
+execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_wooden] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:stone_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_stone] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:golden_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_golden] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:iron_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_iron] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:diamond_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_diamond] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"],PickupDelay:0s}
+execute as @s[predicate=mad:system/common/upgrader/tool/pickaxe/have_netherite] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:netherite_pickaxe",Count:1b},Tags:["MAD_DetectPickaxeUpgrader"],PickupDelay:0s}
 
 ## Merge nbt tag
 data modify entity @e[predicate=mad:system/common/upgrader/tool/pickaxe,sort=nearest,limit=1] Item.tag set from entity @s[predicate=mad:system/common/upgrader/tool/mainhand] SelectedItem.tag

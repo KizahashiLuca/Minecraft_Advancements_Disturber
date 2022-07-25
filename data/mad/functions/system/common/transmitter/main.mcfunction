@@ -30,4 +30,4 @@ tag @a remove MAD_TransmitPlayer
 tag @a remove MAD_DetectTransmitter
 
 ## Kill vindicator
-kill @e[predicate=mad:system/common/transmitter/vindicator,sort=nearest,limit=1]
+kill @e[predicate=mad:system/common/transmitter/monster_egg,sort=nearest,limit=1]

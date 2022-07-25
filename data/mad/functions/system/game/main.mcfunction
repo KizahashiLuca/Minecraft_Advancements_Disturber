@@ -40,6 +40,10 @@ execute as @a[predicate=mad:system/common/upgrader/armor/use] at @s run function
 ## Tool upgrader
 execute as @a[predicate=mad:system/common/upgrader/tool/use] at @s run function mad:system/common/upgrader/tool/main
 
+## Notice of thief
+execute as @a[predicate=mad:system/common/notice_of_thief/use] at @s run function mad:system/common/notice_of_thief/main
+execute as @a[predicate=mad:system/common/notice_of_thief/thief] at @s run function mad:system/common/notice_of_thief/time/tick
+
 ## Emergency call
 execute as @a[predicate=mad:system/common/emergency_call/use] at @s run function mad:system/common/emergency_call/main
 
