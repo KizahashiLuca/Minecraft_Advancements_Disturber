@@ -13,6 +13,7 @@ scoreboard players set @s UseEmergencyCall 0
 
 ## Add tags
 tag @s add MAD_DetectEmergencyCall
+execute if predicate mad:phase/trial run tag @a[predicate=mad:player/participant] add MAD_EmergencyCallee
 execute as @s[predicate=mad:player/alive/a] run tag @a[predicate=mad:system/item/emergency_call/detect_callee/a] add MAD_EmergencyCallee
 execute as @s[predicate=mad:player/alive/b] run tag @a[predicate=mad:system/item/emergency_call/detect_callee/b] add MAD_EmergencyCallee
 execute as @s[predicate=mad:player/alive/c] run tag @a[predicate=mad:system/item/emergency_call/detect_callee/c] add MAD_EmergencyCallee

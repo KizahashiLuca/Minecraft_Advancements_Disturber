@@ -10,4 +10,4 @@
 
 ## Add tags
 tag @p[sort=nearest] add MAD_Host
-tag @a[gamemode=adventure] add MAD_Participant 
+tag @a[gamemode=!spectator] add MAD_Participant 

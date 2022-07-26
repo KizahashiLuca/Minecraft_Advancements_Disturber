@@ -28,7 +28,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_MinecartItem\"],EntityTag:{Marker:0b,Invulnerable:1b,Health:1.0f,Silent:1b,NoAI:1b,DeathLootTable:\"mad:system/game/minecart/items/empty\",ActiveEffects:[{Ambient:0b,ShowIcon:0b,ShowParticles:0b,Id:14b,Amplifier:0b,Duration:2147483647}],CustomNameVisible:0b,Team:\"NeverCollision\"}}"
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_EmergencyCall\"],EntityTag:{Marker:0b,Invulnerable:1b,Health:1.0f,Silent:1b,NoAI:1b,DeathLootTable:\"mad:system/game/minecart/items/empty\",ActiveEffects:[{Ambient:0b,ShowIcon:0b,ShowParticles:0b,Id:14b,Amplifier:0b,Duration:2147483647}],CustomNameVisible:0b,Team:\"NeverCollision\"}}"
             }
           ]
         }

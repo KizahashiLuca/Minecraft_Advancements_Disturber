@@ -10,7 +10,7 @@
         },
         {
           "function": "minecraft:set_nbt",
-          "tag": "{Tags:[\"MAD_MinecartItem\"]}"
+          "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_SuspiciousStew\"]}"
         }
       ],
       "entries":[

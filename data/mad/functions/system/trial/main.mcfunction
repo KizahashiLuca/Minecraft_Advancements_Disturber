@@ -13,3 +13,6 @@ function mad:system/common/set_position/main
 
 ## Give item
 execute as @a[predicate=mad:system/trial/use_item] run function mad:system/trial/supply_item
+
+## Reset scoreboard
+scoreboard players set @a Death 0

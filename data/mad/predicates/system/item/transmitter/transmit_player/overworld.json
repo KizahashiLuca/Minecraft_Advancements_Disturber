@@ -1,0 +1,15 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/item/transmitter/transmit_player"
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "location": {
+        "dimension": "minecraft:overworld"
+      }
+    }
+  }
+]
