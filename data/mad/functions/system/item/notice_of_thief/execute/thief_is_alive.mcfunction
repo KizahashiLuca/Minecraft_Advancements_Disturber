@@ -21,7 +21,7 @@ execute as @s[predicate=mad:system/item/notice_of_thief/result/failure] run kill
 ## Send messages - to thief
 execute if entity @p[predicate=mad:system/item/notice_of_thief/stolen_player] run tellraw @s[predicate=mad:system/item/notice_of_thief/result/success] ["",{"translate":"[怪盗予告]  %s のアイテムを盗みました。","with":[{"selector":"@p[predicate=mad:system/item/notice_of_thief/stolen_player]"}],"color":"green","bold":false,"italic":false}]
 execute if entity @p[predicate=mad:system/item/notice_of_thief/stolen_player] run tellraw @s[predicate=mad:system/item/notice_of_thief/result/failure] ["",{"translate":"[怪盗予告]  %s の手持ちアイテムが無いため、アイテムを盗めませんでした。","with":[{"selector":"@p[predicate=mad:system/item/notice_of_thief/stolen_player]"}],"color":"green","bold":false,"italic":false}]
-execute unless entity @p[predicate=mad:system/item/notice_of_thief/stolen_player] run tellraw @s[predicate=mad:system/item/notice_of_thief/result/success] ["",{"text":"[怪盗予告] 盗み先を指定できず、アイテムを盗めませんでした。","color":"green","bold":false,"italic":false}]
+execute unless entity @p[predicate=mad:system/item/notice_of_thief/stolen_player] run tellraw @s ["",{"text":"[怪盗予告] 盗み先を指定できず、アイテムを盗めませんでした。","color":"green","bold":false,"italic":false}]
 
 ## Send messages - to stolen player
 execute if entity @p[predicate=mad:system/item/notice_of_thief/stolen_player] as @s[predicate=mad:system/item/notice_of_thief/result/success] run tellraw @a[predicate=mad:system/item/notice_of_thief/detect_not_thief] ["",{"translate":"[怪盗予告]  %s のアイテムが盗まれました。","with":[{"selector":"@p[predicate=mad:system/item/notice_of_thief/stolen_player]"}],"color":"green","bold":false,"italic":false}]

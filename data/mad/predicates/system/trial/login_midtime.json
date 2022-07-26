@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:phase/game"
+    "name": "mad:phase/trial"
   },
   {
     "condition": "minecraft:inverted",

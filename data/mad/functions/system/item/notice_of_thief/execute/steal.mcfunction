@@ -24,6 +24,7 @@ execute as @s[predicate=mad:system/item/notice_of_thief/detect_alive_thief] at @
 execute as @s[predicate=mad:system/item/notice_of_thief/detect_dead_thief] at @s run function mad:system/item/notice_of_thief/execute/thief_is_dead
 
 ## Set scoreboard
+scoreboard players set @s StealResult 0
 scoreboard players set @s ThiefTick 0
 scoreboard players set @s ThiefSecond 5
 

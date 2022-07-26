@@ -19,7 +19,7 @@
       },
       {
         "condition": "minecraft:reference",
-        "name": "mad:system/fall/not_spectator"
+        "name": "mad:system/common/not_spectator"
       }
     ]
   }

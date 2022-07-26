@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:player/participant"
+    "name": "mad:player/alive"
   },
   {
     "condition": "minecraft:inverted",

@@ -20,10 +20,13 @@ function mad:system/game/set_game/set_world
 function mad:system/trial/set_trial/set_tags
 
 ## Set players
-function mad:system/trial/set_trial/set_players
+gamemode adventure @a[predicate=mad:player/participant]
 
 ## Set players
 function mad:system/begin/set_game/set_teams
+
+## Set players
+function mad:system/trial/set_trial/set_players
 
 ## Set scoreboards
 function mad:system/begin/set_game/add_scoreboards
