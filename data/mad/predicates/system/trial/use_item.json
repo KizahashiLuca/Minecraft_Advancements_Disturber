@@ -1,0 +1,37 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/trial/use_armor_upgrader"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/trial/use_energy_drink"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/trial/use_evoker_fangs_wand"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/trial/use_notice_of_thief"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/trial/use_return_portal"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/trial/use_tool_upgrader"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/trial/use_totem_of_undying"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/trial/use_transmitter"
+    }
+  ]
+}

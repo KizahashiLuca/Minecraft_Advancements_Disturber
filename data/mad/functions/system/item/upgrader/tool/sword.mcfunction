@@ -25,7 +25,7 @@ item replace entity @s[predicate=mad:system/item/upgrader/tool/mainhand] weapon.
 item replace entity @s[predicate=mad:system/item/upgrader/tool/offhand] weapon.offhand with minecraft:air
 
 ## Play sound
-playsound minecraft:block.anvil.destroy block @s ~ ~ ~ 1.0 1.0 1.0
+playsound minecraft:block.anvil.use block @s ~ ~ ~ 1.0 1.0 1.0
 
 ## Send message
 tellraw @s ["",{"text":"[道具改修] ツールをアップグレードしました。","color":"green","bold":false,"italic":false}]

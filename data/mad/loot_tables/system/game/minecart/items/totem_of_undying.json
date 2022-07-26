@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_MinecartItem\"]}"
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_TotemOfUndying\"]}"
             }
           ]
         }

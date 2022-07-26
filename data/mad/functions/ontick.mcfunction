@@ -19,4 +19,5 @@ execute if predicate mad:phase/begin/team_member run function mad:system/begin/t
 execute if predicate mad:phase/begin/gui run function mad:system/begin/gui/branch
 
 ## Item system
+execute if predicate mad:phase/trial run function mad:system/trial/main 
 execute if predicate mad:phase/in_game run function mad:system/item/main

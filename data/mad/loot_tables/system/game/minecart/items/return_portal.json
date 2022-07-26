@@ -27,7 +27,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_MinecartItem\"],EntityTag:{Tags:[\"MAD_MinecartItem\",\"MAD_ReturnPortal\"],CustomName:'{\"text\":\"帰還ポータル\",\"color\":\"light_purple\",\"bold\":false,\"italic\":false}',CustomNameVisible:1b}}"
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_ReturnPortal\"],EntityTag:{Tags:[\"MAD_MinecartItem\",\"MAD_ReturnPortal\"],CustomName:'{\"text\":\"帰還ポータル\",\"color\":\"light_purple\",\"bold\":false,\"italic\":false}',CustomNameVisible:1b}}"
             }
           ]
         }

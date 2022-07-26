@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Position
-function mad:system/common/set_position/main
-
 ## Transmitter
 execute as @a[predicate=mad:system/item/transmitter/use] at @s run function mad:system/item/transmitter/main
 

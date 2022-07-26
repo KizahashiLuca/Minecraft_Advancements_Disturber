@@ -8,6 +8,10 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Detect Gamemode
-execute if entity @p[predicate=mad:player/host] run function mad:system/trial/set_trial/reject
-execute unless entity @p[predicate=mad:player/host] run function mad:system/trial/set_trial/main
+## Send messages
+function mad:system/common/message/begin
+tellraw @a ["",{"text":"  個人戦のトライアルを開始します。","color":"white"}]
+function mad:system/common/message/end
+
+## Change to choose setting
+function mad:system/trial/set_trial/change_to

@@ -28,7 +28,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_MinecartItem\",\"EvokerFangsWand\"],RepairCost:2147483647}"
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_EvokerFangsWand\"],RepairCost:2147483647}"
             }
           ]
         }

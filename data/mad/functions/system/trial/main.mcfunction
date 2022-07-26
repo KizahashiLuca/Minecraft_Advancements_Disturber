@@ -8,10 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send messages
-function mad:system/common/message/begin
-tellraw @a ["",{"text":"  トライアルを開始します。","color":"white"}]
-function mad:system/common/message/end
+## Position
+function mad:system/common/set_position/main
 
-## Change to choose setting
-function mad:system/item/set_trial/change_to
+## Give item
+execute as @a[predicate=mad:system/trial/use_item] run function mad:system/trial/supply_item

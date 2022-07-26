@@ -9,18 +9,18 @@
 #####################################
 
 ## Set gamerules
-execute in minecraft:overworld run function mad:system/item/set_trial/set_gamerules
-execute in minecraft:the_nether run function mad:system/item/set_trial/set_gamerules
-execute in minecraft:the_end run function mad:system/item/set_trial/set_gamerules
+execute in minecraft:overworld run function mad:system/trial/set_trial/set_gamerules
+execute in minecraft:the_nether run function mad:system/trial/set_trial/set_gamerules
+execute in minecraft:the_end run function mad:system/trial/set_trial/set_gamerules
 
 ## Set world
 function mad:system/game/set_game/set_world
 
 ## Set tags
-function mad:system/item/set_trial/set_tags
+function mad:system/trial/set_trial/set_tags
 
 ## Set players
-function mad:system/item/set_trial/set_players
+function mad:system/trial/set_trial/set_players
 
 ## Set players
 function mad:system/begin/set_game/set_teams
@@ -34,5 +34,5 @@ function mad:system/game/set_game/set_scoreboards
 function mad:system/begin/set_game/detect_version
 
 ## Send messages
-execute if predicate mad:version/accept run function mad:system/item/set_trial/send_messages
+execute if predicate mad:version/accept run function mad:system/trial/set_trial/send_messages
 execute if predicate mad:version/error run function mad:system/finish/version_error/main
