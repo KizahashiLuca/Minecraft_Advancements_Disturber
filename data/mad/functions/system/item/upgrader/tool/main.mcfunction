@@ -11,6 +11,9 @@
 ## Scoreboard
 scoreboard players set @s UseToolUpgrader 0
 
+## Detect none
+execute as @s[predicate=mad:system/item/upgrader/tool/none] run function mad:system/item/upgrader/tool/none
+
 ## Detect axe
 execute as @s[predicate=mad:system/item/upgrader/tool/axe/main] run function mad:system/item/upgrader/tool/axe
 
@@ -25,9 +28,6 @@ execute as @s[predicate=mad:system/item/upgrader/tool/shovel/main] run function 
 
 ## Detect axe
 execute as @s[predicate=mad:system/item/upgrader/tool/sword/main] run function mad:system/item/upgrader/tool/sword
-
-## Detect none
-execute as @s[predicate=mad:system/item/upgrader/tool/none] run function mad:system/item/upgrader/tool/none
 
 ## Kill turtle
 kill @e[predicate=mad:system/item/upgrader/tool/monster_egg,sort=nearest,limit=1]

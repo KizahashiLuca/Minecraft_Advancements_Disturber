@@ -22,6 +22,9 @@ function mad:system/item/set_trial/set_tags
 ## Set players
 function mad:system/item/set_trial/set_players
 
+## Set players
+function mad:system/begin/set_game/set_teams
+
 ## Set scoreboards
 function mad:system/begin/set_game/add_scoreboards
 function mad:system/begin/set_game/set_scoreboards

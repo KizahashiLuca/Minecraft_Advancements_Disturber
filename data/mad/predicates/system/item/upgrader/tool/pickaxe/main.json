@@ -7,7 +7,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "tag": "mad:pickpickaxe"
+            "tag": "mad:pickaxe"
           }
         }
       }
@@ -18,7 +18,7 @@
       "predicate": {
         "equipment": {
           "offhand": {
-            "tag": "mad:pickpickaxe"
+            "tag": "mad:pickaxe"
           }
         }
       }

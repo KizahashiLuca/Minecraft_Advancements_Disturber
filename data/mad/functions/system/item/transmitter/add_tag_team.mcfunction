@@ -9,8 +9,8 @@
 #####################################
 
 ## Add a tag
-execute as @s[predicate=mad:player/team/a] run tag @a[predicate=mad:player/team/a] add MAD_DetectTransmitter
-execute as @s[predicate=mad:player/team/b] run tag @a[predicate=mad:player/team/b] add MAD_DetectTransmitter
-execute as @s[predicate=mad:player/team/c] run tag @a[predicate=mad:player/team/c] add MAD_DetectTransmitter
-execute as @s[predicate=mad:player/team/d] run tag @a[predicate=mad:player/team/d] add MAD_DetectTransmitter
-execute as @s[predicate=mad:player/team/e] run tag @a[predicate=mad:player/team/e] add MAD_DetectTransmitter
+execute as @s[predicate=mad:player/team/a] run tag @a[predicate=mad:player/team/a] remove MAD_DetectTransmitter
+execute as @s[predicate=mad:player/team/b] run tag @a[predicate=mad:player/team/b] remove MAD_DetectTransmitter
+execute as @s[predicate=mad:player/team/c] run tag @a[predicate=mad:player/team/c] remove MAD_DetectTransmitter
+execute as @s[predicate=mad:player/team/d] run tag @a[predicate=mad:player/team/d] remove MAD_DetectTransmitter
+execute as @s[predicate=mad:player/team/e] run tag @a[predicate=mad:player/team/e] remove MAD_DetectTransmitter

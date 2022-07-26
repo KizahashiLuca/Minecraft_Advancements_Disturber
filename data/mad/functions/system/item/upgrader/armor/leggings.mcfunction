@@ -21,4 +21,4 @@ execute as @s[predicate=mad:system/item/upgrader/armor/leggings/wear_netherite] 
 data modify entity @e[predicate=mad:system/item/upgrader/armor/leggings,sort=nearest,limit=1] Item.tag set from entity @s Inventory[{Slot:101b}].tag
 
 ## Remove armor
-item replace entity @s armor.feet with minecraft:air
+item replace entity @s armor.legs with minecraft:air
