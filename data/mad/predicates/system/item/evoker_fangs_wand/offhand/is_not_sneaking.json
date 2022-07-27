@@ -3,8 +3,8 @@
   "entity": "this",
   "predicate": {
     "equipment": {
-      "mainhand": {
-        "nbt": "{Tags:[\"MinecartItem\",\"EvokerFangsWand\"]}"
+      "offhand": {
+        "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_EvokerFangsWand\"]}"
       }
     },
     "flags": {

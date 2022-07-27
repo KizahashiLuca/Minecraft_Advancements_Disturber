@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:armor_stand",
-    "nbt": "{Tags:[\"MobileRespawnBeacon\",\"MinecartItem\"]}"
+    "nbt": "{Tags:[\"MAD_MobileRespawnBeacon\",\"MAD_MinecartItem\"]}"
   }
 }

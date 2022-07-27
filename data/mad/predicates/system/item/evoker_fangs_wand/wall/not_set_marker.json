@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:area_effect_cloud",
-    "nbt": "{Tags:[\"EvokerFangs\",\"FangsWaves\",\"NotSetPlayer\"]}"
+    "nbt": "{Tags:[\"MAD_EvokerFangs\",\"MAD_FangsWalls\",\"MAD_NotSetPlayer\"]}"
   }
 }

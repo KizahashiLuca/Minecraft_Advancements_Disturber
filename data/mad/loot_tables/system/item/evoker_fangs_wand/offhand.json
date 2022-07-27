@@ -14,12 +14,12 @@
               "entity": "this",
               "predicate": {
                 "equipment": {
-                  "mainhand": {
+                  "offhand": {
                     "durability": {
                       "min": 82,
                       "max": 2147483647
                     },
-                    "nbt": "{Tags:[\"MinecartItem\",\"EvokerFangsWand\"],RepairCost:2147483647}"
+                    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_EvokerFangsWand\"],RepairCost:2147483647}"
                   }
                 }
               }
@@ -53,12 +53,12 @@
               "entity": "this",
               "predicate": {
                 "equipment": {
-                  "mainhand": {
+                  "offhand": {
                     "durability": {
                       "min": 62,
                       "max": 81
                     },
-                    "nbt": "{Tags:[\"MinecartItem\",\"EvokerFangsWand\"],RepairCost:2147483647}"
+                    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_EvokerFangsWand\"],RepairCost:2147483647}"
                   }
                 }
               }
@@ -92,12 +92,12 @@
               "entity": "this",
               "predicate": {
                 "equipment": {
-                  "mainhand": {
+                  "offhand": {
                     "durability": {
                       "min": 42,
                       "max": 61
                     },
-                    "nbt": "{Tags:[\"MinecartItem\",\"EvokerFangsWand\"],RepairCost:2147483647}"
+                    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_EvokerFangsWand\"],RepairCost:2147483647}"
                   }
                 }
               }
@@ -131,12 +131,12 @@
               "entity": "this",
               "predicate": {
                 "equipment": {
-                  "mainhand": {
+                  "offhand": {
                     "durability": {
                       "min": 22,
                       "max": 41
                     },
-                    "nbt": "{Tags:[\"MinecartItem\",\"EvokerFangsWand\"],RepairCost:2147483647}"
+                    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_EvokerFangsWand\"],RepairCost:2147483647}"
                   }
                 }
               }
@@ -170,12 +170,12 @@
               "entity": "this",
               "predicate": {
                 "equipment": {
-                  "mainhand": {
+                  "offhand": {
                     "durability": {
                       "min": 0,
                       "max": 21
                     },
-                    "nbt": "{Tags:[\"MinecartItem\",\"EvokerFangsWand\"],RepairCost:2147483647}"
+                    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_EvokerFangsWand\"],RepairCost:2147483647}"
                   }
                 }
               }
