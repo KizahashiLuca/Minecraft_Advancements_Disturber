@@ -64,8 +64,12 @@ for AD in "${AD_NAME[@]}"; do
     if [ ! -e ${GAME_DIR}/${DIR} ]; then
       mkdir ${GAME_DIR}/${DIR}
     fi
-    mkdir ${BASE_DIR}/data/mad/functions/system/game/advancements/${DIR}/${STEM}/
-    mkdir ${BASE_DIR}/data/mad/functions/system/game/advancements/${DIR}/${STEM}/team/
+    if [ ! -e ${GAME_DIR}/${DIR}/${STEM} ]; then
+      mkdir ${GAME_DIR}/${DIR}/${STEM}
+    fi
+    if [ ! -e ${GAME_DIR}/${DIR}/${STEM}/team ]; then
+      mkdir ${GAME_DIR}/${DIR}/${STEM}/team
+    fi
     ## set value
     ADV_OBJECTIVE=AD_${DIR^}_${STEM}
     TITLE=`cat "${FILE}" | jq '.display.title.text' | sed -e "s/\"//g"`
@@ -133,15 +137,21 @@ EOF
     ## add objectives
     objectives=("${objectives[@]}" ${ADV_OBJECTIVE})
     ## remove tmp json
-    jsons=("${jsons[@]}" ${TMP})
+    jsons+=(${TMP})
     ## increment
     i=$((i+1))
   done
 done
 
 ## remove jsons
-for json in ${jsons[@]}; do
-  rm ${json}
+for AD in "${AD_NAME[@]}"; do
+  AD_DIR=${BASE_DIR}/data/${AD}/advancements/
+  cd "${AD_DIR}"
+  for json in ${jsons[@]}; do
+    if [ -e ${json} ]; then
+      rm ${json}
+    fi
+  done
 done
 
 ## show adding objectives list
@@ -176,7 +186,7 @@ EOF
 done
 
 ## show removing objectives list
-REM_SCORE=${BASE_DIR}/data/mad/functions/system/finish/reset_game/reset_scoreboards.mcfunction
+REM_SCORE=${BASE_DIR}/data/mad/functions/system/finish/reset_game/reset_advancements_scoreboards.mcfunction
 filecomment "${REM_SCORE}"
 echo "## Remove scoreboards" >> ${REM_SCORE}
 i=0
