@@ -27,6 +27,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/trade"
+    "function": "mad:system/game/advancements/adventure/trade/main"
   }
 }

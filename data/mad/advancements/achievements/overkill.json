@@ -21,7 +21,7 @@
       "conditions": {
         "damage": {
           "dealt": {
-            "min": 18.0,
+            "min": 18,
             "max": 2147483647
           },
           "type": {
@@ -41,6 +41,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/overkill"
+    "function": "mad:system/game/advancements/achievements/overkill/main"
   }
 }

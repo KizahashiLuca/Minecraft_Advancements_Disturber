@@ -33,6 +33,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/overpowered"
+    "function": "mad:system/game/advancements/achievements/overpowerd/main"
   }
 }

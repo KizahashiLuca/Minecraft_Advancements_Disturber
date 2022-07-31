@@ -24,5 +24,8 @@
     [
       "original"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/game/main"
+  }
 }

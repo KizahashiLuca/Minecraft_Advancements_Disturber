@@ -33,6 +33,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/totem_of_undying"
+    "function": "mad:system/game/advancements/adventure/totem_of_undying/main"
   }
 }

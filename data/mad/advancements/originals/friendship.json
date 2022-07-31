@@ -26,6 +26,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/originals/friendship"
+    "function": "mad:system/game/advancements/originals/friendship/main"
   }
 }

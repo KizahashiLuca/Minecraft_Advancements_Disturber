@@ -24,5 +24,8 @@
     [
       "adventure"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/adventure/main"
+  }
 }

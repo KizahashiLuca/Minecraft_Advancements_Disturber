@@ -26,6 +26,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/originals/find_minecart"
+    "function": "mad:system/game/advancements/originals/find_minecart/main"
   }
 }

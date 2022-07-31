@@ -50,6 +50,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/loot_bastion"
+    "function": "mad:system/game/advancements/nether/loot_bastion/main"
   }
 }

@@ -30,6 +30,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/enter_the_nether"
+    "function": "mad:system/game/advancements/story/enter_the_nether/main"
   }
 }

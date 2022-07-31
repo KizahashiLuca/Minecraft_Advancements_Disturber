@@ -37,6 +37,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/originals/kill_elder_guardian"
+    "function": "mad:system/game/advancements/originals/kill_elder_guardian/main"
   }
 }

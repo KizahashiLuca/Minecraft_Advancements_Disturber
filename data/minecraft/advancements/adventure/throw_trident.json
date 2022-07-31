@@ -37,6 +37,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/throw_trident"
+    "function": "mad:system/game/advancements/adventure/throw_trident/main"
   }
 }

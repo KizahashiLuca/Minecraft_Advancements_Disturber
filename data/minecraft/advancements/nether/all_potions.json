@@ -44,6 +44,6 @@
   ],
   "rewards": {
     "experience": 100,
-    "function": "mad:system/ongame/advancements/nether/all_potions"
+    "function": "mad:system/game/advancements/nether/all_potions/main"
   }
 }

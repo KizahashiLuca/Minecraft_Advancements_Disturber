@@ -198,6 +198,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/distract_piglin"
+    "function": "mad:system/game/advancements/nether/distract_piglin/main"
   }
 }

@@ -141,6 +141,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/originals/obtain_treasures"
+    "function": "mad:system/game/advancements/originals/obtain_treasures/main"
   }
 }

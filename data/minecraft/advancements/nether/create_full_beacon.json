@@ -29,6 +29,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/create_full_beacon"
+    "function": "mad:system/game/advancements/nether/create_full_beacon/main"
   }
 }

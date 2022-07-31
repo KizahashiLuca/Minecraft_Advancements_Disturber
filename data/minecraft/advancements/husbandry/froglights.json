@@ -45,6 +45,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/froglights"
+    "function": "mad:system/game/advancements/husbandry/froglights/main"
   }
 }

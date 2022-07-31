@@ -27,6 +27,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/cure_zombie_villager"
+    "function": "mad:system/game/advancements/story/cure_zombie_villager/main"
   }
 }

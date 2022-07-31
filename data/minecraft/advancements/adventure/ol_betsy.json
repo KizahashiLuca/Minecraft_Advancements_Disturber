@@ -34,6 +34,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/ol_betsy"
+    "function": "mad:system/game/advancements/adventure/ol_betsy/main"
   }
 }

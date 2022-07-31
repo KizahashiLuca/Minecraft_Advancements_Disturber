@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/obtain_ancient_debris"
+    "function": "mad:system/game/advancements/nether/obtain_ancient_debris/main"
   }
 }

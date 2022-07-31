@@ -33,6 +33,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/tadpole_in_a_bucket"
+    "function": "mad:system/game/advancements/husbandry/tadpole_in_a_bucket/main"
   }
 }

@@ -27,6 +27,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/enchant_item"
+    "function": "mad:system/game/advancements/story/enchant_item/main"
   }
 }

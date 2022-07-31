@@ -63,6 +63,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/originals/obtain_materials"
+    "function": "mad:system/game/advancements/originals/obtain_materials/main"
   }
 }

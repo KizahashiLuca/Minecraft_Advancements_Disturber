@@ -42,6 +42,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/diamonds_to_you"
+    "function": "mad:system/game/advancements/achievements/diamonds_to_you/main"
   }
 }

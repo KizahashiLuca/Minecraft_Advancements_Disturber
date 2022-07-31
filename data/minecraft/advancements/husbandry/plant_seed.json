@@ -57,6 +57,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/plant_seed"
+    "function": "mad:system/game/advancements/husbandry/plant_seed/main"
   }
 }

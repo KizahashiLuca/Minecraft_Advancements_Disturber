@@ -39,6 +39,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/originals/find_monument"
+    "function": "mad:system/game/advancements/originals/find_monument/main"
   }
 }

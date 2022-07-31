@@ -29,6 +29,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/root"
+    "function": "mad:system/game/advancements/nether/root/main"
   }
 }

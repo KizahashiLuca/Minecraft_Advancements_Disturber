@@ -19,7 +19,7 @@
     "kill_cow": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items":[
+        "items": [
           {
             "items": [
               "minecraft:leather"
@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/kill_cow"
+    "function": "mad:system/game/advancements/achievements/kill_cow/main"
   }
 }

@@ -24,9 +24,9 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "RailDistance":{
-                "min":100000,
-                "max":2147483647
+              "RailDistance": {
+                "min": 100000,
+                "max": 2147483647
               }
             }
           }
@@ -40,6 +40,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/on_a_rail"
+    "function": "mad:system/game/advancements/achievements/on_a_rail/main"
   }
 }

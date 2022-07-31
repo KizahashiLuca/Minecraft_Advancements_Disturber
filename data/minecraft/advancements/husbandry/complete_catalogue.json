@@ -241,6 +241,6 @@
   ],
   "rewards": {
     "experience": 50,
-    "function": "mad:system/ongame/advancements/husbandry/complete_catalogue"
+    "function": "mad:system/game/advancements/husbandry/complete_catalogue/main"
   }
 }

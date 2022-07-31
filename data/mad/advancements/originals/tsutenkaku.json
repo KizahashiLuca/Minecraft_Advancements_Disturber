@@ -38,6 +38,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/originals/tsutenkaku"
+    "function": "mad:system/game/advancements/originals/tsutenkaku/main"
   }
 }

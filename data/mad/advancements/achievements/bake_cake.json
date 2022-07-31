@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/bake_cake"
+    "function": "mad:system/game/advancements/achievements/bake_cake/main"
   }
 }

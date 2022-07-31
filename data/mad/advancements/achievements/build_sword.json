@@ -19,7 +19,7 @@
     "build_sword": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items":[
+        "items": [
           {
             "tag": "mad:sword"
           }
@@ -33,6 +33,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/build_sword"
+    "function": "mad:system/game/advancements/achievements/build_sword/main"
   }
 }

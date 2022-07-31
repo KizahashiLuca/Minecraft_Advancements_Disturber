@@ -66,6 +66,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/tactical_fishing"
+    "function": "mad:system/game/advancements/husbandry/tactical_fishing/main"
   }
 }

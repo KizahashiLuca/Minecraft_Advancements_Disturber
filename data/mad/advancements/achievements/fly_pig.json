@@ -31,7 +31,7 @@
           },
           {
             "condition": "minecraft:entity_scores",
-            "scores":{
+            "scores": {
               "FallDistance": {
                 "min": 5,
                 "max": 256
@@ -49,6 +49,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/fly_pig"
+    "function": "mad:system/game/advancements/achievements/fly_pig/main"
   }
 }

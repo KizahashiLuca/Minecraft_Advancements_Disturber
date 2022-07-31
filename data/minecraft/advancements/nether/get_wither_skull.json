@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/get_wither_skull"
+    "function": "mad:system/game/advancements/nether/get_wither_skull/main"
   }
 }

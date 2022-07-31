@@ -27,6 +27,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/breed_an_animal"
+    "function": "mad:system/game/advancements/husbandry/breed_an_animal/main"
   }
 }

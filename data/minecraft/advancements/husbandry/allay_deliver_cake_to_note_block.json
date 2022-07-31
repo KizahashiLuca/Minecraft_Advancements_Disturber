@@ -40,6 +40,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/allay_deliver_cake_to_note_block"
+    "function": "mad:system/game/advancements/husbandry/allay_deliver_cake_to_note_block/main"
   }
 }

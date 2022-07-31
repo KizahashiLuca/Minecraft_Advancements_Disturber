@@ -58,6 +58,6 @@
   ],
   "rewards": {
     "experience": 1000,
-    "function": "mad:system/ongame/advancements/nether/all_effects"
+    "function": "mad:system/game/advancements/nether/all_effects/main"
   }
 }

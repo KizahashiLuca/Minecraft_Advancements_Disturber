@@ -24,5 +24,8 @@
     [
       "collect"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/collect/main"
+  }
 }

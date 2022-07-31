@@ -37,6 +37,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/summon_iron_golem"
+    "function": "mad:system/game/advancements/adventure/summon_iron_golem/main"
   }
 }
