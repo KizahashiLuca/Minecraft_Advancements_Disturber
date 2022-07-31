@@ -24,3 +24,4 @@ function mad:system/game/set_game/set_players
 
 ## Set scoreboards
 function mad:system/game/set_game/set_scoreboards
+function mad:system/begin/set_game/set_advancements_scoreboards

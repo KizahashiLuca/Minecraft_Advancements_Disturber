@@ -30,6 +30,7 @@ function mad:system/finish/reset_game/remove_bossbars
 
 ## Remove scoreboards
 function mad:system/finish/reset_game/reset_scoreboards
+function mad:system/finish/reset_game/reset_advancements_scoreboards
 
 ## Change gamemode
 gamemode adventure @a

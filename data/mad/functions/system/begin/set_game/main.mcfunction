@@ -30,6 +30,7 @@ function mad:system/finish/reset_game/remove_bossbars
 
 ## Remove scoreboards
 function mad:system/finish/reset_game/reset_scoreboards
+function mad:system/finish/reset_game/reset_advancements_scoreboards
 
 ## Set gamerules
 execute in minecraft:overworld run function mad:system/begin/set_game/set_gamerules
@@ -51,6 +52,8 @@ function mad:system/begin/set_game/set_teams
 ## Add scoreboards
 function mad:system/begin/set_game/add_scoreboards
 function mad:system/begin/set_game/set_scoreboards
+function mad:system/begin/set_game/add_advancements_scoreboards
+function mad:system/begin/set_game/set_advancements_scoreboards
 
 ## Set random seed
 function mad:system/common/randomizer/initialize
