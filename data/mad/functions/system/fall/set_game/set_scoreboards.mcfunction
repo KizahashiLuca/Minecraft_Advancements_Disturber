@@ -49,6 +49,7 @@ scoreboard players set #mad GeneralTick 0
 scoreboard players set @a ParticipantNumber 0
 scoreboard players set @a NumOfParticipants 0
 scoreboard players set @a NumAlive 0
+scoreboard players set #mad NumDead 0
 scoreboard players set @a NumDead 0
 #### onground
 scoreboard players set @a OnGround 0

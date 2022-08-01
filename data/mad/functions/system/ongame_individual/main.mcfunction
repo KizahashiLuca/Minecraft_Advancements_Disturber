@@ -8,12 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Detect kill
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={KillTemp=1..}] at @s run function mad:system/ongame_individual/detect_kill
-
-## Time over
-kill @a[predicate=mad:ongame/player/participant_alive,scores={Second=..0}]
-
 ## Teleport player
 execute as @a[scores={TeleportMinecart=1..}] run function mad:system/ongame/teleport_player/minecart
 execute as @a[scores={TeleportCenter=1..}] run function mad:system/ongame/teleport_player/center_of_world

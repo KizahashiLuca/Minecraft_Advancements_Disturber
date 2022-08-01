@@ -12,6 +12,9 @@
 function mad:system/game/timer/individual/tick
 function mad:system/game/timer/individual/general/tick
 
+## Detect kill (Move time)
+execute as @a[predicate=mad:player/killer] at @s run function mad:system/game/detect_kill/individual
+
 ## Detect death
 execute as @a[predicate=mad:player/dying] run function mad:system/game/detect_death/individual
 

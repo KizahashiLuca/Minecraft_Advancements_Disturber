@@ -28,8 +28,8 @@ scoreboard players set @a ParticipantNumber 0
 scoreboard players set @a NumOfParticipants 0
 scoreboard players set @a NumAlive 0
 execute if predicate mad:gamerules/match_mode/team run scoreboard players operation #mad NumAlive = #mad NumberOfTeams
-scoreboard players set @a NumDead 0
 scoreboard players set #mad NumDead 0
+scoreboard players set @a NumDead 0
 #### time limit
 scoreboard players set @a GetTimeLimit 0
 #### advancements

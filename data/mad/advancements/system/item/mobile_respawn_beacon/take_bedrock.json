@@ -21,9 +21,11 @@
     }
   },
   "requirements": [
-    ["take_bedrock"]
+    [
+      "take_bedrock"
+    ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/mobile_respawn_beacon/give_mobile_beacon"
+    "function": "mad:system/item/mobile_respawn_beacon/give_mobile_beacon"
   }
 }

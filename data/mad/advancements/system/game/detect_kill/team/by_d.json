@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "be_hit_by_team_d": {
+    "by_d": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
         "entity": {
@@ -10,9 +10,11 @@
     }
   },
   "requirements": [
-    ["be_hit_by_team_d"]
+    [
+      "by_d"
+    ]
   ],
   "rewards": {
-    "function": "mad:system/ongame_team/move_time/team_d"
+    "function": "mad:system/game/detect_kill/team/by_d"
   }
 }

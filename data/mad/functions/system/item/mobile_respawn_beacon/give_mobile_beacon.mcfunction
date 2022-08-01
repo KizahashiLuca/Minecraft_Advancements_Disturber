@@ -9,7 +9,7 @@
 #####################################
 
 ## Reset advancements
-advancement revoke @s only mad:system/ongame_team/take_bedrock
+advancement revoke @s only mad:system/item/mobile_respawn_beacon/take_bedrock
 
 ## Clear inventory
 clear @s minecraft:bedrock 1

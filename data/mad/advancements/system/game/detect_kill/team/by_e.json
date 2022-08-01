@@ -1,18 +1,20 @@
 {
   "criteria": {
-    "be_hit_by_team_b": {
+    "by_e": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
         "entity": {
-          "team": "TeamB"
+          "team": "TeamE"
         }
       }
     }
   },
   "requirements": [
-    ["be_hit_by_team_b"]
+    [
+      "by_e"
+    ]
   ],
   "rewards": {
-    "function": "mad:system/ongame_team/move_time/team_b"
+    "function": "mad:system/game/detect_kill/team/by_e"
   }
 }
