@@ -25,6 +25,7 @@ scoreboard objectives remove 2
 scoreboard objectives remove Second
 scoreboard objectives remove Tick
 scoreboard objectives remove GeneralSecond
+scoreboard objectives remove GeneralTick
 scoreboard objectives remove SecondPerSurvive
 #### participants
 scoreboard objectives remove ParticipantNumber

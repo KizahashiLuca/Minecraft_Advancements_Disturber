@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:player/dead/dead"
+    "name": "mad:player/dead"
   },
   {
     "condition": "minecraft:entity_properties",

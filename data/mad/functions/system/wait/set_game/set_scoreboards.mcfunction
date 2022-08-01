@@ -48,6 +48,8 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboar
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players set #mad_team_d Tick 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e Tick 0
 scoreboard players set @a GeneralSecond 0
+scoreboard players set #mad GeneralSecond 0
+scoreboard players set #mad GeneralTick 0
 #### participants
 scoreboard players set @a ParticipantNumber 0
 scoreboard players set @a NumOfParticipants 0

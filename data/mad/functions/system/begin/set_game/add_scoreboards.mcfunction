@@ -25,6 +25,7 @@ scoreboard objectives add 2 dummy
 scoreboard objectives add Second dummy
 scoreboard objectives add Tick dummy
 scoreboard objectives add GeneralSecond dummy
+scoreboard objectives add GeneralTick dummy
 scoreboard objectives add SecondPerSurvive dummy
 #### participants
 scoreboard objectives add ParticipantNumber dummy

@@ -114,6 +114,8 @@ scoreboard players enable @a ExitMessage
 scoreboard players set @a Second 0
 scoreboard players set @a Tick 0
 scoreboard players set @a GeneralSecond 0
+scoreboard players set #mad GeneralSecond 0
+scoreboard players set #mad GeneralTick 0
 scoreboard players set @a SecondPerSurvive 0
 #### participants
 scoreboard players set @a ParticipantNumber 0

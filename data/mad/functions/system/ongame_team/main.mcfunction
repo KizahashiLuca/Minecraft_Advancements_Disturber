@@ -8,18 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Process timer system
-function mad:system/time_team/time
-function mad:system/time_team/general_time
-
-## Detect death
-execute as @a[predicate=mad:ongame/player/participant_dying] run function mad:system/ongame_team/detect_death
-
 ## Set scoreboard
 scoreboard players set @a[tag=Leader] NumOfTeamPlayer 0
-
-## Detect time over
-execute as @a[tag=Participant,tag=Leader,scores={Second=..0}] run function mad:system/ongame_team/detect_time_over
 
 ## Team function
 execute if score #mad NumberOfTeams matches 1.. if score #mad DeadTeamA matches 0 run function mad:system/ongame_team/team_function/team_a
@@ -37,28 +27,6 @@ execute as @a[predicate=mad:ongame/player/participant_dead,scores={TeleportMinec
 execute as @a[predicate=mad:ongame/player/not_participant,scores={TeleportMinecart=1..}] run function mad:system/ongame/teleport_player/minecart
 execute as @a[predicate=mad:ongame/player/participant_dead,scores={TeleportCenter=1..}] run function mad:system/ongame/teleport_player/center_of_world
 execute as @a[predicate=mad:ongame/player/not_participant,scores={TeleportCenter=1..}] run function mad:system/ongame/teleport_player/center_of_world
-
-## Detect transmitter
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseTransmitter=1..}] at @s run function mad:system/ongame/transmitter/main
-
-## Detect armor upgrader
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseArmorUpgrader=1..}] at @s run function mad:system/ongame/armor_upgrader/main
-
-## Detect tool upgrader
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseToolUpgrader=1..}] at @s run function mad:system/ongame/tool_upgrader/main
-
-## Detect emergency_call
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseEmergencyCall=1..}] at @s run function mad:system/ongame/emergency_call/main
-
-## Detect notice_of_thief
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseNoticeOfThief=1..}] at @s run function mad:system/ongame/notice_of_thief/main
-execute as @a[tag=SetThief] run function mad:system/ongame/notice_of_thief/time/tick
-
-## Detect evoker_fangs_wand
-execute as @a[predicate=mad:ongame/player/participant_alive,scores={UseFungusStick=1..}] at @s run function mad:system/ongame/evoker_fangs_wand/main
-
-## Detect return portal
-execute as @e[predicate=mad:ongame/return_portal] at @s run function mad:system/ongame/return_portal/main
 
 ## Detect respawn beacon
 execute as @e[predicate=mad:ongame/respawn_beacon/structure] at @s run function mad:system/ongame/respawn_beacon/main

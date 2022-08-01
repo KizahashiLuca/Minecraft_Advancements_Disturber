@@ -16,7 +16,7 @@ data modify entity @s CustomName set from block ~ ~ ~ CustomName
 
 ## Detect respawn banner set
 scoreboard players set #mad CompareNames 1
-execute as @a[predicate=mad:player/dead/dead] run function mad:system/common/respawn_beacon/detect_banner_sets
+execute as @a[predicate=mad:player/dead] run function mad:system/common/respawn_beacon/detect_banner_sets
 
 ## Detect team player exist
 scoreboard players set #mad DetectTeamExists 1
