@@ -16,3 +16,7 @@ scoreboard players operation @s TimeLimit += @p[predicate=mad:player/dying,sort=
 scoreboard players operation @s GetTimeLimit += @p[predicate=mad:player/dying,sort=nearest] SecondPerSurvive
 scoreboard players operation @s Kill += @s KillTemp
 scoreboard players set @s KillTemp 0
+
+## Send messages
+tellraw @s ["",{"translate":"[時間移動]  %s から %s%s 奪いました。","with":[{"selector":"@p[predicate=mad:player/dying,sort=nearest]","bold":true},{"score":{"name":"@p[predicate=mad:player/dying,sort=nearest]","objective":"SecondPerSurvive"},"bold":true},{"text":"秒","bold":true}],"color":"green","bold":false,"italic":false}]
+tellraw @p[predicate=mad:player/dying,sort=nearest] ["",{"translate":"%s に殺害されました。","with":[{"selector":"@s"}],"color":"white","bold":false,"italic":false}]

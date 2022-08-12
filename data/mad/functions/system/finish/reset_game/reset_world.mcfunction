@@ -9,7 +9,7 @@
 #####################################
 
 ## Teleport
-tp @a @p[predicate=mad:ongame/player/participant_alive,sort=random]
+execute if entity @p[predicate=mad:player/alive] run tp @a @p[predicate=mad:player/alive,sort=random]
 
 ## Reset difficulty
 difficulty peaceful

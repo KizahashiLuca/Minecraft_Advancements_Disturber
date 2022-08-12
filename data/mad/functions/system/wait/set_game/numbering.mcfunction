@@ -10,7 +10,7 @@
 
 ## Number the players
 scoreboard players operation @p[predicate=mad:system/wait/set_game/not_numbered,sort=random] ParticipantNumber = #mad ParticipantNumber
-tag @a[predicate=mad:system/wait/set_game/add_number] add MAD_Numbered
+execute as @a[predicate=mad:system/wait/set_game/not_numbered] if score @s ParticipantNumber = #mad ParticipantNumber run tag @s add MAD_Numbered
 
 ## Loop
 scoreboard players add #mad ParticipantNumber 1

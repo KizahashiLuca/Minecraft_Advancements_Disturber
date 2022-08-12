@@ -12,7 +12,7 @@
 tag @s add MAD_DetectTeleportee
 
 ## Teleport
-tp @s @e[predicate=mad:system/fall/teleport/teleporter,limit=1]
+execute as @e[predicate=mad:system/fall/teleport/teleporter,limit=1] if score @s ParticipantNumber = @p[predicate=mad:system/fall/teleport/detect_teleportee] ParticipantNumber at @s run tp @p[predicate=mad:system/fall/teleport/detect_teleportee] ~ ~ ~
 
 ## Remove a tag
 tag @p[predicate=mad:system/fall/teleport/detect_teleportee] remove MAD_DetectTeleportee

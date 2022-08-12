@@ -4,14 +4,7 @@
     "name": "mad:phase/begin/team_member"
   },
   {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:reference",
-      "name": "mad:player/host"
-    }
-  },
-  {
     "condition": "minecraft:reference",
-    "name": "mad:player/not_participant"
+    "name": "mad:player/not_participant_not_spectator"
   }
 ]

@@ -4,49 +4,7 @@
     "name": "mad:phase/begin/gui"
   },
   {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:reference",
-      "name": "mad:player/host"
-    }
-  },
-  {
-    "condition": "minecraft:alternative",
-    "terms": [
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "player": {
-            "gamemode": "spectator"
-          },
-          "nbt": "{Tags:[\"MAD_Participant\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:inverted",
-        "term": {
-          "condition": "minecraft:alternative",
-          "terms": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "nbt": "{Tags:[\"MAD_Participant\"]}"
-              }
-            },
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "player": {
-                  "gamemode": "spectator"
-                }
-              }
-            }
-          ]
-        }
-      }
-    ]
+    "condition": "minecraft:reference",
+    "name": "mad:player/not_participant_not_spectator"
   }
 ]
