@@ -12,30 +12,30 @@
 bossbar remove minecraft:bossbar
 
 ## Remove bossbar for team
-bossbar remove minecraft:bossbar/team/a
-bossbar remove minecraft:bossbar/team/b
-bossbar remove minecraft:bossbar/team/c
-bossbar remove minecraft:bossbar/team/d
-bossbar remove minecraft:bossbar/team/e
+bossbar remove minecraft:bossbar_team_a
+bossbar remove minecraft:bossbar_team_b
+bossbar remove minecraft:bossbar_team_c
+bossbar remove minecraft:bossbar_team_d
+bossbar remove minecraft:bossbar_team_e
 
 ## Remove bossbar for individual
-bossbar remove minecraft:bossbar/individual/01
-bossbar remove minecraft:bossbar/individual/02
-bossbar remove minecraft:bossbar/individual/03
-bossbar remove minecraft:bossbar/individual/04
-bossbar remove minecraft:bossbar/individual/05
-bossbar remove minecraft:bossbar/individual/06
-bossbar remove minecraft:bossbar/individual/07
-bossbar remove minecraft:bossbar/individual/08
-bossbar remove minecraft:bossbar/individual/09
-bossbar remove minecraft:bossbar/individual/10
-bossbar remove minecraft:bossbar/individual/11
-bossbar remove minecraft:bossbar/individual/12
-bossbar remove minecraft:bossbar/individual/13
-bossbar remove minecraft:bossbar/individual/14
-bossbar remove minecraft:bossbar/individual/15
-bossbar remove minecraft:bossbar/individual/16
-bossbar remove minecraft:bossbar/individual/17
-bossbar remove minecraft:bossbar/individual/18
-bossbar remove minecraft:bossbar/individual/19
-bossbar remove minecraft:bossbar/individual/20
+bossbar remove minecraft:bossbar_individual_01
+bossbar remove minecraft:bossbar_individual_02
+bossbar remove minecraft:bossbar_individual_03
+bossbar remove minecraft:bossbar_individual_04
+bossbar remove minecraft:bossbar_individual_05
+bossbar remove minecraft:bossbar_individual_06
+bossbar remove minecraft:bossbar_individual_07
+bossbar remove minecraft:bossbar_individual_08
+bossbar remove minecraft:bossbar_individual_09
+bossbar remove minecraft:bossbar_individual_10
+bossbar remove minecraft:bossbar_individual_11
+bossbar remove minecraft:bossbar_individual_12
+bossbar remove minecraft:bossbar_individual_13
+bossbar remove minecraft:bossbar_individual_14
+bossbar remove minecraft:bossbar_individual_15
+bossbar remove minecraft:bossbar_individual_16
+bossbar remove minecraft:bossbar_individual_17
+bossbar remove minecraft:bossbar_individual_18
+bossbar remove minecraft:bossbar_individual_19
+bossbar remove minecraft:bossbar_individual_20

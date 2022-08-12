@@ -21,6 +21,7 @@ scoreboard objectives remove TeleportMinecart
 scoreboard objectives remove TeleportCenter
 scoreboard objectives remove ExitMessage
 #### timer
+scoreboard objectives remove -1
 scoreboard objectives remove 2
 scoreboard objectives remove Second
 scoreboard objectives remove Tick
@@ -115,9 +116,6 @@ scoreboard objectives remove BreakSpawner
 #### summons minecart
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon
-scoreboard objectives remove SecondEliminate
-scoreboard objectives remove SummonInterval
-scoreboard objectives remove SummonMinecart
 scoreboard objectives remove GetMinecartCount
 scoreboard objectives remove HasLootTable
 #### transmitter

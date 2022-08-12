@@ -12,5 +12,8 @@
 title @a title ["",{"text":"ゲームスタート","color":"red","bold":false,"italic":false}]
 title @a times 20 80 20
 
+## Send messages
+tellraw @a ["",{"text":"[試合開始] 進捗がリセットされました。","color":"green","bold":false,"italic":false}]
+
 ## Change to start
 function mad:system/game/change_to

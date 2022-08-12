@@ -1,22 +1,16 @@
-[
-  {
-    "condition": "minecraft:reference",
-    "name": "mad:gamerules/match_mode/team"
-  },
-  {
-    "condition": "minecraft:value_check",
-    "value": {
-      "type": "minecraft:score",
-      "target": {
-        "type": "minecraft:fixed",
-        "name": "#mad"
-      },
-      "score": "NumberOfMinecarts",
-      "scale": 1
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#mad"
     },
-    "range": {
-      "min": 1,
-      "max": 2147483647
-    }
+    "score": "NumberOfMinecarts",
+    "scale": 1
+  },
+  "range": {
+    "min": 1,
+    "max": 2147483647
   }
-]
+}

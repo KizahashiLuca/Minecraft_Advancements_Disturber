@@ -9,7 +9,7 @@
 #####################################
 
 ## Detect landing
-execute as @e[predicate=mad:marker/minecart/where_summon_minecart,sort=nearest,limit=1] run function mad:system/game/minecart/detect_minecart_landed
+execute as @e[predicate=mad:marker/minecart/summoned_minecart,sort=nearest,limit=1] run function mad:system/game/minecart/detect_minecart_landed
 
 ## Detect minecart
 execute store success score @s HasLootTable run data get entity @s LootTable

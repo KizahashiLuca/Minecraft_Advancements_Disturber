@@ -17,6 +17,7 @@ scoreboard players set #mad PrevPhase 0
 scoreboard players set #mad Difficulty 0
 scoreboard players set #mad ExitMessage 0
 #### timer
+scoreboard players set #mad -1 -1
 scoreboard players set #mad 2 2
 #### participants
 scoreboard players set #mad ParticipantNumber 0
@@ -86,9 +87,6 @@ scoreboard players set #mad WaitTime 30
 #### summons minecart
 scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 300
-scoreboard players set #mad SecondEliminate 0
-scoreboard players set #mad SummonInterval 300
-scoreboard players set #mad SummonMinecart 0
 #### team
 scoreboard players set #mad TeamMemberNotExist 0
 #### respawn beacon

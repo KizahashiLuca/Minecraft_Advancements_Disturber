@@ -23,12 +23,12 @@ execute if predicate mad:system/game/advancements/execute/part_b run function ma
 execute if predicate mad:system/game/advancements/execute/part_c run function mad:system/game/advancements/execute/achievements
 
 ## Minecart system
-execute as @e[predicate=mad:system/game/minecart/summon] at @s run function mad:system/game/minecart/summon_minecart
+execute as @e[predicate=mad:system/game/minecart/summon] if score @s SecondSummon = #mad Second at @s run function mad:system/game/minecart/summon_minecart
 execute as @e[predicate=mad:minecart/not_on_ground] at @s run function mad:system/game/minecart/not_on_ground
 execute as @e[predicate=mad:minecart/on_ground] at @s run function mad:system/game/minecart/on_ground
 
 ## Teleport system
-execute as @a[predicate=mad:system/game/teleport/main] run function mad:system/game/teleport/main
+execute as @a[predicate=mad:system/common/teleport/main] run function mad:system/common/teleport/main
 
 ## Branch team / individual
 execute if predicate mad:gamerules/match_mode/team run function mad:system/game/team

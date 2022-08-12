@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:marker/minecart/where_summon_minecart"
+    "name": "mad:phase/game"
   },
   {
     "condition": "minecraft:value_check",
@@ -11,12 +11,12 @@
         "type": "minecraft:fixed",
         "name": "#mad"
       },
-      "score": "Tick",
+      "score": "Second",
       "scale": 1
     },
     "range": {
-      "min": 0,
-      "max": 0
+      "min": -2147483648,
+      "max": -1
     }
   }
 ]

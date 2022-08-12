@@ -8,9 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Set scoreboard
-scoreboard players set @s TeleportCenter 0
-scoreboard players enable @s TeleportCenter
+## Teleport to minecart
+execute as @s[predicate=mad:system/common/teleport/minecart] run function mad:system/common/teleport/minecart
 
-## Teleport to center of world
-execute at @e[predicate=mad:marker/world_spawn,limit=1] run tp @s[predicate=mad:system/game/teleport/player] ~ ~ ~
+## Teleport to center
+execute as @s[predicate=mad:system/common/teleport/center] run function mad:system/common/teleport/center

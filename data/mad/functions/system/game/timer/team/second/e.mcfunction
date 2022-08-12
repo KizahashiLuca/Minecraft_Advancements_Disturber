@@ -15,6 +15,6 @@ scoreboard players remove #mad_team_e Second 1
 execute if predicate mad:system/game/timer/team/second/lt_zero/e run kill @a[predicate=mad:player/alive/e]
 
 ## Bossbar
-execute store result bossbar minecraft:bossbar/team/e max run scoreboard players get #mad_team_e TimeLimit
-execute store result bossbar minecraft:bossbar/team/e value run scoreboard players get #mad_team_e Second
-bossbar set minecraft:bossbar/team/e name ["",{"translate":"%s - 生存時間 残り %s 秒","with":[{"text":"紫チーム","color":"dark_purple","bold":true},{"score":{"name":"#mad_team_e","objective":"Second"},"color":"green","bold":true}],"color":"white","bold":false,"italic":false}]
+execute store result bossbar minecraft:bossbar_team_e max run scoreboard players get #mad_team_e TimeLimit
+execute store result bossbar minecraft:bossbar_team_e value run scoreboard players get #mad_team_e Second
+bossbar set minecraft:bossbar_team_e name ["",{"translate":"%s - 生存時間 残り %s 秒","with":[{"text":"紫チーム","color":"dark_purple","bold":true},{"score":{"name":"#mad_team_e","objective":"Second"},"color":"green","bold":true}],"color":"white","bold":false,"italic":false}]

@@ -21,6 +21,7 @@ scoreboard objectives add TeleportMinecart trigger
 scoreboard objectives add TeleportCenter trigger
 scoreboard objectives add ExitMessage trigger
 #### timer
+scoreboard objectives add -1 dummy
 scoreboard objectives add 2 dummy
 scoreboard objectives add Second dummy
 scoreboard objectives add Tick dummy
@@ -115,9 +116,6 @@ scoreboard objectives add RailDistance minecraft.custom:minecraft.minecart_one_c
 #### summons minecart
 scoreboard objectives add 300 dummy
 scoreboard objectives add SecondSummon dummy
-scoreboard objectives add SecondEliminate dummy
-scoreboard objectives add SummonInterval dummy
-scoreboard objectives add SummonMinecart dummy
 scoreboard objectives add GetMinecartCount dummy
 scoreboard objectives add HasLootTable dummy
 #### transmitter

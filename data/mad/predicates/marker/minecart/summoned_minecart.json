@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:marker",
-    "nbt": "{Tags:[\"MAD_WorldCorner\"]}"
+    "nbt": "{Tags:[\"MAD_WhereSummonMinecart\",\"MAD_SummonedMinecart\"]}"
   }
 }

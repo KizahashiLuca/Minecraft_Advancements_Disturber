@@ -37,14 +37,11 @@ execute in minecraft:overworld run function mad:system/begin/set_game/set_gameru
 execute in minecraft:the_nether run function mad:system/begin/set_game/set_gamerules
 execute in minecraft:the_end run function mad:system/begin/set_game/set_gamerules
 
-## Set world
-function mad:system/begin/set_game/set_world
+## Set tags
+function mad:system/begin/set_game/set_tags
 
 ## Set players
 function mad:system/begin/set_game/set_players
-
-## Set tags
-function mad:system/begin/set_game/set_tags
 
 ## Set teams
 function mad:system/begin/set_game/set_teams
@@ -54,6 +51,9 @@ function mad:system/begin/set_game/add_scoreboards
 function mad:system/begin/set_game/set_scoreboards
 function mad:system/begin/set_game/add_advancements_scoreboards
 function mad:system/begin/set_game/set_advancements_scoreboards
+
+## Set world
+function mad:system/begin/set_game/set_world
 
 ## Set bossbars
 function mad:system/begin/set_game/set_bossbars

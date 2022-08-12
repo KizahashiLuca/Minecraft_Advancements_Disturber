@@ -9,8 +9,8 @@
 #####################################
 
 ## Set bossbar players
-bossbar set minecraft:bossbar/team/a players @a[predicate=mad:player/team/a]
-bossbar set minecraft:bossbar/team/b players @a[predicate=mad:player/team/b]
-bossbar set minecraft:bossbar/team/c players @a[predicate=mad:player/team/c]
-bossbar set minecraft:bossbar/team/d players @a[predicate=mad:player/team/d]
-bossbar set minecraft:bossbar/team/e players @a[predicate=mad:player/team/e]
+bossbar set minecraft:bossbar_team_a players @a[predicate=mad:player/team/a]
+bossbar set minecraft:bossbar_team_b players @a[predicate=mad:player/team/b]
+bossbar set minecraft:bossbar_team_c players @a[predicate=mad:player/team/c]
+bossbar set minecraft:bossbar_team_d players @a[predicate=mad:player/team/d]
+bossbar set minecraft:bossbar_team_e players @a[predicate=mad:player/team/e]
