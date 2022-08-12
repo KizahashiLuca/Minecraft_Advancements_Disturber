@@ -20,6 +20,9 @@ time set noon
 ## Reset weather
 weather clear
 
+## Reset respawn beacon
+execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/structure] at @s run setblock ~ ~-2 ~ minecraft:obsidian
+
 ## Kill entities
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]

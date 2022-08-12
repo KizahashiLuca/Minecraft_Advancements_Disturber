@@ -8,10 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Reset bossbar
-bossbar set minecraft:bossbar name ["",{"text":"ゲームフェーズ","color":"white","bold":false,"italic":false}]
-bossbar set minecraft:bossbar players @a[predicate=mad:player/not_participant]
-
 ## Set bossbar players
 execute if predicate mad:gamerules/num_of_participants/ge_1 run function mad:system/game/set_game/set_bossbars/individual/part_a
 execute if predicate mad:gamerules/num_of_participants/ge_6 run function mad:system/game/set_game/set_bossbars/individual/part_b

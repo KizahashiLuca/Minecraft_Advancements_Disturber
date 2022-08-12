@@ -28,4 +28,4 @@ execute if predicate mad:system/wait/set_respawn_beacons/part_c run function mad
 execute if predicate mad:system/wait/set_respawn_beacons/part_d run function mad:system/wait/set_respawn_beacons/part_d
 
 ## Align respawn beacon
-execute as @e[predicate=mad:marker/respawn_beacon/position] at @s align x align z run tp @s ~0.5 ~ ~0.5
+execute as @e[predicate=mad:marker/respawn_beacon/position] at @s align xz run tp @s ~0.5 ~ ~0.5

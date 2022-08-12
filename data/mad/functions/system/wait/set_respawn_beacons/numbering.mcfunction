@@ -9,8 +9,8 @@
 #####################################
 
 ## Number the players
-scoreboard players operation @e[predicate=mad:system/wait/set_respawn_beacons/not_numbered,sort=random] BeaconNumber = #mad BeaconNumber
-tag @a[predicate=mad:system/wait/set_respawn_beacons/add_number] add MAD_Numbered
+scoreboard players operation @e[predicate=mad:system/wait/set_respawn_beacons/not_numbered,sort=random,limit=1] BeaconNumber = #mad BeaconNumber
+execute as @e[predicate=mad:system/wait/set_respawn_beacons/not_numbered] if score @s BeaconNumber = #mad BeaconNumber run tag @s add MAD_Numbered
 
 ## Loop
 scoreboard players add #mad BeaconNumber 1
