@@ -29,6 +29,10 @@ setblock ~ ~ ~ minecraft:air replace
 ## Reset data 
 data modify entity @s CustomName set value '{"text":"リスポーンビーコン"}'
 
+## Reset mobile respawn beacon
+execute as @s[predicate=mad:area_effect_cloud/mobile_respawn_beacon/structure] run fill ~-1 ~-1 ~-1 ~1 ~0 ~1 minecraft:air replace
+kill @s[predicate=mad:area_effect_cloud/mobile_respawn_beacon/structure]
+
 ## Remove a tag
 tag @s remove MAD_SetRespawnBanner
 tag @s remove MAD_DetectRespawnBanner

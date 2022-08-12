@@ -31,7 +31,7 @@ execute as @s[predicate=mad:marker/respawn_beacon/center_of_world_position] at @
 execute as @s[predicate=mad:marker/respawn_beacon/center_of_world_position] at @s run tp @a ~ ~4 ~
 
 ## Summon cloud
-summon minecraft:area_effect_cloud ~0.0 ~1.0 ~0.0 {Tags:["MAD_RespawnBeacon"],NoGravity:1b,Invulnerable:1b,Particle:"block air",Radius:0.01f,CustomName:'{"text":"リスポーンビーコン"}',CustomNameVisible:1b,Duration:2147483647}
+summon minecraft:area_effect_cloud ~0.0 ~1.0 ~0.0 {Tags:["MAD_RespawnBeacon"],NoGravity:1b,Invulnerable:1b,Particle:"minecraft:block minecraft:air",Radius:0.01f,CustomName:'{"text":"リスポーンビーコン"}',CustomNameVisible:1b,Duration:2147483647}
 scoreboard players operation @e[predicate=mad:area_effect_cloud/respawn_beacon/structure,distance=..0.2] BeaconNumber = @s BeaconNumber
 
 ## Kill marker

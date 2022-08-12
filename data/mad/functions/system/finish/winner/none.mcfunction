@@ -13,4 +13,5 @@ title @a times 20 80 20
 title @a title ["",{"text":"DRAW","color":"white","bold":true}]
 
 ## Display Winners
-tellraw @a ["",{"text":"  ","color":"white"},{"text":"勝者なし","bold":true,"color":"white"},{"text":" です！","color":"white"}]
+tellraw @a ["",{"translate":"  試合が終了しました。","color":"white","bold":false,"italic":false}]
+tellraw @a ["",{"translate":"  %s です！","with": [{"text":"勝者無し","bold":true}],"color":"white","bold":false,"italic":false}]

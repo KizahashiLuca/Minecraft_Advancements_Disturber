@@ -1,0 +1,27 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/game"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:gamerules/match_mode/team"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/game/exit_game/not_exit"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:system/game/exit_game/number_of_alives/zero"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:system/game/exit_game/number_of_alives/one"
+      }
+    ]
+  }
+]

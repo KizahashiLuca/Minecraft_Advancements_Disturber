@@ -22,7 +22,7 @@ team join Participant @s[gamemode=!spectator]
 
 ## Set player
 #### Set bossbar
-bossbar set mad:bossbar players @s
+bossbar set minecraft:bossbar players @s
 #### Reset inventory
 clear @s
 #### Reset experience

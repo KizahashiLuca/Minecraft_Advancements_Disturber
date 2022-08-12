@@ -10,10 +10,10 @@
 
 ## Send messages common begin
 tellraw @a [""]
-tellraw @a ["",{"text":"-----------------------------","color":"white"}]
-tellraw @a ["",{"text":" Minecraft","color":"red","bold":true}]
-tellraw @a ["",{"text":"  Advancements","color":"red","bold":true}]
-tellraw @a ["",{"text":"   Disturber β-1.7 - MC 1.19","color":"red","bold":true}]
-tellraw @a ["",{"text":"  企画 : ","color":"green","bold":true},{"text":"ぽたーじゅ","color":"green","bold":true,"hoverEvent":{"action":"show_text","value":"Twitter @potage00"},"clickEvent":{"action":"open_url","value":"http://twitter.com/potage00"}}]
-tellraw @a ["",{"text":"  制作 : ","color":"green","bold":true},{"text":"KizahashiLuca","color":"green","bold":true,"hoverEvent":{"action":"show_text","value":"Twitter @KizahashiLuca"},"clickEvent":{"action":"open_url","value":"http://twitter.com/KizahashiLuca"}}]
-tellraw @a ["",{"text":"-----------------------------","color":"white"}]
+tellraw @a ["",{"text":"-----------------------------","color":"white","bold":false,"italic":false}]
+tellraw @a ["",{"text":" Minecraft","color":"red","bold":true,"italic":false}]
+tellraw @a ["",{"text":"  Advancements","color":"red","bold":true,"italic":false}]
+tellraw @a ["",{"text":"   Disturber β-1.7 - MC 1.19","color":"red","bold":true,"italic":false}]
+tellraw @a ["",{"translate":"  企画 : %s","with":[{"text":"ぽたーじゅ","hoverEvent":{"action":"show_text","value":"Twitter @potage00"},"clickEvent":{"action":"open_url","value":"http://twitter.com/potage00"},"color":"white","bold":false,"italic":false}],"color":"green","bold":true,"italic":false}]
+tellraw @a ["",{"translate":"  制作 : %s","with":[{"text":"KizahashiLuca","hoverEvent":{"action":"show_text","value":"Twitter @KizahashiLuca"},"clickEvent":{"action":"open_url","value":"http://twitter.com/KizahashiLuca"},"color":"white","bold":false,"italic":false}],"color":"green","bold":true,"italic":false}]
+tellraw @a ["",{"text":"-----------------------------","color":"white","bold":false,"italic":false}]

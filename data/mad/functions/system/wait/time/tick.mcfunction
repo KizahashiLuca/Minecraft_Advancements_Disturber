@@ -16,4 +16,4 @@ scoreboard players remove #mad Tick 1
 execute if predicate mad:system/wait/time/tick/lt_zero run scoreboard players set #mad Tick 19
 
 ## Set bossbar
-execute store result bossbar mad:bossbar value run scoreboard players get #mad Second
+execute store result bossbar minecraft:bossbar value run scoreboard players get #mad Second

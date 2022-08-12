@@ -10,9 +10,9 @@
 
 ## Title
 title @a times 20 80 20
-execute if score #mad IsTeam matches 0 if entity @p[predicate=mad:ongame/player/participant_alive] run function mad:system/finish/winner/individual
-execute if entity @p[predicate=mad:ongame/player/team_a_alive] run function mad:system/finish/winner/team_a
-execute if entity @p[predicate=mad:ongame/player/team_b_alive] run function mad:system/finish/winner/team_b
-execute if entity @p[predicate=mad:ongame/player/team_c_alive] run function mad:system/finish/winner/team_c
-execute if entity @p[predicate=mad:ongame/player/team_d_alive] run function mad:system/finish/winner/team_d
-execute if entity @p[predicate=mad:ongame/player/team_e_alive] run function mad:system/finish/winner/team_e
+execute if predicate mad:gamerules/match_mode/individual if entity @p[predicate=mad:player/alive] run function mad:system/finish/winner/individual
+execute if predicate mad:gamerules/match_mode/team if entity @p[predicate=mad:player/alive/a] run function mad:system/finish/winner/a
+execute if predicate mad:gamerules/match_mode/team if entity @p[predicate=mad:player/alive/b] run function mad:system/finish/winner/b
+execute if predicate mad:gamerules/match_mode/team if entity @p[predicate=mad:player/alive/c] run function mad:system/finish/winner/c
+execute if predicate mad:gamerules/match_mode/team if entity @p[predicate=mad:player/alive/d] run function mad:system/finish/winner/d
+execute if predicate mad:gamerules/match_mode/team if entity @p[predicate=mad:player/alive/e] run function mad:system/finish/winner/e

@@ -9,7 +9,7 @@
 #####################################
 
 ## Individual match
-execute if predicate mad:gamerules/match_mode/individual run function mad:system/pre_preparation/change_to
+execute if predicate mad:gamerules/match_mode/individual run function mad:system/wait/change_to
 
 ## Team match
 execute if predicate mad:gamerules/match_mode/team if predicate mad:gamerules/team_match/team_member/random run function mad:system/begin/team_member/set_member_randomly

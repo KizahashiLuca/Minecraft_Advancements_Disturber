@@ -15,12 +15,12 @@ tag @p[predicate=mad:player/team/b,sort=random] add MAD_Leader
 scoreboard players set #mad_team_b DeadOwnTeam 0
 
 ## Set bossbar - team red
-bossbar add mad:bossbar/team/b ["",{"translate":"%s - 生存時間 残り %s 秒","with":[{"text":"青チーム","color":"blue","bold":true},{"score":{"name":"#mad_team_b","objective":"Second"},"color":"green","bold":true}],"color":"white","bold":false,"italic":false}]
-bossbar set mad:bossbar/team/b color white
-bossbar set mad:bossbar/team/b style notched_10
-bossbar set mad:bossbar/team/b visible true
-execute store result bossbar mad:bossbar/team/b max run scoreboard players get #mad_team_b TimeLimit
-execute store result bossbar mad:bossbar/team/b value run scoreboard players get #mad_team_b Second
+bossbar add minecraft:bossbar/team/b ["",{"translate":"%s - 生存時間 残り %s 秒","with":[{"text":"青チーム","color":"blue","bold":true},{"score":{"name":"#mad_team_b","objective":"Second"},"color":"green","bold":true}],"color":"white","bold":false,"italic":false}]
+bossbar set minecraft:bossbar/team/b color white
+bossbar set minecraft:bossbar/team/b style notched_10
+bossbar set minecraft:bossbar/team/b visible true
+execute store result bossbar minecraft:bossbar/team/b max run scoreboard players get #mad_team_b TimeLimit
+execute store result bossbar minecraft:bossbar/team/b value run scoreboard players get #mad_team_b Second
 
 ## Set gamerule - friendlyFire
 execute if predicate mad:gamerules/team_match/friendly_fire/true run team modify TeamB friendlyFire true

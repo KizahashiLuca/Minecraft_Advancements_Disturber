@@ -15,6 +15,6 @@ scoreboard players remove #mad_team_d Second 1
 execute if predicate mad:system/game/timer/team/second/lt_zero/d run kill @a[predicate=mad:player/alive/d]
 
 ## Bossbar
-execute store result bossbar mad:bossbar/team/d max run scoreboard players get #mad_team_d TimeLimit
-execute store result bossbar mad:bossbar/team/d value run scoreboard players get #mad_team_d Second
-bossbar set mad:bossbar/team/d name ["",{"translate":"%s - 生存時間 残り %s 秒","with":[{"text":"緑チーム","color":"green","bold":true},{"score":{"name":"#mad_team_d","objective":"Second"},"color":"green","bold":true}],"color":"white","bold":false,"italic":false}]
+execute store result bossbar minecraft:bossbar/team/d max run scoreboard players get #mad_team_d TimeLimit
+execute store result bossbar minecraft:bossbar/team/d value run scoreboard players get #mad_team_d Second
+bossbar set minecraft:bossbar/team/d name ["",{"translate":"%s - 生存時間 残り %s 秒","with":[{"text":"緑チーム","color":"green","bold":true},{"score":{"name":"#mad_team_d","objective":"Second"},"color":"green","bold":true}],"color":"white","bold":false,"italic":false}]

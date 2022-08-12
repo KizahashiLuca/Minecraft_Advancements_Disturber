@@ -55,6 +55,9 @@ function mad:system/begin/set_game/set_scoreboards
 function mad:system/begin/set_game/add_advancements_scoreboards
 function mad:system/begin/set_game/set_advancements_scoreboards
 
+## Set bossbars
+function mad:system/begin/set_game/set_bossbars
+
 ## Set random seed
 function mad:system/common/randomizer/initialize
 

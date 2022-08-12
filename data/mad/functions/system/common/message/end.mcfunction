@@ -9,5 +9,5 @@
 #####################################
 
 ## Send messages common end
-tellraw @a ["",{"text":"-----------------------------","color":"white"}]
+tellraw @a ["",{"text":"-----------------------------","color":"white","bold":false,"italic":false}]
 tellraw @a [""]

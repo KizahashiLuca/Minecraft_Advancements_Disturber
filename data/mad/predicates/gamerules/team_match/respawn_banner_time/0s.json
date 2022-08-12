@@ -10,7 +10,7 @@
     "scale": 1
   },
   "range": {
-    "min": 60,
-    "max": 60
+    "min": 0,
+    "max": 0
   }
 }

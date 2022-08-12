@@ -150,7 +150,7 @@ scoreboard objectives add BeaconNumber dummy
 scoreboard objectives add CompareNames dummy
 scoreboard objectives add DetectTeamExists dummy
 #### mobile respawn beacon
-scoreboard objectives add MobileBeaconNum dummy
+scoreboard objectives add MobileBeaconNumber dummy
 scoreboard objectives add MobileBeaconTmp dummy
 #### team
 scoreboard objectives add TeamMemberNotExist dummy

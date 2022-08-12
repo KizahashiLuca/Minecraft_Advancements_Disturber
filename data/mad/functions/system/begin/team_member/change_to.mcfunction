@@ -12,7 +12,7 @@
 clear @p[predicate=mad:player/host]
 
 ## Change bossbar
-bossbar set mad:bossbar name ["",{"text":"チーム設定フェーズ","color":"white","bold":false,"italic":false}]
+bossbar set minecraft:bossbar name ["",{"text":"チーム設定フェーズ","color":"white","bold":false,"italic":false}]
 
 ## Change dimension
 execute if predicate mad:phase/begin/gui in mad:world run function mad:system/begin/team_member/set_world/main

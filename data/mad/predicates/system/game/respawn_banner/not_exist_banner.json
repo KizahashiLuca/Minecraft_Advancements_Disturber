@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:chest"
+        ],
+        "nbt": "{Items:[{tag:{Tags:[\"MAD_RespawnBannerFromChest\"]}}]}"
+      }
+    }
+  }
+}

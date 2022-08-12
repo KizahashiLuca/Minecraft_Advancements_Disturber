@@ -27,7 +27,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamA\"]}"
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamA\"]}"
             }
           ]
         },
@@ -54,7 +54,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamB\"]}"
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamB\"]}"
             }
           ]
         },
@@ -81,7 +81,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamC\"]}"
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamC\"]}"
             }
           ]
         },
@@ -108,7 +108,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamD\"]}"
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamD\"]}"
             }
           ]
         },
@@ -135,7 +135,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamE\"]}"
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamE\"]}"
             }
           ]
         }

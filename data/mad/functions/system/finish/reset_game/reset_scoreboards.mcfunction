@@ -150,7 +150,7 @@ scoreboard objectives remove BeaconNumber
 scoreboard objectives remove CompareNames
 scoreboard objectives remove DetectTeamExists
 #### mobile respawn beacon
-scoreboard objectives remove MobileBeaconNum
+scoreboard objectives remove MobileBeaconNumber
 scoreboard objectives remove MobileBeaconTmp
 #### team
 scoreboard objectives remove TeamMemberNotExist

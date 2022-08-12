@@ -18,4 +18,5 @@ execute as @a[predicate=mad:player/killer] at @s run function mad:system/game/de
 ## Detect death
 execute as @a[predicate=mad:player/dying] run function mad:system/game/detect_death/individual
 
-## 
+## Set scoreboard
+scoreboard players operation #mad NumAlive = #mad NumOfParticipants

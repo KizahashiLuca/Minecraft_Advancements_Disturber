@@ -9,8 +9,8 @@
 #####################################
 
 ## Set bossbar
-execute as @s[predicate=mad:player/individual/01] run bossbar set mad:bossbar/individual/01 players @a[predicate=mad:player/individual/01]
-execute as @s[predicate=mad:player/individual/02] run bossbar set mad:bossbar/individual/02 players @a[predicate=mad:player/individual/02]
-execute as @s[predicate=mad:player/individual/03] run bossbar set mad:bossbar/individual/03 players @a[predicate=mad:player/individual/03]
-execute as @s[predicate=mad:player/individual/04] run bossbar set mad:bossbar/individual/04 players @a[predicate=mad:player/individual/04]
-execute as @s[predicate=mad:player/individual/05] run bossbar set mad:bossbar/individual/05 players @a[predicate=mad:player/individual/05]
+execute as @s[predicate=mad:player/individual/01] run bossbar set minecraft:bossbar/individual/01 players @a[predicate=mad:player/individual/01]
+execute as @s[predicate=mad:player/individual/02] run bossbar set minecraft:bossbar/individual/02 players @a[predicate=mad:player/individual/02]
+execute as @s[predicate=mad:player/individual/03] run bossbar set minecraft:bossbar/individual/03 players @a[predicate=mad:player/individual/03]
+execute as @s[predicate=mad:player/individual/04] run bossbar set minecraft:bossbar/individual/04 players @a[predicate=mad:player/individual/04]
+execute as @s[predicate=mad:player/individual/05] run bossbar set minecraft:bossbar/individual/05 players @a[predicate=mad:player/individual/05]

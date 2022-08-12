@@ -16,7 +16,7 @@ scoreboard players reset @s
 
 ## Set player
 #### Set bossbar
-bossbar set mad:bossbar players @s
+bossbar set minecraft:bossbar players @s
 #### Reset inventory
 clear @s
 #### Reset experience

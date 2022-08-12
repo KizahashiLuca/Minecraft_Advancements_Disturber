@@ -18,7 +18,6 @@ scoreboard players set @s Death 2
 scoreboard players set @s Phase 22
 
 scoreboard players add #mad NumDead 1
-scoreboard players set @s DeadOwnTeam 1
 
 scoreboard players reset @s Second
 scoreboard players reset @s Tick

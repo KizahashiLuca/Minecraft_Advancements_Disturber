@@ -11,8 +11,9 @@
 ## Send exit messages
 function mad:system/finish/exit_game/messages
 
-execute if score #mad NumAlive matches 0 run function mad:system/finish/winner/none
-execute if score #mad NumAlive matches 1 run function mad:system/finish/winner/detect
+execute if predicate mad:system/finish/exit_game/winner/one run function mad:system/finish/winner/one
+execute if predicate mad:system/finish/exit_game/winner/draw run function mad:system/finish/winner/none
+execute if predicate mad:system/finish/exit_game/winner/detect run function mad:system/finish/winner/detect
 
 ## Statics
 function mad:system/finish/statics

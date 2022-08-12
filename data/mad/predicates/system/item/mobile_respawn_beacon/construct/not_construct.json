@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:armor_stand/respawn_banner/structure"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:area_effect_cloud/respawn_beacon/structure"
+    }
+  ]
+}
