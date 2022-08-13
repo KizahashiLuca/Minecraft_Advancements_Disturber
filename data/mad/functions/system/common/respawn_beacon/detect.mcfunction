@@ -26,7 +26,7 @@ execute as @a[predicate=mad:system/common/respawn_beacon/respawn_player] run fun
 execute if predicate mad:system/common/respawn_beacon/set_respawn_condition run function mad:system/common/respawn_beacon/set_respawn_player
 
 ## Send message
-execute if predicate mad:system/common/respawn_beacon/reset_respawn_condition run setblock ~ ~1 ~ minecraft:air destroy
+execute if predicate mad:system/common/respawn_beacon/reset_respawn_condition run setblock ~ ~ ~ minecraft:air destroy
 execute if predicate mad:system/common/respawn_beacon/reset_respawn_condition run function mad:system/common/respawn_beacon/reset_respawn_beacon
 
 ## Remove tags

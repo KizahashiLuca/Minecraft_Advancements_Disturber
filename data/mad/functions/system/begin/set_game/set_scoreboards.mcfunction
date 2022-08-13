@@ -12,7 +12,7 @@
 #### game phase
 scoreboard players set #mad DataVersion 1444
 scoreboard players set #mad Version 13
-scoreboard players set #mad Phase 0
+scoreboard players set #mad Phase 5
 scoreboard players set #mad PrevPhase 0
 scoreboard players set #mad Difficulty 0
 scoreboard players set #mad ExitMessage 0
