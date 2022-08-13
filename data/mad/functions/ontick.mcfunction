@@ -20,3 +20,7 @@ execute if predicate mad:phase/begin/gui run function mad:system/begin/gui/branc
 ## Item system
 execute if predicate mad:phase/trial run function mad:system/trial/main 
 execute if predicate mad:phase/in_game run function mad:system/item/main
+
+scoreboard objectives add PhaseTmp dummy
+execute unless score #mad Phase = #mad PhaseTmp run tellraw @a ["",{"score":{"name":"#mad","objective":"Phase"}}]
+scoreboard players operation #mad PhaseTmp = #mad Phase

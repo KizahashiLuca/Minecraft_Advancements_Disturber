@@ -11,6 +11,9 @@
 ## Send stop messages
 function mad:system/finish/stop_game/messages
 
+## Change world
+execute in minecraft:overworld run tp @a[predicate=mad:dimension/mad_world] @e[predicate=mad:marker/world_spawn,limit=1]
+
 ## Statics
 function mad:system/finish/statics
 
