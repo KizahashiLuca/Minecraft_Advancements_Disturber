@@ -33,3 +33,4 @@ tag @a remove MAD_MobileRespawnBannerSet
 tag @a remove MAD_MobileRespawnBannerSetTmp
 tag @a remove MAD_DetectMobileBeaconTag
 tag @a remove MAD_DetectRespawnPlayer
+tag @a remove MAD_SetRespawnPlayer

@@ -9,7 +9,7 @@
 #####################################
 
 ## Send message - to thief
-tellraw @s ["",{"text":"[怪盗予告] あなたが死亡しているため、アイテムを盗めませんでした。","color":"green","bold":false,"italic":false}]
+tellraw @s ["",{"text":"[怪盗予告] あなたが死亡しているため、 ","color":"green","bold":false,"italic":false},{"text":"アイテムを盗めませんでした。","color":"green","bold":false,"italic":false}]
 
 ## Send message - to all player
-tellraw @a[predicate=mad:system/item/notice_of_thief/detect_not_thief] ["",{"text":"[怪盗予告] 怪盗が死亡しているため、アイテムは盗まれませんでした。","color":"green","bold":false,"italic":false}]
+tellraw @a[predicate=mad:system/item/notice_of_thief/detect_not_thief] ["",{"text":"[怪盗予告] 怪盗が死亡しているため、 ","color":"green","bold":false,"italic":false},{"text":"アイテムは盗まれませんでした。","color":"green","bold":false,"italic":false}]
