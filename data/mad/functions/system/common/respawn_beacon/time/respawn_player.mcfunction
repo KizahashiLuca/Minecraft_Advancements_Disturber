@@ -38,5 +38,5 @@ execute as @s[predicate=mad:player/team/d] run tellraw @a[predicate=mad:player/t
 execute as @s[predicate=mad:player/team/e] run tellraw @a[predicate=mad:player/team/e] ["",{"text":"[蘇生措置]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
 
 ## Remove tags
-tag @p[tag=RespawnSoon] remove MAD_RespawnPlayer
-tag @p[tag=RespawnSoon] remove MAD_SetRespawnPlayer
+tag @s remove MAD_RespawnPlayer
+tag @s remove MAD_SetRespawnPlayer

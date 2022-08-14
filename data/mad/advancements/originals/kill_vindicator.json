@@ -1,0 +1,47 @@
+{
+  "parent": "mad:originals/find_mansion",
+  "display": {
+    "icon": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "title": {
+      "translate": "Here's Johnny!"
+    },
+    "description": {
+      "translate": "森の洋館の中でヴィンディケーターを倒す"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_vindicator": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "minecraft:vindicator"
+            },
+            "entity": "this"
+          }
+        ],
+        "player": {
+          "location": {
+            "structure": "minecraft:mansion"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill_vindicator"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/kill_vindicator/main"
+  }
+}

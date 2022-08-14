@@ -10,6 +10,7 @@
 
 ## Timer
 function mad:system/game/timer/team/tick
+function mad:system/game/timer/team/general/tick
 
 ## Detect death
 execute as @a[predicate=mad:player/dying] run function mad:system/game/detect_death/team

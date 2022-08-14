@@ -8,17 +8,11 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Add a tag - dead player
-tag @s add MAD_DetectRespawnPlayer
-
 ## Compare respawn banner name to player's item's name
-execute store result score #mad CompareNames run data modify entity @e[predicate=mad:system/common/respawn_beacon/detect_respawn_banner,limit=1] CustomName set from entity @p[predicate=mad:system/common/respawn_beacon/detect_respawn_player] Inventory[0].tag.display.Name
+execute store result score #mad CompareNames run data modify entity @e[predicate=mad:system/common/respawn_beacon/detect_respawn_banner,limit=1] CustomName set from entity @s Inventory[0].tag.display.Name
 
 ## Add tags
-execute if predicate mad:system/common/respawn_beacon/name_is_same as @s[predicate=mad:system/common/respawn_beacon/detect_respawn_player] run function mad:system/common/respawn_beacon/add_tags
-
-## Remove a tag - dead player
-tag @s remove MAD_DetectRespawnPlayer
+execute if predicate mad:system/common/respawn_beacon/name_is_same run function mad:system/common/respawn_beacon/add_tags
 
 ## Modify data from banner to cloud
 data modify entity @e[predicate=mad:system/common/respawn_beacon/detect_respawn_banner,limit=1] CustomName set from block ~ ~ ~ CustomName

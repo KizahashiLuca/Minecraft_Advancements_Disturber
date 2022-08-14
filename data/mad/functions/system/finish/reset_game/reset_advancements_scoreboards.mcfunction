@@ -123,6 +123,7 @@ scoreboard objectives remove AD_Achievements_root
 scoreboard objectives remove AD_Originals_adventure
 scoreboard objectives remove AD_Originals_break_spawner
 scoreboard objectives remove AD_Originals_collect
+scoreboard objectives remove AD_Originals_find_mansion
 scoreboard objectives remove AD_Originals_find_minecart
 scoreboard objectives remove AD_Originals_find_monument
 scoreboard objectives remove AD_Originals_friendship
@@ -130,7 +131,9 @@ scoreboard objectives remove AD_Originals_game
 scoreboard objectives remove AD_Originals_in_this_corner_of_the_world
 scoreboard objectives remove AD_Originals_kill_elder_guardian
 scoreboard objectives remove AD_Originals_kill_enderman
+scoreboard objectives remove AD_Originals_kill_evoker
 scoreboard objectives remove AD_Originals_kill_phantom
+scoreboard objectives remove AD_Originals_kill_vindicator
 scoreboard objectives remove AD_Originals_obtain_materials
 scoreboard objectives remove AD_Originals_obtain_sponge
 scoreboard objectives remove AD_Originals_obtain_treasures
