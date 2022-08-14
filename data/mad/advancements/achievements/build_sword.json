@@ -5,10 +5,10 @@
       "item": "minecraft:wooden_sword"
     },
     "title": {
-      "text": "いざ突撃！"
+      "translate": "いざ突撃！"
     },
     "description": {
-      "text": "木材と棒を使い、剣を作る"
+      "translate": "木材と棒を使い、剣を作る"
     },
     "frame": "task",
     "show_toast": true,

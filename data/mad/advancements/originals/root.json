@@ -5,10 +5,10 @@
       "nbt": "{SkullOwner:\"potage00\"}"
     },
     "title": {
-      "text": "オリジナル進捗"
+      "translate": "オリジナル進捗"
     },
     "description": {
-      "text": ""
+      "translate": ""
     },
     "frame": "task",
     "show_toast": false,

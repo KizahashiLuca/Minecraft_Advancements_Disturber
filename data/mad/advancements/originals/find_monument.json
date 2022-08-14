@@ -5,10 +5,10 @@
       "item": "minecraft:sea_lantern"
     },
     "title": {
-      "text": "アトランティスの発見"
+      "translate": "アトランティスの発見"
     },
     "description": {
-      "text": "海底神殿の攻略を開始する"
+      "translate": "海底神殿の攻略を開始する"
     },
     "frame": "task",
     "show_toast": true,

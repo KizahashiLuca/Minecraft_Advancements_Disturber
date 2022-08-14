@@ -5,10 +5,10 @@
       "item": "minecraft:enchanted_golden_apple"
     },
     "title": {
-      "text": "圧倒的な力"
+      "translate": "圧倒的な力"
     },
     "description": {
-      "text": "ノッチリンゴを食べる"
+      "translate": "ノッチリンゴを食べる"
     },
     "frame": "challenge",
     "show_toast": true,

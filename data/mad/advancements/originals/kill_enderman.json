@@ -5,10 +5,10 @@
       "item": "minecraft:ender_pearl"
     },
     "title": {
-      "text": "消える暗闇"
+      "translate": "消える暗闇"
     },
     "description": {
-      "text": "エンダーマンを倒す"
+      "translate": "エンダーマンを倒す"
     },
     "frame": "task",
     "show_toast": true,

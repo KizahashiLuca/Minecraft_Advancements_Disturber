@@ -5,10 +5,10 @@
       "item": "minecraft:diamond_sword"
     },
     "title": {
-      "text": "やり過ぎ"
+      "translate": "やり過ぎ"
     },
     "description": {
-      "text": "一撃でハート9個分のダメージを与える"
+      "translate": "一撃でハート9個分のダメージを与える"
     },
     "frame": "challenge",
     "show_toast": true,

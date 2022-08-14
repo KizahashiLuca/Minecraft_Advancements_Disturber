@@ -5,10 +5,10 @@
       "item": "minecraft:diamond"
     },
     "title": {
-      "text": "ダイヤモンドをあなたに！"
+      "translate": "ダイヤモンドをあなたに！"
     },
     "description": {
-      "text": "モブにダイヤモンドを拾わせる"
+      "translate": "モブにダイヤモンドを拾わせる"
     },
     "frame": "task",
     "show_toast": true,

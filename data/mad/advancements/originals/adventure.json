@@ -5,10 +5,10 @@
       "item": "minecraft:iron_sword"
     },
     "title": {
-      "text": "冒険"
+      "translate": "冒険"
     },
     "description": {
-      "text": ""
+      "translate": ""
     },
     "frame": "task",
     "show_toast": false,

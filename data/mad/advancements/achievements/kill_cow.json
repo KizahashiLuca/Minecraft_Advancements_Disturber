@@ -5,10 +5,10 @@
       "item": "minecraft:leather"
     },
     "title": {
-      "text": "牛転がし"
+      "translate": "牛転がし"
     },
     "description": {
-      "text": "革を手に入れる"
+      "translate": "革を手に入れる"
     },
     "frame": "task",
     "show_toast": true,

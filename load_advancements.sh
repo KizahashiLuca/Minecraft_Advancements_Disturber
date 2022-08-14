@@ -72,16 +72,8 @@ for AD in "${AD_NAME[@]}"; do
     fi
     ## set value
     ADV_OBJECTIVE=AD_${DIR^}_${STEM}
-    if [ ${AD} == "mad" ]; then
-      TITLE=`cat "${FILE}" | jq '.display.title.text' | sed -e "s/\"//g"`
-    else
-      TITLE=`cat "${FILE}" | jq '.display.title.translate' | sed -e "s/\"//g"`
-    fi
-    if [ ${AD} == "mad" ]; then
-      DESCRIPTION=`cat "${FILE}" | jq '.display.description.text' | sed -e "s/\"//g"`
-    else
-      DESCRIPTION=`cat "${FILE}" | jq '.display.description.translate' | sed -e "s/\"//g"`
-    fi
+    TITLE=`cat "${FILE}" | jq '.display.title.translate' | sed -e "s/\"//g"`
+    DESCRIPTION=`cat "${FILE}" | jq '.display.description.translate' | sed -e "s/\"//g"`
     FRAME=`cat "${FILE}" | jq '.display.frame' | sed -e "s/\"//g"`
     if [ ${FRAME} == "challenge" ]; then
       COLOR=dark_purple

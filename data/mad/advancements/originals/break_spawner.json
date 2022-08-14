@@ -5,10 +5,10 @@
       "item": "minecraft:spawner"
     },
     "title": {
-      "text": "君子危うきに近寄らず"
+      "translate": "君子危うきに近寄らず"
     },
     "description": {
-      "text": "スポナーの破壊"
+      "translate": "スポナーの破壊"
     },
     "frame": "task",
     "show_toast": true,

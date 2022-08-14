@@ -5,10 +5,10 @@
       "item": "minecraft:chest"
     },
     "title": {
-      "text": "収集"
+      "translate": "収集"
     },
     "description": {
-      "text": ""
+      "translate": ""
     },
     "frame": "task",
     "show_toast": false,

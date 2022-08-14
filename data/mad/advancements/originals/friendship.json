@@ -5,10 +5,10 @@
       "item": "minecraft:red_banner"
     },
     "title": {
-      "text": "仲間思い"
+      "translate": "仲間思い"
     },
     "description": {
-      "text": "味方を復活"
+      "translate": "味方を復活"
     },
     "frame": "task",
     "show_toast": true,

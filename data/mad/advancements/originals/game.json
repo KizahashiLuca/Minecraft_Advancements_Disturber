@@ -5,10 +5,10 @@
       "item": "minecraft:clock"
     },
     "title": {
-      "text": "進行"
+      "translate": "進行"
     },
     "description": {
-      "text": ""
+      "translate": ""
     },
     "frame": "task",
     "show_toast": false,

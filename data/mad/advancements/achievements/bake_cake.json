@@ -5,10 +5,10 @@
       "item": "minecraft:cake"
     },
     "title": {
-      "text": "the cake is a lie"
+      "translate": "the cake is a lie"
     },
     "description": {
-      "text": "小麦に砂糖、牛乳、それから卵！"
+      "translate": "小麦に砂糖、牛乳、それから卵！"
     },
     "frame": "task",
     "show_toast": true,

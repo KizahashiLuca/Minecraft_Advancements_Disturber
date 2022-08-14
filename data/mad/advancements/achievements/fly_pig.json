@@ -5,10 +5,10 @@
       "item": "minecraft:saddle"
     },
     "title": {
-      "text": "ブタさんの飛ぶ頃に"
+      "translate": "ブタさんの飛ぶ頃に"
     },
     "description": {
-      "text": "ブタに乗って崖から落ちる"
+      "translate": "ブタに乗って崖から落ちる"
     },
     "frame": "challenge",
     "show_toast": true,
