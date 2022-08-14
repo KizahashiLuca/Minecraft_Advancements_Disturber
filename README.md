@@ -17,7 +17,7 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 ## Download
 ダウンロードは 以下リンクからお願いします。
  - Java Edition v1.19 以降対応
-   - [β-1.7](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-1.7)
+   - [β-2.0](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.0)
 
 ## ルール
 マルチのサバイバル環境にて、各プレイヤー進捗を解除しつつ、唯一の生存を目指す
