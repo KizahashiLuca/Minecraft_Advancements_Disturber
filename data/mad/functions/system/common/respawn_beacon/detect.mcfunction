@@ -15,19 +15,19 @@ tag @s add MAD_DetectRespawnBanner
 data modify entity @s CustomName set from block ~ ~ ~ CustomName
 
 ## Detect respawn banner set
-scoreboard players set #mad CompareNames 1
+scoreboard players set @s ResultTmp 1
 execute as @a[predicate=mad:player/dead] run function mad:system/common/respawn_beacon/detect_banner_sets
 
 ## Detect team player exist
-scoreboard players set #mad DetectTeamExists 1
-execute as @a[predicate=mad:system/common/respawn_beacon/respawn_player] run function mad:system/common/respawn_beacon/detect_player_exists
+scoreboard players set @s ResultTmp 1
+execute as @p[predicate=mad:system/common/respawn_beacon/respawn_player] run function mad:system/common/respawn_beacon/detect_player_exists
 
 ## Send message
-execute if predicate mad:system/common/respawn_beacon/set_respawn_condition run function mad:system/common/respawn_beacon/set_respawn_player
+execute as @s[scores={ResultTmp=1}] run function mad:system/common/respawn_beacon/set_respawn_player
 
 ## Send message
-execute if predicate mad:system/common/respawn_beacon/reset_respawn_condition run setblock ~ ~ ~ minecraft:air destroy
-execute if predicate mad:system/common/respawn_beacon/reset_respawn_condition run function mad:system/common/respawn_beacon/reset_respawn_beacon
+execute as @s[scores={ResultTmp=0}] run setblock ~ ~ ~ minecraft:air destroy
+execute as @s[scores={ResultTmp=0}] run function mad:system/common/respawn_beacon/reset_respawn_beacon
 
 ## Remove tags
 tag @a remove MAD_RespawnPlayer
