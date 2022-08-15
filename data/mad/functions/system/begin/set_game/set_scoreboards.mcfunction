@@ -124,6 +124,11 @@ scoreboard players set @a NumDead 0
 scoreboard players set @a OnGround 0
 #### setting phase - choose time limit
 scoreboard players set @a GetTimeLimit 0
+execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a GetTimeLimit 0
+execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b GetTimeLimit 0
+execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players set #mad_team_c GetTimeLimit 0
+execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players set #mad_team_d GetTimeLimit 0
+execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e GetTimeLimit 0
 #### setting phase - choose area
 scoreboard players set @a WorldBorder 1000
 scoreboard players set @a WorldBorderPrv 1000
