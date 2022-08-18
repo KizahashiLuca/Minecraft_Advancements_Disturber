@@ -9,7 +9,7 @@
 #####################################
 
 ## Send member setting messages
-tellraw @a[predicate=mad:gamerules/match_mode/team] ["",{"text":"-----------------------------","color":"white","bold":false,"italic":false}]
+tellraw @a[predicate=mad:gamerules/match_mode/team] ["",{"text":"---------------------------------","color":"white","bold":false,"italic":false}]
 tellraw @a[predicate=mad:gamerules/team_match/number_of_teams/ge_1] ["",{"text":"赤チーム","color":"red","bold":true,"italic":false},{"text":" メンバー : ","color":"white","bold":false,"italic":false}]
 tellraw @a[predicate=mad:gamerules/team_match/number_of_teams/ge_1] ["",{"selector":"@a[predicate=mad:player/team/a]"}]
 tellraw @a[predicate=mad:gamerules/team_match/number_of_teams/ge_2] ["",{"text":"青チーム","color":"blue","bold":true,"italic":false},{"text":" メンバー : ","color":"white","bold":false,"italic":false}]

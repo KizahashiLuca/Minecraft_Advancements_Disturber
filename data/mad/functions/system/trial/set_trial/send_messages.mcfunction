@@ -10,7 +10,7 @@
 
 ## Send messages
 function mad:system/common/message/begin
-tellraw @a ["",{"text":"  個人戦のトライアルを開始します。","color":"white"}]
+tellraw @a ["",{"text":"  個人戦のトライアルを開始します。","color":"white","bold":false,"italic":false}]
 function mad:system/common/message/end
 
 ## Change to choose setting

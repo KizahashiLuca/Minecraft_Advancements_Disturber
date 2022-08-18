@@ -10,4 +10,4 @@
 
 ## Send stop messages
 function mad:system/common/message/begin
-tellraw @a ["",{"text":"  ゲームを中断します。","color":"white"}]
+tellraw @a ["",{"text":"  ゲームを中断します。","color":"red","bold":false,"italic":false}]

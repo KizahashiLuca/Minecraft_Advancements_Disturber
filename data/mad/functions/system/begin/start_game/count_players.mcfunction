@@ -8,6 +8,7 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send messages common end
-tellraw @a ["",{"text":"---------------------------------","color":"white","bold":false,"italic":false}]
-tellraw @a [""]
+## Count players
+scoreboard objectives add NumOfParticipants dummy
+tag @a[gamemode=!spectator] add MAD_Participant
+function mad:system/begin/set_game/count_players

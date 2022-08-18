@@ -8,6 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send messages common end
-tellraw @a ["",{"text":"---------------------------------","color":"white","bold":false,"italic":false}]
-tellraw @a [""]
+## Detect Gamemode
+execute if entity @p[predicate=mad:player/host] run function mad:system/finish/reject_game/main
+execute unless entity @p[predicate=mad:player/host] run function mad:system/begin/start_game/team/set_game

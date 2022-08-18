@@ -19,7 +19,7 @@ title @a times 20 80 20
 ## Send setting messages
 function mad:system/common/message/begin
 tellraw @a ["",{"text":"  降下を開始します。","color":"white","bold":false,"italic":false}]
-tellraw @a ["",{"text":"-----------------------------","color":"white","bold":false,"italic":false}]
+tellraw @a ["",{"text":"---------------------------------","color":"white","bold":false,"italic":false}]
 tellraw @a ["",{"text":"  中心座標 : ","color":"white","bold":false,"italic":false},{"translate":"[%s, %s, %s]","with":[{"score":{"name":"#mad","objective":"PosX"}},{"score":{"name":"#mad","objective":"PosY"}},{"score":{"name":"#mad","objective":"PosZ"}}],"hoverEvent":{"action":"show_text","contents":{"text":"スペクテイター時、\nクリックでテレポート","color":"white","bold":false,"italic":false}},"clickEvent":{"action":"run_command","value":"/trigger TeleportCenter set 1"},"color":"green","bold":false,"italic":false}]
 tellraw @a ["",{"text":"  初期生存時間 : ","color":"white","bold":false,"italic":false},{"translate":"%s 秒","with":[{"score":{"name":"#mad","objective":"TimeLimit"}}],"color":"green","bold":false,"italic":false}]
 tellraw @a ["",{"text":"  追加生存時間 : ","color":"white","bold":false,"italic":false},{"translate":"%s 秒","with":[{"score":{"name":"#mad","objective":"AddingTime"}}],"color":"green","bold":false,"italic":false}]
