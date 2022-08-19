@@ -106,6 +106,7 @@ scoreboard objectives add NumberOfBeaconsPrv dummy
 scoreboard objectives add RespawnBannerTimePrv dummy
 #### wait phase
 scoreboard objectives add WaitTime dummy
+scoreboard objectives add Sidebar dummy ["",{"text":"設定項目"}]
 #### advancements
 scoreboard objectives add HasAdvancements dummy
 #### advancements - originals
