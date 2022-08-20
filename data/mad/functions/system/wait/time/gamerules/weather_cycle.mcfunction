@@ -9,6 +9,7 @@
 #####################################
 
 ## Send match mode
-scoreboard players reset ワールドボーダー（ブロック四方）： Sidebar
+scoreboard players reset ワールドボーダー Sidebar
+scoreboard players reset （ブロック四方）： Sidebar
 execute if predicate mad:gamerules/weather_cycle/false run scoreboard players set 天候サイクル：なし Sidebar 0
 execute if predicate mad:gamerules/weather_cycle/true run scoreboard players set 天候サイクル：あり Sidebar 1

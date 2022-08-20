@@ -15,6 +15,6 @@ execute if predicate mad:gamerules/difficulty/easy run scoreboard players reset 
 execute if predicate mad:gamerules/difficulty/normal run scoreboard players reset 難易度：ノーマル Sidebar
 execute if predicate mad:gamerules/difficulty/hard run scoreboard players reset 難易度：ハード Sidebar
 execute if predicate mad:gamerules/difficulty/hardcore run scoreboard players reset 難易度：ハードコア Sidebar
-execute if predicate mad:gamerules/match_mode/individual/one run scoreboard players set マッチモード：ソロ戦 Sidebar 0
-execute if predicate mad:gamerules/match_mode/individual/not_one run scoreboard players set マッチモード：個人戦 Sidebar 1
-execute if predicate mad:gamerules/match_mode/team run scoreboard players set マッチモード：チーム戦 Sidebar 2
+execute if predicate mad:gamerules/match_mode/individual/one run scoreboard players set マッチモード：ソロ戦 Sidebar 1
+execute if predicate mad:gamerules/match_mode/individual/not_one run scoreboard players operation マッチモード：個人戦 Sidebar = #mad NumOfParticipants
+execute if predicate mad:gamerules/match_mode/team run scoreboard players operation マッチモード：チーム戦 Sidebar = #mad NumberOfTeams
