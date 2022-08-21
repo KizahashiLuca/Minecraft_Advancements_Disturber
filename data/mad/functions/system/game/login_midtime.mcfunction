@@ -16,7 +16,7 @@ scoreboard players reset @s
 
 ## Set player
 #### Set bossbar
-bossbar set minecraft:bossbar players @a
+bossbar set minecraft:bossbar players @a[predicate=mad:player/not_participant]
 #### Reset inventory
 clear @s
 #### Reset experience

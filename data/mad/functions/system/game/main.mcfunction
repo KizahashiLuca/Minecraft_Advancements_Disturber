@@ -12,7 +12,7 @@
 execute if predicate mad:addon run scoreboard players remove #mad LoadAddon 1
 
 ## Log in the mid of the game
-execute as @a[predicate=mad:system/game/login_midtime] run function mad:system/common/login_midtime
+execute as @a[predicate=mad:system/game/login_midtime] run function mad:system/game/login_midtime
 
 ## Position
 function mad:system/common/set_position/main
