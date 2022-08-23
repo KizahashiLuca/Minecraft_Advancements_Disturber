@@ -15,7 +15,7 @@ clear @p[predicate=mad:player/host]
 bossbar set minecraft:bossbar name ["",{"text":"チーム設定フェーズ","color":"white","bold":false,"italic":false}]
 
 ## Change dimension
-execute if predicate mad:phase/begin/gui in mad:world run function mad:system/begin/team_member/set_world/main
+execute if predicate mad:phase/begin/gui run function mad:system/begin/team_member/set_world/main
 
 ## Count team
 scoreboard players set #mad TeamMemberNotExist 0

@@ -12,10 +12,10 @@
 worldborder set 32 0
 
 ## Teleport
-tp @a 0 2.5 0 0 0
+tp @a 0.5 312.5 0.5 0 0
 
 ## Set block
-function mad:system/begin/team_member/set_world/set_block
+execute positioned 0.5 310 0.5 run function mad:system/begin/team_member/set_world/set_block
 
 ## Effect
 function mad:system/begin/team_member/effect/main
