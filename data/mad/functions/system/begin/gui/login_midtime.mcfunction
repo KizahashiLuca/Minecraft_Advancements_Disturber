@@ -34,6 +34,7 @@ effect give @s[gamemode=!spectator] minecraft:resistance 1000000 6 true
 effect give @s[gamemode=!spectator] minecraft:fire_resistance 1000000 6 true
 effect give @s[gamemode=!spectator] minecraft:water_breathing 1000000 6 true
 effect give @s[gamemode=!spectator] minecraft:saturation 1000000 10 true
+effect give @a[gamemode=!spectator] minecraft:regeneration 1000000 10 true
 #### Remove advancements
 advancement revoke @s everything
 
