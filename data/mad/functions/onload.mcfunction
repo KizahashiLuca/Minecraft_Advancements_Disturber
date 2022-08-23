@@ -11,12 +11,19 @@
 ## Change gamerules always
 gamerule maxCommandChainLength 65536
 
+## Count players
+function mad:system/begin/start_game/count_players
+
 ## Send Title Message
 function mad:system/common/message/begin
-tellraw @a ["",{"text":"  Thank you for Downloading!","color":"white"}]
-tellraw @a ["",{"text":"-----------------------------","color":"white"}]
-tellraw @a ["",{"text":"  ゲームの必要人数は","color":"white"},{"text":" 20 ","color":"red","bold":true},{"text":"人までです。","color":"white"}]
-tellraw @a ["",{"text":"  以下のコマンドで、ゲームを開始して","color":"white"}]
-tellraw @a ["",{"text":"  ください。","color":"white"}]
-tellraw @a ["",{"text":"      ","color":"white"},{"text":"/function #mad:start","color":"light_purple","hoverEvent":{"action":"show_text","value":"クリックしてゲーム開始"},"clickEvent":{"action":"suggest_command","value":"/function #mad:start"}}]
+tellraw @a ["",{"text":"  Thank you for Downloading!","color":"white","bold":false,"italic":false}]
+tellraw @a ["",{"text":"---------------------------------","color":"white","bold":false,"italic":false}]
+tellraw @a ["",{"translate":"  ゲームの必要人数は %s 人までです。","with":[{"text":"20","color":"red","bold":true}],"color":"white","bold":false,"italic":false}]
+tellraw @a ["",{"translate":"  以下をクリックしてゲームを開始できます。","color":"white","bold":false,"italic":false}]
+tellraw @a[predicate=mad:gamerules/num_of_participants/accept] ["",{"translate":"     >> %s","with":[{"text":"個人戦","color":"green","bold":true,"underlined":true,"hoverEvent":{"action":"show_text","value":"クリックして個人戦開始"},"clickEvent":{"action":"run_command","value":"/function mad:system/begin/start_game/individual/main"}}],"color":"white","bold":false,"italic":false}]
+tellraw @a[predicate=mad:gamerules/num_of_participants/not_one] ["",{"translate":"     >> %s","with":[{"text":"チーム戦","color":"green","bold":true,"underlined":true,"hoverEvent":{"action":"show_text","value":"クリックして2チーム戦開始"},"clickEvent":{"action":"run_command","value":"/function mad:system/begin/start_game/team/main"}}],"color":"white","bold":false,"italic":false}]
+tellraw @a ["",{"translate":"     ※ 詳細設定してのゲーム開始は %s","with":[{"text":"こちら","color":"light_purple","bold":true,"underlined":true,"hoverEvent":{"action":"show_text","value":"クリックして詳細設定開始"},"clickEvent":{"action":"run_command","value":"/function mad:system/begin/start_game/details/main"}}],"color":"white","bold":false,"italic":false}]
 function mad:system/common/message/end
+
+## Remove scoreboard
+scoreboard objectives remove NumOfParticipants

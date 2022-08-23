@@ -10,6 +10,6 @@
 
 ## Send reject messages
 function mad:system/common/message/begin
-tellraw @a ["",{"text":"  人数エラー","color":"yellow","bold":true}]
-tellraw @a ["",{"text":"  ゲームの必要人数は","color":"white"},{"text":" 1 - 20 ","color":"red","bold":true},{"text":"人です。","color":"white"}]
+tellraw @a ["",{"text":"  人数エラー","color":"yellow","bold":true,"italic":false}]
+tellraw @a ["",{"translate":"  ゲームの必要人数は %s 人です。","with":[{"text":" 1 - 20 ","color":"red","bold":true}],"color":"white","bold":false,"italic":false}]
 function mad:system/common/message/end

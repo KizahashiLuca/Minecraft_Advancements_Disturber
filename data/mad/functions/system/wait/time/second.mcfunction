@@ -15,6 +15,9 @@ execute if predicate mad:system/wait/time/second/lt_zero run scoreboard players 
 ## Send title message
 function mad:system/wait/time/title
 
+## Send gamerules
+function mad:system/wait/time/gamerules/main
+
 ## Process the sound system
 execute as @a[predicate=mad:system/wait/time/second/yellow_gage] at @s run playsound minecraft:item.trident.return master @s ~ ~ ~ 1 1 1
 execute as @a[predicate=mad:system/wait/time/second/red_gage] at @s run playsound minecraft:item.trident.throw master @s ~ ~ ~ 1 1 1

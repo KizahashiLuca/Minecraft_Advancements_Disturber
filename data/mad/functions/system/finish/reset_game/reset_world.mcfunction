@@ -45,8 +45,5 @@ kill @e[type=minecraft:armor_stand,tag=MAD_MinecartItem]
 execute in minecraft:overworld run worldborder center 0 0
 execute in minecraft:overworld run worldborder set 59999968
 
-## Reset mad:world
-execute in mad:world positioned 0 1 0 run fill ~-10 ~ ~-10 ~10 ~ ~10 minecraft:iron_block
-
 ## Forceload remove
 forceload remove all

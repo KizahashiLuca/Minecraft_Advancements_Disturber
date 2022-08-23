@@ -2,7 +2,7 @@
   "parent": "mad:originals/find_mansion",
   "display": {
     "icon": {
-      "item": "minecraft:totem_of_undying"
+      "item": "minecraft:iron_axe"
     },
     "title": {
       "translate": "Here's Johnny!"

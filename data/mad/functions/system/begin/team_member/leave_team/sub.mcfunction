@@ -11,7 +11,5 @@
 ## Leave from team
 team leave @s
 
-tellraw @a ["",{"text":"leave_team"}]
-
 ## Set inventory
 function mad:system/begin/team_member/change_to

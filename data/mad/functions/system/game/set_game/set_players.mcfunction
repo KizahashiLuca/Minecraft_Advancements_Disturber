@@ -43,4 +43,5 @@ effect give @a[predicate=mad:player/not_participant] minecraft:resistance 100000
 effect give @a[predicate=mad:player/not_participant] minecraft:fire_resistance 1000000 6 true
 effect give @a[predicate=mad:player/not_participant] minecraft:water_breathing 1000000 6 true
 effect give @a[predicate=mad:player/not_participant] minecraft:saturation 1000000 10 true
+effect give @a[predicate=mad:player/not_participant] minecraft:regeneration 1000000 10 true
 effect give @a[predicate=mad:player/not_participant] minecraft:night_vision 1000000 1 true

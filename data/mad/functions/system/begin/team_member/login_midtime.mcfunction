@@ -28,6 +28,7 @@ effect give @s minecraft:resistance 1000000 6 true
 effect give @s minecraft:fire_resistance 1000000 6 true
 effect give @s minecraft:water_breathing 1000000 6 true
 effect give @s minecraft:saturation 1000000 10 true
+effect give @s minecraft:regeneration 1000000 10 true
 #### Remove advancements
 advancement revoke @s everything
 

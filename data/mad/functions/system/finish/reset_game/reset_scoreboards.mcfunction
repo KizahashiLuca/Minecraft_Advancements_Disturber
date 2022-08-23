@@ -106,6 +106,7 @@ scoreboard objectives remove NumberOfBeaconsPrv
 scoreboard objectives remove RespawnBannerTimePrv
 #### wait phase
 scoreboard objectives remove WaitTime
+scoreboard objectives remove Sidebar
 #### advancements
 scoreboard objectives remove HasAdvancements
 #### advancements - achievements

@@ -10,7 +10,6 @@
 
 ## Calculate time
 scoreboard players remove @s Second 1
-scoreboard players set @s[predicate=mad:system/common/respawn_beacon/time/second/lt_zero] Second 0
 
 ## Execute time for beacon
-execute as @s[predicate=mad:system/common/respawn_beacon/time/second/eq_zero] at @s run function mad:system/common/respawn_beacon/time/execute_beacon
+execute as @s[predicate=mad:system/common/respawn_beacon/time/second/lt_zero] at @s run function mad:system/common/respawn_beacon/time/execute_beacon

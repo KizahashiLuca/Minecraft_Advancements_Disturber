@@ -11,8 +11,8 @@
 ## Reset teams
 team leave @a
 
-## Reset mad:world
-execute in mad:world positioned 0 1 0 run fill ~-10 ~ ~-10 ~10 ~ ~10 minecraft:iron_block
+## Reset world
+execute positioned 0 310 0 run fill ~-15 ~ ~-15 ~15 ~9 ~15 minecraft:air
 
 ## Change phase
 function mad:system/begin/gui/root/change_to

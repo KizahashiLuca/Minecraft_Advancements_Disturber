@@ -12,16 +12,16 @@
 execute as @a[predicate=mad:system/begin/team_member/login_midtime] run function mad:system/begin/team_member/login_midtime
 
 ## Set block
-execute in mad:world unless block 0 1 0 minecraft:beacon run function mad:system/begin/team_member/set_world/set_block
+execute positioned 0.5 310 0.5 unless block ~ ~1 ~ minecraft:beacon run function mad:system/begin/team_member/set_world/set_block
 
 ## Effect
-execute in mad:world run function mad:system/begin/team_member/effect/main
+execute positioned 0.5 311 0.5 run function mad:system/begin/team_member/effect/main
 
 ## Leave from team
-execute in mad:world run function mad:system/begin/team_member/leave_team/main
+execute run function mad:system/begin/team_member/leave_team/main
 
 ## Join to team
-execute in mad:world run function mad:system/begin/team_member/join_team/main
+execute positioned 0.5 311 0.5 run function mad:system/begin/team_member/join_team/main
 
 ## Title message
 function mad:system/begin/team_member/title
