@@ -28,4 +28,4 @@ loot replace entity @p[predicate=mad:player/host] inventory.25 loot mad:system/b
 execute if predicate mad:phase/beginning run scoreboard players set #mad LoadAddon 2
 
 ## Change phase
-scoreboard players set #mad Phase 5
+scoreboard players set #mad Phase 1

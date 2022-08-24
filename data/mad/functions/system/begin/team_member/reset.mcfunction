@@ -12,7 +12,7 @@
 team leave @a
 
 ## Reset choice
-scoreboard players set #mad Phase 15
+scoreboard players set #mad Phase 1
 
 ## Set inventory
 function mad:system/begin/team_member/change_to

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:recovery_compass",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                [
+                  "",
+                  {"translate":"デスペナルティ時間","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MAD_setting_item\",\"MAD_death_penalty_time\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

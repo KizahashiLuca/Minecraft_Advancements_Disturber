@@ -16,6 +16,7 @@ function mad:system/begin/gui/title
 
 ## Branch
 execute if predicate mad:phase/begin/gui/team_match/other_rules run function mad:system/begin/gui/team_match/other_rules/main
+execute if predicate mad:phase/begin/gui/team_match/death_penalty_time run function mad:system/begin/gui/team_match/death_penalty_time/main
 execute if predicate mad:phase/begin/gui/team_match/kill_time run function mad:system/begin/gui/team_match/kill_time/main
 execute if predicate mad:phase/begin/gui/team_match run function mad:system/begin/gui/team_match/main
 execute if predicate mad:phase/begin/gui/world_border run function mad:system/begin/gui/world_border/main

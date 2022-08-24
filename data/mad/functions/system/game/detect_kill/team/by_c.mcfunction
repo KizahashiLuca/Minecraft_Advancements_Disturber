@@ -15,7 +15,7 @@ execute as @s[predicate=mad:player/alive/d] run function mad:system/game/move_ti
 execute as @s[predicate=mad:player/alive/e] run function mad:system/game/move_time/team/to_c/from_e
 
 ## Detect death
-function mad:system/game/detect_death/team
+function mad:system/game/detect_kill/team
 
 ## Revoke advancements
 advancement revoke @s only mad:system/game/detect_kill/team/by_c

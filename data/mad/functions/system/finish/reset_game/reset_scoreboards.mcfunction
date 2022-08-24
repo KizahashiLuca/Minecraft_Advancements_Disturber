@@ -91,6 +91,7 @@ scoreboard objectives remove NumberOfTeams
 scoreboard objectives remove NumberOfBeacons
 scoreboard objectives remove RespawnBannerTime
 scoreboard objectives remove KillTime
+scoreboard objectives remove DeathPenaltyTime
 scoreboard objectives remove friendlyFire
 scoreboard objectives remove collisionRule
 scoreboard objectives remove VisibleName
@@ -101,6 +102,7 @@ scoreboard objectives remove NumberOfTeamsPrv
 scoreboard objectives remove NumberOfBeaconsPrv
 scoreboard objectives remove RespawnBannerTimePrv
 scoreboard objectives remove KillTimePrv
+scoreboard objectives remove DeathPenaltyTimePrv
 scoreboard objectives remove friendlyFirePrv
 scoreboard objectives remove collisionRulePrv
 scoreboard objectives remove VisibleNamePrv

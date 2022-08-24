@@ -91,6 +91,7 @@ scoreboard objectives add NumberOfTeams dummy
 scoreboard objectives add NumberOfBeacons dummy
 scoreboard objectives add RespawnBannerTime dummy
 scoreboard objectives add KillTime dummy
+scoreboard objectives add DeathPenaltyTime dummy
 scoreboard objectives add friendlyFire dummy
 scoreboard objectives add collisionRule dummy
 scoreboard objectives add VisibleName dummy
@@ -101,6 +102,7 @@ scoreboard objectives add NumberOfTeamsPrv dummy
 scoreboard objectives add NumberOfBeaconsPrv dummy
 scoreboard objectives add RespawnBannerTimePrv dummy
 scoreboard objectives add KillTimePrv dummy
+scoreboard objectives add DeathPenaltyTimePrv dummy
 scoreboard objectives add friendlyFirePrv dummy
 scoreboard objectives add collisionRulePrv dummy
 scoreboard objectives add VisibleNamePrv dummy

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:recovery_compass",
+          "name": "minecraft:music_disc_5",
           "functions": [
             {
               "function": "minecraft:set_name",

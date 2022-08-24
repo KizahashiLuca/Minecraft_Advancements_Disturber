@@ -24,4 +24,4 @@ loot replace entity @p[predicate=mad:player/host] inventory.22 loot mad:system/b
 loot replace entity @p[predicate=mad:player/host] inventory.25 loot mad:system/begin/gui/common/ok
 
 ## Change phase
-scoreboard players set #mad Phase 17
+scoreboard players set #mad Phase 13

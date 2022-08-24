@@ -11,6 +11,9 @@
 ## Set games
 function mad:system/game/set_game/main
 
+## Set spawnpoint
+execute as @a[predicate=mad:player/participant] at @s run spawnpoint @s ~ ~ ~
+
 ## Decide where to summon minecart
 execute if predicate mad:gamerules/number_of_minecarts/ge_1 run function mad:system/game/minecart/where_summon_minecart
 
