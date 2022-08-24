@@ -23,3 +23,4 @@ execute unless entity @p[predicate=mad:player/alive/e] run function mad:system/g
 ## Calculate time per players
 scoreboard players operation #mad_team_e SecondPerSurvive = #mad_team_e Second
 scoreboard players operation #mad_team_e SecondPerSurvive /= #mad_team_e NumOfTeamPlayer
+execute if score #mad_team_e SecondPerSurvive > #mad KillTime run scoreboard players operation #mad_team_e SecondPerSurvive = #mad KillTime
