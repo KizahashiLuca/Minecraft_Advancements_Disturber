@@ -8,9 +8,7 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Change nametagVisibility
-scoreboard players add #mad VisibleName 1
-execute if score #mad VisibleName matches 2.. run scoreboard players set #mad VisibleName 0
-
-## Set inventory
-function mad:system/begin/gui/team_match/change_to
+## Add 1secs
+scoreboard players add #mad KillTime 1
+execute if predicate mad:system/begin/gui/team_match/kill_time/ge_thousand run scoreboard players remove #mad KillTime 1000
+function mad:system/begin/gui/team_match/kill_time/change_to

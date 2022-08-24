@@ -32,4 +32,4 @@ execute as @p[predicate=mad:player/host] run loot replace entity @s inventory.22
 execute as @p[predicate=mad:player/host,predicate=mad:system/begin/team_member/all_team_exists_member] run loot replace entity @s inventory.25 loot mad:system/begin/team_member/ok
 
 ## Change phase
-scoreboard players set #mad Phase 16
+scoreboard players set #mad Phase 18

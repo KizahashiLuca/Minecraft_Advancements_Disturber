@@ -9,8 +9,8 @@
 #####################################
 
 ## Send world border messages
-tellraw @a[predicate=mad:system/begin/gui/world_border/unlimited] ["",{"text":"[ワールドボーダー] ","color":"green"},{"text":"制限なし","color":"green","bold":true}]
-tellraw @a[predicate=mad:system/begin/gui/world_border/limited] ["",{"text":"[ワールドボーダー] ","color":"green"},{"score":{"name":"#mad","objective":"WorldBorder"},"color":"green","bold":true},{"text":"×","color":"green","bold":true},{"score":{"name":"#mad","objective":"WorldBorder"},"color":"green","bold":true}]
+tellraw @a[predicate=mad:system/begin/gui/world_border/unlimited] ["",{"translate":"[ワールドボーダー] %s","with":[{"text":"制限なし","bold":true}],"color":"green","bold":false,"italic":false}]
+tellraw @a[predicate=mad:system/begin/gui/world_border/limited] ["",{"translate":"[ワールドボーダー] %s%s%s","with":[{"score":{"name":"#mad","objective":"WorldBorder"},"bold":true},{"text":"×","bold":true},{"score":{"name":"#mad","objective":"WorldBorder"},"bold":true}],"color":"green","bold":false,"italic":false}]
 
 ## Change to root
 function mad:system/begin/gui/root/change_to

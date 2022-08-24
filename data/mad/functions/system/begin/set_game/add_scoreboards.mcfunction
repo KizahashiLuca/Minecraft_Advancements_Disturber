@@ -86,24 +86,26 @@ scoreboard objectives add DaylightCyclePrv dummy
 scoreboard objectives add NumberOfMinecartsPrv dummy
 #### setting phase - choose team setting
 scoreboard objectives add IsTeam dummy
+scoreboard objectives add SetTeamManual dummy
+scoreboard objectives add NumberOfTeams dummy
+scoreboard objectives add NumberOfBeacons dummy
+scoreboard objectives add RespawnBannerTime dummy
+scoreboard objectives add KillTime dummy
 scoreboard objectives add friendlyFire dummy
 scoreboard objectives add collisionRule dummy
 scoreboard objectives add VisibleName dummy
 scoreboard objectives add VisibleInvis dummy
 scoreboard objectives add VisibleDeath dummy
-scoreboard objectives add SetTeamManual dummy
-scoreboard objectives add NumberOfTeams dummy
-scoreboard objectives add NumberOfBeacons dummy
-scoreboard objectives add RespawnBannerTime dummy
+scoreboard objectives add SetTeamManualPrv dummy
+scoreboard objectives add NumberOfTeamsPrv dummy
+scoreboard objectives add NumberOfBeaconsPrv dummy
+scoreboard objectives add RespawnBannerTimePrv dummy
+scoreboard objectives add KillTimePrv dummy
 scoreboard objectives add friendlyFirePrv dummy
 scoreboard objectives add collisionRulePrv dummy
 scoreboard objectives add VisibleNamePrv dummy
 scoreboard objectives add VisibleInvisPrv dummy
 scoreboard objectives add VisibleDeathPrv dummy
-scoreboard objectives add SetTeamManualPrv dummy
-scoreboard objectives add NumberOfTeamsPrv dummy
-scoreboard objectives add NumberOfBeaconsPrv dummy
-scoreboard objectives add RespawnBannerTimePrv dummy
 #### wait phase
 scoreboard objectives add WaitTime dummy
 scoreboard objectives add Sidebar dummy ["",{"text":"設定項目"}]

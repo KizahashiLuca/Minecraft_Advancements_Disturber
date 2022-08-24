@@ -9,11 +9,6 @@
 #####################################
 
 ## Set preview choice
-scoreboard players operation #mad friendlyFirePrv = #mad friendlyFire
-scoreboard players operation #mad collisionRulePrv = #mad collisionRule
-scoreboard players operation #mad VisibleNamePrv = #mad VisibleName
-scoreboard players operation #mad VisibleInvisPrv = #mad VisibleInvis
-scoreboard players operation #mad VisibleDeathPrv = #mad VisibleDeath
 scoreboard players operation #mad SetTeamManualPrv = #mad SetTeamManual
 scoreboard players operation #mad NumberOfTeamsPrv = #mad NumberOfTeams
 scoreboard players operation #mad NumberOfBeaconsPrv = #mad NumberOfBeacons

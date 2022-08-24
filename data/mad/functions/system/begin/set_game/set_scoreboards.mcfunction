@@ -64,24 +64,26 @@ scoreboard players set #mad DaylightCyclePrv 1
 scoreboard players set #mad NumberOfMinecartsPrv 1
 #### setting phase - choose team setting
 scoreboard players set #mad IsTeam 0
+scoreboard players set #mad SetTeamManual 0
+scoreboard players set #mad NumberOfTeams 2
+scoreboard players set #mad NumberOfBeacons 5
+scoreboard players set #mad RespawnBannerTime -60
+scoreboard players set #mad KillTime 300
 scoreboard players set #mad friendlyFire 1
 scoreboard players set #mad collisionRule 1
 scoreboard players set #mad VisibleName 1
 scoreboard players set #mad VisibleInvis 1
 scoreboard players set #mad VisibleDeath 1
-scoreboard players set #mad SetTeamManual 0
-scoreboard players set #mad NumberOfTeams 2
-scoreboard players set #mad NumberOfBeacons 5
-scoreboard players set #mad RespawnBannerTime -60
+scoreboard players set #mad SetTeamManualPrv 0
+scoreboard players set #mad NumberOfTeamsPrv 2
+scoreboard players set #mad NumberOfBeaconsPrv 5
+scoreboard players set #mad RespawnBannerTimePrv -60
+scoreboard players set #mad KillTimePrv 300
 scoreboard players set #mad friendlyFirePrv 1
 scoreboard players set #mad collisionRulePrv 1
 scoreboard players set #mad VisibleNamePrv 1
 scoreboard players set #mad VisibleInvisPrv 1
 scoreboard players set #mad VisibleDeathPrv 1
-scoreboard players set #mad SetTeamManualPrv 0
-scoreboard players set #mad NumberOfTeamsPrv 2
-scoreboard players set #mad NumberOfBeaconsPrv 5
-scoreboard players set #mad RespawnBannerTimePrv -60
 #### wait phase
 scoreboard players set #mad WaitTime 30
 #### summons minecart

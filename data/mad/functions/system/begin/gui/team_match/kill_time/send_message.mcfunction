@@ -8,9 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Change deathMessageVisibility
-scoreboard players add #mad VisibleDeath 1
-execute if score #mad VisibleDeath matches 2.. run scoreboard players set #mad VisibleDeath 0
+## Send kill time messages
+tellraw @a ["",{"translate":"[キル取得時間] %s秒","with":[{"score":{"name":"#mad","objective":"KillTime"},"bold":true}],"color":"green","bold":false,"italic":false}]
 
-## Set inventory
+## Change to team_match
 function mad:system/begin/gui/team_match/change_to
