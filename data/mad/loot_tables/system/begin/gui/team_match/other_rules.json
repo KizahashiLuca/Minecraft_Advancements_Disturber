@@ -1,0 +1,29 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"その他の設定","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MAD_setting_item\",\"MAD_other_rules\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

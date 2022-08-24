@@ -86,24 +86,26 @@ scoreboard objectives remove DaylightCyclePrv
 scoreboard objectives remove NumberOfMinecartsPrv
 #### setting phase - choose team setting
 scoreboard objectives remove IsTeam
+scoreboard objectives remove SetTeamManual
+scoreboard objectives remove NumberOfTeams
+scoreboard objectives remove NumberOfBeacons
+scoreboard objectives remove RespawnBannerTime
+scoreboard objectives remove KillTime
 scoreboard objectives remove friendlyFire
 scoreboard objectives remove collisionRule
 scoreboard objectives remove VisibleName
 scoreboard objectives remove VisibleInvis
 scoreboard objectives remove VisibleDeath
-scoreboard objectives remove SetTeamManual
-scoreboard objectives remove NumberOfTeams
-scoreboard objectives remove NumberOfBeacons
-scoreboard objectives remove RespawnBannerTime
+scoreboard objectives remove SetTeamManualPrv
+scoreboard objectives remove NumberOfTeamsPrv
+scoreboard objectives remove NumberOfBeaconsPrv
+scoreboard objectives remove RespawnBannerTimePrv
+scoreboard objectives remove KillTimePrv
 scoreboard objectives remove friendlyFirePrv
 scoreboard objectives remove collisionRulePrv
 scoreboard objectives remove VisibleNamePrv
 scoreboard objectives remove VisibleInvisPrv
 scoreboard objectives remove VisibleDeathPrv
-scoreboard objectives remove SetTeamManualPrv
-scoreboard objectives remove NumberOfTeamsPrv
-scoreboard objectives remove NumberOfBeaconsPrv
-scoreboard objectives remove RespawnBannerTimePrv
 #### wait phase
 scoreboard objectives remove WaitTime
 scoreboard objectives remove Sidebar

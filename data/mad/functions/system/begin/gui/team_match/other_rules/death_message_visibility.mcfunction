@@ -8,9 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Change collisionRule
-scoreboard players add #mad collisionRule 1
-execute if score #mad collisionRule matches 2.. run scoreboard players set #mad collisionRule 0
+## Change deathMessageVisibility
+scoreboard players add #mad VisibleDeath 1
+execute if score #mad VisibleDeath matches 2.. run scoreboard players set #mad VisibleDeath 0
 
 ## Set inventory
-function mad:system/begin/gui/team_match/change_to
+function mad:system/begin/gui/team_match/other_rules/change_to

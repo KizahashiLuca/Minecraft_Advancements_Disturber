@@ -8,9 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Change friendlyFire
-scoreboard players add #mad friendlyFire 1
-execute if score #mad friendlyFire matches 2.. run scoreboard players set #mad friendlyFire 0
+## Change collisionRule
+scoreboard players add #mad collisionRule 1
+execute if score #mad collisionRule matches 2.. run scoreboard players set #mad collisionRule 0
 
 ## Set inventory
-function mad:system/begin/gui/team_match/change_to
+function mad:system/begin/gui/team_match/other_rules/change_to

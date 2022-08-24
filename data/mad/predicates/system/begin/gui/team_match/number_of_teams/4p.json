@@ -9,7 +9,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:24b,Count:4b,tag:{Tags:[\"MAD_setting_item\",\"MAD_number_of_teams\"]}}]}"
+        "nbt": "{Inventory:[{Slot:21b,Count:4b,tag:{Tags:[\"MAD_setting_item\",\"MAD_number_of_teams\"]}}]}"
       }
     }
   }
