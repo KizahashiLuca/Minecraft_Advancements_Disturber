@@ -12,7 +12,7 @@
 scoreboard players remove #mad_team_c Second 1
 
 ## Time over
-execute if predicate mad:system/game/timer/team/second/lt_zero/c run kill @a[predicate=mad:player/alive/c]
+execute if predicate mad:system/game/timer/team/second/lt_zero/c as @a[predicate=mad:player/alive/c] run function mad:system/game/timer/team/time_up/c
 
 ## Bossbar
 execute store result bossbar minecraft:bossbar_team_c max run scoreboard players get #mad_team_c TimeLimit
