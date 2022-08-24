@@ -13,7 +13,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:22b,tag:{Tags:[\"MAD_setting_item\",\"MAD_respawn_banner_time\"]}}]}"
+        "nbt": "{Inventory:[{Slot:24b,tag:{Tags:[\"MAD_setting_item\",\"MAD_death_penalty_time\"]}}]}"
       }
     }
   }

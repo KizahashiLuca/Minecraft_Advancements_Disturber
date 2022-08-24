@@ -6,11 +6,11 @@
       "type": "minecraft:fixed",
       "name": "#mad"
     },
-    "score": "Phase",
+    "score": "DeathPenaltyTime",
     "scale": 1
   },
   "range": {
-    "min": 6,
-    "max": 6
+    "min": 1000,
+    "max": 2147483647
   }
 }

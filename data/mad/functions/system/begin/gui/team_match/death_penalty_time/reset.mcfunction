@@ -8,11 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Reset team
-team leave @a
-
 ## Reset choice
-scoreboard players set #mad Phase 1
+scoreboard players set #mad DeathPenaltyTime 100
 
-## Set inventory
-function mad:system/begin/team_member/change_to
+## Send messages
+function mad:system/begin/gui/team_match/death_penalty_time/change_to

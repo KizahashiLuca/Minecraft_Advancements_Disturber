@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:phase/begin/gui/team_match"
+    "name": "mad:phase/begin/gui/team_match/death_penalty_time"
   },
   {
     "condition": "minecraft:reference",
@@ -13,7 +13,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:22b,tag:{Tags:[\"MAD_setting_item\",\"MAD_respawn_banner_time\"]}}]}"
+        "nbt": "{Inventory:[{Slot:28b,tag:{Tags:[\"MAD_setting_item\",\"MAD_cancel\"]}}]}"
       }
     }
   }

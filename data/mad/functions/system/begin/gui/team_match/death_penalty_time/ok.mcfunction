@@ -8,11 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Reset team
-team leave @a
+## Set preview choice
+scoreboard players operation #mad DeathPenaltyTimePrv = #mad DeathPenaltyTime
 
-## Reset choice
-scoreboard players set #mad Phase 1
-
-## Set inventory
-function mad:system/begin/team_member/change_to
+## Send messages
+function mad:system/begin/gui/team_match/death_penalty_time/send_message

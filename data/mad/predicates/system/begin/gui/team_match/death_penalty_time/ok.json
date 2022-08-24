@@ -1,11 +1,15 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:phase/begin/gui/team_match"
+    "name": "mad:phase/begin/gui/team_match/death_penalty_time"
   },
   {
     "condition": "minecraft:reference",
     "name": "mad:player/host"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/begin/gui/team_match/death_penalty_time/gt_zero"
   },
   {
     "condition": "minecraft:inverted",
@@ -13,7 +17,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:22b,tag:{Tags:[\"MAD_setting_item\",\"MAD_respawn_banner_time\"]}}]}"
+        "nbt": "{Inventory:[{Slot:34b,tag:{Tags:[\"MAD_setting_item\",\"MAD_ok\"]}}]}"
       }
     }
   }

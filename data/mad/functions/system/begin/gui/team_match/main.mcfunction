@@ -19,6 +19,7 @@ execute as @p[predicate=mad:system/begin/gui/team_match/number_of_teams] run fun
 execute as @p[predicate=mad:system/begin/gui/team_match/number_of_respawn_beacons] run function mad:system/begin/gui/team_match/number_of_respawn_beacons
 execute as @p[predicate=mad:system/begin/gui/team_match/respawn_banner_time] run function mad:system/begin/gui/team_match/respawn_banner_time
 execute as @p[predicate=mad:system/begin/gui/team_match/kill_time] run function mad:system/begin/gui/team_match/kill_time/change_to
+execute as @p[predicate=mad:system/begin/gui/team_match/death_penalty_time] run function mad:system/begin/gui/team_match/death_penalty_time/change_to
 execute as @p[predicate=mad:system/begin/gui/team_match/other_rules] run function mad:system/begin/gui/team_match/other_rules/change_to
 
 execute as @p[predicate=mad:system/begin/gui/team_match/cancel] run function mad:system/begin/gui/team_match/cancel

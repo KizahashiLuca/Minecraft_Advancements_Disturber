@@ -8,11 +8,7 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Reset team
-team leave @a
-
-## Reset choice
-scoreboard players set #mad Phase 1
-
-## Set inventory
-function mad:system/begin/team_member/change_to
+## Add 10secs
+scoreboard players add #mad DeathPenaltyTime 10
+execute if predicate mad:system/begin/gui/team_match/death_penalty_time/ge_thousand run scoreboard players remove #mad DeathPenaltyTime 1000
+function mad:system/begin/gui/team_match/death_penalty_time/change_to

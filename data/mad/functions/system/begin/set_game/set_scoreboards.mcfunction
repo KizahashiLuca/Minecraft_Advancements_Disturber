@@ -12,7 +12,7 @@
 #### game phase
 scoreboard players set #mad DataVersion 1444
 scoreboard players set #mad Version 13
-scoreboard players set #mad Phase 5
+scoreboard players set #mad Phase 1
 scoreboard players set #mad PrevPhase 0
 scoreboard players set #mad Difficulty 0
 scoreboard players set #mad ExitMessage 0
@@ -69,6 +69,7 @@ scoreboard players set #mad NumberOfTeams 2
 scoreboard players set #mad NumberOfBeacons 5
 scoreboard players set #mad RespawnBannerTime -60
 scoreboard players set #mad KillTime 300
+scoreboard players set #mad DeathPenaltyTime 100
 scoreboard players set #mad friendlyFire 1
 scoreboard players set #mad collisionRule 1
 scoreboard players set #mad VisibleName 1
@@ -79,6 +80,7 @@ scoreboard players set #mad NumberOfTeamsPrv 2
 scoreboard players set #mad NumberOfBeaconsPrv 5
 scoreboard players set #mad RespawnBannerTimePrv -60
 scoreboard players set #mad KillTimePrv 300
+scoreboard players set #mad DeathPenaltyTimePrv 100
 scoreboard players set #mad friendlyFirePrv 1
 scoreboard players set #mad collisionRulePrv 1
 scoreboard players set #mad VisibleNamePrv 1
