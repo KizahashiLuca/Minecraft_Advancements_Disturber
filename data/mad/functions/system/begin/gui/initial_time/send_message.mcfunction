@@ -9,7 +9,7 @@
 #####################################
 
 ## Send time limit messages
-tellraw @a ["",{"text":"[初期生存時間] ","color":"green"},{"score":{"name":"#mad","objective":"TimeLimit"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true}]
+tellraw @a ["",{"translate":"[初期生存時間] %s秒","with":[{"score":{"name":"#mad","objective":"TimeLimit"},"bold":true}],"color":"green","bold":false,"italic":false}]
 
 ## Change to root
 function mad:system/begin/gui/root/change_to

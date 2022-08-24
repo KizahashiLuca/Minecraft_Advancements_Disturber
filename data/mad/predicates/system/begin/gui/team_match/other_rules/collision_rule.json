@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:phase/begin/gui/team_match"
+    "name": "mad:phase/begin/gui/team_match/other_rules"
   },
   {
     "condition": "minecraft:reference",
@@ -13,7 +13,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:23b,tag:{Tags:[\"MAD_setting_item\",\"MAD_team_member\"]}}]}"
+        "nbt": "{Inventory:[{Slot:21b,tag:{Tags:[\"MAD_setting_item\",\"MAD_collision_rule\"]}}]}"
       }
     }
   }

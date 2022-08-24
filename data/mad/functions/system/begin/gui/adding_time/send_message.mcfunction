@@ -9,7 +9,7 @@
 #####################################
 
 ## Send adding time messages
-tellraw @a ["",{"text":"[追加生存時間] ","color":"green"},{"score":{"name":"#mad","objective":"AddingTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true}]
+tellraw @a ["",{"translate":"[追加生存時間] %s秒","with":[{"score":{"name":"#mad","objective":"AddingTime"},"bold":true}],"color":"green","bold":false,"italic":false}]
 
 ## Change to root
 function mad:system/begin/gui/root/change_to

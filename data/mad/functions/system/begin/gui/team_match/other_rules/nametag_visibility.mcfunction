@@ -8,9 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Change seeFriendlyInvisibles
-scoreboard players add #mad VisibleInvis 1
-execute if score #mad VisibleInvis matches 2.. run scoreboard players set #mad VisibleInvis 0
+## Change nametagVisibility
+scoreboard players add #mad VisibleName 1
+execute if score #mad VisibleName matches 2.. run scoreboard players set #mad VisibleName 0
 
 ## Set inventory
-function mad:system/begin/gui/team_match/change_to
+function mad:system/begin/gui/team_match/other_rules/change_to

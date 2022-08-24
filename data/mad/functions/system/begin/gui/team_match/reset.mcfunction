@@ -9,11 +9,6 @@
 #####################################
 
 ## Reset choice
-scoreboard players set #mad friendlyFire 1
-scoreboard players set #mad collisionRule 1
-scoreboard players set #mad VisibleName 1
-scoreboard players set #mad VisibleInvis 1
-scoreboard players set #mad VisibleDeath 1
 scoreboard players set #mad SetTeamManual 0
 scoreboard players set #mad NumberOfTeams 2
 scoreboard players set #mad NumberOfBeacons 5

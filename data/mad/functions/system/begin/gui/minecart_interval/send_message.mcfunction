@@ -9,7 +9,7 @@
 #####################################
 
 ## Send adding time messages
-tellraw @a ["",{"text":"[物資投下間隔] ","color":"green"},{"score":{"name":"#mad","objective":"CartInterval"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true}]
+tellraw @a ["",{"translate":"[物資投下間隔] %s秒","with":[{"score":{"name":"#mad","objective":"CartInterval"},"bold":true}],"color":"green","bold":false,"italic":false}]
 
 ## Change to root
 function mad:system/begin/gui/root/change_to
