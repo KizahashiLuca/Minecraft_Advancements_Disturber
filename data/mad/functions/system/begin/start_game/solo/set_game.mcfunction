@@ -68,6 +68,7 @@ function mad:system/begin/set_game/detect_version
 function mad:system/begin/set_game/count_players
 
 ## Set scoreboards
+scoreboard players set #mad TimeLimit 100
 scoreboard players set #mad CartInterval 100
 
 ## Send messages
