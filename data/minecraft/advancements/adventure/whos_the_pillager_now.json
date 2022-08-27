@@ -40,6 +40,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/whos_the_pillager_now"
+    "function": "mad:system/game/advancements/adventure/whos_the_pillager_now/main"
   }
 }

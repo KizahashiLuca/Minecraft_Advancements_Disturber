@@ -36,6 +36,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/upgrade_tools"
+    "function": "mad:system/game/advancements/story/upgrade_tools/main"
   }
 }

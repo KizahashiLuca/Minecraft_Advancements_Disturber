@@ -1,0 +1,14 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/wait"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/wait/time/second/eq_zero"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/wait/time/tick/eq_zero"
+  }
+]

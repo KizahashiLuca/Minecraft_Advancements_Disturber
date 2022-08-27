@@ -37,6 +37,6 @@
   ],
   "rewards": {
     "experience": 100,
-    "function": "mad:system/ongame/advancements/husbandry/obtain_netherite_hoe"
+    "function": "mad:system/game/advancements/husbandry/obtain_netherite_hoe/main"
   }
 }

@@ -52,6 +52,6 @@
   ],
   "rewards": {
     "experience": 100,
-    "function": "mad:system/ongame/advancements/nether/netherite_armor"
+    "function": "mad:system/game/advancements/nether/netherite_armor/main"
   }
 }

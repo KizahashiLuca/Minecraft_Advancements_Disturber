@@ -46,6 +46,6 @@
   ],
   "rewards": {
     "experience": 50,
-    "function": "mad:system/ongame/advancements/adventure/sniper_duel"
+    "function": "mad:system/game/advancements/adventure/sniper_duel/main"
   }
 }

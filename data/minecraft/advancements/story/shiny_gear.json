@@ -75,6 +75,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/shiny_gear"
+    "function": "mad:system/game/advancements/story/shiny_gear/main"
   }
 }

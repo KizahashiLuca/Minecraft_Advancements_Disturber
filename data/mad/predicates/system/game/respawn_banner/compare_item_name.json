@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "@e[predicate=mad:system/game/respawn_banner/detect_respawn_banner,limit=1]"
+    },
+    "score": "TempBannerNum",
+    "scale": 1
+  },
+  "range": {
+    "min": 0,
+    "max": 0
+  }
+}

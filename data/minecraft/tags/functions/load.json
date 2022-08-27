@@ -1,6 +1,6 @@
 {
-    "replace": false,
-    "values": [
-        "mad:onload"
-    ]
+  "replace": false,
+  "values": [
+    "mad:onload"
+  ]
 }

@@ -31,6 +31,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/create_beacon"
+    "function": "mad:system/game/advancements/nether/create_beacon/main"
   }
 }

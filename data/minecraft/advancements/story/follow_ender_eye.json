@@ -39,6 +39,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/follow_ender_eye"
+    "function": "mad:system/game/advancements/story/follow_ender_eye/main"
   }
 }

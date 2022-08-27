@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/begin/gui/world_border/limited"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/begin/gui/world_border/gt_2k"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/begin/gui/world_border/unlimited"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/begin/gui/world_border/gt_60k"
+    }
+  ]
+}

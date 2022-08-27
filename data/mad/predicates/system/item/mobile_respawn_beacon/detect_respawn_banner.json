@@ -1,0 +1,13 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:area_effect_cloud/mobile_respawn_beacon/structure"
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MAD_DetectRespawnBanner\"]}"
+    }
+  }
+]

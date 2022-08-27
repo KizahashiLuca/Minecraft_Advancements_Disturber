@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/begin/gui/team_match/death_penalty_time"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/host"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:23b,tag:{Tags:[\"MAD_setting_item\",\"MAD_number\"]}}]}"
+      }
+    }
+  }
+]

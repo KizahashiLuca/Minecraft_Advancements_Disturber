@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/mine_diamond"
+    "function": "mad:system/game/advancements/story/mine_diamond/main"
   }
 }

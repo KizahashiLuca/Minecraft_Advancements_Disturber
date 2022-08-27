@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/deflect_arrow"
+    "function": "mad:system/game/advancements/story/deflect_arrow/main"
   }
 }

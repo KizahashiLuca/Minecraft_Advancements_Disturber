@@ -40,6 +40,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/very_very_frightening"
+    "function": "mad:system/game/advancements/adventure/very_very_frightening/main"
   }
 }

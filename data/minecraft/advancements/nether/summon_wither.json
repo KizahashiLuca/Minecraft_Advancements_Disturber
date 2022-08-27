@@ -37,6 +37,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/summon_wither"
+    "function": "mad:system/game/advancements/nether/summon_wither/main"
   }
 }

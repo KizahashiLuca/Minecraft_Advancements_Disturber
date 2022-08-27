@@ -1,0 +1,28 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/alive"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "chest": {
+            "items": [
+              "minecraft:leather_chestplate",
+              "minecraft:golden_chestplate",
+              "minecraft:chainmail_chestplate",
+              "minecraft:iron_chestplate",
+              "minecraft:diamond_chestplate",
+              "minecraft:netherite_chestplate",
+              "minecraft:air"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

@@ -533,6 +533,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/kill_a_mob"
+    "function": "mad:system/game/advancements/adventure/kill_a_mob/main"
   }
 }

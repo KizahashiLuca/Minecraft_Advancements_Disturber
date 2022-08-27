@@ -31,6 +31,6 @@
   ],
   "rewards": {
     "experience": 85,
-    "function": "mad:system/ongame/advancements/adventure/arbalistic"
+    "function": "mad:system/game/advancements/adventure/arbalistic/main"
   }
 }

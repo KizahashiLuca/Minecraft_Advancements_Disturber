@@ -1,0 +1,14 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/dead"
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "team": "TeamA",
+      "nbt": "{Tags:[\"MAD_RespawnBannerSetTmp\"]}"
+    }
+  }
+]

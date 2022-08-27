@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/common/respawn_beacon/time/tick_of_respawn_beacon"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "Tick": {
+        "min": -2147483648,
+        "max": -1
+      }
+    }
+  }
+]

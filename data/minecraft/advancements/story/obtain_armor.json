@@ -75,6 +75,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/obtain_armor"
+    "function": "mad:system/game/advancements/story/obtain_armor/main"
   }
 }

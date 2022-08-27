@@ -1,0 +1,43 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:bat_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                ["",{"text":"防具アップグレードキット","color":"light_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                ["",{"text":"使用者の着用した防具をアップグレード。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  無着用 → 革防具","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  革防具 → 金防具","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  金防具 → チェーン防具","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  チェーン防具 → 鉄防具","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  鉄防具 → ダイヤモンド防具","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  ダイヤモンド防具 → ネザライト防具","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_ArmorUpgrader\"],EntityTag:{Marker:0b,Invulnerable:1b,Health:1.0f,Silent:1b,NoAI:1b,DeathLootTable:\"mad:system/game/minecart/items/empty\",ActiveEffects:[{Ambient:0b,ShowIcon:0b,ShowParticles:0b,Id:14b,Amplifier:0b,Duration:2147483647}],CustomNameVisible:0b,Team:\"NeverCollision\"}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

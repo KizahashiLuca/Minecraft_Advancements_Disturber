@@ -27,6 +27,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/avoid_vibration"
+    "function": "mad:system/game/advancements/adventure/avoid_vibration/main"
   }
 }

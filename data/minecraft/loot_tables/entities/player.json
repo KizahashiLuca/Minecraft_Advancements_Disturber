@@ -9,6 +9,9 @@
           "weight": 1,
           "conditions": [
             {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
               "condition": "minecraft:entity_properties",
               "predicate": {
                 "team": "TeamA"
@@ -19,14 +22,15 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"selector":"@s","color":"red","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"red","bold":false,"italic":false}]
               ],
               "entity": "this"
-            },{
-              "function":"minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamA\"]}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamA\"]}"
             }
           ]
         },
@@ -34,6 +38,9 @@
           "type": "minecraft:item",
           "weight": 1,
           "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
             {
               "condition": "minecraft:entity_properties",
               "predicate": {
@@ -45,14 +52,15 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"selector":"@s","color":"blue","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"blue","bold":false,"italic":false}]
               ],
               "entity": "this"
-            },{
-              "function":"minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamB\"]}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamB\"]}"
             }
           ]
         },
@@ -60,6 +68,9 @@
           "type": "minecraft:item",
           "weight": 1,
           "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
             {
               "condition": "minecraft:entity_properties",
               "predicate": {
@@ -71,14 +82,15 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"selector":"@s","color":"yellow","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"yellow","bold":false,"italic":false}]
               ],
               "entity": "this"
-            },{
-              "function":"minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamC\"]}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamC\"]}"
             }
           ]
         },
@@ -86,6 +98,9 @@
           "type": "minecraft:item",
           "weight": 1,
           "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
             {
               "condition": "minecraft:entity_properties",
               "predicate": {
@@ -97,14 +112,15 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"selector":"@s","color":"green","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"green","bold":false,"italic":false}]
               ],
               "entity": "this"
-            },{
-              "function":"minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamD\"]}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamD\"]}"
             }
           ]
         },
@@ -112,6 +128,9 @@
           "type": "minecraft:item",
           "weight": 1,
           "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
             {
               "condition": "minecraft:entity_properties",
               "predicate": {
@@ -123,14 +142,15 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"selector":"@s","color":"dark_purple","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"dark_purple","bold":false,"italic":false}]
               ],
               "entity": "this"
-            },{
-              "function":"minecraft:set_nbt",
-              "tag": "{Tags:[\"RespawnBannerByDead\",\"TeamE\"]}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamE\"]}"
             }
           ]
         }

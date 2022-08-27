@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": [
+            [
+              "",
+              {"translate":"チーム数","color":"white","bold":false,"italic":false}
+            ]
+          ]
+        },
+        {
+          "function": "minecraft:set_lore",
+          "entity": "this",
+          "lore": [
+            [
+              "",
+              {"text":" ","color":"white","bold":false,"italic":false},
+              {"score":{"name":"#mad","objective":"NumberOfTeams"},"color":"green","bold":true,"italic":false},
+              {"text":"チーム","color":"green","bold":true,"italic":false},
+              {"text":" ","color":"white","bold":false,"italic":false},
+              {"text":"選択中","color":"white","bold":false,"italic":false}
+            ]
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:63,Tags:[\"MAD_setting_item\",\"MAD_number_of_teams\"]}"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/team_match/number_of_teams/1p"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/team_match/number_of_teams/2p"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/team_match/number_of_teams/3p"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/team_match/number_of_teams/4p"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/team_match/number_of_teams/5p"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

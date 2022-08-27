@@ -27,6 +27,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/sleep_in_bed"
+    "function": "mad:system/game/advancements/adventure/sleep_in_bed/main"
   }
 }

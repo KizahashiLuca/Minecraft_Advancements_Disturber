@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/team/b"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "Phase": {
+        "max": 21,
+        "min": 21
+      },
+      "Death": {
+        "max": 0,
+        "min": 0
+      }
+    }
+  }
+]

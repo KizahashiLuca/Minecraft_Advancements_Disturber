@@ -1,0 +1,42 @@
+{
+  "parent": "mad:originals/obtain_sponge",
+  "display": {
+    "icon": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "title": {
+      "translate": "主の始末"
+    },
+    "description": {
+      "translate": "エルダーガーディアンを倒す"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_elder_guardian": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "minecraft:elder_guardian"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill_elder_guardian"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/kill_elder_guardian/main"
+  }
+}

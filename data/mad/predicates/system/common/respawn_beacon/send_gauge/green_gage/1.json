@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/common/respawn_beacon/set_respawn_banner"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "Second": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  }
+]

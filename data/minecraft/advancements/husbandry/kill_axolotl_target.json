@@ -37,6 +37,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/kill_axolotl_target"
+    "function": "mad:system/game/advancements/husbandry/kill_axolotl_target/main"
   }
 }

@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:version/accept"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:gamerules/num_of_participants/accept"
+  }
+]

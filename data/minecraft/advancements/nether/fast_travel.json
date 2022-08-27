@@ -34,6 +34,6 @@
   ],
   "rewards": {
     "experience": 100,
-    "function": "mad:system/ongame/advancements/nether/fast_travel"
+    "function": "mad:system/game/advancements/nether/fast_travel/main"
   }
 }

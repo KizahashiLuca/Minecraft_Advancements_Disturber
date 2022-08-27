@@ -1,0 +1,64 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls":1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_banner",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                [
+                  "",
+                  {"text":"","color":"reset","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MAD_setting_item\",\"MAD_number\"]}"
+            },
+            {
+              "function": "minecraft:set_banner_pattern",
+              "patterns": [
+                {
+                  "pattern": "minecraft:stripe_left",
+                  "color": "black"
+                },
+                {
+                  "pattern": "minecraft:half_horizontal_bottom",
+                  "color": "white"
+                },
+                {
+                  "pattern": "minecraft:stripe_middle",
+                  "color": "black"
+                },
+                {
+                  "pattern": "minecraft:stripe_top",
+                  "color": "black"
+                },
+                {
+                  "pattern": "minecraft:stripe_right",
+                  "color": "black"
+                },
+                {
+                  "pattern": "minecraft:stripe_bottom",
+                  "color": "black"
+                },
+                {
+                  "pattern": "minecraft:border",
+                  "color": "white"
+                }
+              ],
+              "append": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

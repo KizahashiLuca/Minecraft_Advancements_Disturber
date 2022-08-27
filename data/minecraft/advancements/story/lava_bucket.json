@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/lava_bucket"
+    "function": "mad:system/game/advancements/story/lava_bucket/main"
   }
 }

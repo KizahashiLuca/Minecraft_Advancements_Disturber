@@ -47,6 +47,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/spyglass_at_ghast"
+    "function": "mad:system/game/advancements/adventure/spyglass_at_ghast/main"
   }
 }

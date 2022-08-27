@@ -61,6 +61,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/wax_off"
+    "function": "mad:system/game/advancements/husbandry/wax_off/main"
   }
 }

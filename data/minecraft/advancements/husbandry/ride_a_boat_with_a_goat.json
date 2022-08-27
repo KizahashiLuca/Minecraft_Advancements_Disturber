@@ -42,6 +42,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/ride_a_boat_with_a_goat"
+    "function": "mad:system/game/advancements/husbandry/ride_a_boat_with_a_goat/main"
   }
 }

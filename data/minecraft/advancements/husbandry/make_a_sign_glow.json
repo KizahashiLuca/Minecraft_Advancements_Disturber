@@ -38,6 +38,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/make_a_sign_glow"
+    "function": "mad:system/game/advancements/husbandry/make_a_sign_glow/main"
   }
 }

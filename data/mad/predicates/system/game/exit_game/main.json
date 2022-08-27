@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/game/exit_game/one"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/game/exit_game/not_one"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/game/exit_game/team"
+    }
+  ]
+}

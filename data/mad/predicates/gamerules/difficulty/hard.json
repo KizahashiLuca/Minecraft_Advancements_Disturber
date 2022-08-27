@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "score": "Difficulty",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#mad"
+    },
+    "scale": 1
+  },
+  "range": {
+    "min": 3,
+    "max": 3
+  }
+}

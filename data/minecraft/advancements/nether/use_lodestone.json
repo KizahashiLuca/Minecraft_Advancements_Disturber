@@ -40,6 +40,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/use_lodestone"
+    "function": "mad:system/game/advancements/nether/use_lodestone/main"
   }
 }

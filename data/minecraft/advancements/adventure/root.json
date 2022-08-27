@@ -32,6 +32,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/root"
+    "function": "mad:system/game/advancements/adventure/root/main"
   }
 }

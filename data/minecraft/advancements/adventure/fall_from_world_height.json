@@ -55,6 +55,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/fall_from_world_height"
+    "function": "mad:system/game/advancements/adventure/fall_from_world_height/main"
   }
 }

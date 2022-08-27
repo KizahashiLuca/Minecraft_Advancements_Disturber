@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/begin/team_member"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/not_participant_not_spectator"
+  }
+]

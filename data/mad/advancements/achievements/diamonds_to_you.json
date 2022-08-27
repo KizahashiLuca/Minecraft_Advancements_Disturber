@@ -5,10 +5,10 @@
       "item": "minecraft:diamond"
     },
     "title": {
-      "text": "ダイヤモンドをあなたに！"
+      "translate": "ダイヤモンドをあなたに！"
     },
     "description": {
-      "text": "モブにダイヤモンドを拾わせる"
+      "translate": "モブにダイヤモンドを拾わせる"
     },
     "frame": "task",
     "show_toast": true,
@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "diamonds_to_you_zombie": {
+    "diamonds_to_you": {
       "trigger": "minecraft:thrown_item_picked_up_by_entity",
       "conditions": {
         "item": {
@@ -28,235 +28,7 @@
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "minecraft:zombie"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_skeleton": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:skeleton"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_wither_skeleton": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:wither_skeleton"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_stray": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:stray"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_drowned": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:drowned"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_husk": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:husk"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_zoglin": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:zoglin"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_zombified_piglin": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:zombified_piglin"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_zombie_villager": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:zombie_villager"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_piglin": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:piglin"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_piglin_brute": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:piglin_brute"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_fox": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:fox"
-            },
-            "entity": "this"
-          }
-        ]
-      }
-    },
-    "diamonds_to_you_cat": {
-      "trigger": "minecraft:thrown_item_picked_up_by_entity",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:cat"
+              "type": "#mad:pick_up_diamonds"
             },
             "entity": "this"
           }
@@ -266,22 +38,10 @@
   },
   "requirements": [
     [
-      "diamonds_to_you_zombie",
-      "diamonds_to_you_skeleton",
-      "diamonds_to_you_wither_skeleton",
-      "diamonds_to_you_stray",
-      "diamonds_to_you_drowned",
-      "diamonds_to_you_husk",
-      "diamonds_to_you_zoglin",
-      "diamonds_to_you_zombified_piglin",
-      "diamonds_to_you_zombie_villager",
-      "diamonds_to_you_piglin",
-      "diamonds_to_you_piglin_brute",
-      "diamonds_to_you_fox",
-      "diamonds_to_you_cat"
+      "diamonds_to_you"
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/diamonds_to_you"
+    "function": "mad:system/game/advancements/achievements/diamonds_to_you/main"
   }
 }

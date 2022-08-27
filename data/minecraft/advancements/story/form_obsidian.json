@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/form_obsidian"
+    "function": "mad:system/game/advancements/story/form_obsidian/main"
   }
 }

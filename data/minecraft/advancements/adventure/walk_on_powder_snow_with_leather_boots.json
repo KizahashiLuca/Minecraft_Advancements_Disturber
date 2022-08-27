@@ -51,6 +51,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/walk_on_powder_snow_with_leather_boots"
+    "function": "mad:system/game/advancements/adventure/walk_on_powder_snow_with_leather_boots/main"
   }
 }
