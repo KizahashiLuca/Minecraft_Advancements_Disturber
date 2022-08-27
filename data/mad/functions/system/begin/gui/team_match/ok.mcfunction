@@ -12,7 +12,6 @@
 scoreboard players operation #mad SetTeamManualPrv = #mad SetTeamManual
 scoreboard players operation #mad NumberOfTeamsPrv = #mad NumberOfTeams
 scoreboard players operation #mad NumberOfBeaconsPrv = #mad NumberOfBeacons
-scoreboard players operation #mad RespawnBannerTimePrv = #mad RespawnBannerTime
 
 ## Send messages
 function mad:system/begin/gui/team_match/send_message

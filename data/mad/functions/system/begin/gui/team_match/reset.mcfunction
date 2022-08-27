@@ -12,7 +12,6 @@
 scoreboard players set #mad SetTeamManual 0
 scoreboard players set #mad NumberOfTeams 2
 scoreboard players set #mad NumberOfBeacons 5
-scoreboard players set #mad RespawnBannerTime 0
 
 ## Set inventory
 function mad:system/begin/gui/team_match/change_to

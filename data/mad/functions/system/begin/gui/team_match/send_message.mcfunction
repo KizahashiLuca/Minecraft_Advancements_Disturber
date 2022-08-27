@@ -16,8 +16,5 @@ tellraw @a ["",{"translate":"[チーム数] %sチーム","with":[{"score":{"name
 
 tellraw @a ["",{"translate":"[リスポーンビーコン数] %sヶ所","with":[{"score":{"name":"#mad","objective":"NumberOfBeacons"},"bold":true}],"color":"green","bold":false,"italic":false}]
 
-tellraw @a[predicate=mad:gamerules/team_match/respawn_banner_time/limited] ["",{"translate":"[リスポーンバナー残存時間] %s秒","with":[{"score":{"name":"#mad","objective":"RespawnBannerTime"},"bold":true}],"color":"green","bold":false,"italic":false}]
-tellraw @a[predicate=mad:gamerules/team_match/respawn_banner_time/unlimited] ["",{"translate":"[リスポーンバナー残存時間] %s","with":[{"text":"無制限","bold":true}],"color":"green","bold":false,"italic":false}]
-
 ## Change to choose setting
 function mad:system/begin/gui/root/change_to
