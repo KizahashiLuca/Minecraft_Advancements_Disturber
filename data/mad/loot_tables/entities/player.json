@@ -1,0 +1,145 @@
+{
+  "type": "minecraft:entity",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "team": "TeamA"
+              },
+              "entity": "this"
+            }
+          ],
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"selector":"@s","color":"red","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"red","bold":false,"italic":false}]
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamA\"]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "team": "TeamB"
+              },
+              "entity": "this"
+            }
+          ],
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"selector":"@s","color":"blue","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"blue","bold":false,"italic":false}]
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamB\"]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "team": "TeamC"
+              },
+              "entity": "this"
+            }
+          ],
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"selector":"@s","color":"yellow","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"yellow","bold":false,"italic":false}]
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamC\"]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "team": "TeamD"
+              },
+              "entity": "this"
+            }
+          ],
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"selector":"@s","color":"green","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"green","bold":false,"italic":false}]
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamD\"]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "team": "TeamE"
+              },
+              "entity": "this"
+            }
+          ],
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"selector":"@s","color":"dark_purple","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"dark_purple","bold":false,"italic":false}]
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamE\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

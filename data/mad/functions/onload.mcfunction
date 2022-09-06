@@ -26,5 +26,8 @@ tellraw @a[predicate=mad:gamerules/num_of_participants/not_one] ["",{"translate"
 tellraw @a ["",{"translate":"     ※ 詳細設定してのゲーム開始は %s","with":[{"text":"こちら","color":"light_purple","bold":true,"underlined":true,"hoverEvent":{"action":"show_text","value":"クリックして詳細設定開始"},"clickEvent":{"action":"run_command","value":"/function mad:system/begin/start_game/details/main"}}],"color":"white","bold":false,"italic":false}]
 function mad:system/common/message/end
 
+## Remove a tag
+tag @a remove MAD_Participant
+
 ## Remove scoreboard
 scoreboard objectives remove NumOfParticipants

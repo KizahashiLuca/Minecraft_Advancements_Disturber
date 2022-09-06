@@ -18,7 +18,7 @@ scoreboard players set @s Death 2
 scoreboard players set @s Phase 22
 
 ## replaceitem
-loot replace entity @s inventory.0 loot minecraft:entities/player
+loot replace entity @s inventory.0 loot mad:entities/player
 
 ## Spectate
 spectate @p[predicate=mad:player/alive/a,sort=nearest] @s[predicate=mad:player/team/a]
