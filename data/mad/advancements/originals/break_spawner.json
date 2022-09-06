@@ -1,5 +1,5 @@
 {
-  "parent": "mad:originals/adventure",
+  "parent": "mad:originals/kill_enderman",
   "display": {
     "icon": {
       "item": "minecraft:spawner"

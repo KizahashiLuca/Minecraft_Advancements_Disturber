@@ -1,5 +1,5 @@
 {
-  "parent": "mad:originals/adventure",
+  "parent": "mad:originals/root",
   "display": {
     "icon": {
       "item": "minecraft:ender_pearl"

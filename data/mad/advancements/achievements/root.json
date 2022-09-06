@@ -24,8 +24,5 @@
     [
       "achievements_root"
     ]
-  ],
-  "rewards": {
-    "function": "mad:system/game/advancements/achievements/root/main"
-  }
+  ]
 }
