@@ -22,10 +22,8 @@ function mad:system/wait/set_respawn_beacons/numbering
 tag @e[predicate=mad:marker/respawn_beacon/position] remove MAD_Numbered
 
 ## Teleport randomly
-execute if predicate mad:system/wait/set_respawn_beacons/part_a run function mad:system/wait/set_respawn_beacons/part_a
-execute if predicate mad:system/wait/set_respawn_beacons/part_b run function mad:system/wait/set_respawn_beacons/part_b
-execute if predicate mad:system/wait/set_respawn_beacons/part_c run function mad:system/wait/set_respawn_beacons/part_c
-execute if predicate mad:system/wait/set_respawn_beacons/part_d run function mad:system/wait/set_respawn_beacons/part_d
+execute if predicate mad:gamerules/team_match/number_of_respawn_beacons/2p run function mad:system/wait/set_respawn_beacons/ge_2/main
+execute if predicate mad:gamerules/team_match/number_of_respawn_beacons/ge_3 run function mad:system/wait/set_respawn_beacons/ge_3/main
 
 ## Align respawn beacon
 execute as @e[predicate=mad:marker/respawn_beacon/position] at @s align xz run tp @s ~0.5 ~ ~0.5
