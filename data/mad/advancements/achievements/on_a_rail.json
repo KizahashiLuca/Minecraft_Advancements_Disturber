@@ -1,5 +1,5 @@
 {
-  "parent": "mad:achievements/root",
+  "parent": "mad:achievements/kill_cow",
   "display": {
     "icon": {
       "item": "minecraft:rail"
