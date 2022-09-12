@@ -112,7 +112,7 @@ scoreboard objectives add VisibleDeathPrv dummy
 scoreboard objectives add WaitTime dummy
 scoreboard objectives add Sidebar dummy ["",{"text":"設定項目"}]
 #### advancements
-scoreboard objectives add HasAdvancements dummy
+scoreboard objectives add HasAdvancements dummy ["",{"text":"解除済み進捗個数"}]
 #### advancements - originals
 scoreboard objectives add BreakSpawner minecraft.mined:minecraft.spawner
 #### advancements - achievements
