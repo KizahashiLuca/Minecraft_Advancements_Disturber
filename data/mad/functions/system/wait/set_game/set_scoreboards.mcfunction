@@ -66,6 +66,7 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboar
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e GetTimeLimit 0
 #### advancements
 scoreboard players set @a HasAdvancements 0
+execute if predicate mad:gamerules/match_mode/individual/one run scoreboard objectives setdisplay sidebar HasAdvancements
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a HasAdvancements 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b HasAdvancements 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players set #mad_team_c HasAdvancements 0
