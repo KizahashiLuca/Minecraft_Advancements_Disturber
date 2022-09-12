@@ -3,8 +3,8 @@
 ## MC-Version: Java Edit. 1.19
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 28 Aug 2022
-## Version   : β-2.0
+## Date      : 13 Sep 2022
+## Version   : β-2.0.1
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -66,6 +66,7 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboar
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e GetTimeLimit 0
 #### advancements
 scoreboard players set @a HasAdvancements 0
+execute if predicate mad:gamerules/match_mode/individual/one run scoreboard objectives setdisplay sidebar HasAdvancements
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a HasAdvancements 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b HasAdvancements 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players set #mad_team_c HasAdvancements 0

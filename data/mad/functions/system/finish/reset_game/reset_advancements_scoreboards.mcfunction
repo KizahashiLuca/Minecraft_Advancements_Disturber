@@ -3,8 +3,8 @@
 ## MC-Version: Java Edit. 1.19
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 28 Aug 2022
-## Version   : β-2.0
+## Date      : 13 Sep 2022
+## Version   : β-2.0.1
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -120,14 +120,11 @@ scoreboard objectives remove AD_Achievements_on_a_rail
 scoreboard objectives remove AD_Achievements_overkill
 scoreboard objectives remove AD_Achievements_overpowerd
 scoreboard objectives remove AD_Achievements_root
-scoreboard objectives remove AD_Originals_adventure
 scoreboard objectives remove AD_Originals_break_spawner
-scoreboard objectives remove AD_Originals_collect
 scoreboard objectives remove AD_Originals_find_mansion
 scoreboard objectives remove AD_Originals_find_minecart
 scoreboard objectives remove AD_Originals_find_monument
 scoreboard objectives remove AD_Originals_friendship
-scoreboard objectives remove AD_Originals_game
 scoreboard objectives remove AD_Originals_in_this_corner_of_the_world
 scoreboard objectives remove AD_Originals_kill_elder_guardian
 scoreboard objectives remove AD_Originals_kill_enderman

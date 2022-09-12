@@ -3,8 +3,8 @@
 ## MC-Version: Java Edit. 1.19
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 28 Aug 2022
-## Version   : β-2.0
+## Date      : 13 Sep 2022
+## Version   : β-2.0.1
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -675,24 +675,12 @@ scoreboard players set #mad_team_b AD_Achievements_root 0
 scoreboard players set #mad_team_c AD_Achievements_root 0
 scoreboard players set #mad_team_d AD_Achievements_root 0
 scoreboard players set #mad_team_e AD_Achievements_root 0
-scoreboard players set @a AD_Originals_adventure 0
-scoreboard players set #mad_team_a AD_Originals_adventure 0
-scoreboard players set #mad_team_b AD_Originals_adventure 0
-scoreboard players set #mad_team_c AD_Originals_adventure 0
-scoreboard players set #mad_team_d AD_Originals_adventure 0
-scoreboard players set #mad_team_e AD_Originals_adventure 0
 scoreboard players set @a AD_Originals_break_spawner 0
 scoreboard players set #mad_team_a AD_Originals_break_spawner 0
 scoreboard players set #mad_team_b AD_Originals_break_spawner 0
 scoreboard players set #mad_team_c AD_Originals_break_spawner 0
 scoreboard players set #mad_team_d AD_Originals_break_spawner 0
 scoreboard players set #mad_team_e AD_Originals_break_spawner 0
-scoreboard players set @a AD_Originals_collect 0
-scoreboard players set #mad_team_a AD_Originals_collect 0
-scoreboard players set #mad_team_b AD_Originals_collect 0
-scoreboard players set #mad_team_c AD_Originals_collect 0
-scoreboard players set #mad_team_d AD_Originals_collect 0
-scoreboard players set #mad_team_e AD_Originals_collect 0
 scoreboard players set @a AD_Originals_find_mansion 0
 scoreboard players set #mad_team_a AD_Originals_find_mansion 0
 scoreboard players set #mad_team_b AD_Originals_find_mansion 0
@@ -717,12 +705,6 @@ scoreboard players set #mad_team_b AD_Originals_friendship 0
 scoreboard players set #mad_team_c AD_Originals_friendship 0
 scoreboard players set #mad_team_d AD_Originals_friendship 0
 scoreboard players set #mad_team_e AD_Originals_friendship 0
-scoreboard players set @a AD_Originals_game 0
-scoreboard players set #mad_team_a AD_Originals_game 0
-scoreboard players set #mad_team_b AD_Originals_game 0
-scoreboard players set #mad_team_c AD_Originals_game 0
-scoreboard players set #mad_team_d AD_Originals_game 0
-scoreboard players set #mad_team_e AD_Originals_game 0
 scoreboard players set @a AD_Originals_in_this_corner_of_the_world 0
 scoreboard players set #mad_team_a AD_Originals_in_this_corner_of_the_world 0
 scoreboard players set #mad_team_b AD_Originals_in_this_corner_of_the_world 0

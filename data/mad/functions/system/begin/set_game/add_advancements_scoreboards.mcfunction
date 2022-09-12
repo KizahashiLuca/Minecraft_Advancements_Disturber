@@ -3,8 +3,8 @@
 ## MC-Version: Java Edit. 1.19
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 28 Aug 2022
-## Version   : β-2.0
+## Date      : 13 Sep 2022
+## Version   : β-2.0.1
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -120,14 +120,11 @@ scoreboard objectives add AD_Achievements_on_a_rail dummy
 scoreboard objectives add AD_Achievements_overkill dummy
 scoreboard objectives add AD_Achievements_overpowerd dummy
 scoreboard objectives add AD_Achievements_root dummy
-scoreboard objectives add AD_Originals_adventure dummy
 scoreboard objectives add AD_Originals_break_spawner dummy
-scoreboard objectives add AD_Originals_collect dummy
 scoreboard objectives add AD_Originals_find_mansion dummy
 scoreboard objectives add AD_Originals_find_minecart dummy
 scoreboard objectives add AD_Originals_find_monument dummy
 scoreboard objectives add AD_Originals_friendship dummy
-scoreboard objectives add AD_Originals_game dummy
 scoreboard objectives add AD_Originals_in_this_corner_of_the_world dummy
 scoreboard objectives add AD_Originals_kill_elder_guardian dummy
 scoreboard objectives add AD_Originals_kill_enderman dummy
