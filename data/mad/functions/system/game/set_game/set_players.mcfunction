@@ -14,9 +14,7 @@ gamemode spectator @a[predicate=mad:player/not_participant]
 
 ## Remove advancements
 advancement revoke @a everything
-advancement grant @a until mad:originals/adventure
-advancement grant @a until mad:originals/collect
-advancement grant @a until mad:originals/game
+advancement grant @a until mad:originals/root
 advancement grant @a until mad:achievements/root
 
 ## Take recipes
@@ -44,4 +42,5 @@ effect give @a[predicate=mad:player/not_participant] minecraft:fire_resistance 1
 effect give @a[predicate=mad:player/not_participant] minecraft:water_breathing 1000000 6 true
 effect give @a[predicate=mad:player/not_participant] minecraft:saturation 1000000 10 true
 effect give @a[predicate=mad:player/not_participant] minecraft:regeneration 1000000 10 true
+effect give @a[predicate=mad:player/not_participant] minecraft:invisibility 1000000 1 true
 effect give @a[predicate=mad:player/not_participant] minecraft:night_vision 1000000 1 true
