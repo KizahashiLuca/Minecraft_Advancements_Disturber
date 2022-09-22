@@ -1,5 +1,5 @@
 {
-  "parent": "mad:originals/tsutenkaku",
+  "parent": "mad:originals/root",
   "display": {
     "icon": {
       "item": "minecraft:chainmail_boots"
@@ -8,7 +8,7 @@
       "translate": "この世界の片隅に"
     },
     "description": {
-      "translate": "ボーダーの端へ到達"
+      "translate": "ボーダーの端へ到達\n(ワールドの中心座標から水平距離で1414m離れる)"
     },
     "frame": "task",
     "show_toast": true,

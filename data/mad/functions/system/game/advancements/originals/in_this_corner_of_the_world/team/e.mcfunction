@@ -15,4 +15,4 @@ scoreboard players add #mad_team_e HasAdvancements 1
 scoreboard players operation #mad_team_e TimeLimit += #mad AddingTime
 scoreboard players operation #mad_team_e Second += #mad AddingTime
 advancement grant @a[predicate=mad:player/team/e] only mad:originals/in_this_corner_of_the_world
-tellraw @a[predicate=mad:player/team/e] ["",{"translate":"chat.type.advancement.task","with":[{"text":"紫チーム","color":"dark_purple","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"この世界の片隅に","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"この世界の片隅に"},{"translate":"ボーダーの端へ到達"}]}]}}]}]}]
+tellraw @a[predicate=mad:player/team/e] ["",{"translate":"chat.type.advancement.task","with":[{"text":"紫チーム","color":"dark_purple","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"この世界の片隅に","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"この世界の片隅に"},{"translate":"ボーダーの端へ到達\n(ワールドの中心座標から水平距離で1414m離れる)"}]}]}}]}]}]

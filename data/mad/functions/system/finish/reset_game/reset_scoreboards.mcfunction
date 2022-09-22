@@ -113,11 +113,11 @@ scoreboard objectives remove WaitTime
 scoreboard objectives remove Sidebar
 #### advancements
 scoreboard objectives remove HasAdvancements
+#### advancements - originals
+scoreboard objectives remove BreakSpawner
 #### advancements - achievements
 scoreboard objectives remove FallDistance
 scoreboard objectives remove RailDistance
-#### advancements - originals
-scoreboard objectives remove BreakSpawner
 #### summons minecart
 scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon

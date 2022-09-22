@@ -121,6 +121,8 @@ scoreboard objectives add AD_Achievements_overkill dummy
 scoreboard objectives add AD_Achievements_overpowerd dummy
 scoreboard objectives add AD_Achievements_root dummy
 scoreboard objectives add AD_Originals_break_spawner dummy
+scoreboard objectives add AD_Originals_conduit_power dummy
+scoreboard objectives add AD_Originals_find_buried_treasure dummy
 scoreboard objectives add AD_Originals_find_mansion dummy
 scoreboard objectives add AD_Originals_find_minecart dummy
 scoreboard objectives add AD_Originals_find_monument dummy
@@ -131,6 +133,8 @@ scoreboard objectives add AD_Originals_kill_enderman dummy
 scoreboard objectives add AD_Originals_kill_evoker dummy
 scoreboard objectives add AD_Originals_kill_phantom dummy
 scoreboard objectives add AD_Originals_kill_vindicator dummy
+scoreboard objectives add AD_Originals_obtain_conduit dummy
+scoreboard objectives add AD_Originals_obtain_creeper_banner_pattern dummy
 scoreboard objectives add AD_Originals_obtain_materials dummy
 scoreboard objectives add AD_Originals_obtain_sponge dummy
 scoreboard objectives add AD_Originals_obtain_treasures dummy

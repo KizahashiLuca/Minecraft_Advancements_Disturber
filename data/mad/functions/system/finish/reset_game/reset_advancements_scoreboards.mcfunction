@@ -121,6 +121,8 @@ scoreboard objectives remove AD_Achievements_overkill
 scoreboard objectives remove AD_Achievements_overpowerd
 scoreboard objectives remove AD_Achievements_root
 scoreboard objectives remove AD_Originals_break_spawner
+scoreboard objectives remove AD_Originals_conduit_power
+scoreboard objectives remove AD_Originals_find_buried_treasure
 scoreboard objectives remove AD_Originals_find_mansion
 scoreboard objectives remove AD_Originals_find_minecart
 scoreboard objectives remove AD_Originals_find_monument
@@ -131,6 +133,8 @@ scoreboard objectives remove AD_Originals_kill_enderman
 scoreboard objectives remove AD_Originals_kill_evoker
 scoreboard objectives remove AD_Originals_kill_phantom
 scoreboard objectives remove AD_Originals_kill_vindicator
+scoreboard objectives remove AD_Originals_obtain_conduit
+scoreboard objectives remove AD_Originals_obtain_creeper_banner_pattern
 scoreboard objectives remove AD_Originals_obtain_materials
 scoreboard objectives remove AD_Originals_obtain_sponge
 scoreboard objectives remove AD_Originals_obtain_treasures
