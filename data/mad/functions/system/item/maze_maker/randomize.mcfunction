@@ -12,7 +12,7 @@
 scoreboard players operation #mad RandomSeed *= #mad RandomMultiplier
 scoreboard players operation #mad RandomSeed %= #mad RandomModder
 scoreboard players operation @s RandomAnswer = #mad RandomSeed
-scoreboard players operation @s RandomAnswer %= #mad RandomMax
+scoreboard players operation @s RandomAnswer %= @s RandomMax
 
 ## Set angle
 execute if predicate mad:system/item/maze_maker/aisle_width/1m run function mad:system/item/maze_maker/set_angle/1m

@@ -94,8 +94,8 @@ scoreboard players set #mad SecondSummon 300
 #### team
 scoreboard players set #mad TeamMemberNotExist 0
 #### maze maker
-scoreboard players set #mad MazeSize 11
-scoreboard players set #mad AisleWidth 3
+scoreboard players set #mad MazeSize 7
+scoreboard players set #mad AisleWidth 1
 #### respawn beacon
 scoreboard players set #mad CompareNames 1
 scoreboard players set #mad DetectTeamExists 1
@@ -180,8 +180,6 @@ scoreboard players set @a StealResult 0
 scoreboard players set @a UseFungusStick 0
 #### maze maker
 scoreboard players set @a UseMazeMaker 0
-scoreboard objectives add MazeSize dummy
-scoreboard objectives add AisleWidth dummy
 #### mobile respawn beacon
 scoreboard players set @a MobileBeaconNumber 0
 #### team

@@ -2,7 +2,7 @@
   "condition": "minecraft:entity_scores",
   "entity": "this",
   "scores": {
-    "RandomAngle": {
+    "RandomAnswer": {
       "min": 2,
       "max": 2
     }

@@ -31,5 +31,5 @@ execute as @a[predicate=mad:system/item/evoker_fangs_wand/use] at @s run functio
 execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run function mad:system/item/return_portal/main
 
 ## Make maker
-execute as @e[predicate=mad:system/item/maze_maker/use] at @s run function mad:system/item/maze_maker/main
+execute as @a[predicate=mad:system/item/maze_maker/use] at @s run function mad:system/item/maze_maker/main
 execute as @e[predicate=mad:system/item/maze_maker/maze_marker] at @s run function mad:system/item/maze_maker/make_maze
