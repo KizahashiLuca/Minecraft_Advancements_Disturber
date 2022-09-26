@@ -19,7 +19,7 @@
               "entity": "this"
             }
           ],
-          "name": "minecraft:netherite_helmet",
+          "name": "minecraft:red_banner",
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -30,7 +30,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamA\"]}"
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamA\"],Invulnerable:1b}"
             }
           ]
         },
@@ -49,7 +49,7 @@
               "entity": "this"
             }
           ],
-          "name": "minecraft:netherite_helmet",
+          "name": "minecraft:blue_banner",
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -60,7 +60,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamB\"]}"
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamB\"],Invulnerable:1b}"
             }
           ]
         },
@@ -79,7 +79,7 @@
               "entity": "this"
             }
           ],
-          "name": "minecraft:netherite_helmet",
+          "name": "minecraft:yellow_banner",
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -90,7 +90,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamC\"]}"
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamC\"],Invulnerable:1b}"
             }
           ]
         },
@@ -109,7 +109,7 @@
               "entity": "this"
             }
           ],
-          "name": "minecraft:netherite_helmet",
+          "name": "minecraft:green_banner",
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -120,7 +120,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamD\"]}"
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamD\"],Invulnerable:1b}"
             }
           ]
         },
@@ -139,7 +139,7 @@
               "entity": "this"
             }
           ],
-          "name": "minecraft:netherite_helmet",
+          "name": "minecraft:purple_banner",
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -150,7 +150,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamE\"]}"
+              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamE\"],Invulnerable:1b}"
             }
           ]
         }

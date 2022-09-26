@@ -16,7 +16,7 @@
               "entity": "this"
             }
           ],
-          "name": "minecraft:netherite_helmet",
+          "name": "minecraft:red_banner",
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -43,7 +43,7 @@
               "entity": "this"
             }
           ],
-          "name": "minecraft:netherite_helmet",
+          "name": "minecraft:blue_banner",
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -70,7 +70,7 @@
               "entity": "this"
             }
           ],
-          "name": "minecraft:netherite_helmet",
+          "name": "minecraft:yellow_banner",
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -97,7 +97,7 @@
               "entity": "this"
             }
           ],
-          "name": "minecraft:netherite_helmet",
+          "name": "minecraft:green_banner",
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -124,7 +124,7 @@
               "entity": "this"
             }
           ],
-          "name": "minecraft:netherite_helmet",
+          "name": "minecraft:purple_banner",
           "functions": [
             {
               "function": "minecraft:set_name",

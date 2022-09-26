@@ -34,6 +34,7 @@ execute as @e[predicate=mad:armor_stand/mobile_respawn_beacon/position] at @s ru
 ## Respawn banner system
 execute as @e[predicate=mad:armor_stand/respawn_banner/structure] at @s run function mad:system/game/respawn_banner/main
 execute as @e[predicate=mad:item/respawn_banner/position_by_dead] at @s run function mad:system/game/respawn_banner/construct
+execute as @e[predicate=mad:item/respawn_banner/dropped_from_chest] run function mad:system/game/respawn_banner/set_invulnerable
 
 ## Set scoreboard
 scoreboard players operation #mad NumAlive = #mad NumberOfTeams
