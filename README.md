@@ -17,7 +17,7 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 ## Download
 ダウンロードは 以下リンクからお願いします。
  - Java Edition v1.19 以降対応
-   - [β-2.0.2](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.0.2)
+   - [β-2.1](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.0.2)
    
 ## ルール解説動画
 
