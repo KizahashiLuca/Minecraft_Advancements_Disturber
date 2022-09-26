@@ -25,5 +25,8 @@
     [
       "game_start"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/root/main"
+  }
 }

@@ -143,11 +143,11 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboar
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players set #mad_team_c HasAdvancements 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players set #mad_team_d HasAdvancements 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e HasAdvancements 0
+#### advancements - originals
+scoreboard players set @a BreakSpawner 0
 #### advancements - achievements
 scoreboard players set @a FallDistance 0
 scoreboard players set @a RailDistance 0
-#### advancements - originals
-scoreboard players set @a BreakSpawner 0
 #### summons minecart
 scoreboard players set @a GetMinecartCount 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a GetMinecartCount 0

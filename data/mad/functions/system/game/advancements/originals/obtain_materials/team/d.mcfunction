@@ -15,4 +15,4 @@ scoreboard players add #mad_team_d HasAdvancements 1
 scoreboard players operation #mad_team_d TimeLimit += #mad AddingTime
 scoreboard players operation #mad_team_d Second += #mad AddingTime
 advancement grant @a[predicate=mad:player/team/d] only mad:originals/obtain_materials
-tellraw @a[predicate=mad:player/team/d] ["",{"translate":"chat.type.advancement.task","with":[{"text":"緑チーム","color":"green","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"3匹の子豚","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"3匹の子豚"},{"translate":"干し草の俵、木材、レンガブロックを集める"}]}]}}]}]}]
+tellraw @a[predicate=mad:player/team/d] ["",{"translate":"chat.type.advancement.task","with":[{"text":"緑チーム","color":"green","bold":true},{"translate":"[%s]","color":"green","with":[{"translate":"3匹の子豚","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"green","with":[{"translate":"3匹の子豚"},{"translate":"干し草の俵, 木材, レンガブロックを集める"}]}]}}]}]}]
