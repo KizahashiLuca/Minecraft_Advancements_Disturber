@@ -148,6 +148,12 @@ scoreboard objectives add StealResult dummy
 #### evoker fangs wand
 scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add EvokerFangsCount dummy
+#### maze maker
+scoreboard objectives add UseMazeMaker minecraft.used:minecraft.allay_spawn_egg
+scoreboard objectives add MazeSize dummy
+scoreboard objectives add AisleWidth dummy
+scoreboard objectives add RandomMax dummy
+scoreboard objectives add RandomAngle dummy
 #### respawn beacon
 scoreboard objectives add BeaconNumber dummy
 scoreboard objectives add CompareNames dummy

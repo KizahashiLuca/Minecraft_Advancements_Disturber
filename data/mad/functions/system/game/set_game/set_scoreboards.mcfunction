@@ -75,6 +75,8 @@ scoreboard players set #mad ThiefSecond 5
 scoreboard players set @a StealResult 0
 #### evoker fangs wand
 scoreboard players set @a UseFungusStick 0
+#### maze maker
+scoreboard players set @a UseMazeMaker 0
 #### mobile respawn beacon
 scoreboard players set @a MobileBeaconNumber 0
 #### team
