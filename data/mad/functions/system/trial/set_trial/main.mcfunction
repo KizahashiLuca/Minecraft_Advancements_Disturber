@@ -33,6 +33,9 @@ function mad:system/begin/set_game/add_scoreboards
 function mad:system/begin/set_game/set_scoreboards
 function mad:system/game/set_game/set_scoreboards
 
+## Set random seed
+function mad:system/common/randomizer/initialize
+
 ## Detect version
 function mad:system/begin/set_game/detect_version
 

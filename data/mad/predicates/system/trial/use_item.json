@@ -7,6 +7,10 @@
     },
     {
       "condition": "minecraft:reference",
+      "name": "mad:system/trial/use_maze_maker"
+    },
+    {
+      "condition": "minecraft:reference",
       "name": "mad:system/trial/use_energy_drink"
     },
     {
