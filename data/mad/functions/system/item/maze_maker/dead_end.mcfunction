@@ -15,4 +15,4 @@ kill @e[predicate=mad:system/item/maze_maker/path_marker,distance=..0.5,limit=1]
 tp @s @e[predicate=mad:system/item/maze_maker/path_marker,sort=random,limit=1]
 
 ## Finish generation
-execute unless entity @e[predicate=mad:system/item/maze_maker/path_marker,sort=nearest,distance=..33] run function mad:system/item/maze_maker/end/main
+execute unless entity @e[predicate=mad:system/item/maze_maker/path_marker,sort=nearest,distance=..33] run kill @s
