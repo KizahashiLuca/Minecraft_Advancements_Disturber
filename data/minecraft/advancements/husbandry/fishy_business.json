@@ -67,6 +67,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/fishy_business"
+    "function": "mad:system/game/advancements/husbandry/fishy_business/main"
   }
 }

@@ -45,6 +45,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/ride_strider"
+    "function": "mad:system/game/advancements/nether/ride_strider/main"
   }
 }

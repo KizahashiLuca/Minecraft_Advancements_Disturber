@@ -1,0 +1,19 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/alive"
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "feet": {
+          "items": [
+            "minecraft:leather_boots"
+          ]
+        }
+      }
+    }
+  }
+]

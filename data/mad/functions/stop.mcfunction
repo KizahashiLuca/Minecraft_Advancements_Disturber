@@ -3,10 +3,10 @@
 ## MC-Version: Java Edit. 1.19
 ## Author    : @potage00
 ## Author    : @KizahashiLuca
-## Date      : 08 Jun 2022
-## Version   : β-1.7
+## Date      : 27 Sep 2022
+## Version   : β-2.1
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Stop game
-execute if score #mad Phase matches 1..100 run scoreboard players set #mad Phase 22
+execute if predicate mad:phase/in_game run scoreboard players set #mad Phase 99

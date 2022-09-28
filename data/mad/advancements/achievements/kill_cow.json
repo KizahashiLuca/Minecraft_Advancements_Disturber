@@ -1,14 +1,14 @@
 {
-  "parent": "mad:achievements/build_sword",
+  "parent": "mad:achievements/root",
   "display": {
     "icon": {
       "item": "minecraft:leather"
     },
     "title": {
-      "text": "牛転がし"
+      "translate": "牛転がし"
     },
     "description": {
-      "text": "革を手に入れる"
+      "translate": "革を手に入れる"
     },
     "frame": "task",
     "show_toast": true,
@@ -19,7 +19,7 @@
     "kill_cow": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items":[
+        "items": [
           {
             "items": [
               "minecraft:leather"
@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/kill_cow"
+    "function": "mad:system/game/advancements/achievements/kill_cow/main"
   }
 }

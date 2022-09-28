@@ -27,6 +27,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/brew_potion"
+    "function": "mad:system/game/advancements/nether/brew_potion/main"
   }
 }

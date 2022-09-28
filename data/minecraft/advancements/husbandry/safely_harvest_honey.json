@@ -39,6 +39,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/safely_harvest_honey"
+    "function": "mad:system/game/advancements/husbandry/safely_harvest_honey/main"
   }
 }

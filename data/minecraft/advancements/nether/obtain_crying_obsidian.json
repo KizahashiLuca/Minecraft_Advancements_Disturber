@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/obtain_crying_obsidian"
+    "function": "mad:system/game/advancements/nether/obtain_crying_obsidian/main"
   }
 }

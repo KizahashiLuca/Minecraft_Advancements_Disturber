@@ -41,6 +41,6 @@
   ],
   "rewards": {
     "experience": 100,
-    "function": "mad:system/ongame/advancements/nether/uneasy_alliance"
+    "function": "mad:system/game/advancements/nether/uneasy_alliance/main"
   }
 }

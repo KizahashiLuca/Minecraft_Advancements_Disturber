@@ -4,10 +4,10 @@
       "item": "minecraft:book"
     },
     "title": {
-      "text": "実績"
+      "translate": "実績"
     },
     "description": {
-      "text": ""
+      "translate": ""
     },
     "frame": "task",
     "show_toast": false,
@@ -24,5 +24,8 @@
     [
       "achievements_root"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/achievements/root/main"
+  }
 }

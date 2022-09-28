@@ -1,0 +1,42 @@
+{
+  "parent": "mad:originals/kill_enderman",
+  "display": {
+    "icon": {
+      "item": "minecraft:black_bed"
+    },
+    "title": {
+      "translate": "NO BED NO LIFE"
+    },
+    "description": {
+      "translate": "ファントムを倒す"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_phantom": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "minecraft:phantom"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill_phantom"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/kill_phantom/main"
+  }
+}

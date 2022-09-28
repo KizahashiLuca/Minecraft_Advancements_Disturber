@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/common/respawn_beacon/time/tick_of_respawn_beacon"
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "Tick",
+      "scale": 1
+    },
+    "range": {
+      "min": -2147483648,
+      "max": -1
+    }
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:gamerules/num_of_participants/one"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:gamerules/num_of_participants/not_one"
+    }
+  ]
+}

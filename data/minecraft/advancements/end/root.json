@@ -29,6 +29,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/end/root"
+    "function": "mad:system/game/advancements/end/root/main"
   }
 }

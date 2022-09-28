@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/game"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:gamerules/match_mode/individual"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:gamerules/num_of_participants/one"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/game/exit_game/not_exit"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/game/exit_game/number_of_alives/zero"
+  }
+]

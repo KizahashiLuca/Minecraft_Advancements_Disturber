@@ -29,6 +29,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/story/enter_the_end"
+    "function": "mad:system/game/advancements/story/enter_the_end/main"
   }
 }

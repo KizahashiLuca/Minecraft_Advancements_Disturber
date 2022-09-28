@@ -29,6 +29,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/honey_block_slide"
+    "function": "mad:system/game/advancements/adventure/honey_block_slide/main"
   }
 }

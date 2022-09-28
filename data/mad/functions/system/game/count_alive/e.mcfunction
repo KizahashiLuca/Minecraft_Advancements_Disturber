@@ -1,0 +1,25 @@
+#####################################
+## Minecraft Advancements Disturber
+## MC-Version: Java Edit. 1.19
+## Author    : @potage00
+## Author    : @KizahashiLuca
+## Date      : 27 Sep 2022
+## Version   : β-2.1
+## Licensed under CC BY-SA 4.0. 
+#####################################
+
+## Set scoreboard
+scoreboard players set #mad_team_e NumOfTeamPlayer 0
+
+## Count the alive
+execute as @a[predicate=mad:player/alive/e] run scoreboard players add #mad_team_e NumOfTeamPlayer 1
+
+## Spectate
+execute as @a[predicate=mad:player/dead/e] at @s run function mad:system/game/spectate_player/e
+
+## Detect team end
+execute unless entity @p[predicate=mad:player/alive/e] run function mad:system/game/set_team_dead/e
+
+## Calculate time per players
+execute if score #mad_team_e Second > #mad KillTime run scoreboard players operation #mad_team_e SecondPerSurvive = #mad KillTime
+execute if score #mad_team_e Second <= #mad KillTime run scoreboard players operation #mad_team_e SecondPerSurvive = #mad_team_e Second

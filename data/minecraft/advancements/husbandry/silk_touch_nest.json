@@ -40,6 +40,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/silk_touch_nest"
+    "function": "mad:system/game/advancements/husbandry/silk_touch_nest/main"
   }
 }

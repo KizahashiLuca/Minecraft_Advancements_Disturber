@@ -1,0 +1,35 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/begin/gui/world_border"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/host"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Inventory:[{Slot:19b,tag:{Tags:[\"MAD_setting_item\",\"MAD_number\"]}}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Inventory:[{Slot:24b,tag:{Tags:[\"MAD_setting_item\",\"MAD_number\"]}}]}"
+          }
+        }
+      }
+    ]
+  }
+]

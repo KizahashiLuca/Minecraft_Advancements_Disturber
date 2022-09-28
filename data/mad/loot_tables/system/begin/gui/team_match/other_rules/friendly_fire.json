@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": [
+            [
+              "",
+              {"translate":"フレンドリーファイア","color":"white","bold":false,"italic":false}
+            ]
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:63,Tags:[\"MAD_setting_item\",\"MAD_friendly_fire\"]}"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dead_brain_coral_fan",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/team_match/friendly_fire/false"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"なし","color":"red","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"選択中","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brain_coral_fan",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/team_match/friendly_fire/true"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"あり","color":"green","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"選択中","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

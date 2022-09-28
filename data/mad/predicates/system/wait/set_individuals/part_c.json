@@ -1,0 +1,87 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/wait"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:gamerules/match_mode/individual"
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "Second",
+      "scale": 1
+    },
+    "range": {
+      "min": 27,
+      "max": 27
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "Tick",
+      "scale": 1
+    },
+    "range": {
+      "min": 10,
+      "max": 10
+    }
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "ParticipantNumber": {
+            "min": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "ParticipantNumber": {
+            "min": 8,
+            "max": 8
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "ParticipantNumber": {
+            "min": 13,
+            "max": 13
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "ParticipantNumber": {
+            "min": 18,
+            "max": 18
+          }
+        }
+      }
+    ]
+  }
+]

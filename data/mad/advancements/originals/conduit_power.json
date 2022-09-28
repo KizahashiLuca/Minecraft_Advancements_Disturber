@@ -1,0 +1,36 @@
+{
+  "parent": "mad:originals/obtain_conduit",
+  "display": {
+    "icon": {
+      "item": "minecraft:conduit"
+    },
+    "title": {
+      "translate": "モスケンの渦潮"
+    },
+    "description": {
+      "translate": "コンジットパワーの効果を受ける"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "conduit_power": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:conduit_power": {}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "conduit_power"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/conduit_power/main"
+  }
+}

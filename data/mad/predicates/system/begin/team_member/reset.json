@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/begin/team_member"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/host"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:31b,tag:{Tags:[\"MAD_setting_item\",\"MAD_reset\"]}}]}"
+      }
+    }
+  }
+]

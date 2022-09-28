@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": [
+            [
+              "",
+              {"translate":"チームメンバー選択","color":"white","bold":false,"italic":false}
+            ]
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:63,Tags:[\"MAD_setting_item\",\"MAD_team_member_select\"]}"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glowstone",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/team_match/team_member/random"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"自動(ランダム)","color":"red","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"選択中","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_lamp",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerules/team_match/team_member/manual"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"手動","color":"green","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"選択中","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

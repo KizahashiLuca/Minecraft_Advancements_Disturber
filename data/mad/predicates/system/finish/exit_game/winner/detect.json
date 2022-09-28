@@ -1,0 +1,19 @@
+[
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/match_mode/individual/not_one"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:gamerules/match_mode/team"
+      }
+    ]
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/finish/exit_game/number_of_alives/one"
+  }
+]

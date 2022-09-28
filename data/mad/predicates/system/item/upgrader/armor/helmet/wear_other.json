@@ -1,0 +1,28 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/alive"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "legs": {
+            "items": [
+              "minecraft:leather_helmet",
+              "minecraft:golden_helmet",
+              "minecraft:chainmail_helmet",
+              "minecraft:iron_helmet",
+              "minecraft:diamond_helmet",
+              "minecraft:netherite_helmet",
+              "minecraft:air"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

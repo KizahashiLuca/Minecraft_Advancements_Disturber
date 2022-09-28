@@ -39,6 +39,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/end/find_end_city"
+    "function": "mad:system/game/advancements/end/find_end_city/main"
   }
 }

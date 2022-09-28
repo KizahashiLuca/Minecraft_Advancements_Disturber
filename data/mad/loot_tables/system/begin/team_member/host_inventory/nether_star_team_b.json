@@ -1,0 +1,26 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"あなたのチームは","color":"white","bold":false,"italic":false},{"text":"青チーム","color":"blue","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MADsetting\",\"team_b\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

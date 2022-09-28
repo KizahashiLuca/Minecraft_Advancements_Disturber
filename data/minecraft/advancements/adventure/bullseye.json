@@ -43,6 +43,6 @@
   ],
   "rewards": {
     "experience": 50,
-    "function": "mad:system/ongame/advancements/adventure/bullseye"
+    "function": "mad:system/game/advancements/adventure/bullseye/main"
   }
 }

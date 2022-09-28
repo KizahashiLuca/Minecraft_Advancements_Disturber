@@ -1,0 +1,44 @@
+{
+  "parent": "mad:originals/in_this_corner_of_the_world",
+  "display": {
+    "icon": {
+      "item": "minecraft:dark_oak_stairs"
+    },
+    "title": {
+      "translate": "中は思ったよりきれいだな"
+    },
+    "description": {
+      "translate": "森の洋館に侵入する"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "in_mansion": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "minecraft:mansion"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "in_mansion"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/find_mansion/main"
+  }
+}

@@ -36,6 +36,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/end/elytra"
+    "function": "mad:system/game/advancements/end/elytra/main"
   }
 }

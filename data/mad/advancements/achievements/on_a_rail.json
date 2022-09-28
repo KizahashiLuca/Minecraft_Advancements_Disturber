@@ -1,14 +1,14 @@
 {
-  "parent": "mad:achievements/root",
+  "parent": "mad:achievements/kill_cow",
   "display": {
     "icon": {
       "item": "minecraft:rail"
     },
     "title": {
-      "text": "世界のトロッコから"
+      "translate": "世界のトロッコから"
     },
     "description": {
-      "text": "トロッコに乗って出発地点から1km以上走行する"
+      "translate": "トロッコに乗って出発地点から1km以上走行する"
     },
     "frame": "challenge",
     "show_toast": true,
@@ -24,9 +24,9 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "RailDistance":{
-                "min":100000,
-                "max":2147483647
+              "RailDistance": {
+                "min": 100000,
+                "max": 2147483647
               }
             }
           }
@@ -40,6 +40,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/on_a_rail"
+    "function": "mad:system/game/advancements/achievements/on_a_rail/main"
   }
 }

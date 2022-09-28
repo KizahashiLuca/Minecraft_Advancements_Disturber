@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/participant"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "OnGround": {
+        "min": 0,
+        "max": 0
+      }
+    }
+  }
+]

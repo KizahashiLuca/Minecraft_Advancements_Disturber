@@ -1,0 +1,69 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"ワールドボーダー設定","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mad:system/begin/gui/world_border/limited"
+                }
+              ],
+              "lore": [
+                [
+                  "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"score":{"name":"#mad","objective":"WorldBorder"},"color":"green","bold":true,"italic":false},
+                  {"text":"x","color":"green","bold":true,"italic":false},
+                  {"score":{"name":"#mad","objective":"WorldBorder"},"color":"green","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"選択中","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mad:system/begin/gui/world_border/unlimited"
+                }
+              ],
+              "lore": [
+                [
+                  "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"制限なし","color":"green","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"選択中","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MAD_setting_item\",\"MAD_world_border\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "parent": "mad:originals/find_minecart",
+  "display": {
+    "icon": {
+      "item": "minecraft:red_banner"
+    },
+    "title": {
+      "translate": "仲間思い"
+    },
+    "description": {
+      "translate": "味方を復活"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "friendship": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "friendship"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/friendship/main"
+  }
+}

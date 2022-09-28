@@ -1,0 +1,230 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:loot_table",
+          "name": "mad:system/begin/gui/number/number_0",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mad"
+                },
+                "score": "Digit0100",
+                "scale": 1
+              },
+              "range": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mad:system/begin/gui/number/number_1",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mad"
+                },
+                "score": "Digit0100",
+                "scale": 1
+              },
+              "range": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mad:system/begin/gui/number/number_2",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mad"
+                },
+                "score": "Digit0100",
+                "scale": 1
+              },
+              "range": {
+                "min": 2,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mad:system/begin/gui/number/number_3",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mad"
+                },
+                "score": "Digit0100",
+                "scale": 1
+              },
+              "range": {
+                "min": 3,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mad:system/begin/gui/number/number_4",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mad"
+                },
+                "score": "Digit0100",
+                "scale": 1
+              },
+              "range": {
+                "min": 4,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mad:system/begin/gui/number/number_5",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mad"
+                },
+                "score": "Digit0100",
+                "scale": 1
+              },
+              "range": {
+                "min": 5,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mad:system/begin/gui/number/number_6",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mad"
+                },
+                "score": "Digit0100",
+                "scale": 1
+              },
+              "range": {
+                "min": 6,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mad:system/begin/gui/number/number_7",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mad"
+                },
+                "score": "Digit0100",
+                "scale": 1
+              },
+              "range": {
+                "min": 7,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mad:system/begin/gui/number/number_8",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mad"
+                },
+                "score": "Digit0100",
+                "scale": 1
+              },
+              "range": {
+                "min": 8,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mad:system/begin/gui/number/number_9",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mad"
+                },
+                "score": "Digit0100",
+                "scale": 1
+              },
+              "range": {
+                "min": 9,
+                "max": 9
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

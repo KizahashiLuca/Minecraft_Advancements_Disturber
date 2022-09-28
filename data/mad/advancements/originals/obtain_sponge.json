@@ -1,0 +1,40 @@
+{
+  "parent": "mad:originals/find_monument",
+  "display": {
+    "icon": {
+      "item": "minecraft:sponge"
+    },
+    "title": {
+      "translate": "待てば海綿の日和あり"
+    },
+    "description": {
+      "translate": "乾いたスポンジを手に入れる"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_sponge": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:sponge"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_sponge"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/obtain_sponge/main"
+  }
+}

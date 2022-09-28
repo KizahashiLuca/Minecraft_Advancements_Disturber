@@ -48,6 +48,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/ride_strider_in_overworld_lava"
+    "function": "mad:system/game/advancements/nether/ride_strider_in_overworld_lava/main"
   }
 }

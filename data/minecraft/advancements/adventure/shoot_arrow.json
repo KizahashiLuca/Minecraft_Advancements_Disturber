@@ -37,6 +37,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/shoot_arrow"
+    "function": "mad:system/game/advancements/adventure/shoot_arrow/main"
   }
 }

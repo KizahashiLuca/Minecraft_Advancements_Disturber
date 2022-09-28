@@ -27,6 +27,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/tame_an_animal"
+    "function": "mad:system/game/advancements/husbandry/tame_an_animal/main"
   }
 }

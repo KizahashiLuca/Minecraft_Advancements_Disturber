@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "by_c": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "team": "TeamC"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "by_c"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/detect_kill/team/by_c"
+  }
+}

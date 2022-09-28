@@ -39,6 +39,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/nether/find_fortress"
+    "function": "mad:system/game/advancements/nether/find_fortress/main"
   }
 }

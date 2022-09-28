@@ -35,6 +35,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/end/dragon_breath"
+    "function": "mad:system/game/advancements/end/dragon_breath/main"
   }
 }

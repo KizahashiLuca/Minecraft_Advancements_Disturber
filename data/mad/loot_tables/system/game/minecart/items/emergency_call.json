@@ -1,0 +1,38 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:zombie_horse_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                ["",{"text":"緊急招集","color":"light_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                ["",{"text":"同じチームの人を使用者の場所に","color":"white","bold":false,"italic":false}],
+                ["",{"text":"テレポートさせる。","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_EmergencyCall\"],EntityTag:{Marker:0b,Invulnerable:1b,Health:1.0f,Silent:1b,NoAI:1b,DeathLootTable:\"mad:system/game/minecart/items/empty\",ActiveEffects:[{Ambient:0b,ShowIcon:0b,ShowParticles:0b,Id:14b,Amplifier:0b,Duration:2147483647}],CustomNameVisible:0b,Team:\"NeverCollision\"}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -5,10 +5,10 @@
       "item": "minecraft:saddle"
     },
     "title": {
-      "text": "ブタさんの飛ぶ頃に"
+      "translate": "ブタさんの飛ぶ頃に"
     },
     "description": {
-      "text": "ブタに乗って崖から落ちる"
+      "translate": "ブタに乗って崖から落ちる"
     },
     "frame": "challenge",
     "show_toast": true,
@@ -31,22 +31,24 @@
           },
           {
             "condition": "minecraft:entity_scores",
-            "scores":{
+            "scores": {
               "FallDistance": {
                 "min": 5,
                 "max": 256
               }
             },
-            "entity":"this"
+            "entity": "this"
           }
         ]
       }
     }
   },
   "requirements": [
-    ["fly_pig"]
+    [
+      "fly_pig"
+    ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/achievements/fly_pig"
+    "function": "mad:system/game/advancements/achievements/fly_pig/main"
   }
 }

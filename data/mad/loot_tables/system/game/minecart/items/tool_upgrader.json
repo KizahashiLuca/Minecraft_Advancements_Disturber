@@ -1,0 +1,43 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:turtle_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                ["",{"text":"ツールアップグレードキット","color":"light_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                ["",{"text":"使用者のオフハンドにあるツールアップグレード。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  対象ツール: 斧, クワ, ツルハシ, シャベル, 剣","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  木ツール → 石ツール","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  石ツール → 金ツール","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  金ツール → 鉄ツール","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  鉄ツール → ダイヤモンドツール","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  ダイヤモンドツール → ネザライトツール","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_ToolUpgrader\"],EntityTag:{Marker:0b,Invulnerable:1b,Health:1.0f,Silent:1b,NoAI:1b,DeathLootTable:\"mad:system/game/minecart/items/empty\",ActiveEffects:[{Ambient:0b,ShowIcon:0b,ShowParticles:0b,Id:14b,Amplifier:0b,Duration:2147483647}],CustomNameVisible:0b,Team:\"NeverCollision\"}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

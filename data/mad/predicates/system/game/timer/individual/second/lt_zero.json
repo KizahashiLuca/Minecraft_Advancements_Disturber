@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/game"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/alive"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "Second": {
+        "min": -2147483648,
+        "max": -1
+      }
+    }
+  }
+]

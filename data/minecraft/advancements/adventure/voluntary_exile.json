@@ -46,6 +46,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/adventure/voluntary_exile"
+    "function": "mad:system/game/advancements/adventure/voluntary_exile/main"
   }
 }

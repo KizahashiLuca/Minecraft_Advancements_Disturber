@@ -27,6 +27,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/ongame/advancements/husbandry/root"
+    "function": "mad:system/game/advancements/husbandry/root/main"
   }
 }

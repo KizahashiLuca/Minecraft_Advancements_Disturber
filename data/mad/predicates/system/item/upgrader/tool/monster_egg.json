@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:turtle",
+    "nbt": "{CustomName:'{\"extra\":[{\"bold\":false,\"italic\":false,\"color\":\"light_purple\",\"text\":\"ツールアップグレードキット\"}],\"text\":\"\"}'}"
+  }
+}
