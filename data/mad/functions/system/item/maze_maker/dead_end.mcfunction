@@ -13,6 +13,8 @@
 kill @e[predicate=mad:system/item/maze_maker/path_marker,distance=..0.5,limit=1]
 #### Teleport PathArmorStand
 tp @s @e[predicate=mad:system/item/maze_maker/path_marker,sort=random,limit=1]
+#### Set scoreboard
+scoreboard players set @s DeadEnd 1
 
 ## Finish generation
-execute unless entity @e[predicate=mad:system/item/maze_maker/path_marker,sort=nearest,distance=..33] run kill @s
+execute unless entity @e[predicate=mad:system/item/maze_maker/path_marker] run kill @s

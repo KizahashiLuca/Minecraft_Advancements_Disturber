@@ -9,7 +9,21 @@
 #####################################
 
 ## Detect path
-execute as @s[predicate=mad:system/item/maze_maker/angle/west] at @s run fill ~ ~ ~ ~-2 ~3 ~ minecraft:air
-execute as @s[predicate=mad:system/item/maze_maker/angle/north] at @s run fill ~ ~ ~ ~ ~3 ~-2 minecraft:air
-execute as @s[predicate=mad:system/item/maze_maker/angle/east] at @s run fill ~ ~ ~ ~2 ~3 ~ minecraft:air
-execute as @s[predicate=mad:system/item/maze_maker/angle/south] at @s run fill ~ ~ ~ ~ ~3 ~2 minecraft:air
+execute as @s[predicate=mad:system/item/maze_maker/angle/west,scores={MazePosX=1..}] at @s run fill ~ ~ ~ ~-2 ~3 ~ minecraft:air replace #mad:wall_block
+execute as @s[predicate=mad:system/item/maze_maker/angle/north,scores={MazePosZ=1..}] at @s run fill ~ ~ ~ ~ ~3 ~-2 minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/5x5 as @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..3}] at @s run fill ~ ~ ~ ~2 ~3 ~ minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/7x7 as @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..5}] at @s run fill ~ ~ ~ ~2 ~3 ~ minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/9x9 as @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..7}] at @s run fill ~ ~ ~ ~2 ~3 ~ minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/11x11 as @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..9}] at @s run fill ~ ~ ~ ~2 ~3 ~ minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/13x13 as @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..11}] at @s run fill ~ ~ ~ ~2 ~3 ~ minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/15x15 as @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..13}] at @s run fill ~ ~ ~ ~2 ~3 ~ minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/17x17 as @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..15}] at @s run fill ~ ~ ~ ~2 ~3 ~ minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/19x19 as @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..17}] at @s run fill ~ ~ ~ ~2 ~3 ~ minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/5x5 as @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosZ=..3}] at @s run fill ~ ~ ~ ~ ~3 ~2 minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/7x7 as @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosZ=..5}] at @s run fill ~ ~ ~ ~ ~3 ~2 minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/9x9 as @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosZ=..7}] at @s run fill ~ ~ ~ ~ ~3 ~2 minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/11x11 as @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosZ=..9}] at @s run fill ~ ~ ~ ~ ~3 ~2 minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/13x13 as @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosZ=..11}] at @s run fill ~ ~ ~ ~ ~3 ~2 minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/15x15 as @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosZ=..13}] at @s run fill ~ ~ ~ ~ ~3 ~2 minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/17x17 as @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosZ=..15}] at @s run fill ~ ~ ~ ~ ~3 ~2 minecraft:air replace #mad:wall_block
+execute if predicate mad:system/item/maze_maker/maze_size/19x19 as @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosZ=..17}] at @s run fill ~ ~ ~ ~ ~3 ~2 minecraft:air replace #mad:wall_block

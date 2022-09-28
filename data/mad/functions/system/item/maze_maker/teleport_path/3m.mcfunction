@@ -9,7 +9,21 @@
 #####################################
 
 ## Teleport path
-tp @s[predicate=mad:system/item/maze_maker/angle/west] ~-4 ~ ~
-tp @s[predicate=mad:system/item/maze_maker/angle/north] ~ ~ ~-4
-tp @s[predicate=mad:system/item/maze_maker/angle/east] ~4 ~ ~
-tp @s[predicate=mad:system/item/maze_maker/angle/south] ~ ~ ~4
+tp @s[predicate=mad:system/item/maze_maker/angle/west,scores={MazePosX=1..}] ~-4 ~ ~
+tp @s[predicate=mad:system/item/maze_maker/angle/north,scores={MazePosZ=1..}] ~ ~ ~-4
+execute if predicate mad:system/item/maze_maker/maze_size/5x5 run tp @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..3}] ~4 ~ ~
+execute if predicate mad:system/item/maze_maker/maze_size/7x7 run tp @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..5}] ~4 ~ ~
+execute if predicate mad:system/item/maze_maker/maze_size/9x9 run tp @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..7}] ~4 ~ ~
+execute if predicate mad:system/item/maze_maker/maze_size/11x11 run tp @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..9}] ~4 ~ ~
+execute if predicate mad:system/item/maze_maker/maze_size/13x13 run tp @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..11}] ~4 ~ ~
+execute if predicate mad:system/item/maze_maker/maze_size/15x15 run tp @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..13}] ~4 ~ ~
+execute if predicate mad:system/item/maze_maker/maze_size/17x17 run tp @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..15}] ~4 ~ ~
+execute if predicate mad:system/item/maze_maker/maze_size/19x19 run tp @s[predicate=mad:system/item/maze_maker/angle/east,scores={MazePosX=..17}] ~4 ~ ~
+execute if predicate mad:system/item/maze_maker/maze_size/5x5 run tp @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosX=..3}] ~ ~ ~4
+execute if predicate mad:system/item/maze_maker/maze_size/7x7 run tp @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosX=..5}] ~ ~ ~4
+execute if predicate mad:system/item/maze_maker/maze_size/9x9 run tp @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosX=..7}] ~ ~ ~4
+execute if predicate mad:system/item/maze_maker/maze_size/11x11 run tp @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosX=..9}] ~ ~ ~4
+execute if predicate mad:system/item/maze_maker/maze_size/13x13 run tp @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosX=..11}] ~ ~ ~4
+execute if predicate mad:system/item/maze_maker/maze_size/15x15 run tp @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosX=..13}] ~ ~ ~4
+execute if predicate mad:system/item/maze_maker/maze_size/17x17 run tp @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosX=..15}] ~ ~ ~4
+execute if predicate mad:system/item/maze_maker/maze_size/19x19 run tp @s[predicate=mad:system/item/maze_maker/angle/south,scores={MazePosX=..17}] ~ ~ ~4

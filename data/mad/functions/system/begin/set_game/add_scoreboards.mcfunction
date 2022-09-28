@@ -154,6 +154,9 @@ scoreboard objectives add MazeSize dummy
 scoreboard objectives add AisleWidth dummy
 scoreboard objectives add RandomMax dummy
 scoreboard objectives add RandomAngle dummy
+scoreboard objectives add MazePosX dummy
+scoreboard objectives add MazePosZ dummy
+scoreboard objectives add DeadEnd dummy
 #### respawn beacon
 scoreboard objectives add BeaconNumber dummy
 scoreboard objectives add CompareNames dummy

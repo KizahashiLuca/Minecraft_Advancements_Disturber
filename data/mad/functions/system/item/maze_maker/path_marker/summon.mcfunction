@@ -10,3 +10,7 @@
 
 ## Summon path marker
 summon minecraft:marker ~ ~ ~ {Invulnerable:1b,Tags:["MAD_PathMarker"]}
+
+## Set scoreboard
+scoreboard players operation @e[predicate=mad:system/item/maze_maker/path_marker,distance=..0.5,limit=1] MazePosX = @s MazePosX
+scoreboard players operation @e[predicate=mad:system/item/maze_maker/path_marker,distance=..0.5,limit=1] MazePosZ = @s MazePosZ

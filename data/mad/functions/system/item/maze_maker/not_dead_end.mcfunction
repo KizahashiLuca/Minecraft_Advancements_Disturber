@@ -23,9 +23,15 @@ execute if predicate mad:system/item/maze_maker/aisle_width/5m run function mad:
 execute if predicate mad:system/item/maze_maker/aisle_width/1m run function mad:system/item/maze_maker/teleport_path/1m
 execute if predicate mad:system/item/maze_maker/aisle_width/3m run function mad:system/item/maze_maker/teleport_path/3m
 execute if predicate mad:system/item/maze_maker/aisle_width/5m run function mad:system/item/maze_maker/teleport_path/5m
+#### Detect air
 scoreboard players set @s RandomMax 0
 execute if predicate mad:system/item/maze_maker/aisle_width/1m run function mad:system/item/maze_maker/detect_path/1m
 execute if predicate mad:system/item/maze_maker/aisle_width/3m run function mad:system/item/maze_maker/detect_path/3m
 execute if predicate mad:system/item/maze_maker/aisle_width/5m run function mad:system/item/maze_maker/detect_path/5m
+#### Set position
+execute if predicate mad:system/item/maze_maker/angle/west run scoreboard players remove @s MazePosX 1
+execute if predicate mad:system/item/maze_maker/angle/north run scoreboard players remove @s MazePosZ 1
+execute if predicate mad:system/item/maze_maker/angle/east run scoreboard players add @s MazePosX 1
+execute if predicate mad:system/item/maze_maker/angle/south run scoreboard players add @s MazePosZ 1
 #### Summon marker
-execute as @s[predicate=mad:system/item/maze_maker/summon_marker] at @s run summon minecraft:marker ~ ~ ~ {Invulnerable:1b,Tags:["MAD_PathMarker"]}
+execute as @s[predicate=mad:system/item/maze_maker/summon_marker] at @s run function mad:system/item/maze_maker/path_marker/summon

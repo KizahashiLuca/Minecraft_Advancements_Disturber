@@ -34,7 +34,12 @@ execute if predicate mad:system/item/maze_maker/maze_size/19x19 if predicate mad
 execute if predicate mad:system/item/maze_maker/maze_size/19x19 if predicate mad:system/item/maze_maker/aisle_width/3m run summon minecraft:marker ~-36 ~ ~-36 {Invulnerable:1b,Tags:["MAD_MazeMarker"]}
 execute if predicate mad:system/item/maze_maker/maze_size/19x19 if predicate mad:system/item/maze_maker/aisle_width/5m run summon minecraft:marker ~-54 ~ ~-54 {Invulnerable:1b,Tags:["MAD_MazeMarker"]}
 
+## Set scoreboard
+scoreboard players set @e[predicate=mad:system/item/maze_maker/maze_marker,sort=nearest,limit=1] DeadEnd 0
+scoreboard players set @e[predicate=mad:system/item/maze_maker/maze_marker,sort=nearest,limit=1] MazePosX 0
+scoreboard players set @e[predicate=mad:system/item/maze_maker/maze_marker,sort=nearest,limit=1] MazePosZ 0
+
 ## Dig exit
-execute as @e[predicate=mad:system/item/maze_maker/maze_marker] if predicate mad:system/item/maze_maker/aisle_width/1m at @s run fill ~-1 ~ ~ ~ ~3 ~ minecraft:air
-execute as @e[predicate=mad:system/item/maze_maker/maze_marker] if predicate mad:system/item/maze_maker/aisle_width/3m at @s run fill ~-2 ~ ~-1 ~ ~3 ~1 minecraft:air
-execute as @e[predicate=mad:system/item/maze_maker/maze_marker] if predicate mad:system/item/maze_maker/aisle_width/5m at @s run fill ~-3 ~ ~-2 ~ ~3 ~2 minecraft:air
+execute as @e[predicate=mad:system/item/maze_maker/maze_marker] if predicate mad:system/item/maze_maker/aisle_width/1m at @s run fill ~-1 ~ ~ ~ ~3 ~ minecraft:air replace #mad:wall_block
+execute as @e[predicate=mad:system/item/maze_maker/maze_marker] if predicate mad:system/item/maze_maker/aisle_width/3m at @s run fill ~-2 ~ ~-1 ~ ~3 ~1 minecraft:air replace #mad:wall_block
+execute as @e[predicate=mad:system/item/maze_maker/maze_marker] if predicate mad:system/item/maze_maker/aisle_width/5m at @s run fill ~-3 ~ ~-2 ~ ~3 ~2 minecraft:air replace #mad:wall_block
