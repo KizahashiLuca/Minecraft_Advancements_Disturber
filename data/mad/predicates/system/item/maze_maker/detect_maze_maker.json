@@ -1,0 +1,13 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MAD_DetectMazeMaker\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:player/alive"
+  }
+]

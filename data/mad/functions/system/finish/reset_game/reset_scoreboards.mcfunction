@@ -148,6 +148,15 @@ scoreboard objectives remove StealResult
 #### evoker fangs wand
 scoreboard objectives remove UseFungusStick
 scoreboard objectives remove EvokerFangsCount
+#### maze maker
+scoreboard objectives remove UseMazeMaker
+scoreboard objectives remove MazeSize
+scoreboard objectives remove AisleWidth
+scoreboard objectives remove RandomMax
+scoreboard objectives remove RandomAngle
+scoreboard objectives remove MazePosX
+scoreboard objectives remove MazePosZ
+scoreboard objectives remove DeadEnd
 #### respawn beacon
 scoreboard objectives remove BeaconNumber
 scoreboard objectives remove CompareNames
