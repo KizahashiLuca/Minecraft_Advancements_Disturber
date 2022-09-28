@@ -1,0 +1,37 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                ["",{"text":"飛ばし矢","color":"yellow","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                ["",{"text":"当たった相手をランダムな箇所に飛ばす","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"text":"弓もしくはクロスボウで使用","color":"dark_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_TeleportArrow\"],Potion:\"minecraft:water\",CustomPotionEffects:[{Id:24,Duration:100},{Id:25,Duration:100}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
