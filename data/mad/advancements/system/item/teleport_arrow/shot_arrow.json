@@ -4,10 +4,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
+          "type": {
             "direct_entity": {
               "type": "minecraft:arrow",
-              "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_TeleportArrow\"]}"
+              "nbt": "{Potion:\"minecraft:water\",CustomPotionEffects:[{Id:24,Duration:200},{Id:25,Duration:100}]}"
             }
           }
         }
