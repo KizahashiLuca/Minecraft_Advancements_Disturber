@@ -1,9 +1,9 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
           "type": "minecraft:loot_table",
           "name": "mad:system/begin/gui/number/number_0",

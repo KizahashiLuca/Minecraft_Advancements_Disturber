@@ -1,9 +1,9 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
           "type": "minecraft:item",
           "weight": 1,
@@ -22,8 +22,8 @@
       ]
     },
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
           "type": "minecraft:item",
           "weight": 1,
@@ -34,6 +34,16 @@
               "count": 12
             }
           ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:system/game/minecart/items/return_portal"
         }
       ]
     }
