@@ -25,7 +25,7 @@ tag @a remove MAD_StolenPlayer
 tag @a remove MAD_ThiefTeam
 tag @a remove MAD_DetectMazeMaker
 tag @a remove MAD_MazePlayer
-tag @a remove MAD_ArrowTeleport
+tag @a remove MAD_ArrowTeleportee
 tag @a remove MAD_Teleported
 tag @a remove MAD_TeleportToMinecart
 tag @a remove MAD_GiveTimeRandomly

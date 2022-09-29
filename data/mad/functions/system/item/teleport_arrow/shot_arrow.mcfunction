@@ -12,7 +12,7 @@
 advancement revoke @s only mad:system/item/teleport_arrow/shot_arrow
 
 ## Send messages
-tellraw @a ["",{"translate":"[どっか行け矢(仮)] 5秒後にオーバーワールドのどこかに飛ばされます。","color":"green","bold":false,"italic":false}]
+tellraw @s ["",{"translate":"[どっか行け矢(仮)] 5秒後にオーバーワールドのどこかに飛ばされます。","color":"green","bold":false,"italic":false}]
 
 ## Add a tag
 tag @s add MAD_ArrowTeleportee

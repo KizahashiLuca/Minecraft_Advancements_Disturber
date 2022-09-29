@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "ArrowTeleportTick": {
+      "min": 99,
+      "max": 99
+    }
+  }
+}
