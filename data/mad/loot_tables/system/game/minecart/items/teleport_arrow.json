@@ -13,7 +13,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": [
-                ["",{"text":"飛ばし矢","color":"yellow","bold":false,"italic":false}]
+                ["",{"text":"どっか行け矢(仮)","color":"yellow","bold":false,"italic":false}]
               ]
             },
             {
