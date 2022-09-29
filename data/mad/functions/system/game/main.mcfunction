@@ -17,7 +17,7 @@ execute as @a[predicate=mad:system/game/login_midtime] run function mad:system/g
 ## Position
 function mad:system/common/set_position/main
 
-## Execute advancements - every 4 ticks
+## Execute advancements
 #### ** Prohibit use predicate mad:system/game/advancements/execute/part_a **
 function mad:system/game/advancements/execute/part_a
 execute if predicate mad:system/game/advancements/execute/part_b run function mad:system/game/advancements/execute/part_b
