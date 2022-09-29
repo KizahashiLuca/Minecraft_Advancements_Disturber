@@ -106,6 +106,11 @@ scoreboard players set @a StealResult 0
 scoreboard players set @a UseFungusStick 0
 #### maze maker
 scoreboard players set @a UseMazeMaker 0
+#### teleport arrow
+scoreboard players set @a ArrowTeleportTick 0
+scoreboard players set @a ArrowTeleportPosX 0
+scoreboard players set @a ArrowTeleportPosY 0
+scoreboard players set @a ArrowTeleportPosZ 0
 #### mobile respawn beacon
 scoreboard players set @a MobileBeaconNumber 0
 #### team

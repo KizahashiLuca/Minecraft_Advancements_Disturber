@@ -48,6 +48,17 @@
           "type": "minecraft:loot_table",
           "weight": 1,
           "name": "mad:system/game/minecart/items/return_portal"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:system/game/minecart/items/teleport_arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            }
+          ]
         }
       ]
     }
