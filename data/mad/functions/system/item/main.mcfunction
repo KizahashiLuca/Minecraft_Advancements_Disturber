@@ -35,4 +35,5 @@ execute as @a[predicate=mad:system/item/maze_maker/use] at @s run function mad:s
 execute as @e[predicate=mad:system/item/maze_maker/maze_marker] at @s run function mad:system/item/maze_maker/make_maze
 
 ## Teleport arrow
+execute as @e[predicate=mad:system/item/teleport_arrow/onground_arrow] at @s run function mad:system/item/teleport_arrow/modify_data
 execute as @a[predicate=mad:system/item/teleport_arrow/teleportee] at @s run function mad:system/item/teleport_arrow/main
