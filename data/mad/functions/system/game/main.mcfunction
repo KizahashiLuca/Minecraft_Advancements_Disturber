@@ -19,8 +19,8 @@ function mad:system/common/set_position/main
 
 ## Execute advancements - every 4 ticks
 #### ** Prohibit use predicate mad:system/game/advancements/execute/part_a **
-execute if predicate mad:system/game/advancements/execute/part_b run function mad:system/game/advancements/execute/originals
-execute if predicate mad:system/game/advancements/execute/part_c run function mad:system/game/advancements/execute/achievements
+function mad:system/game/advancements/execute/part_a
+execute if predicate mad:system/game/advancements/execute/part_b run function mad:system/game/advancements/execute/part_b
 
 ## Minecart system
 execute as @e[predicate=mad:system/game/minecart/summon] if score @s SecondSummon = #mad Second at @s run function mad:system/game/minecart/summon_minecart
