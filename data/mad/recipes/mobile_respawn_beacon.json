@@ -6,13 +6,13 @@
     "ooo"
   ],
   "key": {
-    "g":{
+    "g": {
       "item": "minecraft:glowstone"
     },
-    "d":{
+    "d": {
       "item": "minecraft:diamond"
     },
-    "o":{
+    "o": {
       "item": "minecraft:obsidian"
     }
   },

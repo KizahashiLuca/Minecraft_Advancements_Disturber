@@ -1,8 +1,8 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":5,
+      "rolls": 5,
       "functions": [
         {
           "function": "minecraft:set_count",
@@ -13,7 +13,7 @@
           "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_SuspiciousStew\"]}"
         }
       ],
-      "entries":[
+      "entries": [
         {
           "type": "minecraft:item",
           "weight": 1,
