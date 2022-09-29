@@ -14,7 +14,7 @@ scoreboard players operation @s ArrowTeleportPosY = @s PosY
 scoreboard players operation @s ArrowTeleportPosZ = @s PosZ
 
 ## Send messages
-tellraw @a ["",{"translate":"[飛ばし矢]  %s が ","with":[{"selector":"@s"}],"color":"green","bold":false,"italic":false},{"translate":"オーバーワールド [%s, %s, %s]","with":[{"score":{"name":"@s","objective":"ArrowTeleportPosX"}},{"score":{"name":"@s","objective":"ArrowTeleportPosY"}},{"score":{"name":"@s","objective":"ArrowTeleportPosZ"}}],"color":"green","bold":false,"italic":false},{"text":" に飛ばされました。","color":"green","bold":false,"italic":false}]
+tellraw @a ["",{"translate":"[どっか行け矢(仮)]  %s が ","with":[{"selector":"@s"}],"color":"green","bold":false,"italic":false},{"translate":"オーバーワールド [%s, %s, %s]","with":[{"score":{"name":"@s","objective":"ArrowTeleportPosX"}},{"score":{"name":"@s","objective":"ArrowTeleportPosY"}},{"score":{"name":"@s","objective":"ArrowTeleportPosZ"}}],"color":"green","bold":false,"italic":false},{"text":" に飛ばされました。","color":"green","bold":false,"italic":false}]
 
 ## Remove a tag
 tag @s remove MAD_ArrowTeleportee
