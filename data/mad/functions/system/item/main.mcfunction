@@ -33,3 +33,6 @@ execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run fun
 ## Make maker
 execute as @a[predicate=mad:system/item/maze_maker/use] at @s run function mad:system/item/maze_maker/main
 execute as @e[predicate=mad:system/item/maze_maker/maze_marker] at @s run function mad:system/item/maze_maker/make_maze
+
+## Teleport arrow
+execute as @a[predicate=mad:system/item/teleport_arrow/teleportee] at @s run function mad:system/item/teleport_arrow/main

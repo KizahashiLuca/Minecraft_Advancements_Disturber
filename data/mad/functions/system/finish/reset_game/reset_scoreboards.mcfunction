@@ -157,6 +157,11 @@ scoreboard objectives remove RandomAngle
 scoreboard objectives remove MazePosX
 scoreboard objectives remove MazePosZ
 scoreboard objectives remove DeadEnd
+#### teleport arrow
+scoreboard objectives remove ArrowTeleportTick
+scoreboard objectives remove ArrowTeleportPosX
+scoreboard objectives remove ArrowTeleportPosY
+scoreboard objectives remove ArrowTeleportPosZ
 #### respawn beacon
 scoreboard objectives remove BeaconNumber
 scoreboard objectives remove CompareNames

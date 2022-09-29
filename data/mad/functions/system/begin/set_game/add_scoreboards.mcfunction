@@ -158,6 +158,7 @@ scoreboard objectives add MazePosX dummy
 scoreboard objectives add MazePosZ dummy
 scoreboard objectives add DeadEnd dummy
 #### teleport arrow
+scoreboard objectives add ArrowTeleportTick dummy
 scoreboard objectives add ArrowTeleportPosX dummy
 scoreboard objectives add ArrowTeleportPosY dummy
 scoreboard objectives add ArrowTeleportPosZ dummy

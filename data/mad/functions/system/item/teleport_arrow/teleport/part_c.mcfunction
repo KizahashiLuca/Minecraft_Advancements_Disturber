@@ -9,8 +9,8 @@
 #####################################
 
 ## Teleport
-execute if predicate mad:gamerules/world_border/1100 in minecraft:overworld run spreadplayers ~ ~ 0 550 false @a[predicate=mad:system/item/teleport_arrow/teleporter]
-execute if predicate mad:gamerules/world_border/1200 in minecraft:overworld run spreadplayers ~ ~ 0 600 false @a[predicate=mad:system/item/teleport_arrow/teleporter]
-execute if predicate mad:gamerules/world_border/1300 in minecraft:overworld run spreadplayers ~ ~ 0 650 false @a[predicate=mad:system/item/teleport_arrow/teleporter]
-execute if predicate mad:gamerules/world_border/1400 in minecraft:overworld run spreadplayers ~ ~ 0 700 false @a[predicate=mad:system/item/teleport_arrow/teleporter]
-execute if predicate mad:gamerules/world_border/1500 in minecraft:overworld run spreadplayers ~ ~ 0 750 false @a[predicate=mad:system/item/teleport_arrow/teleporter]
+execute if predicate mad:gamerules/world_border/1100 run spreadplayers ~ ~ 0 550 false @s
+execute if predicate mad:gamerules/world_border/1200 run spreadplayers ~ ~ 0 600 false @s
+execute if predicate mad:gamerules/world_border/1300 run spreadplayers ~ ~ 0 650 false @s
+execute if predicate mad:gamerules/world_border/1400 run spreadplayers ~ ~ 0 700 false @s
+execute if predicate mad:gamerules/world_border/1500 run spreadplayers ~ ~ 0 750 false @s

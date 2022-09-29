@@ -4,9 +4,11 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "direct_entity": {
-            "type": "minecraft:arrow",
-            "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_TeleportArrow\"]}"
+          "source_entity": {
+            "direct_entity": {
+              "type": "minecraft:arrow",
+              "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_TeleportArrow\"]}"
+            }
           }
         }
       }
