@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
 ## MC-Version: Java Edit. 1.19
-## Author    : @potage00
+## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 27 Sep 2022
-## Version   : β-2.1
+## Date      : 29 Sep 2022
+## Version   : β-2.2
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -32,6 +32,12 @@ function mad:system/trial/set_trial/set_players
 function mad:system/begin/set_game/add_scoreboards
 function mad:system/begin/set_game/set_scoreboards
 function mad:system/game/set_game/set_scoreboards
+
+## Set random seed
+function mad:system/common/randomizer/initialize
+
+## Set world
+function mad:system/begin/set_game/set_world
 
 ## Detect version
 function mad:system/begin/set_game/detect_version

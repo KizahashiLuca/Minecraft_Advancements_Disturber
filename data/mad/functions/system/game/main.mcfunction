@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
 ## MC-Version: Java Edit. 1.19
-## Author    : @potage00
+## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 27 Sep 2022
-## Version   : β-2.1
+## Date      : 29 Sep 2022
+## Version   : β-2.2
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -17,10 +17,10 @@ execute as @a[predicate=mad:system/game/login_midtime] run function mad:system/g
 ## Position
 function mad:system/common/set_position/main
 
-## Execute advancements - every 4 ticks
+## Execute advancements
 #### ** Prohibit use predicate mad:system/game/advancements/execute/part_a **
-execute if predicate mad:system/game/advancements/execute/part_b run function mad:system/game/advancements/execute/originals
-execute if predicate mad:system/game/advancements/execute/part_c run function mad:system/game/advancements/execute/achievements
+function mad:system/game/advancements/execute/part_a
+execute if predicate mad:system/game/advancements/execute/part_b run function mad:system/game/advancements/execute/part_b
 
 ## Minecart system
 execute as @e[predicate=mad:system/game/minecart/summon] if score @s SecondSummon = #mad Second at @s run function mad:system/game/minecart/summon_minecart

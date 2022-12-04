@@ -1,8 +1,8 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
+      "rolls": 1,
       "functions": [
         {
           "function": "minecraft:set_name",
@@ -18,7 +18,7 @@
           "tag": "{HideFlags:63,Tags:[\"MAD_setting_item\",\"MAD_match_mode\"]}"
         }
       ],
-      "entries":[
+      "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:carved_pumpkin",

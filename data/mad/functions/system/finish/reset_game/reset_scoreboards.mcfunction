@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
 ## MC-Version: Java Edit. 1.19
-## Author    : @potage00
+## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 27 Sep 2022
-## Version   : β-2.1
+## Date      : 29 Sep 2022
+## Version   : β-2.2
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -148,6 +148,20 @@ scoreboard objectives remove StealResult
 #### evoker fangs wand
 scoreboard objectives remove UseFungusStick
 scoreboard objectives remove EvokerFangsCount
+#### maze maker
+scoreboard objectives remove UseMazeMaker
+scoreboard objectives remove MazeSize
+scoreboard objectives remove AisleWidth
+scoreboard objectives remove RandomMax
+scoreboard objectives remove RandomAngle
+scoreboard objectives remove MazePosX
+scoreboard objectives remove MazePosZ
+scoreboard objectives remove DeadEnd
+#### teleport arrow
+scoreboard objectives remove ArrowTeleportTick
+scoreboard objectives remove ArrowTeleportPosX
+scoreboard objectives remove ArrowTeleportPosY
+scoreboard objectives remove ArrowTeleportPosZ
 #### respawn beacon
 scoreboard objectives remove BeaconNumber
 scoreboard objectives remove CompareNames

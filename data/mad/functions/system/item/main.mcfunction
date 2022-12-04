@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
 ## MC-Version: Java Edit. 1.19
-## Author    : @potage00
+## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 27 Sep 2022
-## Version   : β-2.1
+## Date      : 29 Sep 2022
+## Version   : β-2.2
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -29,3 +29,11 @@ execute as @a[predicate=mad:system/item/evoker_fangs_wand/use] at @s run functio
 
 ## Return portal
 execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run function mad:system/item/return_portal/main
+
+## Make maker
+execute as @a[predicate=mad:system/item/maze_maker/use] at @s run function mad:system/item/maze_maker/main
+execute as @e[predicate=mad:system/item/maze_maker/maze_marker] at @s run function mad:system/item/maze_maker/make_maze
+
+## Teleport arrow
+execute as @e[predicate=mad:system/item/teleport_arrow/onground_arrow] at @s run function mad:system/item/teleport_arrow/modify_data
+execute as @a[predicate=mad:system/item/teleport_arrow/teleportee] at @s run function mad:system/item/teleport_arrow/main

@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
 ## MC-Version: Java Edit. 1.19
-## Author    : @potage00
+## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 27 Sep 2022
-## Version   : β-2.1
+## Date      : 29 Sep 2022
+## Version   : β-2.2
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -21,4 +21,4 @@ scoreboard players set @s Tick 0
 tag @s add MAD_SetRespawnBanner
 
 ## Reset data - banner
-data modify entity @s CustomName set value '{"text":"リスポーンビーコン"}'
+data modify entity @s CustomName set value '{"text":"モバイルリスポーンビーコン"}'

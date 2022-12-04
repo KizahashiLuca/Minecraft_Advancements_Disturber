@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
 ## MC-Version: Java Edit. 1.19
-## Author    : @potage00
+## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 27 Sep 2022
-## Version   : β-2.1
+## Date      : 29 Sep 2022
+## Version   : β-2.2
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -13,7 +13,7 @@ tellraw @a [""]
 tellraw @a ["",{"text":"---------------------------------","color":"white","bold":false,"italic":false}]
 tellraw @a ["",{"text":" Minecraft","color":"red","bold":true,"italic":false}]
 tellraw @a ["",{"text":"  Advancements","color":"red","bold":true,"italic":false}]
-tellraw @a ["",{"text":"   Disturber β-2.1 - MC 1.19","color":"red","bold":true,"italic":false}]
-tellraw @a ["",{"translate":"  企画 : %s","with":[{"text":"ぽたーじゅ","hoverEvent":{"action":"show_text","value":"Twitter @potage00"},"clickEvent":{"action":"open_url","value":"http://twitter.com/potage00"},"color":"white","bold":false,"italic":false}],"color":"green","bold":true,"italic":false}]
+tellraw @a ["",{"text":"   Disturber β-2.2 - MC 1.19","color":"red","bold":true,"italic":false}]
+tellraw @a ["",{"translate":"  企画 : %s","with":[{"text":"ぽたーじゅ","hoverEvent":{"action":"show_text","value":"Twitter @potagegatop"},"clickEvent":{"action":"open_url","value":"http://twitter.com/potagegatop"},"color":"white","bold":false,"italic":false}],"color":"green","bold":true,"italic":false}]
 tellraw @a ["",{"translate":"  制作 : %s","with":[{"text":"KizahashiLuca","hoverEvent":{"action":"show_text","value":"Twitter @KizahashiLuca"},"clickEvent":{"action":"open_url","value":"http://twitter.com/KizahashiLuca"},"color":"white","bold":false,"italic":false}],"color":"green","bold":true,"italic":false}]
 tellraw @a ["",{"text":"---------------------------------","color":"white","bold":false,"italic":false}]

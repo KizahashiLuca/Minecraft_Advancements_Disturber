@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
 ## MC-Version: Java Edit. 1.19
-## Author    : @potage00
+## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 27 Sep 2022
-## Version   : β-2.1
+## Date      : 29 Sep 2022
+## Version   : β-2.2
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -23,6 +23,9 @@ tag @a remove MAD_SetThief
 tag @a remove MAD_NotStealPlayer
 tag @a remove MAD_StolenPlayer
 tag @a remove MAD_ThiefTeam
+tag @a remove MAD_DetectMazeMaker
+tag @a remove MAD_MazePlayer
+tag @a remove MAD_ArrowTeleportee
 tag @a remove MAD_Teleported
 tag @a remove MAD_TeleportToMinecart
 tag @a remove MAD_GiveTimeRandomly

@@ -17,7 +17,7 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 ## Download
 ダウンロードは 以下リンクからお願いします。
  - Java Edition v1.19 以降対応
-   - [β-2.1](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.0.2)
+   - [β-2.2](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.2)
    
 ## ルール解説動画
 
@@ -108,5 +108,5 @@ https://user-images.githubusercontent.com/33852306/187057764-0011f5fc-9960-408d-
  - 怪しげなシチュー ×5
 
 ## スタッフ
- - 企画 : ぽたーじゅ [@potage00](https://twitter.com/potagegatop)
+ - 企画 : ぽたーじゅ [@potagegatop](https://twitter.com/potagegatop)
  - 制作/著作 : きざはしるか [@KizahashiLuca](https://twitter.com/KizahashiLuca)

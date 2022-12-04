@@ -1,16 +1,17 @@
 #####################################
 ## Minecraft Advancements Disturber
 ## MC-Version: Java Edit. 1.19
-## Author    : @potage00
+## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 27 Sep 2022
-## Version   : β-2.1
+## Date      : 29 Sep 2022
+## Version   : β-2.2
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Supply item
 loot give @s[predicate=mad:system/trial/use_armor_upgrader] loot mad:system/game/minecart/items/armor_upgrader
 loot give @s[predicate=mad:system/trial/use_tool_upgrader] loot mad:system/game/minecart/items/tool_upgrader
+loot give @s[predicate=mad:system/trial/use_maze_maker] loot mad:system/game/minecart/items/maze_maker
 loot give @s[predicate=mad:system/trial/use_emergency_call] loot mad:system/game/minecart/items/emergency_call
 loot give @s[predicate=mad:system/trial/use_notice_of_thief] loot mad:system/game/minecart/items/notice_of_thief
 loot give @s[predicate=mad:system/trial/use_transmitter] loot mad:system/game/minecart/items/transmitter

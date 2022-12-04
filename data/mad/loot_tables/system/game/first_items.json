@@ -1,9 +1,9 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_axe"
@@ -11,8 +11,8 @@
       ]
     },
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_pickaxe"
@@ -20,8 +20,8 @@
       ]
     },
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_shovel"
