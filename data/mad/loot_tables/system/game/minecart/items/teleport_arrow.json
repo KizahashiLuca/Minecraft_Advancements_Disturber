@@ -20,7 +20,7 @@
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
-                ["",{"text":"当たった相手をランダムな箇所に飛ばす","color":"white","bold":false,"italic":false}],
+                ["",{"text":"当たった相手をランダムな箇所に飛ばす。","color":"white","bold":false,"italic":false}],
                 [""],
                 ["",{"text":"弓もしくはクロスボウで使用","color":"dark_purple","bold":false,"italic":false}]
               ]
