@@ -19,7 +19,7 @@ scoreboard players set @s Second 20
 scoreboard players set @s Tick 0
 
 ## Reset data - banner
-data modify entity @s CustomName set value '{"text":"リスポーンビーコン"}'
+data modify entity @s CustomName set value '{"text":"モバイルリスポーンビーコン"}'
 
 ## Remove tags - banner
 tag @s remove MAD_SetRespawnBanner

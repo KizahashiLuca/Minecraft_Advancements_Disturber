@@ -21,4 +21,4 @@ scoreboard players set @s Tick 0
 tag @s add MAD_SetRespawnBanner
 
 ## Reset data - banner
-data modify entity @s CustomName set value '{"text":"リスポーンビーコン"}'
+data modify entity @s CustomName set value '{"text":"モバイルリスポーンビーコン"}'

@@ -27,7 +27,7 @@ scoreboard players set @s Tick 0
 setblock ~ ~ ~ minecraft:air replace
 
 ## Reset data 
-data modify entity @s CustomName set value '{"text":"リスポーンビーコン"}'
+data modify entity @s CustomName set value '{"text":"モバイルリスポーンビーコン"}'
 
 ## Reset mobile respawn beacon
 execute as @s[predicate=mad:area_effect_cloud/mobile_respawn_beacon/structure] run fill ~-1 ~-1 ~-1 ~1 ~0 ~1 minecraft:air replace

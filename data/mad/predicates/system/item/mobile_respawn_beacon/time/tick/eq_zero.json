@@ -1,22 +1,16 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mad:system/common/respawn_beacon/time/tick_of_respawn_beacon"
+    "name": "mad:system/item/mobile_respawn_beacon/time/tick_of_respawn_beacon"
   },
   {
-    "condition": "minecraft:value_check",
-    "value": {
-      "type": "minecraft:score",
-      "target": {
-        "type": "minecraft:fixed",
-        "name": "#mad"
-      },
-      "score": "Tick",
-      "scale": 1
-    },
-    "range": {
-      "min": 0,
-      "max": 0
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "Tick": {
+        "min": 0,
+        "max": 0
+      }
     }
   }
 ]
