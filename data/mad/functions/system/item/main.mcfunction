@@ -27,6 +27,9 @@ execute as @a[predicate=mad:system/item/emergency_call/use] at @s run function m
 ## Evoker fangs wand
 execute as @a[predicate=mad:system/item/evoker_fangs_wand/use] at @s run function mad:system/item/evoker_fangs_wand/main
 
+## Sonic laser
+execute as @a[predicate=mad:system/item/sonic_laser/use] at @s run function mad:system/item/sonic_laser/main
+
 ## Return portal
 execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run function mad:system/item/return_portal/main
 

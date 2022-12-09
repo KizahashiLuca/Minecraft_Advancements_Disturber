@@ -148,6 +148,9 @@ scoreboard objectives add StealResult dummy
 #### evoker fangs wand
 scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add EvokerFangsCount dummy
+#### sonic laser
+scoreboard objectives add UseSonicLaser minecraft.used:minecraft.spyglass
+scoreboard objectives add SonicBoomCount dummy
 #### maze maker
 scoreboard objectives add UseMazeMaker minecraft.used:minecraft.allay_spawn_egg
 scoreboard objectives add MazeSize dummy

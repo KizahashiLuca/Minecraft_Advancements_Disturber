@@ -148,6 +148,9 @@ scoreboard objectives remove StealResult
 #### evoker fangs wand
 scoreboard objectives remove UseFungusStick
 scoreboard objectives remove EvokerFangsCount
+#### sonic laser
+scoreboard objectives remove UseSonicLaser
+scoreboard objectives remove SonicBoomCount
 #### maze maker
 scoreboard objectives remove UseMazeMaker
 scoreboard objectives remove MazeSize

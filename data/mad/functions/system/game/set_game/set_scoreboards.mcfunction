@@ -75,6 +75,8 @@ scoreboard players set #mad ThiefSecond 5
 scoreboard players set @a StealResult 0
 #### evoker fangs wand
 scoreboard players set @a UseFungusStick 0
+#### sonic laser
+scoreboard players set @a UseSonicLaser 0
 #### maze maker
 scoreboard players set @a UseMazeMaker 0
 #### teleport arrow
