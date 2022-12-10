@@ -1,4 +1,5 @@
 {
+  "parent": "minecraft:adventure/sleep_in_bed",
   "criteria": {
     "minecraft:badlands": {
       "conditions": {
@@ -849,7 +850,6 @@
       "translate": "advancements.adventure.adventuring_time.title"
     }
   },
-  "parent": "minecraft:adventure/sleep_in_bed",
   "requirements": [
     [
       "minecraft:mushroom_fields"
