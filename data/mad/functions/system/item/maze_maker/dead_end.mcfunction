@@ -1,6 +1,6 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19
+## MC-Version: Java Edit. 1.19.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
 ## Date      : 16 Sep 2022

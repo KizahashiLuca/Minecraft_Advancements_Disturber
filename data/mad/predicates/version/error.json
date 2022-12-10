@@ -24,6 +24,10 @@
     {
       "condition": "minecraft:reference",
       "name": "mad:version/1.18"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:version/1.19"
     }
   ]
 }
