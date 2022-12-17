@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/item/homing_evoker_fangs_wand/find_target/lockon_player"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "ChangeTarget": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  }
+]

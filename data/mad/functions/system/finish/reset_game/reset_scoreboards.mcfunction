@@ -145,9 +145,6 @@ scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove ThiefTick
 scoreboard objectives remove ThiefSecond
 scoreboard objectives remove StealResult
-#### evoker fangs wand
-scoreboard objectives remove UseFungusStick
-scoreboard objectives remove EvokerFangsCount
 #### maze maker
 scoreboard objectives remove UseMazeMaker
 scoreboard objectives remove MazeSize
@@ -162,6 +159,22 @@ scoreboard objectives remove ArrowTeleportTick
 scoreboard objectives remove ArrowTeleportPosX
 scoreboard objectives remove ArrowTeleportPosY
 scoreboard objectives remove ArrowTeleportPosZ
+#### homing evoker fangs wand
+scoreboard objectives remove UseFungusStick
+scoreboard objectives remove EvokerFangsCount
+scoreboard objectives remove ChangeTarget
+scoreboard objectives remove PlayerUUID0
+scoreboard objectives remove PlayerUUID1
+scoreboard objectives remove PlayerUUID2
+scoreboard objectives remove PlayerUUID3
+scoreboard objectives remove TargetUUID0
+scoreboard objectives remove TargetUUID1
+scoreboard objectives remove TargetUUID2
+scoreboard objectives remove TargetUUID3
+scoreboard objectives remove PrevTargetUUID0
+scoreboard objectives remove PrevTargetUUID1
+scoreboard objectives remove PrevTargetUUID2
+scoreboard objectives remove PrevTargetUUID3
 #### respawn beacon
 scoreboard objectives remove BeaconNumber
 scoreboard objectives remove CompareNames

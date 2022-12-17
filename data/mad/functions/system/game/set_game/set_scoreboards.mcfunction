@@ -73,8 +73,6 @@ scoreboard players set @a ThiefTick 0
 scoreboard players set @a ThiefSecond 5
 scoreboard players set #mad ThiefSecond 5
 scoreboard players set @a StealResult 0
-#### evoker fangs wand
-scoreboard players set @a UseFungusStick 0
 #### maze maker
 scoreboard players set @a UseMazeMaker 0
 #### teleport arrow
@@ -82,6 +80,12 @@ scoreboard players set @a ArrowTeleportTick 0
 scoreboard players set @a ArrowTeleportPosX 0
 scoreboard players set @a ArrowTeleportPosY 0
 scoreboard players set @a ArrowTeleportPosZ 0
+#### homing evoker fangs wand
+scoreboard players set @a UseFungusStick 0
+execute as @a store success score @s PlayerUUID0 run data get entity @s UUID[0] 1
+execute as @a store success score @s PlayerUUID1 run data get entity @s UUID[1] 1
+execute as @a store success score @s PlayerUUID2 run data get entity @s UUID[2] 1
+execute as @a store success score @s PlayerUUID3 run data get entity @s UUID[3] 1
 #### mobile respawn beacon
 scoreboard players set @a MobileBeaconNumber 0
 #### team

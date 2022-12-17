@@ -16,6 +16,6 @@ loot give @s[predicate=mad:system/trial/use_emergency_call] loot mad:system/game
 loot give @s[predicate=mad:system/trial/use_notice_of_thief] loot mad:system/game/minecart/items/notice_of_thief
 loot give @s[predicate=mad:system/trial/use_transmitter] loot mad:system/game/minecart/items/transmitter
 loot give @s[predicate=mad:system/trial/use_energy_drink] loot mad:system/game/minecart/items/energy_drink
-loot give @s[predicate=mad:system/trial/use_evoker_fangs_wand] loot mad:system/game/minecart/items/evoker_fangs_wand
+loot give @s[predicate=mad:system/trial/use_homing_evoker_fangs_wand] loot mad:system/game/minecart/items/homing_evoker_fangs_wand
 loot give @s[predicate=mad:system/trial/use_return_portal] loot mad:system/game/minecart/items/return_portal
 loot give @s[predicate=mad:system/trial/use_totem_of_undying] loot mad:system/game/minecart/items/totem_of_undying

@@ -1,0 +1,31 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MAD_LockonTarget\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:alternative",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{SelectedItem:{tag:{Tags:[\"MAD_HomingEvokerFangsWand\"]}}}"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Inventory:[{Slot:-106b,tag:{Tags:[\"MAD_HomingEvokerFangsWand\"]}}]}"
+          }
+        }
+      ]
+    }
+  }
+]

@@ -14,9 +14,7 @@ gamemode spectator @a[predicate=mad:player/not_participant]
 
 ## Remove advancements
 advancement revoke @a everything
-advancement grant @a until mad:originals/adventure
-advancement grant @a until mad:originals/collect
-advancement grant @a until mad:originals/game
+advancement grant @a until mad:originals/root
 advancement grant @a until mad:achievements/root
 
 ## Take recipes

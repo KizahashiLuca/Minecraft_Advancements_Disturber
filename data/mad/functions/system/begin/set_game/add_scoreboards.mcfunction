@@ -145,9 +145,6 @@ scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn
 scoreboard objectives add ThiefTick dummy
 scoreboard objectives add ThiefSecond dummy
 scoreboard objectives add StealResult dummy
-#### evoker fangs wand
-scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add EvokerFangsCount dummy
 #### maze maker
 scoreboard objectives add UseMazeMaker minecraft.used:minecraft.allay_spawn_egg
 scoreboard objectives add MazeSize dummy
@@ -162,6 +159,22 @@ scoreboard objectives add ArrowTeleportTick dummy
 scoreboard objectives add ArrowTeleportPosX dummy
 scoreboard objectives add ArrowTeleportPosY dummy
 scoreboard objectives add ArrowTeleportPosZ dummy
+#### homing evoker fangs wand
+scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add EvokerFangsCount dummy
+scoreboard objectives add ChangeTarget dummy
+scoreboard objectives add PlayerUUID0 dummy
+scoreboard objectives add PlayerUUID1 dummy
+scoreboard objectives add PlayerUUID2 dummy
+scoreboard objectives add PlayerUUID3 dummy
+scoreboard objectives add TargetUUID0 dummy
+scoreboard objectives add TargetUUID1 dummy
+scoreboard objectives add TargetUUID2 dummy
+scoreboard objectives add TargetUUID3 dummy
+scoreboard objectives add PrevTargetUUID0 dummy
+scoreboard objectives add PrevTargetUUID1 dummy
+scoreboard objectives add PrevTargetUUID2 dummy
+scoreboard objectives add PrevTargetUUID3 dummy
 #### respawn beacon
 scoreboard objectives add BeaconNumber dummy
 scoreboard objectives add CompareNames dummy

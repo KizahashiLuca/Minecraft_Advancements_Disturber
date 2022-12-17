@@ -24,9 +24,6 @@ execute as @a[predicate=mad:system/item/notice_of_thief/thief] at @s run functio
 ## Emergency call
 execute as @a[predicate=mad:system/item/emergency_call/use] at @s run function mad:system/item/emergency_call/main
 
-## Evoker fangs wand
-execute as @a[predicate=mad:system/item/evoker_fangs_wand/use] at @s run function mad:system/item/evoker_fangs_wand/main
-
 ## Return portal
 execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run function mad:system/item/return_portal/main
 
@@ -37,3 +34,6 @@ execute as @e[predicate=mad:system/item/maze_maker/maze_marker] at @s run functi
 ## Teleport arrow
 #execute as @e[predicate=mad:system/item/teleport_arrow/onground_arrow] at @s run function mad:system/item/teleport_arrow/modify_data
 execute as @a[predicate=mad:system/item/teleport_arrow/teleportee] at @s run function mad:system/item/teleport_arrow/main
+
+## Homing evoker fangs wand
+function mad:system/item/homing_evoker_fangs_wand/main

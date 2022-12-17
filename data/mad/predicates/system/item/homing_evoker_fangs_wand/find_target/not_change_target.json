@@ -1,0 +1,92 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/item/homing_evoker_fangs_wand/find_target/lockon_player"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "TargetUUID0": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@s"
+          },
+          "score": "PrevTargetUUID0",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@s"
+          },
+          "score": "PrevTargetUUID0",
+          "scale": 1
+        }
+      },
+      "TargetUUID1": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@s"
+          },
+          "score": "PrevTargetUUID1",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@s"
+          },
+          "score": "PrevTargetUUID1",
+          "scale": 1
+        }
+      },
+      "TargetUUID2": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@s"
+          },
+          "score": "PrevTargetUUID2",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@s"
+          },
+          "score": "PrevTargetUUID2",
+          "scale": 1
+        }
+      },
+      "TargetUUID3": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@s"
+          },
+          "score": "PrevTargetUUID3",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@s"
+          },
+          "score": "PrevTargetUUID3",
+          "scale": 1
+        }
+      }
+    }
+  }
+]
