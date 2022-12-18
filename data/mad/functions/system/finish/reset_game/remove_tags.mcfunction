@@ -26,6 +26,11 @@ tag @a remove MAD_ThiefTeam
 tag @a remove MAD_DetectMazeMaker
 tag @a remove MAD_MazePlayer
 tag @a remove MAD_ArrowTeleportee
+tag @a remove MAD_LockonTarget
+tag @a remove MAD_NotFoundTarget
+tag @a remove MAD_SummonerOfHomingEvokerFangs
+tag @a remove MAD_DetectLockon
+tag @a remove MAD_Target
 tag @a remove MAD_Teleported
 tag @a remove MAD_TeleportToMinecart
 tag @a remove MAD_GiveTimeRandomly

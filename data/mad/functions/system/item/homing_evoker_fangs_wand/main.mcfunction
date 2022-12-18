@@ -9,8 +9,8 @@
 #####################################
 
 ## Detect in hand
-execute as @a[predicate=mad:system/item/homing_evoker_fangs_wand/not_lockon/in_hand] run function mad:system/item/homing_evoker_fangs_wand/find_target/set_target
 execute as @a[predicate=mad:system/item/homing_evoker_fangs_wand/lockon/not_in_hand] run function mad:system/item/homing_evoker_fangs_wand/find_target/reset_target
+execute as @a[predicate=mad:system/item/homing_evoker_fangs_wand/not_lockon/in_hand] run function mad:system/item/homing_evoker_fangs_wand/find_target/set_target
 
 ## Evoker fangs
 execute as @a[predicate=mad:system/item/homing_evoker_fangs_wand/use] run function mad:system/item/homing_evoker_fangs_wand/summon_fangs/main

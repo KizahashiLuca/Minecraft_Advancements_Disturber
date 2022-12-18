@@ -26,5 +26,6 @@ execute as @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/no
 function mad:system/item/homing_evoker_fangs_wand/summon_fangs/set_fangs
 
 ## Remove tags
-tag @s remove MAD_SummonerOfEvokerFangs
+tag @s remove MAD_LockonTarget
+tag @s remove MAD_SummonerOfHomingEvokerFangs
 tag @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/not_set_marker] remove MAD_NotSetPlayer
