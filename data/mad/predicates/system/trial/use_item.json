@@ -15,7 +15,7 @@
     },
     {
       "condition": "minecraft:reference",
-      "name": "mad:system/trial/use_evoker_fangs_wand"
+      "name": "mad:system/trial/use_homing_evoker_fangs_wand"
     },
     {
       "condition": "minecraft:reference",

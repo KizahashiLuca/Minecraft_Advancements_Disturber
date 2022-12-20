@@ -20,3 +20,9 @@ summon minecraft:evoker_fangs ~ ~ ~
 
 ## Set magic circle
 spreadplayers ~ ~ 0 2.0 false @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/summoned_fangs,sort=nearest]
+
+## Set scoreboard
+scoreboard players set @s[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/unset_magic_circle] EvokerFangsCount 65
+
+## Set a tag
+tag @s[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/unset_magic_circle] add MAD_SetMagicCircle
