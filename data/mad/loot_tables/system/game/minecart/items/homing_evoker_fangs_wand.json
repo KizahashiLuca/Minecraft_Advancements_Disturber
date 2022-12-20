@@ -23,7 +23,9 @@
                 ["",{"text":"ホーミングするエヴォーカーの牙を召喚。","color":"white","bold":false,"italic":false}],
                 [""],
                 ["",{"translate":"%sでロックオン","with":[{"keybind":"key.sneak"}],"color":"dark_purple","bold":false,"italic":false}],
-                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}]
+                ["",{"text":" (50m先までロックオン可能)","color":"dark_purple","bold":false,"italic":false}],
+                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}],
+                ["",{"text":" (10秒間追尾)","color":"dark_purple","bold":false,"italic":false}]
               ]
             },
             {

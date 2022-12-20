@@ -22,7 +22,19 @@ summon minecraft:evoker_fangs ~ ~ ~
 spreadplayers ~ ~ 0 2.0 false @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/summoned_fangs,sort=nearest]
 
 ## Set scoreboard
-scoreboard players set @s[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/unset_magic_circle] EvokerFangsCount 65
+scoreboard players set @s[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/unset_magic_circle] EvokerFangsCount 60
 
 ## Set a tag
 tag @s[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/unset_magic_circle] add MAD_SetMagicCircle
+
+## Set scoreboard
+scoreboard players add @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/set_marker] EvokerFangsCount 1
+
+## Kill marker
+kill @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/set_marker,scores={EvokerFangsCount=75..}]
+
+## Remove a tag
+tag @e remove MAD_Target
+
+## Schedule function
+execute as @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/set_marker] run schedule function mad:system/item/homing_evoker_fangs_wand/summon_fangs/set_fangs 1t append

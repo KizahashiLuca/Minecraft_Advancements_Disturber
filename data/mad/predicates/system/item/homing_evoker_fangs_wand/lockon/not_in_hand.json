@@ -15,14 +15,22 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "nbt": "{SelectedItem:{tag:{Tags:[\"MAD_HomingEvokerFangsWand\"]}}}"
+            "equipment": {
+              "mainhand": {
+                "nbt": "{Tags:[\"MAD_HomingEvokerFangsWand\"]}"
+              }
+            }
           }
         },
         {
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "nbt": "{Inventory:[{Slot:-106b,tag:{Tags:[\"MAD_HomingEvokerFangsWand\"]}}]}"
+            "equipment": {
+              "offhand": {
+                "nbt": "{Tags:[\"MAD_HomingEvokerFangsWand\"]}"
+              }
+            }
           }
         }
       ]
