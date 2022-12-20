@@ -13,16 +13,17 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": [
-                ["",{"text":"エヴォーカーの牙の杖 (アップグレード)","color":"aqua","bold":false,"italic":false}]
+                ["",{"text":"エヴォーカーの牙の杖","color":"aqua","bold":false,"italic":false}]
               ]
             },
             {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
-                ["",{"text":"エヴォーカーの牙を召喚。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"ホーミングするエヴォーカーの牙を召喚。","color":"white","bold":false,"italic":false}],
                 [""],
-                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}]
+                ["",{"translate":"%sでロックオン","with":[{"keybind":"key.sneak"}],"color":"dark_purple","bold":false,"italic":false}],
+                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}]
               ]
             },
             {
