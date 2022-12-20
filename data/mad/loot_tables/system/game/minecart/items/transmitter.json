@@ -22,7 +22,7 @@
               "lore": [
                 ["",{"text":"近くの敵プレイヤーの現在の座標を通知。","color":"white","bold":false,"italic":false}],
                 [""],
-                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}]
+                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}]
               ]
             },
             {
