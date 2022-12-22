@@ -9,4 +9,6 @@
 #####################################
 
 ## Set world border
-worldborder set 59999968
+execute in minecraft:overworld run worldborder set 59999968
+execute in minecraft:the_nether run worldborder set 59999968
+execute in minecraft:the_end run worldborder set 59999968
