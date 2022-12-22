@@ -5,7 +5,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"MAD_LockonTarget\"]}"
+        "nbt": "{Tags:[\"MAD_LockedonTarget\"]}"
       }
     }
   },

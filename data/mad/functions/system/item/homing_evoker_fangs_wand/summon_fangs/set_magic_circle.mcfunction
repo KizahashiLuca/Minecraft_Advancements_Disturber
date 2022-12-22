@@ -17,9 +17,13 @@ summon minecraft:evoker_fangs ~ ~ ~
 summon minecraft:evoker_fangs ~ ~ ~
 summon minecraft:evoker_fangs ~ ~ ~
 summon minecraft:evoker_fangs ~ ~ ~
+summon minecraft:evoker_fangs ~ ~ ~
+summon minecraft:evoker_fangs ~ ~ ~
+summon minecraft:evoker_fangs ~ ~ ~
+summon minecraft:evoker_fangs ~ ~ ~
 
 ## Set magic circle
-spreadplayers ~ ~ 0 2.0 false @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/summoned_fangs,sort=nearest]
+spreadplayers ~ ~ 0 4.0 false @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/summoned_fangs,sort=nearest]
 
 ## Set scoreboard
 scoreboard players set @s[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/unset_magic_circle] EvokerFangsCount 60

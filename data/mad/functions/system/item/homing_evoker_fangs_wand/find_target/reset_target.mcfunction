@@ -19,4 +19,4 @@ scoreboard players set @s PrevTargetUUID2 0
 scoreboard players set @s PrevTargetUUID3 0
 
 ## Remove tags
-tag @a remove MAD_LockonTarget
+tag @s remove MAD_LockedonTarget

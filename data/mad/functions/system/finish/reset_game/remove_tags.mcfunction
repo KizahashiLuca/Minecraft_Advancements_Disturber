@@ -27,6 +27,7 @@ tag @a remove MAD_DetectMazeMaker
 tag @a remove MAD_MazePlayer
 tag @a remove MAD_ArrowTeleportee
 tag @a remove MAD_LockonTarget
+tag @a remove MAD_LockedonTarget
 tag @a remove MAD_NotFoundTarget
 tag @a remove MAD_SummonerOfHomingEvokerFangs
 tag @a remove MAD_DetectLockon

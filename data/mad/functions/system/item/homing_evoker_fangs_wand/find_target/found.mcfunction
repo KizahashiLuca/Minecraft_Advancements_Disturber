@@ -15,12 +15,12 @@ tag @e[type=!#mad:not_mob,distance=..1.5,sort=nearest,limit=1] add MAD_LockonTar
 execute as @e[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/lockon_target,limit=1] run function mad:system/item/homing_evoker_fangs_wand/find_target/set_own_uuid
 scoreboard players set @p[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/lockon_player] ChangeTarget 1
 execute as @e[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/lockon_target,limit=1] run function mad:system/item/homing_evoker_fangs_wand/find_target/set_target_uuid
-execute as @p[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/not_change_target] run scoreboard players set @s ChangeTarget 1
+execute as @p[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/not_change_target] run scoreboard players set @s ChangeTarget 0
 execute as @e[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/lockon_player,limit=1] run function mad:system/item/homing_evoker_fangs_wand/find_target/set_prev_uuid
 
 ## Send message
 title @p[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/change_target] title [""]
-title @p[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/change_target] subtitle ["",{"text":"Locked on ","color":"red","italic":false},{"selector":"@e[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/lockon_target,limit=1]","color":"red","italic":false}]
+title @p[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/change_target] subtitle ["",{"translate":"Locked on %s","with":[{"selector":"@e[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/lockon_target,limit=1]"}],"color":"red","italic":false}]
 
 ## Play sound
 execute at @p[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/change_target] run playsound minecraft:block.glass.place master @p[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/change_target] ~ ~ ~ 1.0 1.0
@@ -33,7 +33,7 @@ execute if entity @e[predicate=mad:area_effect_cloud/homing_evoker_fangs_wand/de
 tag @e[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/lockon_target] remove MAD_LockonTarget
 
 ## Add a tag
-tag @p[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/lockon_player] add MAD_LockonTarget
+tag @p[predicate=mad:system/item/homing_evoker_fangs_wand/find_target/lockon_player] add MAD_LockedonTarget
 
 ## Kill cloud
 kill @e[predicate=mad:area_effect_cloud/homing_evoker_fangs_wand/detect_lockon]
