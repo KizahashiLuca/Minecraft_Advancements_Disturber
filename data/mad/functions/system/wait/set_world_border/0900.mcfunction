@@ -9,7 +9,9 @@
 #####################################
 
 ## Set world border
-worldborder set 901
+execute in minecraft:overworld run worldborder set 901
+execute in minecraft:the_nether run worldborder set 901
+execute in minecraft:the_end run worldborder set 901
 
 ## Set cloud
 execute align xyz run summon minecraft:marker ~450 0 ~450 {Tags:["MAD_WorldCorner"],NoGravity:1b,Invulnerable:1b}
