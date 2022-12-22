@@ -1,9 +1,5 @@
 [
   {
-    "condition": "minecraft:reference",
-    "name": "mad:system/item/homing_evoker_fangs_wand/summon_fangs/set_marker"
-  },
-  {
     "condition": "minecraft:inverted",
     "term": {
       "condition": "minecraft:entity_properties",
@@ -19,7 +15,7 @@
     "scores": {
       "EvokerFangsCount": {
         "min": 0,
-        "max": 50
+        "max": 130
       }
     }
   }

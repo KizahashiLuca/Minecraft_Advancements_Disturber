@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Execute fangs
-execute as @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/set_marker] at @s run function mad:system/item/homing_evoker_fangs_wand/summon_fangs/execute_fangs
+## Wave 1
+summon minecraft:evoker_fangs ~ ~ ~

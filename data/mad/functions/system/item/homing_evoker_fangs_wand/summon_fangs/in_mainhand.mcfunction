@@ -23,7 +23,7 @@ execute anchored feet run summon minecraft:area_effect_cloud ^ ^ ^1.5 {Tags:["MA
 execute as @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/not_set_marker] at @s run function mad:system/item/homing_evoker_fangs_wand/summon_fangs/set_marker
 
 ## Set evoker fangs
-function mad:system/item/homing_evoker_fangs_wand/summon_fangs/set_fangs
+execute as @e[predicate=mad:system/item/homing_evoker_fangs_wand/summon_fangs/set_marker] at @s run function mad:system/item/homing_evoker_fangs_wand/summon_fangs/execute_fangs
 
 ## Remove tags
 tag @s remove MAD_LockonTarget

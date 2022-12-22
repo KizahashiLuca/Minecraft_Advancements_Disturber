@@ -1,0 +1,45 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "EvokerFangsCount": {
+          "min": 133,
+          "max": 133
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "EvokerFangsCount": {
+          "min": 138,
+          "max": 138
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "EvokerFangsCount": {
+          "min": 143,
+          "max": 143
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "EvokerFangsCount": {
+          "min": 148,
+          "max": 148
+        }
+      }
+    }
+  ]
+}
