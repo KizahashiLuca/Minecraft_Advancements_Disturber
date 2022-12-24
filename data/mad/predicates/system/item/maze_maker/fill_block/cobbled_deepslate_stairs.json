@@ -4,13 +4,19 @@
     "name": "mad:system/item/maze_maker/maze_player"
   },
   {
-    "condition": "minecraft:entity_scores",
-    "entity": "this",
-    "scores": {
-      "RandomAnswer": {
-        "min": 4,
-        "max": 4
-      }
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mad"
+      },
+      "score": "RandomAnswer",
+      "scale": 1
+    },
+    "range": {
+      "min": 4,
+      "max": 4
     }
   }
 ]

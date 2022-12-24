@@ -20,7 +20,8 @@
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
-                ["",{"text":"近くの敵プレイヤーの位置に迷路を出現させる。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"一番近くの敵プレイヤーの位置に迷路を","color":"white","bold":false,"italic":false}],
+                ["",{"text":"出現させる。","color":"white","bold":false,"italic":false}],
                 [""],
                 ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}]
               ]

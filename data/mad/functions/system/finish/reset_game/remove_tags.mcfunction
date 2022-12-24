@@ -18,7 +18,9 @@ tag @a remove MAD_TransmitPlayer
 tag @a remove MAD_DetectTransmitter
 tag @a remove MAD_EmergencyCallee
 tag @a remove MAD_DetectEmergencyCall
+tag @a remove MAD_Thief
 tag @a remove MAD_DetectThief
+tag @a remove MAD_DetectThiefTeam
 tag @a remove MAD_SetThief
 tag @a remove MAD_NotStealPlayer
 tag @a remove MAD_StolenPlayer
