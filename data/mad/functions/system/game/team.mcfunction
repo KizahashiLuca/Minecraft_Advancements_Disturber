@@ -28,7 +28,6 @@ execute as @e[predicate=mad:marker/respawn_beacon/position] at @s run function m
 
 ## Mobile respawn beacon system
 execute as @e[predicate=mad:area_effect_cloud/mobile_respawn_beacon/structure] at @s run function mad:system/item/mobile_respawn_beacon/main
-execute as @e[predicate=mad:item/mobile_respawn_beacon/bedrock] at @s run function mad:system/item/mobile_respawn_beacon/summon_item
 execute as @e[predicate=mad:armor_stand/mobile_respawn_beacon/position] at @s run function mad:system/item/mobile_respawn_beacon/construct/main
 
 ## Respawn banner system
