@@ -38,11 +38,11 @@ scoreboard players operation #mad RandomSeed *= #mad RandomMultiplier
 scoreboard players operation #mad RandomSeed %= #mad RandomModder
 scoreboard players operation @p[predicate=mad:system/item/maze_maker/maze_player] RandomAnswer = #mad RandomSeed
 scoreboard players operation @p[predicate=mad:system/item/maze_maker/maze_player] RandomAnswer %= #mad RandomMax
-execute as @e[predicate=mad:system/item/maze_maker/exit_angle/west] at @s align xyz positioned ~0.5 ~ ~0.5 run function mad:system/item/maze_maker/summon_marker/west
-execute as @e[predicate=mad:system/item/maze_maker/exit_angle/north] at @s align xyz positioned ~0.5 ~ ~0.5 run function mad:system/item/maze_maker/summon_marker/north
-execute as @e[predicate=mad:system/item/maze_maker/exit_angle/east] at @s align xyz positioned ~0.5 ~ ~0.5 run function mad:system/item/maze_maker/summon_marker/east
-execute as @e[predicate=mad:system/item/maze_maker/exit_angle/south] at @s align xyz positioned ~0.5 ~ ~0.5 run function mad:system/item/maze_maker/summon_marker/south
-execute as @e[predicate=mad:system/item/maze_maker/maze_marker] at @s run function mad:system/item/maze_maker/initialize_digger
+execute as @p[predicate=mad:system/item/maze_maker/exit_angle/west] at @s align xyz positioned ~0.5 ~ ~0.5 run function mad:system/item/maze_maker/summon_marker/west
+execute as @p[predicate=mad:system/item/maze_maker/exit_angle/north] at @s align xyz positioned ~0.5 ~ ~0.5 run function mad:system/item/maze_maker/summon_marker/north
+execute as @p[predicate=mad:system/item/maze_maker/exit_angle/east] at @s align xyz positioned ~0.5 ~ ~0.5 run function mad:system/item/maze_maker/summon_marker/east
+execute as @p[predicate=mad:system/item/maze_maker/exit_angle/south] at @s align xyz positioned ~0.5 ~ ~0.5 run function mad:system/item/maze_maker/summon_marker/south
+execute as @p[predicate=mad:system/item/maze_maker/maze_marker] at @s run function mad:system/item/maze_maker/initialize_digger
 
 ## Message
 tellraw @s ["",{"text":"[メイズメイカー] 一番近くの敵プレイヤーを迷路に送り込みました。","color":"green"}]
