@@ -14,9 +14,7 @@ execute as @s[predicate=mad:system/item/maze_maker/set_dead_end] run function ma
 ## Detect air
 execute as @e[predicate=mad:system/item/maze_maker/path_marker] at @s run function mad:system/item/maze_maker/path_marker/kill
 scoreboard players set @s RandomMax 0
-# execute if predicate mad:system/item/maze_maker/aisle_width/1m run function mad:system/item/maze_maker/detect_path/1m
-execute if predicate mad:system/item/maze_maker/aisle_width/3m run function mad:system/item/maze_maker/detect_path/3m
-# execute if predicate mad:system/item/maze_maker/aisle_width/5m run function mad:system/item/maze_maker/detect_path/5m
+function mad:system/item/maze_maker/detect_path
 
 ## If dead end
 execute as @s[predicate=mad:system/item/maze_maker/dead_end] run function mad:system/item/maze_maker/dead_end
