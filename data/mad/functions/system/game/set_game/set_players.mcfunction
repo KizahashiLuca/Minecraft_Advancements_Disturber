@@ -19,8 +19,6 @@ advancement grant @a until mad:achievements/root
 
 ## Take recipes
 recipe take @a *
-recipe give @a[predicate=mad:player/participant] mad:tnt
-recipe give @a[predicate=mad:gamerules/match_mode/team,predicate=mad:player/participant] mad:mobile_respawn_beacon
 
 ## Kill pet
 execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s

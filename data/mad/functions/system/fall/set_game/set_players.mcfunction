@@ -37,5 +37,3 @@ advancement revoke @a everything
 
 ## Take recipes
 recipe take @a *
-recipe give @a[predicate=mad:player/participant] mad:tnt
-recipe give @a[predicate=mad:gamerules/match_mode/team,predicate=mad:player/participant] mad:mobile_respawn_beacon

@@ -20,7 +20,3 @@ execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
 
 ## Reset effects
 effect clear @a
-
-## Reset recipes
-recipe take @a mad:tnt
-recipe take @a mad:mobile_respawn_beacon

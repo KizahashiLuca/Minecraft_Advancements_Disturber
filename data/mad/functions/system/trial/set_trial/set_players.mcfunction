@@ -14,15 +14,11 @@ gamemode spectator @a[predicate=mad:player/not_participant]
 
 ## Remove advancements
 advancement revoke @a everything
-advancement grant @a until mad:originals/adventure
-advancement grant @a until mad:originals/collect
-advancement grant @a until mad:originals/game
+advancement grant @a until mad:originals/root
 advancement grant @a until mad:achievements/root
 
 ## Take recipes
 recipe take @a *
-recipe give @a[predicate=mad:player/participant] mad:tnt
-recipe give @a[predicate=mad:gamerules/match_mode/team,predicate=mad:player/participant] mad:mobile_respawn_beacon
 
 ## Kill pet
 execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
