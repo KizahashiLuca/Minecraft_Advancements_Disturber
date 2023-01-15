@@ -13,7 +13,7 @@
 scoreboard objectives add DataVersion dummy
 scoreboard objectives add Version dummy
 scoreboard objectives add Phase dummy
-scoreboard objectives add PrevPhase dummy
+scoreboard objectives add PvP dummy
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add Kill dummy
 scoreboard objectives add KillTemp minecraft.custom:minecraft.player_kills
@@ -22,12 +22,12 @@ scoreboard objectives add TeleportMinecart trigger
 scoreboard objectives add TeleportCenter trigger
 scoreboard objectives add ExitMessage trigger
 #### timer
-scoreboard objectives add -1 dummy
 scoreboard objectives add 2 dummy
 scoreboard objectives add Second dummy
 scoreboard objectives add Tick dummy
 scoreboard objectives add GeneralSecond dummy
 scoreboard objectives add GeneralTick dummy
+scoreboard objectives add PvPSecond dummy
 scoreboard objectives add SecondPerSurvive dummy
 #### participants
 scoreboard objectives add ParticipantNumber dummy

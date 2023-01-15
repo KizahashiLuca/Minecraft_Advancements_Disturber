@@ -13,7 +13,7 @@
 scoreboard objectives remove DataVersion
 scoreboard objectives remove Version
 scoreboard objectives remove Phase
-scoreboard objectives remove PrevPhase
+scoreboard objectives remove PvP
 scoreboard objectives remove Death
 scoreboard objectives remove Kill
 scoreboard objectives remove KillTemp
@@ -22,7 +22,6 @@ scoreboard objectives remove TeleportMinecart
 scoreboard objectives remove TeleportCenter
 scoreboard objectives remove ExitMessage
 #### timer
-scoreboard objectives remove -1
 scoreboard objectives remove 2
 scoreboard objectives remove Second
 scoreboard objectives remove Tick

@@ -17,6 +17,9 @@ execute as @a[predicate=mad:system/game/login_midtime] run function mad:system/g
 ## Position
 function mad:system/common/set_position/main
 
+## Count PvP off phase
+execute if predicate mad:phase/game/pvp_off if predicate mad:system/game/timer/pvp/tick/eq_zero run function mad:system/game/timer/pvp/second
+
 ## Execute advancements
 #### ** Prohibit use predicate mad:system/game/advancements/execute/part_a **
 function mad:system/game/advancements/execute/part_a

@@ -13,7 +13,11 @@ title @a title ["",{"text":"ゲームスタート","color":"red","bold":false,"i
 title @a times 20 80 20
 
 ## Send messages
-tellraw @a ["",{"text":"[試合開始] 進捗がリセットされました。","color":"green","bold":false,"italic":false}]
+tellraw @a ["",{"text":"[試合開始]","color":"green","bold":false,"italic":false}]
+tellraw @a ["",{"text":"  進捗がリセットされました。","color":"green","bold":false,"italic":false}]
+tellraw @a ["",{"text":"  PvPは次の日の朝まで15分間禁止されます。","color":"green","bold":false,"italic":false}]
+tellraw @a ["",{"text":"  敵プレイヤーをキルしてもキル報酬は無く、","color":"green","bold":false,"italic":false}]
+tellraw @a ["",{"text":"  バナーも生成されません。","color":"green","bold":false,"italic":false}]
 
 ## Change to start
 function mad:system/game/change_to

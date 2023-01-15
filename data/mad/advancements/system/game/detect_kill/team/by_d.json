@@ -15,6 +15,6 @@
     ]
   ],
   "rewards": {
-    "function": "mad:system/game/detect_kill/team/by_d"
+    "function": "mad:system/game/detect_kill/team/by_d/main"
   }
 }

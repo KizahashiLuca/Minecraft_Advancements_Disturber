@@ -13,12 +13,12 @@
 scoreboard players set #mad DataVersion 1444
 scoreboard players set #mad Version 13
 scoreboard players set #mad Phase 1
-scoreboard players set #mad PrevPhase 0
+scoreboard players set #mad PvP 0
 scoreboard players set #mad Difficulty 0
 scoreboard players set #mad ExitMessage 0
 #### timer
-scoreboard players set #mad -1 -1
 scoreboard players set #mad 2 2
+scoreboard players set #mad PvPSecond 900
 #### participants
 scoreboard players set #mad ParticipantNumber 0
 scoreboard players set #mad NumOfParticipants 0

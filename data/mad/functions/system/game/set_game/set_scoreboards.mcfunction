@@ -12,7 +12,9 @@
 #### timer
 scoreboard players set #mad Tick 0
 scoreboard players set #mad Second 0
+scoreboard players set #mad PvPSecond 900
 #### game phase
+scoreboard players set #mad PvP 0
 scoreboard players set @a[predicate=mad:player/participant] Phase 21
 scoreboard players set @a[predicate=mad:player/participant] Death 0
 scoreboard players set @a Kill 0

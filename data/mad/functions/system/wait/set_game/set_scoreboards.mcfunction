@@ -15,9 +15,6 @@ function mad:system/wait/set_game/numbering
 tag @a[predicate=mad:player/participant] remove MAD_Numbered
 
 ## Set scoreboards
-#### timer
-scoreboard players set #mad Tick 0
-scoreboard players set #mad Second 30
 #### game phase
 scoreboard players set @a Death 0
 scoreboard players set @a Kill 0
@@ -29,6 +26,8 @@ scoreboard players enable @a TeleportCenter
 scoreboard players set @a ExitMessage 0
 scoreboard players enable @a ExitMessage
 #### timer
+scoreboard players set #mad Tick 0
+scoreboard players set #mad Second 30
 execute if predicate mad:gamerules/match_mode/individual run scoreboard players operation @a TimeLimit = #mad TimeLimit
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players operation #mad_team_a TimeLimit = #mad TimeLimit
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players operation #mad_team_b TimeLimit = #mad TimeLimit
@@ -50,6 +49,7 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboar
 scoreboard players set @a GeneralSecond 0
 scoreboard players set #mad GeneralSecond 0
 scoreboard players set #mad GeneralTick 0
+scoreboard players set #mad PvPSecond 900
 #### participants
 scoreboard players set @a NumOfParticipants 0
 scoreboard players set @a NumAlive 0
