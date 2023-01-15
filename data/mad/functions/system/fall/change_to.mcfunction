@@ -32,6 +32,9 @@ function mad:system/common/message/end
 ## Reset respawn beacon #1
 execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/center_of_world_position] at @s run fill ~-1 ~3 ~-1 ~1 ~5 ~1 minecraft:air
 
+## Set world spawn
+setworldspawn ~ ~ ~
+
 ## Teleport
 execute if predicate mad:gamerules/match_mode/individual at @e[predicate=mad:marker/world_spawn,limit=1] run function mad:system/fall/random_teleport/individual/main
 execute if predicate mad:gamerules/match_mode/team at @e[predicate=mad:marker/world_spawn,limit=1] run function mad:system/fall/random_teleport/team/main

@@ -9,7 +9,7 @@
 #####################################
 
 ## Send messages
-tellraw @a ["",{"text":"[モバイルリスポーンビーコン] リスポーンさせるプレイヤーがいません。","color":"green","bold":false,"italic":false}]
+tellraw @a[distance=..5] ["",{"text":"[モバイルリスポーンビーコン] リスポーンさせるプレイヤーがいません。","color":"green","bold":false,"italic":false}]
 
 ## Spawn item
 loot spawn ~ ~ ~ loot mad:system/game/minecart/items/mobile_respawn_beacon

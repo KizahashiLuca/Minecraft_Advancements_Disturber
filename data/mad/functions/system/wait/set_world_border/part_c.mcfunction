@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Set world spawn
-setworldspawn ~ ~ ~
-
 ## Set world border & cloud
 worldborder center ~ ~
 execute if predicate mad:gamerules/world_border/1100 run function mad:system/wait/set_world_border/1100
