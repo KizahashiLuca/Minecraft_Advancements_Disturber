@@ -8,19 +8,17 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Add a tag
-tag @s add MAD_DetectRespawnBanner
+## Spawn item
+loot spawn ~ ~ ~ loot mad:system/game/minecart/items/mobile_respawn_beacon
 
 ## Remove player
 execute as @p[predicate=mad:system/item/mobile_respawn_beacon/set_respawn_player] run function mad:system/item/mobile_respawn_beacon/reset_respawn_player
 
-## Set scoreboard - banner
-scoreboard players set @s Second 20
-scoreboard players set @s Tick 0
+## Fill block
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:air replace
 
-## Reset data - banner
-data modify entity @s CustomName set value '{"text":"モバイルリスポーンビーコン"}'
+## Kill banner
+execute if entity @e[predicate=mad:system/item/mobile_respawn_beacon/kill_banner] run kill @e[predicate=mad:system/item/mobile_respawn_beacon/kill_banner,sort=nearest,limit=1]
 
-## Remove tags - banner
-tag @s remove MAD_SetRespawnBanner
-tag @s remove MAD_DetectRespawnBanner
+## Kill cloud
+kill @s

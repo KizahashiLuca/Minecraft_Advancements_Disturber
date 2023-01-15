@@ -18,8 +18,12 @@ data modify entity @s CustomName set from block ~ ~ ~ CustomName
 scoreboard players set @s ResultTmp 1
 execute as @a[predicate=mad:player/dead] run function mad:system/common/respawn_beacon/detect_banner_sets
 
+## Detect respawn player exist
+execute if entity @p[predicate=mad:system/common/respawn_beacon/respawn_player] run scoreboard players set @e[predicate=mad:system/common/respawn_beacon/detect_respawn_banner,limit=1] ResultTmp 1
+execute unless entity @p[predicate=mad:system/common/respawn_beacon/respawn_player] run scoreboard players set @e[predicate=mad:system/common/respawn_beacon/detect_respawn_banner,limit=1] ResultTmp 0
+
 ## Detect team player exist
-scoreboard players set @s ResultTmp 1
+scoreboard players set @s[scores={ResultTmp=1}] ResultTmp 1
 execute as @p[predicate=mad:system/common/respawn_beacon/respawn_player] run function mad:system/common/respawn_beacon/detect_player_exists
 
 ## Send message
