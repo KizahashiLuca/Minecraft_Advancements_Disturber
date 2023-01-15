@@ -14,4 +14,4 @@ scoreboard players operation #mad_team_e TimeLimit += #mad_team_a SecondPerSurvi
 scoreboard players operation #mad_team_e GetTimeLimit += #mad_team_a SecondPerSurvive
 
 ## Send messages
-tellraw @a[predicate=mad:player/team/e] ["",{"translate":"[キル報酬]  %s から %s%s 奪いました。","with":[{"selector":"@s","bold":true},{"score":{"name":"#mad_team_a","objective":"SecondPerSurvive"},"bold":true},{"text":"秒","bold":true}],"color":"green","bold":false,"italic":false}]
+tellraw @a[predicate=mad:player/team/e] ["",{"translate":"[キル報酬]  %s をキルしたため %s%s 報酬を得ました。","with":[{"selector":"@s","bold":true},{"score":{"name":"#mad_team_a","objective":"SecondPerSurvive"},"bold":true},{"text":"秒","bold":true}],"color":"green","bold":false,"italic":false}]

@@ -16,10 +16,3 @@ title @s times 20 80 20
 gamemode survival @s
 scoreboard players set @s Death 0
 scoreboard players set @s Phase 21
-
-## Branch team
-execute as @s[predicate=mad:player/team/a] run function mad:system/game/detect_kill/team/a
-execute as @s[predicate=mad:player/team/b] run function mad:system/game/detect_kill/team/b
-execute as @s[predicate=mad:player/team/c] run function mad:system/game/detect_kill/team/c
-execute as @s[predicate=mad:player/team/d] run function mad:system/game/detect_kill/team/d
-execute as @s[predicate=mad:player/team/e] run function mad:system/game/detect_kill/team/e
