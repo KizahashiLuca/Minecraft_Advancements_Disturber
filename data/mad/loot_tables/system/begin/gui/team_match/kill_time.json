@@ -14,7 +14,7 @@
               "name": [
                 [
                   "",
-                  {"translate":"キル取得時間","color":"white","bold":false,"italic":false}
+                  {"translate":"キル報酬時間","color":"white","bold":false,"italic":false}
                 ]
               ]
             },

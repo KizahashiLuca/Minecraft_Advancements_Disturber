@@ -68,7 +68,7 @@ scoreboard players set #mad SetTeamManual 0
 scoreboard players set #mad NumberOfTeams 2
 scoreboard players set #mad NumberOfBeacons 5
 scoreboard players set #mad RespawnBannerTime -60
-scoreboard players set #mad KillTime 300
+scoreboard players set #mad KillTime 200
 scoreboard players set #mad DeathPenaltyTime 100
 scoreboard players set #mad friendlyFire 1
 scoreboard players set #mad collisionRule 1
@@ -79,7 +79,7 @@ scoreboard players set #mad SetTeamManualPrv 0
 scoreboard players set #mad NumberOfTeamsPrv 2
 scoreboard players set #mad NumberOfBeaconsPrv 5
 scoreboard players set #mad RespawnBannerTimePrv -60
-scoreboard players set #mad KillTimePrv 300
+scoreboard players set #mad KillTimePrv 200
 scoreboard players set #mad DeathPenaltyTimePrv 100
 scoreboard players set #mad friendlyFirePrv 1
 scoreboard players set #mad collisionRulePrv 1

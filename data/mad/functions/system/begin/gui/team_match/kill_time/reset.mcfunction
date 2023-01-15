@@ -9,7 +9,7 @@
 #####################################
 
 ## Reset choice
-scoreboard players set #mad KillTime 300
+scoreboard players set #mad KillTime 200
 
 ## Send messages
 function mad:system/begin/gui/team_match/kill_time/change_to

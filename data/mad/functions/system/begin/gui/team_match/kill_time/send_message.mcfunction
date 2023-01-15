@@ -9,7 +9,7 @@
 #####################################
 
 ## Send kill time messages
-tellraw @a ["",{"translate":"[キル取得時間] %s秒","with":[{"score":{"name":"#mad","objective":"KillTime"},"bold":true}],"color":"green","bold":false,"italic":false}]
+tellraw @a ["",{"translate":"[キル報酬時間] %s秒","with":[{"score":{"name":"#mad","objective":"KillTime"},"bold":true}],"color":"green","bold":false,"italic":false}]
 
 ## Change to team_match
 function mad:system/begin/gui/team_match/change_to
