@@ -17,6 +17,7 @@ scoreboard objectives remove PrevPhase
 scoreboard objectives remove Death
 scoreboard objectives remove Kill
 scoreboard objectives remove KillTemp
+scoreboard objectives remove TimeSinceDeath
 scoreboard objectives remove TeleportMinecart
 scoreboard objectives remove TeleportCenter
 scoreboard objectives remove ExitMessage

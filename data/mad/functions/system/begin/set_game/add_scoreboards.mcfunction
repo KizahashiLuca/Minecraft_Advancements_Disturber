@@ -17,6 +17,7 @@ scoreboard objectives add PrevPhase dummy
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add Kill dummy
 scoreboard objectives add KillTemp minecraft.custom:minecraft.player_kills
+scoreboard objectives add TimeSinceDeath minecraft.custom:minecraft.time_since_death
 scoreboard objectives add TeleportMinecart trigger
 scoreboard objectives add TeleportCenter trigger
 scoreboard objectives add ExitMessage trigger

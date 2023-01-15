@@ -15,6 +15,9 @@ function mad:system/game/timer/team/general/tick
 ## Detect death
 execute as @a[predicate=mad:player/dying] run function mad:system/game/detect_death/team
 
+## Give common item
+loot give @a[predicate=mad:player/just_revive] loot mad:system/game/first_items
+
 ## Count the alive
 execute if predicate mad:system/game/count_alive/a run function mad:system/game/count_alive/a
 execute if predicate mad:system/game/count_alive/b run function mad:system/game/count_alive/b
