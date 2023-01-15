@@ -10,7 +10,6 @@
 
 ## Set world spawn
 setworldspawn ~ ~ ~
-spawnpoint @a ~ ~ ~
 
 ## Set world border & cloud
 worldborder center ~ ~
