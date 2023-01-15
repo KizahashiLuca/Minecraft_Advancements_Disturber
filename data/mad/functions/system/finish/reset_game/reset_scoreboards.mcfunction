@@ -119,7 +119,6 @@ scoreboard objectives remove BreakSpawner
 scoreboard objectives remove FallDistance
 scoreboard objectives remove RailDistance
 #### summons minecart
-scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon
 scoreboard objectives remove GetMinecartCount
 scoreboard objectives remove HasLootTable

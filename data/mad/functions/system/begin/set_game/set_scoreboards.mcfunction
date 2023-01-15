@@ -89,7 +89,6 @@ scoreboard players set #mad VisibleDeathPrv 1
 #### wait phase
 scoreboard players set #mad WaitTime 30
 #### summons minecart
-scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 300
 #### team
 scoreboard players set #mad TeamMemberNotExist 0
