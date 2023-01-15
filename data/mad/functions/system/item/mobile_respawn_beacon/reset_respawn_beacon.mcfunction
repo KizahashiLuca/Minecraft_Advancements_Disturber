@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
+## Send messages
+tellraw @a ["",{"text":"[モバイルリスポーンビーコン] リスポーンさせるプレイヤーがいません。","color":"green","bold":false,"italic":false}]
+
 ## Spawn item
 loot spawn ~ ~ ~ loot mad:system/game/minecart/items/mobile_respawn_beacon
 
@@ -15,7 +18,7 @@ loot spawn ~ ~ ~ loot mad:system/game/minecart/items/mobile_respawn_beacon
 execute as @p[predicate=mad:system/item/mobile_respawn_beacon/set_respawn_player] run function mad:system/item/mobile_respawn_beacon/reset_respawn_player
 
 ## Fill block
-fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:air replace
+fill ~-1 ~-1 ~-1 ~1 ~ ~1 minecraft:air replace
 
 ## Kill banner
 execute if entity @e[predicate=mad:system/item/mobile_respawn_beacon/kill_banner] run kill @e[predicate=mad:system/item/mobile_respawn_beacon/kill_banner,sort=nearest,limit=1]

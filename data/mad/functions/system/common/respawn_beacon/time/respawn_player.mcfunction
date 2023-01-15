@@ -31,11 +31,11 @@ scoreboard players set @s SetRespawnBanner 0
 scoreboard players reset @s BeaconNumber
 
 ## Send messages
-execute as @s[predicate=mad:player/team/a] run tellraw @a[predicate=mad:player/team/a] ["",{"text":"[蘇生措置]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
-execute as @s[predicate=mad:player/team/b] run tellraw @a[predicate=mad:player/team/b] ["",{"text":"[蘇生措置]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
-execute as @s[predicate=mad:player/team/c] run tellraw @a[predicate=mad:player/team/c] ["",{"text":"[蘇生措置]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
-execute as @s[predicate=mad:player/team/d] run tellraw @a[predicate=mad:player/team/d] ["",{"text":"[蘇生措置]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
-execute as @s[predicate=mad:player/team/e] run tellraw @a[predicate=mad:player/team/e] ["",{"text":"[蘇生措置]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
+execute as @s[predicate=mad:player/team/a] run tellraw @a[predicate=mad:player/team/a] ["",{"text":"[リスポーンビーコン]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
+execute as @s[predicate=mad:player/team/b] run tellraw @a[predicate=mad:player/team/b] ["",{"text":"[リスポーンビーコン]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
+execute as @s[predicate=mad:player/team/c] run tellraw @a[predicate=mad:player/team/c] ["",{"text":"[リスポーンビーコン]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
+execute as @s[predicate=mad:player/team/d] run tellraw @a[predicate=mad:player/team/d] ["",{"text":"[リスポーンビーコン]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
+execute as @s[predicate=mad:player/team/e] run tellraw @a[predicate=mad:player/team/e] ["",{"text":"[リスポーンビーコン]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
 
 ## Remove tags
 tag @s remove MAD_RespawnPlayer

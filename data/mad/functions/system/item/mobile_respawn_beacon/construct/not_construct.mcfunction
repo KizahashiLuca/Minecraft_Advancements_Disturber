@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
+## Send messages
+tellraw @a ["",{"text":"[モバイルリスポーンビーコン] モバイルリスポーンビーコンは Y=-59 以上かつ、縦横3x3マス 高さ2マスの空きがある場所でののみ設置可能です。","color":"green","bold":false,"italic":false}]
+
 ## Spawn item
 loot spawn ~ ~ ~ loot mad:system/game/minecart/items/mobile_respawn_beacon
 

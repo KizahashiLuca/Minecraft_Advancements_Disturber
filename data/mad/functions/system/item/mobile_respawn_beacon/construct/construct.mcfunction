@@ -9,10 +9,9 @@
 #####################################
 
 ## Create respawn beacon
-fill ~-1 ~ ~-1 ~1 ~2 ~1 minecraft:bedrock destroy
-fill ~-1 ~1 ~ ~1 ~2 ~ minecraft:air
-fill ~ ~1 ~-1 ~ ~2 ~1 minecraft:air
-fill ~-1 ~2 ~-1 ~1 ~2 ~1 minecraft:air
+fill ~-1 ~ ~-1 ~1 ~1 ~1 minecraft:bedrock replace
+fill ~-1 ~1 ~ ~1 ~1 ~ minecraft:air
+fill ~ ~1 ~-1 ~ ~1 ~1 minecraft:air
 setblock ~ ~ ~ minecraft:barrier
 
 ## Summon cloud

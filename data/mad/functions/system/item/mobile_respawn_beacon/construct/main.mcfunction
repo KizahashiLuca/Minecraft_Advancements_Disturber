@@ -9,5 +9,5 @@
 #####################################
 
 ## Detect constructable
-execute if entity @e[predicate=mad:system/item/mobile_respawn_beacon/construct/not_construct,distance=..3] run function mad:system/item/mobile_respawn_beacon/construct/not_construct
-execute unless entity @e[predicate=mad:system/item/mobile_respawn_beacon/construct/not_construct,distance=..3] run function mad:system/item/mobile_respawn_beacon/construct/construct
+execute if predicate mad:system/item/mobile_respawn_beacon/construct/error run function mad:system/item/mobile_respawn_beacon/construct/not_construct
+execute if predicate mad:system/item/mobile_respawn_beacon/construct/accept run function mad:system/item/mobile_respawn_beacon/construct/construct
