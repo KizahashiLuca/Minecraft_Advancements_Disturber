@@ -12,4 +12,4 @@
 scoreboard players remove #mad PvPSecond 1
 
 ## Time over
-execute if predicate mad:system/game/timer/pvp/second/eq_zero run scoreboard players set #mad PvP 1
+execute if predicate mad:system/game/timer/pvp/second/eq_zero run function mad:system/game/timer/pvp/set_pvp_on
