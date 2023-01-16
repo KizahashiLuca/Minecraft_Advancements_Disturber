@@ -183,6 +183,11 @@ scoreboard players set @a ArrowTeleportPosY 0
 scoreboard players set @a ArrowTeleportPosZ 0
 #### mobile respawn beacon
 scoreboard players set @a MobileBeaconNumber 0
+#### respawn banner
+execute as @a store result score @s UUID0 run data get entity @s UUID[0]
+execute as @a store result score @s UUID1 run data get entity @s UUID[1]
+execute as @a store result score @s UUID2 run data get entity @s UUID[2]
+execute as @a store result score @s UUID3 run data get entity @s UUID[3]
 #### team
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a DeadOwnTeam 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b DeadOwnTeam 0

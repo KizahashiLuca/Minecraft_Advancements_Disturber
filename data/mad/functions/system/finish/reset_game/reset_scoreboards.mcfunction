@@ -166,6 +166,12 @@ scoreboard objectives remove DetectTeamExists
 #### mobile respawn beacon
 scoreboard objectives remove MobileBeaconNumber
 scoreboard objectives remove MobileBeaconTmp
+#### respawn banner
+scoreboard objectives remove OwnerExists
+scoreboard objectives remove UUID0
+scoreboard objectives remove UUID1
+scoreboard objectives remove UUID2
+scoreboard objectives remove UUID3
 #### team
 scoreboard objectives remove TeamMemberNotExist
 scoreboard objectives remove DeadOwnTeam

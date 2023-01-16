@@ -28,6 +28,9 @@ execute at @s align xz store result score @a[predicate=mad:system/game/respawn_b
 execute at @s align xz store result score @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player] BannerPosY run data get entity @e[predicate=mad:armor_stand/respawn_banner/not_set_customname,limit=1] Pos[1]
 execute at @s align xz store result score @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player] BannerPosZ run data get entity @e[predicate=mad:armor_stand/respawn_banner/not_set_customname,limit=1] Pos[2]
 
+## Set banner owner
+execute as @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player] run function mad:system/game/respawn_banner/set_owner_uuid
+
 ## Message
 execute as @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player/a] run function mad:system/game/respawn_banner/message/a
 execute as @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player/b] run function mad:system/game/respawn_banner/message/b

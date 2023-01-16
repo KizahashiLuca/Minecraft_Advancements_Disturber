@@ -167,6 +167,12 @@ scoreboard objectives add DetectTeamExists dummy
 #### mobile respawn beacon
 scoreboard objectives add MobileBeaconNumber dummy
 scoreboard objectives add MobileBeaconTmp dummy
+#### respawn banner
+scoreboard objectives add OwnerExists dummy
+scoreboard objectives add UUID0 dummy
+scoreboard objectives add UUID1 dummy
+scoreboard objectives add UUID2 dummy
+scoreboard objectives add UUID3 dummy
 #### team
 scoreboard objectives add TeamMemberNotExist dummy
 scoreboard objectives add DeadOwnTeam dummy
