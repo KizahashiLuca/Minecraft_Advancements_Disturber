@@ -1,0 +1,36 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.5
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_Trident\"]}"
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:loyalty",
+                "minecraft:riptide",
+                "minecraft:channeling"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

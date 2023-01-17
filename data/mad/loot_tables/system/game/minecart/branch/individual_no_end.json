@@ -47,6 +47,11 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
+          "name": "mad:system/game/minecart/items/broken_trident"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
           "name": "mad:system/game/minecart/items/evoker_fangs_wand"
         },
         {
