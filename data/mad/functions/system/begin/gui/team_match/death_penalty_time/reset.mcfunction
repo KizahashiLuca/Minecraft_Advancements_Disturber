@@ -9,7 +9,7 @@
 #####################################
 
 ## Reset choice
-scoreboard players set #mad DeathPenaltyTime 100
+scoreboard players set #mad DeathPenaltyTime 0
 
 ## Send messages
 function mad:system/begin/gui/team_match/death_penalty_time/change_to

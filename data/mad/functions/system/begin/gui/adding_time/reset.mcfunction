@@ -9,7 +9,7 @@
 #####################################
 
 ## Reset choice
-scoreboard players set #mad AddingTime 100
+scoreboard players set #mad AddingTime 60
 
 ## Send messages
 function mad:system/begin/gui/adding_time/change_to

@@ -43,18 +43,18 @@ scoreboard players set #mad 10000 10000
 scoreboard players set #mad TimeLimit 300
 scoreboard players set #mad TimeLimitPrv 300
 #### setting phase - choose area
-scoreboard players set #mad WorldBorder 1000
-scoreboard players set #mad WorldBorderPrv 1000
+scoreboard players set #mad WorldBorder 1500
+scoreboard players set #mad WorldBorderPrv 1500
 scoreboard players set #mad WorldBorderEnd 0
 #### setting phase - choose difficulty
 scoreboard players set #mad Difficulty 2
 scoreboard players set #mad DifficultyPrv 2
 #### setting phase - choose adding time
-scoreboard players set #mad AddingTime 100
-scoreboard players set #mad AddingTimePrv 100
+scoreboard players set #mad AddingTime 60
+scoreboard players set #mad AddingTimePrv 60
 #### setting phase - choose minecart interval
-scoreboard players set #mad CartInterval 300
-scoreboard players set #mad CartIntervalPrv 300
+scoreboard players set #mad CartInterval 600
+scoreboard players set #mad CartIntervalPrv 600
 #### setting phase - choose gamerule
 scoreboard players set #mad WeatherCycle 1
 scoreboard players set #mad DaylightCycle 1
@@ -63,13 +63,13 @@ scoreboard players set #mad WeatherCyclePrv 1
 scoreboard players set #mad DaylightCyclePrv 1
 scoreboard players set #mad NumberOfMinecartsPrv 1
 #### setting phase - choose team setting
-scoreboard players set #mad IsTeam 0
+scoreboard players set #mad IsTeam 1
 scoreboard players set #mad SetTeamManual 0
 scoreboard players set #mad NumberOfTeams 2
 scoreboard players set #mad NumberOfBeacons 5
 scoreboard players set #mad RespawnBannerTime -60
 scoreboard players set #mad KillTime 200
-scoreboard players set #mad DeathPenaltyTime 100
+scoreboard players set #mad DeathPenaltyTime 0
 scoreboard players set #mad friendlyFire 1
 scoreboard players set #mad collisionRule 1
 scoreboard players set #mad VisibleName 1
@@ -80,7 +80,7 @@ scoreboard players set #mad NumberOfTeamsPrv 2
 scoreboard players set #mad NumberOfBeaconsPrv 5
 scoreboard players set #mad RespawnBannerTimePrv -60
 scoreboard players set #mad KillTimePrv 200
-scoreboard players set #mad DeathPenaltyTimePrv 100
+scoreboard players set #mad DeathPenaltyTimePrv 0
 scoreboard players set #mad friendlyFirePrv 1
 scoreboard players set #mad collisionRulePrv 1
 scoreboard players set #mad VisibleNamePrv 1
