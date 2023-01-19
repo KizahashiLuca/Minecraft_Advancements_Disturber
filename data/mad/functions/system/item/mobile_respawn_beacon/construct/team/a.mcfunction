@@ -12,4 +12,5 @@
 setblock ~ ~1 ~ minecraft:red_banner
 
 ## Set data
-data modify block ~ ~1 ~ CustomName set from entity @p[predicate=mad:player/dead/a,sort=random] Inventory[0].tag.display.Name
+execute if entity @p[predicate=mad:player/dead/a] run data modify block ~ ~1 ~ CustomName set from entity @p[predicate=mad:player/dead/a,sort=random] Inventory[0].tag.display.Name
+execute unless entity @p[predicate=mad:player/dead/a] as @e[predicate=mad:area_effect_cloud/mobile_respawn_beacon/structure,distance=..0.2] at @s run function mad:system/item/mobile_respawn_beacon/reset_respawn_beacon
