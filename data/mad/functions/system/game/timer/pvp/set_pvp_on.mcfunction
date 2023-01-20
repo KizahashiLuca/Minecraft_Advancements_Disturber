@@ -11,6 +11,9 @@
 ## Set scoreboard
 scoreboard players set #mad PvP 1
 
+## Playsound
+execute as @a at @s run playsound minecraft:item.goat_horn.sound.0 master @s ~ ~ ~ 1 1 1
+
 ## Send messages
 tellraw @a ["",{"text":"[PvP解禁]","color":"green","bold":false,"italic":false}]
 tellraw @a ["",{"text":"  PvPが解禁されました。","color":"green","bold":false,"italic":false}]

@@ -23,6 +23,9 @@ execute as @s[predicate=mad:player/alive/e] run tag @a[predicate=mad:system/item
 ## Teleport
 tp @a[predicate=mad:system/item/emergency_call/emergency_callee] @s
 
+## Playsound
+execute at @s run playsound minecraft:item.goat_horn.sound.2 master @s ~ ~ ~ 1 1 1
+
 ## Message
 tellraw @s ["",{"text":"[緊急招集] チームメンバーを緊急招集しました。","color":"green"}]
 tellraw @a[predicate=mad:system/item/emergency_call/emergency_callee] ["",{"text":"[緊急招集]  ","color":"green"},{"selector":"@s","color":"green"},{"text":" から緊急招集を受けました。","color":"green"}]
