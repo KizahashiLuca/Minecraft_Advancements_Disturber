@@ -29,7 +29,7 @@ loot replace entity @p[predicate=mad:player/host] inventory.14 loot mad:system/b
 loot replace entity @p[predicate=mad:player/host] inventory.15 loot mad:system/begin/gui/number/alphabet_s
 loot replace entity @p[predicate=mad:player/host] inventory.19 loot mad:system/begin/gui/common/cancel
 loot replace entity @p[predicate=mad:player/host] inventory.22 loot mad:system/begin/gui/common/reset
-loot replace entity @p[predicate=mad:player/host,predicate=mad:system/begin/gui/minecart_interval/gt_zero] inventory.25 loot mad:system/begin/gui/minecart_interval/ok
+loot replace entity @p[predicate=mad:player/host,predicate=mad:system/begin/gui/minecart_interval/gt_one] inventory.25 loot mad:system/begin/gui/minecart_interval/ok
 
 ## Change phase
 scoreboard players set #mad Phase 4

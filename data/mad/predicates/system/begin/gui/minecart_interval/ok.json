@@ -9,7 +9,7 @@
   },
   {
     "condition": "minecraft:reference",
-    "name": "mad:system/begin/gui/minecart_interval/gt_zero"
+    "name": "mad:system/begin/gui/minecart_interval/gt_one"
   },
   {
     "condition": "minecraft:inverted",

@@ -51,6 +51,7 @@ scoreboard players set @a BreakSpawner 0
 scoreboard players set @a FallDistance 0
 scoreboard players set @a RailDistance 0
 #### summons minecart
+scoreboard objectives setdisplay sidebar SecondSummon
 scoreboard players set @a GetMinecartCount 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a GetMinecartCount 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b GetMinecartCount 0

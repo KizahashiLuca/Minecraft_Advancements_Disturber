@@ -26,7 +26,7 @@ function mad:system/game/advancements/execute/part_a
 execute if predicate mad:system/game/advancements/execute/part_b run function mad:system/game/advancements/execute/part_b
 
 ## Minecart system
-execute as @e[predicate=mad:system/game/minecart/summon] if score @s SecondSummon = #mad Second at @s run function mad:system/game/minecart/summon_minecart
+execute as @e[predicate=mad:system/game/minecart/tick/eq_zero] at @s run function mad:system/game/minecart/main
 execute as @e[predicate=mad:minecart/not_on_ground] at @s run function mad:system/game/minecart/not_on_ground
 execute as @e[predicate=mad:minecart/on_ground] at @s run function mad:system/game/minecart/on_ground
 

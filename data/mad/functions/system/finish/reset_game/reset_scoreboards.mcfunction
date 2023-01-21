@@ -27,6 +27,7 @@ scoreboard objectives remove Second
 scoreboard objectives remove Tick
 scoreboard objectives remove GeneralSecond
 scoreboard objectives remove GeneralTick
+scoreboard objectives remove PvPSecond
 scoreboard objectives remove SecondPerSurvive
 #### participants
 scoreboard objectives remove ParticipantNumber
@@ -189,3 +190,4 @@ scoreboard players reset #mad_team_b
 scoreboard players reset #mad_team_c
 scoreboard players reset #mad_team_d
 scoreboard players reset #mad_team_e
+scoreboard players reset あと

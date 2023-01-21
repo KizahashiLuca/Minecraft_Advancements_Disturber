@@ -16,7 +16,7 @@ execute at @e[predicate=mad:marker/minecart/detect_where_summon_minecart,limit=1
 execute at @e[predicate=mad:marker/minecart/detect_where_summon_minecart,limit=1] run forceload add ~ ~ ~ ~
 
 ## Set scoreboards
-scoreboard players operation @s SecondSummon = #mad CartInterval
+scoreboard players operation @s Second = #mad CartInterval
 execute store result score @s PosX align x run data get entity @s Pos[0] 1
 execute store result score @s PosY align x run data get entity @s Pos[1] 1
 execute store result score @s PosZ align z run data get entity @s Pos[2] 1

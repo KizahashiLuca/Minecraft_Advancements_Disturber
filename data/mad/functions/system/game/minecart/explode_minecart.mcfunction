@@ -19,8 +19,5 @@ playsound minecraft:entity.firework_rocket.twinkle ambient @a
 particle minecraft:explosion ~ ~ ~ 1 1 1 0.5 10 force @a
 kill @s
 
-## Set scoreboard
-scoreboard players operation @e[predicate=mad:marker/minecart/not_say_next_minecart] SecondSummon += #mad Second
-
 ## Say next position / decide next time
 execute as @e[predicate=mad:marker/minecart/not_say_next_minecart] run function mad:system/game/minecart/say_next_minecart

@@ -120,7 +120,7 @@ scoreboard objectives add BreakSpawner minecraft.mined:minecraft.spawner
 scoreboard objectives add FallDistance dummy
 scoreboard objectives add RailDistance minecraft.custom:minecraft.minecart_one_cm
 #### summons minecart
-scoreboard objectives add SecondSummon dummy
+scoreboard objectives add SecondSummon dummy ["",{"text":"支援物資投下まで"}]
 scoreboard objectives add GetMinecartCount dummy
 scoreboard objectives add HasLootTable dummy
 #### transmitter
