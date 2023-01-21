@@ -18,5 +18,5 @@ scoreboard players operation @s Kill += @s KillTemp
 scoreboard players set @s KillTemp 0
 
 ## Send messages
-tellraw @s ["",{"translate":"[時間移動]  %s から %s%s 奪いました。","with":[{"selector":"@p[predicate=mad:player/dying,sort=nearest]","bold":true},{"score":{"name":"@p[predicate=mad:player/dying,sort=nearest]","objective":"SecondPerSurvive"},"bold":true},{"text":"秒","bold":true}],"color":"green","bold":false,"italic":false}]
-tellraw @p[predicate=mad:player/dying,sort=nearest] ["",{"translate":"%s に殺害されました。","with":[{"selector":"@s"}],"color":"white","bold":false,"italic":false}]
+tellraw @s ["",{"translate":"%s が %s を倒し %s%s 取得しました。","with":[{"selector":"@s","bold":true},{"selector":"@p[predicate=mad:player/dying,sort=nearest]","bold":true},{"score":{"name":"@p[predicate=mad:player/dying,sort=nearest]","objective":"SecondPerSurvive"},"bold":true},{"text":"秒","bold":true}],"color":"white","bold":false,"italic":false}]
+tellraw @p[predicate=mad:player/dying,sort=nearest] ["",{"translate":"%s が %s を倒し %s%s 取得しました。","with":[{"selector":"@s","bold":true},{"selector":"@p[predicate=mad:player/dying,sort=nearest]","bold":true},{"score":{"name":"@p[predicate=mad:player/dying,sort=nearest]","objective":"SecondPerSurvive"},"bold":true},{"text":"秒","bold":true}],"color":"white","bold":false,"italic":false}]
