@@ -18,8 +18,13 @@ scoreboard players set @s Death 0
 scoreboard players set @s Phase 21
 
 ## Branch team
-execute as @s[predicate=mad:player/team/a] run function mad:system/game/detect_death/team/a
-execute as @s[predicate=mad:player/team/b] run function mad:system/game/detect_death/team/b
-execute as @s[predicate=mad:player/team/c] run function mad:system/game/detect_death/team/c
-execute as @s[predicate=mad:player/team/d] run function mad:system/game/detect_death/team/d
-execute as @s[predicate=mad:player/team/e] run function mad:system/game/detect_death/team/e
+execute as @s[predicate=mad:player/team/a,predicate=mad:gamerules/death_penalty_time/neq_zero] run function mad:system/game/detect_death/team/penalty/a
+execute as @s[predicate=mad:player/team/a,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/penalty/a
+execute as @s[predicate=mad:player/team/b,predicate=mad:gamerules/death_penalty_time/neq_zero] run function mad:system/game/detect_death/team/penalty/b
+execute as @s[predicate=mad:player/team/b,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/penalty/b
+execute as @s[predicate=mad:player/team/c,predicate=mad:gamerules/death_penalty_time/neq_zero] run function mad:system/game/detect_death/team/penalty/c
+execute as @s[predicate=mad:player/team/c,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/penalty/c
+execute as @s[predicate=mad:player/team/d,predicate=mad:gamerules/death_penalty_time/neq_zero] run function mad:system/game/detect_death/team/penalty/d
+execute as @s[predicate=mad:player/team/d,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/penalty/d
+execute as @s[predicate=mad:player/team/e,predicate=mad:gamerules/death_penalty_time/neq_zero] run function mad:system/game/detect_death/team/penalty/e
+execute as @s[predicate=mad:player/team/e,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/penalty/e
