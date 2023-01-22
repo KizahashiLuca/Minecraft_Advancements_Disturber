@@ -121,6 +121,7 @@ scoreboard objectives add FallDistance dummy
 scoreboard objectives add RailDistance minecraft.custom:minecraft.minecart_one_cm
 #### summons minecart
 scoreboard objectives add SecondSummon dummy ["",{"text":"支援物資投下まで"}]
+scoreboard objectives add Coordinates dummy ["",{"text":"支援物資座標"}]
 scoreboard objectives add GetMinecartCount dummy
 scoreboard objectives add HasLootTable dummy
 #### transmitter
