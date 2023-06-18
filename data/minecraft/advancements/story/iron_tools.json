@@ -35,6 +35,7 @@
       "iron_pickaxe"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/story/iron_tools/main"
   }

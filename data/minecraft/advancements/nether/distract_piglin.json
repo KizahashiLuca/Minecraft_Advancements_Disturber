@@ -197,6 +197,7 @@
       "distract_piglin_directly"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/nether/distract_piglin/main"
   }

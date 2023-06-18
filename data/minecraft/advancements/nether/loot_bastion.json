@@ -49,6 +49,7 @@
       "loot_bastion_bridge"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/nether/loot_bastion/main"
   }

@@ -59,5 +59,6 @@
   "rewards": {
     "experience": 1000,
     "function": "mad:system/game/advancements/nether/all_effects/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

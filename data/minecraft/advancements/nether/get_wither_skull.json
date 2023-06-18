@@ -34,6 +34,7 @@
       "wither_skull"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/nether/get_wither_skull/main"
   }

@@ -74,6 +74,7 @@
       "iron_boots"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/story/obtain_armor/main"
   }

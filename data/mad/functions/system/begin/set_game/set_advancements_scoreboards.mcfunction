@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -33,6 +33,12 @@ scoreboard players set #mad_team_b AD_Adventure_bullseye 0
 scoreboard players set #mad_team_c AD_Adventure_bullseye 0
 scoreboard players set #mad_team_d AD_Adventure_bullseye 0
 scoreboard players set #mad_team_e AD_Adventure_bullseye 0
+scoreboard players set @a AD_Adventure_craft_decorated_pot_using_only_sherds 0
+scoreboard players set #mad_team_a AD_Adventure_craft_decorated_pot_using_only_sherds 0
+scoreboard players set #mad_team_b AD_Adventure_craft_decorated_pot_using_only_sherds 0
+scoreboard players set #mad_team_c AD_Adventure_craft_decorated_pot_using_only_sherds 0
+scoreboard players set #mad_team_d AD_Adventure_craft_decorated_pot_using_only_sherds 0
+scoreboard players set #mad_team_e AD_Adventure_craft_decorated_pot_using_only_sherds 0
 scoreboard players set @a AD_Adventure_fall_from_world_height 0
 scoreboard players set #mad_team_a AD_Adventure_fall_from_world_height 0
 scoreboard players set #mad_team_b AD_Adventure_fall_from_world_height 0
@@ -87,12 +93,24 @@ scoreboard players set #mad_team_b AD_Adventure_play_jukebox_in_meadows 0
 scoreboard players set #mad_team_c AD_Adventure_play_jukebox_in_meadows 0
 scoreboard players set #mad_team_d AD_Adventure_play_jukebox_in_meadows 0
 scoreboard players set #mad_team_e AD_Adventure_play_jukebox_in_meadows 0
+scoreboard players set @a AD_Adventure_read_power_of_chiseled_bookshelf 0
+scoreboard players set #mad_team_a AD_Adventure_read_power_of_chiseled_bookshelf 0
+scoreboard players set #mad_team_b AD_Adventure_read_power_of_chiseled_bookshelf 0
+scoreboard players set #mad_team_c AD_Adventure_read_power_of_chiseled_bookshelf 0
+scoreboard players set #mad_team_d AD_Adventure_read_power_of_chiseled_bookshelf 0
+scoreboard players set #mad_team_e AD_Adventure_read_power_of_chiseled_bookshelf 0
 scoreboard players set @a AD_Adventure_root 0
 scoreboard players set #mad_team_a AD_Adventure_root 0
 scoreboard players set #mad_team_b AD_Adventure_root 0
 scoreboard players set #mad_team_c AD_Adventure_root 0
 scoreboard players set #mad_team_d AD_Adventure_root 0
 scoreboard players set #mad_team_e AD_Adventure_root 0
+scoreboard players set @a AD_Adventure_salvage_sherd 0
+scoreboard players set #mad_team_a AD_Adventure_salvage_sherd 0
+scoreboard players set #mad_team_b AD_Adventure_salvage_sherd 0
+scoreboard players set #mad_team_c AD_Adventure_salvage_sherd 0
+scoreboard players set #mad_team_d AD_Adventure_salvage_sherd 0
+scoreboard players set #mad_team_e AD_Adventure_salvage_sherd 0
 scoreboard players set @a AD_Adventure_shoot_arrow 0
 scoreboard players set #mad_team_a AD_Adventure_shoot_arrow 0
 scoreboard players set #mad_team_b AD_Adventure_shoot_arrow 0
@@ -159,6 +177,18 @@ scoreboard players set #mad_team_b AD_Adventure_trade_at_world_height 0
 scoreboard players set #mad_team_c AD_Adventure_trade_at_world_height 0
 scoreboard players set #mad_team_d AD_Adventure_trade_at_world_height 0
 scoreboard players set #mad_team_e AD_Adventure_trade_at_world_height 0
+scoreboard players set @a AD_Adventure_trim_with_all_exclusive_armor_patterns 0
+scoreboard players set #mad_team_a AD_Adventure_trim_with_all_exclusive_armor_patterns 0
+scoreboard players set #mad_team_b AD_Adventure_trim_with_all_exclusive_armor_patterns 0
+scoreboard players set #mad_team_c AD_Adventure_trim_with_all_exclusive_armor_patterns 0
+scoreboard players set #mad_team_d AD_Adventure_trim_with_all_exclusive_armor_patterns 0
+scoreboard players set #mad_team_e AD_Adventure_trim_with_all_exclusive_armor_patterns 0
+scoreboard players set @a AD_Adventure_trim_with_any_armor_pattern 0
+scoreboard players set #mad_team_a AD_Adventure_trim_with_any_armor_pattern 0
+scoreboard players set #mad_team_b AD_Adventure_trim_with_any_armor_pattern 0
+scoreboard players set #mad_team_c AD_Adventure_trim_with_any_armor_pattern 0
+scoreboard players set #mad_team_d AD_Adventure_trim_with_any_armor_pattern 0
+scoreboard players set #mad_team_e AD_Adventure_trim_with_any_armor_pattern 0
 scoreboard players set @a AD_Adventure_two_birds_one_arrow 0
 scoreboard players set #mad_team_a AD_Adventure_two_birds_one_arrow 0
 scoreboard players set #mad_team_b AD_Adventure_two_birds_one_arrow 0
@@ -285,6 +315,12 @@ scoreboard players set #mad_team_b AD_Husbandry_complete_catalogue 0
 scoreboard players set #mad_team_c AD_Husbandry_complete_catalogue 0
 scoreboard players set #mad_team_d AD_Husbandry_complete_catalogue 0
 scoreboard players set #mad_team_e AD_Husbandry_complete_catalogue 0
+scoreboard players set @a AD_Husbandry_feed_snifflet 0
+scoreboard players set #mad_team_a AD_Husbandry_feed_snifflet 0
+scoreboard players set #mad_team_b AD_Husbandry_feed_snifflet 0
+scoreboard players set #mad_team_c AD_Husbandry_feed_snifflet 0
+scoreboard players set #mad_team_d AD_Husbandry_feed_snifflet 0
+scoreboard players set #mad_team_e AD_Husbandry_feed_snifflet 0
 scoreboard players set @a AD_Husbandry_fishy_business 0
 scoreboard players set #mad_team_a AD_Husbandry_fishy_business 0
 scoreboard players set #mad_team_b AD_Husbandry_fishy_business 0
@@ -321,6 +357,18 @@ scoreboard players set #mad_team_b AD_Husbandry_obtain_netherite_hoe 0
 scoreboard players set #mad_team_c AD_Husbandry_obtain_netherite_hoe 0
 scoreboard players set #mad_team_d AD_Husbandry_obtain_netherite_hoe 0
 scoreboard players set #mad_team_e AD_Husbandry_obtain_netherite_hoe 0
+scoreboard players set @a AD_Husbandry_obtain_sniffer_egg 0
+scoreboard players set #mad_team_a AD_Husbandry_obtain_sniffer_egg 0
+scoreboard players set #mad_team_b AD_Husbandry_obtain_sniffer_egg 0
+scoreboard players set #mad_team_c AD_Husbandry_obtain_sniffer_egg 0
+scoreboard players set #mad_team_d AD_Husbandry_obtain_sniffer_egg 0
+scoreboard players set #mad_team_e AD_Husbandry_obtain_sniffer_egg 0
+scoreboard players set @a AD_Husbandry_plant_any_sniffer_seed 0
+scoreboard players set #mad_team_a AD_Husbandry_plant_any_sniffer_seed 0
+scoreboard players set #mad_team_b AD_Husbandry_plant_any_sniffer_seed 0
+scoreboard players set #mad_team_c AD_Husbandry_plant_any_sniffer_seed 0
+scoreboard players set #mad_team_d AD_Husbandry_plant_any_sniffer_seed 0
+scoreboard players set #mad_team_e AD_Husbandry_plant_any_sniffer_seed 0
 scoreboard players set @a AD_Husbandry_plant_seed 0
 scoreboard players set #mad_team_a AD_Husbandry_plant_seed 0
 scoreboard players set #mad_team_b AD_Husbandry_plant_seed 0

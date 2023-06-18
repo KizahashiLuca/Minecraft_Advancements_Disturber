@@ -33,6 +33,7 @@
       "get_stone"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/story/mine_stone/main"
   }

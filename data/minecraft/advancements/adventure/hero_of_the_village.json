@@ -30,5 +30,6 @@
   "rewards": {
     "experience": 100,
     "function": "mad:system/game/advancements/adventure/hero_of_the_village/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

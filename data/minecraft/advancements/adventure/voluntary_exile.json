@@ -45,6 +45,7 @@
       "voluntary_exile"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/voluntary_exile/main"
   }

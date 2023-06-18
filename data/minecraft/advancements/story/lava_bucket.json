@@ -34,6 +34,7 @@
       "lava_bucket"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/story/lava_bucket/main"
   }

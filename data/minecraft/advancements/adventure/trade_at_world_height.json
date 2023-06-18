@@ -42,6 +42,7 @@
       "trade_at_world_height"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/trade_at_world_height/main"
   }

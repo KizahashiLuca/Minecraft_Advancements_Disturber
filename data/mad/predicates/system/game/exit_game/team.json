@@ -12,7 +12,7 @@
     "name": "mad:system/game/exit_game/not_exit"
   },
   {
-    "condition": "minecraft:alternative",
+    "condition": "minecraft:any_of",
     "terms": [
       {
         "condition": "minecraft:reference",

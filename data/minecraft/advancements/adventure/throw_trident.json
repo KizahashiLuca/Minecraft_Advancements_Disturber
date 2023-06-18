@@ -8,7 +8,12 @@
             "direct_entity": {
               "type": "minecraft:trident"
             },
-            "is_projectile": true
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_projectile"
+              }
+            ]
           }
         }
       },
@@ -36,6 +41,7 @@
       "shot_trident"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/throw_trident/main"
   }

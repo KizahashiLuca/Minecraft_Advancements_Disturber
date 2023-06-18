@@ -28,6 +28,7 @@
       "honey_block_slide"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/honey_block_slide/main"
   }

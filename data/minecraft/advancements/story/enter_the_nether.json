@@ -29,6 +29,7 @@
       "entered_nether"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/story/enter_the_nether/main"
   }

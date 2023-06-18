@@ -42,5 +42,6 @@
   "rewards": {
     "experience": 100,
     "function": "mad:system/game/advancements/nether/uneasy_alliance/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

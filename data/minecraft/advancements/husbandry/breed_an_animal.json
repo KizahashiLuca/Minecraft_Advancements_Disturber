@@ -26,6 +26,7 @@
       "bred"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/husbandry/breed_an_animal/main"
   }

@@ -53,6 +53,7 @@
       "lightning_rod_with_villager_no_fire"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/lightning_rod_with_villager_no_fire/main"
   }

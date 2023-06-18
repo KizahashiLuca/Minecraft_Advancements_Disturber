@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -13,6 +13,7 @@ scoreboard objectives add AD_Adventure_adventuring_time dummy
 scoreboard objectives add AD_Adventure_arbalistic dummy
 scoreboard objectives add AD_Adventure_avoid_vibration dummy
 scoreboard objectives add AD_Adventure_bullseye dummy
+scoreboard objectives add AD_Adventure_craft_decorated_pot_using_only_sherds dummy
 scoreboard objectives add AD_Adventure_fall_from_world_height dummy
 scoreboard objectives add AD_Adventure_hero_of_the_village dummy
 scoreboard objectives add AD_Adventure_honey_block_slide dummy
@@ -22,7 +23,9 @@ scoreboard objectives add AD_Adventure_kill_mob_near_sculk_catalyst dummy
 scoreboard objectives add AD_Adventure_lightning_rod_with_villager_no_fire dummy
 scoreboard objectives add AD_Adventure_ol_betsy dummy
 scoreboard objectives add AD_Adventure_play_jukebox_in_meadows dummy
+scoreboard objectives add AD_Adventure_read_power_of_chiseled_bookshelf dummy
 scoreboard objectives add AD_Adventure_root dummy
+scoreboard objectives add AD_Adventure_salvage_sherd dummy
 scoreboard objectives add AD_Adventure_shoot_arrow dummy
 scoreboard objectives add AD_Adventure_sleep_in_bed dummy
 scoreboard objectives add AD_Adventure_sniper_duel dummy
@@ -34,6 +37,8 @@ scoreboard objectives add AD_Adventure_throw_trident dummy
 scoreboard objectives add AD_Adventure_totem_of_undying dummy
 scoreboard objectives add AD_Adventure_trade dummy
 scoreboard objectives add AD_Adventure_trade_at_world_height dummy
+scoreboard objectives add AD_Adventure_trim_with_all_exclusive_armor_patterns dummy
+scoreboard objectives add AD_Adventure_trim_with_any_armor_pattern dummy
 scoreboard objectives add AD_Adventure_two_birds_one_arrow dummy
 scoreboard objectives add AD_Adventure_very_very_frightening dummy
 scoreboard objectives add AD_Adventure_voluntary_exile dummy
@@ -55,12 +60,15 @@ scoreboard objectives add AD_Husbandry_balanced_diet dummy
 scoreboard objectives add AD_Husbandry_bred_all_animals dummy
 scoreboard objectives add AD_Husbandry_breed_an_animal dummy
 scoreboard objectives add AD_Husbandry_complete_catalogue dummy
+scoreboard objectives add AD_Husbandry_feed_snifflet dummy
 scoreboard objectives add AD_Husbandry_fishy_business dummy
 scoreboard objectives add AD_Husbandry_froglights dummy
 scoreboard objectives add AD_Husbandry_kill_axolotl_target dummy
 scoreboard objectives add AD_Husbandry_leash_all_frog_variants dummy
 scoreboard objectives add AD_Husbandry_make_a_sign_glow dummy
 scoreboard objectives add AD_Husbandry_obtain_netherite_hoe dummy
+scoreboard objectives add AD_Husbandry_obtain_sniffer_egg dummy
+scoreboard objectives add AD_Husbandry_plant_any_sniffer_seed dummy
 scoreboard objectives add AD_Husbandry_plant_seed dummy
 scoreboard objectives add AD_Husbandry_ride_a_boat_with_a_goat dummy
 scoreboard objectives add AD_Husbandry_root dummy
