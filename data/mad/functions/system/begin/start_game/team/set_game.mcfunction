@@ -70,7 +70,7 @@ function mad:system/begin/set_game/count_players
 ## Set scoreboards
 scoreboard players set #mad IsTeam 1
 scoreboard players set #mad NumberOfTeams 2
-scoreboard players set #mad WorldBorder 1500
+scoreboard players set #mad WorldBorder 1000
 
 ## Send messages
 execute if predicate mad:system/begin/set_game/accept_condition run function mad:system/begin/team_member/set_member_randomly
