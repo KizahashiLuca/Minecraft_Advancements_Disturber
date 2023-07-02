@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -20,7 +20,3 @@ execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
 
 ## Reset effects
 effect clear @a
-
-## Reset recipes
-recipe take @a mad:tnt
-recipe take @a mad:mobile_respawn_beacon

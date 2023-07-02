@@ -8,7 +8,7 @@
     "name": "mad:player/host"
   },
   {
-    "condition": "minecraft:alternative",
+    "condition": "minecraft:any_of",
     "terms": [
       {
         "condition": "minecraft:reference",

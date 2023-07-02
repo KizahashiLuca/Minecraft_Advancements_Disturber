@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -14,6 +14,9 @@ function mad:system/game/timer/team/general/tick
 
 ## Detect death
 execute as @a[predicate=mad:player/dying] run function mad:system/game/detect_death/team
+
+## Detect revive
+execute as @a[predicate=mad:player/just_revive] run function mad:system/game/just_revive/main
 
 ## Count the alive
 execute if predicate mad:system/game/count_alive/a run function mad:system/game/count_alive/a
@@ -28,7 +31,6 @@ execute as @e[predicate=mad:marker/respawn_beacon/position] at @s run function m
 
 ## Mobile respawn beacon system
 execute as @e[predicate=mad:area_effect_cloud/mobile_respawn_beacon/structure] at @s run function mad:system/item/mobile_respawn_beacon/main
-execute as @e[predicate=mad:item/mobile_respawn_beacon/bedrock] at @s run function mad:system/item/mobile_respawn_beacon/summon_item
 execute as @e[predicate=mad:armor_stand/mobile_respawn_beacon/position] at @s run function mad:system/item/mobile_respawn_beacon/construct/main
 
 ## Respawn banner system

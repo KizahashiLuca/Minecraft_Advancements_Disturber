@@ -1,17 +1,17 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Send messages
-title @a[distance=..2] title [""]
-title @a[distance=..2] subtitle ["",{"text":"設定対象 ","color":"white","bold":false,"italic":false},{"selector":"@p[predicate=mad:system/item/mobile_respawn_beacon/respawn_player]","color":"white","bold":false,"italic":false}]
-title @a[distance=..2] times 2 20 2
+title @a[distance=..5] title [""]
+title @a[distance=..5] subtitle ["",{"text":"設定対象 ","color":"white","bold":false,"italic":false},{"selector":"@p[predicate=mad:system/item/mobile_respawn_beacon/respawn_player]","color":"white","bold":false,"italic":false}]
+title @a[distance=..5] times 2 20 2
 
 ## Set scoreboard - banner
 scoreboard players set @s Second 20

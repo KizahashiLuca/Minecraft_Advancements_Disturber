@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -27,6 +27,9 @@ execute at @s[predicate=mad:dimension/the_end] run scoreboard players set @a[pre
 execute at @s align xz store result score @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player] BannerPosX run data get entity @e[predicate=mad:armor_stand/respawn_banner/not_set_customname,limit=1] Pos[0]
 execute at @s align xz store result score @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player] BannerPosY run data get entity @e[predicate=mad:armor_stand/respawn_banner/not_set_customname,limit=1] Pos[1]
 execute at @s align xz store result score @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player] BannerPosZ run data get entity @e[predicate=mad:armor_stand/respawn_banner/not_set_customname,limit=1] Pos[2]
+
+## Set banner owner
+execute as @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player] run function mad:system/game/respawn_banner/set_owner_uuid
 
 ## Message
 execute as @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player/a] run function mad:system/game/respawn_banner/message/a

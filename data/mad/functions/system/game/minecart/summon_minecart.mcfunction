@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -22,3 +22,8 @@ execute if predicate mad:gamerules/minecart/team_with_end run data modify entity
 
 ## Send messages
 tellraw @a ["",{"text":"[物資投下] 物資が ","color":"green","bold":false,"italic":false},{"translate":"[%s, %s, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"text":"320"},{"score":{"name":"@s","objective":"PosZ"}}],"hoverEvent":{"action":"show_text","contents":{"text":"スペクテイター時、\nクリックでテレポート","color":"white","bold":false,"italic":false}},"clickEvent":{"action":"run_command","value":"/trigger TeleportMinecart set 1"},"color":"green","bold":false,"italic":false},{"text":" に投下されました。","color":"green","bold":false,"italic":false}]
+
+## Reset scoreboard sidebar
+scoreboard objectives setdisplay sidebar Coordinates
+scoreboard players operation X: Coordinates = @s PosX
+scoreboard players operation Z: Coordinates = @s PosZ

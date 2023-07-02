@@ -18,7 +18,12 @@
           }
         ],
         "killing_blow": {
-          "is_projectile": true
+          "tags": [
+            {
+              "expected": true,
+              "id": "minecraft:is_projectile"
+            }
+          ]
         }
       },
       "trigger": "minecraft:player_killed_entity"
@@ -47,5 +52,6 @@
   "rewards": {
     "experience": 50,
     "function": "mad:system/game/advancements/adventure/sniper_duel/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

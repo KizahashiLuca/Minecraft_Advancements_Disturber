@@ -26,6 +26,7 @@
       "cured_zombie"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/story/cure_zombie_villager/main"
   }

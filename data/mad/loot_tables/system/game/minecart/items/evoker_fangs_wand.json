@@ -21,8 +21,10 @@
               "entity": "this",
               "lore": [
                 ["",{"text":"エヴォーカーの牙を召喚。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"・通常使用で直線状に牙を放つ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"・スニークしての使用で放射状に牙を放つ","color":"white","bold":false,"italic":false}],
                 [""],
-                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}],
+                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}],
                 ["",{"text":"使用回数 残り","color":"green","bold":false,"italic":false},{"text":"5","color":"green","bold":true,"italic":false},{"text":"回","color":"green","bold":false,"italic":false}]
               ]
             },

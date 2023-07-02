@@ -44,5 +44,6 @@
   "rewards": {
     "experience": 50,
     "function": "mad:system/game/advancements/adventure/bullseye/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

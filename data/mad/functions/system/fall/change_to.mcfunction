@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -31,6 +31,9 @@ function mad:system/common/message/end
 
 ## Reset respawn beacon #1
 execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/center_of_world_position] at @s run fill ~-1 ~3 ~-1 ~1 ~5 ~1 minecraft:air
+
+## Set world spawn
+setworldspawn ~ ~ ~
 
 ## Teleport
 execute if predicate mad:gamerules/match_mode/individual at @e[predicate=mad:marker/world_spawn,limit=1] run function mad:system/fall/random_teleport/individual/main

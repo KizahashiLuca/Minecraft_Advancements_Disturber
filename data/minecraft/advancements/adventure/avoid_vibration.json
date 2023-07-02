@@ -26,6 +26,7 @@
       "avoid_vibration"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/avoid_vibration/main"
   }

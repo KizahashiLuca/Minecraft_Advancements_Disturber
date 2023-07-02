@@ -35,6 +35,7 @@
       "stone_pickaxe"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/story/upgrade_tools/main"
   }

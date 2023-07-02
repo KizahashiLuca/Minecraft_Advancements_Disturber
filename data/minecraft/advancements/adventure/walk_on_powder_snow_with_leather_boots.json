@@ -50,6 +50,7 @@
       "walk_on_powder_snow_with_leather_boots"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/walk_on_powder_snow_with_leather_boots/main"
   }

@@ -242,5 +242,6 @@
   "rewards": {
     "experience": 50,
     "function": "mad:system/game/advancements/husbandry/complete_catalogue/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

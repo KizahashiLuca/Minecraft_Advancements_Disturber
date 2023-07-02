@@ -34,6 +34,7 @@
       "ancient_debris"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/nether/obtain_ancient_debris/main"
   }

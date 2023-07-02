@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -18,7 +18,9 @@ tag @a remove MAD_TransmitPlayer
 tag @a remove MAD_DetectTransmitter
 tag @a remove MAD_EmergencyCallee
 tag @a remove MAD_DetectEmergencyCall
+tag @a remove MAD_Thief
 tag @a remove MAD_DetectThief
+tag @a remove MAD_DetectThiefTeam
 tag @a remove MAD_SetThief
 tag @a remove MAD_NotStealPlayer
 tag @a remove MAD_StolenPlayer

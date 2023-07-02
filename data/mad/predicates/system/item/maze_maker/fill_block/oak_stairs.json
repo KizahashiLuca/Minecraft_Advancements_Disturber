@@ -8,8 +8,8 @@
     "entity": "this",
     "scores": {
       "RandomAnswer": {
-        "min": 2,
-        "max": 2
+        "min": 3,
+        "max": 3
       }
     }
   }

@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:marker/minecart/where_summon_minecart"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Tags:[\"MAD_SummonedMinecart\"]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Tags:[\"MAD_NotSayNextMinecart\"]}"
+      }
+    }
+  }
+]

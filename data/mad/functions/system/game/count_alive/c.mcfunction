@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -21,5 +21,4 @@ execute as @a[predicate=mad:player/dead/c] at @s run function mad:system/game/sp
 execute unless entity @p[predicate=mad:player/alive/c] run function mad:system/game/set_team_dead/c
 
 ## Calculate time per players
-execute if score #mad_team_c Second > #mad KillTime run scoreboard players operation #mad_team_c SecondPerSurvive = #mad KillTime
-execute if score #mad_team_c Second <= #mad KillTime run scoreboard players operation #mad_team_c SecondPerSurvive = #mad_team_c Second
+scoreboard players operation #mad_team_c SecondPerSurvive = #mad KillTime

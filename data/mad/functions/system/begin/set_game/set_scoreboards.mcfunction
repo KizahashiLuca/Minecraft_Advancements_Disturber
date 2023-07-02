@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -13,12 +13,12 @@
 scoreboard players set #mad DataVersion 1444
 scoreboard players set #mad Version 13
 scoreboard players set #mad Phase 1
-scoreboard players set #mad PrevPhase 0
+scoreboard players set #mad PvP 0
 scoreboard players set #mad Difficulty 0
 scoreboard players set #mad ExitMessage 0
 #### timer
-scoreboard players set #mad -1 -1
 scoreboard players set #mad 2 2
+scoreboard players set #mad PvPSecond 900
 #### participants
 scoreboard players set #mad ParticipantNumber 0
 scoreboard players set #mad NumOfParticipants 0
@@ -43,18 +43,18 @@ scoreboard players set #mad 10000 10000
 scoreboard players set #mad TimeLimit 300
 scoreboard players set #mad TimeLimitPrv 300
 #### setting phase - choose area
-scoreboard players set #mad WorldBorder 1000
-scoreboard players set #mad WorldBorderPrv 1000
+scoreboard players set #mad WorldBorder 1500
+scoreboard players set #mad WorldBorderPrv 1500
 scoreboard players set #mad WorldBorderEnd 0
 #### setting phase - choose difficulty
 scoreboard players set #mad Difficulty 2
 scoreboard players set #mad DifficultyPrv 2
 #### setting phase - choose adding time
-scoreboard players set #mad AddingTime 100
-scoreboard players set #mad AddingTimePrv 100
+scoreboard players set #mad AddingTime 60
+scoreboard players set #mad AddingTimePrv 60
 #### setting phase - choose minecart interval
-scoreboard players set #mad CartInterval 300
-scoreboard players set #mad CartIntervalPrv 300
+scoreboard players set #mad CartInterval 600
+scoreboard players set #mad CartIntervalPrv 600
 #### setting phase - choose gamerule
 scoreboard players set #mad WeatherCycle 1
 scoreboard players set #mad DaylightCycle 1
@@ -68,8 +68,8 @@ scoreboard players set #mad SetTeamManual 0
 scoreboard players set #mad NumberOfTeams 2
 scoreboard players set #mad NumberOfBeacons 5
 scoreboard players set #mad RespawnBannerTime -60
-scoreboard players set #mad KillTime 300
-scoreboard players set #mad DeathPenaltyTime 100
+scoreboard players set #mad KillTime 200
+scoreboard players set #mad DeathPenaltyTime 0
 scoreboard players set #mad friendlyFire 1
 scoreboard players set #mad collisionRule 1
 scoreboard players set #mad VisibleName 1
@@ -79,8 +79,8 @@ scoreboard players set #mad SetTeamManualPrv 0
 scoreboard players set #mad NumberOfTeamsPrv 2
 scoreboard players set #mad NumberOfBeaconsPrv 5
 scoreboard players set #mad RespawnBannerTimePrv -60
-scoreboard players set #mad KillTimePrv 300
-scoreboard players set #mad DeathPenaltyTimePrv 100
+scoreboard players set #mad KillTimePrv 200
+scoreboard players set #mad DeathPenaltyTimePrv 0
 scoreboard players set #mad friendlyFirePrv 1
 scoreboard players set #mad collisionRulePrv 1
 scoreboard players set #mad VisibleNamePrv 1
@@ -89,13 +89,9 @@ scoreboard players set #mad VisibleDeathPrv 1
 #### wait phase
 scoreboard players set #mad WaitTime 30
 #### summons minecart
-scoreboard players set #mad 300 300
 scoreboard players set #mad SecondSummon 300
 #### team
 scoreboard players set #mad TeamMemberNotExist 0
-#### maze maker
-scoreboard players set #mad MazeSize 9
-scoreboard players set #mad AisleWidth 3
 #### respawn beacon
 scoreboard players set #mad CompareNames 1
 scoreboard players set #mad DetectTeamExists 1
@@ -187,6 +183,11 @@ scoreboard players set @a ArrowTeleportPosY 0
 scoreboard players set @a ArrowTeleportPosZ 0
 #### mobile respawn beacon
 scoreboard players set @a MobileBeaconNumber 0
+#### respawn banner
+execute as @a store result score @s UUID0 run data get entity @s UUID[0]
+execute as @a store result score @s UUID1 run data get entity @s UUID[1]
+execute as @a store result score @s UUID2 run data get entity @s UUID[2]
+execute as @a store result score @s UUID3 run data get entity @s UUID[3]
 #### team
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a DeadOwnTeam 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b DeadOwnTeam 0

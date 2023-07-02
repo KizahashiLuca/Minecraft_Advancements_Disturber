@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -17,13 +17,16 @@ execute as @a[predicate=mad:system/game/login_midtime] run function mad:system/g
 ## Position
 function mad:system/common/set_position/main
 
+## Count PvP off phase
+execute if predicate mad:phase/game/pvp_off if predicate mad:system/game/timer/pvp/tick/eq_zero run function mad:system/game/timer/pvp/second
+
 ## Execute advancements
 #### ** Prohibit use predicate mad:system/game/advancements/execute/part_a **
 function mad:system/game/advancements/execute/part_a
 execute if predicate mad:system/game/advancements/execute/part_b run function mad:system/game/advancements/execute/part_b
 
 ## Minecart system
-execute as @e[predicate=mad:system/game/minecart/summon] if score @s SecondSummon = #mad Second at @s run function mad:system/game/minecart/summon_minecart
+execute as @e[predicate=mad:system/game/minecart/tick/eq_zero] at @s run function mad:system/game/minecart/main
 execute as @e[predicate=mad:minecart/not_on_ground] at @s run function mad:system/game/minecart/not_on_ground
 execute as @e[predicate=mad:minecart/on_ground] at @s run function mad:system/game/minecart/on_ground
 

@@ -38,6 +38,7 @@
       "in_stronghold"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/story/follow_ender_eye/main"
   }

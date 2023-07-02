@@ -601,5 +601,6 @@
   "rewards": {
     "experience": 100,
     "function": "mad:system/game/advancements/adventure/kill_all_mobs/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

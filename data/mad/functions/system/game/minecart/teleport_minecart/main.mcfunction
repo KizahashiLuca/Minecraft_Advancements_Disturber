@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -16,7 +16,7 @@ execute at @e[predicate=mad:marker/minecart/detect_where_summon_minecart,limit=1
 execute at @e[predicate=mad:marker/minecart/detect_where_summon_minecart,limit=1] run forceload add ~ ~ ~ ~
 
 ## Set scoreboards
-scoreboard players operation @s SecondSummon = #mad CartInterval
+scoreboard players operation @s Second = #mad CartInterval
 execute store result score @s PosX align x run data get entity @s Pos[0] 1
 execute store result score @s PosY align x run data get entity @s Pos[1] 1
 execute store result score @s PosZ align z run data get entity @s Pos[2] 1

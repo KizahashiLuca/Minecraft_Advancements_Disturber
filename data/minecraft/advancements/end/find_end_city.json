@@ -38,6 +38,7 @@
       "in_city"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/end/find_end_city/main"
   }

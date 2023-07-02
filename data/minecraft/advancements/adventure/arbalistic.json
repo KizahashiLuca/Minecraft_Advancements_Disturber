@@ -32,5 +32,6 @@
   "rewards": {
     "experience": 85,
     "function": "mad:system/game/advancements/adventure/arbalistic/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

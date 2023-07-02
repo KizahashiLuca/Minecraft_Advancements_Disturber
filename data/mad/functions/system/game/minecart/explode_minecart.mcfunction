@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -18,9 +18,6 @@ tag @a remove MAD_GiveTimeRandomly
 playsound minecraft:entity.firework_rocket.twinkle ambient @a
 particle minecraft:explosion ~ ~ ~ 1 1 1 0.5 10 force @a
 kill @s
-
-## Set scoreboard
-scoreboard players operation @e[predicate=mad:marker/minecart/not_say_next_minecart] SecondSummon += #mad Second
 
 ## Say next position / decide next time
 execute as @e[predicate=mad:marker/minecart/not_say_next_minecart] run function mad:system/game/minecart/say_next_minecart

@@ -8,10 +8,6 @@
     "name": "mad:player/host"
   },
   {
-    "condition": "minecraft:reference",
-    "name": "mad:system/begin/gui/team_match/kill_time/gt_zero"
-  },
-  {
     "condition": "minecraft:inverted",
     "term": {
       "condition": "minecraft:entity_properties",

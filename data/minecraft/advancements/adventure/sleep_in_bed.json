@@ -26,6 +26,7 @@
       "slept_in_bed"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/sleep_in_bed/main"
   }

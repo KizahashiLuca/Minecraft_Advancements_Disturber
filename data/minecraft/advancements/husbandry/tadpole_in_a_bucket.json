@@ -32,6 +32,7 @@
       "tadpole_bucket"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/husbandry/tadpole_in_a_bucket/main"
   }

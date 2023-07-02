@@ -47,6 +47,7 @@
       "ride_entity_distance"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/nether/ride_strider_in_overworld_lava/main"
   }

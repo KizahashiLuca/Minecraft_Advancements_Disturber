@@ -36,6 +36,7 @@
       "kill_axolotl_target"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/husbandry/kill_axolotl_target/main"
   }

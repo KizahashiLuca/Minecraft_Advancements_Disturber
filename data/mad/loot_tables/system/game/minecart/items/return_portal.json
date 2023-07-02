@@ -22,7 +22,7 @@
               "lore": [
                 ["",{"text":"エンドからの帰還ポータルを設置。","color":"white","bold":false,"italic":false}],
                 [""],
-                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}]
+                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}]
               ]
             },
             {

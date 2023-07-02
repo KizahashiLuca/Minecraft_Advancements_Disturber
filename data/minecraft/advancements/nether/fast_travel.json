@@ -35,5 +35,6 @@
   "rewards": {
     "experience": 100,
     "function": "mad:system/game/advancements/nether/fast_travel/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

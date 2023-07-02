@@ -16,7 +16,12 @@
           "direct_entity": {
             "type": "minecraft:fireball"
           },
-          "is_projectile": true
+          "tags": [
+            {
+              "expected": true,
+              "id": "minecraft:is_projectile"
+            }
+          ]
         }
       },
       "trigger": "minecraft:player_killed_entity"
@@ -45,5 +50,6 @@
   "rewards": {
     "experience": 50,
     "function": "mad:system/game/advancements/nether/return_to_sender/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

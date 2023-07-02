@@ -1,0 +1,13 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mad:system/item/mobile_respawn_beacon/construct/bedrock_layers"
+    }
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/item/mobile_respawn_beacon/construct/18block_empty"
+  }
+]

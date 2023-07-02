@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -29,7 +29,7 @@ loot replace entity @p[predicate=mad:player/host] inventory.14 loot mad:system/b
 loot replace entity @p[predicate=mad:player/host] inventory.15 loot mad:system/begin/gui/number/alphabet_s
 loot replace entity @p[predicate=mad:player/host] inventory.19 loot mad:system/begin/gui/common/cancel
 loot replace entity @p[predicate=mad:player/host] inventory.22 loot mad:system/begin/gui/common/reset
-loot replace entity @p[predicate=mad:player/host,predicate=mad:system/begin/gui/minecart_interval/gt_zero] inventory.25 loot mad:system/begin/gui/minecart_interval/ok
+loot replace entity @p[predicate=mad:player/host,predicate=mad:system/begin/gui/minecart_interval/gt_one] inventory.25 loot mad:system/begin/gui/minecart_interval/ok
 
 ## Change phase
 scoreboard players set #mad Phase 4

@@ -1,15 +1,15 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Reset choice
-scoreboard players set #mad CartInterval 300
+scoreboard players set #mad CartInterval 600
 
 ## Send messages
 function mad:system/begin/gui/minecart_interval/change_to

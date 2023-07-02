@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -13,20 +13,21 @@
 scoreboard objectives remove DataVersion
 scoreboard objectives remove Version
 scoreboard objectives remove Phase
-scoreboard objectives remove PrevPhase
+scoreboard objectives remove PvP
 scoreboard objectives remove Death
 scoreboard objectives remove Kill
 scoreboard objectives remove KillTemp
+scoreboard objectives remove TimeSinceDeath
 scoreboard objectives remove TeleportMinecart
 scoreboard objectives remove TeleportCenter
 scoreboard objectives remove ExitMessage
 #### timer
-scoreboard objectives remove -1
 scoreboard objectives remove 2
 scoreboard objectives remove Second
 scoreboard objectives remove Tick
 scoreboard objectives remove GeneralSecond
 scoreboard objectives remove GeneralTick
+scoreboard objectives remove PvPSecond
 scoreboard objectives remove SecondPerSurvive
 #### participants
 scoreboard objectives remove ParticipantNumber
@@ -119,8 +120,8 @@ scoreboard objectives remove BreakSpawner
 scoreboard objectives remove FallDistance
 scoreboard objectives remove RailDistance
 #### summons minecart
-scoreboard objectives remove 300
 scoreboard objectives remove SecondSummon
+scoreboard objectives remove Coordinates
 scoreboard objectives remove GetMinecartCount
 scoreboard objectives remove HasLootTable
 #### transmitter
@@ -150,8 +151,6 @@ scoreboard objectives remove UseFungusStick
 scoreboard objectives remove EvokerFangsCount
 #### maze maker
 scoreboard objectives remove UseMazeMaker
-scoreboard objectives remove MazeSize
-scoreboard objectives remove AisleWidth
 scoreboard objectives remove RandomMax
 scoreboard objectives remove RandomAngle
 scoreboard objectives remove MazePosX
@@ -169,6 +168,12 @@ scoreboard objectives remove DetectTeamExists
 #### mobile respawn beacon
 scoreboard objectives remove MobileBeaconNumber
 scoreboard objectives remove MobileBeaconTmp
+#### respawn banner
+scoreboard objectives remove OwnerExists
+scoreboard objectives remove UUID0
+scoreboard objectives remove UUID1
+scoreboard objectives remove UUID2
+scoreboard objectives remove UUID3
 #### team
 scoreboard objectives remove TeamMemberNotExist
 scoreboard objectives remove DeadOwnTeam
@@ -186,3 +191,23 @@ scoreboard players reset #mad_team_b
 scoreboard players reset #mad_team_c
 scoreboard players reset #mad_team_d
 scoreboard players reset #mad_team_e
+scoreboard players reset マッチモード：ソロ戦
+scoreboard players reset マッチモード：個人戦
+scoreboard players reset マッチモード：チーム戦
+scoreboard players reset 初期生存時間（秒）：
+scoreboard players reset 追加生存時間（秒）：
+scoreboard players reset 物資投下間隔（秒）：
+scoreboard players reset ワールドボーダー
+scoreboard players reset （ブロック四方）：
+scoreboard players reset 天候サイクル：あり
+scoreboard players reset 天候サイクル：なし
+scoreboard players reset 昼夜サイクル：あり
+scoreboard players reset 昼夜サイクル：なし
+scoreboard players reset 難易度：ピースフル
+scoreboard players reset 難易度：イージー
+scoreboard players reset 難易度：ノーマル
+scoreboard players reset 難易度：ハード
+scoreboard players reset 難易度：ハードコア
+scoreboard players reset あと
+scoreboard players reset X:
+scoreboard players reset Z:

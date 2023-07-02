@@ -31,6 +31,7 @@
       "killed_by_something"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/root/main"
   }

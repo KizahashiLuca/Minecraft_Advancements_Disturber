@@ -3,18 +3,26 @@
   "criteria": {
     "use_lodestone": {
       "conditions": {
-        "item": {
-          "items": [
-            "minecraft:compass"
-          ]
-        },
-        "location": {
-          "block": {
-            "blocks": [
-              "minecraft:lodestone"
-            ]
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:lodestone"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:compass"
+              ]
+            }
           }
-        }
+        ]
       },
       "trigger": "minecraft:item_used_on_block"
     }
@@ -39,6 +47,7 @@
       "use_lodestone"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/nether/use_lodestone/main"
   }

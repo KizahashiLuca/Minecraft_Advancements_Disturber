@@ -3,14 +3,20 @@
   "pools": [
     {
       "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:reference",
+          "name": "mad:phase/game/pvp_on"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
           "weight": 1,
           "conditions": [
-            {
-              "condition": "minecraft:killed_by_player"
-            },
             {
               "condition": "minecraft:entity_properties",
               "predicate": {
@@ -39,9 +45,6 @@
           "weight": 1,
           "conditions": [
             {
-              "condition": "minecraft:killed_by_player"
-            },
-            {
               "condition": "minecraft:entity_properties",
               "predicate": {
                 "team": "TeamB"
@@ -68,9 +71,6 @@
           "type": "minecraft:item",
           "weight": 1,
           "conditions": [
-            {
-              "condition": "minecraft:killed_by_player"
-            },
             {
               "condition": "minecraft:entity_properties",
               "predicate": {
@@ -99,9 +99,6 @@
           "weight": 1,
           "conditions": [
             {
-              "condition": "minecraft:killed_by_player"
-            },
-            {
               "condition": "minecraft:entity_properties",
               "predicate": {
                 "team": "TeamD"
@@ -128,9 +125,6 @@
           "type": "minecraft:item",
           "weight": 1,
           "conditions": [
-            {
-              "condition": "minecraft:killed_by_player"
-            },
             {
               "condition": "minecraft:entity_properties",
               "predicate": {

@@ -28,7 +28,7 @@
                 ["",{"text":"  鉄防具 → ダイヤモンド防具","color":"white","bold":false,"italic":false}],
                 ["",{"text":"  ダイヤモンド防具 → ネザライト防具","color":"white","bold":false,"italic":false}],
                 [""],
-                ["",{"text":"右クリックで使用","color":"dark_purple","bold":false,"italic":false}]
+                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}]
               ]
             },
             {

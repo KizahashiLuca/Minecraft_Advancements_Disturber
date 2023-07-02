@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -13,6 +13,7 @@ scoreboard objectives remove AD_Adventure_adventuring_time
 scoreboard objectives remove AD_Adventure_arbalistic
 scoreboard objectives remove AD_Adventure_avoid_vibration
 scoreboard objectives remove AD_Adventure_bullseye
+scoreboard objectives remove AD_Adventure_craft_decorated_pot_using_only_sherds
 scoreboard objectives remove AD_Adventure_fall_from_world_height
 scoreboard objectives remove AD_Adventure_hero_of_the_village
 scoreboard objectives remove AD_Adventure_honey_block_slide
@@ -22,7 +23,9 @@ scoreboard objectives remove AD_Adventure_kill_mob_near_sculk_catalyst
 scoreboard objectives remove AD_Adventure_lightning_rod_with_villager_no_fire
 scoreboard objectives remove AD_Adventure_ol_betsy
 scoreboard objectives remove AD_Adventure_play_jukebox_in_meadows
+scoreboard objectives remove AD_Adventure_read_power_of_chiseled_bookshelf
 scoreboard objectives remove AD_Adventure_root
+scoreboard objectives remove AD_Adventure_salvage_sherd
 scoreboard objectives remove AD_Adventure_shoot_arrow
 scoreboard objectives remove AD_Adventure_sleep_in_bed
 scoreboard objectives remove AD_Adventure_sniper_duel
@@ -34,6 +37,8 @@ scoreboard objectives remove AD_Adventure_throw_trident
 scoreboard objectives remove AD_Adventure_totem_of_undying
 scoreboard objectives remove AD_Adventure_trade
 scoreboard objectives remove AD_Adventure_trade_at_world_height
+scoreboard objectives remove AD_Adventure_trim_with_all_exclusive_armor_patterns
+scoreboard objectives remove AD_Adventure_trim_with_any_armor_pattern
 scoreboard objectives remove AD_Adventure_two_birds_one_arrow
 scoreboard objectives remove AD_Adventure_very_very_frightening
 scoreboard objectives remove AD_Adventure_voluntary_exile
@@ -55,12 +60,15 @@ scoreboard objectives remove AD_Husbandry_balanced_diet
 scoreboard objectives remove AD_Husbandry_bred_all_animals
 scoreboard objectives remove AD_Husbandry_breed_an_animal
 scoreboard objectives remove AD_Husbandry_complete_catalogue
+scoreboard objectives remove AD_Husbandry_feed_snifflet
 scoreboard objectives remove AD_Husbandry_fishy_business
 scoreboard objectives remove AD_Husbandry_froglights
 scoreboard objectives remove AD_Husbandry_kill_axolotl_target
 scoreboard objectives remove AD_Husbandry_leash_all_frog_variants
 scoreboard objectives remove AD_Husbandry_make_a_sign_glow
 scoreboard objectives remove AD_Husbandry_obtain_netherite_hoe
+scoreboard objectives remove AD_Husbandry_obtain_sniffer_egg
+scoreboard objectives remove AD_Husbandry_plant_any_sniffer_seed
 scoreboard objectives remove AD_Husbandry_plant_seed
 scoreboard objectives remove AD_Husbandry_ride_a_boat_with_a_goat
 scoreboard objectives remove AD_Husbandry_root

@@ -1,18 +1,14 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Set scoreboards
-#### timer
-scoreboard players set #mad Tick 0
-scoreboard players set #mad Second 0
-
 #### game phase
 scoreboard players set @a Death 0
 scoreboard players set @a Kill 0
@@ -24,6 +20,8 @@ scoreboard players enable @a TeleportCenter
 scoreboard players set @a ExitMessage 0
 scoreboard players enable @a ExitMessage
 #### timer
+scoreboard players set #mad Tick 0
+scoreboard players set #mad Second 0
 execute if predicate mad:gamerules/match_mode/individual run scoreboard players operation @a TimeLimit = #mad TimeLimit
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players operation #mad_team_a TimeLimit = #mad TimeLimit
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players operation #mad_team_b TimeLimit = #mad TimeLimit
@@ -45,6 +43,7 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboar
 scoreboard players set @a GeneralSecond 0
 scoreboard players set #mad GeneralSecond 0
 scoreboard players set #mad GeneralTick 0
+scoreboard players set #mad PvPSecond 900
 #### participants
 scoreboard players set @a NumOfParticipants 0
 scoreboard players set @a NumAlive 0
@@ -107,6 +106,11 @@ scoreboard players set @a ArrowTeleportPosY 0
 scoreboard players set @a ArrowTeleportPosZ 0
 #### mobile respawn beacon
 scoreboard players set @a MobileBeaconNumber 0
+#### respawn banner
+execute as @a store result score @s UUID0 run data get entity @s UUID[0]
+execute as @a store result score @s UUID1 run data get entity @s UUID[1]
+execute as @a store result score @s UUID2 run data get entity @s UUID[2]
+execute as @a store result score @s UUID3 run data get entity @s UUID[3]
 #### team
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a DeadOwnTeam 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b DeadOwnTeam 0

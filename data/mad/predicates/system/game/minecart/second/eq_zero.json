@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:marker/minecart/where_summon_minecart_not_summoned"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "Second": {
+        "min": 0,
+        "max": 0
+      }
+    }
+  }
+]

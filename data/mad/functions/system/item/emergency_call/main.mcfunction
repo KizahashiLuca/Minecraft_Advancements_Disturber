@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -22,6 +22,9 @@ execute as @s[predicate=mad:player/alive/e] run tag @a[predicate=mad:system/item
 
 ## Teleport
 tp @a[predicate=mad:system/item/emergency_call/emergency_callee] @s
+
+## Playsound
+execute at @s run playsound minecraft:item.goat_horn.sound.2 master @s ~ ~ ~ 1 1 1
 
 ## Message
 tellraw @s ["",{"text":"[緊急招集] チームメンバーを緊急招集しました。","color":"green"}]

@@ -542,5 +542,6 @@
   "rewards": {
     "experience": 100,
     "function": "mad:system/game/advancements/husbandry/balanced_diet/main"
-  }
+  },
+  "sends_telemetry_event": true
 }

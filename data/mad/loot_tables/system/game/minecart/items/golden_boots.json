@@ -14,6 +14,19 @@
               "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_GoldenBoots\"],RepairCost:2147483647}"
             },
             {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "frost_walker": {
+                  "min": 2,
+                  "max": 2
+                },
+                "soul_speed": {
+                  "min": 3,
+                  "max": 3
+                }
+              }
+            },
+            {
               "function": "minecraft:set_attributes",
               "modifiers": [
                 {

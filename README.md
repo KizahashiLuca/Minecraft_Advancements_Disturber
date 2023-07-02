@@ -5,7 +5,7 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 最後まで生き残ることを目指すPvPデータパック
 
 ## Caution!!
- - マインクラフト Java版 v1.19.3 以降対応です。
+ - マインクラフト Java版 v1.20 以降対応です。
  - 実況でご利用の際は以下項目の記載をお願い致します。
    - 企画者 : ぽたーじゅ
      - Twitter : [https://twitter.com/potagegatop](https://twitter.com/potagegatop)
@@ -16,8 +16,10 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
 
 ## Download
 ダウンロードは 以下リンクからお願いします。
- - Java Edition v1.19.3 以降対応
+ - Java Edition v1.19.3 対応
    - [β-2.2.1](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.2.1)
+ - Java Edition v1.20 対応
+   - [β-2.3](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.3)
    
 ## ルール解説動画
 
@@ -82,6 +84,9 @@ https://user-images.githubusercontent.com/33852306/187057764-0011f5fc-9960-408d-
    - 右クリックで使用
  - エリトラ
    - 壊れかけ
+ - トライデント
+   - 壊れかけ
+   - ランダムに1つエンチャントがされている
  - エヴォーカーの牙の杖
    - 周囲にエヴォーカーの牙を召喚
    - 5回使用可能

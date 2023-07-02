@@ -8,7 +8,12 @@
             "direct_entity": {
               "type": "#minecraft:arrows"
             },
-            "is_projectile": true
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_projectile"
+              }
+            ]
           }
         }
       },
@@ -36,6 +41,7 @@
       "shot_arrow"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/shoot_arrow/main"
   }

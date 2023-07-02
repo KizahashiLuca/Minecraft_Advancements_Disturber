@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -19,8 +19,6 @@ advancement grant @a until mad:achievements/root
 
 ## Take recipes
 recipe take @a *
-recipe give @a[predicate=mad:player/participant] mad:tnt
-recipe give @a[predicate=mad:gamerules/match_mode/team,predicate=mad:player/participant] mad:mobile_respawn_beacon
 
 ## Kill pet
 execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s

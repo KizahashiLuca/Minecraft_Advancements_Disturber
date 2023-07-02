@@ -1,21 +1,20 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Summon an item
 summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:structure_void",Count:1b,tag:{Tags:["MAD_StolenItem"]}},PickupDelay:0s}
 
-## Merge data
-execute store success score @s StealResult run data modify entity @e[predicate=mad:system/item/notice_of_thief/stolen_item,sort=nearest,limit=1] Item set from entity @p[predicate=mad:system/item/notice_of_thief/stolen_player] SelectedItem
+## Steal item
+execute if entity @p[predicate=mad:system/item/notice_of_thief/can_steal] run function mad:system/item/notice_of_thief/execute/hotbar/can_steal
 
 ## Replace item
-execute as @s[predicate=mad:system/item/notice_of_thief/result/success] run item replace entity @p[predicate=mad:system/item/notice_of_thief/stolen_player] weapon.mainhand with minecraft:air
 execute as @s[predicate=mad:system/item/notice_of_thief/result/failure] run kill @e[predicate=mad:system/item/notice_of_thief/stolen_item,sort=nearest,limit=1]
 
 ## Send messages - to thief

@@ -39,6 +39,7 @@
       "kill_pillager"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/adventure/whos_the_pillager_now/main"
   }

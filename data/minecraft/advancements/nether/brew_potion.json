@@ -26,6 +26,7 @@
       "potion"
     ]
   ],
+  "sends_telemetry_event": true,
   "rewards": {
     "function": "mad:system/game/advancements/nether/brew_potion/main"
   }

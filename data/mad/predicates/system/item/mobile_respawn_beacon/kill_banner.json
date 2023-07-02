@@ -1,0 +1,45 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"minecraft:red_banner\"}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"minecraft:blue_banner\"}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"minecraft:yellow_banner\"}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"minecraft:green_banner\"}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"minecraft:purple_banner\"}}"
+      }
+    }
+  ]
+}

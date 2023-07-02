@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -18,3 +18,4 @@ execute if predicate mad:version/1.17 run scoreboard players set #mad Version 17
 execute if predicate mad:version/1.18 run scoreboard players set #mad Version 18
 execute if predicate mad:version/1.19 run scoreboard players set #mad Version 19
 execute if predicate mad:version/1.19.3 run scoreboard players set #mad Version 193
+execute if predicate mad:version/1.20 run scoreboard players set #mad Version 20

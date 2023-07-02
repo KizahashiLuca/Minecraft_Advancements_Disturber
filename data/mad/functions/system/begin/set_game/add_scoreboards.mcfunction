@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.19.3
+## MC-Version: Java Edit. 1.20
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 10 Dec 2022
-## Version   : β-2.2.1
+## Date      : 18 Jun 2023
+## Version   : β-2.3
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -13,20 +13,21 @@
 scoreboard objectives add DataVersion dummy
 scoreboard objectives add Version dummy
 scoreboard objectives add Phase dummy
-scoreboard objectives add PrevPhase dummy
+scoreboard objectives add PvP dummy
 scoreboard objectives add Death minecraft.custom:minecraft.deaths
 scoreboard objectives add Kill dummy
 scoreboard objectives add KillTemp minecraft.custom:minecraft.player_kills
+scoreboard objectives add TimeSinceDeath minecraft.custom:minecraft.time_since_death
 scoreboard objectives add TeleportMinecart trigger
 scoreboard objectives add TeleportCenter trigger
 scoreboard objectives add ExitMessage trigger
 #### timer
-scoreboard objectives add -1 dummy
 scoreboard objectives add 2 dummy
 scoreboard objectives add Second dummy
 scoreboard objectives add Tick dummy
 scoreboard objectives add GeneralSecond dummy
 scoreboard objectives add GeneralTick dummy
+scoreboard objectives add PvPSecond dummy
 scoreboard objectives add SecondPerSurvive dummy
 #### participants
 scoreboard objectives add ParticipantNumber dummy
@@ -119,8 +120,8 @@ scoreboard objectives add BreakSpawner minecraft.mined:minecraft.spawner
 scoreboard objectives add FallDistance dummy
 scoreboard objectives add RailDistance minecraft.custom:minecraft.minecart_one_cm
 #### summons minecart
-scoreboard objectives add 300 dummy
-scoreboard objectives add SecondSummon dummy
+scoreboard objectives add SecondSummon dummy ["",{"text":"支援物資投下まで"}]
+scoreboard objectives add Coordinates dummy ["",{"text":"支援物資座標"}]
 scoreboard objectives add GetMinecartCount dummy
 scoreboard objectives add HasLootTable dummy
 #### transmitter
@@ -150,8 +151,6 @@ scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_
 scoreboard objectives add EvokerFangsCount dummy
 #### maze maker
 scoreboard objectives add UseMazeMaker minecraft.used:minecraft.allay_spawn_egg
-scoreboard objectives add MazeSize dummy
-scoreboard objectives add AisleWidth dummy
 scoreboard objectives add RandomMax dummy
 scoreboard objectives add RandomAngle dummy
 scoreboard objectives add MazePosX dummy
@@ -169,6 +168,12 @@ scoreboard objectives add DetectTeamExists dummy
 #### mobile respawn beacon
 scoreboard objectives add MobileBeaconNumber dummy
 scoreboard objectives add MobileBeaconTmp dummy
+#### respawn banner
+scoreboard objectives add OwnerExists dummy
+scoreboard objectives add UUID0 dummy
+scoreboard objectives add UUID1 dummy
+scoreboard objectives add UUID2 dummy
+scoreboard objectives add UUID3 dummy
 #### team
 scoreboard objectives add TeamMemberNotExist dummy
 scoreboard objectives add DeadOwnTeam dummy
