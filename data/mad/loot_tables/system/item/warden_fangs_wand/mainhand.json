@@ -16,7 +16,7 @@
                 "equipment": {
                   "mainhand": {
                     "durability": {
-                      "min": 67,
+                      "min": 68,
                       "max": 2147483647
                     },
                     "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
@@ -55,8 +55,8 @@
                 "equipment": {
                   "mainhand": {
                     "durability": {
-                      "min": 34,
-                      "max": 66
+                      "min": 35,
+                      "max": 67
                     },
                     "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
                   }
@@ -95,7 +95,7 @@
                   "mainhand": {
                     "durability": {
                       "min": 0,
-                      "max": 33
+                      "max": 34
                     },
                     "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
                   }
