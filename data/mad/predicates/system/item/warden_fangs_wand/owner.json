@@ -2,6 +2,6 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "nbt": "{Tags:[\"MAD_SummonerOfEvokerFangs\"]}"
+    "nbt": "{Tags:[\"MAD_SummonerOfSonicBoom\"]}"
   }
 }

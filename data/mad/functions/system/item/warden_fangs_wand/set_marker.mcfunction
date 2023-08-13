@@ -9,11 +9,10 @@
 #####################################
 
 ## Set owner uuid
-data modify entity @s Owner set from entity @p[predicate=mad:system/item/evoker_fangs_wand/owner] UUID
+data modify entity @s Owner set from entity @p[predicate=mad:system/item/warden_fangs_wand/owner] UUID
 
 ## Set rotation
-data modify entity @s Rotation[0] set from entity @p[predicate=mad:system/item/evoker_fangs_wand/owner] Rotation[0]
-data modify entity @s Rotation[1] set value 0.f
+data modify entity @s Rotation set from entity @p[predicate=mad:system/item/warden_fangs_wand/owner] Rotation
 
 ## Set scoreboard
-scoreboard players set @s EvokerFangsCount 0
+scoreboard players set @s SonicBoomCount 0

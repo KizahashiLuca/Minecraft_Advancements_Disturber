@@ -13,16 +13,14 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": [
-                ["",{"text":"エヴォーカーの牙の杖","color":"aqua","bold":false,"italic":false}]
+                ["",{"text":"ウォーデンの牙の杖","color":"aqua","bold":false,"italic":false}]
               ]
             },
             {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
-                ["",{"text":"エヴォーカーの牙を召喚。","color":"white","bold":false,"italic":false}],
-                ["",{"text":"・通常使用で直線状に牙を放つ","color":"white","bold":false,"italic":false}],
-                ["",{"text":"・スニークしての使用で放射状に牙を放つ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"ウォーデンの衝撃波を放つ。","color":"white","bold":false,"italic":false}],
                 [""],
                 ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}],
                 ["",{"text":"使用回数 残り","color":"green","bold":false,"italic":false},{"text":"5","color":"green","bold":true,"italic":false},{"text":"回","color":"green","bold":false,"italic":false}]
@@ -30,7 +28,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_EvokerFangsWand\"],RepairCost:2147483647}"
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
             }
           ]
         }
