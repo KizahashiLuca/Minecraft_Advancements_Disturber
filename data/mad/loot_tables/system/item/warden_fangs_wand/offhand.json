@@ -16,86 +16,8 @@
                 "equipment": {
                   "offhand": {
                     "durability": {
-                      "min": 82,
+                      "min": 67,
                       "max": 2147483647
-                    },
-                    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
-                  }
-                }
-              }
-            }
-          ],
-          "functions": [
-            {
-              "function": "minecraft:set_lore",
-              "replace": true,
-              "entity": "this",
-              "lore": [
-                ["",{"text":"ウォーデンの衝撃波を放つ。","color":"white","bold":false,"italic":false}],
-                [""],
-                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}],
-                ["",{"text":"使用回数 残り","color":"green","bold":false,"italic":false},{"text":"4","color":"green","bold":true,"italic":false},{"text":"回","color":"green","bold":false,"italic":false}]
-              ]
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": 0.8
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "name": "mad:system/game/minecart/items/warden_fangs_wand",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "equipment": {
-                  "offhand": {
-                    "durability": {
-                      "min": 62,
-                      "max": 81
-                    },
-                    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
-                  }
-                }
-              }
-            }
-          ],
-          "functions": [
-            {
-              "function": "minecraft:set_lore",
-              "replace": true,
-              "entity": "this",
-              "lore": [
-                ["",{"text":"ウォーデンの衝撃波を放つ。","color":"white","bold":false,"italic":false}],
-                [""],
-                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}],
-                ["",{"text":"使用回数 残り","color":"green","bold":false,"italic":false},{"text":"3","color":"green","bold":true,"italic":false},{"text":"回","color":"green","bold":false,"italic":false}]
-              ]
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": 0.6
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "name": "mad:system/game/minecart/items/warden_fangs_wand",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "equipment": {
-                  "offhand": {
-                    "durability": {
-                      "min": 42,
-                      "max": 61
                     },
                     "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
                   }
@@ -117,7 +39,7 @@
             },
             {
               "function": "minecraft:set_damage",
-              "damage": 0.4
+              "damage": 0.66
             }
           ]
         },
@@ -133,8 +55,8 @@
                 "equipment": {
                   "offhand": {
                     "durability": {
-                      "min": 22,
-                      "max": 41
+                      "min": 34,
+                      "max": 66
                     },
                     "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
                   }
@@ -156,7 +78,7 @@
             },
             {
               "function": "minecraft:set_damage",
-              "damage": 0.2
+              "damage": 0.33
             }
           ]
         },
@@ -173,7 +95,7 @@
                   "offhand": {
                     "durability": {
                       "min": 0,
-                      "max": 21
+                      "max": 33
                     },
                     "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
                   }
