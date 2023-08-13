@@ -19,7 +19,7 @@ playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 1.0 2.0
 tag @s add MAD_SummonerOfSonicBoom
 
 ## Summon sonic boom
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["MAD_SonicBoom","MAD_NotSetPlayer"],NoGravity:1b,Invulnerable:1b,Particle:"minecraft:block minecraft:air",Radius:0.5f,Duration:2147483647}
+summon minecraft:area_effect_cloud ~ ~1.0 ~ {Tags:["MAD_SonicBoom","MAD_NotSetPlayer"],NoGravity:1b,Invulnerable:1b,Particle:"minecraft:block minecraft:air",Radius:0.5f,Duration:2147483647}
 execute as @e[predicate=mad:system/item/warden_fangs_wand/not_set_marker] at @s run function mad:system/item/warden_fangs_wand/set_marker
 
 ## Set sonic boom
