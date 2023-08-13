@@ -9,7 +9,7 @@
 #####################################
 
 ## Reset choice
-scoreboard players set #mad CartInterval 600
+scoreboard players set #mad CartInterval 300
 
 ## Send messages
 function mad:system/begin/gui/minecart_interval/change_to

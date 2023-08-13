@@ -43,18 +43,18 @@ scoreboard players set #mad 10000 10000
 scoreboard players set #mad TimeLimit 300
 scoreboard players set #mad TimeLimitPrv 300
 #### setting phase - choose area
-scoreboard players set #mad WorldBorder 1500
-scoreboard players set #mad WorldBorderPrv 1500
+scoreboard players set #mad WorldBorder 1000
+scoreboard players set #mad WorldBorderPrv 1000
 scoreboard players set #mad WorldBorderEnd 0
 #### setting phase - choose difficulty
 scoreboard players set #mad Difficulty 2
 scoreboard players set #mad DifficultyPrv 2
 #### setting phase - choose adding time
-scoreboard players set #mad AddingTime 60
-scoreboard players set #mad AddingTimePrv 60
+scoreboard players set #mad AddingTime 100
+scoreboard players set #mad AddingTimePrv 100
 #### setting phase - choose minecart interval
-scoreboard players set #mad CartInterval 600
-scoreboard players set #mad CartIntervalPrv 600
+scoreboard players set #mad CartInterval 300
+scoreboard players set #mad CartIntervalPrv 300
 #### setting phase - choose gamerule
 scoreboard players set #mad WeatherCycle 1
 scoreboard players set #mad DaylightCycle 1
