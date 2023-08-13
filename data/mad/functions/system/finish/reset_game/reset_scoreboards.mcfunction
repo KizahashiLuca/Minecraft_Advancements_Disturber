@@ -146,9 +146,9 @@ scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove ThiefTick
 scoreboard objectives remove ThiefSecond
 scoreboard objectives remove StealResult
-#### evoker fangs wand
+#### warden fangs wand
 scoreboard objectives remove UseFungusStick
-scoreboard objectives remove EvokerFangsCount
+scoreboard objectives remove SonicBoomCount
 #### maze maker
 scoreboard objectives remove UseMazeMaker
 scoreboard objectives remove RandomMax

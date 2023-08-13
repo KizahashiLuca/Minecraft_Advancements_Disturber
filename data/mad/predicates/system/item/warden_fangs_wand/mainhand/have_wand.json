@@ -4,11 +4,8 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_EvokerFangsWand\"]}"
+        "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"]}"
       }
-    },
-    "flags": {
-      "is_sneaking": false
     }
   }
 }

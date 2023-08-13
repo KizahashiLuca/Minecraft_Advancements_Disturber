@@ -24,8 +24,8 @@ execute as @a[predicate=mad:system/item/notice_of_thief/thief] at @s run functio
 ## Emergency call
 execute as @a[predicate=mad:system/item/emergency_call/use] at @s run function mad:system/item/emergency_call/main
 
-## Evoker fangs wand
-execute as @a[predicate=mad:system/item/evoker_fangs_wand/use] at @s run function mad:system/item/evoker_fangs_wand/main
+## Warden fangs wand
+execute as @a[predicate=mad:system/item/warden_fangs_wand/use] at @s run function mad:system/item/warden_fangs_wand/main
 
 ## Return portal
 execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run function mad:system/item/return_portal/main

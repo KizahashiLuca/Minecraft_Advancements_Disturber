@@ -4,7 +4,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{Inventory:[{tag:{Tags:[\"MAD_EvokerFangsWand\"]}}]}"
+      "nbt": "{Inventory:[{tag:{Tags:[\"MAD_WardenFangsWand\"]}}]}"
     }
   }
 }
