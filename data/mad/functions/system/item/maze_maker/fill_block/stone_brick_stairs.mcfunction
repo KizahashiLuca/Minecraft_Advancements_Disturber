@@ -9,4 +9,4 @@
 #####################################
 
 ## Fill wall
-fill ~-18 ~-1 ~-18 ~18 ~3 ~18 minecraft:stone_brick_stairs keep
+fill ~-18 ~-1 ~-18 ~18 ~3 ~18 minecraft:stone_brick_stairs replace #mad:replace_maze_block

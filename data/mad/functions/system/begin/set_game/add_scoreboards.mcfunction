@@ -153,9 +153,12 @@ scoreboard objectives add SonicBoomCount dummy
 scoreboard objectives add UseMazeMaker minecraft.used:minecraft.allay_spawn_egg
 scoreboard objectives add RandomMax dummy
 scoreboard objectives add RandomAngle dummy
+scoreboard objectives add MazeNumber dummy
+scoreboard objectives add MazeNumberTmp dummy
 scoreboard objectives add MazePosX dummy
 scoreboard objectives add MazePosZ dummy
 scoreboard objectives add DeadEnd dummy
+scoreboard objectives add HasExit dummy
 #### teleport arrow
 scoreboard objectives add ArrowTeleportTick dummy
 scoreboard objectives add ArrowTeleportPosX dummy

@@ -9,4 +9,4 @@
 #####################################
 
 ## Fill wall
-fill ~-18 ~-1 ~-18 ~18 ~3 ~18 minecraft:glass keep
+fill ~-18 ~-1 ~-18 ~18 ~3 ~18 minecraft:glass replace #mad:replace_maze_block
