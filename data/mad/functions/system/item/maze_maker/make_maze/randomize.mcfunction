@@ -15,7 +15,7 @@ scoreboard players operation @s RandomAnswer = #mad RandomSeed
 scoreboard players operation @s RandomAnswer %= @s RandomMax
 
 ## Set angle
-function mad:system/item/maze_maker/set_angle
+function mad:system/item/maze_maker/make_maze/set_angle
 
 ## Loop
-execute as @s[predicate=mad:system/item/maze_maker/not_set_angle] run function mad:system/item/maze_maker/randomize
+execute as @s[predicate=mad:system/item/maze_maker/make_maze/not_set_angle] run function mad:system/item/maze_maker/make_maze/randomize

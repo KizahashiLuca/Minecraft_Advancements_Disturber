@@ -8,8 +8,7 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Fill ground
-fill ~-18 ~-1 ~-18 ~18 ~-1 ~18 minecraft:sandstone replace #mad:replace_maze_block
-
-## Fill wall
-fill ~-18 ~0 ~-18 ~18 ~3 ~18 minecraft:sand replace #mad:replace_maze_block
+## Detect air
+scoreboard players set @s RandomMax 0
+function mad:system/item/maze_maker/make_maze/detect_path
+kill @s[predicate=mad:system/item/maze_maker/make_maze/dead_end]

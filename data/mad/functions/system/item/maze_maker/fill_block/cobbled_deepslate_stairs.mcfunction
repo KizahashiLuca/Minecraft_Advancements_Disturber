@@ -9,4 +9,4 @@
 #####################################
 
 ## Fill wall
-fill ~-18 ~-1 ~-18 ~18 ~3 ~18 minecraft:cobbled_deepslate_stairs keep
+fill ~-18 ~-1 ~-18 ~18 ~3 ~18 minecraft:cobbled_deepslate_stairs replace #mad:replace_maze_block

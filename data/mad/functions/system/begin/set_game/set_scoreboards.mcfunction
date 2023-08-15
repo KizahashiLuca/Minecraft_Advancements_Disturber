@@ -92,6 +92,8 @@ scoreboard players set #mad WaitTime 30
 scoreboard players set #mad SecondSummon 300
 #### team
 scoreboard players set #mad TeamMemberNotExist 0
+#### maze maker
+scoreboard players set #mad MazeNumber 1
 #### respawn beacon
 scoreboard players set #mad CompareNames 1
 scoreboard players set #mad DetectTeamExists 1

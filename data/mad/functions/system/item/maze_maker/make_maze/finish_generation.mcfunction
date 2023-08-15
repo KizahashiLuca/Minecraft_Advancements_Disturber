@@ -8,7 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Detect air
-scoreboard players set @s RandomMax 0
-function mad:system/item/maze_maker/detect_path
-kill @s[predicate=mad:system/item/maze_maker/dead_end]
+## Set exit
+execute as @e[predicate=mad:system/item/maze_maker/make_maze/set_exit/same_number_maze_exit_marker] at @s run function mad:system/item/maze_maker/make_maze/set_exit/main
+
+## Kill a marker
+kill @s

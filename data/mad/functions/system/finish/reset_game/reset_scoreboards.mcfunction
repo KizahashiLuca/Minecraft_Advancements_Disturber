@@ -153,9 +153,12 @@ scoreboard objectives remove SonicBoomCount
 scoreboard objectives remove UseMazeMaker
 scoreboard objectives remove RandomMax
 scoreboard objectives remove RandomAngle
+scoreboard objectives remove MazeNumber
+scoreboard objectives remove MazeNumberTmp
 scoreboard objectives remove MazePosX
 scoreboard objectives remove MazePosZ
 scoreboard objectives remove DeadEnd
+scoreboard objectives remove HasExit
 #### teleport arrow
 scoreboard objectives remove ArrowTeleportTick
 scoreboard objectives remove ArrowTeleportPosX
