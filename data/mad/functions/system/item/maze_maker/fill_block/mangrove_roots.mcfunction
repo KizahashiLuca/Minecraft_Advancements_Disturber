@@ -8,8 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Fill ground
-fill ~-18 ~-1 ~-18 ~18 ~-1 ~18 minecraft:sandstone replace #mad:replace_maze_block
-
 ## Fill wall
-fill ~-18 ~0 ~-18 ~18 ~3 ~18 minecraft:sand replace #mad:replace_maze_block
+fill ~-18 ~-1 ~-18 ~18 ~3 ~18 minecraft:mangrove_roots replace #mad:replace_maze_block

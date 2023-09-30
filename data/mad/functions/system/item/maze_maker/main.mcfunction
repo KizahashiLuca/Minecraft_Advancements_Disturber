@@ -19,17 +19,17 @@ tag @p[predicate=mad:system/item/maze_maker/set_player/detect_maze_maker,sort=ne
 
 ## Randomize
 scoreboard players set @p[predicate=mad:system/item/maze_maker/set_player/maze_player] RandomAnswer 0
-scoreboard players set #mad RandomMax 5
+scoreboard players set #mad RandomMax 4
 scoreboard players operation #mad RandomSeed *= #mad RandomMultiplier
 scoreboard players operation #mad RandomSeed %= #mad RandomModder
 scoreboard players operation @p[predicate=mad:system/item/maze_maker/set_player/maze_player] RandomAnswer = #mad RandomSeed
 scoreboard players operation @p[predicate=mad:system/item/maze_maker/set_player/maze_player] RandomAnswer %= #mad RandomMax
+scoreboard players add @p[predicate=mad:system/item/maze_maker/set_player/maze_player] RandomAnswer 1
 
 ## Set wall block
-execute as @p[predicate=mad:system/item/maze_maker/fill_block/sand] at @s run function mad:system/item/maze_maker/fill_block/sand
 execute as @p[predicate=mad:system/item/maze_maker/fill_block/glass] at @s run function mad:system/item/maze_maker/fill_block/glass
-execute as @p[predicate=mad:system/item/maze_maker/fill_block/oak_stairs] at @s run function mad:system/item/maze_maker/fill_block/oak_stairs
-execute as @p[predicate=mad:system/item/maze_maker/fill_block/stone_brick_stairs] at @s run function mad:system/item/maze_maker/fill_block/stone_brick_stairs
+execute as @p[predicate=mad:system/item/maze_maker/fill_block/mangrove_roots] at @s run function mad:system/item/maze_maker/fill_block/mangrove_roots
+execute as @p[predicate=mad:system/item/maze_maker/fill_block/soul_sand] at @s run function mad:system/item/maze_maker/fill_block/soul_sand
 execute as @p[predicate=mad:system/item/maze_maker/fill_block/cobbled_deepslate_stairs] at @s run function mad:system/item/maze_maker/fill_block/cobbled_deepslate_stairs
 
 ## Initialize digger

@@ -1,9 +1,8 @@
 {
   "values": [
     "minecraft:glass",
-    "minecraft:sand",
-    "minecraft:oak_stairs",
-    "minecraft:cobbled_deepslate_stairs",
-    "minecraft:stone_brick_stairs"
+    "minecraft:mangrove_roots",
+    "minecraft:soul_sand",
+    "minecraft:cobbled_deepslate_stairs"
   ]
 }
