@@ -27,7 +27,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_TeleportArrow\"],Potion:\"minecraft:water\",CustomPotionEffects:[{Id:24,Duration:200},{Id:25,Duration:100}]}"
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_TeleportArrow\"],custom_potion_effects:[{id:\"minecraft:glowing\",amplifier:1b,duration:200,show_particles:1b},{id:\"minecraft:levitation\",amplifier:1b,duration:100,show_particles:1b}]}"
             }
           ]
         }
