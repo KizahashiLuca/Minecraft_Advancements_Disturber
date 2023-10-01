@@ -16,7 +16,8 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "minecraft:efficiency": 5
+                "minecraft:efficiency": 5,
+                "minecraft:fortune": 3
               }
             }
           ]

@@ -52,7 +52,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "mad:system/game/minecart/items/evoker_fangs_wand"
+          "name": "mad:system/game/minecart/items/warden_fangs_wand"
         },
         {
           "type": "minecraft:loot_table",

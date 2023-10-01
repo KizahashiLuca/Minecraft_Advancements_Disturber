@@ -1,0 +1,45 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "MazePosX": {
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "MazePosX": {
+          "min": 8,
+          "max": 8
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "MazePosZ": {
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "MazePosZ": {
+          "min": 8,
+          "max": 8
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:system/item/maze_maker/set_player/maze_player"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "RandomAnswer": {
+        "min": 3,
+        "max": 3
+      }
+    }
+  }
+]

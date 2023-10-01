@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20
+## MC-Version: Java Edit. 1.20.2
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 18 Jun 2023
-## Version   : β-2.3
+## Date      : 01 Oct 2023
+## Version   : β-2.4
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -92,6 +92,8 @@ scoreboard players set #mad WaitTime 30
 scoreboard players set #mad SecondSummon 300
 #### team
 scoreboard players set #mad TeamMemberNotExist 0
+#### maze maker
+scoreboard players set #mad MazeNumber 1
 #### respawn beacon
 scoreboard players set #mad CompareNames 1
 scoreboard players set #mad DetectTeamExists 1
@@ -172,7 +174,7 @@ scoreboard players set @a ThiefTick 0
 scoreboard players set @a ThiefSecond 5
 scoreboard players set #mad ThiefSecond 5
 scoreboard players set @a StealResult 0
-#### evoker fangs wand
+#### warden fangs wand
 scoreboard players set @a UseFungusStick 0
 #### maze maker
 scoreboard players set @a UseMazeMaker 0

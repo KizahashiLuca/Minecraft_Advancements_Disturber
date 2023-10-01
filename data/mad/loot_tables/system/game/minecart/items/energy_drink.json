@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_EnergyDrink\"],CustomPotionEffects:[{Id:10,Amplifier:3,Duration:400},{Id:23,Amplifier:20,Duration:400},{Id:1,Amplifier:0,Duration:400},{Id:3,Amplifier:0,Duration:400}],CustomPotionColor:3470848}"
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_EnergyDrink\"],custom_potion_effects:[{id:\"minecraft:speed\",amplifier:0b,duration:400},{id:\"minecraft:haste\",amplifier:0b,duration:400},{id:\"minecraft:regeneration\",amplifier:3b,duration:400},{id:\"minecraft:saturation\",amplifier:20b,duration:400}],CustomPotionColor:3470848}"
             }
           ]
         }

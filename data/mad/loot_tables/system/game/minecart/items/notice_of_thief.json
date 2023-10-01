@@ -20,9 +20,9 @@
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
-                ["",{"text":"他プレイヤー全員に怪盗予告を発する。","color":"white","bold":false,"italic":false}],
-                ["",{"text":"他プレイヤーのうち誰か1人が手に持って","color":"white","bold":false,"italic":false}],
-                ["",{"text":"いるアイテムを5秒後に奪う。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"敵プレイヤー全員に怪盗予告を発する。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"敵プレイヤーの誰か1人から、アイテムを5秒後に奪う。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"アイテムはホットバーのどれか1スロットから選ばれる。","color":"white","bold":false,"italic":false}],
                 [""],
                 ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}]
               ]

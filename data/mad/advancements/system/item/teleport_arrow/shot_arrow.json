@@ -7,7 +7,7 @@
           "type": {
             "direct_entity": {
               "type": "minecraft:arrow",
-              "nbt": "{Potion:\"minecraft:water\",CustomPotionEffects:[{Id:24,Duration:200},{Id:25,Duration:100}]}"
+              "nbt": "{custom_potion_effects:[{id:\"minecraft:glowing\"},{id:\"minecraft:levitation\"}]}"
             }
           }
         }

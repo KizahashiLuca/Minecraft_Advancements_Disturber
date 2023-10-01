@@ -1,0 +1,110 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:system/game/minecart/items/warden_fangs_wand",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "durability": {
+                      "min": 68,
+                      "max": 2147483647
+                    },
+                    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
+                  }
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "replace": true,
+              "entity": "this",
+              "lore": [
+                ["",{"text":"ウォーデンの衝撃波を放つ。","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}],
+                ["",{"text":"使用回数 残り","color":"green","bold":false,"italic":false},{"text":"2","color":"green","bold":true,"italic":false},{"text":"回","color":"green","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 0.66
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "mad:system/game/minecart/items/warden_fangs_wand",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "durability": {
+                      "min": 35,
+                      "max": 67
+                    },
+                    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
+                  }
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "replace": true,
+              "entity": "this",
+              "lore": [
+                ["",{"text":"ウォーデンの衝撃波を放つ。","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}],
+                ["",{"text":"使用回数 残り","color":"green","bold":false,"italic":false},{"text":"1","color":"green","bold":true,"italic":false},{"text":"回","color":"green","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 0.33
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:air",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "durability": {
+                      "min": 0,
+                      "max": 34
+                    },
+                    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_WardenFangsWand\"],RepairCost:2147483647}"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

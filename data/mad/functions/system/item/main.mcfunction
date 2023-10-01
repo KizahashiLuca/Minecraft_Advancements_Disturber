@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20
+## MC-Version: Java Edit. 1.20.2
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 18 Jun 2023
-## Version   : β-2.3
+## Date      : 01 Oct 2023
+## Version   : β-2.4
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -24,15 +24,15 @@ execute as @a[predicate=mad:system/item/notice_of_thief/thief] at @s run functio
 ## Emergency call
 execute as @a[predicate=mad:system/item/emergency_call/use] at @s run function mad:system/item/emergency_call/main
 
-## Evoker fangs wand
-execute as @a[predicate=mad:system/item/evoker_fangs_wand/use] at @s run function mad:system/item/evoker_fangs_wand/main
+## Warden fangs wand
+execute as @a[predicate=mad:system/item/warden_fangs_wand/use] at @s run function mad:system/item/warden_fangs_wand/main
 
 ## Return portal
 execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run function mad:system/item/return_portal/main
 
-## Make maker
+## Maze maker
 execute as @a[predicate=mad:system/item/maze_maker/use] at @s run function mad:system/item/maze_maker/main
-execute as @e[predicate=mad:system/item/maze_maker/maze_marker] at @s run function mad:system/item/maze_maker/make_maze
+execute as @e[predicate=mad:system/item/maze_maker/maze_marker] at @s run function mad:system/item/maze_maker/make_maze/main
 
 ## Teleport arrow
 #execute as @e[predicate=mad:system/item/teleport_arrow/onground_arrow] at @s run function mad:system/item/teleport_arrow/modify_data

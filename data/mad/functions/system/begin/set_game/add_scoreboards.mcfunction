@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20
+## MC-Version: Java Edit. 1.20.2
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 18 Jun 2023
-## Version   : β-2.3
+## Date      : 01 Oct 2023
+## Version   : β-2.4
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -148,14 +148,17 @@ scoreboard objectives add ThiefSecond dummy
 scoreboard objectives add StealResult dummy
 #### evoker fangs wand
 scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add EvokerFangsCount dummy
+scoreboard objectives add SonicBoomCount dummy
 #### maze maker
 scoreboard objectives add UseMazeMaker minecraft.used:minecraft.allay_spawn_egg
 scoreboard objectives add RandomMax dummy
 scoreboard objectives add RandomAngle dummy
+scoreboard objectives add MazeNumber dummy
+scoreboard objectives add MazeNumberTmp dummy
 scoreboard objectives add MazePosX dummy
 scoreboard objectives add MazePosZ dummy
 scoreboard objectives add DeadEnd dummy
+scoreboard objectives add HasExit dummy
 #### teleport arrow
 scoreboard objectives add ArrowTeleportTick dummy
 scoreboard objectives add ArrowTeleportPosX dummy
