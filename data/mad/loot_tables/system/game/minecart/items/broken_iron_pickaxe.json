@@ -7,16 +7,23 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:diamond_pickaxe",
+          "name": "minecraft:iron_pickaxe",
           "functions": [
             {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.04,
+                "max": 0.04
+              }
+            },
+            {
               "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_DiamondPickaxe\"]}"
+              "tag": "{Tags:[\"MAD_MinecartItem\",\"MAD_BrokenIronPickaxe\"]}"
             },
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "minecraft:efficiency": 5
+                "minecraft:fortune": 3
               }
             }
           ]
