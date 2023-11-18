@@ -23,6 +23,9 @@ weather clear
 ## Reset respawn beacon
 execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/structure] at @s run setblock ~ ~-2 ~ minecraft:obsidian
 
+## Remove storage
+data remove storage mad: minecart
+
 ## Kill entities
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]

@@ -19,3 +19,6 @@ time set noon
 
 ## Set weather
 weather clear
+
+## Remove storage
+data remove storage mad: minecart

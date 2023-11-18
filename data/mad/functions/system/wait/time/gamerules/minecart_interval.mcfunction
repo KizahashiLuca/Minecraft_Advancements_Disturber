@@ -8,6 +8,13 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send match mode
-scoreboard players reset 追加生存時間（秒）： Sidebar
-scoreboard players operation 物資投下間隔（秒）： Sidebar = #mad CartInterval
+## Reset scoreboard sidebar display
+scoreboard players reset 追加生存時間（秒）:
+
+## Set sidebar display
+scoreboard objectives setdisplay sidebar Sidebar
+scoreboard objectives modify Sidebar numberformat
+
+## Cart interval
+scoreboard players operation 物資投下間隔（秒）: Sidebar = #mad CartInterval
+scoreboard players display numberformat 物資投下間隔（秒）: Sidebar styled {"color":"green"}

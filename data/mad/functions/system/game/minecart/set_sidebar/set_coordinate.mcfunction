@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Reset scoreboard sidebar display
-scoreboard players reset 難易度:
-
-## Reset sidebar display
-scoreboard objectives modify Sidebar numberformat
-scoreboard objectives setdisplay sidebar
+## Set coordinate
+$scoreboard players display numberformat X: Sidebar fixed [{"text":"$(x)","color":"green"}]
+$scoreboard players display numberformat Z: Sidebar fixed [{"text":"$(z)","color":"green"}]

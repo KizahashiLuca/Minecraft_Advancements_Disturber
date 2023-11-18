@@ -21,6 +21,7 @@ scoreboard objectives remove TimeSinceDeath
 scoreboard objectives remove TeleportMinecart
 scoreboard objectives remove TeleportCenter
 scoreboard objectives remove ExitMessage
+scoreboard objectives remove Sidebar
 #### timer
 scoreboard objectives remove 2
 scoreboard objectives remove Second
@@ -111,7 +112,6 @@ scoreboard objectives remove VisibleInvisPrv
 scoreboard objectives remove VisibleDeathPrv
 #### wait phase
 scoreboard objectives remove WaitTime
-scoreboard objectives remove Sidebar
 #### advancements
 scoreboard objectives remove HasAdvancements
 #### advancements - originals
@@ -121,7 +121,6 @@ scoreboard objectives remove FallDistance
 scoreboard objectives remove RailDistance
 #### summons minecart
 scoreboard objectives remove SecondSummon
-scoreboard objectives remove Coordinates
 scoreboard objectives remove GetMinecartCount
 scoreboard objectives remove HasLootTable
 #### transmitter
@@ -194,23 +193,18 @@ scoreboard players reset #mad_team_b
 scoreboard players reset #mad_team_c
 scoreboard players reset #mad_team_d
 scoreboard players reset #mad_team_e
-scoreboard players reset マッチモード：ソロ戦
-scoreboard players reset マッチモード：個人戦
-scoreboard players reset マッチモード：チーム戦
-scoreboard players reset 初期生存時間（秒）：
-scoreboard players reset 追加生存時間（秒）：
-scoreboard players reset 物資投下間隔（秒）：
+scoreboard players reset マッチモード:
+scoreboard players reset 人数:
+scoreboard players reset チーム数:
+scoreboard players reset 初期生存時間（秒）:
+scoreboard players reset 追加生存時間（秒）:
+scoreboard players reset 物資投下間隔（秒）:
 scoreboard players reset ワールドボーダー
-scoreboard players reset （ブロック四方）：
-scoreboard players reset 天候サイクル：あり
-scoreboard players reset 天候サイクル：なし
-scoreboard players reset 昼夜サイクル：あり
-scoreboard players reset 昼夜サイクル：なし
-scoreboard players reset 難易度：ピースフル
-scoreboard players reset 難易度：イージー
-scoreboard players reset 難易度：ノーマル
-scoreboard players reset 難易度：ハード
-scoreboard players reset 難易度：ハードコア
-scoreboard players reset あと
+scoreboard players reset （ブロック四方）:
+scoreboard players reset 天候サイクル:
+scoreboard players reset 昼夜サイクル:
+scoreboard players reset 難易度:
+scoreboard players reset 投下まであと:
+scoreboard players reset 既に投下済み
 scoreboard players reset X:
 scoreboard players reset Z:

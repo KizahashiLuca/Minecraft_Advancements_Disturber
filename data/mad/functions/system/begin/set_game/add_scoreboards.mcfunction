@@ -21,6 +21,7 @@ scoreboard objectives add TimeSinceDeath minecraft.custom:minecraft.time_since_d
 scoreboard objectives add TeleportMinecart trigger
 scoreboard objectives add TeleportCenter trigger
 scoreboard objectives add ExitMessage trigger
+scoreboard objectives add Sidebar dummy ["",{"text":"設定項目"}]
 #### timer
 scoreboard objectives add 2 dummy
 scoreboard objectives add Second dummy
@@ -111,7 +112,6 @@ scoreboard objectives add VisibleInvisPrv dummy
 scoreboard objectives add VisibleDeathPrv dummy
 #### wait phase
 scoreboard objectives add WaitTime dummy
-scoreboard objectives add Sidebar dummy ["",{"text":"設定項目"}]
 #### advancements
 scoreboard objectives add HasAdvancements dummy ["",{"text":"解除済み進捗個数"}]
 #### advancements - originals
@@ -120,8 +120,7 @@ scoreboard objectives add BreakSpawner minecraft.mined:minecraft.spawner
 scoreboard objectives add FallDistance dummy
 scoreboard objectives add RailDistance minecraft.custom:minecraft.minecart_one_cm
 #### summons minecart
-scoreboard objectives add SecondSummon dummy ["",{"text":"支援物資投下まで"}]
-scoreboard objectives add Coordinates dummy ["",{"text":"支援物資座標"}]
+scoreboard objectives add SecondSummon dummy
 scoreboard objectives add GetMinecartCount dummy
 scoreboard objectives add HasLootTable dummy
 #### transmitter

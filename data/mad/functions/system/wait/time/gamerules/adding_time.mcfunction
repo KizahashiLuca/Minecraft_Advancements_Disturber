@@ -8,6 +8,13 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send match mode
-scoreboard players reset 初期生存時間（秒）： Sidebar
-scoreboard players operation 追加生存時間（秒）： Sidebar = #mad AddingTime
+## Reset scoreboard sidebar display
+scoreboard players reset 初期生存時間（秒）:
+
+## Set sidebar display
+scoreboard objectives setdisplay sidebar Sidebar
+scoreboard objectives modify Sidebar numberformat
+
+## Adding time
+scoreboard players operation 追加生存時間（秒）: Sidebar = #mad AddingTime
+scoreboard players display numberformat 追加生存時間（秒）: Sidebar styled {"color":"green"}

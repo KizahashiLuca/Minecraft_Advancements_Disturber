@@ -25,6 +25,8 @@ scoreboard players set @a TeleportCenter 0
 scoreboard players enable @a TeleportCenter
 scoreboard players set @a ExitMessage 0
 scoreboard players enable @a ExitMessage
+scoreboard objectives modify Sidebar displayname ["",{"text":"支援物資 投下情報"}]
+scoreboard objectives setdisplay sidebar Sidebar
 #### participants
 scoreboard players set @a NumOfParticipants 0
 scoreboard players set @a NumAlive 0
@@ -51,7 +53,6 @@ scoreboard players set @a BreakSpawner 0
 scoreboard players set @a FallDistance 0
 scoreboard players set @a RailDistance 0
 #### summons minecart
-scoreboard objectives setdisplay sidebar SecondSummon
 scoreboard players set @a GetMinecartCount 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a GetMinecartCount 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b GetMinecartCount 0

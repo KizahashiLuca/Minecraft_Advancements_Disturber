@@ -17,6 +17,9 @@ time set noon
 ## Set weather
 weather clear
 
+## Remove storage
+data remove storage mad: minecart
+
 ## Set world
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
