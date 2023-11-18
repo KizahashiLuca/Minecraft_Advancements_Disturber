@@ -15,4 +15,4 @@ execute at @e[predicate=mad:marker/world_spawn] run summon minecraft:marker ~ 32
 execute as @e[predicate=mad:marker/minecart/detect_where_summon_minecart] run function mad:system/game/minecart/teleport_minecart/main
 
 ## Set sidebar
-execute as @e[predicate=mad:marker/minecart/where_summon_minecart] run function mad:system/game/minecart/set_sidebar/before_drop
+execute as @e[predicate=mad:marker/minecart/where_summon_minecart] run function mad:system/game/minecart/set_sidebar/first_drop
