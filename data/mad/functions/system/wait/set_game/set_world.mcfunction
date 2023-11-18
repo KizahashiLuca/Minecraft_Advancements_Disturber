@@ -34,6 +34,7 @@ kill @e[predicate=mad:system/item/upgrader/tool/monster_egg]
 kill @e[predicate=mad:system/item/emergency_call/monster_egg]
 kill @e[predicate=mad:system/item/notice_of_thief/monster_egg]
 kill @e[predicate=mad:system/item/transmitter/monster_egg]
+kill @e[predicate=mad:system/item/maze_maker/monster_egg]
 kill @e[type=minecraft:armor_stand,tag=MAD_MinecartItem]
 
 ## Set world border

@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:allay",
-    "nbt": "{CustomName:'{\"extra\":[{\"bold\":false,\"italic\":false,\"color\":\"light_purple\",\"text\":\"メイズメイカー\"}],\"text\":\"\"}'}"
+    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_MazeMaker\"]}"
   }
 }
