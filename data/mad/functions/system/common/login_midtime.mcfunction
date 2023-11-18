@@ -24,12 +24,13 @@ experience set @s 0 levels
 experience set @s 0 points
 #### Set effect
 effect clear @s
-effect give @s minecraft:resistance 1000000 6 true
-effect give @s minecraft:fire_resistance 1000000 6 true
-effect give @s minecraft:water_breathing 1000000 6 true
-effect give @s minecraft:saturation 1000000 10 true
-effect give @s minecraft:regeneration 1000000 10 true
-effect give @s minecraft:night_vision 1000000 1 true
+effect give @s minecraft:resistance infinite 6 true
+effect give @s minecraft:fire_resistance infinite 6 true
+effect give @s minecraft:water_breathing infinite 6 true
+effect give @s minecraft:saturation infinite 10 true
+effect give @s minecraft:regeneration infinite 10 true
+effect give @s minecraft:invisibility infinite 1 true
+effect give @s minecraft:night_vision infinite 1 true
 ## Set scoreboard
 scoreboard players set @s TeleportMinecart 0
 scoreboard players enable @s TeleportMinecart

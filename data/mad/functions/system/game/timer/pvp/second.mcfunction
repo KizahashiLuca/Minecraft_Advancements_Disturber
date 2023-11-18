@@ -11,5 +11,9 @@
 ## Set scoreboard
 scoreboard players remove #mad PvPSecond 1
 
-## Time over
+## Send messages
+execute if predicate mad:system/game/timer/pvp/second/eq_ten_minutes run function mad:system/game/timer/pvp/before_ten_minutes
+execute if predicate mad:system/game/timer/pvp/second/eq_five_minutes run function mad:system/game/timer/pvp/before_five_minutes
+execute if predicate mad:system/game/timer/pvp/second/eq_three_minutes run function mad:system/game/timer/pvp/before_three_minutes
+execute if predicate mad:system/game/timer/pvp/second/eq_one_minute run function mad:system/game/timer/pvp/before_one_minute
 execute if predicate mad:system/game/timer/pvp/second/eq_zero run function mad:system/game/timer/pvp/set_pvp_on
