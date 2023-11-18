@@ -35,10 +35,10 @@ experience set @a 0 points
 
 ## Set effect
 effect clear @a[predicate=mad:player/participant]
-effect give @a[predicate=mad:player/not_participant] minecraft:resistance 1000000 6 true
-effect give @a[predicate=mad:player/not_participant] minecraft:fire_resistance 1000000 6 true
-effect give @a[predicate=mad:player/not_participant] minecraft:water_breathing 1000000 6 true
-effect give @a[predicate=mad:player/not_participant] minecraft:saturation 1000000 10 true
-effect give @a[predicate=mad:player/not_participant] minecraft:regeneration 1000000 10 true
-effect give @a[predicate=mad:player/not_participant] minecraft:invisibility 1000000 1 true
-effect give @a[predicate=mad:player/not_participant] minecraft:night_vision 1000000 1 true
+effect give @a[predicate=mad:player/not_participant] minecraft:resistance infinite 6 true
+effect give @a[predicate=mad:player/not_participant] minecraft:fire_resistance infinite 6 true
+effect give @a[predicate=mad:player/not_participant] minecraft:water_breathing infinite 6 true
+effect give @a[predicate=mad:player/not_participant] minecraft:saturation infinite 10 true
+effect give @a[predicate=mad:player/not_participant] minecraft:regeneration infinite 10 true
+effect give @a[predicate=mad:player/not_participant] minecraft:invisibility infinite 1 true
+effect give @a[predicate=mad:player/not_participant] minecraft:night_vision infinite 1 true
