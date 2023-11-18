@@ -67,6 +67,9 @@ function mad:system/begin/set_game/detect_version
 ## Count players
 function mad:system/begin/set_game/count_players
 
+## Set scoreboards
+execute if predicate mad:gamerules/num_of_participants/one run scoreboard players set #mad CartInterval 100
+
 ## Send messages
 execute if predicate mad:system/begin/set_game/accept_condition run function mad:system/begin/set_game/send_messages
 execute if predicate mad:system/begin/set_game/version_error run function mad:system/finish/version_error/main
