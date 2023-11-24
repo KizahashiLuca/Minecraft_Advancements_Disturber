@@ -16,3 +16,9 @@ scoreboard objectives modify Sidebar displayautoupdate true
 ## Set scoreboard
 scoreboard players reset 既に投下済み
 scoreboard players operation 投下まであと: Sidebar = @s Second
+scoreboard players set X: Sidebar -2147483647
+scoreboard players set Z: Sidebar -2147483648
+
+## Set display
+scoreboard players display numberformat X: Sidebar fixed [{"text":"?","color":"green"}]
+scoreboard players display numberformat Z: Sidebar fixed [{"text":"?","color":"green"}]
