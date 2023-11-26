@@ -10,10 +10,8 @@
     "description": {
       "translate": ""
     },
-    "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,
-    "hidden": false,
     "background": "minecraft:textures/block/magma.png"
   },
   "criteria": {

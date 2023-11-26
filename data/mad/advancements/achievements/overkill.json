@@ -10,10 +10,7 @@
     "description": {
       "translate": "一撃でハート9個分のダメージを与える"
     },
-    "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "frame": "challenge"
   },
   "criteria": {
     "overkill": {

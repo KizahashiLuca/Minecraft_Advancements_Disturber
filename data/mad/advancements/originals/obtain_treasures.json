@@ -10,11 +10,7 @@
     },
     "description": {
       "translate": "エメラルド, ダイヤモンド, 金, 鉄, 銅, ラピスラズリ, レッドストーン, ネザークォーツ 8種類のアイテムを全て手に入れる"
-    },
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    }
   },
   "criteria": {
     "emerald": {
