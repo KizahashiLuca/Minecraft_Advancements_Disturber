@@ -10,6 +10,7 @@
 
 ## Change gamerules always
 gamerule maxCommandChainLength 65536
+gamerule maxCommandForkCount 65536
 
 ## Count players
 execute unless predicate mad:phase/in_game run function mad:system/begin/start_game/count_players
