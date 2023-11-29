@@ -19,12 +19,12 @@ scoreboard players set @s Phase 21
 
 ## Branch team
 execute as @s[predicate=mad:player/team/a,predicate=mad:gamerules/death_penalty_time/neq_zero] run function mad:system/game/detect_death/team/penalty/a
-execute as @s[predicate=mad:player/team/a,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/penalty/a
+execute as @s[predicate=mad:player/team/a,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/no_penalty/a
 execute as @s[predicate=mad:player/team/b,predicate=mad:gamerules/death_penalty_time/neq_zero] run function mad:system/game/detect_death/team/penalty/b
-execute as @s[predicate=mad:player/team/b,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/penalty/b
+execute as @s[predicate=mad:player/team/b,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/no_penalty/b
 execute as @s[predicate=mad:player/team/c,predicate=mad:gamerules/death_penalty_time/neq_zero] run function mad:system/game/detect_death/team/penalty/c
-execute as @s[predicate=mad:player/team/c,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/penalty/c
+execute as @s[predicate=mad:player/team/c,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/no_penalty/c
 execute as @s[predicate=mad:player/team/d,predicate=mad:gamerules/death_penalty_time/neq_zero] run function mad:system/game/detect_death/team/penalty/d
-execute as @s[predicate=mad:player/team/d,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/penalty/d
+execute as @s[predicate=mad:player/team/d,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/no_penalty/d
 execute as @s[predicate=mad:player/team/e,predicate=mad:gamerules/death_penalty_time/neq_zero] run function mad:system/game/detect_death/team/penalty/e
-execute as @s[predicate=mad:player/team/e,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/penalty/e
+execute as @s[predicate=mad:player/team/e,predicate=mad:gamerules/death_penalty_time/eq_zero] run function mad:system/game/detect_death/team/no_penalty/e
