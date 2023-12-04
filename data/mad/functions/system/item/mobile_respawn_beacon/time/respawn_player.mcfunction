@@ -29,6 +29,21 @@ scoreboard players set @s Phase 21
 scoreboard players set @s Death 0
 scoreboard players set @s SetRespawnBanner 0
 scoreboard players reset @s BeaconNumber
+scoreboard players reset @s[predicate=mad:player/team/a] SidebarA
+scoreboard players reset @s[predicate=mad:player/team/b] SidebarB
+scoreboard players reset @s[predicate=mad:player/team/c] SidebarC
+scoreboard players reset @s[predicate=mad:player/team/d] SidebarD
+scoreboard players reset @s[predicate=mad:player/team/e] SidebarE
+execute unless entity @p[predicate=mad:player/dead/a] run scoreboard players reset スペース SidebarA
+execute unless entity @p[predicate=mad:player/dead/a] run scoreboard players reset 【リスポーンバナー座標】 SidebarA
+execute unless entity @p[predicate=mad:player/dead/b] run scoreboard players reset スペース SidebarB
+execute unless entity @p[predicate=mad:player/dead/b] run scoreboard players reset 【リスポーンバナー座標】 SidebarB
+execute unless entity @p[predicate=mad:player/dead/c] run scoreboard players reset スペース SidebarC
+execute unless entity @p[predicate=mad:player/dead/c] run scoreboard players reset 【リスポーンバナー座標】 SidebarC
+execute unless entity @p[predicate=mad:player/dead/d] run scoreboard players reset スペース SidebarD
+execute unless entity @p[predicate=mad:player/dead/d] run scoreboard players reset 【リスポーンバナー座標】 SidebarD
+execute unless entity @p[predicate=mad:player/dead/e] run scoreboard players reset スペース SidebarE
+execute unless entity @p[predicate=mad:player/dead/e] run scoreboard players reset 【リスポーンバナー座標】 SidebarE
 
 ## Send messages
 execute as @s[predicate=mad:player/team/a] run tellraw @a[predicate=mad:player/team/a] ["",{"text":"[モバイルリスポーンビーコン]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]
