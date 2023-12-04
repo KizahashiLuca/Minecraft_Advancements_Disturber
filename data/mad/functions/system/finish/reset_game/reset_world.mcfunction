@@ -25,6 +25,7 @@ execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/structure] at @s ru
 
 ## Remove storage
 data remove storage mad: minecart
+data remove storage mad: death
 
 ## Kill entities
 kill @e[type=minecraft:item]

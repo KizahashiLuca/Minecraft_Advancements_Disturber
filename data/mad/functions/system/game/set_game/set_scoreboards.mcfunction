@@ -32,18 +32,28 @@ scoreboard objectives modify Sidebar displayautoupdate true
 scoreboard objectives setdisplay sidebar.team.red SidebarA
 scoreboard objectives modify SidebarA numberformat
 scoreboard objectives modify SidebarA displayautoupdate true
+scoreboard players set 【支援物資情報】 SidebarA 2147483647
+scoreboard players display numberformat 【支援物資情報】 SidebarA styled {"color":"white","bold":true}
 scoreboard objectives setdisplay sidebar.team.blue SidebarB
 scoreboard objectives modify SidebarB numberformat
 scoreboard objectives modify SidebarB displayautoupdate true
+scoreboard players set 【支援物資情報】 SidebarB 2147483647
+scoreboard players display numberformat 【支援物資情報】 SidebarB styled {"color":"white","bold":true}
 scoreboard objectives setdisplay sidebar.team.yellow SidebarC
 scoreboard objectives modify SidebarC numberformat
 scoreboard objectives modify SidebarC displayautoupdate true
+scoreboard players set 【支援物資情報】 SidebarC 2147483647
+scoreboard players display numberformat 【支援物資情報】 SidebarC styled {"color":"white","bold":true}
 scoreboard objectives setdisplay sidebar.team.green SidebarD
 scoreboard objectives modify SidebarD numberformat
 scoreboard objectives modify SidebarD displayautoupdate true
+scoreboard players set 【支援物資情報】 SidebarD 2147483647
+scoreboard players display numberformat 【支援物資情報】 SidebarD styled {"color":"white","bold":true}
 scoreboard objectives setdisplay sidebar.team.dark_purple SidebarE
 scoreboard objectives modify SidebarE numberformat
 scoreboard objectives modify SidebarE displayautoupdate true
+scoreboard players set 【支援物資情報】 SidebarE 2147483647
+scoreboard players display numberformat 【支援物資情報】 SidebarE styled {"color":"white","bold":true}
 scoreboard players set #mad_team_a SidebarA -10
 scoreboard players set #mad_team_b SidebarB -10
 scoreboard players set #mad_team_c SidebarC -10

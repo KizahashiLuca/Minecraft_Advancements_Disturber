@@ -19,6 +19,7 @@ execute unless predicate mad:system/game/respawn_banner/set_sidebar/b run scoreb
 scoreboard players display numberformat スペース SidebarB blank
 scoreboard players display name スペース SidebarB [""]
 scoreboard players display numberformat 【リスポーンバナー座標】 SidebarB blank
+scoreboard players display numberformat 【リスポーンバナー座標】 SidebarB styled {"color":"blue","bold":true}
 scoreboard players operation @s SidebarB = #mad_team_b SidebarB
 scoreboard players remove #mad_team_b SidebarB 1
 
