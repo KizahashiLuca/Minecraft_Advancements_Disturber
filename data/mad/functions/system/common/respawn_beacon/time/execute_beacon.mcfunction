@@ -22,6 +22,21 @@ data modify block ~ ~-2 ~ Age set value 0L
 ## Set scoreboards
 scoreboard players set @s Second 20
 scoreboard players set @s Tick 0
+scoreboard players reset @s[predicate=mad:player/team/a] SidebarA
+scoreboard players reset @s[predicate=mad:player/team/b] SidebarB
+scoreboard players reset @s[predicate=mad:player/team/c] SidebarC
+scoreboard players reset @s[predicate=mad:player/team/d] SidebarD
+scoreboard players reset @s[predicate=mad:player/team/e] SidebarE
+execute unless entity @p[predicate=mad:player/dead/a] run scoreboard players reset スペース SidebarA
+execute unless entity @p[predicate=mad:player/dead/a] run scoreboard players reset 【リスポーンバナー座標】 SidebarA
+execute unless entity @p[predicate=mad:player/dead/b] run scoreboard players reset スペース SidebarB
+execute unless entity @p[predicate=mad:player/dead/b] run scoreboard players reset 【リスポーンバナー座標】 SidebarB
+execute unless entity @p[predicate=mad:player/dead/c] run scoreboard players reset スペース SidebarC
+execute unless entity @p[predicate=mad:player/dead/c] run scoreboard players reset 【リスポーンバナー座標】 SidebarC
+execute unless entity @p[predicate=mad:player/dead/d] run scoreboard players reset スペース SidebarD
+execute unless entity @p[predicate=mad:player/dead/d] run scoreboard players reset 【リスポーンバナー座標】 SidebarD
+execute unless entity @p[predicate=mad:player/dead/e] run scoreboard players reset スペース SidebarE
+execute unless entity @p[predicate=mad:player/dead/e] run scoreboard players reset 【リスポーンバナー座標】 SidebarE
 
 ## Reset block
 setblock ~ ~ ~ minecraft:air replace
