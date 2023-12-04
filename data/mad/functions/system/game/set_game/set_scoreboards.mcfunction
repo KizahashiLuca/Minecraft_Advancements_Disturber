@@ -27,6 +27,28 @@ scoreboard players set @a ExitMessage 0
 scoreboard players enable @a ExitMessage
 scoreboard objectives modify Sidebar displayname ["",{"text":"支援物資 投下情報"}]
 scoreboard objectives setdisplay sidebar Sidebar
+scoreboard objectives modify Sidebar numberformat
+scoreboard objectives modify Sidebar displayautoupdate true
+scoreboard objectives setdisplay sidebar.team.red SidebarA
+scoreboard objectives modify SidebarA numberformat
+scoreboard objectives modify SidebarA displayautoupdate true
+scoreboard objectives setdisplay sidebar.team.blue SidebarB
+scoreboard objectives modify SidebarB numberformat
+scoreboard objectives modify SidebarB displayautoupdate true
+scoreboard objectives setdisplay sidebar.team.yellow SidebarC
+scoreboard objectives modify SidebarC numberformat
+scoreboard objectives modify SidebarC displayautoupdate true
+scoreboard objectives setdisplay sidebar.team.green SidebarD
+scoreboard objectives modify SidebarD numberformat
+scoreboard objectives modify SidebarD displayautoupdate true
+scoreboard objectives setdisplay sidebar.team.dark_purple SidebarE
+scoreboard objectives modify SidebarE numberformat
+scoreboard objectives modify SidebarE displayautoupdate true
+scoreboard players set #mad_team_a SidebarA -10
+scoreboard players set #mad_team_b SidebarB -10
+scoreboard players set #mad_team_c SidebarC -10
+scoreboard players set #mad_team_d SidebarD -10
+scoreboard players set #mad_team_e SidebarE -10
 #### participants
 scoreboard players set @a NumOfParticipants 0
 scoreboard players set @a NumAlive 0

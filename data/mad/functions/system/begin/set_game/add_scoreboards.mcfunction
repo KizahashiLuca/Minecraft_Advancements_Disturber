@@ -22,6 +22,11 @@ scoreboard objectives add TeleportMinecart trigger
 scoreboard objectives add TeleportCenter trigger
 scoreboard objectives add ExitMessage trigger
 scoreboard objectives add Sidebar dummy ["",{"text":"設定項目"}]
+scoreboard objectives add SidebarA dummy ["",{"text":"設定項目A"}]
+scoreboard objectives add SidebarB dummy ["",{"text":"設定項目B"}]
+scoreboard objectives add SidebarC dummy ["",{"text":"設定項目C"}]
+scoreboard objectives add SidebarD dummy ["",{"text":"設定項目D"}]
+scoreboard objectives add SidebarE dummy ["",{"text":"設定項目E"}]
 #### timer
 scoreboard objectives add 2 dummy
 scoreboard objectives add Second dummy

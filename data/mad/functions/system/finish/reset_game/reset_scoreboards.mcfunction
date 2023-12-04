@@ -22,6 +22,11 @@ scoreboard objectives remove TeleportMinecart
 scoreboard objectives remove TeleportCenter
 scoreboard objectives remove ExitMessage
 scoreboard objectives remove Sidebar
+scoreboard objectives remove SidebarA
+scoreboard objectives remove SidebarB
+scoreboard objectives remove SidebarC
+scoreboard objectives remove SidebarD
+scoreboard objectives remove SidebarE
 #### timer
 scoreboard objectives remove 2
 scoreboard objectives remove Second
