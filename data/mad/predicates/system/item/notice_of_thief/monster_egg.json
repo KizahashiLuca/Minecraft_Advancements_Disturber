@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:rabbit",
-    "nbt": "{CustomName:'{\"extra\":[{\"bold\":false,\"italic\":false,\"color\":\"light_purple\",\"text\":\"怪盗予告\"}],\"text\":\"\"}'}"
+    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_NoticeOfThief\"]}"
   }
 }

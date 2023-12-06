@@ -1,16 +1,18 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
 ## Set gamerules
 gamerule announceAdvancements false
+gamerule blockExplosionDropDecay true
 gamerule commandBlockOutput false
+gamerule commandModificationBlockLimit 32768
 gamerule disableElytraMovementCheck false
 gamerule disableRaids false
 execute if predicate mad:gamerules/daylight_cycle/true run gamerule doDaylightCycle true
@@ -25,27 +27,37 @@ gamerule doMobSpawning true
 gamerule doPatrolSpawning true
 gamerule doTileDrops true
 gamerule doTraderSpawning true
+gamerule doVinesSpread true
 gamerule doWardenSpawning true
 execute if predicate mad:gamerules/weather_cycle/true run gamerule doWeatherCycle true
 execute if predicate mad:gamerules/weather_cycle/false run gamerule doWeatherCycle false
 gamerule drowningDamage true
+gamerule enderPearlsVanishOnDeath true
 gamerule fallDamage true
 gamerule fireDamage true
 gamerule forgiveDeadPlayers true
 gamerule freezeDamage true
+gamerule globalSoundEvents true
 gamerule keepInventory false
+gamerule lavaSourceConversion false
 gamerule logAdminCommands true
 gamerule maxCommandChainLength 65536
+gamerule maxCommandForkCount 65536
 gamerule maxEntityCramming 24
+gamerule mobExplosionDropDecay true
 gamerule mobGriefing true
 gamerule naturalRegeneration true
+gamerule playersNetherPortalCreativeDelay 1
+gamerule playersNetherPortalDefaultDelay 80
 gamerule playersSleepingPercentage 100
+gamerule projectilesCanBreakBlocks true
 gamerule randomTickSpeed 3
 gamerule reducedDebugInfo false
 gamerule sendCommandFeedback false
 execute if predicate mad:gamerules/match_mode/individual run gamerule showDeathMessages false
 execute if predicate mad:gamerules/match_mode/team if predicate mad:gamerules/team_match/death_message_visibility/true run gamerule showDeathMessages true
 execute if predicate mad:gamerules/match_mode/team if predicate mad:gamerules/team_match/death_message_visibility/false run gamerule showDeathMessages false
+gamerule snowAccumulationHeight 1
 execute if predicate mad:gamerules/world_border/0100 run gamerule spawnRadius 100
 execute if predicate mad:gamerules/world_border/0200 run gamerule spawnRadius 200
 execute if predicate mad:gamerules/world_border/0300 run gamerule spawnRadius 300
@@ -68,4 +80,6 @@ execute if predicate mad:gamerules/world_border/1900 run gamerule spawnRadius 19
 execute if predicate mad:gamerules/world_border/2000 run gamerule spawnRadius 2000
 execute if predicate mad:gamerules/world_border/unlimited run gamerule spawnRadius 2000
 gamerule spectatorsGenerateChunks true
+gamerule tntExplosionDropDecay false
 gamerule universalAnger false
+gamerule waterSourceConversion true

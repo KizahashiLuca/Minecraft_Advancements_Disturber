@@ -9,11 +9,7 @@
     },
     "description": {
       "translate": "木材と棒を使い、剣を作る"
-    },
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    }
   },
   "criteria": {
     "build_sword": {

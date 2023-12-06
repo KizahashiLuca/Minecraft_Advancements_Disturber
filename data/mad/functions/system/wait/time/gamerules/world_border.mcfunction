@@ -1,14 +1,21 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send match mode
-scoreboard players reset 物資投下間隔（秒）： Sidebar
-scoreboard players operation ワールドボーダー Sidebar = #mad WorldBorder
-scoreboard players operation （ブロック四方）： Sidebar = #mad WorldBorder
+## Reset scoreboard sidebar display
+scoreboard players reset 物資投下間隔（秒）:
+
+## Set sidebar display
+scoreboard objectives setdisplay sidebar Sidebar
+scoreboard objectives modify Sidebar numberformat blank
+
+## World border
+scoreboard players set ワールドボーダー Sidebar 2147483647
+scoreboard players operation （ブロック四方）: Sidebar = #mad WorldBorder
+scoreboard players display numberformat （ブロック四方）: Sidebar styled {"color":"green"}

@@ -10,10 +10,7 @@
     "description": {
       "translate": "ブタに乗って崖から落ちる"
     },
-    "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "frame": "challenge"
   },
   "criteria": {
     "fly_pig": {

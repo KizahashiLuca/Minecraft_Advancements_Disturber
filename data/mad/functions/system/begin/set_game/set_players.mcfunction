@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -23,11 +23,12 @@ experience set @a 0 points
 
 ## Set effect
 effect clear @a
-effect give @a[gamemode=!spectator] minecraft:resistance 1000000 6 true
-effect give @a[gamemode=!spectator] minecraft:fire_resistance 1000000 6 true
-effect give @a[gamemode=!spectator] minecraft:water_breathing 1000000 6 true
-effect give @a[gamemode=!spectator] minecraft:saturation 1000000 10 true
-effect give @a[gamemode=!spectator] minecraft:regeneration 1000000 10 true
+effect give @a[gamemode=!spectator] minecraft:resistance infinite 6 true
+effect give @a[gamemode=!spectator] minecraft:fire_resistance infinite 6 true
+effect give @a[gamemode=!spectator] minecraft:water_breathing infinite 6 true
+effect give @a[gamemode=!spectator] minecraft:saturation infinite 10 true
+effect give @a[gamemode=!spectator] minecraft:regeneration infinite 10 true
+effect give @a[gamemode=!spectator] minecraft:invisibility infinite 1 true
 
 ## Remove advancements
 advancement revoke @a everything

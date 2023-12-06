@@ -1,16 +1,16 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send match mode
-execute if predicate mad:gamerules/difficulty/peaceful run scoreboard players reset 難易度：ピースフル Sidebar
-execute if predicate mad:gamerules/difficulty/easy run scoreboard players reset 難易度：イージー Sidebar
-execute if predicate mad:gamerules/difficulty/normal run scoreboard players reset 難易度：ノーマル Sidebar
-execute if predicate mad:gamerules/difficulty/hard run scoreboard players reset 難易度：ハード Sidebar
-execute if predicate mad:gamerules/difficulty/hardcore run scoreboard players reset 難易度：ハードコア Sidebar
+## Reset scoreboard sidebar display
+scoreboard players reset 難易度:
+
+## Reset sidebar display
+scoreboard objectives modify Sidebar numberformat
+scoreboard objectives setdisplay sidebar

@@ -20,8 +20,10 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
    - [β-2.2.1](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.2.1)
  - Java Edition v1.20 対応
    - [β-2.3](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.3)
- - Java Edition v1.20.2 以降 対応
+ - Java Edition v1.20.2 対応
    - [β-2.4](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.4)
+ - Java Edition v1.20.3 以降 対応
+   - [β-2.5](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.5)
    
 ## ルール解説動画
 
@@ -45,8 +47,8 @@ https://user-images.githubusercontent.com/33852306/187057764-0011f5fc-9960-408d-
 チーム戦の場合、
  - チームの誰かが達成した進捗をチーム内全員で共有
  - 同じ進捗を複数回達成することはできない
- - チームメンバーが倒されると、生存時間300秒を相手チームに取られる
- - 通常デスは100秒失い、即リスポーン
+ - チームメンバーが倒されると、生存時間200秒が相手チームに報酬として足される（自チームの生存時間は減らない）
+ - 通常デスは生存時間を失わず、即リスポーン
 
 ### ゲームの流れ
  1. ホストプレイヤーが、以下コマンドを実行
@@ -67,7 +69,13 @@ https://user-images.githubusercontent.com/33852306/187057764-0011f5fc-9960-408d-
  - 不死のトーテム
  - ダイヤモンドのピッケル
    - 効率強化V
+ - 鉄のピッケル
+   - 壊れかけ
+     - 10回しか使えない
+   - 幸運III
  - 金のブーツ
+   - 氷渡りII
+   - ソウルスピードIII
    - 移動速度 +0.05
    - 最大体力 -20%
  - 栄養ドリンク
@@ -89,21 +97,26 @@ https://user-images.githubusercontent.com/33852306/187057764-0011f5fc-9960-408d-
  - トライデント
    - 壊れかけ
    - ランダムに1つエンチャントがされている
- - エヴォーカーの牙の杖
-   - 周囲にエヴォーカーの牙を召喚
-   - 5回使用可能
+     - 忠誠
+     - 激流
+     - 召雷
+ - ウォーデンの牙の杖
+   - 直線状にウォーデンの衝撃波を約50m放つ
+   - 3回使用可能
    - 右クリックで発動
-     - 前方に、牙が約20m連なって出現
-   - スニーク＋右クリックで発動
-     - 周囲2mに、牙が連なって出現
  - 発信機 ×3
    - 誰かの座標を通知
    - 右クリックで使用
  - メイズメイカー
    - 近くの敵プレイヤーの位置に迷路を出現
+   - 迷路のブロックは以下から選ばれる
+     - ガラス
+     - ソウルサンド
+     - マングローブの根
+     - 深層岩丸石の階段
    - 右クリックで使用
  - どっか行け矢(仮)
-   - 当たった相手をランダムな箇所に飛ばす
+   - 当たった相手を5秒後にランダムな箇所に飛ばす
    - 弓もしくはクロスボウで使用
  - 緊急招集 (チーム戦のみ)
    - 仲間チームを全員使用者の場所にテレポート
@@ -119,6 +132,7 @@ https://user-images.githubusercontent.com/33852306/187057764-0011f5fc-9960-408d-
  - 焼いたジャガイモ ×15
  - ステーキ ×5
  - 怪しげなシチュー ×5
+   - すべてのステータス効果のうちどれかひとつを60秒付ける
 
 ## スタッフ
  - 企画 : ぽたーじゅ [@potagegatop](https://twitter.com/potagegatop)

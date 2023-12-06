@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -66,6 +66,9 @@ function mad:system/begin/set_game/detect_version
 
 ## Count players
 function mad:system/begin/set_game/count_players
+
+## Set scoreboards
+execute if predicate mad:gamerules/num_of_participants/one run scoreboard players set #mad CartInterval 100
 
 ## Send messages
 execute if predicate mad:system/begin/set_game/accept_condition run function mad:system/begin/set_game/send_messages

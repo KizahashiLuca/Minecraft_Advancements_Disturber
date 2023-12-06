@@ -22,6 +22,11 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
+          "name": "mad:system/game/minecart/items/broken_iron_pickaxe"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
           "name": "mad:system/game/minecart/items/golden_boots"
         },
         {

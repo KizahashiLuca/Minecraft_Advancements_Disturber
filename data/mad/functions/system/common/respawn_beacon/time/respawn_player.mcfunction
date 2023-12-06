@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -29,6 +29,21 @@ scoreboard players set @s Phase 21
 scoreboard players set @s Death 0
 scoreboard players set @s SetRespawnBanner 0
 scoreboard players reset @s BeaconNumber
+scoreboard players reset @s[predicate=mad:player/team/a] SidebarA
+scoreboard players reset @s[predicate=mad:player/team/b] SidebarB
+scoreboard players reset @s[predicate=mad:player/team/c] SidebarC
+scoreboard players reset @s[predicate=mad:player/team/d] SidebarD
+scoreboard players reset @s[predicate=mad:player/team/e] SidebarE
+execute unless entity @p[predicate=mad:player/dead/a] run scoreboard players reset スペース SidebarA
+execute unless entity @p[predicate=mad:player/dead/a] run scoreboard players reset 【リスポーンバナー座標】 SidebarA
+execute unless entity @p[predicate=mad:player/dead/b] run scoreboard players reset スペース SidebarB
+execute unless entity @p[predicate=mad:player/dead/b] run scoreboard players reset 【リスポーンバナー座標】 SidebarB
+execute unless entity @p[predicate=mad:player/dead/c] run scoreboard players reset スペース SidebarC
+execute unless entity @p[predicate=mad:player/dead/c] run scoreboard players reset 【リスポーンバナー座標】 SidebarC
+execute unless entity @p[predicate=mad:player/dead/d] run scoreboard players reset スペース SidebarD
+execute unless entity @p[predicate=mad:player/dead/d] run scoreboard players reset 【リスポーンバナー座標】 SidebarD
+execute unless entity @p[predicate=mad:player/dead/e] run scoreboard players reset スペース SidebarE
+execute unless entity @p[predicate=mad:player/dead/e] run scoreboard players reset 【リスポーンバナー座標】 SidebarE
 
 ## Send messages
 execute as @s[predicate=mad:player/team/a] run tellraw @a[predicate=mad:player/team/a] ["",{"text":"[リスポーンビーコン]  ","color":"green","bold":false,"italic":false},{"selector":"@s","bold":false,"italic":false},{"text":" がリスポーンしました。","color":"green","bold":false,"italic":false}]

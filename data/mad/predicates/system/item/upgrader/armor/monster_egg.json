@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:bat",
-    "nbt": "{CustomName:'{\"extra\":[{\"bold\":false,\"italic\":false,\"color\":\"light_purple\",\"text\":\"防具アップグレードキット\"}],\"text\":\"\"}'}"
+    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_ArmorUpgrader\"]}"
   }
 }

@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -13,3 +13,6 @@ execute at @e[predicate=mad:marker/world_spawn] run summon minecraft:marker ~ 32
 
 ## Decide where to summon minecart
 execute as @e[predicate=mad:marker/minecart/detect_where_summon_minecart] run function mad:system/game/minecart/teleport_minecart/main
+
+## Set sidebar
+execute as @e[predicate=mad:marker/minecart/where_summon_minecart] run function mad:system/game/minecart/set_sidebar/first_drop

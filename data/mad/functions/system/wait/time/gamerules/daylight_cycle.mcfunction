@@ -1,15 +1,22 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send match mode
-execute if predicate mad:gamerules/weather_cycle/false run scoreboard players reset 天候サイクル：なし Sidebar
-execute if predicate mad:gamerules/weather_cycle/true run scoreboard players reset 天候サイクル：あり Sidebar
-execute if predicate mad:gamerules/daylight_cycle/false run scoreboard players set 昼夜サイクル：なし Sidebar 0
-execute if predicate mad:gamerules/daylight_cycle/true run scoreboard players set 昼夜サイクル：あり Sidebar 1
+## Reset scoreboard sidebar display
+scoreboard players reset 天候サイクル:
+
+## Set sidebar display
+scoreboard objectives setdisplay sidebar Sidebar
+scoreboard objectives modify Sidebar numberformat
+
+## Daylight cycle
+execute if predicate mad:gamerules/daylight_cycle/false run scoreboard players set 昼夜サイクル: Sidebar 0
+execute if predicate mad:gamerules/daylight_cycle/false run scoreboard players display numberformat 昼夜サイクル: Sidebar fixed [{"text":"なし","color":"red"}]
+execute if predicate mad:gamerules/daylight_cycle/true run scoreboard players set 昼夜サイクル: Sidebar 1
+execute if predicate mad:gamerules/daylight_cycle/true run scoreboard players display numberformat 昼夜サイクル: Sidebar fixed [{"text":"あり","color":"green"}]

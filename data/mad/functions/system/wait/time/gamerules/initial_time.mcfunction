@@ -1,15 +1,22 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send match mode
-execute if predicate mad:gamerules/match_mode/individual/one run scoreboard players reset マッチモード：ソロ戦 Sidebar
-execute if predicate mad:gamerules/match_mode/individual/not_one run scoreboard players reset マッチモード：個人戦 Sidebar
-execute if predicate mad:gamerules/match_mode/team run scoreboard players reset マッチモード：チーム戦 Sidebar
-scoreboard players operation 初期生存時間（秒）： Sidebar = #mad TimeLimit
+## Reset scoreboard sidebar display
+scoreboard players reset マッチモード:
+execute if predicate mad:gamerules/match_mode/individual/not_one run scoreboard players reset 人数:
+execute if predicate mad:gamerules/match_mode/team run scoreboard players reset チーム数:
+
+## Set sidebar display
+scoreboard objectives setdisplay sidebar Sidebar
+scoreboard objectives modify Sidebar numberformat
+
+## Initial time
+scoreboard players operation 初期生存時間（秒）: Sidebar = #mad TimeLimit
+scoreboard players display numberformat 初期生存時間（秒）: Sidebar styled {"color":"green"}

@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -21,6 +21,7 @@ loot give @a[predicate=mad:player/participant] loot mad:system/game/minecart/ite
 loot give @a[predicate=mad:player/participant] loot mad:system/game/minecart/items/energy_drink
 loot give @a[predicate=mad:player/participant] loot mad:system/game/minecart/items/broken_elytra
 loot give @a[predicate=mad:player/participant] loot mad:system/game/minecart/items/diamond_pickaxe
+loot give @a[predicate=mad:player/participant] loot mad:system/game/minecart/items/broken_iron_pickaxe
 loot give @a[predicate=mad:player/participant] loot mad:system/game/minecart/items/golden_boots
 loot give @a[predicate=mad:player/participant] loot mad:system/game/minecart/items/totem_of_undying
 
