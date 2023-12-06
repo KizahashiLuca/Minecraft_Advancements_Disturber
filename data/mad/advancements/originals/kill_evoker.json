@@ -10,10 +10,7 @@
     "description": {
       "translate": "森の洋館の中でエヴォーカーを倒す"
     },
-    "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "frame": "challenge"
   },
   "criteria": {
     "kill_evoker": {

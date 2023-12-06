@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -20,6 +20,9 @@ time set noon
 ## Set weather
 weather clear
 
+## Remove storage
+data remove storage mad: minecart
+
 ## Set world
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
@@ -34,6 +37,7 @@ kill @e[predicate=mad:system/item/upgrader/tool/monster_egg]
 kill @e[predicate=mad:system/item/emergency_call/monster_egg]
 kill @e[predicate=mad:system/item/notice_of_thief/monster_egg]
 kill @e[predicate=mad:system/item/transmitter/monster_egg]
+kill @e[predicate=mad:system/item/maze_maker/monster_egg]
 kill @e[type=minecraft:armor_stand,tag=MAD_MinecartItem]
 
 ## Set world border

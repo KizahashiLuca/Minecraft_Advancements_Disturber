@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -23,7 +23,5 @@ execute if predicate mad:gamerules/minecart/team_with_end run data modify entity
 ## Send messages
 tellraw @a ["",{"text":"[物資投下] 物資が ","color":"green","bold":false,"italic":false},{"translate":"[%s, %s, %s]","with":[{"score":{"name":"@s","objective":"PosX"}},{"text":"320"},{"score":{"name":"@s","objective":"PosZ"}}],"hoverEvent":{"action":"show_text","contents":{"text":"スペクテイター時、\nクリックでテレポート","color":"white","bold":false,"italic":false}},"clickEvent":{"action":"run_command","value":"/trigger TeleportMinecart set 1"},"color":"green","bold":false,"italic":false},{"text":" に投下されました。","color":"green","bold":false,"italic":false}]
 
-## Reset scoreboard sidebar
-scoreboard objectives setdisplay sidebar Coordinates
-scoreboard players operation X: Coordinates = @s PosX
-scoreboard players operation Z: Coordinates = @s PosZ
+## Set sidebar
+function mad:system/game/minecart/set_sidebar/after_dropped

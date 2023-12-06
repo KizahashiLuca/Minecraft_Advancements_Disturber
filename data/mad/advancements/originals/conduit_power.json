@@ -10,10 +10,7 @@
     "description": {
       "translate": "コンジットパワーの効果を受ける"
     },
-    "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "frame": "challenge"
   },
   "criteria": {
     "conduit_power": {

@@ -9,11 +9,7 @@
     },
     "description": {
       "translate": "小麦に砂糖、牛乳、それから卵！"
-    },
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    }
   },
   "criteria": {
     "bake_cake": {

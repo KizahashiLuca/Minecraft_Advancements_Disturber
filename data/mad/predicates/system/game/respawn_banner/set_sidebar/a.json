@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "【リスポーンバナー座標】"
+    },
+    "score": "SidebarA",
+    "scale": 1
+  },
+  "range": {
+    "min": -6,
+    "max": -6
+  }
+}

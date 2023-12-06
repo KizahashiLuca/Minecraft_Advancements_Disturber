@@ -5,11 +5,11 @@ function filecomment() {
   cat <<EOF > $1
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 1.20.2
+## MC-Version: Java Edit. 1.20.3
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 01 Oct 2023
-## Version   : β-2.4
+## Date      : 06 Dec 2023
+## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -45,8 +45,8 @@ fi
 BASE_DIR=$(cd $(dirname $0); pwd)
 AD_NAME=("minecraft" "mad")
 GAME_DIR=${BASE_DIR}/data/mad/functions/system/game/advancements/
-if [ ! -e ${GAME_DIR} ]; then
-  mkdir ${GAME_DIR}
+if [ ! -e "${GAME_DIR}" ]; then
+  mkdir "${GAME_DIR}"
 fi
 
 ## set rewards
@@ -61,40 +61,44 @@ for AD in "${AD_NAME[@]}"; do
     TMP=tmp_${DIR}_${STEM}.json
     echo ${i} ${DIR} - ${STEM}
     ## create directory
-    if [ ! -e ${GAME_DIR}/${DIR} ]; then
-      mkdir ${GAME_DIR}/${DIR}
+    if [ ! -e "${GAME_DIR}/${DIR}" ]; then
+      mkdir "${GAME_DIR}/${DIR}"
     fi
-    if [ ! -e ${GAME_DIR}/${DIR}/${STEM} ]; then
-      mkdir ${GAME_DIR}/${DIR}/${STEM}
+    if [ ! -e "${GAME_DIR}/${DIR}/${STEM}" ]; then
+      mkdir "${GAME_DIR}/${DIR}/${STEM}"
     fi
-    if [ ! -e ${GAME_DIR}/${DIR}/${STEM}/team ]; then
-      mkdir ${GAME_DIR}/${DIR}/${STEM}/team
+    if [ ! -e "${GAME_DIR}/${DIR}/${STEM}/team" ]; then
+      mkdir "${GAME_DIR}/${DIR}/${STEM}/team"
     fi
     ## set value
     ADV_OBJECTIVE=AD_${DIR^}_${STEM}
     TITLE=`cat "${FILE}" | jq '.display.title.translate' | sed -e "s/\"//g"`
     DESCRIPTION=`cat "${FILE}" | jq '.display.description.translate' | sed -e "s/\"//g"`
     FRAME=`cat "${FILE}" | jq '.display.frame' | sed -e "s/\"//g"`
+    COLOR=green
+    if [ ${FRAME} == "null" ]; then
+      FRAME=task
+    fi
     if [ ${FRAME} == "challenge" ]; then
       COLOR=dark_purple
-    else
-      COLOR=green
     fi
     cat "${FILE}" | jq ".rewards |= .+ {\"function\":\"mad:system/game/advancements/${DIR}/${STEM}/main\"}" > "${TMP}"
     cat "${TMP}" > "${FILE}"
+    sed -i -e 's/$/\r/g' "${FILE}"
     ## detect function
     FUNC1=${GAME_DIR}/${DIR}/${STEM}/main.mcfunction
     FUNC2=${GAME_DIR}/${DIR}/${STEM}/branch.mcfunction
     FUNC3=${GAME_DIR}/${DIR}/${STEM}/individual.mcfunction
     ## make file - detect
     filecomment "${FUNC1}"
-    cat << EOF >> ${FUNC1}
+    cat << EOF >> "${FUNC1}"
 ## Detect advancement
 execute as @s[predicate=mad:player/alive,scores={${ADV_OBJECTIVE}=0}] run function mad:system/game/advancements/${DIR}/${STEM}/branch
 EOF
+    sed -i -e 's/$/\r/g' "${FUNC1}"
     ## make file - branch
     filecomment "${FUNC2}"
-    cat << EOF >> ${FUNC2}
+    cat << EOF >> "${FUNC2}"
 ## Branch team
 execute if predicate mad:gamerules/match_mode/individual as @s run function mad:system/game/advancements/${DIR}/${STEM}/individual
 execute if predicate mad:gamerules/match_mode/team if score #mad_team_a ${ADV_OBJECTIVE} matches 0 as @s[predicate=mad:player/team/a] run function mad:system/game/advancements/${DIR}/${STEM}/team/a
@@ -106,9 +110,10 @@ execute if predicate mad:gamerules/match_mode/team if score #mad_team_e ${ADV_OB
 ## Set scoreboard
 scoreboard players set @s[scores={${ADV_OBJECTIVE}=0}] ${ADV_OBJECTIVE} 1
 EOF
+    sed -i -e 's/$/\r/g' "${FUNC2}"
     ## make file - individual
     filecomment "${FUNC3}"
-    cat << EOF >> ${FUNC3}
+    cat << EOF >> "${FUNC3}"
 ## Set scoreboard
 scoreboard players set @s ${ADV_OBJECTIVE} 1
 scoreboard players add @s HasAdvancements 1
@@ -116,13 +121,14 @@ scoreboard players operation @s TimeLimit += #mad AddingTime
 scoreboard players operation @s Second += #mad AddingTime
 tellraw @s ["",{"translate":"chat.type.advancement.${FRAME}","with":[{"selector":"@s"},{"translate":"[%s]","color":"${COLOR}","with":[{"translate":"${TITLE}","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"${COLOR}","with":[{"translate":"${TITLE}"},{"translate":"${DESCRIPTION}"}]}]}}]}]}]
 EOF
+    sed -i -e 's/$/\r/g' "${FUNC3}"
     ## make file - team
     j=0
     for team in {A..E}; do
       text=${team_text[j]}
       FUNC4=${GAME_DIR}/${DIR}/${STEM}/team/${team,,}.mcfunction
       filecomment "${FUNC4}"
-      cat << EOF >> ${FUNC4}
+      cat << EOF >> "${FUNC4}"
 ## Set scoreboard
 scoreboard players set @a[predicate=mad:player/team/${team,,}] ${ADV_OBJECTIVE} 1
 scoreboard players set #mad_team_${team,,} ${ADV_OBJECTIVE} 1
@@ -132,6 +138,7 @@ scoreboard players operation #mad_team_${team,,} Second += #mad AddingTime
 advancement grant @a[predicate=mad:player/team/${team,,}] only ${AD}:${DIR}/${STEM}
 tellraw @a[predicate=mad:player/team/${team,,}] ["",{"translate":"chat.type.advancement.${FRAME}","with":[{${text},"bold":true},{"translate":"[%s]","color":"${COLOR}","with":[{"translate":"${TITLE}","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"${COLOR}","with":[{"translate":"${TITLE}"},{"translate":"${DESCRIPTION}"}]}]}}]}]}]
 EOF
+      sed -i -e 's/$/\r/g' "${FUNC4}"
       j=$((j+1))
     done
     ## add objectives
@@ -148,8 +155,8 @@ for AD in "${AD_NAME[@]}"; do
   AD_DIR=${BASE_DIR}/data/${AD}/advancements/
   cd "${AD_DIR}"
   for json in ${jsons[@]}; do
-    if [ -e ${json} ]; then
-      rm ${json}
+    if [ -e "${json}" ]; then
+      rm "${json}"
     fi
   done
 done
@@ -157,23 +164,24 @@ done
 ## show adding objectives list
 ADD_SCORE=${BASE_DIR}/data/mad/functions/system/begin/set_game/add_advancements_scoreboards.mcfunction
 filecomment "${ADD_SCORE}"
-echo "## Add scoreboards" >> ${ADD_SCORE}
+echo "## Add scoreboards" >> "${ADD_SCORE}"
 i=0
 for objective in ${objectives[@]}; do
   ## add objective
-  echo "scoreboard objectives add ${objective} dummy" >> ${ADD_SCORE}
+  echo "scoreboard objectives add ${objective} dummy" >> "${ADD_SCORE}"
   ## increment
   i=$((i+1))
 done
+sed -i -e 's/$/\r/g' "${ADD_SCORE}"
 
 ## show setting objectives list
 SET_SCORE=${BASE_DIR}/data/mad/functions/system/begin/set_game/set_advancements_scoreboards.mcfunction
 filecomment "${SET_SCORE}"
-echo "## Set scoreboards" >> ${SET_SCORE}
+echo "## Set scoreboards" >> "${SET_SCORE}"
 i=0
 for objective in ${objectives[@]}; do
   ## add objective
-  cat << EOF >> ${SET_SCORE}
+  cat << EOF >> "${SET_SCORE}"
 scoreboard players set @a ${objective} 0
 scoreboard players set #mad_team_a ${objective} 0
 scoreboard players set #mad_team_b ${objective} 0
@@ -184,15 +192,17 @@ EOF
   ## increment
   i=$((i+1))
 done
+sed -i -e 's/$/\r/g' "${SET_SCORE}"
 
 ## show removing objectives list
 REM_SCORE=${BASE_DIR}/data/mad/functions/system/finish/reset_game/reset_advancements_scoreboards.mcfunction
 filecomment "${REM_SCORE}"
-echo "## Remove scoreboards" >> ${REM_SCORE}
+echo "## Remove scoreboards" >> "${REM_SCORE}"
 i=0
 for objective in ${objectives[@]}; do
   ## remove objective
-  echo "scoreboard objectives remove ${objective}" >> ${REM_SCORE}
+  echo "scoreboard objectives remove ${objective}" >> "${REM_SCORE}"
   ## increment
   i=$((i+1))
 done
+sed -i -e 's/$/\r/g' "${REM_SCORE}"

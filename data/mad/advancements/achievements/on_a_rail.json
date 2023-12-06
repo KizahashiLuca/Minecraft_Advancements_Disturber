@@ -10,10 +10,7 @@
     "description": {
       "translate": "トロッコに乗って出発地点から1km以上走行する"
     },
-    "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "frame": "challenge"
   },
   "criteria": {
     "on_a_rail": {

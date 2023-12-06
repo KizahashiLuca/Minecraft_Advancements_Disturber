@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:vindicator",
-    "nbt": "{CustomName:'{\"extra\":[{\"bold\":false,\"italic\":false,\"color\":\"light_purple\",\"text\":\"発信機\"}],\"text\":\"\"}'}"
+    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_Transmitter\"]}"
   }
 }

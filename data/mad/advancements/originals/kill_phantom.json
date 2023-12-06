@@ -9,11 +9,7 @@
     },
     "description": {
       "translate": "ファントムを倒す"
-    },
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    }
   },
   "criteria": {
     "kill_phantom": {

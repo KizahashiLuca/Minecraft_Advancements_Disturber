@@ -9,11 +9,7 @@
     },
     "description": {
       "translate": "森の洋館の中でヴィンディケーターを倒す"
-    },
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    }
   },
   "criteria": {
     "kill_vindicator": {

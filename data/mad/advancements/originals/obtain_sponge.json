@@ -9,11 +9,7 @@
     },
     "description": {
       "translate": "乾いたスポンジを手に入れる"
-    },
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    }
   },
   "criteria": {
     "obtain_sponge": {

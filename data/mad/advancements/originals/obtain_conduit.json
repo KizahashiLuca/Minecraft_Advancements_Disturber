@@ -9,11 +9,7 @@
     },
     "description": {
       "translate": "コンジットを作成する"
-    },
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    }
   },
   "criteria": {
     "obtain_conduit": {
