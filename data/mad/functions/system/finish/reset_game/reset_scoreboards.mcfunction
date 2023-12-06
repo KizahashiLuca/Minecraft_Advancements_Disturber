@@ -209,7 +209,10 @@ scoreboard players reset （ブロック四方）:
 scoreboard players reset 天候サイクル:
 scoreboard players reset 昼夜サイクル:
 scoreboard players reset 難易度:
+scoreboard players reset 【支援物資情報】
 scoreboard players reset 投下まであと:
 scoreboard players reset 既に投下済み
 scoreboard players reset X:
 scoreboard players reset Z:
+scoreboard players reset スペース
+scoreboard players reset 【リスポーンバナー座標】
