@@ -131,6 +131,7 @@ EOF
       cat << EOF >> "${FUNC4}"
 ## Set scoreboard
 scoreboard players set @a[predicate=mad:player/team/${team,,}] ${ADV_OBJECTIVE} 1
+scoreboard players add @s HasAdvancements 1
 scoreboard players set #mad_team_${team,,} ${ADV_OBJECTIVE} 1
 scoreboard players add #mad_team_${team,,} HasAdvancements 1
 scoreboard players operation #mad_team_${team,,} TimeLimit += #mad AddingTime

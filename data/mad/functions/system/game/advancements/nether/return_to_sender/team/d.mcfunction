@@ -10,6 +10,7 @@
 
 ## Set scoreboard
 scoreboard players set @a[predicate=mad:player/team/d] AD_Nether_return_to_sender 1
+scoreboard players add @s HasAdvancements 1
 scoreboard players set #mad_team_d AD_Nether_return_to_sender 1
 scoreboard players add #mad_team_d HasAdvancements 1
 scoreboard players operation #mad_team_d TimeLimit += #mad AddingTime

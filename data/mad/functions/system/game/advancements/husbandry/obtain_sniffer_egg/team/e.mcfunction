@@ -10,6 +10,7 @@
 
 ## Set scoreboard
 scoreboard players set @a[predicate=mad:player/team/e] AD_Husbandry_obtain_sniffer_egg 1
+scoreboard players add @s HasAdvancements 1
 scoreboard players set #mad_team_e AD_Husbandry_obtain_sniffer_egg 1
 scoreboard players add #mad_team_e HasAdvancements 1
 scoreboard players operation #mad_team_e TimeLimit += #mad AddingTime

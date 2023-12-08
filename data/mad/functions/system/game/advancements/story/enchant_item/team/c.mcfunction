@@ -10,6 +10,7 @@
 
 ## Set scoreboard
 scoreboard players set @a[predicate=mad:player/team/c] AD_Story_enchant_item 1
+scoreboard players add @s HasAdvancements 1
 scoreboard players set #mad_team_c AD_Story_enchant_item 1
 scoreboard players add #mad_team_c HasAdvancements 1
 scoreboard players operation #mad_team_c TimeLimit += #mad AddingTime
