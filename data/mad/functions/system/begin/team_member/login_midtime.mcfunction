@@ -29,7 +29,6 @@ effect give @s minecraft:fire_resistance infinite 6 true
 effect give @s minecraft:water_breathing infinite 6 true
 effect give @s minecraft:saturation infinite 10 true
 effect give @s minecraft:regeneration infinite 10 true
-effect give @s minecraft:invisibility infinite 1 true
 effect give @s minecraft:night_vision infinite 1 true
 #### Remove advancements
 advancement revoke @s everything

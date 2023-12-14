@@ -7,3 +7,6 @@
 ## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
+
+## Kill stolen item
+kill @e[predicate=mad:system/item/notice_of_thief/stolen_item,sort=nearest,limit=1]

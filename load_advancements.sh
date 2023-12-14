@@ -22,7 +22,6 @@ team_text=(
   "\"text\":\"青チーム\",\"color\":\"blue\""
   "\"text\":\"黄チーム\",\"color\":\"yellow\""
   "\"text\":\"緑チーム\",\"color\":\"green\""
-  "\"text\":\"紫チーム\",\"color\":\"dark_purple\""
 );
 
 ## objectives list
@@ -105,7 +104,6 @@ execute if predicate mad:gamerules/match_mode/team if score #mad_team_a ${ADV_OB
 execute if predicate mad:gamerules/match_mode/team if score #mad_team_b ${ADV_OBJECTIVE} matches 0 as @s[predicate=mad:player/team/b] run function mad:system/game/advancements/${DIR}/${STEM}/team/b
 execute if predicate mad:gamerules/match_mode/team if score #mad_team_c ${ADV_OBJECTIVE} matches 0 as @s[predicate=mad:player/team/c] run function mad:system/game/advancements/${DIR}/${STEM}/team/c
 execute if predicate mad:gamerules/match_mode/team if score #mad_team_d ${ADV_OBJECTIVE} matches 0 as @s[predicate=mad:player/team/d] run function mad:system/game/advancements/${DIR}/${STEM}/team/d
-execute if predicate mad:gamerules/match_mode/team if score #mad_team_e ${ADV_OBJECTIVE} matches 0 as @s[predicate=mad:player/team/e] run function mad:system/game/advancements/${DIR}/${STEM}/team/e
 
 ## Set scoreboard
 scoreboard players set @s[scores={${ADV_OBJECTIVE}=0}] ${ADV_OBJECTIVE} 1
@@ -124,7 +122,7 @@ EOF
     sed -i -e 's/$/\r/g' "${FUNC3}"
     ## make file - team
     j=0
-    for team in {A..E}; do
+    for team in {A..D}; do
       text=${team_text[j]}
       FUNC4=${GAME_DIR}/${DIR}/${STEM}/team/${team,,}.mcfunction
       filecomment "${FUNC4}"
@@ -187,7 +185,6 @@ scoreboard players set #mad_team_a ${objective} 0
 scoreboard players set #mad_team_b ${objective} 0
 scoreboard players set #mad_team_c ${objective} 0
 scoreboard players set #mad_team_d ${objective} 0
-scoreboard players set #mad_team_e ${objective} 0
 EOF
   ## increment
   i=$((i+1))

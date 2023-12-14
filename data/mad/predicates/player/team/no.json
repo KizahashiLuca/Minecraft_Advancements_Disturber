@@ -46,15 +46,5 @@
         "team": "TeamD"
       }
     }
-  },
-  {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "team": "TeamE"
-      }
-    }
   }
 ]

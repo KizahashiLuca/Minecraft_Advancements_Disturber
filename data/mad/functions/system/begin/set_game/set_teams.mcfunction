@@ -54,15 +54,6 @@ team modify TeamD nametagVisibility always
 team modify TeamD seeFriendlyInvisibles false
 team modify TeamD deathMessageVisibility never
 
-## Add team e
-team add TeamE {"text":"紫チーム"}
-team modify TeamE color dark_purple
-team modify TeamE friendlyFire true
-team modify TeamE collisionRule always
-team modify TeamE nametagVisibility always
-team modify TeamE seeFriendlyInvisibles false
-team modify TeamE deathMessageVisibility never
-
 ## Add team - never collision
 team add NeverCollision
 team modify NeverCollision color white

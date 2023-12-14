@@ -19,5 +19,3 @@ $scoreboard players display numberformat X: SidebarC fixed [{"text":"$(x)","colo
 $scoreboard players display numberformat Z: SidebarC fixed [{"text":"$(z)","color":"green"}]
 $scoreboard players display numberformat X: SidebarD fixed [{"text":"$(x)","color":"green"}]
 $scoreboard players display numberformat Z: SidebarD fixed [{"text":"$(z)","color":"green"}]
-$scoreboard players display numberformat X: SidebarE fixed [{"text":"$(x)","color":"green"}]
-$scoreboard players display numberformat Z: SidebarE fixed [{"text":"$(z)","color":"green"}]

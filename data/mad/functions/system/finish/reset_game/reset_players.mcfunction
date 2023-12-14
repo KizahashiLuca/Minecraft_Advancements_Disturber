@@ -11,12 +11,5 @@
 ## Kill pet
 execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
 
-## Reset inventory
-#clear @a
-
-## Reset experiences
-#experience set @a 0 levels
-#experience set @a 0 points
-
 ## Reset effects
 effect clear @a

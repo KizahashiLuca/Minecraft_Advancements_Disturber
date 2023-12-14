@@ -23,7 +23,6 @@ execute if predicate mad:system/game/count_alive/a run function mad:system/game/
 execute if predicate mad:system/game/count_alive/b run function mad:system/game/count_alive/b
 execute if predicate mad:system/game/count_alive/c run function mad:system/game/count_alive/c
 execute if predicate mad:system/game/count_alive/d run function mad:system/game/count_alive/d
-execute if predicate mad:system/game/count_alive/e run function mad:system/game/count_alive/e
 
 ## Respawn beacon system
 execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/structure] at @s run function mad:system/common/respawn_beacon/main

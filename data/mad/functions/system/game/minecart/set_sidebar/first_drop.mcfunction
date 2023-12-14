@@ -24,9 +24,6 @@ scoreboard objectives modify SidebarC displayautoupdate true
 scoreboard objectives setdisplay sidebar.team.green SidebarD
 scoreboard objectives modify SidebarD numberformat
 scoreboard objectives modify SidebarD displayautoupdate true
-scoreboard objectives setdisplay sidebar.team.dark_purple SidebarE
-scoreboard objectives modify SidebarE numberformat
-scoreboard objectives modify SidebarE displayautoupdate true
 
 ## Set scoreboard
 scoreboard players reset 既に投下済み
@@ -45,9 +42,6 @@ scoreboard players set Z: SidebarC -2
 scoreboard players operation 投下まであと: SidebarD = @s Second
 scoreboard players set X: SidebarD -1
 scoreboard players set Z: SidebarD -2
-scoreboard players operation 投下まであと: SidebarE = @s Second
-scoreboard players set X: SidebarE -1
-scoreboard players set Z: SidebarE -2
 
 ## Set display
 scoreboard players display numberformat X: Sidebar fixed [{"text":"?","color":"green"}]
@@ -60,5 +54,3 @@ scoreboard players display numberformat X: SidebarC fixed [{"text":"?","color":"
 scoreboard players display numberformat Z: SidebarC fixed [{"text":"?","color":"green"}]
 scoreboard players display numberformat X: SidebarD fixed [{"text":"?","color":"green"}]
 scoreboard players display numberformat Z: SidebarD fixed [{"text":"?","color":"green"}]
-scoreboard players display numberformat X: SidebarE fixed [{"text":"?","color":"green"}]
-scoreboard players display numberformat Z: SidebarE fixed [{"text":"?","color":"green"}]

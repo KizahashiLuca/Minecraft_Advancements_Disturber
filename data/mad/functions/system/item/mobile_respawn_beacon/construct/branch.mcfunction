@@ -13,4 +13,3 @@ execute as @s[predicate=mad:player/alive/a] run function mad:system/item/mobile_
 execute as @s[predicate=mad:player/alive/b] run function mad:system/item/mobile_respawn_beacon/construct/team/b
 execute as @s[predicate=mad:player/alive/c] run function mad:system/item/mobile_respawn_beacon/construct/team/c
 execute as @s[predicate=mad:player/alive/d] run function mad:system/item/mobile_respawn_beacon/construct/team/d
-execute as @s[predicate=mad:player/alive/e] run function mad:system/item/mobile_respawn_beacon/construct/team/e

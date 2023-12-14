@@ -13,7 +13,6 @@ execute as @s[predicate=mad:system/item/notice_of_thief/detect_thief/a] run tag 
 execute as @s[predicate=mad:system/item/notice_of_thief/detect_thief/b] run tag @a[predicate=mad:player/team/b] add MAD_DetectThiefTeam
 execute as @s[predicate=mad:system/item/notice_of_thief/detect_thief/c] run tag @a[predicate=mad:player/team/c] add MAD_DetectThiefTeam
 execute as @s[predicate=mad:system/item/notice_of_thief/detect_thief/d] run tag @a[predicate=mad:player/team/d] add MAD_DetectThiefTeam
-execute as @s[predicate=mad:system/item/notice_of_thief/detect_thief/e] run tag @a[predicate=mad:player/team/e] add MAD_DetectThiefTeam
 
 ## Send message
 tellraw @a[predicate=mad:system/item/notice_of_thief/detect_thief_team] ["",{"translate":"[怪盗予告] %sが怪盗予告しました。 ","with":[{"selector":"@s"}],"color":"green","bold":false,"italic":false},{"translate":"%s秒後に誰かからアイテムを盗みます。","with":[{"score":{"name":"#mad","objective":"ThiefSecond"}}],"color":"green","bold":false,"italic":false}]

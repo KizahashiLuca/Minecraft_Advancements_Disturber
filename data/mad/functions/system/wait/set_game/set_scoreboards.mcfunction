@@ -33,19 +33,16 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboar
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players operation #mad_team_b TimeLimit = #mad TimeLimit
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players operation #mad_team_c TimeLimit = #mad TimeLimit
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players operation #mad_team_d TimeLimit = #mad TimeLimit
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players operation #mad_team_e TimeLimit = #mad TimeLimit
 execute if predicate mad:gamerules/match_mode/individual run scoreboard players operation @a Second = #mad TimeLimit
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players operation #mad_team_a Second = #mad TimeLimit
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players operation #mad_team_b Second = #mad TimeLimit
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players operation #mad_team_c Second = #mad TimeLimit
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players operation #mad_team_d Second = #mad TimeLimit
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players operation #mad_team_e Second = #mad TimeLimit
 execute if predicate mad:gamerules/match_mode/individual run scoreboard players set @a Tick 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a Tick 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b Tick 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players set #mad_team_c Tick 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players set #mad_team_d Tick 0
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e Tick 0
 scoreboard players set @a GeneralSecond 0
 scoreboard players set #mad GeneralSecond 0
 scoreboard players set #mad GeneralTick 0
@@ -63,14 +60,12 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboar
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b GetTimeLimit 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players set #mad_team_c GetTimeLimit 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players set #mad_team_d GetTimeLimit 0
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e GetTimeLimit 0
 #### advancements
 scoreboard players set @a HasAdvancements 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a HasAdvancements 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b HasAdvancements 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players set #mad_team_c HasAdvancements 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players set #mad_team_d HasAdvancements 0
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e HasAdvancements 0
 #### advancements - originals
 scoreboard players set @a BreakSpawner 0
 #### advancements - achievements
@@ -82,7 +77,6 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboar
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b GetMinecartCount 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players set #mad_team_c GetMinecartCount 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players set #mad_team_d GetMinecartCount 0
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e GetMinecartCount 0
 #### transmitter
 scoreboard players set @a UseTransmitter 0
 scoreboard players set @a TransmitterPosX 0
@@ -122,11 +116,9 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboar
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b DeadOwnTeam 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players set #mad_team_c DeadOwnTeam 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players set #mad_team_d DeadOwnTeam 0
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e DeadOwnTeam 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 run scoreboard players set #mad_team_a NumOfTeamPlayer 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 run scoreboard players set #mad_team_b NumOfTeamPlayer 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 run scoreboard players set #mad_team_c NumOfTeamPlayer 0
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 run scoreboard players set #mad_team_d NumOfTeamPlayer 0
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 run scoreboard players set #mad_team_e NumOfTeamPlayer 0
 #### result
 scoreboard players set @a ResultTmp 0

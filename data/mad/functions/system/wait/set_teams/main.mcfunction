@@ -13,4 +13,3 @@ execute if predicate mad:system/wait/set_teams/a run function mad:system/wait/se
 execute if predicate mad:system/wait/set_teams/b run function mad:system/wait/set_teams/b
 execute if predicate mad:system/wait/set_teams/c run function mad:system/wait/set_teams/c
 execute if predicate mad:system/wait/set_teams/d run function mad:system/wait/set_teams/d
-execute if predicate mad:system/wait/set_teams/e run function mad:system/wait/set_teams/e

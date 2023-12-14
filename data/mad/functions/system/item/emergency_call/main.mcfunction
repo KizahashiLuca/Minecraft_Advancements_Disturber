@@ -18,7 +18,6 @@ execute as @s[predicate=mad:player/alive/a] run tag @a[predicate=mad:system/item
 execute as @s[predicate=mad:player/alive/b] run tag @a[predicate=mad:system/item/emergency_call/detect_callee/b] add MAD_EmergencyCallee
 execute as @s[predicate=mad:player/alive/c] run tag @a[predicate=mad:system/item/emergency_call/detect_callee/c] add MAD_EmergencyCallee
 execute as @s[predicate=mad:player/alive/d] run tag @a[predicate=mad:system/item/emergency_call/detect_callee/d] add MAD_EmergencyCallee
-execute as @s[predicate=mad:player/alive/e] run tag @a[predicate=mad:system/item/emergency_call/detect_callee/e] add MAD_EmergencyCallee
 
 ## Teleport
 tp @a[predicate=mad:system/item/emergency_call/emergency_callee] @s

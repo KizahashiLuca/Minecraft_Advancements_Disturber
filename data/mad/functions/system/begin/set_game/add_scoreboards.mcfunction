@@ -26,7 +26,6 @@ scoreboard objectives add SidebarA dummy ["",{"text":"情報"}]
 scoreboard objectives add SidebarB dummy ["",{"text":"情報"}]
 scoreboard objectives add SidebarC dummy ["",{"text":"情報"}]
 scoreboard objectives add SidebarD dummy ["",{"text":"情報"}]
-scoreboard objectives add SidebarE dummy ["",{"text":"情報"}]
 #### timer
 scoreboard objectives add 2 dummy
 scoreboard objectives add Second dummy

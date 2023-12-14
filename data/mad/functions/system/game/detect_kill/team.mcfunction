@@ -25,4 +25,3 @@ spectate @p[predicate=mad:player/alive/a,sort=nearest] @s[predicate=mad:player/t
 spectate @p[predicate=mad:player/alive/b,sort=nearest] @s[predicate=mad:player/team/b]
 spectate @p[predicate=mad:player/alive/c,sort=nearest] @s[predicate=mad:player/team/c]
 spectate @p[predicate=mad:player/alive/d,sort=nearest] @s[predicate=mad:player/team/d]
-spectate @p[predicate=mad:player/alive/e,sort=nearest] @s[predicate=mad:player/team/e]

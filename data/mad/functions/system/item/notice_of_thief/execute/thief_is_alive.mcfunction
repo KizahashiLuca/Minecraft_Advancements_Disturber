@@ -15,7 +15,7 @@ summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:structure_void",Count:1b,tag:{T
 execute if entity @p[predicate=mad:system/item/notice_of_thief/can_steal] run function mad:system/item/notice_of_thief/execute/hotbar/can_steal
 
 ## Replace item
-execute as @s[predicate=mad:system/item/notice_of_thief/result/failure] run kill @e[predicate=mad:system/item/notice_of_thief/stolen_item,sort=nearest,limit=1]
+execute as @s[predicate=mad:system/item/notice_of_thief/result/failure] run function mad:system/item/notice_of_thief/execute/hotbar/cant_steal
 
 ## Send messages - to thief
 execute if entity @p[predicate=mad:system/item/notice_of_thief/stolen_player] run tellraw @s[predicate=mad:system/item/notice_of_thief/result/success] ["",{"translate":"[怪盗予告]  %s のアイテムを盗みました。","with":[{"selector":"@p[predicate=mad:system/item/notice_of_thief/stolen_player]"}],"color":"green","bold":false,"italic":false}]

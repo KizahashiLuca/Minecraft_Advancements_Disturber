@@ -16,7 +16,6 @@ bossbar remove minecraft:bossbar_team_a
 bossbar remove minecraft:bossbar_team_b
 bossbar remove minecraft:bossbar_team_c
 bossbar remove minecraft:bossbar_team_d
-bossbar remove minecraft:bossbar_team_e
 
 ## Remove bossbar for individual
 bossbar remove minecraft:bossbar_individual_01

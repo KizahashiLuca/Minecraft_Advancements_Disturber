@@ -68,16 +68,6 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "team": "TeamE"
-          }
-        }
-      },
-      {
-        "condition": "minecraft:inverted",
-        "term": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
             "team": "Participant"
           }
         }

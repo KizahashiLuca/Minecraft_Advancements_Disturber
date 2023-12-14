@@ -97,22 +97,6 @@
               "count": 4
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:armor_stand",
-          "conditions": [
-            {
-              "condition": "minecraft:reference",
-              "name": "mad:gamerules/team_match/number_of_teams/5p"
-            }
-          ],
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 5
-            }
-          ]
         }
       ]
     }

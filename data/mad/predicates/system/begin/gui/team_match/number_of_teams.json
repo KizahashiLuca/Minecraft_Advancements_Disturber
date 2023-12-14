@@ -25,10 +25,6 @@
       {
         "condition": "minecraft:reference",
         "name": "mad:system/begin/gui/team_match/number_of_teams/4p"
-      },
-      {
-        "condition": "minecraft:reference",
-        "name": "mad:system/begin/gui/team_match/number_of_teams/5p"
       }
     ]
   }

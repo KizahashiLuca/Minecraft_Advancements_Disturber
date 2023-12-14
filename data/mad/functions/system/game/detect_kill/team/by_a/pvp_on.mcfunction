@@ -12,7 +12,6 @@
 execute as @s[predicate=mad:player/alive/b] run function mad:system/game/move_time/team/to_a/from_b
 execute as @s[predicate=mad:player/alive/c] run function mad:system/game/move_time/team/to_a/from_c
 execute as @s[predicate=mad:player/alive/d] run function mad:system/game/move_time/team/to_a/from_d
-execute as @s[predicate=mad:player/alive/e] run function mad:system/game/move_time/team/to_a/from_e
 
 ## Detect death
 function mad:system/game/detect_kill/team

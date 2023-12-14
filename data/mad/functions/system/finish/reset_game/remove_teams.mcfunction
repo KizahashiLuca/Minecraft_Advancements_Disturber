@@ -14,5 +14,4 @@ team remove TeamA
 team remove TeamB
 team remove TeamC
 team remove TeamD
-team remove TeamE
 team remove NeverCollision

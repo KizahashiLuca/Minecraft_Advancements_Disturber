@@ -26,7 +26,6 @@ scoreboard objectives remove SidebarA
 scoreboard objectives remove SidebarB
 scoreboard objectives remove SidebarC
 scoreboard objectives remove SidebarD
-scoreboard objectives remove SidebarE
 #### timer
 scoreboard objectives remove 2
 scoreboard objectives remove Second
@@ -197,7 +196,6 @@ scoreboard players reset #mad_team_a
 scoreboard players reset #mad_team_b
 scoreboard players reset #mad_team_c
 scoreboard players reset #mad_team_d
-scoreboard players reset #mad_team_e
 scoreboard players reset マッチモード:
 scoreboard players reset 人数:
 scoreboard players reset チーム数:

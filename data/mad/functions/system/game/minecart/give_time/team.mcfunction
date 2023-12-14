@@ -13,4 +13,3 @@ execute if entity @p[predicate=mad:player/give_time/a] run function mad:system/g
 execute if entity @p[predicate=mad:player/give_time/b] run function mad:system/game/minecart/give_time/b
 execute if entity @p[predicate=mad:player/give_time/c] run function mad:system/game/minecart/give_time/c
 execute if entity @p[predicate=mad:player/give_time/d] run function mad:system/game/minecart/give_time/d
-execute if entity @p[predicate=mad:player/give_time/e] run function mad:system/game/minecart/give_time/e

@@ -23,7 +23,6 @@ execute if predicate mad:gamerules/team_match/number_of_teams/ge_1 unless entity
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_2 unless entity @p[predicate=mad:player/team/b] run scoreboard players add #mad TeamMemberNotExist 1
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_3 unless entity @p[predicate=mad:player/team/c] run scoreboard players add #mad TeamMemberNotExist 1
 execute if predicate mad:gamerules/team_match/number_of_teams/ge_4 unless entity @p[predicate=mad:player/team/d] run scoreboard players add #mad TeamMemberNotExist 1
-execute if predicate mad:gamerules/team_match/number_of_teams/ge_5 unless entity @p[predicate=mad:player/team/e] run scoreboard players add #mad TeamMemberNotExist 1
 
 ## Set inventory
 execute as @p[predicate=mad:player/host] run loot replace entity @s inventory.4 loot mad:system/begin/team_member/master

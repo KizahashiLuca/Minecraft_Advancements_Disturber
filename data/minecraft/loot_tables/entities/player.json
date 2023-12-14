@@ -120,33 +120,6 @@
               "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamD\"],Invulnerable:1b}"
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "predicate": {
-                "team": "TeamE"
-              },
-              "entity": "this"
-            }
-          ],
-          "name": "minecraft:purple_banner",
-          "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": [
-                ["",{"selector":"@s","color":"dark_purple","bold":false,"italic":false},{"text":"のリスポーンバナー","color":"dark_purple","bold":false,"italic":false}]
-              ],
-              "entity": "this"
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Tags:[\"MAD_RespawnBannerByDead\",\"MAD_TeamE\"],Invulnerable:1b}"
-            }
-          ]
         }
       ]
     }

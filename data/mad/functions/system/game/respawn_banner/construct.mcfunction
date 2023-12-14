@@ -36,7 +36,6 @@ execute as @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_playe
 execute as @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player/b] run function mad:system/game/respawn_banner/message/b
 execute as @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player/c] run function mad:system/game/respawn_banner/message/c
 execute as @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player/d] run function mad:system/game/respawn_banner/message/d
-execute as @a[predicate=mad:system/game/respawn_banner/detect_banner_owner_player/e] run function mad:system/game/respawn_banner/message/e
 
 ## Remove a tag
 tag @a remove MAD_DetectedBannerOwner
@@ -46,7 +45,6 @@ execute as @s[predicate=mad:system/game/respawn_banner/by_dead/a] run function m
 execute as @s[predicate=mad:system/game/respawn_banner/by_dead/b] run function mad:system/game/respawn_banner/team/b
 execute as @s[predicate=mad:system/game/respawn_banner/by_dead/c] run function mad:system/game/respawn_banner/team/c
 execute as @s[predicate=mad:system/game/respawn_banner/by_dead/d] run function mad:system/game/respawn_banner/team/d
-execute as @s[predicate=mad:system/game/respawn_banner/by_dead/e] run function mad:system/game/respawn_banner/team/e
 
 ## Set banner name
 data modify entity @e[predicate=mad:armor_stand/respawn_banner/not_set_customname,limit=1] CustomName set from entity @s Item.tag.display.Name
