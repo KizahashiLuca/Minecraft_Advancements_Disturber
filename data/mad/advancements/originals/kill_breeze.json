@@ -1,0 +1,43 @@
+{
+  "parent": "mad:originals/find_trial_chamber",
+  "display": {
+    "icon": {
+      "item": "minecraft:trial_spawner"
+    },
+    "title": {
+      "translate": "Breeze!!"
+    },
+    "description": {
+      "translate": "トライアルチャンバーの中でブリーズを倒す"
+    }
+  },
+  "criteria": {
+    "kill_breeze": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "minecraft:breeze"
+            },
+            "entity": "this"
+          }
+        ],
+        "player": {
+          "location": {
+            "structure": "minecraft:trial_chambers"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill_breeze"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/kill_breeze/main"
+  }
+}

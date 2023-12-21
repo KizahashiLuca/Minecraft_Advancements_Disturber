@@ -1,0 +1,36 @@
+{
+  "parent": "mad:originals/kill_breeze",
+  "display": {
+    "icon": {
+      "item": "minecraft:trial_key"
+    },
+    "title": {
+      "translate": "鍵を握る"
+    },
+    "description": {
+      "translate": "トライアルキーを入手する"
+    }
+  },
+  "criteria": {
+    "obtain_trial_key": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:trial_key"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_trial_key"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/obtain_trial_key/main"
+  }
+}

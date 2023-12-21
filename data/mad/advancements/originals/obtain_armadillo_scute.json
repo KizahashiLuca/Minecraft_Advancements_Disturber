@@ -1,0 +1,36 @@
+{
+  "parent": "mad:originals/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:armadillo_scute"
+    },
+    "title": {
+      "translate": "アルマジロの贈り物"
+    },
+    "description": {
+      "translate": "アルマジロの殻を手に入れる"
+    }
+  },
+  "criteria": {
+    "obtain_armadillo_scute": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:armadillo_scute"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_armadillo_scute"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/obtain_armadillo_scute/main"
+  }
+}

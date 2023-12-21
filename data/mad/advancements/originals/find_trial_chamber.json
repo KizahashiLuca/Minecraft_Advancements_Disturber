@@ -1,0 +1,40 @@
+{
+  "parent": "mad:originals/in_this_corner_of_the_world",
+  "display": {
+    "icon": {
+      "item": "minecraft:copper_door"
+    },
+    "title": {
+      "translate": "試練の部屋はいずこ"
+    },
+    "description": {
+      "translate": "試練の部屋に侵入する"
+    }
+  },
+  "criteria": {
+    "in_trial_chamber": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "minecraft:trial_chambers"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "in_trial_chamber"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancements/originals/find_trial_chamber/main"
+  }
+}
