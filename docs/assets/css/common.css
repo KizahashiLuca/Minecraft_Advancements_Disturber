@@ -9,7 +9,7 @@ body, html
 /* Background image */
 .background-image
 {
-  background-image: url('../img/background_image.jpg');
+  background-image: url('../img/background_image.png');
   height: 100vh;
   background-size: cover;
   background-position: center;
