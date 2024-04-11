@@ -1,10 +1,11 @@
-// Import
-import { upload } from './upload.js';
-
 // Element
 const uploadLink = document.getElementById('uploadLink');
-const uploadDialog = document.getElementById('uploadDialog');
-const exitDialog = document.getElementsByClassName('exit-dialog');
+
+const { data } = await axios.get('https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/download/beta-2.5/Minecraft_Advancements_Disturber-beta-2.5.zip', {
+  responseType: 'arraybuffer',
+  headers: { Accept: 'application/zip' },
+})
+const blob = new Blob([data], { type: 'application/zip' })
 
 // Event listener
 uploadLink.addEventListener(
@@ -17,24 +18,11 @@ uploadLink.addEventListener(
       .then(response => response.text())
       .then(html => 
         {
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(html, 'text/html');
-          const targetContent = doc.getElementsByClassName('background-image')[0];
-          if (targetContent)
-          {
-            uploadDialog.innerHTML = targetContent.innerHTML;
-            uploadDialog.parentElement.hidden = false;
-            
-            var uploadCAD = document.getElementById('uploadCAD');
-            if (uploadCAD)
-            {
-              uploadCAD.addEventListener('change', upload);
-            }
-          }
-          else
-          {
-            uploadDialog.textContent = 'The specified part was not found.';
-          }
+          const uri = URL.createObjectURL(blob)
+          const link = document.createElement('a')
+          link.download = 'minecraft_advancements_disturber.zip'
+          link.href = uri
+          link.click()
         }
       )
       .catch(error => 
@@ -44,11 +32,3 @@ uploadLink.addEventListener(
       );
   }
 );
-
-var exitDialogs = Array.from(exitDialog);
-exitDialogs.forEach(element => {
-  element.addEventListener('click', function() {
-    uploadDialog.innerHTML = '';
-    uploadDialog.parentElement.hidden = true;
-  })
-});
