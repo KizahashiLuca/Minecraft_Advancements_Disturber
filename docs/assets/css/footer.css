@@ -1,0 +1,9 @@
+/* Footer */
+footer
+{
+  position: fixed;
+  bottom: 0;
+  left: 1.0em;
+  display: flex;
+  font-size: small;
+}

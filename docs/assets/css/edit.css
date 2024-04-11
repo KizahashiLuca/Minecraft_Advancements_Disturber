@@ -1,0 +1,36 @@
+/* Editor - file upload */
+#editHeaderContent
+{
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.editor-header
+{
+  display: flex;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px;
+}
+
+/* For mobile phone */
+@media screen and (max-width: 767px)
+{
+  .content
+  {
+    width: 80%;
+  }
+  .content h1
+  {
+    font-size: 2.0em;
+  }
+  .upload-area
+  {
+    height: 150px;
+  }
+} 

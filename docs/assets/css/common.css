@@ -1,0 +1,85 @@
+/* Common html */
+body, html
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Background image */
+.background-image
+{
+  background-image: url('../img/background_image.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Content */
+.content
+{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 40px auto;
+}
+
+/* Title */
+.content h1
+{
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 2.5em;
+  position: absolute;
+  margin: 0;
+  z-index: 100;
+}
+
+/* Subtitle */
+.content h3
+{
+  color: black;
+  margin: 0px;
+  margin-top: 20px;
+  text-align: center;
+}
+.content h4
+{
+  color: black;
+  margin: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Text box */
+.text-box
+{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  text-indent: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 10px;
+  border-radius: 8px;
+  z-index: 80;
+}
+
+/* For mobile phone */
+@media screen and (max-width: 767px)
+{
+  .content
+  {
+    width: 80%;
+  }
+  .content h1
+  {
+    font-size: 2.0em;
+  }
+} 
