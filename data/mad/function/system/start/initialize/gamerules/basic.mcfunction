@@ -54,8 +54,7 @@ gamerule playersSleepingPercentage 100
 gamerule projectilesCanBreakBlocks false
 gamerule randomTickSpeed 3
 gamerule reducedDebugInfo false
-#gamerule sendCommandFeedback false
-gamerule sendCommandFeedback true
+gamerule sendCommandFeedback false
 gamerule showDeathMessages true
 gamerule snowAccumulationHeight 1
 gamerule spawnChunkRadius 2

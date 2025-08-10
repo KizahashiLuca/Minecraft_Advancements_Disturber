@@ -12,4 +12,4 @@
 $execute as @a[predicate=mad:player/dead/$(team)] at @s run function mad:system/game/count_alive/spectate with storage mad: team.$(team)
 
 ## チーム終了を検出
-$execute unless entity @p[predicate=mad:player/alive/$(team)] if score #mad_team_$(team) Phase matches 61 run function mad:system/game/count_alive/set_end with storage mad: team.$(team)
+$execute unless entity @p[predicate=mad:player/alive/$(team)] unless entity @p[predicate=mad:player/dying/$(team)] if score #mad_team_$(team) Phase matches 61 run function mad:system/game/count_alive/set_end with storage mad: team.$(team)

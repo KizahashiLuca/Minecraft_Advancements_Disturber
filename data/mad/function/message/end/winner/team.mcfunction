@@ -9,7 +9,7 @@
 #####################################
 
 ## タイトル表示
-$title @a title ['',{text:'BLUE',color:'$(color)',bold:true}]
+$title @a title ['',{text:'$(text)チーム',color:'$(color)',bold:true}]
 $title @a subtitle ['',{text:'WIN',color:'$(color)',bold:true}]
 title @a times 20 80 20
 

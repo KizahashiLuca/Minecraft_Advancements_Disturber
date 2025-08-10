@@ -10,7 +10,6 @@
 
 ## ランダムスポーン地点設定
 #### 赤チーム
-$tellraw @a [{text:'x=$(x),z=$(z)  x1=$(x1),z1=$(z1)  x2=$(x2),z2=$(z2)  x3=$(x3),z3=$(z3)  x4=$(x4),z4=$(z4)'}]
 $execute store result storage mad: team.a.x int 1 run function mad:system/fall/initialize/random_spawn/get_random_value {min:'$(x)',max:'$(x4)',axis:'X'}
 $execute store result storage mad: team.a.z int 1 run function mad:system/fall/initialize/random_spawn/get_random_value {min:'$(z)',max:'$(z4)',axis:'Z'}
 #### 青チーム
