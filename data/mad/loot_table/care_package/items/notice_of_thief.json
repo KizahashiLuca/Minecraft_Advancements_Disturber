@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "怪盗予告",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "5秒後に敵プレイヤーのホットバーから",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "どれか1つランダムでアイテムを盗む",
+                  "color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "%sで使用",
+                  "with": [
+                    {
+                      "keybind": "key.use"
+                    }
+                  ],
+                  "color": "dark_purple",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_data": {
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_NoticeOfThief"
+                  ]
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:item"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

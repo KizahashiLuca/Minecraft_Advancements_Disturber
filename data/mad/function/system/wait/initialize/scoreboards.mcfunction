@@ -1,0 +1,152 @@
+#####################################
+## Minecraft Advancements Disturber
+## MC-Version: Java Edit. 1.20.3
+## Author    : @potagegatop
+## Author    : @KizahashiLuca
+## Date      : 06 Dec 2023
+## Version   : β-2.5
+## Licensed under CC BY-SA 4.0. 
+#####################################
+
+## スコアボードを設定
+#### ゲームフェーズ
+scoreboard players set @a[predicate=mad:player/] Phase 0
+scoreboard players set @a[predicate=mad:player/] NumOfDeaths 0
+scoreboard players set @a[predicate=mad:player/] NumberOfKills 0
+scoreboard players set @a[predicate=mad:player/] TimeSinceDeath 0
+scoreboard players set @a TeleportToCarePackage 0
+scoreboard players enable @a[predicate=mad:player/spectator] TeleportToCarePackage
+scoreboard players set @a TeleportToWorldCenter 0
+scoreboard players enable @a[predicate=mad:player/spectator] TeleportToWorldCenter
+scoreboard players set @a[predicate=mad:player/host] ExitTrigger 0
+scoreboard players enable @a[predicate=mad:player/host] ExitTrigger
+#### タイマー
+scoreboard players operation #mad Second = #mad TimeOfWaitPhase
+scoreboard players operation #mad_team_a Second = #mad InitialTime
+scoreboard players operation #mad_team_b Second = #mad InitialTime
+scoreboard players operation #mad_team_c Second = #mad InitialTime
+scoreboard players operation #mad_team_d Second = #mad InitialTime
+scoreboard players operation #mad_care_package_1 Second = #mad CarePackageInterval
+scoreboard players operation #mad_care_package_2 Second = #mad CarePackageInterval
+scoreboard players operation #mad_care_package_3 Second = #mad CarePackageInterval
+scoreboard players operation #mad_care_package_4 Second = #mad CarePackageInterval
+scoreboard players operation #mad_care_package_5 Second = #mad CarePackageInterval
+scoreboard players operation @a[predicate=mad:player/] Second = #mad InitialTime
+scoreboard players set #mad Tick 0
+scoreboard players set #mad_team_a Tick 0
+scoreboard players set #mad_team_b Tick 0
+scoreboard players set #mad_team_c Tick 0
+scoreboard players set #mad_team_d Tick 0
+scoreboard players set @a[predicate=mad:player/] Tick 0
+scoreboard players operation #mad_team_a TimeLimit = #mad InitialTime
+scoreboard players operation #mad_team_b TimeLimit = #mad InitialTime
+scoreboard players operation #mad_team_c TimeLimit = #mad InitialTime
+scoreboard players operation #mad_team_d TimeLimit = #mad InitialTime
+scoreboard players operation @a[predicate=mad:player/] TimeLimit = #mad InitialTime
+scoreboard players set #mad_team_a GetBonusTime 0
+scoreboard players set #mad_team_b GetBonusTime 0
+scoreboard players set #mad_team_c GetBonusTime 0
+scoreboard players set #mad_team_d GetBonusTime 0
+scoreboard players set @a[predicate=mad:player/] GetBonusTime 0
+#### プレイヤー
+scoreboard players set #mad NumberOfLiving 0
+scoreboard players set #mad_team_a NumberOfLiving 0
+scoreboard players set #mad_team_b NumberOfLiving 0
+scoreboard players set #mad_team_c NumberOfLiving 0
+scoreboard players set #mad_team_d NumberOfLiving 0
+scoreboard players set #mad NumberOfDead 0
+scoreboard players set #mad_team_a NumberOfDead 0
+scoreboard players set #mad_team_b NumberOfDead 0
+scoreboard players set #mad_team_c NumberOfDead 0
+scoreboard players set #mad_team_d NumberOfDead 0
+#### 接地判定
+scoreboard players set @a[predicate=mad:player/] OnGround 0
+#### 設定フェーズ - ワールド範囲 X軸正(東)
+execute store result score #mad TmpX run data get storage mad: gamerule.world_border.half 1.0
+scoreboard players operation #mad TmpX += #mad PosX
+execute store result storage mad: gamerule.world_border.x4 int 1 run scoreboard players get #mad TmpX
+#### 設定フェーズ - ワールド範囲 Z軸正(南)
+execute store result score #mad TmpZ run data get storage mad: gamerule.world_border.half 1.0
+scoreboard players operation #mad TmpZ += #mad PosZ
+execute store result storage mad: gamerule.world_border.z4 int 1 run scoreboard players get #mad TmpZ
+#### 設定フェーズ - ワールド範囲 X軸負(西)
+execute store result score #mad TmpX run data get storage mad: gamerule.world_border.half -1.0
+scoreboard players operation #mad TmpX += #mad PosX
+execute store result storage mad: gamerule.world_border.x2 int 1 run scoreboard players get #mad TmpX
+#### 設定フェーズ - ワールド範囲 Z軸負(北)
+execute store result score #mad TmpZ run data get storage mad: gamerule.world_border.half -1.0
+scoreboard players operation #mad TmpZ += #mad PosZ
+execute store result storage mad: gamerule.world_border.z2 int 1 run scoreboard players get #mad TmpZ
+#### 設定フェーズ - ワールド範囲 範囲内にエンド大陸が存在
+scoreboard players set #mad ExistsTheEndInWorldBorder 0
+execute if predicate mad:system/wait/initialize/check_the_end run scoreboard players set #mad ExistsTheEndInWorldBorder 1
+#### 設定フェーズ - ワールド中心
+data modify storage mad: gamerule.world_border.x set value 0
+data modify storage mad: gamerule.world_border.z set value 0
+#### 設定フェーズ - ワールド範囲 X軸正(東) - 再計算
+execute store result score #mad TmpX run data get storage mad: gamerule.world_border.half 1.0
+execute store result storage mad: gamerule.world_border.x1 int 1 run scoreboard players get #mad TmpX
+execute store result storage mad: gamerule.world_border.x4 int 1 run scoreboard players get #mad TmpX
+#### 設定フェーズ - ワールド範囲 Z軸正(南) - 再計算
+execute store result score #mad TmpZ run data get storage mad: gamerule.world_border.half 1.0
+execute store result storage mad: gamerule.world_border.z3 int 1 run scoreboard players get #mad TmpZ
+execute store result storage mad: gamerule.world_border.z4 int 1 run scoreboard players get #mad TmpZ
+#### 設定フェーズ - ワールド範囲 X軸負(西) - 再計算
+execute store result score #mad TmpX run data get storage mad: gamerule.world_border.half -1.0
+execute store result storage mad: gamerule.world_border.x2 int 1 run scoreboard players get #mad TmpX
+execute store result storage mad: gamerule.world_border.x3 int 1 run scoreboard players get #mad TmpX
+#### 設定フェーズ - ワールド範囲 Z軸負(北) - 再計算
+execute store result score #mad TmpZ run data get storage mad: gamerule.world_border.half -1.0
+execute store result storage mad: gamerule.world_border.z1 int 1 run scoreboard players get #mad TmpZ
+execute store result storage mad: gamerule.world_border.z2 int 1 run scoreboard players get #mad TmpZ
+#### 設定フェーズ - チーム戦ルール その1
+scoreboard players operation #mad_player NumberOfTeams = #mad NumberOfTeams
+#### 設定フェーズ - チーム編成設定
+scoreboard players set #mad NotExistsTeamMember 0
+#### 進捗
+scoreboard players set #mad_team_a HasAdvancements 0
+scoreboard players set #mad_team_b HasAdvancements 0
+scoreboard players set #mad_team_c HasAdvancements 0
+scoreboard players set #mad_team_d HasAdvancements 0
+scoreboard players set @a[predicate=mad:player/] HasAdvancements 0
+#### 進捗用 - オリジナル進捗
+scoreboard players set @a[predicate=mad:player/] BreakSpawner 0
+#### 進捗用 - 実績進捗
+scoreboard players set @a[predicate=mad:player/] FallDistance 0
+scoreboard players set @a[predicate=mad:player/] RailDistance 0
+#### 支援物資
+scoreboard players set #mad_team_a GetCarePackageCount 0
+scoreboard players set #mad_team_b GetCarePackageCount 0
+scoreboard players set #mad_team_c GetCarePackageCount 0
+scoreboard players set #mad_team_d GetCarePackageCount 0
+scoreboard players set @a[predicate=mad:player/] GetCarePackageCount 0
+#### 支援物資用 - 発信機
+scoreboard players set @a[predicate=mad:player/] UseTransmitter 0
+#### 支援物資用 - 緊急招集
+scoreboard players set @a[predicate=mad:player/] UseEmergencyCall 0
+#### 支援物資用 - 防具アップグレード
+scoreboard players set @a[predicate=mad:player/] UseArmorUpgrader 0
+#### 支援物資用 - ツールアップグレード
+scoreboard players set @a[predicate=mad:player/] UseToolUpgrader 0
+#### 支援物資用 - 緊急招集
+scoreboard players set @a[predicate=mad:player/] UseNoticeOfThief 0
+scoreboard players set @a[predicate=mad:player/] NumberOfItemCandidates 0
+#### 支援物資用 - ウォーデンの牙の杖
+scoreboard players set @a[predicate=mad:player/] UseFungusStick 0
+scoreboard players set #mad NumberOfSonicBooms 0
+#### 支援物資用 - メイズメイカー
+scoreboard players set @a[predicate=mad:player/] UseMazeMaker 0
+scoreboard players set #mad MazeNumber 1
+#### 支援物資用 - どっか行け矢(仮)
+scoreboard players set @a[predicate=mad:player/] ArrowTeleportTick 0
+scoreboard players set @a[predicate=mad:player/] ArrowTeleportPosX 0
+scoreboard players set @a[predicate=mad:player/] ArrowTeleportPosY 0
+scoreboard players set @a[predicate=mad:player/] ArrowTeleportPosZ 0
+#### リスポーンバナー
+scoreboard players set @a[predicate=mad:player/] AttackerNumber 0
+scoreboard players set @a[predicate=mad:player/] AttackedSecond 0
+scoreboard players set @a[predicate=mad:player/] AttackedTick 0
+#### リスポーンビーコン
+scoreboard players set #mad CompareNames 1
+scoreboard players set #mad ExistsTeam 1
+scoreboard players set @a[predicate=mad:player/] BeaconTmp 0

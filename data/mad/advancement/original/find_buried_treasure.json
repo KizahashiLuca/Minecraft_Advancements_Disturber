@@ -1,0 +1,30 @@
+{
+  "parent": "mad:original/in_this_corner_of_the_world",
+  "display": {
+    "icon": {
+      "id": "minecraft:chest"
+    },
+    "title": {
+      "translate": "自分だけのお宝！"
+    },
+    "description": {
+      "translate": "埋もれた宝を発見する"
+    }
+  },
+  "criteria": {
+    "find_buried_treasure": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/buried_treasure"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "find_buried_treasure"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/original/find_buried_treasure/"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "mad:original/open_care_package",
+  "display": {
+    "icon": {
+      "id": "minecraft:red_banner"
+    },
+    "title": {
+      "translate": "仲間思い"
+    },
+    "description": {
+      "translate": "味方を復活"
+    }
+  },
+  "criteria": {
+    "friendship": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "friendship"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/original/friendship/"
+  }
+}

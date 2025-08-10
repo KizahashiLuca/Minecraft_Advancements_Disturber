@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:gamerule/match_mode/individual/"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:gamerule/num_of_players/solo"
+    }
+  ]
+}

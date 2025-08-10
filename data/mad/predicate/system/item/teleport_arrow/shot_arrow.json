@@ -1,0 +1,21 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:player"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:damage_source_properties",
+    "predicate": {
+      "direct_entity": {
+        "type": "minecraft:arrow",
+        "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_TeleportArrow\"]}"
+      }
+    }
+  }
+]

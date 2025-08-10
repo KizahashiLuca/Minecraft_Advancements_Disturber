@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate":  {
+                "nbt": "{data:{Tags:[\"MAD_RespawnBanner\"]}}"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:copy_name",
+              "source": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "equipment": {
+                    "head": {
+                      "id": "minecraft:player_head",
+                      "components": {
+                        "enchantments": {
+                          "minecraft:vanishing_curse": 1
+                        }
+                      }
+                    }
+                  },
+                  "DisabledSlots": 4144959
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#mad:for_player_head"
+                }
+              }
+            },
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": "this",
+              "ops": [
+                {
+                  "op": "replace",
+                  "source": "data.Tags",
+                  "target": "Tags"
+                },
+                {
+                  "op": "replace",
+                  "source": "data.name",
+                  "target": "name"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/armor_stand"
+}

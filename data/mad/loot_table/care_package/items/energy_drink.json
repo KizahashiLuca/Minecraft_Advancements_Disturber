@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "栄養ドリンク",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:potion_contents": {
+                  "custom_color": 3470848,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:speed",
+                      "amplifier": 0,
+                      "duration": 400
+                    },
+                    {
+                      "id": "minecraft:haste",
+                      "amplifier": 0,
+                      "duration": 400
+                    },
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 3,
+                      "duration": 400
+                    },
+                    {
+                      "id": "minecraft:saturation",
+                      "amplifier": 20,
+                      "duration": 400
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_EnergyDrink"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

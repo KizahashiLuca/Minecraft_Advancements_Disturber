@@ -1,0 +1,36 @@
+{
+  "parent": "mad:original/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:creeper_head"
+    },
+    "title": {
+      "translate": "どこかで見たような顔……"
+    },
+    "description": {
+      "translate": "クリーパーの頭を手に入れて、クリーパー模様の旗の模様を作成する"
+    }
+  },
+  "criteria": {
+    "obtain_creeper_banner_pattern": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:creeper_banner_pattern"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_creeper_banner_pattern"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/original/obtain_creeper_banner_pattern/"
+  }
+}

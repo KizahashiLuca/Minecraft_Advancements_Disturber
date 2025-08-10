@@ -1,0 +1,36 @@
+{
+  "parent": "mad:achievement/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:leather"
+    },
+    "title": {
+      "translate": "牛転がし"
+    },
+    "description": {
+      "translate": "革を手に入れる"
+    }
+  },
+  "criteria": {
+    "kill_cow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:leather"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill_cow"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/achievement/kill_cow/"
+  }
+}

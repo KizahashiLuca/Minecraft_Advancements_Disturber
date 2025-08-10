@@ -1,0 +1,43 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:item",
+            "nbt": "{Item:{id:\"minecraft:armor_stand\"}}"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Item:{components:{}}}"
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Item:{components:{\"minecraft:entity_data\":{data:{Tags:[\"MAD_RespawnBanner\"]}}}}}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{components:{\"minecraft:enchantments\":{\"minecraft:vanishing_curse\":1}},id:\"minecraft:player_head\"}}"
+      }
+    }
+  ]
+}

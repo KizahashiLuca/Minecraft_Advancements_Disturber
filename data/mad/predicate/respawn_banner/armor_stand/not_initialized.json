@@ -1,0 +1,20 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:respawn_banner/armor_stand/"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:armor_stand",
+          "nbt": "{data:{Tags:[\"MAD_InitializedRespawnBanner\"]}}"
+        }
+      }
+    }
+  ]
+}

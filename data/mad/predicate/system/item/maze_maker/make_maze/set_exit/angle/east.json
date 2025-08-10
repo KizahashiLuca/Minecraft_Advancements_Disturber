@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "MazePosX": 8,
+    "MazePosZ": {
+      "min": 1,
+      "max": 7
+    }
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mad:phase/100_trial"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mad:player/host"
+    }
+  },
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:player/not_player"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mad:system/common/not_spectator"
+      }
+    ]
+  }
+]

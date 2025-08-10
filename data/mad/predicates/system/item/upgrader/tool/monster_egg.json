@@ -1,8 +1,0 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "type": "minecraft:turtle",
-    "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_ToolUpgrader\"]}"
-  }
-}

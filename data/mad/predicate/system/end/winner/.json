@@ -1,0 +1,22 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "minecraft:reference",
+          "name": "mad:gamerule/match_mode/individual/not_solo"
+        },
+        {
+          "condition": "minecraft:reference",
+          "name": "mad:gamerule/match_mode/team"
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/end/number_of_alives/one"
+    }
+  ]
+}

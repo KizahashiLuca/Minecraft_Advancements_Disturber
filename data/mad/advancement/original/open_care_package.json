@@ -1,0 +1,35 @@
+{
+  "parent": "mad:original/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:chest_minecart"
+    },
+    "title": {
+      "translate": "支援物資だ"
+    },
+    "description": {
+      "translate": "支援物資を受け取る"
+    }
+  },
+  "criteria": {
+    "find_minecart": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": [
+            "minecraft:chest_minecart"
+          ],
+          "nbt": "{Tags:[\"MAD_CarePackage\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "find_minecart"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/original/open_care_package/"
+  }
+}

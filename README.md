@@ -22,8 +22,10 @@ __*進捗をクリアしながら、唯一の生存を目指せ！*__
    - [β-2.3](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.3)
  - Java Edition v1.20.2 対応
    - [β-2.4](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.4)
- - Java Edition v1.20.3 以降 対応
+ - Java Edition v1.20.3 - 1.20.4 対応
    - [β-2.5](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.5)
+ - Java Edition v1.21 以降 対応
+   - [β-3.0](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-2.5)
    
 ## ルール解説動画
 

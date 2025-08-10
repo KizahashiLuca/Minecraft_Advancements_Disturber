@@ -1,0 +1,36 @@
+{
+  "parent": "mad:achievement/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:cake"
+    },
+    "title": {
+      "translate": "the cake is a lie"
+    },
+    "description": {
+      "translate": "小麦に砂糖、牛乳、それから卵！"
+    }
+  },
+  "criteria": {
+    "bake_cake": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cake"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "bake_cake"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/achievement/bake_cake/"
+  }
+}

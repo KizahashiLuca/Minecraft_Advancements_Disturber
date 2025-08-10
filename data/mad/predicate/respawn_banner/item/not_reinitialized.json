@@ -1,0 +1,20 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:respawn_banner/item/"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{components:{\"minecraft:item_model\":\"minecraft:player_head\"}}}"
+        }
+      }
+    }
+  ]
+}

@@ -8,6 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send messages common end
-tellraw @a ["",{"text":"---------------------------------","color":"white","bold":false,"italic":false}]
+## 共通終了メッセージ表示
+tellraw @a ["",{"text":"---------------------------------"}]
 tellraw @a [""]

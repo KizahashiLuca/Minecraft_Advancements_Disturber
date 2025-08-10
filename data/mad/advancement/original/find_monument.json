@@ -1,0 +1,40 @@
+{
+  "parent": "mad:original/in_this_corner_of_the_world",
+  "display": {
+    "icon": {
+      "id": "minecraft:sea_lantern"
+    },
+    "title": {
+      "translate": "アトランティスの発見"
+    },
+    "description": {
+      "translate": "海底神殿の攻略を開始する"
+    }
+  },
+  "criteria": {
+    "in_monument": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "minecraft:monument"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "in_monument"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/original/find_monument/"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "mad:original/find_buried_treasure",
+  "display": {
+    "icon": {
+      "id": "minecraft:heart_of_the_sea"
+    },
+    "title": {
+      "translate": "潮満珠、潮涸珠"
+    },
+    "description": {
+      "translate": "コンジットを作成する"
+    }
+  },
+  "criteria": {
+    "obtain_conduit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:conduit"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_conduit"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/original/obtain_conduit/"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:reference",
+          "name": "mad:gamerule/team_rules/1/number_of_teams/3"
+        },
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#mad_team_a"
+            },
+            "score": "NumberOfPlayers",
+            "scale": 1
+          },
+          "range": {
+            "min": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#mad_team_a"
+              },
+              "score": "MaxNumberOfPlayers",
+              "scale": 1
+            },
+            "max": 2147483647
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:reference",
+          "name": "mad:gamerule/team_rules/1/number_of_teams/3"
+        },
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#mad_team_b"
+            },
+            "score": "NumberOfPlayers",
+            "scale": 1
+          },
+          "range": {
+            "min": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#mad_team_b"
+              },
+              "score": "MaxNumberOfPlayers",
+              "scale": 1
+            },
+            "max": 2147483647
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:reference",
+          "name": "mad:gamerule/team_rules/1/number_of_teams/4"
+        },
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#mad_team_a"
+            },
+            "score": "NumberOfPlayers",
+            "scale": 1
+          },
+          "range": {
+            "min": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#mad_team_a"
+              },
+              "score": "MaxNumberOfPlayers",
+              "scale": 1
+            },
+            "max": 2147483647
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:reference",
+          "name": "mad:gamerule/team_rules/1/number_of_teams/4"
+        },
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#mad_team_b"
+            },
+            "score": "NumberOfPlayers",
+            "scale": 1
+          },
+          "range": {
+            "min": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#mad_team_b"
+              },
+              "score": "MaxNumberOfPlayers",
+              "scale": 1
+            },
+            "max": 2147483647
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:reference",
+          "name": "mad:gamerule/team_rules/1/number_of_teams/4"
+        },
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#mad_team_c"
+            },
+            "score": "NumberOfPlayers",
+            "scale": 1
+          },
+          "range": {
+            "min": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#mad_team_c"
+              },
+              "score": "MaxNumberOfPlayers",
+              "scale": 1
+            },
+            "max": 2147483647
+          }
+        }
+      ]
+    }
+  ]
+}

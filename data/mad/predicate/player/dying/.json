@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:player/"
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "Phase": 61,
+        "NumOfDeaths": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "parent": "mad:original/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:chainmail_boots"
+    },
+    "title": {
+      "translate": "この世界の片隅に"
+    },
+    "description": {
+      "translate": "ボーダーの端へ到達"
+    }
+  },
+  "criteria": {
+    "in_this_corner_of_the_world": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "dimension": "minecraft:overworld"
+                }
+              },
+              {
+                "condition": "minecraft:any_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "PosX": {
+                        "min": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.x1"
+                        },
+                        "max": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.x1"
+                        }
+                      },
+                      "PosZ": {
+                        "min": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.z1"
+                        },
+                        "max": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.z1"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "PosX": {
+                        "min": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.x2"
+                        },
+                        "max": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.x2"
+                        }
+                      },
+                      "PosZ": {
+                        "min": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.z2"
+                        },
+                        "max": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.z2"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "PosX": {
+                        "min": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.x3"
+                        },
+                        "max": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.x3"
+                        }
+                      },
+                      "PosZ": {
+                        "min": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.z3"
+                        },
+                        "max": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.z3"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "PosX": {
+                        "min": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.x4"
+                        },
+                        "max": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.x4"
+                        }
+                      },
+                      "PosZ": {
+                        "min": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.z4"
+                        },
+                        "max": {
+                          "type": "minecraft:storage",
+                          "storage": "mad:",
+                          "path": "gamerule.world_border.z4"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_this_corner_of_the_world"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/original/in_this_corner_of_the_world/"
+  }
+}

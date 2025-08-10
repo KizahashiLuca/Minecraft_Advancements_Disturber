@@ -1,0 +1,15 @@
+#####################################
+## Minecraft Advancements Disturber
+## MC-Version: Java Edit. 1.20.3
+## Author    : @potagegatop
+## Author    : @KizahashiLuca
+## Date      : 06 Dec 2023
+## Version   : β-2.5
+## Licensed under CC BY-SA 4.0. 
+#####################################
+
+## ゲーム開始 - 個人戦
+#### エンティティ召喚 - タイトル
+execute unless entity @e[tag=MAD_TextDisplay_Setting_Title] at @e[predicate=mad:marker/respawn_beacon,limit=1] positioned ~ ~1 ~6.45 run summon minecraft:text_display ~ ~2.00 ~ {text:{text:'Minecraft\nAdvancements\nDisturber\nゲーム設定',color:'black',bold:true},background:0,alignment:'center',Rotation:[180.0f, 0.0f],Tags:['MAD_TextDisplay','MAD_TextDisplay_Setting_Title']}
+#### ゲーム設定確認
+function mad:system/setting/root/detect/ok/

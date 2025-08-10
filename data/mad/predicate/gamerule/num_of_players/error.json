@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:reference",
+    "name": "mad:gamerule/num_of_players/accept"
+  }
+}

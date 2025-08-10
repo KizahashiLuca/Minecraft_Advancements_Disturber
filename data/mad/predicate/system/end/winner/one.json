@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:gamerule/match_mode/individual/solo"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:system/end/number_of_alives/zero"
+    }
+  ]
+}

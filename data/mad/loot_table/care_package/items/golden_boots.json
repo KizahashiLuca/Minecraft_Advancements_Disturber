@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:frost_walker": 2,
+                "minecraft:soul_speed": 3
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.05,
+                  "operation": "add_value",
+                  "id": "mad:care_package/items/golden_boots",
+                  "slot": [
+                    "feet"
+                  ]
+                },
+                {
+                  "attribute": "minecraft:max_health",
+                  "amount": -0.2,
+                  "operation": "add_multiplied_total",
+                  "id": "mad:care_package/items/golden_boots",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:repair_cost": 2147483647,
+                "minecraft:custom_data": {
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_GoldenBoots"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

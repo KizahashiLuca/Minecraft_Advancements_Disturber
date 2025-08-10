@@ -1,0 +1,25 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:gamerule/match_mode/team"
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#mad"
+        },
+        "score": "NumberOfTeams",
+        "scale": 1
+      },
+      "range": {
+        "min": 1,
+        "max": 2
+      }
+    }
+  ]
+}

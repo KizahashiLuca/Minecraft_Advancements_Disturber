@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:allay_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                ["",{"text":"メイズメイカー","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                ["",{"text":"一番近くの敵プレイヤーの位置に迷路を","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"出現させる。","color":"gray","bold":false,"italic":false}],
+                [""],
+                ["",{"translate":"%sで使用","with":[{"keybind":"key.use"}],"color":"dark_purple","bold":false,"italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:entity_data": {
+                  "id": "minecraft:marker",
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_MazeMaker"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_MazeMaker"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

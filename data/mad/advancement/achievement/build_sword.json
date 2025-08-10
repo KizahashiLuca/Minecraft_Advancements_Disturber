@@ -1,0 +1,34 @@
+{
+  "parent": "mad:achievement/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_sword"
+    },
+    "title": {
+      "translate": "いざ突撃！"
+    },
+    "description": {
+      "translate": "木材と棒を使い、剣を作る"
+    }
+  },
+  "criteria": {
+    "build_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#mad:sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "build_sword"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/achievement/build_sword/"
+  }
+}

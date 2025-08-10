@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:turtle_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "ツールアップグレードキット",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "使用者のオフハンドにある道具をアップグレード",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  対象ツール: 斧, クワ, ツルハシ, シャベル, 剣",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  木ツール → 石ツール",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  石ツール → 金ツール",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  金ツール → 鉄ツール",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  鉄ツール → ダイヤモンドツール",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  ダイヤモンドツール → ネザライトツール",
+                  "color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "%sで使用",
+                  "with": [
+                    {
+                      "keybind": "key.use"
+                    }
+                  ],
+                  "color": "dark_purple",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_data": {
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_ToolUpgrader"
+                  ]
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:item"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

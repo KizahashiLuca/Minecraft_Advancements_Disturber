@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/broken_elytra"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/broken_trident"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/end_portal_frame"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/energy_drink"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/golden_boots"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/maze_maker"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/notice_of_thief"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/pickaxe"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/teleport_arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/totem_of_undying"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/transmitter",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/upgrader/"
+        }
+      ]
+    }
+  ]
+}

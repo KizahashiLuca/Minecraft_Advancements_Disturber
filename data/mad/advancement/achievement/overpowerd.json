@@ -1,0 +1,35 @@
+{
+  "parent": "mad:achievement/bake_cake",
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_golden_apple"
+    },
+    "title": {
+      "translate": "圧倒的な力"
+    },
+    "description": {
+      "translate": "ノッチリンゴを食べる"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "overpowered": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:enchanted_golden_apple"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "requirements": [
+    [
+      "overpowered"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/achievement/overpowerd/"
+  }
+}

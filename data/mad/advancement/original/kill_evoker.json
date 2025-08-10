@@ -1,0 +1,46 @@
+{
+  "parent": "mad:original/kill_vindicator",
+  "display": {
+    "icon": {
+      "id": "minecraft:totem_of_undying"
+    },
+    "title": {
+      "translate": "わだかまり"
+    },
+    "description": {
+      "translate": "森の洋館の中でエヴォーカーを倒す"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "kill_evoker": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "minecraft:evoker"
+            },
+            "entity": "this"
+          }
+        ],
+        "player": {
+          "location": {
+            "structures": [
+              "minecraft:mansion"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill_evoker"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/original/kill_evoker/"
+  }
+}

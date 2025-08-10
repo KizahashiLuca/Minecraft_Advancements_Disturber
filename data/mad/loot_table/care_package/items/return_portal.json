@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "帰還ポータル",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "エンドからの帰還ポータルを設置",
+                  "color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "%sで使用",
+                  "with": [
+                    {
+                      "keybind": "key.use"
+                    }
+                  ],
+                  "color": "dark_purple",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_data": {
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_WardenFangsWand"
+                  ]
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_ReturnPortal"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

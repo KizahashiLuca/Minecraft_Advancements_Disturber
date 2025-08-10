@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:zombie_horse_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "緊急招集",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "チームメンバーを使用者の場所にテレポートさせる","color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "%sで使用",
+                  "with": [
+                    {
+                      "keybind": "key.use"
+                    }
+                  ],
+                  "color": "dark_purple",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_data": {
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_EmergencyCall"
+                  ]
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:item"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

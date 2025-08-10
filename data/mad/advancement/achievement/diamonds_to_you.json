@@ -1,0 +1,43 @@
+{
+  "parent": "mad:achievement/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond"
+    },
+    "title": {
+      "translate": "ダイヤモンドをあなたに！"
+    },
+    "description": {
+      "translate": "モブにダイヤモンドを拾わせる"
+    }
+  },
+  "criteria": {
+    "diamonds_to_you": {
+      "trigger": "minecraft:thrown_item_picked_up_by_entity",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:diamond"
+          ]
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "#mad:pick_up_items"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diamonds_to_you"
+    ]
+  ],
+  "rewards": {
+    "function": "mad:system/game/advancement/achievement/diamonds_to_you/"
+  }
+}

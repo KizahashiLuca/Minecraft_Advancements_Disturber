@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wolf_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "防具アップグレードキット",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "使用者の着用した防具をアップグレード",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  無着用 → 革防具",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  革防具 → 金防具",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  金防具 → チェーン防具",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  チェーン防具 → 鉄防具",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  鉄防具 → ダイヤモンド防具",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "  ダイヤモンド防具 → ネザライト防具",
+                  "color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "%sで使用",
+                  "with": [
+                    {
+                      "keybind": "key.use"
+                    }
+                  ],
+                  "color": "dark_purple",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:custom_data": {
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_ArmorUpgrader"
+                  ]
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:item"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
