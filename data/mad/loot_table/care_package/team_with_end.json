@@ -37,28 +37,12 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/maze_maker"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
           "value": "mad:care_package/items/notice_of_thief"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 1,
           "value": "mad:care_package/items/pickaxe"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "mad:care_package/items/teleport_arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 2
-            }
-          ]
         },
         {
           "type": "minecraft:loot_table",
