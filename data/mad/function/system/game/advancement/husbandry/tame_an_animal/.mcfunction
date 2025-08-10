@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Husbandry_tame_an_animal=0}] run function mad:system/game/advancement/husbandry/tame_an_animal/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Husbandry_tame_an_animal=0}] run function mad:system/game/advancement/husbandry/tame_an_animal/branch

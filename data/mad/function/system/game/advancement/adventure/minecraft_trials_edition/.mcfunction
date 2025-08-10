@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_minecraft_trials_edition=0}] run function mad:system/game/advancement/adventure/minecraft_trials_edition/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_minecraft_trials_edition=0}] run function mad:system/game/advancement/adventure/minecraft_trials_edition/branch

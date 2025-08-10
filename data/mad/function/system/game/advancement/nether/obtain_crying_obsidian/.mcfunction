@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Nether_obtain_crying_obsidian=0}] run function mad:system/game/advancement/nether/obtain_crying_obsidian/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Nether_obtain_crying_obsidian=0}] run function mad:system/game/advancement/nether/obtain_crying_obsidian/branch

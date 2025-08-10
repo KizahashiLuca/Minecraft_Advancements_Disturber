@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Story_shiny_gear=0}] run function mad:system/game/advancement/story/shiny_gear/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Story_shiny_gear=0}] run function mad:system/game/advancement/story/shiny_gear/branch

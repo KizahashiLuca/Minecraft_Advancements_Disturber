@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Husbandry_tadpole_in_a_bucket=0}] run function mad:system/game/advancement/husbandry/tadpole_in_a_bucket/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Husbandry_tadpole_in_a_bucket=0}] run function mad:system/game/advancement/husbandry/tadpole_in_a_bucket/branch

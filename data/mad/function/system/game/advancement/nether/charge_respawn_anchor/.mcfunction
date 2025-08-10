@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Nether_charge_respawn_anchor=0}] run function mad:system/game/advancement/nether/charge_respawn_anchor/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Nether_charge_respawn_anchor=0}] run function mad:system/game/advancement/nether/charge_respawn_anchor/branch

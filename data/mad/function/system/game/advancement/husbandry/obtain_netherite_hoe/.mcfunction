@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Husbandry_obtain_netherite_hoe=0}] run function mad:system/game/advancement/husbandry/obtain_netherite_hoe/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Husbandry_obtain_netherite_hoe=0}] run function mad:system/game/advancement/husbandry/obtain_netherite_hoe/branch

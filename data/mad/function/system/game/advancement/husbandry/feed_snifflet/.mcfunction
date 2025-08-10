@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Husbandry_feed_snifflet=0}] run function mad:system/game/advancement/husbandry/feed_snifflet/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Husbandry_feed_snifflet=0}] run function mad:system/game/advancement/husbandry/feed_snifflet/branch

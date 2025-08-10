@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_walk_on_powder_snow_with_leather_boots=0}] run function mad:system/game/advancement/adventure/walk_on_powder_snow_with_leather_boots/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_walk_on_powder_snow_with_leather_boots=0}] run function mad:system/game/advancement/adventure/walk_on_powder_snow_with_leather_boots/branch

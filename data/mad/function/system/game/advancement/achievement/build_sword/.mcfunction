@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Achievement_build_sword=0}] run function mad:system/game/advancement/achievement/build_sword/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Achievement_build_sword=0}] run function mad:system/game/advancement/achievement/build_sword/branch

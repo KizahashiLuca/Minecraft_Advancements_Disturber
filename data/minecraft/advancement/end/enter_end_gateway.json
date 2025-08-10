@@ -6,8 +6,11 @@
         "block": "minecraft:end_gateway",
         "player": [
           {
-            "condition": "minecraft:reference",
-            "name": "mad:phase/not_in_setting"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "mad:phase/setting/"
+            }
           }
         ]
       },

@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_lightning_rod_with_villager_no_fire=0}] run function mad:system/game/advancement/adventure/lightning_rod_with_villager_no_fire/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_lightning_rod_with_villager_no_fire=0}] run function mad:system/game/advancement/adventure/lightning_rod_with_villager_no_fire/branch

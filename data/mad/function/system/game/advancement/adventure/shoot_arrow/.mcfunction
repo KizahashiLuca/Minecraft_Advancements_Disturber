@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_shoot_arrow=0}] run function mad:system/game/advancement/adventure/shoot_arrow/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_shoot_arrow=0}] run function mad:system/game/advancement/adventure/shoot_arrow/branch

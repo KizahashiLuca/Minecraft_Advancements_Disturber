@@ -54,6 +54,11 @@ scoreboard players set #mad_team_a Advancements_Adventure_fall_from_world_height
 scoreboard players set #mad_team_b Advancements_Adventure_fall_from_world_height 0
 scoreboard players set #mad_team_c Advancements_Adventure_fall_from_world_height 0
 scoreboard players set #mad_team_d Advancements_Adventure_fall_from_world_height 0
+scoreboard players set @a[predicate=mad:player/] Advancements_Adventure_heart_transplanter 0
+scoreboard players set #mad_team_a Advancements_Adventure_heart_transplanter 0
+scoreboard players set #mad_team_b Advancements_Adventure_heart_transplanter 0
+scoreboard players set #mad_team_c Advancements_Adventure_heart_transplanter 0
+scoreboard players set #mad_team_d Advancements_Adventure_heart_transplanter 0
 scoreboard players set @a[predicate=mad:player/] Advancements_Adventure_hero_of_the_village 0
 scoreboard players set #mad_team_a Advancements_Adventure_hero_of_the_village 0
 scoreboard players set #mad_team_b Advancements_Adventure_hero_of_the_village 0
@@ -199,6 +204,11 @@ scoreboard players set #mad_team_a Advancements_Adventure_under_lock_and_key 0
 scoreboard players set #mad_team_b Advancements_Adventure_under_lock_and_key 0
 scoreboard players set #mad_team_c Advancements_Adventure_under_lock_and_key 0
 scoreboard players set #mad_team_d Advancements_Adventure_under_lock_and_key 0
+scoreboard players set @a[predicate=mad:player/] Advancements_Adventure_use_lodestone 0
+scoreboard players set #mad_team_a Advancements_Adventure_use_lodestone 0
+scoreboard players set #mad_team_b Advancements_Adventure_use_lodestone 0
+scoreboard players set #mad_team_c Advancements_Adventure_use_lodestone 0
+scoreboard players set #mad_team_d Advancements_Adventure_use_lodestone 0
 scoreboard players set @a[predicate=mad:player/] Advancements_Adventure_very_very_frightening 0
 scoreboard players set #mad_team_a Advancements_Adventure_very_very_frightening 0
 scoreboard players set #mad_team_b Advancements_Adventure_very_very_frightening 0
@@ -339,6 +349,11 @@ scoreboard players set #mad_team_a Advancements_Husbandry_obtain_sniffer_egg 0
 scoreboard players set #mad_team_b Advancements_Husbandry_obtain_sniffer_egg 0
 scoreboard players set #mad_team_c Advancements_Husbandry_obtain_sniffer_egg 0
 scoreboard players set #mad_team_d Advancements_Husbandry_obtain_sniffer_egg 0
+scoreboard players set @a[predicate=mad:player/] Advancements_Husbandry_place_dried_ghast_in_water 0
+scoreboard players set #mad_team_a Advancements_Husbandry_place_dried_ghast_in_water 0
+scoreboard players set #mad_team_b Advancements_Husbandry_place_dried_ghast_in_water 0
+scoreboard players set #mad_team_c Advancements_Husbandry_place_dried_ghast_in_water 0
+scoreboard players set #mad_team_d Advancements_Husbandry_place_dried_ghast_in_water 0
 scoreboard players set @a[predicate=mad:player/] Advancements_Husbandry_plant_any_sniffer_seed 0
 scoreboard players set #mad_team_a Advancements_Husbandry_plant_any_sniffer_seed 0
 scoreboard players set #mad_team_b Advancements_Husbandry_plant_any_sniffer_seed 0
@@ -514,11 +529,6 @@ scoreboard players set #mad_team_a Advancements_Nether_uneasy_alliance 0
 scoreboard players set #mad_team_b Advancements_Nether_uneasy_alliance 0
 scoreboard players set #mad_team_c Advancements_Nether_uneasy_alliance 0
 scoreboard players set #mad_team_d Advancements_Nether_uneasy_alliance 0
-scoreboard players set @a[predicate=mad:player/] Advancements_Nether_use_lodestone 0
-scoreboard players set #mad_team_a Advancements_Nether_use_lodestone 0
-scoreboard players set #mad_team_b Advancements_Nether_use_lodestone 0
-scoreboard players set #mad_team_c Advancements_Nether_use_lodestone 0
-scoreboard players set #mad_team_d Advancements_Nether_use_lodestone 0
 scoreboard players set @a[predicate=mad:player/] Advancements_Story_cure_zombie_villager 0
 scoreboard players set #mad_team_a Advancements_Story_cure_zombie_villager 0
 scoreboard players set #mad_team_b Advancements_Story_cure_zombie_villager 0

@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Nether_loot_bastion=0}] run function mad:system/game/advancement/nether/loot_bastion/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Nether_loot_bastion=0}] run function mad:system/game/advancement/nether/loot_bastion/branch

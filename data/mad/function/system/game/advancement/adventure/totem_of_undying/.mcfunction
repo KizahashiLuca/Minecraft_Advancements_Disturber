@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_totem_of_undying=0}] run function mad:system/game/advancement/adventure/totem_of_undying/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_totem_of_undying=0}] run function mad:system/game/advancement/adventure/totem_of_undying/branch

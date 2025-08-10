@@ -9,4 +9,4 @@
 #####################################
 
 ## 進捗検出
-execute as @s[predicate=mad:player/alive/,scores={Advancements_End_respawn_dragon=0}] run function mad:system/game/advancement/end/respawn_dragon/branch
+execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_End_respawn_dragon=0}] run function mad:system/game/advancement/end/respawn_dragon/branch

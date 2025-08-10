@@ -18,6 +18,7 @@ scoreboard players set @s Advancements_Adventure_bullseye 0
 scoreboard players set @s Advancements_Adventure_crafters_crafting_crafters 0
 scoreboard players set @s Advancements_Adventure_craft_decorated_pot_using_only_sherds 0
 scoreboard players set @s Advancements_Adventure_fall_from_world_height 0
+scoreboard players set @s Advancements_Adventure_heart_transplanter 0
 scoreboard players set @s Advancements_Adventure_hero_of_the_village 0
 scoreboard players set @s Advancements_Adventure_honey_block_slide 0
 scoreboard players set @s Advancements_Adventure_kill_all_mobs 0
@@ -47,6 +48,7 @@ scoreboard players set @s Advancements_Adventure_trim_with_all_exclusive_armor_p
 scoreboard players set @s Advancements_Adventure_trim_with_any_armor_pattern 0
 scoreboard players set @s Advancements_Adventure_two_birds_one_arrow 0
 scoreboard players set @s Advancements_Adventure_under_lock_and_key 0
+scoreboard players set @s Advancements_Adventure_use_lodestone 0
 scoreboard players set @s Advancements_Adventure_very_very_frightening 0
 scoreboard players set @s Advancements_Adventure_voluntary_exile 0
 scoreboard players set @s Advancements_Adventure_walk_on_powder_snow_with_leather_boots 0
@@ -75,6 +77,7 @@ scoreboard players set @s Advancements_Husbandry_leash_all_frog_variants 0
 scoreboard players set @s Advancements_Husbandry_make_a_sign_glow 0
 scoreboard players set @s Advancements_Husbandry_obtain_netherite_hoe 0
 scoreboard players set @s Advancements_Husbandry_obtain_sniffer_egg 0
+scoreboard players set @s Advancements_Husbandry_place_dried_ghast_in_water 0
 scoreboard players set @s Advancements_Husbandry_plant_any_sniffer_seed 0
 scoreboard players set @s Advancements_Husbandry_plant_seed 0
 scoreboard players set @s Advancements_Husbandry_remove_wolf_armor 0
@@ -110,7 +113,6 @@ scoreboard players set @s Advancements_Nether_ride_strider 0
 scoreboard players set @s Advancements_Nether_ride_strider_in_overworld_lava 0
 scoreboard players set @s Advancements_Nether_summon_wither 0
 scoreboard players set @s Advancements_Nether_uneasy_alliance 0
-scoreboard players set @s Advancements_Nether_use_lodestone 0
 scoreboard players set @s Advancements_Story_cure_zombie_villager 0
 scoreboard players set @s Advancements_Story_deflect_arrow 0
 scoreboard players set @s Advancements_Story_enchant_item 0
