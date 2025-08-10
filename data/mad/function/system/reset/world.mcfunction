@@ -24,9 +24,6 @@ weather clear
 execute if predicate mad:gamerule/match_mode/team at @e[predicate=mad:marker/respawn_beacon,limit=1] run fill ~-7 ~-2 ~-7 ~7 ~10 ~7 minecraft:air
 execute if predicate mad:gamerule/match_mode/team at @e[predicate=mad:marker/respawn_beacon,limit=1] run kill @e[type=minecraft:block_display,distance=..20]
 
-## テスト用
-tp @a 100000 4 100000
-
 ## ストレージ
 data remove storage mad: system
 data remove storage mad: gamerule
