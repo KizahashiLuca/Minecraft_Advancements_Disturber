@@ -15,6 +15,9 @@ gamemode spectator @s
 function mad:system/game/detect_dying/death/individual/set_storage
 
 ## スコアボード設定
+function mad:system/game/detect_dying/death/individual/set_scoreboard
+
+## スコアボード設定
 function mad:system/game/detect_dying/kill/scoreboards/victim/pvp_on
 scoreboard players add #mad NumberOfDead 1
 scoreboard players reset @s Second

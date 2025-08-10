@@ -35,6 +35,8 @@ function mad:system/start/initialize/world/
 function mad:system/start/initialize/storages/team
 #### チームメンバー表示用ストレージ
 function mad:system/start/initialize/storages/display
+#### アップグレードキット表示用ストレージ
+function mad:system/start/initialize/storages/upgrader
 #### ボスバー
 function mad:system/start/initialize/bossbar
 #### 疑似乱数生成器
