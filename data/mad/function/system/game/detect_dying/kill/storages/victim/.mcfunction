@@ -15,7 +15,6 @@ execute store result score @s TmpX run data get entity @s LastDeathLocation.pos[
 execute store result score @s TmpY run data get entity @s LastDeathLocation.pos[1] 1.0
 execute store result score @s TmpZ run data get entity @s LastDeathLocation.pos[2] 1.0
 scoreboard players operation @s TmpX -= #mad PosX
-scoreboard players operation @s TmpY -= #mad PosY
 scoreboard players operation @s TmpZ -= #mad PosZ
 execute store result storage mad: death.x int 1.0 run scoreboard players get @s TmpX
 execute store result storage mad: death.y int 1.0 run scoreboard players get @s TmpY
