@@ -17,6 +17,9 @@ function mad:system/game/detect_dying/kill/storages/killer/ with storage mad: de
 execute as @s[predicate=mad:player/team/no] run function mad:system/game/detect_dying/kill/individual
 execute as @s[predicate=mad:player/team/] run function mad:system/game/detect_dying/kill/team with storage mad: death
 
+## ストレージ格納
+data modify storage mad: death.message set value ''
+
 ## PvP分岐
 execute if predicate mad:system/game/timer/pvp/mode/pvp_on run function mad:system/game/detect_dying/kill/pvp_on
 execute if predicate mad:system/game/timer/pvp/mode/pvp_off run function mad:system/game/detect_dying/kill/pvp_off
