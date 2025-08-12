@@ -51,7 +51,11 @@
                   ]
                 },
                 "minecraft:entity_data": {
-                  "id": "minecraft:item"
+                  "id": "minecraft:marker",
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_Transmitter"
+                  ]
                 }
               }
             }

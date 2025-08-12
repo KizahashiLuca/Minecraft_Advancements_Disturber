@@ -33,3 +33,6 @@ data remove storage mad: item.notice_of_thief.tmp
 
 ## 関数スケジュール
 schedule function mad:system/item/notice_of_thief/steal/ 5s append
+
+## マーカーキル
+kill @e[type=minecraft:marker,tag=MAD_MinecartItem,tag=MAD_NoticeOfThief,sort=nearest,limit=1]

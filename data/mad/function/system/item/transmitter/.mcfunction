@@ -33,3 +33,6 @@ execute unless data storage mad: item.transmitter.player_number run function mad
 
 ## ストレージ削除
 data remove storage mad: item.transmitter
+
+## マーカーキル
+kill @e[type=minecraft:marker,tag=MAD_MinecartItem,tag=MAD_Transmitter,sort=nearest,limit=1]

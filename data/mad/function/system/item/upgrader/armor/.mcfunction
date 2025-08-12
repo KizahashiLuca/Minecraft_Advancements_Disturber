@@ -35,3 +35,6 @@ data remove storage mad: item.armor_upgrader.equipment
 
 ## メッセージ表示
 function mad:message/item/upgrader/armor
+
+## マーカーキル
+kill @e[type=minecraft:marker,tag=MAD_MinecartItem,tag=MAD_ArmorUpgrader,sort=nearest,limit=1]

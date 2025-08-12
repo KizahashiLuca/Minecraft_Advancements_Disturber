@@ -29,3 +29,6 @@ data remove storage mad: item.emergency_call.tmp
 
 ## 関数スケジュール
 schedule function mad:system/item/emergency_call/call/ 5s append
+
+## マーカーキル
+kill @e[type=minecraft:marker,tag=MAD_MinecartItem,tag=MAD_EmergencyCall,sort=nearest,limit=1]

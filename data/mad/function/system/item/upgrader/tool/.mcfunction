@@ -20,3 +20,6 @@ execute as @s[predicate=!mad:system/item/upgrader/tool/mainhand,predicate=!mad:s
 ## アップグレードアイテム - ある時
 execute as @s[predicate=mad:system/item/upgrader/tool/mainhand] run function mad:system/item/upgrader/tool/upgradable/ {type:'mainhand',nbt:'SelectedItem'}
 execute as @s[predicate=mad:system/item/upgrader/tool/offhand] run function mad:system/item/upgrader/tool/upgradable/ {type:'offhand',nbt:'equipment.offhand'}
+
+## マーカーキル
+kill @e[type=minecraft:marker,tag=MAD_MinecartItem,tag=MAD_ToolUpgrader,sort=nearest,limit=1]
