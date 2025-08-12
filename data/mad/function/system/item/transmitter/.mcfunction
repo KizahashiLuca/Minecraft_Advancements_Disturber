@@ -15,7 +15,7 @@ scoreboard players set @s UseTransmitter 0
 data remove storage mad: item.transmitter
 
 ## サウンドイベント
-playsound minecraft:ui.loom.select_pattern block @a ~ ~ ~ 1.0 1.0 1.0
+playsound minecraft:ui.loom.select_pattern block @a
 
 ## ストレージ格納
 execute if predicate mad:gamerule/match_mode/individual/ run function mad:system/item/transmitter/detect_player/individual

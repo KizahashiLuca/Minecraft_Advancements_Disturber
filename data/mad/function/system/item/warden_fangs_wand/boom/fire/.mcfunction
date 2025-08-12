@@ -16,7 +16,7 @@ execute as @e[type=minecraft:marker,tag=MAD_TmpSonicBoomPosition] at @s run tp @
 execute at @e[type=minecraft:marker,tag=MAD_TmpSonicBoomPosition] run particle minecraft:sonic_boom ~ ~ ~
 
 ## サウンドイベント
-execute at @e[type=minecraft:marker,tag=MAD_TmpSonicBoomPosition] run playsound minecraft:entity.warden.sonic_boom hostile @a ~ ~ ~ 0.5 1.0 0.5
+execute at @e[type=minecraft:marker,tag=MAD_TmpSonicBoomPosition] run playsound minecraft:entity.warden.sonic_boom hostile @a
 
 ## ダメージ
 $execute at @e[type=minecraft:marker,tag=MAD_TmpSonicBoomPosition] positioned ~ ~ ~ as @e[tag=!MAD_Player$(owner_number),type=!#mad:cannot_damage,distance=..3.0] run function mad:system/item/warden_fangs_wand/boom/fire/damages {owner_number:'$(owner_number)'}

@@ -9,7 +9,7 @@
 #####################################
 
 ## サウンドイベント
-$execute at @p[tag=MAD_Player$(caller_number)] run playsound minecraft:entity.zombie_horse.hurt block @a ~ ~ ~ 1.0 2.0 1.0
+$execute at @p[tag=MAD_Player$(caller_number)] run playsound minecraft:entity.zombie_horse.hurt block @a
 
 ## メッセージ表示
 $function mad:message/item/emergency_call/dead {caller_number:'$(caller_number)'}

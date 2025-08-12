@@ -9,7 +9,7 @@
 #####################################
 
 ## サウンド
-execute at @s run playsound minecraft:ui.button.click master @a ~ ~ ~ 1.0 1.0 1.0
+execute at @s run playsound minecraft:ui.button.click ui @a
 
 ## チーム編成ランダム設定へ変更
 scoreboard players set #mad SetTeamManual 0

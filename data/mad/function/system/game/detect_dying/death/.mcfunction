@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
+## ルートアイテム
+loot give @s loot mad:system/game/first_items
+
 ## チーム分岐
 $function mad:system/game/detect_dying/death/$(type)/
 

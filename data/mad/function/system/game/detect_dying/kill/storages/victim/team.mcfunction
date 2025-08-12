@@ -9,7 +9,6 @@
 #####################################
 
 ## ストレージ格納
-tellraw @a [{text:'test game/detect_dying/kill/storages/victim/team'}]
 $data modify storage mad: death.victim_color set value '$(color)'
 $data modify storage mad: death.victim_address set value '#mad_team_$(team)'
 $data modify storage mad: death.victim_target_selector set value '@a[predicate=mad:player/team/$(team)]'

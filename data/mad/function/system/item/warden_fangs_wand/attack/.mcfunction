@@ -18,8 +18,8 @@ execute as @s run function mad:system/item/warden_fangs_wand/attack/rotations
 kill @e[type=minecraft:marker,tag=MAD_TmpSonicBoomPosition]
 
 ## サウンドイベント
-execute unless data storage mad: {item:{warden_fangs_wand:{tmp:{wand:{components:{'minecraft:damage':2}}}}}} run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 1.0 2.0 1.0
-execute if data storage mad: {item:{warden_fangs_wand:{tmp:{wand:{components:{'minecraft:damage':2}}}}}} run playsound minecraft:entity.item.break player @a ~ ~ ~ 1.0 1.0 1.0
+execute unless data storage mad: {item:{warden_fangs_wand:{tmp:{wand:{components:{'minecraft:damage':2}}}}}} run playsound minecraft:block.beacon.power_select player @a
+execute if data storage mad: {item:{warden_fangs_wand:{tmp:{wand:{components:{'minecraft:damage':2}}}}}} run playsound minecraft:entity.item.break player @a
 
 ## アイテム消費
 $execute if data storage mad: {item:{warden_fangs_wand:{tmp:{wand:{components:{'minecraft:damage':2}}}}}} run item replace entity @s weapon.$(type) with minecraft:air 1

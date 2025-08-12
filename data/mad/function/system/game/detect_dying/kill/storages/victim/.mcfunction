@@ -7,7 +7,6 @@
 ## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
-tellraw @a [{text:'test game/detect_dying/kill/storages/victim/'}]
 
 ## ストレージ格納
 $data modify storage mad: death.victim set value '@p[tag=MAD_Player$(victim_number)]'

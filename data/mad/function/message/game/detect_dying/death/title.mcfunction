@@ -9,7 +9,6 @@
 #####################################
 
 ## タイトルメッセージ表示
-tellraw @a [{text:'test game/detect_dying/death/title'}]
 title @s title ['',{text:'死んでしまった！',color:'red'}]
 $title @s subtitle ['',{text:'理由：$(text)'}]
 title @s times 20 80 20

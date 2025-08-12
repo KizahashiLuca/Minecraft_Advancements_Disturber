@@ -12,8 +12,8 @@
 $teleport @a[predicate=mad:player/team/$(call_team)] @p[tag=MAD_Player$(caller_number)]
 
 ## サウンドイベント
-$execute at @p[tag=MAD_Player$(caller_number)] run playsound minecraft:entity.zombie_horse.ambient block @a ~ ~ ~ 1.0 1.0 1.0
-$execute at @p[tag=!MAD_Player$(caller_number),predicate=mad:player/team/$(call_team)] run playsound minecraft:entity.zombie_horse.ambient block @a ~ ~ ~ 1.0 2.0 1.0
+$execute at @p[tag=MAD_Player$(caller_number)] run playsound minecraft:entity.zombie_horse.ambient block @a
+$execute at @p[tag=!MAD_Player$(caller_number),predicate=mad:player/team/$(call_team)] run playsound minecraft:entity.zombie_horse.ambient block @a
 
 ## メッセージ表示
 $function mad:message/item/emergency_call/accept {caller_number:'$(caller_number)',call_team:'$(call_team)'}

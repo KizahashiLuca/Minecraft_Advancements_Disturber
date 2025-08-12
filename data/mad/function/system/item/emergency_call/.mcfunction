@@ -15,7 +15,7 @@ scoreboard players set @s UseEmergencyCall 0
 data remove storage mad: item.emergency_call.tmp
 
 ## サウンドイベント
-playsound minecraft:entity.zombie_horse.death block @a ~ ~ ~ 1.0 1.0 1.0
+playsound minecraft:entity.zombie_horse.death block @a
  
 ## ストレージ格納 - 緊急招集発信者プレイヤー番号
 execute store result storage mad: item.emergency_call.tmp.caller_number int 1.0 run scoreboard players get @s PlayerNumber
