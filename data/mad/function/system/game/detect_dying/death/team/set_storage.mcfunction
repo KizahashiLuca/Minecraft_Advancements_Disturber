@@ -21,7 +21,7 @@ execute store result storage mad: death.y int 1.0 run scoreboard players get @s 
 execute store result storage mad: death.z int 1.0 run scoreboard players get @s TmpZ
 execute if score #mad DeathPenaltyTime matches 0 run data modify storage mad: death.message set value ''
 execute if score #mad DeathPenaltyTime matches 1.. run data modify storage mad: death.message set value 'たため %s%s 失い'
-data modify storage mad: death.text set value '通常死亡'
+data modify storage mad: death.text set value '非プレイヤーキル'
 
 ## 死亡ペナルティ
 $scoreboard players operation #mad_team_$(team) Second -= #mad DeathPenaltyTime

@@ -10,5 +10,5 @@
 
 ## タイトルメッセージ表示
 title @s title ['',{text:'死んでしまった！',color:'red'}]
-$title @s subtitle ['',{text:'理由：$(text)'}]
+$title @s subtitle ['',{text:'死因：$(text)'}]
 title @s times 20 80 20

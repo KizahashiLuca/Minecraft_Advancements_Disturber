@@ -20,4 +20,4 @@ execute store result storage mad: death.x int 1.0 run scoreboard players get @s 
 execute store result storage mad: death.y int 1.0 run scoreboard players get @s TmpY
 execute store result storage mad: death.z int 1.0 run scoreboard players get @s TmpZ
 data modify storage mad: death.message set value ''
-data modify storage mad: death.text set value '通常死亡'
+data modify storage mad: death.text set value '非プレイヤーキル'
