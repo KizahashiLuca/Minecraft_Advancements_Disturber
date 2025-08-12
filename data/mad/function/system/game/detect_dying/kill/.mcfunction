@@ -22,7 +22,7 @@ execute if predicate mad:system/game/timer/pvp/mode/pvp_off run function mad:sys
 execute if predicate mad:system/game/timer/pvp/mode/pvp_off run loot give @s loot mad:system/game/first_items
 
 ## リスポーンバナー設置
-execute if predicate mad:system/game/timer/pvp/mode/pvp_on run function mad:system/game/respawn_banner/construct/ with storage mad: death
+execute if predicate mad:system/game/timer/pvp/mode/pvp_on run function mad:system/game/respawn_banner/construct/
 
 ## メッセージ表示
 function mad:message/game/detect_dying/kill/ with storage mad: death
