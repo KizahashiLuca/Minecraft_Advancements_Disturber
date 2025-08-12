@@ -14,7 +14,9 @@
       "predicate": {
         "type_specific": {
           "type": "player",
-          "gamemode": "spectator"
+          "gamemode": [
+            "spectator"
+          ]
         }
       }
     }
@@ -50,13 +52,6 @@
           "entity": "this",
           "predicate": {
             "team": "mad_team_d"
-          }
-        },
-        {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "team": "TeamE"
           }
         },
         {
