@@ -7,6 +7,7 @@
 ## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
+tellraw @a [{text:'test game/detect_dying/kill/pvp_off'}]
 
 ## ゲームモード設定
 gamemode survival @s

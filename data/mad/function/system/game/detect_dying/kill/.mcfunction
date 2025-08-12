@@ -7,6 +7,7 @@
 ## Version   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################
+tellraw @a [{text:'test game/detect_dying/kill/'}]
 
 ## ストレージ格納
 #### 犠牲者
@@ -16,9 +17,6 @@ function mad:system/game/detect_dying/kill/storages/killer/ with storage mad: de
 #### チーム分岐
 execute as @s[predicate=mad:player/team/no] run function mad:system/game/detect_dying/kill/individual
 execute as @s[predicate=mad:player/team/] run function mad:system/game/detect_dying/kill/team with storage mad: death
-
-## ストレージ格納
-data modify storage mad: death.message set value ''
 
 ## PvP分岐
 execute if predicate mad:system/game/timer/pvp/mode/pvp_on run function mad:system/game/detect_dying/kill/pvp_on

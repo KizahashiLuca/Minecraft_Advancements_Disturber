@@ -9,5 +9,6 @@
 #####################################
 
 ## ストレージ格納
+tellraw @a [{text:'test game/detect_dying/kill/storages/killer/'}]
 $data modify storage mad: death.killer set value '@p[tag=MAD_Player$(killer_number)]'
 $data modify storage mad: death.killer_number set value $(killer_number)
