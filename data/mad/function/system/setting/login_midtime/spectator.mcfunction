@@ -30,7 +30,6 @@ effect clear @s
 effect give @s minecraft:resistance infinite 6 true
 effect give @s minecraft:saturation infinite 10 true
 effect give @s minecraft:regeneration infinite 10 true
-effect give @s minecraft:invisibility infinite 1 true
 #### 全進捗剥奪
 advancement revoke @s everything
 

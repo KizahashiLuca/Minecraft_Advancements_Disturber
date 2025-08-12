@@ -13,6 +13,9 @@ execute as @a[predicate=mad:system/common/login_midtime/new_commer] run function
 execute as @a[predicate=mad:system/setting/login_midtime/spectator] run function mad:system/setting/login_midtime/spectator
 execute if score #mad_player NumberOfPlayers matches 2.. as @e[tag=MAD_Interaction_Setting_ChangeSpectator] at @s on target run function mad:system/setting/login_midtime/player
 
+## スペクテイターモードの処理
+execute at @e[predicate=mad:marker/respawn_beacon,limit=1] run tp @a[distance=12..] @e[predicate=mad:marker/respawn_beacon,limit=1]
+
 ## フェーズ分岐
 #### ルートフェーズ
 execute if predicate mad:phase/setting/root run function mad:system/setting/root/

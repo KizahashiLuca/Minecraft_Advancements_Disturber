@@ -16,4 +16,4 @@ $scoreboard players add #mad_team_$(team) HasAdvancements 1
 $scoreboard players operation #mad_team_$(team) TimeLimit += #mad BonusTimeOfAdvancements
 $scoreboard players operation #mad_team_$(team) Second += #mad BonusTimeOfAdvancements
 $advancement grant @a[predicate=mad:player/team/$(team)] only mad:original/kill_vindicator
-$tellraw @a[predicate=mad:player/team/$(team)] ['',{translate:'chat.type.advancement.task',with:[{text:'$(text)チーム',color:'$(color)',bold:true},{translate:'[%s]',color:'green',with:[{translate:'Here's Johnny!',hover_event:{action:'show_text',value:[{translate:'%s\n%s',color:'green',with:[{translate:'Here's Johnny!'},{translate:'森の洋館の中でヴィンディケーターを倒す'}]}]}}]}]}]
+$tellraw @a[predicate=mad:player/team/$(team)] ['',{translate:'chat.type.advancement.task',with:[{text:'$(text)チーム',color:'$(color)',bold:true},{translate:'[%s]',color:'green',with:[{translate:'Here\'s Johnny!',hover_event:{action:'show_text',value:[{translate:'%s\n%s',color:'green',with:[{translate:'Here\'s Johnny!'},{translate:'森の洋館の中でヴィンディケーターを倒す'}]}]}}]}]}]
