@@ -19,7 +19,7 @@ tp @s ~ ~ ~ ~5 ~
 $execute unless entity @p[predicate=mad:player/alive/on_sneak,distance=..2] run function mad:message/game/respawn_banner/title {name:'$(name)'}
 
 ## 蘇生検知
-$execute if entity @p[predicate=mad:player/alive/on_sneak,distance=..2] run function mad:system/game/respawn_banner/revive/gauge/tick {name:'$(name)'}
+$execute if entity @p[predicate=mad:player/alive/on_sneak,distance=..2] run function mad:system/game/respawn_banner/revive/gauge/ {name:'$(name)'}
 
 ## 蘇生検知
 $execute if score @e[predicate=mad:respawn_banner/armor_stand/initialized,nbt={data:{name:'$(name)'}},limit=1] Second matches ..-1 run function mad:system/game/respawn_banner/revive/finalize {name:'$(name)'}

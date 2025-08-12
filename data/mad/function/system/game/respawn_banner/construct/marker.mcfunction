@@ -9,4 +9,4 @@
 #####################################
 
 ## リスポーンバナー - マーカー召喚
-$execute in $(dimension) run summon minecraft:marker $(x) $(y) $(z) {Tags:['MAD_DeathPoint','MAD_Player$(victim_number)'],NoGravity:1b,Invulnerable:1b}
+$execute in $(dimension) run summon minecraft:marker $(absolute_x) $(absolute_y) $(absolute_z) {Tags:['MAD_DeathPoint','MAD_Player$(victim_number)'],NoGravity:1b,Invulnerable:1b}

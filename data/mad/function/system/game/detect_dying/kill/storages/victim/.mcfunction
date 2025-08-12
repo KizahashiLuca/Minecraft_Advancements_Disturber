@@ -11,6 +11,9 @@
 ## ストレージ格納
 $data modify storage mad: death.victim set value '@p[tag=MAD_Player$(victim_number)]'
 data modify storage mad: death.dimension set from entity @s LastDeathLocation.dimension
+execute store result storage mad: death.absolute_x int 1.0 run data get entity @s LastDeathLocation.pos[0] 1.0
+execute store result storage mad: death.absolute_y int 1.0 run data get entity @s LastDeathLocation.pos[0] 1.0
+execute store result storage mad: death.absolute_z int 1.0 run data get entity @s LastDeathLocation.pos[0] 1.0
 execute store result score @s TmpX run data get entity @s LastDeathLocation.pos[0] 1.0
 execute store result score @s TmpY run data get entity @s LastDeathLocation.pos[1] 1.0
 execute store result score @s TmpZ run data get entity @s LastDeathLocation.pos[2] 1.0
