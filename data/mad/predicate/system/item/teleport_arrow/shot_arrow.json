@@ -1,21 +1,25 @@
-[
-  {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:player/alive/"
+    },
+    {
+      "condition": "minecraft:damage_source_properties",
       "predicate": {
-        "type": "minecraft:player"
+        "direct_entity": {
+          "type": "minecraft:arrow",
+          "components": {
+            "minecraft:custom_data": {
+              "Tags": [
+                "MAD_MinecartItem",
+                "MAD_TeleportArrow"
+              ]
+            }
+          }
+        }
       }
     }
-  },
-  {
-    "condition": "minecraft:damage_source_properties",
-    "predicate": {
-      "direct_entity": {
-        "type": "minecraft:arrow",
-        "nbt": "{Tags:[\"MAD_MinecartItem\",\"MAD_TeleportArrow\"]}"
-      }
-    }
-  }
-]
+  ]
+}

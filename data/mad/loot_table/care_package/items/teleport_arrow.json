@@ -12,42 +12,52 @@
             {
               "function": "minecraft:set_name",
               "entity": "this",
-              "name": [
-                ["",{"text":"どっか行け矢","bold":false,"italic":false}]
-              ]
+              "name": {
+                "text": "どっか行け矢",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "entity": "this",
               "lore": [
-                ["",{"text":"当たった相手をランダムな箇所に飛ばす","color":"gray","bold":false,"italic":false}],
-                [""],
-                ["",{"text":"弓もしくはクロスボウで使用","color":"dark_purple","bold":false,"italic":false}]
+                {
+                  "text": "当たった相手をランダムな箇所に飛ばす",
+                  "color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "text": "弓もしくはクロスボウで使用",
+                  "color": "dark_purple",
+                  "italic": false
+                }
               ]
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:rarity": "rare",
+                "minecraft:entity_data": {
+                  "id": "minecraft:arrow",
+                  "Tags": [
+                    "MAD_MinecartItem",
+                    "MAD_TeleportArrow"
+                  ]
+                },
                 "minecraft:potion_contents": {
                   "custom_effects": [
                     {
                       "id": "minecraft:glowing",
                       "amplifier": 1,
-                      "duration": 400
+                      "duration": 4000
                     },
                     {
                       "id": "minecraft:levitation",
                       "amplifier": 1,
-                      "duration": 200
+                      "duration": 2000
                     }
-                  ]
-                },
-                "minecraft:custom_data": {
-                  "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_TeleportArrow"
                   ]
                 }
               }
