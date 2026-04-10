@@ -12,7 +12,4 @@
 #### 犠牲者
 $execute as @s[predicate=mad:player/dying/$(victim_team)] run function mad:system/game/detect_dying/kill/storages/victim/team with storage mad: team.$(victim_team)
 #### 攻撃者
-$execute as @p[tag=MAD_Player$(killer_number),predicate=mad:player/team/a] run function mad:system/game/detect_dying/kill/storages/killer/team with storage mad: team.a
-$execute as @p[tag=MAD_Player$(killer_number),predicate=mad:player/team/b] run function mad:system/game/detect_dying/kill/storages/killer/team with storage mad: team.b
-$execute as @p[tag=MAD_Player$(killer_number),predicate=mad:player/team/c] run function mad:system/game/detect_dying/kill/storages/killer/team with storage mad: team.c
-$execute as @p[tag=MAD_Player$(killer_number),predicate=mad:player/team/d] run function mad:system/game/detect_dying/kill/storages/killer/team with storage mad: team.d
+$execute as @p[tag=MAD_Player$(killer_number)] run function mad:system/game/detect_dying/kill/storages/killer/team with storage mad: team.$(killer_team)
