@@ -14,6 +14,10 @@ scoreboard players set @s Phase 0
 scoreboard players set @s NumberOfDeaths 0
 scoreboard players set @s NumberOfKills 0
 scoreboard players set @s TimeSinceDeath 0
+scoreboard players set @s SpectatorTrigger 0
+scoreboard players enable @s SpectatorTrigger
+scoreboard players set @s ExecuteTrigger 0
+scoreboard players enable @s ExecuteTrigger
 scoreboard players set @s TeleportTrigger 0
 scoreboard players enable @s TeleportTrigger
 #### タイマー

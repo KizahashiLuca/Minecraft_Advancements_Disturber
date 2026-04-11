@@ -20,6 +20,10 @@ scoreboard players set #mad PvP 0
 scoreboard players set @a[predicate=mad:player/] NumberOfDeaths 0
 scoreboard players set @a[predicate=mad:player/] NumberOfKills 0
 scoreboard players set @a[predicate=mad:player/] TimeSinceDeath 0
+scoreboard players set @a[predicate=mad:player/spectator] SpectatorTrigger 0
+scoreboard players enable @a[predicate=mad:player/spectator] SpectatorTrigger
+scoreboard players set @a[predicate=mad:player/host] ExecuteTrigger 0
+scoreboard players enable @a[predicate=mad:player/host] ExecuteTrigger
 scoreboard players set @a[predicate=mad:player/spectator] TeleportTrigger 0
 scoreboard players enable @a[predicate=mad:player/spectator] TeleportTrigger
 scoreboard players set #mad ExitTrigger 0

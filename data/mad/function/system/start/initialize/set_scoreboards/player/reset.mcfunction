@@ -14,6 +14,8 @@ scoreboard players reset @s Phase
 scoreboard players reset @s NumberOfDeaths
 scoreboard players reset @s NumberOfKills
 scoreboard players reset @s TimeSinceDeath
+scoreboard players reset @s SpectatorTrigger
+scoreboard players reset @s ExecuteTrigger
 scoreboard players reset @s TeleportTrigger
 #### タイマー
 scoreboard players reset @s Second
