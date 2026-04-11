@@ -64,7 +64,7 @@ gamerule minecraft:max_command_sequence_length 65536
 #### エンティティの最大密集数
 gamerule minecraft:max_entity_cramming 24
 #### トロッコの最高速度
-gamerule minecraft:max_minecart_speed 8
+# gamerule minecraft:max_minecart_speed 8
 #### 積雪の深さ
 gamerule minecraft:max_snow_accumulation_height 1
 #### Mobのアイテムのドロップ
@@ -94,7 +94,7 @@ gamerule minecraft:random_tick_speed 0
 #### デバッグ情報の制限
 gamerule minecraft:reduced_debug_info false
 #### リスポーン地点の半径
-gamerule minecraft:respawn_radius 1
+gamerule minecraft:respawn_radius 0
 #### コマンドの実行結果の表示
 gamerule minecraft:send_command_feedback false
 #### 進捗達成の通知

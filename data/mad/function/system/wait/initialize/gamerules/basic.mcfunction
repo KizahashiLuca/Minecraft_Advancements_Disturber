@@ -64,7 +64,7 @@ gamerule minecraft:max_command_sequence_length 65536
 #### エンティティの最大密集数
 gamerule minecraft:max_entity_cramming 24
 #### トロッコの最高速度
-gamerule minecraft:max_minecart_speed 8
+# gamerule minecraft:max_minecart_speed 8
 #### 積雪の深さ
 gamerule minecraft:max_snow_accumulation_height 1
 #### Mobのアイテムのドロップ
