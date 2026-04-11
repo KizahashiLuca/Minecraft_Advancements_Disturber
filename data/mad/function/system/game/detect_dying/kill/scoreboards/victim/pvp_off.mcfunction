@@ -9,5 +9,5 @@
 #####################################
 
 ## スコアボード設定
-scoreboard players set @s NumOfDeaths 0
+scoreboard players set @s NumberOfDeaths 0
 function mad:phase/game/revival

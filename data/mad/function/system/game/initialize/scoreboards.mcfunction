@@ -15,7 +15,7 @@ scoreboard players set #mad_team_a Phase 61
 scoreboard players set #mad_team_b Phase 61
 scoreboard players set #mad_team_c Phase 61
 scoreboard players set #mad_team_d Phase 61
-scoreboard players set @a[predicate=mad:player/] NumOfDeaths 0
+scoreboard players set @a[predicate=mad:player/] NumberOfDeaths 0
 scoreboard players set @a[predicate=mad:player/] NumberOfKills 0
 # scoreboard players set @a[predicate=mad:player/] TimeSinceDeath 0
 scoreboard players set @a TeleportToCarePackage 0

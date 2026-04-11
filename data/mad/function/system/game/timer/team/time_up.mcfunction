@@ -16,6 +16,6 @@ $kill @a[predicate=mad:player/alive/$(team)]
 $gamemode spectator @a[predicate=mad:player/alive/$(team)]
 
 ## スコアボード設定
-$scoreboard players set @a[predicate=mad:player/team/$(team)] NumOfDeaths 2
+$scoreboard players set @a[predicate=mad:player/team/$(team)] NumberOfDeaths 2
 $scoreboard players set @a[predicate=mad:player/team/$(team)] Phase 81
 $scoreboard players set #mad_team_$(team) Second 0

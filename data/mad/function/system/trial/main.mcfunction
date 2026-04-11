@@ -18,4 +18,4 @@ function mad:system/common/position/
 execute as @a[predicate=mad:system/trial/use_item] run function mad:system/trial/supply_item
 
 ## Reset scoreboard
-scoreboard players set @a NumOfDeaths 0
+scoreboard players set @a NumberOfDeaths 0

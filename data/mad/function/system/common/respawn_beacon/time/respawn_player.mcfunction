@@ -25,7 +25,7 @@ execute as @s[predicate=mad:player/team/d] run advancement grant @p[predicate=ma
 
 ## Set scoreboards
 scoreboard players set @s Phase 21
-scoreboard players set @s NumOfDeaths 0
+scoreboard players set @s NumberOfDeaths 0
 scoreboard players set @s SetRespawnBanner 0
 scoreboard players reset @s BeaconNumber
 scoreboard players reset @s[predicate=mad:player/team/a] SidebarA

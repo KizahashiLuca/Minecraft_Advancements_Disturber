@@ -11,7 +11,7 @@
 ## スコアボードを設定
 #### ゲームフェーズ
 scoreboard players set @a[predicate=mad:player/] Phase 0
-scoreboard players set @a[predicate=mad:player/] NumOfDeaths 0
+scoreboard players set @a[predicate=mad:player/] NumberOfDeaths 0
 scoreboard players set @a[predicate=mad:player/] NumberOfKills 0
 scoreboard players set @a[predicate=mad:player/] TimeSinceDeath 0
 scoreboard players set @a TeleportToCarePackage 0

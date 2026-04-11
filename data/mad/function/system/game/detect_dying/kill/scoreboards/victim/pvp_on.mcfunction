@@ -9,5 +9,5 @@
 #####################################
 
 ## スコアボード設定
-scoreboard players set @s NumOfDeaths 2
+scoreboard players set @s NumberOfDeaths 2
 function mad:phase/game/dead
