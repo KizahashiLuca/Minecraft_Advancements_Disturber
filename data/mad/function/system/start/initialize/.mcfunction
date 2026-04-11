@@ -37,6 +37,8 @@ function mad:system/start/initialize/storages/team
 function mad:system/start/initialize/storages/display
 #### アップグレードキット表示用ストレージ
 function mad:system/start/initialize/storages/upgrader
+#### ゲームルール用ストレージ
+function mad:system/start/initialize/storages/rules/
 #### ボスバー
 function mad:system/start/initialize/bossbar
 #### 疑似乱数生成器
@@ -49,6 +51,8 @@ function mad:system/common/count_players/
 function mad:system/common/numbering/
 #### 追加スコアボード設定
 $function mad:system/start/initialize/set_scoreboards/$(type)
+#### 追加ストレージ設定
+$function mad:system/start/initialize/storages/rules/$(type)
 
 ## ゲーム開始
 $execute if predicate mad:system/start/initialize/accept run function mad:system/start/process/$(type)

@@ -12,4 +12,4 @@
 #### 初期設定開始メッセージ表示
 function mad:message/start/
 #### 初期設定開始
-function mad:system/setting/root/detect/ {phase:'root'}
+function mad:system/setting/root/

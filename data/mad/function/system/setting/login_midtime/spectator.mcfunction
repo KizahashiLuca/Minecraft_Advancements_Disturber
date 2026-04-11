@@ -8,14 +8,11 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## サウンド
-execute at @s run playsound minecraft:ui.button.click ui @a
-
 ## プレイヤー情報
 #### タグ
-tag @s remove MAD_Spectator
+tag @s remove mad_spectator
 tag @s add mad_player
-tag @s add mad_team_no
+tag @s add mad_indie_player
 #### プレイヤーゲームモード
 gamemode adventure @s
 #### ペットをキル
@@ -30,6 +27,7 @@ effect clear @s
 effect give @s minecraft:resistance infinite 6 true
 effect give @s minecraft:saturation infinite 10 true
 effect give @s minecraft:regeneration infinite 10 true
+effect give @s minecraft:weakness infinite 6 true
 #### 全進捗剥奪
 advancement revoke @s everything
 
@@ -51,6 +49,3 @@ function mad:system/common/count_players/
 
 ## プレイヤー番号設定
 function mad:system/common/numbering/add
-
-## インタラクション検知削除
-execute as @e[tag=MAD_Interaction] run data remove entity @s interaction

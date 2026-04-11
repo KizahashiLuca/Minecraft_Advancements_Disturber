@@ -8,11 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## フェーズ設定
-function mad:phase/setting/root
-
-## スコアボードのリセット
-function mad:system/setting/scoreboards
-
-## ルートダイアログ表示
-function mad:dialog/system/setting/root
+## ゲーム制御トリガーをリセット
+scoreboard players set @p[predicate=mad:player/host] ExecuteTrigger 0
+scoreboard players enable @p[predicate=mad:player/host] ExecuteTrigger

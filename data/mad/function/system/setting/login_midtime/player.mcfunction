@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## サウンド
-execute at @s run playsound minecraft:ui.button.click ui @a
-
 ## プレイヤー情報
 #### タグ
 tag @s remove mad_player
@@ -18,8 +15,8 @@ tag @s remove mad_team_a
 tag @s remove mad_team_b
 tag @s remove mad_team_c
 tag @s remove mad_team_d
-tag @s remove mad_team_no
-tag @s add MAD_Spectator
+tag @s remove mad_indie_player
+tag @s add mad_spectator
 #### プレイヤーゲームモード
 gamemode spectator @s
 #### インベントリ
@@ -41,6 +38,3 @@ function mad:system/start/initialize/set_scoreboards/spectator
 
 ## プレイヤー計数
 function mad:system/common/count_players/
-
-## インタラクション検知削除
-execute as @e[tag=MAD_Interaction] run data remove entity @s interaction

@@ -8,11 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## フェーズ設定
-function mad:phase/setting/root
+## ダイアログクリア
+dialog clear @a
 
-## スコアボードのリセット
-function mad:system/setting/scoreboards
-
-## ルートダイアログ表示
-function mad:dialog/system/setting/root
+## ゲーム中止
+function mad:system/reset/

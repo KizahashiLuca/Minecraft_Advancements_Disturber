@@ -15,7 +15,7 @@ execute at @s run playsound minecraft:ui.button.click ui @a
 #### タグ
 tag @s remove MAD_Spectator
 tag @s add mad_player
-tag @s add mad_team_no
+tag @s add mad_indie_player
 #### プレイヤーゲームモード
 gamemode adventure @s
 #### ペットをキル

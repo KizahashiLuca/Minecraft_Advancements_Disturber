@@ -18,7 +18,7 @@ tag @s remove mad_team_a
 tag @s remove mad_team_b
 tag @s remove mad_team_c
 tag @s remove mad_team_d
-tag @s remove mad_team_no
+tag @s remove mad_indie_player
 tag @s add MAD_Spectator
 #### プレイヤーゲームモード
 gamemode spectator @s

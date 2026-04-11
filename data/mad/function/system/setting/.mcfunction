@@ -16,20 +16,19 @@ execute if score #mad_player NumberOfPlayers matches 2.. as @e[tag=MAD_Interacti
 ## スペクテイターモードの処理
 execute at @e[predicate=mad:marker/respawn_beacon,limit=1] run tp @a[distance=12..] @e[predicate=mad:marker/respawn_beacon,limit=1]
 
-## フェーズ分岐
-#### ルートフェーズ
-execute if predicate mad:phase/setting/root run function mad:system/setting/root/
-#### 対戦形式変更フェーズ
-execute if predicate mad:phase/setting/match_mode run function mad:system/setting/match_mode/
-#### 初期時間変更フェーズ
-execute if predicate mad:phase/setting/initial_time run function mad:system/setting/initial_time/
-#### 追加時間変更フェーズ
-execute if predicate mad:phase/setting/bonus_time_of_advancements run function mad:system/setting/bonus_time_of_advancements/
-#### 支援物資間隔変更フェーズ
-execute if predicate mad:phase/setting/care_package_interval run function mad:system/setting/care_package_interval/
-#### ワールド範囲変更フェーズ
-execute if predicate mad:phase/setting/world_border run function mad:system/setting/world_border/
-#### その他ルール変更フェーズ
-execute if predicate mad:phase/setting/other_rules/ run function mad:system/setting/other_rules/
-#### チーム戦ルール変更フェーズ
-execute if predicate mad:phase/setting/team_rules/ run function mad:system/setting/team_rules/
+## トリガーの処理
+#### ゲーム制御トリガー - ルートダイアログ
+execute if entity @p[predicate=mad:system/setting/triggered_execute/root] run \
+  function mad:system/setting/root/
+#### ゲーム制御トリガー - 詳細設定ダイアログ
+execute if entity @p[predicate=mad:system/setting/triggered_execute/detail_rules] run \
+  function mad:system/setting/detail_rules/
+#### ゲーム制御トリガー - オプション設定ダイアログ
+execute if entity @p[predicate=mad:system/setting/triggered_execute/option_rules] run \
+  function mad:system/setting/option_rules/
+#### ゲーム制御トリガー - チーム戦ルール設定ダイアログ
+execute if entity @p[predicate=mad:system/setting/triggered_execute/team_rules] run \
+  function mad:system/setting/team_rules/
+#### ゲーム制御トリガー - キャンセルボタン
+execute if entity @p[predicate=mad:system/setting/triggered_execute/cancel] run \
+  function mad:system/setting/cancel

@@ -8,11 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## フェーズ設定
-function mad:phase/setting/root
-
 ## スコアボードのリセット
 function mad:system/setting/scoreboards
 
-## ルートダイアログ表示
-function mad:dialog/system/setting/root
+## 詳細設定ダイアログ表示
+function mad:dialog/system/setting/detail_rules with storage mad: rules

@@ -8,11 +8,18 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## フェーズ設定
-function mad:phase/setting/root
-
 ## スコアボードのリセット
 function mad:system/setting/scoreboards
+
+## 設定値保存
+$data modify storage mad: rules merge value \
+  {\
+    IsTeam: $(IsTeam),\
+    InitialTime: $(InitialTime),\
+    BonusTimeOfAdvancements: $(BonusTimeOfAdvancements),\
+    CarePackageInterval: $(CarePackageInterval),\
+    WorldBorder: $(WorldBorder),\
+  }
 
 ## ルートダイアログ表示
 function mad:dialog/system/setting/root

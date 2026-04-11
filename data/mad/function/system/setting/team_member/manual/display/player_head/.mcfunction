@@ -13,7 +13,7 @@ function mad:system/common/count_players/
 
 ## スコアボード設定
 scoreboard players set #mad_player PlayerHeadNumber 1
-scoreboard players set #mad_team_no PlayerHeadNumber 1
+scoreboard players set #mad_indie_player PlayerHeadNumber 1
 scoreboard players set #mad_team_a PlayerHeadNumber 1
 scoreboard players set #mad_team_b PlayerHeadNumber 1
 scoreboard players set #mad_team_c PlayerHeadNumber 1

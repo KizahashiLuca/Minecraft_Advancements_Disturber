@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:phase/not_in_game"
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "ExecuteTrigger": {
+          "min": 1
+        }
+      }
+    }
+  ]
+}
