@@ -19,11 +19,10 @@ scoreboard objectives remove ReleaseCandidateVersion
 scoreboard objectives remove ReleaseVersion
 scoreboard objectives remove Phase
 scoreboard objectives remove PvP
-scoreboard objectives remove NumOfDeaths
+scoreboard objectives remove NumberOfDeaths
 scoreboard objectives remove NumberOfKills
 scoreboard objectives remove TimeSinceDeath
-scoreboard objectives remove TeleportToCarePackage
-scoreboard objectives remove TeleportToWorldCenter
+scoreboard objectives remove TeleportTrigger
 scoreboard objectives remove ExitTrigger
 scoreboard objectives remove Sidebar
 scoreboard objectives remove SidebarA

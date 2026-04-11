@@ -11,11 +11,10 @@
 ## スコアボードを設定
 #### ゲームフェーズ
 scoreboard players reset @s Phase
-scoreboard players reset @s NumOfDeaths
+scoreboard players reset @s NumberOfDeaths
 scoreboard players reset @s NumberOfKills
 scoreboard players reset @s TimeSinceDeath
-scoreboard players reset @s TeleportToCarePackage
-scoreboard players reset @s TeleportToWorldCenter
+scoreboard players reset @s TeleportTrigger
 #### タイマー
 scoreboard players reset @s Second
 scoreboard players reset @s Tick
@@ -49,7 +48,7 @@ scoreboard players reset @s NumberOfItemCandidates
 scoreboard players reset @s UseFungusStick
 #### 支援物資用 - メイズメイカー
 scoreboard players reset @s UseMazeMaker
-#### 支援物資用 - どっか行け矢(仮)
+#### 支援物資用 - どっか行け矢
 scoreboard players reset @s ArrowTeleportTick
 scoreboard players reset @s ArrowTeleportPosX
 scoreboard players reset @s ArrowTeleportPosY

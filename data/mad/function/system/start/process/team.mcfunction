@@ -8,6 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ワールド範囲
-$execute in minecraft:$(dimension) run worldborder center $(x) $(z)
-$execute in minecraft:$(dimension) run worldborder set 16
+## ゲーム開始 - チーム戦
+#### チーム編成ランダム設定
+function mad:system/setting/root/detect/ok/

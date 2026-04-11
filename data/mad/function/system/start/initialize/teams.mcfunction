@@ -17,7 +17,7 @@ team modify mad_player nametagVisibility always
 team modify mad_player seeFriendlyInvisibles false
 team modify mad_player deathMessageVisibility never
 team join mad_player @a[predicate=mad:player/]
-tag @a[predicate=mad:player/] add mad_team_no
+tag @a[predicate=mad:player/] add mad_indie_player
 
 ## チーム戦用チーム - 赤チーム
 team add mad_team_a {text:'赤チーム'}

@@ -13,4 +13,4 @@ tag @p[sort=nearest] add mad_host
 
 ## プレイヤー用プレイヤータグ付与
 tag @a[gamemode=!spectator] add mad_player
-tag @a[gamemode=spectator] add MAD_Spectator
+tag @a[gamemode=spectator] add mad_spectator

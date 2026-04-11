@@ -51,7 +51,7 @@ function mad:system/common/numbering/
 $function mad:system/start/initialize/set_scoreboards/$(type)
 
 ## ゲーム開始
-$execute if predicate mad:system/start/initialize/accept run function mad:system/start/$(type)
+$execute if predicate mad:system/start/initialize/accept run function mad:system/start/process/$(type)
 
 ## 人数不足/バージョンエラーであればゲームリセット
 #### エラーメッセージ表示

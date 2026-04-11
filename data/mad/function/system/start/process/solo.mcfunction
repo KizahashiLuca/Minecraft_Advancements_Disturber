@@ -8,6 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ワールド範囲
-$execute in minecraft:$(dimension) run worldborder center $(x) $(z)
-$execute in minecraft:$(dimension) run worldborder set 16
+## ゲーム開始 - ソロ戦
+#### ゲーム設定確認
+function mad:system/setting/root/detect/ok/

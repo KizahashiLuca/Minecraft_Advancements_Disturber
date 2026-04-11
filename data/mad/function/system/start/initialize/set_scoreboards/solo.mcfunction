@@ -17,6 +17,3 @@ scoreboard players set #mad CarePackageInterval 100
 scoreboard players set #mad WorldBorder 1000
 #### 設定フェーズ - チーム戦ルール
 scoreboard players set #mad NumberOfTeams 0
-
-scoreboard players set #mad CarePackageInterval 1
-scoreboard players set #mad NumberOfCarePackages 5

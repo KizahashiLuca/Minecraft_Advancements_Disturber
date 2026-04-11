@@ -9,7 +9,8 @@
 #####################################
 
 ## ランダムな生存者の場所に全員をテレポート
-execute if entity @p[predicate=mad:player/alive/] run tp @a @p[predicate=mad:player/alive/,sort=random]
+execute if entity @p[predicate=mad:player/alive/] run \
+  tp @a @p[predicate=mad:player/alive/,sort=random]
 
 ## 難易度
 difficulty peaceful
@@ -19,10 +20,6 @@ time set noon
 
 ## 天気
 weather clear
-
-## リスポーンビーコン削除
-execute if predicate mad:gamerule/match_mode/team at @e[predicate=mad:marker/respawn_beacon,limit=1] run fill ~-7 ~-2 ~-7 ~7 ~10 ~7 minecraft:air
-execute if predicate mad:gamerule/match_mode/team at @e[predicate=mad:marker/respawn_beacon,limit=1] run kill @e[type=minecraft:block_display,distance=..20]
 
 ## ストレージ
 data remove storage mad: system
@@ -50,12 +47,18 @@ kill @e[predicate=mad:system/item/maze_maker/monster_egg]
 kill @e[type=minecraft:armor_stand,tag=MAD_MinecartItem]
 
 ## ワールド範囲をリセット
-execute in minecraft:overworld run worldborder center 0 0
-execute in minecraft:overworld run worldborder set 59999968
-execute in minecraft:the_nether run worldborder center 0 0
-execute in minecraft:the_nether run worldborder set 59999968
-execute in minecraft:the_end run worldborder center 0 0
-execute in minecraft:the_end run worldborder set 59999968
+execute in minecraft:overworld run \
+  worldborder center 0 0
+execute in minecraft:overworld run \
+  worldborder set 59999968
+execute in minecraft:the_nether run \
+  worldborder center 0 0
+execute in minecraft:the_nether run \
+  worldborder set 59999968
+execute in minecraft:the_end run \
+  worldborder center 0 0
+execute in minecraft:the_end run \
+  worldborder set 59999968
 
 ## 常時読み込みチャンクの削除
 forceload remove all

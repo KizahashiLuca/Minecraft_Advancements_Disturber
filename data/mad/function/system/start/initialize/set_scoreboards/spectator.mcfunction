@@ -9,7 +9,5 @@
 #####################################
 
 ## スコアボードを設定
-scoreboard players set @s TeleportToCarePackage 0
-scoreboard players enable @s TeleportToCarePackage
-scoreboard players set @s TeleportToWorldCenter 0
-scoreboard players enable @s TeleportToWorldCenter
+scoreboard players set @s TeleportTrigger 0
+scoreboard players enable @s TeleportTrigger

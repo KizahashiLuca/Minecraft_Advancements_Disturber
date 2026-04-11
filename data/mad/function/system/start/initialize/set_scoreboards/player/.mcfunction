@@ -11,13 +11,11 @@
 ## スコアボードを設定
 #### ゲームフェーズ
 scoreboard players set @s Phase 0
-scoreboard players set @s NumOfDeaths 0
+scoreboard players set @s NumberOfDeaths 0
 scoreboard players set @s NumberOfKills 0
 scoreboard players set @s TimeSinceDeath 0
-scoreboard players set @s TeleportToCarePackage 0
-scoreboard players enable @s TeleportToCarePackage
-scoreboard players set @s TeleportToWorldCenter 0
-scoreboard players enable @s TeleportToWorldCenter
+scoreboard players set @s TeleportTrigger 0
+scoreboard players enable @s TeleportTrigger
 #### タイマー
 scoreboard players set @s Second 0
 scoreboard players set @s Tick 0
@@ -51,7 +49,7 @@ scoreboard players set @s NumberOfItemCandidates 0
 scoreboard players set @s UseFungusStick 0
 #### 支援物資用 - メイズメイカー
 scoreboard players set @s UseMazeMaker 0
-#### 支援物資用 - どっか行け矢(仮)
+#### 支援物資用 - どっか行け矢
 scoreboard players set @s ArrowTeleportTick 0
 scoreboard players set @s ArrowTeleportPosX 0
 scoreboard players set @s ArrowTeleportPosY 0

@@ -10,23 +10,18 @@
 
 ## スコアボード設定
 #### ゲームフェーズ
-scoreboard players set #mad DataVersion 1444
-scoreboard players set #mad MajorVersion 13
+scoreboard players set #mad DataVersion 0
+scoreboard players set #mad MajorVersion 0
 scoreboard players set #mad MinorVersion 0
-scoreboard players set #mad SnapshotVersion 0
-scoreboard players set #mad PreReleaseVersion 0
-scoreboard players set #mad ReleaseCandidateVersion 0
-scoreboard players set #mad ReleaseVersion 0
+scoreboard players set #mad PatchVersion 0
 scoreboard players set #mad Phase 1
 scoreboard players set @a[predicate=mad:player/] Phase 0
 scoreboard players set #mad PvP 0
-scoreboard players set @a[predicate=mad:player/] NumOfDeaths 0
+scoreboard players set @a[predicate=mad:player/] NumberOfDeaths 0
 scoreboard players set @a[predicate=mad:player/] NumberOfKills 0
 scoreboard players set @a[predicate=mad:player/] TimeSinceDeath 0
-scoreboard players set @a TeleportToCarePackage 0
-scoreboard players enable @a[predicate=mad:player/spectator] TeleportToCarePackage
-scoreboard players set @a TeleportToWorldCenter 0
-scoreboard players enable @a[predicate=mad:player/spectator] TeleportToWorldCenter
+scoreboard players set @a[predicate=mad:player/spectator] TeleportTrigger 0
+scoreboard players enable @a[predicate=mad:player/spectator] TeleportTrigger
 scoreboard players set #mad ExitTrigger 0
 scoreboard players set @a[predicate=mad:player/host] ExitTrigger 0
 scoreboard players enable @a[predicate=mad:player/host] ExitTrigger
@@ -155,7 +150,7 @@ scoreboard players set #mad NumberOfSonicBooms 0
 #### 支援物資用 - メイズメイカー
 scoreboard players set @a[predicate=mad:player/] UseMazeMaker 0
 scoreboard players set #mad MazeNumber 1
-#### 支援物資用 - どっか行け矢(仮)
+#### 支援物資用 - どっか行け矢
 scoreboard players set @a[predicate=mad:player/] ArrowTeleportTick 0
 scoreboard players set @a[predicate=mad:player/] ArrowTeleportPosX 0
 scoreboard players set @a[predicate=mad:player/] ArrowTeleportPosY 0
