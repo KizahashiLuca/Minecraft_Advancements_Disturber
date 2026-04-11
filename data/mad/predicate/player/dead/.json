@@ -10,7 +10,7 @@
       "entity": "this",
       "scores": {
         "Phase": 81,
-        "NumOfDeaths": {
+        "NumberOfDeaths": {
           "min": 2,
           "max": 2147483647
         }
@@ -22,9 +22,7 @@
       "predicate": {
         "type_specific": {
           "type": "player",
-          "gamemode": [
-            "spectator"
-          ]
+          "gamemode": ["spectator"]
         }
       }
     }

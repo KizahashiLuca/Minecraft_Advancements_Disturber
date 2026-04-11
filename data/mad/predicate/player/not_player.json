@@ -1,19 +1,22 @@
-[
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "type": "minecraft:player"
-    }
-  },
-  {
-    "condition": "minecraft:inverted",
-    "term": {
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"mad_player\"]}"
+        "type": "minecraft:player"
+      }
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"mad_player\"]}"
+        }
       }
     }
-  }
-]
+  ]
+}
