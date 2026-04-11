@@ -9,4 +9,6 @@
 #####################################
 
 ## 進捗検出
-execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_End_find_end_city=0}] run function mad:system/game/advancement/end/find_end_city/branch
+execute unless predicate mad:phase/not_game_phase \
+  as @s[predicate=mad:player/alive/,scores={Advancements_End_find_end_city=0}] run \
+  function mad:system/game/advancement/end/find_end_city/branch

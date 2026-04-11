@@ -3,16 +3,7 @@
   "criteria": {
     "entered_end_gateway": {
       "conditions": {
-        "block": "minecraft:end_gateway",
-        "player": [
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:reference",
-              "name": "mad:phase/setting/"
-            }
-          }
-        ]
+        "block": "minecraft:end_gateway"
       },
       "trigger": "minecraft:enter_block"
     }
@@ -22,7 +13,6 @@
       "translate": "advancements.end.enter_end_gateway.description"
     },
     "icon": {
-      "count": 1,
       "id": "minecraft:ender_pearl"
     },
     "title": {

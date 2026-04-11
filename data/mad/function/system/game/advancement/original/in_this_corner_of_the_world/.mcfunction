@@ -9,4 +9,6 @@
 #####################################
 
 ## 進捗検出
-execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Original_in_this_corner_of_the_world=0}] run function mad:system/game/advancement/original/in_this_corner_of_the_world/branch
+execute unless predicate mad:phase/not_game_phase \
+  as @s[predicate=mad:player/alive/,scores={Advancements_Original_in_this_corner_of_the_world=0}] run \
+  function mad:system/game/advancement/original/in_this_corner_of_the_world/branch

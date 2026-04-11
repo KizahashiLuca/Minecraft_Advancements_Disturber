@@ -9,4 +9,6 @@
 #####################################
 
 ## 進捗検出
-execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Story_enchant_item=0}] run function mad:system/game/advancement/story/enchant_item/branch
+execute unless predicate mad:phase/not_game_phase \
+  as @s[predicate=mad:player/alive/,scores={Advancements_Story_enchant_item=0}] run \
+  function mad:system/game/advancement/story/enchant_item/branch

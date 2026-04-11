@@ -9,4 +9,6 @@
 #####################################
 
 ## 進捗検出
-execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Nether_netherite_armor=0}] run function mad:system/game/advancement/nether/netherite_armor/branch
+execute unless predicate mad:phase/not_game_phase \
+  as @s[predicate=mad:player/alive/,scores={Advancements_Nether_netherite_armor=0}] run \
+  function mad:system/game/advancement/nether/netherite_armor/branch

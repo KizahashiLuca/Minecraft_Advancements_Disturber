@@ -9,4 +9,6 @@
 #####################################
 
 ## 進捗検出
-execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Husbandry_place_dried_ghast_in_water=0}] run function mad:system/game/advancement/husbandry/place_dried_ghast_in_water/branch
+execute unless predicate mad:phase/not_game_phase \
+  as @s[predicate=mad:player/alive/,scores={Advancements_Husbandry_place_dried_ghast_in_water=0}] run \
+  function mad:system/game/advancement/husbandry/place_dried_ghast_in_water/branch

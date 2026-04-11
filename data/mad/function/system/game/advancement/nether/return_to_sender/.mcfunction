@@ -9,4 +9,6 @@
 #####################################
 
 ## 進捗検出
-execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Nether_return_to_sender=0}] run function mad:system/game/advancement/nether/return_to_sender/branch
+execute unless predicate mad:phase/not_game_phase \
+  as @s[predicate=mad:player/alive/,scores={Advancements_Nether_return_to_sender=0}] run \
+  function mad:system/game/advancement/nether/return_to_sender/branch

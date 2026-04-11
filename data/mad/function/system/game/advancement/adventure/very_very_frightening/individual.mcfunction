@@ -8,9 +8,52 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボード設定
+## 進捗達成フラグ
 scoreboard players set @s Advancements_Adventure_very_very_frightening 1
+
+## 進捗数加算
 scoreboard players add @s HasAdvancements 1
+
+## タイムボーナス加算
 scoreboard players operation @s TimeLimit += #mad BonusTimeOfAdvancements
 scoreboard players operation @s Second += #mad BonusTimeOfAdvancements
-tellraw @s ['',{translate:'chat.type.advancement.task',with:[{selector:'@s'},{translate:'[%s]',color:'green',with:[{translate:'advancements.adventure.very_very_frightening.title',hover_event:{action:'show_text',value:[{translate:'%s\n%s',color:'green',with:[{translate:'advancements.adventure.very_very_frightening.title'},{translate:'advancements.adventure.very_very_frightening.description'}]}]}}]}]}]
+
+## 進捗達成メッセージ
+tellraw @s \
+  [\
+    '',\
+    {\
+      translate: 'chat.type.advancement.task',\
+      with: [\
+        {\
+          selector: '@s',\
+        },\
+        {\
+          translate: '[%s]',\
+          color: 'green',\
+          with: [\
+            {\
+              translate: 'advancements.adventure.very_very_frightening.title',\
+              hover_event: {\
+                action: 'show_text',\
+                value: [\
+                  {\
+                    translate: '%s\n%s',\
+                    color: 'green',\
+                    with: [\
+                      {\
+                        translate: 'advancements.adventure.very_very_frightening.title',\
+                      },\
+                      {\
+                        translate: 'advancements.adventure.very_very_frightening.description',\
+                      },\
+                    ],\
+                  },\
+                ],\
+              },\
+            },\
+          ],\
+        },\
+      ],\
+    },\
+  ]

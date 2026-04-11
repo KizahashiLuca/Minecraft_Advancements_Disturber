@@ -36,6 +36,7 @@ scoreboard players set @s Advancements_Adventure_salvage_sherd 0
 scoreboard players set @s Advancements_Adventure_shoot_arrow 0
 scoreboard players set @s Advancements_Adventure_sleep_in_bed 0
 scoreboard players set @s Advancements_Adventure_sniper_duel 0
+scoreboard players set @s Advancements_Adventure_spear_many_mobs 0
 scoreboard players set @s Advancements_Adventure_spyglass_at_dragon 0
 scoreboard players set @s Advancements_Adventure_spyglass_at_ghast 0
 scoreboard players set @s Advancements_Adventure_spyglass_at_parrot 0

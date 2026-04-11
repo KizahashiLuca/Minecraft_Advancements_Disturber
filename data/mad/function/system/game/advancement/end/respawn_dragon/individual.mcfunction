@@ -8,9 +8,52 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボード設定
+## 進捗達成フラグ
 scoreboard players set @s Advancements_End_respawn_dragon 1
+
+## 進捗数加算
 scoreboard players add @s HasAdvancements 1
+
+## タイムボーナス加算
 scoreboard players operation @s TimeLimit += #mad BonusTimeOfAdvancements
 scoreboard players operation @s Second += #mad BonusTimeOfAdvancements
-tellraw @s ['',{translate:'chat.type.advancement.goal',with:[{selector:'@s'},{translate:'[%s]',color:'green',with:[{translate:'advancements.end.respawn_dragon.title',hover_event:{action:'show_text',value:[{translate:'%s\n%s',color:'green',with:[{translate:'advancements.end.respawn_dragon.title'},{translate:'advancements.end.respawn_dragon.description'}]}]}}]}]}]
+
+## 進捗達成メッセージ
+tellraw @s \
+  [\
+    '',\
+    {\
+      translate: 'chat.type.advancement.goal',\
+      with: [\
+        {\
+          selector: '@s',\
+        },\
+        {\
+          translate: '[%s]',\
+          color: 'green',\
+          with: [\
+            {\
+              translate: 'advancements.end.respawn_dragon.title',\
+              hover_event: {\
+                action: 'show_text',\
+                value: [\
+                  {\
+                    translate: '%s\n%s',\
+                    color: 'green',\
+                    with: [\
+                      {\
+                        translate: 'advancements.end.respawn_dragon.title',\
+                      },\
+                      {\
+                        translate: 'advancements.end.respawn_dragon.description',\
+                      },\
+                    ],\
+                  },\
+                ],\
+              },\
+            },\
+          ],\
+        },\
+      ],\
+    },\
+  ]

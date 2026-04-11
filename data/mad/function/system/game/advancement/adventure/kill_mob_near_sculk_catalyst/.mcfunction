@@ -9,4 +9,6 @@
 #####################################
 
 ## 進捗検出
-execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_kill_mob_near_sculk_catalyst=0}] run function mad:system/game/advancement/adventure/kill_mob_near_sculk_catalyst/branch
+execute unless predicate mad:phase/not_game_phase \
+  as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_kill_mob_near_sculk_catalyst=0}] run \
+  function mad:system/game/advancement/adventure/kill_mob_near_sculk_catalyst/branch

@@ -8,9 +8,52 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボード設定
+## 進捗達成フラグ
 scoreboard players set @s Advancements_Adventure_who_needs_rockets 1
+
+## 進捗数加算
 scoreboard players add @s HasAdvancements 1
+
+## タイムボーナス加算
 scoreboard players operation @s TimeLimit += #mad BonusTimeOfAdvancements
 scoreboard players operation @s Second += #mad BonusTimeOfAdvancements
-tellraw @s ['',{translate:'chat.type.advancement.task',with:[{selector:'@s'},{translate:'[%s]',color:'green',with:[{translate:'advancements.adventure.who_needs_rockets.title',hover_event:{action:'show_text',value:[{translate:'%s\n%s',color:'green',with:[{translate:'advancements.adventure.who_needs_rockets.title'},{translate:'advancements.adventure.who_needs_rockets.description'}]}]}}]}]}]
+
+## 進捗達成メッセージ
+tellraw @s \
+  [\
+    '',\
+    {\
+      translate: 'chat.type.advancement.task',\
+      with: [\
+        {\
+          selector: '@s',\
+        },\
+        {\
+          translate: '[%s]',\
+          color: 'green',\
+          with: [\
+            {\
+              translate: 'advancements.adventure.who_needs_rockets.title',\
+              hover_event: {\
+                action: 'show_text',\
+                value: [\
+                  {\
+                    translate: '%s\n%s',\
+                    color: 'green',\
+                    with: [\
+                      {\
+                        translate: 'advancements.adventure.who_needs_rockets.title',\
+                      },\
+                      {\
+                        translate: 'advancements.adventure.who_needs_rockets.description',\
+                      },\
+                    ],\
+                  },\
+                ],\
+              },\
+            },\
+          ],\
+        },\
+      ],\
+    },\
+  ]

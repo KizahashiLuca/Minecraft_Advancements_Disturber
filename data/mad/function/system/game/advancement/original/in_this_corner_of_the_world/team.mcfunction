@@ -8,12 +8,59 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボード設定
+## 進捗達成フラグ
 $scoreboard players set @a[predicate=mad:player/team/$(team)] Advancements_Original_in_this_corner_of_the_world 1
-scoreboard players add @s HasAdvancements 1
 $scoreboard players set #mad_team_$(team) Advancements_Original_in_this_corner_of_the_world 1
+
+## 進捗数加算
+scoreboard players add @s HasAdvancements 1
 $scoreboard players add #mad_team_$(team) HasAdvancements 1
+
+## タイムボーナス加算
 $scoreboard players operation #mad_team_$(team) TimeLimit += #mad BonusTimeOfAdvancements
 $scoreboard players operation #mad_team_$(team) Second += #mad BonusTimeOfAdvancements
+
+## 進捗付与
 $advancement grant @a[predicate=mad:player/team/$(team)] only mad:original/in_this_corner_of_the_world
-$tellraw @a[predicate=mad:player/team/$(team)] ['',{translate:'chat.type.advancement.task',with:[{text:'$(text)チーム',color:'$(color)',bold:true},{translate:'[%s]',color:'green',with:[{translate:'この世界の片隅に',hover_event:{action:'show_text',value:[{translate:'%s\n%s',color:'green',with:[{translate:'この世界の片隅に'},{translate:'ボーダーの端へ到達'}]}]}}]}]}]
+
+## 進捗達成メッセージ
+$tellraw @a[predicate=mad:player/team/$(team)] \
+  [\
+    '',\
+    {\
+      translate: 'chat.type.advancement.task',\
+      with: [\
+        {\
+          text: '$(text)チーム',\
+          color: '$(color)',\
+          bold: true\
+        },\
+        {\
+          translate: '[%s]',\
+          color: 'green',\
+          with: [\
+            {\
+              translate: 'この世界の片隅に',\
+              hover_event: {\
+                action: 'show_text',\
+                value: [\
+                  {\
+                    translate: '%s\n%s',\
+                    color: 'green',\
+                    with: [\
+                      {\
+                        translate: 'この世界の片隅に',\
+                      },\
+                      {\
+                        translate: 'ボーダーの端へ到達',\
+                      },\
+                    ],\
+                  },\
+                ],\
+              },\
+            },\
+          ],\
+        },\
+      ],\
+    },\
+  ]

@@ -87,18 +87,36 @@ for AD in "${AD_NAME[@]}"; do
     filecomment "${FUNC1}"
     cat << EOF >> "${FUNC1}"
 ## 進捗検出
-execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={${ADV_OBJECTIVE}=0}] run function mad:system/game/advancement/${DIR}/${STEM}/branch
+execute unless predicate mad:phase/not_game_phase \\
+  as @s[predicate=mad:player/alive/,scores={${ADV_OBJECTIVE}=0}] run \\
+  function mad:system/game/advancement/${DIR}/${STEM}/branch
 EOF
     sed -i -e 's/$/\r/g' "${FUNC1}"
     ## make file - branch
     filecomment "${FUNC2}"
     cat << EOF >> "${FUNC2}"
-## チーム分岐
-execute if predicate mad:gamerule/match_mode/individual/ as @s run function mad:system/game/advancement/${DIR}/${STEM}/individual
-execute if predicate mad:gamerule/match_mode/team if score #mad_team_a ${ADV_OBJECTIVE} matches 0 as @s[predicate=mad:player/team/a] run function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.a
-execute if predicate mad:gamerule/match_mode/team if score #mad_team_b ${ADV_OBJECTIVE} matches 0 as @s[predicate=mad:player/team/b] run function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.b
-execute if predicate mad:gamerule/match_mode/team if score #mad_team_c ${ADV_OBJECTIVE} matches 0 as @s[predicate=mad:player/team/c] run function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.c
-execute if predicate mad:gamerule/match_mode/team if score #mad_team_d ${ADV_OBJECTIVE} matches 0 as @s[predicate=mad:player/team/d] run function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.d
+## 個人戦
+execute if predicate mad:gamerule/match_mode/individual/ \\
+  as @s run \\
+  function mad:system/game/advancement/${DIR}/${STEM}/individual
+
+## チーム戦 - チーム分岐
+execute if predicate mad:gamerule/match_mode/team \\
+  if score #mad_team_a ${ADV_OBJECTIVE} matches 0 \\
+  as @s[predicate=mad:player/team/a] run \\
+  function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.a
+execute if predicate mad:gamerule/match_mode/team \\
+  if score #mad_team_b ${ADV_OBJECTIVE} matches 0 \\
+  as @s[predicate=mad:player/team/b] run \\
+  function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.b
+execute if predicate mad:gamerule/match_mode/team \\
+  if score #mad_team_c ${ADV_OBJECTIVE} matches 0 \\
+  as @s[predicate=mad:player/team/c] run \\
+  function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.c
+execute if predicate mad:gamerule/match_mode/team \\
+  if score #mad_team_d ${ADV_OBJECTIVE} matches 0 \\
+  as @s[predicate=mad:player/team/d] run \\
+  function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.d
 
 ## スコアボード設定
 scoreboard players set @s[scores={${ADV_OBJECTIVE}=0}] ${ADV_OBJECTIVE} 1
@@ -107,12 +125,55 @@ EOF
     ## make file - individual
     filecomment "${FUNC3}"
     cat << EOF >> "${FUNC3}"
-## スコアボード設定
+## 進捗達成フラグ
 scoreboard players set @s ${ADV_OBJECTIVE} 1
+
+## 進捗数加算
 scoreboard players add @s HasAdvancements 1
+
+## タイムボーナス加算
 scoreboard players operation @s TimeLimit += #mad BonusTimeOfAdvancements
 scoreboard players operation @s Second += #mad BonusTimeOfAdvancements
-tellraw @s ['',{translate:'chat.type.advancement.${FRAME}',with:[{selector:'@s'},{translate:'[%s]',color:'${COLOR}',with:[{translate:'${TITLE}',hover_event:{action:'show_text',value:[{translate:'%s\n%s',color:'${COLOR}',with:[{translate:'${TITLE}'},{translate:'${DESCRIPTION}'}]}]}}]}]}]
+
+## 進捗達成メッセージ
+tellraw @s \\
+  [\\
+    '',\\
+    {\\
+      translate: 'chat.type.advancement.${FRAME}',\\
+      with: [\\
+        {\\
+          selector: '@s',\\
+        },\\
+        {\\
+          translate: '[%s]',\\
+          color: '${COLOR}',\\
+          with: [\\
+            {\\
+              translate: '${TITLE}',\\
+              hover_event: {\\
+                action: 'show_text',\\
+                value: [\\
+                  {\\
+                    translate: '%s\\n%s',\\
+                    color: '${COLOR}',\\
+                    with: [\\
+                      {\\
+                        translate: '${TITLE}',\\
+                      },\\
+                      {\\
+                        translate: '${DESCRIPTION}',\\
+                      },\\
+                    ],\\
+                  },\\
+                ],\\
+              },\\
+            },\\
+          ],\\
+        },\\
+      ],\\
+    },\\
+  ]
 EOF
     sed -i -e 's/$/\r/g' "${FUNC3}"
     ## make file - team
@@ -120,15 +181,62 @@ EOF
     for team in {A..D}; do
       filecomment "${FUNC4}"
       cat << EOF >> "${FUNC4}"
-## スコアボード設定
+## 進捗達成フラグ
 \$scoreboard players set @a[predicate=mad:player/team/\$(team)] ${ADV_OBJECTIVE} 1
-scoreboard players add @s HasAdvancements 1
 \$scoreboard players set #mad_team_\$(team) ${ADV_OBJECTIVE} 1
+
+## 進捗数加算
+scoreboard players add @s HasAdvancements 1
 \$scoreboard players add #mad_team_\$(team) HasAdvancements 1
+
+## タイムボーナス加算
 \$scoreboard players operation #mad_team_\$(team) TimeLimit += #mad BonusTimeOfAdvancements
 \$scoreboard players operation #mad_team_\$(team) Second += #mad BonusTimeOfAdvancements
+
+## 進捗付与
 \$advancement grant @a[predicate=mad:player/team/\$(team)] only ${AD}:${DIR}/${STEM}
-\$tellraw @a[predicate=mad:player/team/\$(team)] ['',{translate:'chat.type.advancement.${FRAME}',with:[{text:'\$(text)チーム',color:'\$(color)',bold:true},{translate:'[%s]',color:'${COLOR}',with:[{translate:'${TITLE}',hover_event:{action:'show_text',value:[{translate:'%s\n%s',color:'${COLOR}',with:[{translate:'${TITLE}'},{translate:'${DESCRIPTION}'}]}]}}]}]}]
+
+## 進捗達成メッセージ
+\$tellraw @a[predicate=mad:player/team/\$(team)] \\
+  [\\
+    '',\\
+    {\\
+      translate: 'chat.type.advancement.${FRAME}',\\
+      with: [\\
+        {\\
+          text: '\$(text)チーム',\\
+          color: '\$(color)',\\
+          bold: true\\
+        },\\
+        {\\
+          translate: '[%s]',\\
+          color: '${COLOR}',\\
+          with: [\\
+            {\\
+              translate: '${TITLE}',\\
+              hover_event: {\\
+                action: 'show_text',\\
+                value: [\\
+                  {\\
+                    translate: '%s\n%s',\\
+                    color: '${COLOR}',\\
+                    with: [\\
+                      {\\
+                        translate: '${TITLE}',\\
+                      },\\
+                      {\\
+                        translate: '${DESCRIPTION}',\\
+                      },\\
+                    ],\\
+                  },\\
+                ],\\
+              },\\
+            },\\
+          ],\\
+        },\\
+      ],\\
+    },\\
+  ]
 EOF
       sed -i -e 's/$/\r/g' "${FUNC4}"
       j=$((j+1))
@@ -161,10 +269,11 @@ echo "## 進捗用スコアボード追加" >> "${ADD_SCORE}"
 i=0
 for objective in ${objectives[@]}; do
   ## add objective
-  echo "scoreboard objectives add ${objective} dummy ['',{text:'${titles[i]}'}]" >> "${ADD_SCORE}"
+  echo "scoreboard objectives add ${objective} dummy ['', {text: '${titles[i]}'}]" >> "${ADD_SCORE}"
   ## increment
   i=$((i+1))
 done
+echo; >> "${ADD_SCORE}"
 sed -i -e 's/$/\r/g' "${ADD_SCORE}"
 
 ## show setting objectives list

@@ -234,6 +234,20 @@
       },
       "trigger": "minecraft:bred_animals"
     },
+    "minecraft:nautilus": {
+      "conditions": {
+        "child": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:nautilus"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:bred_animals"
+    },
     "minecraft:ocelot": {
       "conditions": {
         "child": [
@@ -385,7 +399,6 @@
     },
     "frame": "challenge",
     "icon": {
-      "count": 1,
       "id": "minecraft:golden_carrot"
     },
     "title": {
@@ -458,6 +471,9 @@
     ],
     [
       "minecraft:armadillo"
+    ],
+    [
+      "minecraft:nautilus"
     ],
     [
       "minecraft:turtle"

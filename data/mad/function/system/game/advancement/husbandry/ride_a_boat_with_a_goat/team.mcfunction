@@ -8,12 +8,59 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボード設定
+## 進捗達成フラグ
 $scoreboard players set @a[predicate=mad:player/team/$(team)] Advancements_Husbandry_ride_a_boat_with_a_goat 1
-scoreboard players add @s HasAdvancements 1
 $scoreboard players set #mad_team_$(team) Advancements_Husbandry_ride_a_boat_with_a_goat 1
+
+## 進捗数加算
+scoreboard players add @s HasAdvancements 1
 $scoreboard players add #mad_team_$(team) HasAdvancements 1
+
+## タイムボーナス加算
 $scoreboard players operation #mad_team_$(team) TimeLimit += #mad BonusTimeOfAdvancements
 $scoreboard players operation #mad_team_$(team) Second += #mad BonusTimeOfAdvancements
+
+## 進捗付与
 $advancement grant @a[predicate=mad:player/team/$(team)] only minecraft:husbandry/ride_a_boat_with_a_goat
-$tellraw @a[predicate=mad:player/team/$(team)] ['',{translate:'chat.type.advancement.task',with:[{text:'$(text)チーム',color:'$(color)',bold:true},{translate:'[%s]',color:'green',with:[{translate:'advancements.husbandry.ride_a_boat_with_a_goat.title',hover_event:{action:'show_text',value:[{translate:'%s\n%s',color:'green',with:[{translate:'advancements.husbandry.ride_a_boat_with_a_goat.title'},{translate:'advancements.husbandry.ride_a_boat_with_a_goat.description'}]}]}}]}]}]
+
+## 進捗達成メッセージ
+$tellraw @a[predicate=mad:player/team/$(team)] \
+  [\
+    '',\
+    {\
+      translate: 'chat.type.advancement.task',\
+      with: [\
+        {\
+          text: '$(text)チーム',\
+          color: '$(color)',\
+          bold: true\
+        },\
+        {\
+          translate: '[%s]',\
+          color: 'green',\
+          with: [\
+            {\
+              translate: 'advancements.husbandry.ride_a_boat_with_a_goat.title',\
+              hover_event: {\
+                action: 'show_text',\
+                value: [\
+                  {\
+                    translate: '%s\n%s',\
+                    color: 'green',\
+                    with: [\
+                      {\
+                        translate: 'advancements.husbandry.ride_a_boat_with_a_goat.title',\
+                      },\
+                      {\
+                        translate: 'advancements.husbandry.ride_a_boat_with_a_goat.description',\
+                      },\
+                    ],\
+                  },\
+                ],\
+              },\
+            },\
+          ],\
+        },\
+      ],\
+    },\
+  ]

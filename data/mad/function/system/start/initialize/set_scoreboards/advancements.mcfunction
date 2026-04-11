@@ -144,6 +144,11 @@ scoreboard players set #mad_team_a Advancements_Adventure_sniper_duel 0
 scoreboard players set #mad_team_b Advancements_Adventure_sniper_duel 0
 scoreboard players set #mad_team_c Advancements_Adventure_sniper_duel 0
 scoreboard players set #mad_team_d Advancements_Adventure_sniper_duel 0
+scoreboard players set @a[predicate=mad:player/] Advancements_Adventure_spear_many_mobs 0
+scoreboard players set #mad_team_a Advancements_Adventure_spear_many_mobs 0
+scoreboard players set #mad_team_b Advancements_Adventure_spear_many_mobs 0
+scoreboard players set #mad_team_c Advancements_Adventure_spear_many_mobs 0
+scoreboard players set #mad_team_d Advancements_Adventure_spear_many_mobs 0
 scoreboard players set @a[predicate=mad:player/] Advancements_Adventure_spyglass_at_dragon 0
 scoreboard players set #mad_team_a Advancements_Adventure_spyglass_at_dragon 0
 scoreboard players set #mad_team_b Advancements_Adventure_spyglass_at_dragon 0

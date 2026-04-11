@@ -9,4 +9,6 @@
 #####################################
 
 ## 進捗検出
-execute unless predicate mad:phase/not_game_phase as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_under_lock_and_key=0}] run function mad:system/game/advancement/adventure/under_lock_and_key/branch
+execute unless predicate mad:phase/not_game_phase \
+  as @s[predicate=mad:player/alive/,scores={Advancements_Adventure_under_lock_and_key=0}] run \
+  function mad:system/game/advancement/adventure/under_lock_and_key/branch
