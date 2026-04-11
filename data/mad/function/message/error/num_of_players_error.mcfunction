@@ -13,21 +13,29 @@ tellraw @a \
   [\
     '',\
     {\
-      translate: '  人数エラー\n',\
+      translate: '[MAD] %s\n',\
       color: 'yellow',\
-      bold: true,\
+      with: [\
+        {\
+          translate: '人数エラー',\
+          color: 'yellow',\
+          bold: true,\
+        },\
+      ],\
     },\
     {\
       translate: '    所定人数 : %s人\n',\
+      color: 'yellow',\
       with: [\
         {\
           translate: ' 1 - 20 ',\
-          color: 'green',\
+          color: 'yellow',\
         },\
       ],\
     },\
     {\
       translate: '    現在人数 : %s人\n',\
+      color: 'yellow',\
       with: [\
         {\
           score: {\
@@ -41,6 +49,7 @@ tellraw @a \
     },\
     {\
       translate: '    観戦者は %s になってください',\
+      color: 'yellow',\
       with: [\
         {\
           translate: 'スペクテイターモード',\

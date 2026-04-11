@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 共通開始メッセージ表示
-function mad:message/begin
-
 ## バージョンエラーメッセージ表示
 execute if predicate mad:version/error run \
   function mad:message/error/version_error
@@ -18,6 +15,3 @@ execute if predicate mad:version/error run \
 ## 人数エラーメッセージ表示
 execute if predicate mad:gamerule/num_of_players/error run \
   function mad:message/error/num_of_players_error
-
-## 共通終了メッセージ表示
-function mad:message/end

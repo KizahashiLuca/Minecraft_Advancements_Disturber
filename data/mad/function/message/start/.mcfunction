@@ -8,20 +8,21 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 共通開始メッセージ表示
-function mad:message/begin
-
-## 初期設定開始メッセージ表示
-function mad:message/thank_you
-function mad:message/line_horizontal
+## ゲーム設定開始のメッセージ
 tellraw @a \
   [\
     '',\
     {\
-      translate: '  ホストは初期設定を開始してください。\n',\
+      translate: '[MAD] ゲームが開始されました。\n',\
+      color: 'green',\
     },\
     {\
-      translate: '  ホスト : %s',\
+      translate: '[MAD] ホストは初期設定を開始してください。\n',\
+      color: 'green',\
+    },\
+    {\
+      translate: '[MAD]   ホスト : %s',\
+      color: 'green',\
       with: [\
         {\
           selector: '@p[predicate=mad:player/host]',\
@@ -31,6 +32,3 @@ tellraw @a \
       ],\
     },\
   ]
-
-## 共通終了メッセージ表示
-function mad:message/end

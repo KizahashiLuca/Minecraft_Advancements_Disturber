@@ -8,27 +8,21 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 共通開始メッセージ表示
-function mad:message/begin
-
 ## ゲーム開始拒否メッセージ表示
 tellraw @a \
   [\
     '',\
     {\
-      translate: '  既にゲームを実施しているため、\n',\
-      color: 'red',\
+      translate: '[MAD] 現在ゲームが実行中のため、新しいゲームを開始できません。\n',\
+      color: 'green',\
     },\
     {\
-      translate: '  新しいゲームを開始できません。\n',\
-      color: 'red',\
+      translate: '[MAD] 以下をクリックしてゲームを中断できます。\n',\
+      color: 'green',\
     },\
     {\
-      translate: '  以下をクリックしてゲームを中断できます。\n',\
-      color: 'gray',\
-    },\
-    {\
-      translate: '     >> %s',\
+      translate: '[MAD]   >> %s',\
+      color: 'green',\
       with: [\
         {\
           translate: 'ゲーム中断',\

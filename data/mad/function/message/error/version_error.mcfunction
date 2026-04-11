@@ -13,21 +13,29 @@ tellraw @a \
   [\
     '',\
     {\
-      translate: '  バージョンエラー\n',\
+      translate: '[MAD] %s\n',\
       color: 'yellow',\
-      bold: true,\
+      with: [\
+        {\
+          translate: 'バージョンエラー',\
+          color: 'yellow',\
+          bold: true,\
+        },\
+      ],\
     },\
     {\
-      translate: '    対応 : %s 以降\n',\
+      translate: '[MAD]   対応 : %s 以降\n',\
+      color: 'yellow',\
       with: [\
         {\
           translate: 'Java Edition 26.1',\
-          color: 'green',\
+          color: 'yellow',\
         },\
       ],\
     },\
     {\
       translate: '    現在 : %s',\
+      color: 'yellow',\
       with: [\
         {\
           translate: 'Java Edition %s.%s.%s',\
