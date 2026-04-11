@@ -9,9 +9,10 @@
 #####################################
 
 ## 共通改行メッセージ表示
-tellraw @a [\
-  '',\
-  {\
-    translate: '  Thank you for Downloading!',\
-  },\
-]
+tellraw @a \
+  [\
+    '',\
+    {\
+      translate: '  Thank you for Downloading!',\
+    },\
+  ]

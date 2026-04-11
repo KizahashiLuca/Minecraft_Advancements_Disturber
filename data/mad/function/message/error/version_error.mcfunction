@@ -9,50 +9,51 @@
 #####################################
 
 ## バージョンエラーメッセージ表示
-tellraw @a [\
-  '',\
-  {\
-    translate: '  バージョンエラー\n',\
-    color: 'yellow',\
-    bold: true,\
-  },\
-  {\
-    translate: '    対応 : %s 以降\n',\
-    with: [\
-      {\
-        translate: 'Java Edition 26.1',\
-        color: 'green',\
-      },\
-    ],\
-  },\
-  {\
-    translate: '    現在 : %s',\
-    with: [\
-      {\
-        translate: 'Java Edition %s.%s.%s',\
-        color: 'red',\
-        bold: true,\
-        with: [\
-          {\
-            score: {\
-              name: '#mad',\
-              objective: 'MajorVersion',\
+tellraw @a \
+  [\
+    '',\
+    {\
+      translate: '  バージョンエラー\n',\
+      color: 'yellow',\
+      bold: true,\
+    },\
+    {\
+      translate: '    対応 : %s 以降\n',\
+      with: [\
+        {\
+          translate: 'Java Edition 26.1',\
+          color: 'green',\
+        },\
+      ],\
+    },\
+    {\
+      translate: '    現在 : %s',\
+      with: [\
+        {\
+          translate: 'Java Edition %s.%s.%s',\
+          color: 'red',\
+          bold: true,\
+          with: [\
+            {\
+              score: {\
+                name: '#mad',\
+                objective: 'MajorVersion',\
+              },\
             },\
-          },\
-          {\
-            score: {\
-              name: '#mad',\
-              objective: 'MinorVersion',\
+            {\
+              score: {\
+                name: '#mad',\
+                objective: 'MinorVersion',\
+              },\
             },\
-          },\
-          {\
-            score: {\
-              name: '#mad',\
-              objective: 'PatchVersion',\
+            {\
+              score: {\
+                name: '#mad',\
+                objective: 'PatchVersion',\
+              },\
             },\
-          },\
-        ],\
-      },\
-    ],\
-  },\
-]
+          ],\
+        },\
+      ],\
+    },\
+  ]
