@@ -17,5 +17,5 @@ scoreboard objectives add PatchVersion dummy ['', {text: 'パッチバージョ�
 #### プレイヤー
 scoreboard objectives add NumberOfPlayers dummy ['', {text: 'プレイヤー数'}]
 #### ゲームトリガー
-scoreboard objectives add SpectatorTrigger trigger ['', {text: 'スペクテイタートリガー'}]
-scoreboard objectives add ExecuteTrigger trigger ['', {text: 'ゲーム開始トリガー'}]
+scoreboard objectives add SpectatorTrigger trigger ['', {text: 'トリガー - スペクテイター'}]
+scoreboard objectives add ExecuteTrigger trigger ['', {text: 'トリガー - ゲーム制御'}]
