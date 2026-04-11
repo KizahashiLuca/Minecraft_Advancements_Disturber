@@ -10,7 +10,7 @@
 
 ## プレイヤー情報
 #### タグ
-tag @s add MAD_Spectator
+tag @s add mad_spectator
 #### プレイヤーゲームモード
 gamemode spectator @s
 #### ペットをキル
