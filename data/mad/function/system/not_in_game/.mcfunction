@@ -8,10 +8,10 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ゲーム外フェーズの処理
+## トリガーの処理
 #### スペクテイタートリガー
 execute if entity @p[predicate=mad:system/not_in_game/triggered_spectator/] run \
   function mad:system/not_in_game/triggered_spectator/
-#### ゲーム開始トリガー
+#### ゲーム制御トリガー
 execute if entity @p[predicate=mad:system/not_in_game/triggered_execute/] run \
   function mad:system/not_in_game/triggered_execute/
