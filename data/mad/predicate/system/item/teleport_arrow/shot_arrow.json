@@ -12,10 +12,7 @@
           "type": "minecraft:arrow",
           "components": {
             "minecraft:custom_data": {
-              "Tags": [
-                "MAD_MinecartItem",
-                "MAD_TeleportArrow"
-              ]
+              "Tags": ["mad_minecart_item", "mad_teleport_arrow"]
             }
           }
         }
