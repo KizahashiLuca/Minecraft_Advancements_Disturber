@@ -24,8 +24,6 @@ function mad:system/common/count_players/
 function mad:message/load/
 
 ## リセット
-#### ワールド
-function mad:system/load/reset/world
 #### プレイヤータグ
 function mad:system/load/reset/tags
 #### スコアボード

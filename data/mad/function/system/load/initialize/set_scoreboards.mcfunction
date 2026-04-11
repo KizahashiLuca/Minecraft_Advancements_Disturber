@@ -10,16 +10,19 @@
 
 ## スコアボード設定
 #### ゲームフェーズ
-scoreboard players set #mad DataVersion 1444
-scoreboard players set #mad MajorVersion 13
+scoreboard players set #mad DataVersion 0
+scoreboard players set #mad MajorVersion 0
 scoreboard players set #mad MinorVersion 0
-scoreboard players set #mad SnapshotVersion 0
-scoreboard players set #mad PreReleaseVersion 0
-scoreboard players set #mad ReleaseCandidateVersion 0
-scoreboard players set #mad ReleaseVersion 0
+scoreboard players set #mad PatchVersion 0
 #### プレイヤー
 scoreboard players set #mad_player NumberOfPlayers 0
 scoreboard players set #mad_team_a NumberOfPlayers 0
 scoreboard players set #mad_team_b NumberOfPlayers 0
 scoreboard players set #mad_team_c NumberOfPlayers 0
 scoreboard players set #mad_team_d NumberOfPlayers 0
+scoreboard players set #mad_indie_player NumberOfPlayers 0
+#### ゲームトリガー
+scoreboard players enable @a SpectatorTrigger
+scoreboard players set @a SpectatorTrigger 0
+scoreboard players enable @a ExecuteTrigger
+scoreboard players set @a ExecuteTrigger 0

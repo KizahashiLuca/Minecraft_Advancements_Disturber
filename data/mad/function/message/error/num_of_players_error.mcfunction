@@ -9,7 +9,56 @@
 #####################################
 
 ## 人数エラーメッセージ表示
-tellraw @a ['',{text:'  人数エラー',color:'yellow',bold:true}]
-tellraw @a ['',{text:'    対応人数   : '},{translate:'%s人',with:[{text:' 1 - 20 ',color:'green'}]}]
-tellraw @a ['',{text:'    現在の人数 : '},{translate:'%s人',with:[{score:{name:'#mad',objective:'NumberOfPlayers'},color:'red',bold:true}]}]
-tellraw @a ['',{translate:'    参加者以外は %s に\n  なってください。',with:[{text:'スペクテイターモード',color:'red',bold:true}]}]
+tellraw @a [\
+  '',\
+  {\
+    translate: '  人数エラー\n',\
+    color: 'yellow',\
+    bold: true,\
+  },\
+  {\
+    translate: '    所定人数 : %s人\n',\
+    with: [\
+      {\
+        translate: ' 1 - 20 ',\
+        color: 'green',\
+      },\
+    ],\
+  },\
+  {\
+    translate: '    現在人数 : %s人\n',\
+    with: [\
+      {\
+        score: {\
+          name: '#mad',\
+          objective: 'NumberOfPlayers',\
+        },\
+        color: 'red',\
+        bold: true,\
+      },\
+    ],\
+  },\
+  {\
+    translate: '    観戦者は %s になってください',\
+    with: [\
+      {\
+        translate: 'スペクテイターモード',\
+        color: 'red',\
+        underlined: true,\
+        bold: true,\
+        hover_event: {\
+          action: 'show_text',\
+          value: [\
+            {\
+              translate: 'ここをクリックすることで、\nスペクテイターモードに変更できます',\
+            },\
+          ],\
+        },\
+        click_event: {\
+          action: 'run_command',\
+          command: '/trigger SpectatorTrigger set 1',\
+        },\
+      },\
+    ],\
+  },\
+]

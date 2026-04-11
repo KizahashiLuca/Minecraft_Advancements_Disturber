@@ -9,17 +9,18 @@
 #####################################
 
 ## コマンド上限のゲームルールを最大数に設定
-gamerule maxCommandChainLength 65536
-gamerule maxCommandForkCount 65536
+gamerule minecraft:max_command_sequence_length 65536
+gamerule minecraft:max_command_forks 65536
 
 ## 共通開始メッセージ表示
 function mad:message/begin
 
 ## ロードメッセージ表示
-tellraw @a ['',{text:'  Thank you for Downloading!'}]
+function mad:message/thank_you
 
 ## ゲーム未実行時のロードメッセージ表示
-execute if predicate mad:phase/not_in_game run function mad:system/load/
+execute if predicate mad:phase/not_in_game run \
+  function mad:system/load/
 
 ## 共通終了メッセージ表示
 function mad:message/end

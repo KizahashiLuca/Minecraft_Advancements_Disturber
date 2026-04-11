@@ -10,12 +10,12 @@
 
 ## スコアボード追加
 #### ゲームフェーズ
-scoreboard objectives add DataVersion dummy ['',{text:'データバージョン'}]
-scoreboard objectives add MajorVersion dummy ['',{text:'メジャーバージョン'}]
-scoreboard objectives add MinorVersion dummy ['',{text:'マイナーバージョン'}]
-scoreboard objectives add SnapshotVersion dummy ['',{text:'スナップショット'}]
-scoreboard objectives add PreReleaseVersion dummy ['',{text:'プレリリース'}]
-scoreboard objectives add ReleaseCandidateVersion dummy ['',{text:'リリース候補'}]
-scoreboard objectives add ReleaseVersion dummy ['',{text:'リリース'}]
+scoreboard objectives add DataVersion dummy ['', {text: 'データバージョン'}]
+scoreboard objectives add MajorVersion dummy ['', {text: 'メジャーバージョン'}]
+scoreboard objectives add MinorVersion dummy ['', {text: 'マイナーバージョン'}]
+scoreboard objectives add PatchVersion dummy ['', {text: 'パッチバージョン'}]
 #### プレイヤー
-scoreboard objectives add NumberOfPlayers dummy ['',{text:'プレイヤー数'}]
+scoreboard objectives add NumberOfPlayers dummy ['', {text: 'プレイヤー数'}]
+#### ゲームトリガー
+scoreboard objectives add SpectatorTrigger trigger ['', {text: 'スペクテイタートリガー'}]
+scoreboard objectives add ExecuteTrigger trigger ['', {text: 'ゲーム開始トリガー'}]

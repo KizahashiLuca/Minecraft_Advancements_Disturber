@@ -10,4 +10,4 @@
 
 ## プレイヤー用プレイヤータグ付与
 tag @a[gamemode=!spectator] add mad_player
-tag @a[gamemode=!spectator] add mad_team_no
+tag @a[gamemode=!spectator] add mad_indie_player

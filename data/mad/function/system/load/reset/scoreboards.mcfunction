@@ -13,13 +13,17 @@
 scoreboard objectives remove DataVersion
 scoreboard objectives remove MajorVersion
 scoreboard objectives remove MinorVersion
-scoreboard objectives remove SnapshotVersion
-scoreboard objectives remove PreReleaseVersion
-scoreboard objectives remove ReleaseCandidateVersion
-scoreboard objectives remove ReleaseVersion
+scoreboard objectives remove PatchVersion
 #### プレイヤー
 scoreboard objectives remove NumberOfPlayers
 
 ## プレイヤーのスコアボードをリセット
 scoreboard players reset @e
 scoreboard players reset *
+
+## スコアボード再設定
+#### ゲームトリガー
+scoreboard players enable @a SpectatorTrigger
+scoreboard players set @a SpectatorTrigger 0
+scoreboard players enable @a ExecuteTrigger
+scoreboard players set @a ExecuteTrigger 0

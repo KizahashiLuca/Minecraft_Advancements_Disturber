@@ -9,11 +9,60 @@
 #####################################
 
 ## 共通開始メッセージ表示
-tellraw @a ['']
-tellraw @a ['',{text:'---------------------------------'}]
-tellraw @a ['',{text:' Minecraft',color:'red',bold:true}]
-tellraw @a ['',{text:'  Advancements',color:'red',bold:true}]
-tellraw @a ['',{text:'   Disturber β-3.0 - JE 1.21.7',color:'red',bold:true}]
-tellraw @a ['',{translate:'  企画 : %s',with:[{text:'ぽたーじゅ',hover_event:{action:'show_text',value:'Twitter(現X) @potagegatop'},click_event:{action:'open_url',url:'http://x.com/potagegatop'}}],color:'green',bold:true}]
-tellraw @a ['',{translate:'  制作 : %s',with:[{text:'KizahashiLuca',hover_event:{action:'show_text',value:'Twitter(現X) @KizahashiLuca'},click_event:{action:'open_url',url:'http://x.com/KizahashiLuca'}}],color:'green',bold:true}]
-tellraw @a ['',{text:'---------------------------------'}]
+function mad:message/line_break
+function mad:message/line_horizontal
+tellraw @a [\
+  '',\
+  {\
+    translate: ' Minecraft\n',\
+    color: 'red',\
+    bold: true,\
+  },\
+  {\
+    translate: '  Advancements\n',\
+    color: 'red',\
+    bold: true,\
+  },\
+  {\
+    translate: '   Disturber β-3.0 - JE 21.6\n',\
+    color: 'red',\
+    bold: true,\
+  },\
+  {\
+    translate: '  企画 : %s\n',\
+    with: [\
+      {\
+        translate: 'ぽたーじゅ',\
+        hover_event: {\
+          action: 'show_text',\
+          value: 'Twitter(現X) @potagegatop',\
+        },\
+        click_event: {\
+          action: 'open_url',\
+          url: 'http://x.com/potagegatop',\
+        },\
+      },\
+    ],\
+    color: 'green',\
+    bold: true,\
+  },\
+  {\
+    translate: '  制作 : %s',\
+    with: [\
+      {\
+        translate: 'KizahashiLuca',\
+        hover_event: {\
+          action: 'show_text',\
+          value: 'Twitter(現X) @KizahashiLuca',\
+        },\
+        click_event: {\
+          action: 'open_url',\
+          url: 'http://x.com/KizahashiLuca',\
+        },\
+      },\
+    ],\
+    color: 'green',\
+    bold: true,\
+  },\
+]
+function mad:message/line_horizontal

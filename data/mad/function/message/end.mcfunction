@@ -9,5 +9,5 @@
 #####################################
 
 ## 共通終了メッセージ表示
-tellraw @a ['',{text:'---------------------------------'}]
-tellraw @a ['']
+function mad:message/line_horizontal
+function mad:message/line_break

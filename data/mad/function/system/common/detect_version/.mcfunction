@@ -10,5 +10,7 @@
 
 ## マインクラフトバージョン検出
 execute store result score #mad DataVersion run data get entity @p DataVersion
-execute if predicate mad:version/1.21/ run function mad:system/common/detect_version/1.21/
-execute if predicate mad:version/1.22/ run function mad:system/common/detect_version/1.22/
+execute if predicate mad:version/26.1/ run \
+  function mad:system/common/detect_version/26/1
+execute if predicate mad:version/26.2/ run \
+  function mad:system/common/detect_version/26/2

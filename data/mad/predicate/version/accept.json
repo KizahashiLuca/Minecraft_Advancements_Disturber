@@ -3,11 +3,11 @@
   "terms": [
     {
       "condition": "minecraft:reference",
-      "name": "mad:version/1.21/7/"
+      "name": "mad:version/26.1/"
     },
     {
       "condition": "minecraft:reference",
-      "name": "mad:version/1.21/8/"
+      "name": "mad:version/26.2/"
     }
   ]
 }

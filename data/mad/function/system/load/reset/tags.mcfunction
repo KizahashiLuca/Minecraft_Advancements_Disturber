@@ -14,4 +14,4 @@ tag @a remove mad_team_a
 tag @a remove mad_team_b
 tag @a remove mad_team_c
 tag @a remove mad_team_d
-tag @a remove mad_team_no
+tag @a remove mad_indie_player
