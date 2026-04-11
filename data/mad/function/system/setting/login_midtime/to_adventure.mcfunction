@@ -49,3 +49,6 @@ function mad:system/common/count_players/
 
 ## プレイヤー番号設定
 function mad:system/common/numbering/add
+
+## メッセージ
+function mad:message/setting/login_midtime/to_spectator

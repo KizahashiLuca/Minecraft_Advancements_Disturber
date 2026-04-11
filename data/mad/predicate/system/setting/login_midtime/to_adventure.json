@@ -24,7 +24,7 @@
       "condition": "minecraft:entity_scores",
       "entity": "this",
       "scores": {
-        "SpectatorTrigger": 10
+        "SpectatorTrigger": 11
       }
     }
   ]
