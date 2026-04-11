@@ -9,7 +9,9 @@
 #####################################
 
 ## マインクラフトバージョン検出
+#### データバージョンをスコアに保存
 execute store result score #mad DataVersion run data get entity @p DataVersion
+#### データバージョンに応じてスコアボード設定
 execute if predicate mad:version/26.1/ run \
   function mad:system/common/detect_version/26/1
 execute if predicate mad:version/26.2/ run \
