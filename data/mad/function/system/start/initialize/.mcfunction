@@ -33,8 +33,6 @@ function mad:system/start/initialize/set_scoreboards/advancements
 function mad:system/start/initialize/world/
 #### チーム用ストレージ
 function mad:system/start/initialize/storages/team
-#### チームメンバー表示用ストレージ
-function mad:system/start/initialize/storages/display
 #### アップグレードキット表示用ストレージ
 function mad:system/start/initialize/storages/upgrader
 #### ゲームルール用ストレージ
@@ -49,8 +47,6 @@ function mad:system/common/detect_version/
 function mad:system/common/count_players/
 #### プレイヤー番号設定
 function mad:system/common/numbering/
-#### 追加スコアボード設定
-$function mad:system/start/initialize/set_scoreboards/$(type)
 #### 追加ストレージ設定
 $function mad:system/start/initialize/storages/rules/$(type)
 
