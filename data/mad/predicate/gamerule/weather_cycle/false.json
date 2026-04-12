@@ -1,13 +1,9 @@
 {
   "condition": "minecraft:value_check",
   "value": {
-    "type": "minecraft:score",
-    "score": "WeatherCycle",
-    "target": {
-      "type": "minecraft:fixed",
-      "name": "#mad"
-    },
-    "scale": 1
+    "type": "minecraft:storage",
+    "storage": "mad:",
+    "path": "rules.WeatherCycle"
   },
   "range": 0
 }

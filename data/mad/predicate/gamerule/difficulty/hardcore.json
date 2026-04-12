@@ -1,13 +1,9 @@
 {
   "condition": "minecraft:value_check",
   "value": {
-    "type": "minecraft:score",
-    "score": "Difficulty",
-    "target": {
-      "type": "minecraft:fixed",
-      "name": "#mad"
-    },
-    "scale": 1
+    "type": "minecraft:storage",
+    "storage": "mad:",
+    "path": "rules.Difficulty"
   },
   "range": 4
 }
