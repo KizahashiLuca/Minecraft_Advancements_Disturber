@@ -33,9 +33,7 @@ data remove storage mad: death
 #### ゲームルール
 data remove storage mad: rules
 data remove storage mad: gamerule
-data remove storage mad: setting
 data remove storage mad: count_players
-data remove storage mad: leave_team_member
 data remove storage mad: individual
 data remove storage mad: team
 
