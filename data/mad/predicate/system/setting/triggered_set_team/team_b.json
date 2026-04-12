@@ -2,6 +2,6 @@
   "condition": "minecraft:entity_scores",
   "entity": "this",
   "scores": {
-    "SetTeamTrigger": 2
+    "SetTeamTrigger": 12
   }
 }

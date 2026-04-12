@@ -11,7 +11,7 @@
 ## チーム編成マニュアル設定ダイアログ - 2人の場合、ホスト以外
 dialog show @s[predicate=mad:player/,predicate=!mad:player/host] \
   {\
-    type: 'minecraft:notice',\
+    type: 'confirmation',\
     title: {\
       text: 'チーム編成のマニュアル設定',\
     },\
@@ -25,18 +25,25 @@ dialog show @s[predicate=mad:player/,predicate=!mad:player/host] \
       {\
         type: 'minecraft:single_option',\
         key: 'MyTeam',\
-        label: '対戦形式',\
+        label: 'チーム',\
         label_visible: true,\
         options: [\
           {\
-            id: '1',\
+            id: '10',\
+            display: {\
+              text: '未選択',\
+              color: 'white',\
+            },\
+          },\
+          {\
+            id: '11',\
             display: {\
               text: '赤チーム',\
               color: 'red',\
             },\
           },\
           {\
-            id: '2',\
+            id: '12',\
             display: {\
               text: '青チーム',\
               color: 'blue',\
@@ -48,13 +55,17 @@ dialog show @s[predicate=mad:player/,predicate=!mad:player/host] \
     can_close_with_escape: false,\
     after_action: 'close',\
     pause: true,\
-    action: {\
+    yes: {\
       label: 'チーム設定',\
       tooltip: '設定を保存して\nダイアログを閉じます。',\
       action: {\
         type: 'minecraft:dynamic/run_command',\
         template: 'trigger SetTeamTrigger set $(MyTeam)',\
       },\
+    },\
+    no: {\
+      label: 'キャンセル',\
+      tooltip: '設定を破棄して\nダイアログを閉じます。',\
     },\
   }
 
@@ -75,18 +86,25 @@ dialog show @s[predicate=mad:player/host] \
       {\
         type: 'minecraft:single_option',\
         key: 'MyTeam',\
-        label: '対戦形式',\
+        label: 'チーム',\
         label_visible: true,\
         options: [\
           {\
-            id: '1',\
+            id: '10',\
+            display: {\
+              text: '未選択',\
+              color: 'white',\
+            },\
+          },\
+          {\
+            id: '11',\
             display: {\
               text: '赤チーム',\
               color: 'red',\
             },\
           },\
           {\
-            id: '2',\
+            id: '12',\
             display: {\
               text: '青チーム',\
               color: 'blue',\

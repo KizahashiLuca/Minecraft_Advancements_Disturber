@@ -50,6 +50,9 @@ execute if entity @p[predicate=mad:system/setting/triggered_execute/team_member]
 #### チームメンバー設定ダイアログ 再表示
 execute as @a[predicate=mad:system/setting/triggered_set_team/show_dialog] run \
   function mad:system/setting/team_member/show_dialog
+#### チームメンバー設定ダイアログ チーム離脱
+execute as @a[predicate=mad:system/setting/triggered_set_team/leave_team] run \
+  function mad:system/setting/team_member/leave_team
 #### チームメンバー設定ダイアログ 赤チーム設定
 execute as @a[predicate=mad:system/setting/triggered_set_team/team_a] run \
   function mad:system/setting/team_member/join_team with storage mad: team.a
