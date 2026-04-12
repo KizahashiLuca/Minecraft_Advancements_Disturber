@@ -51,13 +51,13 @@ execute if predicate mad:gamerule/match_mode/individual/ run \
         tooltip: '設定を保存して、\nゲームを開始します。',\
         action: {\
           type: 'minecraft:run_command',\
-          command: 'function mad:dialog/system/setting/show_rules with storage mad: rules',\
+          command: 'trigger ExecuteTrigger set 20',\
         },\
       },\
     }
 
 ## 詳細設定ダイアログ - チーム戦
-execute if predicate mad:gamerule/match_mode/team run \
+$execute if predicate mad:gamerule/match_mode/team run \
   dialog show @p[predicate=mad:player/host] \
     {\
       type: 'minecraft:multi_action',\
@@ -103,11 +103,11 @@ execute if predicate mad:gamerule/match_mode/team run \
         },\
       ],\
       exit_action: {\
-        label: '決定',\
-        tooltip: '設定を保存して、\nゲームを開始します。',\
+        label: '$(label)',\
+        tooltip: '設定を保存して、\n$(text)',\
         action: {\
           type: 'minecraft:run_command',\
-          command: 'function mad:dialog/system/setting/show_rules with storage mad: rules',\
+          command: 'trigger ExecuteTrigger set $(score)',\
         },\
       },\
     }

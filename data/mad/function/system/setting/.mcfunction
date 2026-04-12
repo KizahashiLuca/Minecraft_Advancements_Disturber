@@ -35,3 +35,6 @@ execute if entity @p[predicate=mad:system/setting/triggered_execute/team_rules] 
 #### ゲーム制御トリガー - キャンセルボタン
 execute if entity @p[predicate=mad:system/setting/triggered_execute/cancel] run \
   function mad:system/setting/cancel
+#### ゲーム制御トリガー - 決定ボタン
+execute if entity @p[predicate=mad:system/setting/triggered_execute/start] run \
+  function mad:system/setting/start
