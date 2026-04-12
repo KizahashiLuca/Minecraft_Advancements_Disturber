@@ -9,8 +9,5 @@
     "score": "Phase",
     "scale": 1
   },
-  "range": {
-    "min": 1,
-    "max": 40
-  }
+  "range": 1
 }
