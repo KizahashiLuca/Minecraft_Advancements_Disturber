@@ -18,23 +18,23 @@ $dialog show @p[predicate=mad:player/host] \
     inputs: [\
       {\
         type: 'minecraft:boolean',\
-        key: 'WeatherCycle',\
-        label: '天気サイクル',\
-        initial: $(WeatherCycle),\
+        key: 'advance_weather',\
+        label: '天気の更新',\
+        initial: $(advance_weather),\
         on_true: '1',\
         on_false: '0',\
       },\
       {\
         type: 'minecraft:boolean',\
-        key: 'DaylightCycle',\
-        label: '昼夜サイクル',\
-        initial: $(DaylightCycle),\
+        key: 'advance_time',\
+        label: 'ゲーム内時刻の進行',\
+        initial: $(advance_time),\
         on_true: '1',\
         on_false: '0',\
       },\
       {\
         type: 'minecraft:single_option',\
-        key: 'Difficulty',\
+        key: 'difficulty',\
         label: '難易度',\
         label_visible: true,\
         options: [\
@@ -63,21 +63,21 @@ $dialog show @p[predicate=mad:player/host] \
       },\
       {\
         type: 'minecraft:number_range',\
-        key: 'NumberOfCarePackages',\
+        key: 'number_of_care_packages',\
         label: '支援物資投下数',\
         start: 1,\
         end: 5,\
-        initial: $(NumberOfCarePackages),\
+        initial: $(number_of_care_packages),\
         label_format: '%1$s: %2$s 個',\
         step: 1,\
       },\
       {\
         type: 'minecraft:number_range',\
-        key: 'BonusTimeOfKill',\
+        key: 'bonus_time_of_kill',\
         label: '撃破ボーナス',\
         start: 0,\
         end: 1000,\
-        initial: $(BonusTimeOfKill),\
+        initial: $(bonus_time_of_kill),\
         label_format: '%1$s: %2$s 秒',\
         step: 10,\
       },\
@@ -90,7 +90,7 @@ $dialog show @p[predicate=mad:player/host] \
       tooltip: '設定を保存して、戻ります。',\
       action: {\
         type: 'minecraft:dynamic/run_command',\
-        template: 'function mad:system/setting/option_rules/save {WeatherCycle: $(WeatherCycleString), DaylightCycle: $(DaylightCycleString), Difficulty: $(DifficultyString), NumberOfCarePackages: $(NumberOfCarePackagesString), BonusTimeOfKill: $(BonusTimeOfKillString)}',\
+        template: 'function mad:system/setting/option_rules/save {advance_weather: $(advance_weather_string), advance_time: $(advance_time_string), difficulty: $(difficulty_string), number_of_care_packages: $(number_of_care_packages_string), bonus_time_of_kill: $(bonus_time_of_kill_string)}',\
       },\
     },\
     no: {\

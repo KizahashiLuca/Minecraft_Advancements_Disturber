@@ -3,7 +3,7 @@
   "value": {
     "type": "minecraft:storage",
     "storage": "mad:",
-    "path": "rules.Difficulty"
+    "path": "rules.difficulty"
   },
   "range": 2
 }

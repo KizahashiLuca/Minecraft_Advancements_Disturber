@@ -3,7 +3,7 @@
   "value": {
     "type": "minecraft:storage",
     "storage": "mad:",
-    "path": "rules.DaylightCycle"
+    "path": "rules.advance_weather"
   },
-  "range": 0
+  "range": 1
 }

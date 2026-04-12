@@ -3,7 +3,7 @@
   "value": {
     "type": "minecraft:storage",
     "storage": "mad:",
-    "path": "rules.nametagVisibility"
+    "path": "rules.nametag_visibility"
   },
   "range": 1
 }

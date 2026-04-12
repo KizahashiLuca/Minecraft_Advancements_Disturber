@@ -10,7 +10,7 @@
       "value": {
         "type": "minecraft:storage",
         "storage": "mad:",
-        "path": "rules.SetTeamManual"
+        "path": "rules.set_team_manual"
       },
       "range": 0
     }

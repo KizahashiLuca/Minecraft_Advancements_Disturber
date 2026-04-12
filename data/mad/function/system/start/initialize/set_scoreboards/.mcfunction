@@ -105,11 +105,10 @@ scoreboard players set #mad WeatherCycle 1
 scoreboard players set #mad DaylightCycle 1
 scoreboard players set #mad NumberOfCarePackages 1
 scoreboard players set #mad BonusTimeOfKill 200
-#### 設定フェーズ - チーム戦ルール その1
+#### 設定フェーズ - チーム戦ルール
 scoreboard players set #mad NumberOfTeams 2
 scoreboard players set #mad SetTeamManual 0
 scoreboard players set #mad DeathPenaltyTime 0
-#### 設定フェーズ - チーム戦ルール その2
 scoreboard players set #mad friendlyFire 1
 scoreboard players set #mad collisionRule 1
 scoreboard players set #mad nametagVisibility 1

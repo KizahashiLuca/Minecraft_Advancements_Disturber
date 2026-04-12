@@ -3,7 +3,7 @@
   "value": {
     "type": "minecraft:storage",
     "storage": "mad:",
-    "path": "rules.IsTeam"
+    "path": "rules.is_team"
   },
   "range": 1
 }

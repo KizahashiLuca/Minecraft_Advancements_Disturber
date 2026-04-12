@@ -3,7 +3,7 @@
   "value": {
     "type": "minecraft:storage",
     "storage": "mad:",
-    "path": "rules.DeathPenaltyTime"
+    "path": "rules.death_penalty_time"
   },
   "range": {
     "min": 1,

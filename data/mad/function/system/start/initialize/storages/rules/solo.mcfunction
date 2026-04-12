@@ -11,8 +11,8 @@
 ## ゲームルール - ソロ戦
 data modify storage mad: rules merge value \
   {\
-    IsTeam: 0,\
-    CarePackageInterval: 100,\
-    WorldBorder: 1000,\
-    NumberOfTeams: 0,\
+    is_team: 0,\
+    care_package_interval: 100,\
+    world_border: 1000,\
+    number_of_teams: 0,\
   }

@@ -14,14 +14,14 @@ function mad:system/setting/scoreboards
 ## 設定値保存
 $data modify storage mad: rules merge value \
   {\
-    SetTeamManual: $(SetTeamManual),\
-    NumberOfTeams: $(NumberOfTeams),\
-    DeathPenaltyTime: $(DeathPenaltyTime),\
-    friendlyFire: $(friendlyFire),\
-    collisionRule: $(collisionRule),\
-    nametagVisibility: $(nametagVisibility),\
-    seeFriendlyInvisibles: $(seeFriendlyInvisibles),\
-    deathMessageVisibility: $(deathMessageVisibility),\
+    set_team_manual: $(set_team_manual),\
+    number_of_teams: $(number_of_teams),\
+    death_penalty_time: $(death_penalty_time),\
+    friendly_fire: $(friendly_fire),\
+    collision_rule: $(collision_rule),\
+    nametag_visibility: $(nametag_visibility),\
+    see_friendly_invisibles: $(see_friendly_invisibles),\
+    death_message_visibility: $(death_message_visibility),\
   }
 
 ## ルートダイアログ表示

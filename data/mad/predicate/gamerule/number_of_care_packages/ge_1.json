@@ -3,7 +3,7 @@
   "value": {
     "type": "minecraft:storage",
     "storage": "mad:",
-    "path": "rules.NumberOfCarePackages"
+    "path": "rules.number_of_care_packages"
   },
   "range": {
     "min": 1,

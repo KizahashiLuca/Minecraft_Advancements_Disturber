@@ -3,7 +3,7 @@
   "value": {
     "type": "minecraft:storage",
     "storage": "mad:",
-    "path": "rules.seeFriendlyInvisibles"
+    "path": "rules.see_friendly_invisibles"
   },
   "range": 0
 }

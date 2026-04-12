@@ -14,11 +14,11 @@ function mad:system/setting/scoreboards
 ## 設定値保存
 $data modify storage mad: rules merge value \
   {\
-    IsTeam: $(IsTeam),\
-    InitialTime: $(InitialTime),\
-    BonusTimeOfAdvancements: $(BonusTimeOfAdvancements),\
-    CarePackageInterval: $(CarePackageInterval),\
-    WorldBorder: $(WorldBorder),\
+    is_team: $(is_team),\
+    initial_time: $(initial_time),\
+    bonus_time_of_advancements: $(bonus_time_of_advancements),\
+    care_package_interval: $(care_package_interval),\
+    world_border: $(world_border),\
   }
 
 ## ルートダイアログ表示

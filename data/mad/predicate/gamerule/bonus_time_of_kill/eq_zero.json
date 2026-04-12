@@ -3,7 +3,7 @@
   "value": {
     "type": "minecraft:storage",
     "storage": "mad:",
-    "path": "rules.BonusTimeOfKill"
+    "path": "rules.bonus_time_of_kill"
   },
   "range": 0
 }

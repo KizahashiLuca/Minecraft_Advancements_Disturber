@@ -11,8 +11,8 @@
 ## ゲームルール - チーム戦
 data modify storage mad: rules merge value \
   {\
-    IsTeam: 1,\
-    CarePackageInterval: 300,\
-    WorldBorder: 1500,\
-    NumberOfTeams: 2,\
+    is_team: 1,\
+    care_package_interval: 300,\
+    world_border: 1500,\
+    number_of_teams: 2,\
   }

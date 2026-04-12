@@ -19,7 +19,7 @@ $execute if predicate mad:gamerule/num_of_players/solo run \
       inputs: [\
         {\
           type: 'minecraft:single_option',\
-          key: 'IsTeam',\
+          key: 'is_team',\
           label: '対戦形式',\
           label_visible: true,\
           options: [\
@@ -32,41 +32,41 @@ $execute if predicate mad:gamerule/num_of_players/solo run \
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'InitialTime',\
+          key: 'initial_time',\
           label: '初期時間',\
           start: 1,\
           end: 1000,\
-          initial: $(InitialTime),\
+          initial: $(initial_time),\
           label_format: '%1$s: %2$s 秒',\
           step: 10,\
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'BonusTimeOfAdvancements',\
+          key: 'bonus_time_of_advancements',\
           label: '追加時間',\
           start: 1,\
           end: 1000,\
-          initial: $(BonusTimeOfAdvancements),\
+          initial: $(bonus_time_of_advancements),\
           label_format: '%1$s: %2$s 秒',\
           step: 10,\
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'CarePackageInterval',\
+          key: 'care_package_interval',\
           label: '支援物資間隔',\
           start: 1,\
           end: 1000,\
-          initial: $(CarePackageInterval),\
+          initial: $(care_package_interval),\
           label_format: '%1$s: %2$s 秒',\
           step: 10,\
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'WorldBorder',\
+          key: 'world_border',\
           label: 'ワールド範囲',\
           start: 100,\
           end: 10000,\
-          initial: $(WorldBorder),\
+          initial: $(world_border),\
           label_format: '%1$s: %2$s x %2$s ブロック',\
           step: 100,\
         },\
@@ -79,7 +79,7 @@ $execute if predicate mad:gamerule/num_of_players/solo run \
         tooltip: '設定を保存して、戻ります。',\
         action: {\
           type: 'minecraft:dynamic/run_command',\
-          template: 'function mad:system/setting/detail_rules/save {IsTeam: $(IsTeamString), InitialTime: $(InitialTimeString), BonusTimeOfAdvancements: $(BonusTimeOfAdvancementsString), CarePackageInterval: $(CarePackageIntervalString), WorldBorder: $(WorldBorderString)}',\
+          template: 'function mad:system/setting/detail_rules/save {is_team: $(is_team_string), initial_time: $(initial_time_string), bonus_time_of_advancements: $(bonus_time_of_advancements_string), care_package_interval: $(care_package_interval_string), world_border: $(world_border_string)}',\
         },\
       },\
       no: {\
@@ -105,7 +105,7 @@ $execute if predicate mad:gamerule/match_mode/team \
       inputs: [\
         {\
           type: 'minecraft:single_option',\
-          key: 'IsTeam',\
+          key: 'is_team',\
           label: '対戦形式',\
           label_visible: true,\
           options: [\
@@ -122,41 +122,41 @@ $execute if predicate mad:gamerule/match_mode/team \
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'InitialTime',\
+          key: 'initial_time',\
           label: '初期時間',\
           start: 1,\
           end: 1000,\
-          initial: $(InitialTime),\
+          initial: $(initial_time),\
           label_format: '%1$s: %2$s 秒',\
           step: 10,\
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'BonusTimeOfAdvancements',\
+          key: 'bonus_time_of_advancements',\
           label: '追加時間',\
           start: 1,\
           end: 1000,\
-          initial: $(BonusTimeOfAdvancements),\
+          initial: $(bonus_time_of_advancements),\
           label_format: '%1$s: %2$s 秒',\
           step: 10,\
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'CarePackageInterval',\
+          key: 'care_package_interval',\
           label: '支援物資間隔',\
           start: 1,\
           end: 1000,\
-          initial: $(CarePackageInterval),\
+          initial: $(care_package_interval),\
           label_format: '%1$s: %2$s 秒',\
           step: 10,\
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'WorldBorder',\
+          key: 'world_border',\
           label: 'ワールド範囲',\
           start: 100,\
           end: 10000,\
-          initial: $(WorldBorder),\
+          initial: $(world_border),\
           label_format: '%1$s: %2$s x %2$s ブロック',\
           step: 100,\
         },\
@@ -169,7 +169,7 @@ $execute if predicate mad:gamerule/match_mode/team \
         tooltip: '設定を保存して、戻ります。',\
         action: {\
           type: 'minecraft:dynamic/run_command',\
-          template: 'function mad:system/setting/detail_rules/save {IsTeam: $(IsTeamString), InitialTime: $(InitialTimeString), BonusTimeOfAdvancements: $(BonusTimeOfAdvancementsString), CarePackageInterval: $(CarePackageIntervalString), WorldBorder: $(WorldBorderString)}',\
+          template: 'function mad:system/setting/detail_rules/save {is_team: $(is_team_string), initial_time: $(initial_time_string), bonus_time_of_advancements: $(bonus_time_of_advancements_string), care_package_interval: $(care_package_interval_string), world_border: $(world_border_string)}',\
         },\
       },\
       no: {\
@@ -193,7 +193,7 @@ $execute if predicate mad:gamerule/match_mode/individual/ \
       inputs: [\
         {\
           type: 'minecraft:single_option',\
-          key: 'IsTeam',\
+          key: 'is_team',\
           label: '対戦形式',\
           label_visible: true,\
           options: [\
@@ -210,41 +210,41 @@ $execute if predicate mad:gamerule/match_mode/individual/ \
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'InitialTime',\
+          key: 'initial_time',\
           label: '初期時間',\
           start: 1,\
           end: 1000,\
-          initial: $(InitialTime),\
+          initial: $(initial_time),\
           label_format: '%1$s: %2$s 秒',\
           step: 10,\
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'BonusTimeOfAdvancements',\
+          key: 'bonus_time_of_advancements',\
           label: '追加時間',\
           start: 1,\
           end: 1000,\
-          initial: $(BonusTimeOfAdvancements),\
+          initial: $(bonus_time_of_advancements),\
           label_format: '%1$s: %2$s 秒',\
           step: 10,\
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'CarePackageInterval',\
+          key: 'care_package_interval',\
           label: '支援物資間隔',\
           start: 1,\
           end: 1000,\
-          initial: $(CarePackageInterval),\
+          initial: $(care_package_interval),\
           label_format: '%1$s: %2$s 秒',\
           step: 10,\
         },\
         {\
           type: 'minecraft:number_range',\
-          key: 'WorldBorder',\
+          key: 'world_border',\
           label: 'ワールド範囲',\
           start: 100,\
           end: 10000,\
-          initial: $(WorldBorder),\
+          initial: $(world_border),\
           label_format: '%1$s: %2$s x %2$s ブロック',\
           step: 100,\
         },\
@@ -257,7 +257,7 @@ $execute if predicate mad:gamerule/match_mode/individual/ \
         tooltip: '設定を保存して、戻ります。',\
         action: {\
           type: 'minecraft:dynamic/run_command',\
-          template: 'function mad:system/setting/detail_rules/save {IsTeam: $(IsTeamString), InitialTime: $(InitialTimeString), BonusTimeOfAdvancements: $(BonusTimeOfAdvancementsString), CarePackageInterval: $(CarePackageIntervalString), WorldBorder: $(WorldBorderString)}',\
+          template: 'function mad:system/setting/detail_rules/save {is_team: $(is_team_string), initial_time: $(initial_time_string), bonus_time_of_advancements: $(bonus_time_of_advancements_string), care_package_interval: $(care_package_interval_string), world_border: $(world_border_string)}',\
         },\
       },\
       no: {\
