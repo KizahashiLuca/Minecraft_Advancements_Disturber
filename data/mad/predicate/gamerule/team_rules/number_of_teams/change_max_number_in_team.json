@@ -6,7 +6,7 @@
       "terms": [
         {
           "condition": "minecraft:reference",
-          "name": "mad:gamerule/team_rules/1/number_of_teams/3"
+          "name": "mad:gamerule/team_rules/number_of_teams/3"
         },
         {
           "condition": "minecraft:value_check",
@@ -39,7 +39,7 @@
       "terms": [
         {
           "condition": "minecraft:reference",
-          "name": "mad:gamerule/team_rules/1/number_of_teams/3"
+          "name": "mad:gamerule/team_rules/number_of_teams/3"
         },
         {
           "condition": "minecraft:value_check",
@@ -72,7 +72,7 @@
       "terms": [
         {
           "condition": "minecraft:reference",
-          "name": "mad:gamerule/team_rules/1/number_of_teams/4"
+          "name": "mad:gamerule/team_rules/number_of_teams/4"
         },
         {
           "condition": "minecraft:value_check",
@@ -105,7 +105,7 @@
       "terms": [
         {
           "condition": "minecraft:reference",
-          "name": "mad:gamerule/team_rules/1/number_of_teams/4"
+          "name": "mad:gamerule/team_rules/number_of_teams/4"
         },
         {
           "condition": "minecraft:value_check",
@@ -138,7 +138,7 @@
       "terms": [
         {
           "condition": "minecraft:reference",
-          "name": "mad:gamerule/team_rules/1/number_of_teams/4"
+          "name": "mad:gamerule/team_rules/number_of_teams/4"
         },
         {
           "condition": "minecraft:value_check",

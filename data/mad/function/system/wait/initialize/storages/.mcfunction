@@ -39,24 +39,24 @@ execute if predicate mad:gamerule/daylight_cycle/false run data modify storage m
 execute if predicate mad:gamerule/weather_cycle/true run data modify storage mad: gamerule.weather_cycle set value 'true'
 execute if predicate mad:gamerule/weather_cycle/false run data modify storage mad: gamerule.weather_cycle set value 'false'
 #### フレンドリーファイア
-execute if predicate mad:gamerule/team_rules/2/friendly_fire/true run data modify storage mad: gamerule.friendly_fire set value 'true'
-execute if predicate mad:gamerule/team_rules/2/friendly_fire/false run data modify storage mad: gamerule.friendly_fire set value 'false'
+execute if predicate mad:gamerule/team_rules/friendly_fire/true run data modify storage mad: gamerule.friendly_fire set value 'true'
+execute if predicate mad:gamerule/team_rules/friendly_fire/false run data modify storage mad: gamerule.friendly_fire set value 'false'
 #### 当たり判定
-execute if predicate mad:gamerule/team_rules/2/collision_rule/true run data modify storage mad: gamerule.collision_rule set value 'always'
-execute if predicate mad:gamerule/team_rules/2/collision_rule/false run data modify storage mad: gamerule.collision_rule set value 'pushOtherTeams'
+execute if predicate mad:gamerule/team_rules/collision_rule/true run data modify storage mad: gamerule.collision_rule set value 'always'
+execute if predicate mad:gamerule/team_rules/collision_rule/false run data modify storage mad: gamerule.collision_rule set value 'pushOtherTeams'
 #### ネームタグ表示
-execute if predicate mad:gamerule/team_rules/2/nametag_visibility/true run data modify storage mad: gamerule.nametag_visibility set value 'hideForOtherTeams'
-execute if predicate mad:gamerule/team_rules/2/nametag_visibility/false run data modify storage mad: gamerule.nametag_visibility set value 'never'
+execute if predicate mad:gamerule/team_rules/nametag_visibility/true run data modify storage mad: gamerule.nametag_visibility set value 'hideForOtherTeams'
+execute if predicate mad:gamerule/team_rules/nametag_visibility/false run data modify storage mad: gamerule.nametag_visibility set value 'never'
 #### 透明化の視認
-execute if predicate mad:gamerule/team_rules/2/see_friendly_invisibles/true run data modify storage mad: gamerule.see_friendly_invisibles set value 'true'
-execute if predicate mad:gamerule/team_rules/2/see_friendly_invisibles/false run data modify storage mad: gamerule.see_friendly_invisibles set value 'false'
+execute if predicate mad:gamerule/team_rules/see_friendly_invisibles/true run data modify storage mad: gamerule.see_friendly_invisibles set value 'true'
+execute if predicate mad:gamerule/team_rules/see_friendly_invisibles/false run data modify storage mad: gamerule.see_friendly_invisibles set value 'false'
 #### 死亡メッセージ
-execute if predicate mad:gamerule/team_rules/2/death_message_visibility/true run data modify storage mad: gamerule.death_message_visibility set value 'hideForOtherTeams'
-execute if predicate mad:gamerule/team_rules/2/death_message_visibility/false run data modify storage mad: gamerule.death_message_visibility set value 'never'
+execute if predicate mad:gamerule/team_rules/death_message_visibility/true run data modify storage mad: gamerule.death_message_visibility set value 'hideForOtherTeams'
+execute if predicate mad:gamerule/team_rules/death_message_visibility/false run data modify storage mad: gamerule.death_message_visibility set value 'never'
 #### 昼夜サイクル
 execute if predicate mad:gamerule/match_mode/individual/ run data modify storage mad: gamerule.show_death_messages set value 'false'
-execute if predicate mad:gamerule/match_mode/team if predicate mad:gamerule/team_rules/2/death_message_visibility/true run data modify storage mad: gamerule.show_death_messages set value 'true'
-execute if predicate mad:gamerule/match_mode/team if predicate mad:gamerule/team_rules/2/death_message_visibility/false run data modify storage mad: gamerule.show_death_messages set value 'false'
+execute if predicate mad:gamerule/match_mode/team if predicate mad:gamerule/team_rules/death_message_visibility/true run data modify storage mad: gamerule.show_death_messages set value 'true'
+execute if predicate mad:gamerule/match_mode/team if predicate mad:gamerule/team_rules/death_message_visibility/false run data modify storage mad: gamerule.show_death_messages set value 'false'
 #### 支援物資
 execute if predicate mad:gamerule/number_of_care_packages/ge_1 run function mad:system/wait/initialize/storages/care_package {number:'1'}
 execute if predicate mad:gamerule/number_of_care_packages/ge_2 run function mad:system/wait/initialize/storages/care_package {number:'2'}

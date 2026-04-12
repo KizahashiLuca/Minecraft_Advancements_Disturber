@@ -8,17 +8,13 @@
     {
       "condition": "minecraft:value_check",
       "value": {
-        "type": "minecraft:score",
-        "target": {
-          "type": "minecraft:fixed",
-          "name": "#mad"
-        },
-        "score": "NumberOfTeams",
-        "scale": 1
+        "type": "minecraft:storage",
+        "storage": "mad:",
+        "path": "rules.NumberOfTeams"
       },
       "range": {
-        "min": 1,
-        "max": 2
+        "min": 4,
+        "max": 2147483647
       }
     }
   ]

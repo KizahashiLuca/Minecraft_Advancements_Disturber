@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mad:gamerule/match_mode/team"
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:storage",
+        "storage": "mad:",
+        "path": "rules.SetTeamManual"
+      },
+      "range": 0
+    }
+  ]
+}

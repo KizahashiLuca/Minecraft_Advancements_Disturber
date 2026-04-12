@@ -13,9 +13,9 @@
 summon minecraft:text_display ~0.375 ~1.50 ~ {text:{text:'チーム編成手動設定',color:'black',bold:true},background:0,alignment:'center',Rotation:[180.0f, 0.0f],Tags:['MAD_TextDisplay','MAD_TextDisplay_Setting_TeamMember','MAD_TextDisplay_TeamMemberTitle']}
 #### チームエリア
 execute if predicate mad:gamerule/match_mode/individual/ run function mad:system/setting/team_member/manual/display/team_area/0
-execute if predicate mad:gamerule/team_rules/1/number_of_teams/2 run function mad:system/setting/team_member/manual/display/team_area/2
-execute if predicate mad:gamerule/team_rules/1/number_of_teams/3 run function mad:system/setting/team_member/manual/display/team_area/3
-execute if predicate mad:gamerule/team_rules/1/number_of_teams/4 run function mad:system/setting/team_member/manual/display/team_area/4
+execute if predicate mad:gamerule/team_rules/number_of_teams/2 run function mad:system/setting/team_member/manual/display/team_area/2
+execute if predicate mad:gamerule/team_rules/number_of_teams/3 run function mad:system/setting/team_member/manual/display/team_area/3
+execute if predicate mad:gamerule/team_rules/number_of_teams/4 run function mad:system/setting/team_member/manual/display/team_area/4
 #### プレイヤーの頭
 function mad:system/setting/team_member/manual/display/player_head/
 #### 戻る
