@@ -24,7 +24,7 @@ tellraw @a \
       ],\
     },\
     {\
-      translate: '    所定人数 : %s人\n',\
+      translate: '[MAD]   所定人数 : %s人\n',\
       color: 'yellow',\
       with: [\
         {\
@@ -34,7 +34,7 @@ tellraw @a \
       ],\
     },\
     {\
-      translate: '    現在人数 : %s人\n',\
+      translate: '[MAD]   現在人数 : %s人\n',\
       color: 'yellow',\
       with: [\
         {\
@@ -48,14 +48,14 @@ tellraw @a \
       ],\
     },\
     {\
-      translate: '    観戦者は %s になってください',\
+      translate: '[MAD] 観戦者は %s になってください\n',\
       color: 'yellow',\
       with: [\
         {\
           translate: 'スペクテイターモード',\
           color: 'red',\
-          underlined: true,\
           bold: true,\
+          underlined: true,\
           hover_event: {\
             action: 'show_text',\
             value: [\

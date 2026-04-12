@@ -21,7 +21,7 @@ tellraw @a \
       color: 'green',\
     },\
     {\
-      translate: '[MAD]   ホスト : %s',\
+      translate: '[MAD]   ホスト : %s\n',\
       color: 'green',\
       with: [\
         {\
@@ -40,13 +40,14 @@ tellraw @a[predicate=mad:player/host] \
       color: 'green',\
     },\
     {\
-      translate: '[MAD] %sをクリックしてください。',\
+      translate: '[MAD] %s をクリックしてください。\n',\
       color: 'green',\
       with: [\
         {\
           translate: 'ここ',\
           color: 'green',\
           bold: true,\
+          underlined: true,\
           hover_event: {\
             action: 'show_text',\
             value: 'ダイアログを再度開きます。',\

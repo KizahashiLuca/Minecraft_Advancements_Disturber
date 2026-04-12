@@ -13,16 +13,27 @@ tellraw @a \
   [\
     '',\
     {\
+      translate: '[MAD] %s\n',\
+      color: 'yellow',\
+      with: [\
+        {\
+          translate: 'コマンドエラー',\
+          color: 'yellow',\
+          bold: true,\
+        },\
+      ],\
+    },\
+    {\
       translate: '[MAD] 現在ゲームが実行中のため、新しいゲームを開始できません。\n',\
-      color: 'green',\
+      color: 'yellow',\
     },\
     {\
       translate: '[MAD] 以下をクリックしてゲームを中断できます。\n',\
-      color: 'green',\
+      color: 'yellow',\
     },\
     {\
-      translate: '[MAD]   >> %s',\
-      color: 'green',\
+      translate: '[MAD]   >> %s\n',\
+      color: 'yellow',\
       with: [\
         {\
           translate: 'ゲーム中断',\

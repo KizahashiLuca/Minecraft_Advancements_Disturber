@@ -34,7 +34,7 @@ tellraw @a \
       ],\
     },\
     {\
-      translate: '    現在 : %s',\
+      translate: '[MAD]   現在 : %s\n',\
       color: 'yellow',\
       with: [\
         {\
