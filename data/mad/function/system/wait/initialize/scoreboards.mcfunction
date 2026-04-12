@@ -20,6 +20,7 @@ scoreboard players set @a[predicate=mad:player/] TimeSinceDeath 0
 #### テレポート用トリガー
 scoreboard players set @a TeleportTrigger 0
 scoreboard players enable @a[predicate=mad:player/spectator] TeleportTrigger
+#### ゲーム終了用トリガー
 scoreboard players set @a[predicate=mad:player/host] ExitTrigger 0
 scoreboard players enable @a[predicate=mad:player/host] ExitTrigger
 #### タイマー
@@ -102,7 +103,7 @@ execute store result score #mad TmpZ run \
 scoreboard players operation #mad TmpZ += #mad PosZ
 execute store result storage mad: rules.world_size.z2 int 1 run \
   scoreboard players get #mad TmpZ
-#### ワールド範囲 範囲内にエンド大陸が存在するか - 支援物資「エンドポータルフレーム」判定用
+#### 範囲内にエンド大陸が存在するか - 支援物資「エンドポータルフレーム」判定用
 scoreboard players set #mad ExistsTheEndInWorldBorder 0
 execute if predicate mad:system/wait/initialize/check_the_end run \
   scoreboard players set #mad ExistsTheEndInWorldBorder 1
