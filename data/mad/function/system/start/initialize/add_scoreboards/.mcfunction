@@ -63,8 +63,6 @@ scoreboard objectives add PlayerNumberSkip dummy ['',{text:'プレイヤー番�
 scoreboard objectives add MaxNumberOfPlayers dummy ['',{text:'最大プレイヤー数'}]
 scoreboard objectives add NumberOfLiving dummy ['',{text:'生存プレイヤー数'}]
 scoreboard objectives add NumberOfDead dummy ['',{text:'死亡プレイヤー数'}]
-#### チーム戦
-scoreboard objectives add IsTeam dummy ['',{text:'チーム戦'}]
 #### 接地判定
 scoreboard objectives add OnGround dummy ['',{text:'接地判定'}]
 #### アクションバー

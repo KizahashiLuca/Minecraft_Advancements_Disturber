@@ -63,8 +63,6 @@ scoreboard objectives remove PlayerNumberSkip
 scoreboard objectives remove MaxNumberOfPlayers
 scoreboard objectives remove NumberOfLiving
 scoreboard objectives remove NumberOfDead
-#### チーム戦
-scoreboard objectives remove IsTeam
 #### 接地判定
 scoreboard objectives remove OnGround
 #### アクションバー

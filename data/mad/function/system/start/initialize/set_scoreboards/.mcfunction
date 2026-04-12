@@ -79,8 +79,6 @@ scoreboard players set #mad_team_a NumberOfDead 0
 scoreboard players set #mad_team_b NumberOfDead 0
 scoreboard players set #mad_team_c NumberOfDead 0
 scoreboard players set #mad_team_d NumberOfDead 0
-#### チーム戦
-scoreboard players set #mad IsTeam 1
 #### 接地判定
 scoreboard players set @a[predicate=mad:player/] OnGround 0
 #### アクションバー

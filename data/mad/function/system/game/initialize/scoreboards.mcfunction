@@ -103,8 +103,6 @@ scoreboard players set #mad_team_a NumberOfDead 0
 scoreboard players set #mad_team_b NumberOfDead 0
 scoreboard players set #mad_team_c NumberOfDead 0
 scoreboard players set #mad_team_d NumberOfDead 0
-#### 設定フェーズ - チーム編成設定
-scoreboard players set #mad NotExistsTeamMember 0
 #### 進捗
 scoreboard players set #mad_team_a HasAdvancements 0
 scoreboard players set #mad_team_b HasAdvancements 0

@@ -142,8 +142,6 @@ scoreboard players set #mad_team_d NumberOfDead 0
 #### チーム数 - 勝敗判定用
 execute store result score #mad NumberOfTeams run \
   data get storage mad: rules.number_of_teams 1
-#### チームメンバー不在 - 勝敗判定用
-scoreboard players set #mad NotExistsTeamMember 0
 #### 死亡ペナルティ - 制限時間減算用
 execute store result score #mad DeathPenaltyTime run \
   data get storage mad: rules.death_penalty_time 1
