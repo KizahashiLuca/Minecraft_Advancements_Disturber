@@ -8,15 +8,19 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 0ティック時に秒数計算
-execute if predicate mad:system/common/time/tick/eq_zero run function mad:system/common/time/second
+## 0ティック時に秒数計算 - 1秒減算
+execute if predicate mad:system/common/time/tick/eq_zero run \
+  function mad:system/common/time/second
 
 ## 1ティック減算
 scoreboard players remove #mad Tick 1
-execute if predicate mad:system/common/time/tick/lt_zero run scoreboard players set #mad Tick 19
+#### 0ティック未満の場合、19ティックにセット
+execute if predicate mad:system/common/time/tick/lt_zero run \
+  scoreboard players set #mad Tick 19
 
-## ボスバー設定
+## ボスバーに反映
 scoreboard players operation #mad GeneralTick = #mad Second
 scoreboard players operation #mad GeneralTick *= #mad 20
 scoreboard players operation #mad GeneralTick += #mad Tick
-execute store result bossbar minecraft:bossbar value run scoreboard players get #mad GeneralTick
+execute store result bossbar minecraft:bossbar value run \
+  scoreboard players get #mad GeneralTick
