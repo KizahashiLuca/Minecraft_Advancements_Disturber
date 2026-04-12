@@ -32,3 +32,30 @@ tellraw @a \
       ],\
     },\
   ]
+tellraw @a[predicate=mad:player/host] \
+  [\
+    '',\
+    {\
+      translate: '[MAD] ダイアログが開かない/閉じてしまった場合は、\n',\
+      color: 'green',\
+    },\
+    {\
+      translate: '[MAD] %sをクリックしてください。',\
+      color: 'green',\
+      with: [\
+        {\
+          translate: 'ここ',\
+          color: 'green',\
+          bold: true,\
+          hover_event: {\
+            action: 'show_text',\
+            value: 'ダイアログを再度開きます。',\
+          },\
+          click_event: {\
+            action: 'run_command',\
+            command: 'trigger ExecuteTrigger set 10',\
+          },\
+        },\
+      ],\
+    },\
+  ]
