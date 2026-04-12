@@ -20,5 +20,6 @@ $execute store result storage mad: care_package.$(number).z int 1 run function m
 $data modify storage mad: care_package.$(number).flag set value 0
 
 ## スコアボード設定
-$scoreboard players operation #mad_care_package_$(number) Second = #mad CarePackageInterval
+$execute store result score #mad_care_package_$(number) Second run \
+  data get storage mad: rules.care_package_interval 1
 $execute store result storage mad: care_package.$(number).second int 1 run scoreboard players get #mad_care_package_$(number) Second

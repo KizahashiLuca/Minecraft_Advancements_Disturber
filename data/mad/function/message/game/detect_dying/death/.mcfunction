@@ -9,4 +9,4 @@
 #####################################
 
 ## メッセージ表示
-$tellraw @a$(address) ['',{translate:'%s が %s にて死亡し$(message)ました',with:[{selector:'@s',bold:true},{translate:'%s [$(x), $(y), $(z)]',with:[{storage:'mad:',nbt:'dimension.$(dimension)'}],color:'green'},{score:{name:'#mad',objective:'DeathPenaltyTime'},color:'green',bold:true},{text:'秒',color:'green',bold:true}]}]
+$tellraw @a$(address) ['',{translate:'%s が %s にて死亡し$(message)ました',with:[{selector:'@s',bold:true},{translate:'%s [$(x), $(y), $(z)]',with:[{storage:'mad:',nbt:'dimension.$(dimension)'}],color:'green'},{nbt:'rules.death_penalty_time',storage:'mad:',color:'green',bold:true},{text:'秒',color:'green',bold:true}]}]

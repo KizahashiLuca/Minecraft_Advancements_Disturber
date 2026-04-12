@@ -94,37 +94,9 @@ scoreboard players set #mad RandomizerCount 10
 scoreboard players set #mad RandomizerResult 0
 scoreboard players set #mad RandomizerModder 2147483647
 scoreboard players set #mad RandomizerMultiplier 48271
-#### 設定フェーズ - 初期時間
-scoreboard players set #mad InitialTime 300
-#### 設定フェーズ - 追加時間
-scoreboard players set #mad BonusTimeOfAdvancements 100
-#### 設定フェーズ - 支援物資間隔
-scoreboard players set #mad CarePackageInterval 300
-#### 設定フェーズ - ワールド範囲
-scoreboard players set #mad WorldBorder 1500
 scoreboard players set #mad ExistsTheEndInWorldBorder 0
-#### 設定フェーズ - その他ルール
-scoreboard players set #mad Difficulty 2
-scoreboard players set #mad WeatherCycle 1
-scoreboard players set #mad DaylightCycle 1
-scoreboard players set #mad NumberOfCarePackages 1
-scoreboard players set #mad BonusTimeOfKill 200
-#### 設定フェーズ - チーム戦ルール
 scoreboard players set #mad NumberOfTeams 2
-scoreboard players set #mad SetTeamManual 0
 scoreboard players set #mad DeathPenaltyTime 0
-scoreboard players set #mad friendlyFire 1
-scoreboard players set #mad collisionRule 1
-scoreboard players set #mad nametagVisibility 1
-scoreboard players set #mad seeFriendlyInvisibles 1
-scoreboard players set #mad deathMessageVisibility 1
-#### 設定フェーズ - チーム編成設定
-scoreboard players set #mad ReloadDisplay 0
-scoreboard players set #mad_team_a PlayerHeadNumber 0
-scoreboard players set #mad_team_b PlayerHeadNumber 0
-scoreboard players set #mad_team_c PlayerHeadNumber 0
-scoreboard players set #mad_team_d PlayerHeadNumber 0
-scoreboard players set #mad NotExistsTeamMember 0
 #### 進捗
 scoreboard players set #mad_team_a HasAdvancements 0
 scoreboard players set #mad_team_b HasAdvancements 0

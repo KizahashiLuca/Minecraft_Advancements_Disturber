@@ -82,35 +82,9 @@ scoreboard objectives remove RandomizerCount
 scoreboard objectives remove RandomizerResult
 scoreboard objectives remove RandomizerModder
 scoreboard objectives remove RandomizerMultiplier
-#### 設定フェーズ - 初期時間
-scoreboard objectives remove InitialTime
-#### 設定フェーズ - 追加時間
-scoreboard objectives remove BonusTimeOfAdvancements
-#### 設定フェーズ - 支援物資間隔
-scoreboard objectives remove CarePackageInterval
-#### 設定フェーズ - ワールド範囲
-scoreboard objectives remove WorldBorder
 scoreboard objectives remove ExistsTheEndInWorldBorder
-#### 設定フェーズ - その他ルール
-scoreboard objectives remove Difficulty
-scoreboard objectives remove WeatherCycle
-scoreboard objectives remove DaylightCycle
-scoreboard objectives remove NumberOfCarePackages
-scoreboard objectives remove BonusTimeOfKill
-#### 設定フェーズ - チーム戦ルール その1
 scoreboard objectives remove NumberOfTeams
-scoreboard objectives remove SetTeamManual
 scoreboard objectives remove DeathPenaltyTime
-#### 設定フェーズ - チーム戦ルール その2
-scoreboard objectives remove friendlyFire
-scoreboard objectives remove collisionRule
-scoreboard objectives remove nametagVisibility
-scoreboard objectives remove seeFriendlyInvisibles
-scoreboard objectives remove deathMessageVisibility
-#### 設定フェーズ - チーム編成設定
-scoreboard objectives remove ReloadDisplay
-scoreboard objectives remove PlayerHeadNumber
-scoreboard objectives remove NotExistsTeamMember
 #### 進捗
 scoreboard objectives remove HasAdvancements
 #### 進捗用 - オリジナル進捗

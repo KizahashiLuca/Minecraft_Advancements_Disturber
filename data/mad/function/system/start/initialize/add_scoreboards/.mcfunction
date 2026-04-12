@@ -82,35 +82,10 @@ scoreboard objectives add RandomizerCount dummy ['',{text:'疑似乱数 - カウ
 scoreboard objectives add RandomizerResult dummy ['',{text:'疑似乱数 - 結果'}]
 scoreboard objectives add RandomizerModder dummy ['',{text:'疑似乱数 - 最大周期'}]
 scoreboard objectives add RandomizerMultiplier dummy ['',{text:'疑似乱数 - 乗数'}]
-#### 設定フェーズ - 初期時間
-scoreboard objectives add InitialTime dummy ['',{text:'初期時間'}]
-#### 設定フェーズ - 追加時間
-scoreboard objectives add BonusTimeOfAdvancements dummy ['',{text:'追加時間'}]
-#### 設定フェーズ - 支援物資間隔
-scoreboard objectives add CarePackageInterval dummy ['',{text:'支援物資間隔'}]
-#### 設定フェーズ - ワールド範囲
-scoreboard objectives add WorldBorder dummy ['',{text:'ワールド範囲'}]
-scoreboard objectives add ExistsTheEndInWorldBorder dummy ['',{text:'ワールド範囲 - 範囲内にエンド大陸が存在'}]
-#### 設定フェーズ - その他ルール
-scoreboard objectives add Difficulty dummy ['',{text:'難易度'}]
-scoreboard objectives add WeatherCycle dummy ['',{text:'天気サイクル'}]
-scoreboard objectives add DaylightCycle dummy ['',{text:'昼夜サイクル'}]
-scoreboard objectives add NumberOfCarePackages dummy ['',{text:'支援物資投下数'}]
-scoreboard objectives add BonusTimeOfKill dummy ['',{text:'撃破ボーナス'}]
-#### 設定フェーズ - チーム戦ルール その1
+#### 範囲内にエンド大陸が存在するか - 支援物資「エンドポータルフレーム」判定用
+scoreboard objectives add ExistsTheEndInWorldBorder dummy ['',{text:'範囲内にエンド大陸が存在するか'}]
 scoreboard objectives add NumberOfTeams dummy ['',{text:'チーム数'}]
-scoreboard objectives add SetTeamManual dummy ['',{text:'チーム編成設定'}]
 scoreboard objectives add DeathPenaltyTime dummy ['',{text:'死亡ペナルティ'}]
-#### 設定フェーズ - チーム戦ルール その2
-scoreboard objectives add friendlyFire dummy ['',{text:'フレンドリーファイア'}]
-scoreboard objectives add collisionRule dummy ['',{text:'当たり判定'}]
-scoreboard objectives add nametagVisibility dummy ['',{text:'ネームタグ表示'}]
-scoreboard objectives add seeFriendlyInvisibles dummy ['',{text:'透明化の視認'}]
-scoreboard objectives add deathMessageVisibility dummy ['',{text:'死亡メッセージ'}]
-#### 設定フェーズ - チーム編成設定
-scoreboard objectives add ReloadDisplay dummy ['',{text:'リロード用変数'}]
-scoreboard objectives add PlayerHeadNumber dummy ['',{text:'プレイヤーの頭設定用番号'}]
-scoreboard objectives add NotExistsTeamMember dummy ['',{text:'チームメンバー不在'}]
 #### 進捗
 scoreboard objectives add HasAdvancements dummy ['',{text:'達成進捗個数'}]
 #### 進捗用 - オリジナル進捗
