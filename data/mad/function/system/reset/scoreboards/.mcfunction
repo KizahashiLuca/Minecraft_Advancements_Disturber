@@ -21,6 +21,7 @@ scoreboard objectives remove NumberOfKills
 scoreboard objectives remove TimeSinceDeath
 scoreboard objectives remove SpectatorTrigger
 scoreboard objectives remove ExecuteTrigger
+scoreboard objectives remove SetTeamTrigger
 scoreboard objectives remove TeleportTrigger
 scoreboard objectives remove ExitTrigger
 scoreboard objectives remove Sidebar

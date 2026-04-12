@@ -18,6 +18,8 @@ scoreboard players set @s SpectatorTrigger 0
 scoreboard players enable @s SpectatorTrigger
 scoreboard players set @s ExecuteTrigger 0
 scoreboard players enable @s ExecuteTrigger
+scoreboard players set @s SetTeamTrigger 0
+scoreboard players enable @s SetTeamTrigger
 scoreboard players set @s TeleportTrigger 0
 scoreboard players enable @s TeleportTrigger
 #### タイマー

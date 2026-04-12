@@ -24,6 +24,8 @@ scoreboard players set @a SpectatorTrigger 0
 scoreboard players enable @a SpectatorTrigger
 scoreboard players set @a[predicate=mad:player/host] ExecuteTrigger 0
 scoreboard players enable @a[predicate=mad:player/host] ExecuteTrigger
+scoreboard players set @a SetTeamTrigger 0
+scoreboard players enable @a SetTeamTrigger
 scoreboard players set @a TeleportTrigger 0
 scoreboard players enable @a TeleportTrigger
 scoreboard players set #mad ExitTrigger 0

@@ -21,6 +21,7 @@ scoreboard objectives add NumberOfKills minecraft.custom:minecraft.player_kills 
 scoreboard objectives add TimeSinceDeath minecraft.custom:minecraft.time_since_death ['',{text:'最後に死亡してからの経過時間'}]
 scoreboard objectives add SpectatorTrigger trigger ['', {text: 'トリガー - スペクテイター'}]
 scoreboard objectives add ExecuteTrigger trigger ['', {text: 'トリガー - ゲーム制御'}]
+scoreboard objectives add SetTeamTrigger trigger ['', {text: 'トリガー - チーム編成設定'}]
 scoreboard objectives add TeleportTrigger trigger ['',{text:'トリガー - テレポート'}]
 scoreboard objectives add ExitTrigger trigger ['',{text:'トリガー - ゲーム終了'}]
 scoreboard objectives add Sidebar dummy ['',{text:'設定項目'}]

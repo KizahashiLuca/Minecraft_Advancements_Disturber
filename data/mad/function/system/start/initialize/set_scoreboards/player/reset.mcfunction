@@ -16,6 +16,7 @@ scoreboard players reset @s NumberOfKills
 scoreboard players reset @s TimeSinceDeath
 scoreboard players reset @s SpectatorTrigger
 scoreboard players reset @s ExecuteTrigger
+scoreboard players reset @s SetTeamTrigger
 scoreboard players reset @s TeleportTrigger
 #### タイマー
 scoreboard players reset @s Second
