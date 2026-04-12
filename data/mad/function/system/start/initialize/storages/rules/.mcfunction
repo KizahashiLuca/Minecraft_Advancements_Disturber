@@ -16,7 +16,7 @@ data modify storage mad: rules set value \
     bonus_time_of_advancements: 100,\
     care_package_interval: 300,\
     world_border: 1500,\
-    difficulty: 2,\
+    difficulty: 'normal',\
     advance_weather: 'true',\
     advance_time: 'true',\
     number_of_care_packages: 1,\

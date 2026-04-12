@@ -21,16 +21,16 @@ $dialog show @p[predicate=mad:player/host] \
         key: 'advance_weather',\
         label: '天気の更新',\
         initial: $(advance_weather),\
-        on_true: '1',\
-        on_false: '0',\
+        on_true: 'true',\
+        on_false: 'false',\
       },\
       {\
         type: 'minecraft:boolean',\
         key: 'advance_time',\
         label: 'ゲーム内時刻の進行',\
         initial: $(advance_time),\
-        on_true: '1',\
-        on_false: '0',\
+        on_true: 'true',\
+        on_false: 'false',\
       },\
       {\
         type: 'minecraft:single_option',\
@@ -39,25 +39,21 @@ $dialog show @p[predicate=mad:player/host] \
         label_visible: true,\
         options: [\
           {\
-            id: '0',\
+            id: 'peaceful',\
             display: 'ピースフル',\
           },\
           {\
-            id: '1',\
+            id: 'easy',\
             display: 'イージー',\
           },\
           {\
-            id: '2',\
+            id: 'normal',\
             display: 'ノーマル',\
             initial: true,\
           },\
           {\
-            id: '3',\
+            id: 'hard',\
             display: 'ハード',\
-          },\
-          {\
-            id: '4',\
-            display: 'ハードコア (復活無し)',\
           },\
         ],\
       },\
@@ -90,7 +86,7 @@ $dialog show @p[predicate=mad:player/host] \
       tooltip: '設定を保存して、戻ります。',\
       action: {\
         type: 'minecraft:dynamic/run_command',\
-        template: 'function mad:system/setting/option_rules/save {advance_weather: $(advance_weather_string), advance_time: $(advance_time_string), difficulty: $(difficulty_string), number_of_care_packages: $(number_of_care_packages_string), bonus_time_of_kill: $(bonus_time_of_kill_string)}',\
+        template: 'function mad:system/setting/option_rules/save {advance_weather: \'$(advance_weather_string)\', advance_time: \'$(advance_time_string)\', difficulty: \'$(difficulty_string)\', number_of_care_packages: $(number_of_care_packages_string), bonus_time_of_kill: $(bonus_time_of_kill_string)}',\
       },\
     },\
     no: {\

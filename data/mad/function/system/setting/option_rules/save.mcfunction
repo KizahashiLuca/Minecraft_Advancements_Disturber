@@ -14,9 +14,9 @@ function mad:system/setting/scoreboards
 ## 設定値保存
 $data modify storage mad: rules merge value \
   {\
-    advance_weather: $(advance_weather),\
-    advance_time: $(advance_time),\
-    difficulty: $(difficulty),\
+    advance_weather: '$(advance_weather)',\
+    advance_time: '$(advance_time)',\
+    difficulty: '$(difficulty)',\
     number_of_care_packages: $(number_of_care_packages),\
     bonus_time_of_kill: $(bonus_time_of_kill),\
   }
