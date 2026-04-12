@@ -18,10 +18,9 @@ scoreboard players set #mad_team_d Phase 61
 scoreboard players set @a[predicate=mad:player/] NumberOfDeaths 0
 scoreboard players set @a[predicate=mad:player/] NumberOfKills 0
 # scoreboard players set @a[predicate=mad:player/] TimeSinceDeath 0
-scoreboard players set @a TeleportToCarePackage 0
-scoreboard players enable @a[predicate=mad:player/spectator] TeleportToCarePackage
-scoreboard players set @a TeleportToWorldCenter 0
-scoreboard players enable @a[predicate=mad:player/spectator] TeleportToWorldCenter
+#### テレポート用トリガー
+scoreboard players set @a TeleportTrigger 0
+scoreboard players enable @a[predicate=mad:player/spectator] TeleportTrigger
 scoreboard players set @a[predicate=mad:player/host] ExitTrigger 0
 scoreboard players enable @a[predicate=mad:player/host] ExitTrigger
 ###### サイドバー - 全員用
