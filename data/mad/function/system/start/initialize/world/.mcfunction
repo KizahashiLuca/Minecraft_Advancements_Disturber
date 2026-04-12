@@ -20,14 +20,14 @@ weather clear
 ## ストレージ 削除
 #### ワールドスポーン
 data remove storage mad: world_spawn
-#### リスポーンビーコン
+#### リスポーンビーコン 不要？
 data remove storage mad: respawn_beacon
-#### チームメンバー表示用 不要？
-data remove storage mad: display_team_member
 #### 支援物資 ポジション表示用
 data remove storage mad: care_package
 #### 死亡情報
 data remove storage mad: death
+#### ゲームルール
+data remove storage mad: rules
 
 ## エンティティ
 #### アイテム

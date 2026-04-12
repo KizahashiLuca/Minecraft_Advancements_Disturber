@@ -13,8 +13,6 @@
 kill @e[tag=MAD_TextDisplay_TeamMemberTitle]
 kill @e[tag=MAD_TextDisplay_ReturnLink]
 kill @e[tag=MAD_TextDisplay_OKLink]
-#### インタラクション
-kill @e[tag=MAD_Interaction]
 
 ## エンティティ召喚
 #### タイトル

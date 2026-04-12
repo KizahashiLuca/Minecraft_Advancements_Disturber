@@ -13,4 +13,3 @@ execute at @e[predicate=mad:marker/respawn_beacon,limit=1] run fill ~-7 ~-2 ~-7 
 execute at @e[predicate=mad:marker/respawn_beacon,limit=1] run kill @e[type=!minecraft:player,distance=..20]
 kill @e[predicate=mad:marker/respawn_beacon,limit=1]
 kill @e[type=minecraft:text_display]
-kill @e[type=minecraft:item_display]

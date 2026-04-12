@@ -18,7 +18,6 @@ time set noon
 weather clear
 
 ## ストレージ 削除
-data remove storage mad: display_team_member
 data remove storage mad: death
 
 ## エンティティ
@@ -27,8 +26,6 @@ kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:trident]
 kill @e[type=minecraft:area_effect_cloud]
-kill @e[type=minecraft:interaction]
-kill @e[type=minecraft:text_display,tag=MAD_TextDisplay_Setting_ChangeSpectator]
 kill @e[type=minecraft:chest_minecart,tag=MAD_CarePackage]
 kill @e[predicate=mad:system/item/return_portal/armor_stand]
 kill @e[predicate=mad:system/item/maze_maker/monster_egg]

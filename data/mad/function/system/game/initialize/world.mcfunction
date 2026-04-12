@@ -18,7 +18,6 @@ time set noon
 weather clear
 
 ## ストレージ 削除
-data remove storage mad: display_team_member
 data remove storage mad: death
 
 ## エンティティ

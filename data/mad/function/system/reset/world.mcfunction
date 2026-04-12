@@ -22,25 +22,25 @@ time set noon
 weather clear
 
 ## ストレージ
-data remove storage mad: system
+#### ワールドスポーン
+data remove storage mad: world_spawn
+#### リスポーンビーコン 不要？
+data remove storage mad: respawn_beacon
+#### 支援物資 ポジション表示用
+data remove storage mad: care_package
+#### 死亡情報
+data remove storage mad: death
+#### ゲームルール
+data remove storage mad: rules
 data remove storage mad: gamerule
 data remove storage mad: setting
 data remove storage mad: count_players
-data remove storage mad: world_spawn
-data remove storage mad: respawn_beacon
-data remove storage mad: display_team_member
 data remove storage mad: leave_team_member
-data remove storage mad: care_package
-data remove storage mad: death
 data remove storage mad: individual
 data remove storage mad: team
 
 ## エンティティ
 kill @e[type=minecraft:marker]
-kill @e[type=minecraft:interaction]
-#kill @e[type=minecraft:block_display,tag=!MAD_RespawnBeacon]
-kill @e[type=minecraft:item_display]
-kill @e[type=minecraft:text_display]
 kill @e[type=minecraft:chest_minecart,tag=MAD_CarePackage]
 kill @e[predicate=mad:system/item/return_portal/armor_stand]
 kill @e[predicate=mad:system/item/maze_maker/monster_egg]
