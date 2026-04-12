@@ -10,9 +10,9 @@
 
 ## ゲームルール設定
 ##### ゲーム内時刻の進行
-gamerule minecraft:advance_time true
+$gamerule minecraft:advance_time $(advance_time)
 #### 天気の更新
-gamerule minecraft:advance_weather true
+$gamerule minecraft:advance_weather $(advance_weather)
 #### ネザーの許可
 gamerule minecraft:allow_entering_nether_using_portals true
 #### ブロックのドロップ
@@ -94,13 +94,13 @@ gamerule minecraft:random_tick_speed 3
 #### デバッグ情報の制限
 gamerule minecraft:reduced_debug_info false
 #### リスポーン地点の半径
-gamerule minecraft:respawn_radius 10
+$gamerule minecraft:respawn_radius $(spawn_radius)
 #### コマンドの実行結果の表示
 gamerule minecraft:send_command_feedback true
 #### 進捗達成の通知
 gamerule minecraft:show_advancement_messages true
 #### 死亡メッセージの表示
-gamerule minecraft:show_death_messages true
+$gamerule minecraft:show_death_messages $(show_death_messages)
 #### Mobのスポーン
 gamerule minecraft:spawn_mobs true
 #### モンスターのスポーン

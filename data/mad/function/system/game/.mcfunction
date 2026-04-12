@@ -18,7 +18,7 @@ execute as @a[predicate=mad:system/common/teleport/] run function mad:system/com
 function mad:system/common/position/
 
 ## タイマー
-function mad:system/game/timer/tick with storage mad: gamerule.match_mode
+function mad:system/game/timer/tick with storage mad: rules.match_mode
 
 ## PvPカウント
 execute if predicate mad:system/game/timer/pvp/tick/eq_zero run function mad:system/game/timer/pvp/
@@ -40,7 +40,7 @@ execute as @a[predicate=mad:player/dying/] run function mad:system/game/detect_d
 execute if predicate mad:gamerule/match_mode/team run function mad:system/game/team
 
 ## ゲーム終了処理
-$scoreboard players operation #mad NumberOfLiving = #mad_player $(number_of_living)
+$scoreboard players operation #mad NumberOfLiving = #mad $(number_of_living)
 scoreboard players operation #mad NumberOfLiving -= #mad NumberOfDead
 execute if predicate mad:system/game/exit/ run function mad:system/game/exit
 execute as @p[predicate=mad:system/game/exit/triggered] run function mad:phase/exit

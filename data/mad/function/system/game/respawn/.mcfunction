@@ -9,4 +9,4 @@
 #####################################
 
 ## プレイヤーリスポーン場所変更
-execute unless data entity @s respawn run function mad:system/game/respawn/random_respawn/ with storage mad: gamerule.world_border
+execute unless data entity @s respawn run function mad:system/game/respawn/random_respawn/ with storage mad: rules.world_size

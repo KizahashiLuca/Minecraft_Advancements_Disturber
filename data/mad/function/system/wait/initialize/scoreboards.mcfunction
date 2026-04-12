@@ -22,33 +22,104 @@ scoreboard players set @a[predicate=mad:player/host] ExitTrigger 0
 scoreboard players enable @a[predicate=mad:player/host] ExitTrigger
 #### タイマー
 scoreboard players operation #mad Second = #mad TimeOfWaitPhase
-scoreboard players operation #mad_team_a Second = #mad InitialTime
-scoreboard players operation #mad_team_b Second = #mad InitialTime
-scoreboard players operation #mad_team_c Second = #mad InitialTime
-scoreboard players operation #mad_team_d Second = #mad InitialTime
-scoreboard players operation #mad_care_package_1 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_2 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_3 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_4 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_5 Second = #mad CarePackageInterval
-scoreboard players operation @a[predicate=mad:player/] Second = #mad InitialTime
+#### タイマー - 残り時間(秒数)
+execute store result score #mad_team_a Second run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_b Second run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_c Second run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_d Second run \
+  data get storage mad: rules.initial_time 1
+execute store result score @a[predicate=mad:player/] Second run \
+  data get storage mad: rules.initial_time 1
+#### タイマー - 残り時間(ティック数)
 scoreboard players set #mad Tick 0
 scoreboard players set #mad_team_a Tick 0
 scoreboard players set #mad_team_b Tick 0
 scoreboard players set #mad_team_c Tick 0
 scoreboard players set #mad_team_d Tick 0
 scoreboard players set @a[predicate=mad:player/] Tick 0
-scoreboard players operation #mad_team_a TimeLimit = #mad InitialTime
-scoreboard players operation #mad_team_b TimeLimit = #mad InitialTime
-scoreboard players operation #mad_team_c TimeLimit = #mad InitialTime
-scoreboard players operation #mad_team_d TimeLimit = #mad InitialTime
-scoreboard players operation @a[predicate=mad:player/] TimeLimit = #mad InitialTime
+#### タイマー - 制限時間(秒数)
+execute store result score #mad_team_a TimeLimit run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_b TimeLimit run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_c TimeLimit run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_d TimeLimit run \
+  data get storage mad: rules.initial_time 1
+execute store result score @a[predicate=mad:player/] TimeLimit run \
+  data get storage mad: rules.initial_time 1
+#### タイマー - 支援物資投下時間
+execute store result score #mad_care_package_1 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_2 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_3 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_4 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_5 Second run \
+  data get storage mad: rules.care_package_interval 1
+#### ボーナス総獲得時間 - 統計用
 scoreboard players set #mad_team_a GetBonusTime 0
 scoreboard players set #mad_team_b GetBonusTime 0
 scoreboard players set #mad_team_c GetBonusTime 0
 scoreboard players set #mad_team_d GetBonusTime 0
 scoreboard players set @a[predicate=mad:player/] GetBonusTime 0
-#### プレイヤー
+#### 接地判定
+scoreboard players set @a[predicate=mad:player/] OnGround 0
+#### ワールド範囲 X軸正(東) - 範囲内にエンド大陸が存在するかの算出用
+execute store result score #mad TmpX run \
+  data get storage mad: rules.world_size.half 1.0
+scoreboard players operation #mad TmpX += #mad PosX
+execute store result storage mad: rules.world_size.x4 int 1 run \
+  scoreboard players get #mad TmpX
+#### ワールド範囲 Z軸正(南) - 範囲内にエンド大陸が存在するかの算出用
+execute store result score #mad TmpZ run \
+  data get storage mad: rules.world_size.half 1.0
+scoreboard players operation #mad TmpZ += #mad PosZ
+execute store result storage mad: rules.world_size.z4 int 1 run \
+  scoreboard players get #mad TmpZ
+#### ワールド範囲 X軸負(西) - 範囲内にエンド大陸が存在するかの算出用
+execute store result score #mad TmpX run \
+  data get storage mad: rules.world_size.half -1.0
+scoreboard players operation #mad TmpX += #mad PosX
+execute store result storage mad: rules.world_size.x2 int 1 run \
+  scoreboard players get #mad TmpX
+#### ワールド範囲 Z軸負(北) - 範囲内にエンド大陸が存在するかの算出用
+execute store result score #mad TmpZ run \
+  data get storage mad: rules.world_size.half -1.0
+scoreboard players operation #mad TmpZ += #mad PosZ
+execute store result storage mad: rules.world_size.z2 int 1 run \
+  scoreboard players get #mad TmpZ
+#### ワールド範囲 範囲内にエンド大陸が存在するか - 支援物資「エンドポータルフレーム」判定用
+scoreboard players set #mad ExistsTheEndInWorldBorder 0
+execute if predicate mad:system/wait/initialize/check_the_end run \
+  scoreboard players set #mad ExistsTheEndInWorldBorder 1
+#### ワールド中心
+data modify storage mad: rules.world_size.x set value 0
+data modify storage mad: rules.world_size.z set value 0
+#### ワールド範囲 X軸正(東) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
+execute store result score #mad TmpX run data get storage mad: rules.world_size.half 1.0
+execute store result storage mad: rules.world_size.x1 int 1 run \
+  scoreboard players get #mad TmpX
+execute store result storage mad: rules.world_size.x4 int 1 run \
+  scoreboard players get #mad TmpX
+#### ワールド範囲 Z軸正(南) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
+execute store result score #mad TmpZ run data get storage mad: rules.world_size.half 1.0
+execute store result storage mad: rules.world_size.z3 int 1 run scoreboard players get #mad TmpZ
+execute store result storage mad: rules.world_size.z4 int 1 run scoreboard players get #mad TmpZ
+#### ワールド範囲 X軸負(西) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
+execute store result score #mad TmpX run data get storage mad: rules.world_size.half -1.0
+execute store result storage mad: rules.world_size.x2 int 1 run scoreboard players get #mad TmpX
+execute store result storage mad: rules.world_size.x3 int 1 run scoreboard players get #mad TmpX
+#### ワールド範囲 Z軸負(北) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
+execute store result score #mad TmpZ run data get storage mad: rules.world_size.half -1.0
+execute store result storage mad: rules.world_size.z1 int 1 run scoreboard players get #mad TmpZ
+execute store result storage mad: rules.world_size.z2 int 1 run scoreboard players get #mad TmpZ
+#### 残り生存者数 - 勝敗判定用
 scoreboard players set #mad NumberOfLiving 0
 scoreboard players set #mad_team_a NumberOfLiving 0
 scoreboard players set #mad_team_b NumberOfLiving 0
@@ -59,49 +130,10 @@ scoreboard players set #mad_team_a NumberOfDead 0
 scoreboard players set #mad_team_b NumberOfDead 0
 scoreboard players set #mad_team_c NumberOfDead 0
 scoreboard players set #mad_team_d NumberOfDead 0
-#### 接地判定
-scoreboard players set @a[predicate=mad:player/] OnGround 0
-#### 設定フェーズ - ワールド範囲 X軸正(東)
-execute store result score #mad TmpX run data get storage mad: gamerule.world_border.half 1.0
-scoreboard players operation #mad TmpX += #mad PosX
-execute store result storage mad: gamerule.world_border.x4 int 1 run scoreboard players get #mad TmpX
-#### 設定フェーズ - ワールド範囲 Z軸正(南)
-execute store result score #mad TmpZ run data get storage mad: gamerule.world_border.half 1.0
-scoreboard players operation #mad TmpZ += #mad PosZ
-execute store result storage mad: gamerule.world_border.z4 int 1 run scoreboard players get #mad TmpZ
-#### 設定フェーズ - ワールド範囲 X軸負(西)
-execute store result score #mad TmpX run data get storage mad: gamerule.world_border.half -1.0
-scoreboard players operation #mad TmpX += #mad PosX
-execute store result storage mad: gamerule.world_border.x2 int 1 run scoreboard players get #mad TmpX
-#### 設定フェーズ - ワールド範囲 Z軸負(北)
-execute store result score #mad TmpZ run data get storage mad: gamerule.world_border.half -1.0
-scoreboard players operation #mad TmpZ += #mad PosZ
-execute store result storage mad: gamerule.world_border.z2 int 1 run scoreboard players get #mad TmpZ
-#### 設定フェーズ - ワールド範囲 範囲内にエンド大陸が存在
-scoreboard players set #mad ExistsTheEndInWorldBorder 0
-execute if predicate mad:system/wait/initialize/check_the_end run scoreboard players set #mad ExistsTheEndInWorldBorder 1
-#### 設定フェーズ - ワールド中心
-data modify storage mad: gamerule.world_border.x set value 0
-data modify storage mad: gamerule.world_border.z set value 0
-#### 設定フェーズ - ワールド範囲 X軸正(東) - 再計算
-execute store result score #mad TmpX run data get storage mad: gamerule.world_border.half 1.0
-execute store result storage mad: gamerule.world_border.x1 int 1 run scoreboard players get #mad TmpX
-execute store result storage mad: gamerule.world_border.x4 int 1 run scoreboard players get #mad TmpX
-#### 設定フェーズ - ワールド範囲 Z軸正(南) - 再計算
-execute store result score #mad TmpZ run data get storage mad: gamerule.world_border.half 1.0
-execute store result storage mad: gamerule.world_border.z3 int 1 run scoreboard players get #mad TmpZ
-execute store result storage mad: gamerule.world_border.z4 int 1 run scoreboard players get #mad TmpZ
-#### 設定フェーズ - ワールド範囲 X軸負(西) - 再計算
-execute store result score #mad TmpX run data get storage mad: gamerule.world_border.half -1.0
-execute store result storage mad: gamerule.world_border.x2 int 1 run scoreboard players get #mad TmpX
-execute store result storage mad: gamerule.world_border.x3 int 1 run scoreboard players get #mad TmpX
-#### 設定フェーズ - ワールド範囲 Z軸負(北) - 再計算
-execute store result score #mad TmpZ run data get storage mad: gamerule.world_border.half -1.0
-execute store result storage mad: gamerule.world_border.z1 int 1 run scoreboard players get #mad TmpZ
-execute store result storage mad: gamerule.world_border.z2 int 1 run scoreboard players get #mad TmpZ
-#### 設定フェーズ - チーム戦ルール その1
-scoreboard players operation #mad_player NumberOfTeams = #mad NumberOfTeams
-#### 設定フェーズ - チーム編成設定
+#### チーム数 - 勝敗判定用
+execute store result score #mad NumberOfTeams run \
+  data get storage mad: rules.number_of_teams 1
+#### チームメンバー不在 - 勝敗判定用
 scoreboard players set #mad NotExistsTeamMember 0
 #### 進捗
 scoreboard players set #mad_team_a HasAdvancements 0

@@ -9,20 +9,31 @@
 #####################################
 
 ## 初期化
-#### ストレージ
+#### ストレージ設定
 function mad:system/wait/initialize/storages/
-#### ゲームルール
-function mad:system/wait/initialize/gamerules/
-#### プレイヤー情報
-function mad:system/wait/initialize/players
-#### チーム
-function mad:system/wait/initialize/teams/
 #### スコアボード設定
 function mad:system/wait/initialize/scoreboards
 function mad:system/start/initialize/set_scoreboards/advancements
-#### ワールド
-function mad:system/wait/initialize/world/ with storage mad: gamerule
-#### ボスバー
+#### ストレージ設定 - 支援物資ルートテーブル用
+execute if predicate mad:gamerule/number_of_care_packages/ge_1 run \
+  function mad:system/wait/initialize/storages/care_package {number:'1'}
+execute if predicate mad:gamerule/number_of_care_packages/ge_2 run \
+  function mad:system/wait/initialize/storages/care_package {number:'2'}
+execute if predicate mad:gamerule/number_of_care_packages/ge_3 run \
+  function mad:system/wait/initialize/storages/care_package {number:'3'}
+execute if predicate mad:gamerule/number_of_care_packages/ge_4 run \
+  function mad:system/wait/initialize/storages/care_package {number:'4'}
+execute if predicate mad:gamerule/number_of_care_packages/ge_5 run \
+  function mad:system/wait/initialize/storages/care_package {number:'5'}
+#### ゲームルール設定
+function mad:system/wait/initialize/gamerules/
+#### プレイヤー情報設定
+function mad:system/wait/initialize/players
+#### チーム設定
+function mad:system/wait/initialize/teams/
+#### ワールド設定
+function mad:system/wait/initialize/world/ with storage mad: rules
+#### ボスバー設定
 function mad:system/wait/initialize/bossbars/
 
 ## フェーズ設定

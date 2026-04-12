@@ -36,24 +36,24 @@
                         "min": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.x1"
+                          "path": "rules.world_size.x1"
                         },
                         "max": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.x1"
+                          "path": "rules.world_size.x1"
                         }
                       },
                       "PosZ": {
                         "min": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.z1"
+                          "path": "rules.world_size.z1"
                         },
                         "max": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.z1"
+                          "path": "rules.world_size.z1"
                         }
                       }
                     }
@@ -66,24 +66,24 @@
                         "min": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.x2"
+                          "path": "rules.world_size.x2"
                         },
                         "max": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.x2"
+                          "path": "rules.world_size.x2"
                         }
                       },
                       "PosZ": {
                         "min": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.z2"
+                          "path": "rules.world_size.z2"
                         },
                         "max": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.z2"
+                          "path": "rules.world_size.z2"
                         }
                       }
                     }
@@ -96,24 +96,24 @@
                         "min": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.x3"
+                          "path": "rules.world_size.x3"
                         },
                         "max": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.x3"
+                          "path": "rules.world_size.x3"
                         }
                       },
                       "PosZ": {
                         "min": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.z3"
+                          "path": "rules.world_size.z3"
                         },
                         "max": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.z3"
+                          "path": "rules.world_size.z3"
                         }
                       }
                     }
@@ -126,24 +126,24 @@
                         "min": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.x4"
+                          "path": "rules.world_size.x4"
                         },
                         "max": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.x4"
+                          "path": "rules.world_size.x4"
                         }
                       },
                       "PosZ": {
                         "min": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.z4"
+                          "path": "rules.world_size.z4"
                         },
                         "max": {
                           "type": "minecraft:storage",
                           "storage": "mad:",
-                          "path": "gamerule.world_border.z4"
+                          "path": "rules.world_size.z4"
                         }
                       }
                     }
@@ -156,11 +156,7 @@
       }
     }
   },
-  "requirements": [
-    [
-      "in_this_corner_of_the_world"
-    ]
-  ],
+  "requirements": [["in_this_corner_of_the_world"]],
   "rewards": {
     "function": "mad:system/game/advancement/original/in_this_corner_of_the_world/"
   }

@@ -17,7 +17,7 @@ function mad:system/game/initialize/players/
 function mad:system/game/initialize/scoreboards
 function mad:system/start/initialize/set_scoreboards/advancements
 #### ワールド
-function mad:system/game/initialize/world with storage mad: gamerule
+function mad:system/game/initialize/world with storage mad: rules
 #### ボスバー
 function mad:system/game/initialize/bossbars/
 ## タグ

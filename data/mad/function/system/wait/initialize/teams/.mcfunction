@@ -23,4 +23,4 @@ function mad:system/wait/initialize/teams/each_team with storage mad: team.c
 function mad:system/wait/initialize/teams/each_team with storage mad: team.d
 
 ## チームルール
-function mad:system/wait/initialize/teams/team_rules with storage mad: gamerule
+function mad:system/wait/initialize/teams/team_rules with storage mad: rules
