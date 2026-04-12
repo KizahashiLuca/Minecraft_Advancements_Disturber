@@ -12,7 +12,8 @@
 data remove storage mad: position.angle
 
 ## ストレージ格納
-execute store result storage mad: position.angle int 1 run scoreboard players get @s Angle
+execute store result storage mad: position.angle int 1 run \
+  scoreboard players get @s Angle
 
 ## ポジション表示
 function mad:message/common/position/ with storage mad: position
