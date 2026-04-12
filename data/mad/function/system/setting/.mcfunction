@@ -10,14 +10,18 @@
 
 ## 途中でログインしたプレイヤーの処理
 #### ゲーム開始後、初めてログインしたプレイヤーはスペクテイターモードに
-execute as @a[predicate=mad:system/common/login_midtime/new_commer] run function mad:system/common/login_midtime/new_commer
+execute as @a[predicate=mad:system/common/login_midtime/new_commer] run \
+function mad:system/common/login_midtime/new_commer
 #### スペクテイターモードのプレイヤーで、トリガーを実行した人は参加プレイヤーに
-execute as @a[predicate=mad:system/setting/login_midtime/to_adventure] run function mad:system/setting/login_midtime/to_adventure
+execute as @a[predicate=mad:system/setting/login_midtime/to_adventure] run \
+function mad:system/setting/login_midtime/to_adventure
 #### 参加者モードのプレイヤーで、トリガーを実行した人は観戦プレイヤーに
-execute as @a[predicate=mad:system/setting/login_midtime/to_spectator] run function mad:system/setting/login_midtime/to_spectator
+execute as @a[predicate=mad:system/setting/login_midtime/to_spectator] run \
+function mad:system/setting/login_midtime/to_spectator
 
 ## スペクテイターモードの処理
-execute at @e[predicate=mad:marker/respawn_beacon,limit=1] run tp @a[distance=12..] @e[predicate=mad:marker/respawn_beacon,limit=1]
+execute at @e[predicate=mad:marker/respawn_beacon,limit=1] run \
+tp @a[distance=12..] @e[predicate=mad:marker/respawn_beacon,limit=1]
 
 ## トリガーの処理
 #### ゲーム制御トリガー - ルートダイアログ
