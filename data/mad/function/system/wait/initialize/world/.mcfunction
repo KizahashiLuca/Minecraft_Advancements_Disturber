@@ -20,24 +20,40 @@ weather clear
 ## ストレージ 削除
 data remove storage mad: death
 
-## エンティティ
+## エンティティ 削除
+#### アイテム
 kill @e[type=minecraft:item]
+#### 矢
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
+#### トライデント
 kill @e[type=minecraft:trident]
+#### エリアエフェクトクラウド
 kill @e[type=minecraft:area_effect_cloud]
-kill @e[type=minecraft:chest_minecart,tag=MAD_CarePackage]
+#### 支援物資
+kill @e[type=minecraft:chest_minecart,tag=mad_care_package]
+#### 帰還ポータル
 kill @e[predicate=mad:system/item/return_portal/armor_stand]
+#### メイズメイカー
 kill @e[predicate=mad:system/item/maze_maker/monster_egg]
-kill @e[type=minecraft:armor_stand,tag=MAD_MinecartItem]
+#### アップグレードキット
+kill @e[type=minecraft:armor_stand,tag=mad_minecart_item]
+#### その他
+kill @e[type=minecraft:zombie_villager,nbt=!{ConversionTime:-1}]
+execute as @e[type=minecraft:allay] run \
+  data modify entity @s Brain.memories set value {}
+execute as @e[type=minecraft:allay] run \
+  data modify entity @s equipment set value {}
+execute as @e[type=minecraft:allay] run \
+  data modify entity @s Inventory set value []
 
-## エンドゲートウェイ削除
-execute at @e[predicate=mad:marker/respawn_beacon,limit=1] positioned ~ ~1 ~6.45 run setblock ~ ~3.0 ~-12.40 minecraft:air
-
-## ワールド範囲
+## ワールド範囲設定
 #### オーバーワールド
-execute in minecraft:overworld run function mad:system/wait/initialize/world/world_border with storage mad: world_spawn.overworld
+execute in minecraft:overworld run \
+  function mad:system/wait/initialize/world/world_border with storage mad: world_spawn.overworld
 #### ネザー
-execute in minecraft:the_nether run function mad:system/wait/initialize/world/world_border with storage mad: world_spawn.the_nether
+execute in minecraft:the_nether run \
+  function mad:system/wait/initialize/world/world_border with storage mad: world_spawn.the_nether
 #### エンド
-execute in minecraft:the_end run function mad:system/wait/initialize/world/world_border with storage mad: world_spawn.the_end
+execute in minecraft:the_end run \
+  function mad:system/wait/initialize/world/world_border with storage mad: world_spawn.the_end

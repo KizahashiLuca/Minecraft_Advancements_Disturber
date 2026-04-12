@@ -9,7 +9,7 @@
 #####################################
 
 ## ストレージ格納
-#### ディメンション
+#### ディメンション - 死亡メッセージ/発信機用(テキストの置換)
 data modify storage mad: dimension.minecraft:overworld set value 'オーバーワールド'
 data modify storage mad: dimension.minecraft:the_nether set value 'ネザー'
 data modify storage mad: dimension.minecraft:the_end set value 'エンド'

@@ -9,5 +9,6 @@
 #####################################
 
 ## ストレージ格納
-execute store result storage mad: count_players.individual.number int 1 run scoreboard players get @s PlayerNumber
-data modify storage mad: count_players.individual.name set from entity @s EnderItems[0].components.minecraft:profile.name
+#### プレイヤー番号
+execute store result storage mad: count_players.individual.number int 1 run \
+  scoreboard players get @s PlayerNumber

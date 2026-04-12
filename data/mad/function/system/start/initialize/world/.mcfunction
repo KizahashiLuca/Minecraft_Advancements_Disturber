@@ -29,7 +29,7 @@ data remove storage mad: death
 #### ゲームルール
 data remove storage mad: rules
 
-## エンティティ
+## エンティティ 削除
 #### アイテム
 kill @e[type=minecraft:item]
 #### 矢

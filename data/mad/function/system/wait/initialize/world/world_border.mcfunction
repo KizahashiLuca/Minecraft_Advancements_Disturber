@@ -9,6 +9,8 @@
 #####################################
 
 ## ワールド範囲
-$execute in minecraft:$(dimension) run worldborder center $(x) $(z)
-$execute in minecraft:$(dimension) run worldborder set $(world_border)
+$execute in minecraft:$(dimension) run \
+  worldborder center $(x) $(z)
+$execute in minecraft:$(dimension) run \
+  worldborder set $(world_border)
 worldborder add 1 0
