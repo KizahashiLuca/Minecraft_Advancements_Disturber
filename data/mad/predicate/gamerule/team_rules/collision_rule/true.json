@@ -1,9 +1,0 @@
-{
-  "condition": "minecraft:value_check",
-  "value": {
-    "type": "minecraft:storage",
-    "storage": "mad:",
-    "path": "rules.collision_rule"
-  },
-  "range": 1
-}

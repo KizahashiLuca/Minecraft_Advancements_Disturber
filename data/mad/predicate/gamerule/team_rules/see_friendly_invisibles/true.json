@@ -1,9 +1,0 @@
-{
-  "condition": "minecraft:value_check",
-  "value": {
-    "type": "minecraft:storage",
-    "storage": "mad:",
-    "path": "rules.see_friendly_invisibles"
-  },
-  "range": 1
-}
