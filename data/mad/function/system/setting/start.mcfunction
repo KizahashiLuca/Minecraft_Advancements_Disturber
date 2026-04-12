@@ -8,5 +8,11 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## チームを解体
-$execute as @a[predicate=mad:player/team/$(team)] run function mad:system/setting/team_member/manual/display/leave_team/leave_team {text:'$(text)',color:'$(color)'}
+## ダイアログクリア
+dialog clear @a
+
+## チーム編成ランダム設定
+function mad:system/setting/team_member/attach_random
+
+## 待機フェーズへ移動
+function mad:system/wait/initialize/

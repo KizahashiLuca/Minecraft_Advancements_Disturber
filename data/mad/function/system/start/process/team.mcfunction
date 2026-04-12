@@ -9,5 +9,4 @@
 #####################################
 
 ## ゲーム開始 - チーム戦
-#### チーム編成ランダム設定
-function mad:system/setting/root/detect/ok/
+function mad:system/setting/start

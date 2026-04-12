@@ -9,5 +9,4 @@
 #####################################
 
 ## ゲーム開始 - ソロ戦
-#### ゲーム設定確認
-function mad:system/setting/root/detect/ok/
+function mad:system/setting/start
