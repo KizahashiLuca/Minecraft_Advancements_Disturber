@@ -70,6 +70,12 @@ scoreboard players set #mad_team_b GetBonusTime 0
 scoreboard players set #mad_team_c GetBonusTime 0
 scoreboard players set #mad_team_d GetBonusTime 0
 scoreboard players set @a[predicate=mad:player/] GetBonusTime 0
+#### 撃破ボーナス
+execute store result score #mad BonusTimeOfKill run \
+  data get storage mad: rules.bonus_time_of_kill 1
+#### 進捗ボーナス
+execute store result score #mad BonusTimeOfAdvancements run \
+  data get storage mad: rules.bonus_time_of_advancements 1
 #### 接地判定
 scoreboard players set @a[predicate=mad:player/] OnGround 0
 #### ワールド範囲 X軸正(東) - 範囲内にエンド大陸が存在するかの算出用
@@ -138,6 +144,9 @@ execute store result score #mad NumberOfTeams run \
   data get storage mad: rules.number_of_teams 1
 #### チームメンバー不在 - 勝敗判定用
 scoreboard players set #mad NotExistsTeamMember 0
+#### 死亡ペナルティ - 制限時間減算用
+execute store result score #mad DeathPenaltyTime run \
+  data get storage mad: rules.death_penalty_time 1
 #### 進捗数 - 統計用
 scoreboard players set #mad_team_a HasAdvancements 0
 scoreboard players set #mad_team_b HasAdvancements 0

@@ -47,6 +47,12 @@ scoreboard players set #mad_team_b GetBonusTime 0
 scoreboard players set #mad_team_c GetBonusTime 0
 scoreboard players set #mad_team_d GetBonusTime 0
 scoreboard players set @a[predicate=mad:player/] GetBonusTime 0
+#### 撃破ボーナス
+execute store result score #mad BonusTimeOfKill run \
+  data get storage mad: rules.bonus_time_of_kill 1
+#### 進捗ボーナス
+execute store result score #mad BonusTimeOfAdvancements run \
+  data get storage mad: rules.bonus_time_of_advancements 1
 #### プレイヤー
 scoreboard players set #mad NumberOfLiving 0
 scoreboard players set #mad_team_a NumberOfLiving 0

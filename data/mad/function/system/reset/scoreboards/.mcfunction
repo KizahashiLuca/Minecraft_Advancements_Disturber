@@ -51,6 +51,10 @@ scoreboard objectives remove TimeOfFallPhase
 scoreboard objectives remove TimeOfDropCarePackage
 scoreboard objectives remove TimeLimit
 scoreboard objectives remove GetBonusTime
+#### 撃破ボーナス
+scoreboard objectives remove BonusTimeOfKill
+#### 進捗ボーナス
+scoreboard objectives remove BonusTimeOfAdvancements
 #### プレイヤー
 scoreboard objectives remove PlayerNumber
 scoreboard objectives remove NumberOfPlayers

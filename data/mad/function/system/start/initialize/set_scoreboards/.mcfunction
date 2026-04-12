@@ -52,6 +52,10 @@ scoreboard players set #mad_team_b GetBonusTime 0
 scoreboard players set #mad_team_c GetBonusTime 0
 scoreboard players set #mad_team_d GetBonusTime 0
 scoreboard players set @a[predicate=mad:player/] GetBonusTime 0
+#### 撃破ボーナス
+scoreboard players set #mad BonusTimeOfKill 200
+#### 進捗ボーナス
+scoreboard players set #mad BonusTimeOfAdvancements 100
 #### プレイヤー
 scoreboard players set #mad PlayerNumber 0
 scoreboard players set @a[predicate=mad:player/] PlayerNumber 0

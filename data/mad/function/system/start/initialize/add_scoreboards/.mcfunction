@@ -51,6 +51,10 @@ scoreboard objectives add TimeOfFallPhase dummy ['',{text:'投下フェーズ �
 scoreboard objectives add TimeOfDropCarePackage dummy ['',{text:'支援物資 投下時間'}]
 scoreboard objectives add TimeLimit dummy ['',{text:'制限時間'}]
 scoreboard objectives add GetBonusTime dummy ['',{text:'総獲得時間'}]
+#### 撃破ボーナス
+scoreboard objectives add BonusTimeOfKill dummy ['',{text:'撃破ボーナス'}]
+#### 進捗ボーナス
+scoreboard objectives add BonusTimeOfAdvancements dummy ['',{text:'進捗ボーナス'}]
 #### プレイヤー
 scoreboard objectives add PlayerNumber dummy ['',{text:'プレイヤー番号'}]
 scoreboard objectives add NumberOfPlayers dummy ['',{text:'プレイヤー数'}]
