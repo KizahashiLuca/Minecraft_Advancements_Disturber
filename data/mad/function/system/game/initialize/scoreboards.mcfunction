@@ -69,15 +69,22 @@ scoreboard players set #mad_team_c SidebarC -10
 scoreboard players set #mad_team_d SidebarD -10
 #### タイマー
 scoreboard players set #mad Second 2147483647
+#### タイマー - 支援物資投下時間
+execute store result score #mad_care_package_1 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_2 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_3 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_4 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_5 Second run \
+  data get storage mad: rules.care_package_interval 1
+#### ボーナス総獲得時間 - 統計用
 scoreboard players set #mad_team_a GetBonusTime 0
 scoreboard players set #mad_team_b GetBonusTime 0
 scoreboard players set #mad_team_c GetBonusTime 0
 scoreboard players set #mad_team_d GetBonusTime 0
-scoreboard players operation #mad_care_package_1 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_2 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_3 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_4 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_5 Second = #mad CarePackageInterval
 scoreboard players set @a[predicate=mad:player/] GetBonusTime 0
 #### 撃破ボーナス
 execute store result score #mad BonusTimeOfKill run \

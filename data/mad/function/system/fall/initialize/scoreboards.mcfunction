@@ -21,27 +21,47 @@ scoreboard players set @a[predicate=mad:player/host] ExitTrigger 0
 scoreboard players enable @a[predicate=mad:player/host] ExitTrigger
 #### タイマー
 scoreboard players operation #mad Second = #mad TimeOfFallPhase
-scoreboard players operation #mad_team_a Second = #mad InitialTime
-scoreboard players operation #mad_team_b Second = #mad InitialTime
-scoreboard players operation #mad_team_c Second = #mad InitialTime
-scoreboard players operation #mad_team_d Second = #mad InitialTime
-scoreboard players operation #mad_care_package_1 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_2 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_3 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_4 Second = #mad CarePackageInterval
-scoreboard players operation #mad_care_package_5 Second = #mad CarePackageInterval
-scoreboard players operation @a[predicate=mad:player/] Second = #mad InitialTime
+#### タイマー - 残り時間(秒数)
+execute store result score #mad_team_a Second run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_b Second run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_c Second run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_d Second run \
+  data get storage mad: rules.initial_time 1
+execute store result score @a[predicate=mad:player/] Second run \
+  data get storage mad: rules.initial_time 1
+#### タイマー - 残り時間(ティック数)
 scoreboard players set #mad Tick 0
 scoreboard players set #mad_team_a Tick 0
 scoreboard players set #mad_team_b Tick 0
 scoreboard players set #mad_team_c Tick 0
 scoreboard players set #mad_team_d Tick 0
 scoreboard players set @a[predicate=mad:player/] Tick 0
-scoreboard players operation #mad_team_a TimeLimit = #mad InitialTime
-scoreboard players operation #mad_team_b TimeLimit = #mad InitialTime
-scoreboard players operation #mad_team_c TimeLimit = #mad InitialTime
-scoreboard players operation #mad_team_d TimeLimit = #mad InitialTime
-scoreboard players operation @a[predicate=mad:player/] TimeLimit = #mad InitialTime
+#### タイマー - 制限時間(秒数)
+execute store result score #mad_team_a TimeLimit run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_b TimeLimit run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_c TimeLimit run \
+  data get storage mad: rules.initial_time 1
+execute store result score #mad_team_d TimeLimit run \
+  data get storage mad: rules.initial_time 1
+execute store result score @a[predicate=mad:player/] TimeLimit run \
+  data get storage mad: rules.initial_time 1
+#### タイマー - 支援物資投下時間
+execute store result score #mad_care_package_1 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_2 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_3 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_4 Second run \
+  data get storage mad: rules.care_package_interval 1
+execute store result score #mad_care_package_5 Second run \
+  data get storage mad: rules.care_package_interval 1
+#### ボーナス総獲得時間 - 統計用
 scoreboard players set #mad_team_a GetBonusTime 0
 scoreboard players set #mad_team_b GetBonusTime 0
 scoreboard players set #mad_team_c GetBonusTime 0
