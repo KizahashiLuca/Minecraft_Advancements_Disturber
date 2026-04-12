@@ -26,9 +26,6 @@ execute if predicate mad:phase/fall run \
 #### 待機フェーズ
 execute if predicate mad:phase/wait run \
   function mad:system/wait/
-#### チーム編成設定フェーズ
-execute if predicate mad:phase/setting/team_member/ run \
-  function mad:system/setting/team_member/
 #### 初期設定フェーズ
 execute if predicate mad:phase/setting/ run \
   function mad:system/setting/

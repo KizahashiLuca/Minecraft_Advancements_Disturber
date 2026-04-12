@@ -11,17 +11,17 @@
 ## 途中でログインしたプレイヤーの処理
 #### ゲーム開始後、初めてログインしたプレイヤーはスペクテイターモードに
 execute as @a[predicate=mad:system/common/login_midtime/new_commer] run \
-function mad:system/common/login_midtime/new_commer
+  function mad:system/common/login_midtime/new_commer
 #### スペクテイターモードのプレイヤーで、トリガーを実行した人は参加プレイヤーに
 execute as @a[predicate=mad:system/setting/login_midtime/to_adventure] run \
-function mad:system/setting/login_midtime/to_adventure
+  function mad:system/setting/login_midtime/to_adventure
 #### 参加者モードのプレイヤーで、トリガーを実行した人は観戦プレイヤーに
 execute as @a[predicate=mad:system/setting/login_midtime/to_spectator] run \
-function mad:system/setting/login_midtime/to_spectator
+  function mad:system/setting/login_midtime/to_spectator
 
 ## スペクテイターモードの処理
 execute at @e[predicate=mad:marker/respawn_beacon,limit=1] run \
-tp @a[distance=12..] @e[predicate=mad:marker/respawn_beacon,limit=1]
+  tp @a[distance=12..] @e[predicate=mad:marker/respawn_beacon,limit=1]
 
 ## トリガーの処理
 #### ゲーム制御トリガー - ルートダイアログ
@@ -42,3 +42,6 @@ execute if entity @p[predicate=mad:system/setting/triggered_execute/cancel] run 
 #### ゲーム制御トリガー - 決定ボタン
 execute if entity @p[predicate=mad:system/setting/triggered_execute/start] run \
   function mad:system/setting/start
+#### ゲーム制御トリガー - チームメンバー設定ダイアログ
+execute if entity @p[predicate=mad:system/setting/triggered_execute/team_member] run \
+  function mad:system/setting/team_member/
