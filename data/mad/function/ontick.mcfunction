@@ -27,7 +27,7 @@ execute if predicate mad:phase/fall run \
 execute if predicate mad:phase/wait run \
   function mad:system/wait/
 #### 初期設定フェーズ
-execute if predicate mad:phase/setting run \
+execute if predicate mad:phase/setting/ run \
   function mad:system/setting/
 
 ## ゲーム外フェーズ

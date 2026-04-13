@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボードのリセット
-function mad:system/setting/scoreboards
-
 ## 設定値保存
 $data modify storage mad: rules merge value \
   {\
@@ -21,28 +18,5 @@ $data modify storage mad: rules merge value \
     bonus_time_of_kill: $(bonus_time_of_kill),\
   }
 
-## ルートダイアログ表示
-#### 個人戦の場合
-execute if predicate mad:gamerule/match_mode/individual/ run \
-  function mad:dialog/system/setting/root \
-    {\
-      label: 'ゲーム開始',\
-      text: 'ゲームを開始します。',\
-      score: 20,\
-    }
-#### チームメンバー選択がランダムの場合
-execute if predicate mad:gamerule/team_rules/set_team_manual/false run \
-  function mad:dialog/system/setting/root \
-    {\
-      label: 'ゲーム開始',\
-      text: 'ゲームを開始します。',\
-      score: 20,\
-    }
-#### チームメンバー選択がマニュアルの場合
-execute if predicate mad:gamerule/team_rules/set_team_manual/true run \
-  function mad:dialog/system/setting/root \
-    {\
-      label: 'チームメンバー選択',\
-      text: 'チームメンバー手動設定に移ります。',\
-      score: 21,\
-    }
+## ルートフェーズ移行/初期化
+function mad:system/setting/root/initialize

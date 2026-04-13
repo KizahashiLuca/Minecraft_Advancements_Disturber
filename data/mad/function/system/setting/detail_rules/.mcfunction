@@ -8,8 +8,7 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボードのリセット
-function mad:system/setting/scoreboards
-
-## 詳細設定ダイアログ表示
-function mad:dialog/system/setting/detail_rules with storage mad: rules
+## トリガーの処理 - ゲーム制御トリガー
+#### ルートダイアログへ
+execute if entity @p[predicate=mad:system/setting/triggered_execute/root] run \
+  function mad:system/setting/root/initialize

@@ -8,6 +8,11 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## チーム設定トリガーをリセット
-scoreboard players set @s SetTeamTrigger 0
-scoreboard players enable @s SetTeamTrigger
+## フェーズ設定
+function mad:phase/setting/option_rules
+
+## スコアボードのリセット
+function mad:system/setting/scoreboards
+
+## オプション設定ダイアログ表示
+function mad:dialog/system/setting/option_rules with storage mad: rules

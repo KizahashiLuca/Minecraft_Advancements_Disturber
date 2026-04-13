@@ -8,34 +8,22 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## フェーズ設定
-function mad:phase/setting/root
-
-## スコアボードのリセット
-function mad:system/setting/scoreboards
-
-## ルートダイアログ表示
-#### 個人戦の場合
-execute if predicate mad:gamerule/match_mode/individual/ run \
-  function mad:dialog/system/setting/root \
-    {\
-      label: 'ゲーム開始',\
-      text: 'ゲームを開始します。',\
-      score: 20,\
-    }
-#### チームメンバー選択がランダムの場合
-execute if predicate mad:gamerule/team_rules/set_team_manual/false run \
-  function mad:dialog/system/setting/root \
-    {\
-      label: 'ゲーム開始',\
-      text: 'ゲームを開始します。',\
-      score: 20,\
-    }
-#### チームメンバー選択がマニュアルの場合
-execute if predicate mad:gamerule/team_rules/set_team_manual/true run \
-  function mad:dialog/system/setting/root \
-    {\
-      label: 'チームメンバー選択',\
-      text: 'チームメンバー手動設定に移ります。',\
-      score: 21,\
-    }
+## トリガーの処理 - ゲーム制御トリガー
+#### 詳細設定ダイアログへ
+execute if entity @p[predicate=mad:system/setting/triggered_execute/detail_rules] run \
+  function mad:system/setting/detail_rules/initialize
+#### オプション設定ダイアログへ
+execute if entity @p[predicate=mad:system/setting/triggered_execute/option_rules] run \
+  function mad:system/setting/option_rules/initialize
+#### チーム戦ルール設定ダイアログへ
+execute if entity @p[predicate=mad:system/setting/triggered_execute/team_rules] run \
+  function mad:system/setting/team_rules/initialize
+#### キャンセルボタン
+execute if entity @p[predicate=mad:system/setting/triggered_execute/cancel] run \
+  function mad:system/setting/cancel
+#### 決定ボタン
+execute if entity @p[predicate=mad:system/setting/triggered_execute/start] run \
+  function mad:system/setting/start
+#### チーム編成マニュアル設定フェーズへ
+execute if entity @p[predicate=mad:system/setting/triggered_execute/team_member] run \
+  function mad:system/setting/team_member/initialize

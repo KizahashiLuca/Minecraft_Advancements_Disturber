@@ -23,45 +23,21 @@ execute as @a[predicate=mad:system/setting/login_midtime/to_spectator] run \
 execute at @e[predicate=mad:marker/respawn_beacon,limit=1] run \
   tp @a[distance=12..] @e[predicate=mad:marker/respawn_beacon,limit=1]
 
-## トリガーの処理 - ゲーム制御トリガー
-#### ルートダイアログ
-execute if entity @p[predicate=mad:system/setting/triggered_execute/root] run \
+## トリガーの処理
+#### ルートダイアログにおける処理
+execute if predicate mad:phase/setting/root run \
   function mad:system/setting/root/
-#### 詳細設定ダイアログ
-execute if entity @p[predicate=mad:system/setting/triggered_execute/detail_rules] run \
+#### 詳細設定ダイアログにおける処理
+execute if predicate mad:phase/setting/detail_rules run \
   function mad:system/setting/detail_rules/
-#### オプション設定ダイアログ
-execute if entity @p[predicate=mad:system/setting/triggered_execute/option_rules] run \
+#### 詳細設定ダイアログにおける処理
+execute if predicate mad:phase/setting/option_rules run \
   function mad:system/setting/option_rules/
-#### チーム戦ルール設定ダイアログ
-execute if entity @p[predicate=mad:system/setting/triggered_execute/team_rules] run \
+#### 詳細設定ダイアログにおける処理
+execute if predicate mad:phase/setting/team_rules run \
   function mad:system/setting/team_rules/
-#### キャンセルボタン
-execute if entity @p[predicate=mad:system/setting/triggered_execute/cancel] run \
-  function mad:system/setting/cancel
-#### 決定ボタン
-execute if entity @p[predicate=mad:system/setting/triggered_execute/start] run \
-  function mad:system/setting/start
-#### チームメンバー設定フェーズ移行
-execute if entity @p[predicate=mad:system/setting/triggered_execute/team_member] run \
+#### 詳細設定ダイアログにおける処理
+execute if predicate mad:phase/setting/team_member run \
   function mad:system/setting/team_member/
 
-## トリガーの処理 - チーム設定トリガー
-#### チームメンバー設定ダイアログ 再表示
-execute as @a[predicate=mad:system/setting/triggered_set_team/show_dialog] run \
-  function mad:system/setting/team_member/show_dialog
-#### チームメンバー設定ダイアログ チーム離脱
-execute as @a[predicate=mad:system/setting/triggered_set_team/leave_team] run \
-  function mad:system/setting/team_member/leave_team
-#### チームメンバー設定ダイアログ 赤チーム設定
-execute as @a[predicate=mad:system/setting/triggered_set_team/team_a] run \
-  function mad:system/setting/team_member/join_team with storage mad: team.a
-#### チームメンバー設定ダイアログ 青チーム設定
-execute as @a[predicate=mad:system/setting/triggered_set_team/team_b] run \
-  function mad:system/setting/team_member/join_team with storage mad: team.b
-#### チームメンバー設定ダイアログ 黄チーム設定
-execute as @a[predicate=mad:system/setting/triggered_set_team/team_c] run \
-  function mad:system/setting/team_member/join_team with storage mad: team.c
-#### チームメンバー設定ダイアログ 緑チーム設定
-execute as @a[predicate=mad:system/setting/triggered_set_team/team_d] run \
-  function mad:system/setting/team_member/join_team with storage mad: team.d
+
