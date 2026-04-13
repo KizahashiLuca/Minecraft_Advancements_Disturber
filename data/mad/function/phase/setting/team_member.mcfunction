@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 初期設定 - 対戦形式変更フェーズへ移動
-scoreboard players set #mad Phase 2
+## チーム編成マニュアル設定フェーズへ移動
+scoreboard players set #mad Phase 40

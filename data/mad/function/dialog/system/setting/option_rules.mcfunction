@@ -94,7 +94,7 @@ $dialog show @p[predicate=mad:player/host] \
       tooltip: '設定を破棄して、戻ります。',\
       action: {\
         type: 'minecraft:run_command',\
-        command: 'trigger ExecuteTrigger set 10',\
+        command: 'trigger ExecuteTrigger set 5',\
       },\
     },\
   }

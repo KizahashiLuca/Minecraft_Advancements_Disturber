@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 初期設定 - その他ルール 昼夜サイクル変更フェーズへ移動
-scoreboard players set #mad Phase 14
+## オプション設定フェーズへ移動
+scoreboard players set #mad Phase 20

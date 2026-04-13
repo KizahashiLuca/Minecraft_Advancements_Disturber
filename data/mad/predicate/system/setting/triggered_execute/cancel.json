@@ -2,6 +2,6 @@
   "condition": "minecraft:entity_scores",
   "entity": "this",
   "scores": {
-    "ExecuteTrigger": 19
+    "ExecuteTrigger": 99
   }
 }

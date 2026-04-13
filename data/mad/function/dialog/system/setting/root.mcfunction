@@ -26,7 +26,7 @@ execute if predicate mad:gamerule/match_mode/individual/ run \
           width: 200,\
           action: {\
             type: 'minecraft:run_command',\
-            command: 'trigger ExecuteTrigger set 11',\
+            command: 'trigger ExecuteTrigger set 10',\
           },\
         },\
         {\
@@ -34,7 +34,7 @@ execute if predicate mad:gamerule/match_mode/individual/ run \
           width: 200,\
           action: {\
             type: 'minecraft:run_command',\
-            command: 'trigger ExecuteTrigger set 12',\
+            command: 'trigger ExecuteTrigger set 20',\
           },\
         },\
         {\
@@ -42,7 +42,7 @@ execute if predicate mad:gamerule/match_mode/individual/ run \
           width: 200,\
           action: {\
             type: 'minecraft:run_command',\
-            command: 'trigger ExecuteTrigger set 19',\
+            command: 'trigger ExecuteTrigger set 99',\
           },\
         },\
       ],\
@@ -51,7 +51,7 @@ execute if predicate mad:gamerule/match_mode/individual/ run \
         tooltip: '設定を保存して、\nゲームを開始します。',\
         action: {\
           type: 'minecraft:run_command',\
-          command: 'trigger ExecuteTrigger set 20',\
+          command: 'trigger ExecuteTrigger set 50',\
         },\
       },\
     }
@@ -74,7 +74,7 @@ $execute if predicate mad:gamerule/match_mode/team run \
           width: 200,\
           action: {\
             type: 'minecraft:run_command',\
-            command: 'trigger ExecuteTrigger set 11',\
+            command: 'trigger ExecuteTrigger set 10',\
           },\
         },\
         {\
@@ -82,7 +82,7 @@ $execute if predicate mad:gamerule/match_mode/team run \
           width: 200,\
           action: {\
             type: 'minecraft:run_command',\
-            command: 'trigger ExecuteTrigger set 12',\
+            command: 'trigger ExecuteTrigger set 20',\
           },\
         },\
         {\
@@ -90,7 +90,7 @@ $execute if predicate mad:gamerule/match_mode/team run \
           width: 200,\
           action: {\
             type: 'minecraft:run_command',\
-            command: 'trigger ExecuteTrigger set 13',\
+            command: 'trigger ExecuteTrigger set 30',\
           },\
         },\
         {\
@@ -98,7 +98,7 @@ $execute if predicate mad:gamerule/match_mode/team run \
           width: 200,\
           action: {\
             type: 'minecraft:run_command',\
-            command: 'trigger ExecuteTrigger set 19',\
+            command: 'trigger ExecuteTrigger set 99',\
           },\
         },\
       ],\

@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 初期設定 - チーム戦ルール その2 当たり判定変更フェーズへ移動
-scoreboard players set #mad Phase 33
+## 初期化フェーズへ移動
+scoreboard players set #mad Phase 1

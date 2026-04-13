@@ -87,7 +87,7 @@ $execute if predicate mad:gamerule/num_of_players/solo run \
         tooltip: '設定を破棄して、戻ります。',\
         action: {\
           type: 'minecraft:run_command',\
-          command: 'trigger ExecuteTrigger set 10',\
+          command: 'trigger ExecuteTrigger set 5',\
         },\
       },\
     }
@@ -177,7 +177,7 @@ $execute if predicate mad:gamerule/match_mode/team \
         tooltip: '設定を破棄して、戻ります。',\
         action: {\
           type: 'minecraft:run_command',\
-          command: 'trigger ExecuteTrigger set 10',\
+          command: 'trigger ExecuteTrigger set 5',\
         },\
       },\
     }
@@ -265,7 +265,7 @@ $execute if predicate mad:gamerule/match_mode/individual/ \
         tooltip: '設定を破棄して、戻ります。',\
         action: {\
           type: 'minecraft:run_command',\
-          command: 'trigger ExecuteTrigger set 10',\
+          command: 'trigger ExecuteTrigger set 5',\
         },\
       },\
     }

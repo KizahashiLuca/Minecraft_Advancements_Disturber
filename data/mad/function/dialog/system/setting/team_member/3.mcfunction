@@ -144,7 +144,7 @@ dialog show @s[predicate=mad:player/host] \
       label: 'ゲーム開始',\
       action: {\
         type: 'minecraft:run_command',\
-        command: 'trigger ExecuteTrigger set 20',\
+        command: 'trigger ExecuteTrigger set 50',\
       },\
     },\
   }

@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 初期設定 - ルートフェーズへ移動
-scoreboard players set #mad Phase 1
+## ルートフェーズへ移動
+scoreboard players set #mad Phase 5
