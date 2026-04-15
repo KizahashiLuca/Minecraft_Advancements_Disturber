@@ -9,6 +9,15 @@
 #####################################
 
 ## タイトルメッセージ表示
-title @a title ['',{text:'降下開始'}]
-title @a subtitle ['']
+title @a title \
+  [\
+    '',\
+    {\
+      translate: '降下開始',\
+    },\
+  ]
+title @a subtitle \
+  [\
+    '',\
+  ]
 title @a times 20 80 20

@@ -9,4 +9,19 @@
 #####################################
 
 ## タイトルメッセージ表示
-title @a subtitle ['',{score:{name:'#mad',objective:'Second'},color:'red'}]
+title @a subtitle \
+  [\
+    '',\
+    {\
+      translate: '%s',\
+      with: [\
+        {\
+          score: {\
+            name: '#mad',\
+            objective: 'Second',\
+          },\
+        },\
+      ],\
+      color: 'red',\
+    },\
+  ]

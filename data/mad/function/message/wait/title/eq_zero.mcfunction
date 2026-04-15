@@ -9,4 +9,11 @@
 #####################################
 
 ## タイトルメッセージ表示
-title @a subtitle ['',{text:'ゲーム開始',color:'red'}]
+title @a subtitle \
+  [\
+    '',\
+    {\
+      translate: 'ゲーム開始',\
+      color: 'red',\
+    },\
+  ]

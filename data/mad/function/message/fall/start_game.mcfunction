@@ -8,12 +8,30 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send title messages
-title @a title ['',{text:'ゲームスタート',color:'red'}]
+## ゲーム開始タイトル
+title @a title \
+  [\
+    '',\
+    {\
+      translate: 'ゲームスタート',\
+      color: 'red',\
+    },\
+  ]
 title @a times 20 80 20
 
-## Send messages
-tellraw @a ['',{text:'[試合開始] 進捗はリセットされました',color:'green'}]
+## 進捗リセットメッセージ
+tellraw @a \
+  [\
+    '',\
+    {\
+      translate: '[MAD] ゲームを開始しました。\n',\
+      color: 'green',\
+    },\
+    {\
+      translate: '[MAD] 進捗はリセットされます。\n',\
+      color: 'green',\
+    },\
+  ]
 
-## Change to start
+## ゲームフェーズの初期化
 function mad:system/game/change_to

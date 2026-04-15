@@ -8,11 +8,16 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 共通開始メッセージ表示
-function mad:message/begin
-
-## 待機開始メッセージ表示
-tellraw @a ['',{text:'  設定情報を確認してください'}]
-
-## 共通終了メッセージ表示
-function mad:message/end
+## 待機開始メッセージ
+tellraw @a \
+  [\
+    '',\
+    {\
+      translate: '[MAD] ゲーム開始前の待機時間です。\n',\
+      color: 'green',\
+    },\
+    {\
+      translate: '[MAD] ボイスチャット移動やルール確認してください。\n',\
+      color: 'green',\
+    },\
+  ]

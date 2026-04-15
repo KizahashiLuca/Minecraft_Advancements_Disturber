@@ -9,4 +9,18 @@
 #####################################
 
 ## タイトルメッセージ表示
-title @a subtitle ['',{score:{name:'#mad',objective:'Second'}},{text:'秒前'}]
+title @a subtitle \
+  [\
+    '',\
+    {\
+      translate: '%s秒前',\
+      with: [\
+        {\
+          score: {\
+            name: '#mad',\
+            objective: 'Second',\
+          },\
+        },\
+      ],\
+    },\
+  ]

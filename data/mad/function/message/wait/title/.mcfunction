@@ -9,6 +9,19 @@
 #####################################
 
 ## タイトルメッセージ表示
-title @a title ['',{text:'待機フェーズ',color:'light_purple'}]
-title @a subtitle ['',{text:'30'},{text:'秒前'}]
+title @a title \
+  [\
+    '',\
+    {\
+      translate: '待機フェーズ',\
+      color: 'light_purple',\
+    },\
+  ]
+title @a subtitle \
+  [\
+    '',\
+    {\
+      translate: '30秒前',\
+    },\
+  ]
 title @a times 0 600 0
