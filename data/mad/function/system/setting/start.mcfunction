@@ -8,6 +8,12 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
+## フェーズ設定
+function mad:phase/wait
+
+## スコアボードのリセット
+function mad:system/setting/scoreboards
+
 ## ダイアログクリア
 dialog clear @a
 
