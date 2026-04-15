@@ -16,7 +16,7 @@ $tellraw @s \
       translate: '[MAD] チーム編成設定: %sに参加',\
       with: [\
         {\
-          text: '$(text)チーム',\
+          translate: '$(text)チーム',\
           bold: true,\
           color: '$(color)',\
         },\

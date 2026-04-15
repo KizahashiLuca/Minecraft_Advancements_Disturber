@@ -52,7 +52,7 @@ execute if predicate mad:gamerule/num_of_players/not_solo run \
         translate: '     >> %s',\
         with: [\
           {\
-            text: '個人戦',\
+            translate: '個人戦',\
             color: 'green',\
             bold: true,\
             underlined: true,\
@@ -77,7 +77,7 @@ execute if predicate mad:gamerule/num_of_players/not_solo run \
         translate: '     >> %s',\
         with: [\
           {\
-            text: 'チーム戦',\
+            translate: 'チーム戦',\
             color: 'green',\
             bold: true,\
             underlined: true,\
@@ -101,8 +101,8 @@ tellraw @a \
     {\
       translate: '     ※ 詳細設定してのゲーム開始は %s',\
       with: [\
-          {\
-          text: 'こちら',\
+        {\
+          translate: 'こちら',\
           color: 'light_purple',\
           bold: true,\
           underlined: true,\
