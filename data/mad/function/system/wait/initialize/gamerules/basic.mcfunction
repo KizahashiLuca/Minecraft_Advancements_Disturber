@@ -20,11 +20,11 @@ gamerule minecraft:block_drops true
 #### ブロックの操作による爆発時にブロックがドロップアイテムを落とさない可能性
 gamerule minecraft:block_explosion_drop_decay true
 #### コマンドブロックの実行結果の通知
-gamerule minecraft:command_block_output true
+gamerule minecraft:command_block_output false
 #### コマンドブロックの有効化
 gamerule minecraft:command_blocks_work true
 #### 溺水ダメージ
-gamerule minecraft:drowning_damage true
+gamerule minecraft:drowning_damage false
 #### エリトラの速度チェック
 gamerule minecraft:elytra_movement_check true
 #### プレイヤー死亡時のエンダーパールの消滅
@@ -32,27 +32,27 @@ gamerule minecraft:ender_pearls_vanish_on_death true
 #### 設備エンティティのドロップ
 gamerule minecraft:entity_drops true
 #### 落下ダメージ
-gamerule minecraft:fall_damage true
+gamerule minecraft:fall_damage false
 #### 火傷ダメージ
-gamerule minecraft:fire_damage true
+gamerule minecraft:fire_damage false
 #### 炎の延焼が起こる半径
-gamerule minecraft:fire_spread_radius_around_player 128
+gamerule minecraft:fire_spread_radius_around_player 0
 #### 死亡したプレイヤーへの敵対を解除
 gamerule minecraft:forgive_dead_players true
 #### 凍結ダメージ
-gamerule minecraft:freeze_damage true
+gamerule minecraft:freeze_damage false
 #### ワールド全体のサウンドイベント
 gamerule minecraft:global_sound_events true
 #### 即時リスポーン
-gamerule minecraft:immediate_respawn false
+gamerule minecraft:immediate_respawn true
 #### 死亡時のインベントリの保持
-gamerule minecraft:keep_inventory false
+gamerule minecraft:keep_inventory true
 #### 溶岩流から溶岩源への変化
 gamerule minecraft:lava_source_conversion false
 #### クラフトにレシピを要求
 gamerule minecraft:limited_crafting false
 #### プレイヤーの方向バーの有効化
-gamerule minecraft:locator_bar true
+gamerule minecraft:locator_bar false
 #### 管理者ログへのコマンドの実行結果の通知
 gamerule minecraft:log_admin_commands true
 #### コマンドによるブロックの最大変更数
@@ -96,9 +96,9 @@ gamerule minecraft:reduced_debug_info false
 #### リスポーン地点の半径
 $gamerule minecraft:respawn_radius $(spawn_radius)
 #### コマンドの実行結果の表示
-gamerule minecraft:send_command_feedback true
+gamerule minecraft:send_command_feedback false
 #### 進捗達成の通知
-gamerule minecraft:show_advancement_messages true
+gamerule minecraft:show_advancement_messages false
 #### 死亡メッセージの表示
 $gamerule minecraft:show_death_messages $(show_death_messages)
 #### Mobのスポーン
