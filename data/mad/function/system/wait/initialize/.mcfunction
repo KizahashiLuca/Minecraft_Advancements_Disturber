@@ -36,5 +36,8 @@ function mad:system/wait/initialize/world/ with storage mad: rules
 #### ボスバー設定
 function mad:system/wait/initialize/bossbars/
 
-## フェーズ設定
-function mad:phase/wait
+## 待機メッセージ表示
+#### タイトル
+function mad:message/wait/title/
+#### メッセージ
+function mad:message/wait/
