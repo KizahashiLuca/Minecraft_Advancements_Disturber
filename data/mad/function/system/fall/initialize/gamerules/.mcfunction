@@ -10,6 +10,9 @@
 
 ## 基本ゲームルール設定
 #### 各ディメンションのゲームルールを設定
-execute in minecraft:overworld run function mad:system/fall/initialize/gamerules/basic with storage mad: rules
-execute in minecraft:the_nether run function mad:system/fall/initialize/gamerules/basic with storage mad: rules
-execute in minecraft:the_end run function mad:system/fall/initialize/gamerules/basic with storage mad: rules
+execute in minecraft:overworld run \
+  function mad:system/fall/initialize/gamerules/basic with storage mad: rules
+execute in minecraft:the_nether run \
+  function mad:system/fall/initialize/gamerules/basic with storage mad: rules
+execute in minecraft:the_end run \
+  function mad:system/fall/initialize/gamerules/basic with storage mad: rules

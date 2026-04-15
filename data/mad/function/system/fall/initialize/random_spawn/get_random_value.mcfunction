@@ -9,6 +9,7 @@
 #####################################
 
 ## 乱数値出力
-$execute store result score #mad Tmp$(axis) run random value $(min)..$(max)
+$execute store result score #mad Tmp$(axis) run \
+  random value $(min)..$(max)
 $scoreboard players operation #mad Tmp$(axis) += #mad Pos$(axis)
 $return run scoreboard players get #mad Tmp$(axis)
