@@ -25,9 +25,6 @@ function mad:system/fall/initialize/bossbar
 function mad:message/fall/title
 function mad:message/fall/
 
-## リスポーンビーコン設定
-function mad:system/fall/initialize/respawn_beacon/
-
 ## ワールドスポーン設定
 execute at @e[predicate=mad:marker/world_spawn,limit=1] run setworldspawn ~ ~ ~
 
