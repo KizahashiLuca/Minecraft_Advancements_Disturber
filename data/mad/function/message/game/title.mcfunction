@@ -8,7 +8,13 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## タイトルメッセージ表示
-title @a title ['',{text:'ゲーム開始',color:'red'}]
-title @a subtitle ['']
+## ゲーム開始タイトル
+title @a title \
+  [\
+    '',\
+    {\
+      translate: 'ゲームスタート',\
+      color: 'red',\
+    },\
+  ]
 title @a times 20 80 20

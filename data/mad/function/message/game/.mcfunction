@@ -8,11 +8,16 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 共通開始メッセージ表示
-function mad:message/begin
-
-## ゲーム開始メッセージ表示
-tellraw @a ['',{text:'  ゲームが開始されました'}]
-
-## 共通終了メッセージ表示
-function mad:message/end
+## 進捗リセットメッセージ
+tellraw @a \
+  [\
+    '',\
+    {\
+      translate: '[MAD] ゲームを開始しました。\n',\
+      color: 'green',\
+    },\
+    {\
+      translate: '[MAD] 進捗はリセットされます。\n',\
+      color: 'green',\
+    },\
+  ]
