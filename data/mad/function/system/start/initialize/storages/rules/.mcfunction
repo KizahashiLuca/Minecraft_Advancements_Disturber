@@ -17,6 +17,7 @@ data modify storage mad: rules set value \
     care_package_interval: 300,\
     world_border: 1500,\
     difficulty: 'normal',\
+    difficulty_color: -5635926,\
     advance_weather: 'true',\
     advance_time: 'true',\
     number_of_care_packages: 1,\
@@ -47,4 +48,11 @@ data modify storage mad: rules set value \
     nametag_visibility_string: '$(nametag_visibility)',\
     see_friendly_invisibles_string: '$(see_friendly_invisibles)',\
     death_message_visibility_string: '$(death_message_visibility)',\
+    difficulty_color_list: {\
+      peaceful: -5635926,\
+      easy: -16777046,\
+      normal: -16733696,\
+      hard: -5636096,\
+      hardcore: -16777216,\
+    },\
   }

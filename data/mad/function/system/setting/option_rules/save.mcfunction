@@ -17,6 +17,7 @@ $data modify storage mad: rules merge value \
     number_of_care_packages: $(number_of_care_packages),\
     bonus_time_of_kill: $(bonus_time_of_kill),\
   }
+function mad:system/setting/option_rules/set_color with storage mad: rules
 
 ## ルートフェーズ移行/初期化
 function mad:system/setting/root/initialize
