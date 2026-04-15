@@ -17,7 +17,7 @@ data modify storage mad: rules set value \
     care_package_interval: 300,\
     world_border: 1500,\
     difficulty: 'normal',\
-    difficulty_color: -5635926,\
+    difficulty_color: -16733696,\
     advance_weather: 'true',\
     advance_time: 'true',\
     number_of_care_packages: 1,\
