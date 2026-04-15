@@ -9,4 +9,5 @@
 #####################################
 
 ## サウンドイベント
-execute as @a at @s run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 1 1
+execute as @a at @s run \
+  playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 1 1

@@ -12,4 +12,5 @@
 bossbar set minecraft:bossbar color red
 
 ## サウンドイベント
-execute as @a at @s run playsound minecraft:item.trident.throw master @s ~ ~ ~ 1 1 1
+execute as @a at @s run \
+  playsound minecraft:item.trident.throw master @s ~ ~ ~ 1 1 1
