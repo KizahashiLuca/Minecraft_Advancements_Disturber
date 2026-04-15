@@ -30,6 +30,8 @@ kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:trident]
 #### エリアエフェクトクラウド
 kill @e[type=minecraft:area_effect_cloud]
+#### テキストディスプレイ
+kill @e[type=minecraft:text_display]
 #### 支援物資
 kill @e[type=minecraft:chest_minecart,tag=mad_care_package]
 #### 帰還ポータル
@@ -46,14 +48,3 @@ execute as @e[type=minecraft:allay] run \
   data modify entity @s equipment set value {}
 execute as @e[type=minecraft:allay] run \
   data modify entity @s Inventory set value []
-
-## ワールド範囲設定
-#### オーバーワールド
-execute in minecraft:overworld run \
-  function mad:system/wait/initialize/world/world_border with storage mad: world_spawn.overworld
-#### ネザー
-execute in minecraft:the_nether run \
-  function mad:system/wait/initialize/world/world_border with storage mad: world_spawn.the_nether
-#### エンド
-execute in minecraft:the_end run \
-  function mad:system/wait/initialize/world/world_border with storage mad: world_spawn.the_end

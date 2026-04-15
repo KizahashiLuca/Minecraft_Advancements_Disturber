@@ -32,7 +32,7 @@ function mad:system/wait/initialize/players
 #### チーム設定
 function mad:system/wait/initialize/teams/
 #### ワールド設定
-function mad:system/wait/initialize/world/ with storage mad: rules
+function mad:system/wait/initialize/world with storage mad: rules
 #### ボスバー設定
 function mad:system/wait/initialize/bossbars/
 
