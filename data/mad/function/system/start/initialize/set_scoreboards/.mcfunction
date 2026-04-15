@@ -64,11 +64,6 @@ scoreboard players set #mad_team_a NumberOfPlayers 0
 scoreboard players set #mad_team_b NumberOfPlayers 0
 scoreboard players set #mad_team_c NumberOfPlayers 0
 scoreboard players set #mad_team_d NumberOfPlayers 0
-scoreboard players set #mad_player MaxNumberOfPlayers 20
-scoreboard players set #mad_team_a MaxNumberOfPlayers 0
-scoreboard players set #mad_team_b MaxNumberOfPlayers 0
-scoreboard players set #mad_team_c MaxNumberOfPlayers 0
-scoreboard players set #mad_team_d MaxNumberOfPlayers 0
 scoreboard players set #mad NumberOfLiving 0
 scoreboard players set #mad_team_a NumberOfLiving 0
 scoreboard players set #mad_team_b NumberOfLiving 0

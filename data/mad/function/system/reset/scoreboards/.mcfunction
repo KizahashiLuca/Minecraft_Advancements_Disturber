@@ -60,7 +60,6 @@ scoreboard objectives remove PlayerNumber
 scoreboard objectives remove NumberOfPlayers
 scoreboard objectives remove NumberOfPlayersTmp
 scoreboard objectives remove PlayerNumberSkip
-scoreboard objectives remove MaxNumberOfPlayers
 scoreboard objectives remove NumberOfLiving
 scoreboard objectives remove NumberOfDead
 #### 接地判定
