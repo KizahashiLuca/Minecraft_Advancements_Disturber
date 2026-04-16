@@ -8,9 +8,7 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ワールド中心へのテレポート
-tp @s @e[predicate=mad:marker/world_spawn,limit=1]
-
-## スコアボード設定
-scoreboard players set @s TeleportToWorldCenter 0
-scoreboard players enable @s TeleportToWorldCenter
+## テレポート
+#### テレポート先が読み込みチャンクではないときにテレポートできないことがあるため、
+#### spreadplayers コマンドでテレポート
+$spreadplayers $(x) $(z) 0 1 true @s

@@ -6,11 +6,11 @@
       "terms": [
         {
           "condition": "minecraft:reference",
-          "name": "mad:system/common/teleport/care_package"
+          "name": "mad:system/common/triggered/teleport/care_package"
         },
         {
           "condition": "minecraft:reference",
-          "name": "mad:system/common/teleport/center"
+          "name": "mad:system/common/triggered/teleport/center"
         }
       ]
     }

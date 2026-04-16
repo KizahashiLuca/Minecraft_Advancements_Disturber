@@ -10,8 +10,8 @@
 
 ## スペクテイター処理
 #### ゲームモードに変更
-gamemode spectator @a[predicate=mad:system/not_in_game/triggered_spectator/]
+gamemode spectator @a[predicate=mad:system/not_in_game/triggered/spectator/]
 #### プレイヤータグのリセット
-function mad:system/not_in_game/triggered_spectator/tags
+function mad:system/not_in_game/triggered/spectator/tags
 #### スコアボードのリセット
-function mad:system/not_in_game/triggered_spectator/scoreboards
+function mad:system/not_in_game/triggered/spectator/scoreboards

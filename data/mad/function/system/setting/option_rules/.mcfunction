@@ -10,5 +10,5 @@
 
 ## トリガーの処理 - ゲーム制御トリガー
 #### ルートダイアログへ
-execute if entity @p[predicate=mad:system/setting/triggered_execute/root] run \
+execute if entity @p[predicate=mad:system/setting/triggered/execute/root] run \
   function mad:system/setting/root/initialize

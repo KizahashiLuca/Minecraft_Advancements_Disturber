@@ -12,7 +12,8 @@
 execute as @a[predicate=mad:system/common/login_midtime/new_commer] run function mad:system/common/login_midtime/new_commer
 
 ## クリックによるテレポート
-execute as @a[predicate=mad:system/common/teleport/] run function mad:system/common/teleport/
+execute as @a[predicate=mad:system/common/triggered/teleport/] run \
+  function mad:system/common/triggered/teleport/
 
 ## ポジション
 function mad:system/common/position/

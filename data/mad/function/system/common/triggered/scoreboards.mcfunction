@@ -17,10 +17,11 @@ scoreboard players set @s ExecuteTrigger 0
 scoreboard players enable @s ExecuteTrigger
 #### チーム編成設定
 scoreboard players set @s SetTeamTrigger 0
-scoreboard players enable @s SetTeamTrigger
+execute if predicate mad:phase/setting/team_member run \
+  scoreboard players enable @s SetTeamTrigger
 #### テレポート
 scoreboard players set @s TeleportTrigger 0
-scoreboard players enable @s TeleportTrigger
+scoreboard players enable @s[predicate=mad:player/spectator] TeleportTrigger
 #### ゲーム終了
 scoreboard players set @s ExitTrigger 0
-scoreboard players enable @s ExitTrigger
+scoreboard players enable @s[predicate=mad:player/host] ExitTrigger

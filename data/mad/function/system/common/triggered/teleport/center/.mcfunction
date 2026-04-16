@@ -8,8 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 支援物資へのテレポート
-execute as @s[predicate=mad:system/common/teleport/care_package] run function mad:system/common/teleport/care_package/
-
 ## ワールド中心へのテレポート
-execute as @s[predicate=mad:system/common/teleport/center] run function mad:system/common/teleport/center
+tp @s @e[predicate=mad:marker/world_spawn,limit=1]

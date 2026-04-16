@@ -41,5 +41,5 @@ execute if predicate mad:phase/setting/team_member run \
   function mad:system/setting/team_member/
 
 ## トリガーの処理 - その他
-execute as @a[predicate=mad:system/common/triggered_execute/error] run \
+execute as @a[predicate=mad:system/common/triggered/execute/error] run \
   function mad:system/common/triggered/error
