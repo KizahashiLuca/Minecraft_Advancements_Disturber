@@ -17,19 +17,13 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:sponge"
-            ]
+            "items": ["minecraft:sponge"]
           }
         ]
       }
     }
   },
-  "requirements": [
-    [
-      "obtain_sponge"
-    ]
-  ],
+  "requirements": [["obtain_sponge"]],
   "rewards": {
     "function": "mad:system/game/advancement/original/obtain_sponge/"
   }

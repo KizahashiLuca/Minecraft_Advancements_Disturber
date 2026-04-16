@@ -29,11 +29,7 @@
       "trigger": "minecraft:location"
     }
   },
-  "requirements": [
-    [
-      "in_monument"
-    ]
-  ],
+  "requirements": [["in_monument"]],
   "rewards": {
     "function": "mad:system/game/advancement/original/find_monument/"
   }

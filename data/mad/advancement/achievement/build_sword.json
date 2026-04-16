@@ -23,11 +23,7 @@
       "trigger": "minecraft:inventory_changed"
     }
   },
-  "requirements": [
-    [
-      "build_sword"
-    ]
-  ],
+  "requirements": [["build_sword"]],
   "rewards": {
     "function": "mad:system/game/advancement/achievement/build_sword/"
   }
