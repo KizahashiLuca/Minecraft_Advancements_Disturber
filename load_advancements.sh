@@ -150,7 +150,7 @@ tellraw @s \\
           color: '${COLOR}',\\
           with: [\\
             {\\
-              translate: '${TITLE}',\\
+              translate: '${TITLE/\'/\\\'}',\\
               hover_event: {\\
                 action: 'show_text',\\
                 value: [\\
@@ -159,10 +159,10 @@ tellraw @s \\
                     color: '${COLOR}',\\
                     with: [\\
                       {\\
-                        translate: '${TITLE}',\\
+                        translate: '${TITLE/\'/\\\'}',\\
                       },\\
                       {\\
-                        translate: '${DESCRIPTION}',\\
+                        translate: '${DESCRIPTION/\'/\\\'}',\\
                       },\\
                     ],\\
                   },\\
@@ -213,7 +213,7 @@ scoreboard players add @s HasAdvancements 1
           color: '${COLOR}',\\
           with: [\\
             {\\
-              translate: '${TITLE}',\\
+              translate: '${TITLE/\'/\\\'}',\\
               hover_event: {\\
                 action: 'show_text',\\
                 value: [\\
@@ -222,10 +222,10 @@ scoreboard players add @s HasAdvancements 1
                     color: '${COLOR}',\\
                     with: [\\
                       {\\
-                        translate: '${TITLE}',\\
+                        translate: '${TITLE/\'/\\\'}',\\
                       },\\
                       {\\
-                        translate: '${DESCRIPTION}',\\
+                        translate: '${DESCRIPTION/\'/\\\'}',\\
                       },\\
                     ],\\
                   },\\
@@ -243,7 +243,7 @@ EOF
     done
     ## add objectives
     objectives=("${objectives[@]}" ${ADV_OBJECTIVE})
-    titles=("${titles[@]}" "${TITLE}")
+    titles=("${titles[@]}" "${TITLE/\'/\\\'}")
     ## remove tmp json
     jsons+=(${TMP})
     ## increment
