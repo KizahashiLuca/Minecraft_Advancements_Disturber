@@ -20,7 +20,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:emerald"]
+            "items": [
+              "minecraft:emerald"
+            ]
           }
         ]
       }
@@ -30,7 +32,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:diamond"]
+            "items": [
+              "minecraft:diamond"
+            ]
           }
         ]
       }
@@ -40,7 +44,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:gold_ingot"]
+            "items": [
+              "minecraft:gold_ingot"
+            ]
           }
         ]
       }
@@ -50,7 +56,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:iron_ingot"]
+            "items": [
+              "minecraft:iron_ingot"
+            ]
           }
         ]
       }
@@ -60,7 +68,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:copper_ingot"]
+            "items": [
+              "minecraft:copper_ingot"
+            ]
           }
         ]
       }
@@ -70,7 +80,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:lapis_lazuli"]
+            "items": [
+              "minecraft:lapis_lazuli"
+            ]
           }
         ]
       }
@@ -80,7 +92,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:redstone"]
+            "items": [
+              "minecraft:redstone"
+            ]
           }
         ]
       }
@@ -90,21 +104,39 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:quartz"]
+            "items": [
+              "minecraft:quartz"
+            ]
           }
         ]
       }
     }
   },
   "requirements": [
-    ["emerald"],
-    ["diamond"],
-    ["gold_ingot"],
-    ["iron_ingot"],
-    ["copper_ingot"],
-    ["lapis_lazuli"],
-    ["redstone"],
-    ["quartz"]
+    [
+      "emerald"
+    ],
+    [
+      "diamond"
+    ],
+    [
+      "gold_ingot"
+    ],
+    [
+      "iron_ingot"
+    ],
+    [
+      "copper_ingot"
+    ],
+    [
+      "lapis_lazuli"
+    ],
+    [
+      "redstone"
+    ],
+    [
+      "quartz"
+    ]
   ],
   "rewards": {
     "function": "mad:system/game/advancement/original/obtain_treasures/"

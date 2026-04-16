@@ -23,5 +23,9 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "requirements": [["game_start"]]
+  "requirements": [
+    [
+      "game_start"
+    ]
+  ]
 }

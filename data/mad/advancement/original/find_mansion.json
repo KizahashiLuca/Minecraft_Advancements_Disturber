@@ -29,7 +29,11 @@
       "trigger": "minecraft:location"
     }
   },
-  "requirements": [["in_mansion"]],
+  "requirements": [
+    [
+      "in_mansion"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/find_mansion/"
   }

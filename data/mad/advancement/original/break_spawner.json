@@ -30,7 +30,11 @@
       }
     }
   },
-  "requirements": [["break_spawner"]],
+  "requirements": [
+    [
+      "break_spawner"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/break_spawner/"
   }

@@ -17,7 +17,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:hay_block"]
+            "items": [
+              "minecraft:hay_block"
+            ]
           }
         ]
       }
@@ -37,13 +39,25 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:bricks"]
+            "items": [
+              "minecraft:bricks"
+            ]
           }
         ]
       }
     }
   },
-  "requirements": [["hay_block"], ["planks"], ["bricks"]],
+  "requirements": [
+    [
+      "hay_block"
+    ],
+    [
+      "planks"
+    ],
+    [
+      "bricks"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/obtain_materials/"
   }

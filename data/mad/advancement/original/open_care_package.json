@@ -16,13 +16,19 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "type": ["minecraft:chest_minecart"],
+          "type": [
+            "minecraft:chest_minecart"
+          ],
           "nbt": "{Tags:[\"MAD_CarePackage\"]}"
         }
       }
     }
   },
-  "requirements": [["find_minecart"]],
+  "requirements": [
+    [
+      "find_minecart"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/open_care_package/"
   }

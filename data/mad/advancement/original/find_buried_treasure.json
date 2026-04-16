@@ -19,7 +19,11 @@
       }
     }
   },
-  "requirements": [["find_buried_treasure"]],
+  "requirements": [
+    [
+      "find_buried_treasure"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/find_buried_treasure/"
   }

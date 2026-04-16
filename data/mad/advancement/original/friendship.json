@@ -16,7 +16,11 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "requirements": [["friendship"]],
+  "requirements": [
+    [
+      "friendship"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/friendship/"
   }

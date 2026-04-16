@@ -27,13 +27,19 @@
         ],
         "player": {
           "location": {
-            "structures": ["minecraft:mansion"]
+            "structures": [
+              "minecraft:mansion"
+            ]
           }
         }
       }
     }
   },
-  "requirements": [["kill_evoker"]],
+  "requirements": [
+    [
+      "kill_evoker"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/kill_evoker/"
   }

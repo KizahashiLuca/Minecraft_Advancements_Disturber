@@ -16,14 +16,20 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:cake"]
+            "items": [
+              "minecraft:cake"
+            ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     }
   },
-  "requirements": [["bake_cake"]],
+  "requirements": [
+    [
+      "bake_cake"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/achievement/bake_cake/"
   }

@@ -27,7 +27,11 @@
       }
     }
   },
-  "requirements": [["kill_phantom"]],
+  "requirements": [
+    [
+      "kill_phantom"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/kill_phantom/"
   }

@@ -30,7 +30,11 @@
       }
     }
   },
-  "requirements": [["tsutenkaku"]],
+  "requirements": [
+    [
+      "tsutenkaku"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/tsutenkaku/"
   }

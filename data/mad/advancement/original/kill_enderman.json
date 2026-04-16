@@ -27,7 +27,11 @@
       }
     }
   },
-  "requirements": [["kill_enderman"]],
+  "requirements": [
+    [
+      "kill_enderman"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/kill_enderman/"
   }

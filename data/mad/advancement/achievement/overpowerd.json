@@ -16,13 +16,19 @@
     "overpowered": {
       "conditions": {
         "item": {
-          "items": ["minecraft:enchanted_golden_apple"]
+          "items": [
+            "minecraft:enchanted_golden_apple"
+          ]
         }
       },
       "trigger": "minecraft:consume_item"
     }
   },
-  "requirements": [["overpowered"]],
+  "requirements": [
+    [
+      "overpowered"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/achievement/overpowerd/"
   }

@@ -18,5 +18,9 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "requirements": [["achievement_root"]]
+  "requirements": [
+    [
+      "achievement_root"
+    ]
+  ]
 }
