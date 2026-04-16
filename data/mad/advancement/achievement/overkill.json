@@ -29,11 +29,7 @@
       }
     }
   },
-  "requirements": [
-    [
-      "overkill"
-    ]
-  ],
+  "requirements": [["overkill"]],
   "rewards": {
     "function": "mad:system/game/advancement/achievement/overkill/"
   }

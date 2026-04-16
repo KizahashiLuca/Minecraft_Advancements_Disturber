@@ -16,9 +16,7 @@
       "trigger": "minecraft:thrown_item_picked_up_by_entity",
       "conditions": {
         "item": {
-          "items": [
-            "minecraft:diamond"
-          ]
+          "items": ["minecraft:diamond"]
         },
         "entity": [
           {
@@ -32,11 +30,7 @@
       }
     }
   },
-  "requirements": [
-    [
-      "diamonds_to_you"
-    ]
-  ],
+  "requirements": [["diamonds_to_you"]],
   "rewards": {
     "function": "mad:system/game/advancement/achievement/diamonds_to_you/"
   }

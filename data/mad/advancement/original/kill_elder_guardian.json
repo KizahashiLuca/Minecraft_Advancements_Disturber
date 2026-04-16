@@ -28,11 +28,7 @@
       }
     }
   },
-  "requirements": [
-    [
-      "kill_elder_guardian"
-    ]
-  ],
+  "requirements": [["kill_elder_guardian"]],
   "rewards": {
     "function": "mad:system/game/advancement/original/kill_elder_guardian/"
   }

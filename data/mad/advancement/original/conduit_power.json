@@ -22,11 +22,7 @@
       }
     }
   },
-  "requirements": [
-    [
-      "conduit_power"
-    ]
-  ],
+  "requirements": [["conduit_power"]],
   "rewards": {
     "function": "mad:system/game/advancement/original/conduit_power/"
   }

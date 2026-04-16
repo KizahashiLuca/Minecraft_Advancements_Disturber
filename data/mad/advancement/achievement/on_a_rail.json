@@ -31,11 +31,7 @@
       }
     }
   },
-  "requirements": [
-    [
-      "on_a_rail"
-    ]
-  ],
+  "requirements": [["on_a_rail"]],
   "rewards": {
     "function": "mad:system/game/advancement/achievement/on_a_rail/"
   }

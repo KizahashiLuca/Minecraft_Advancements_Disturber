@@ -17,19 +17,13 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:conduit"
-            ]
+            "items": ["minecraft:conduit"]
           }
         ]
       }
     }
   },
-  "requirements": [
-    [
-      "obtain_conduit"
-    ]
-  ],
+  "requirements": [["obtain_conduit"]],
   "rewards": {
     "function": "mad:system/game/advancement/original/obtain_conduit/"
   }
