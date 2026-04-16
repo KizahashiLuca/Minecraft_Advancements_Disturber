@@ -33,7 +33,7 @@ tellraw @s \
           color: 'green',\
           with: [\
             {\
-              translate: 'Here's Johnny!',\
+              translate: 'Here\'s Johnny!',\
               hover_event: {\
                 action: 'show_text',\
                 value: [\
@@ -42,7 +42,7 @@ tellraw @s \
                     color: 'green',\
                     with: [\
                       {\
-                        translate: 'Here's Johnny!',\
+                        translate: 'Here\'s Johnny!',\
                       },\
                       {\
                         translate: '森の洋館の中でヴィンディケーターを倒す',\
