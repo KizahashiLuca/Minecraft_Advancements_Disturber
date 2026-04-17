@@ -51,10 +51,13 @@ function mad:system/common/numbering/
 $function mad:system/start/initialize/storages/rules/$(type)
 
 ## ゲーム開始
-$execute if predicate mad:system/start/initialize/accept run function mad:system/start/process/$(type)
+$execute if predicate mad:system/start/initialize/accept run \
+  function mad:system/start/process/$(type)
 
 ## 人数不足/バージョンエラーであればゲームリセット
 #### エラーメッセージ表示
-execute if predicate mad:system/start/initialize/error run function mad:message/error/
+execute if predicate mad:system/start/initialize/error run \
+  function mad:message/error/
 #### ゲームリセット
-execute if predicate mad:system/start/initialize/error run function mad:system/reset/
+execute if predicate mad:system/start/initialize/error run \
+  function mad:system/reset/

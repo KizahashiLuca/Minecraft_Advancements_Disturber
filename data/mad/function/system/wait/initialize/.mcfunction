@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
+## フェーズ設定
+function mad:phase/wait
+
 ## 初期化
 #### ストレージ設定
 function mad:system/wait/initialize/storages/

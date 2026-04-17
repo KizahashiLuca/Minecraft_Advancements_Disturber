@@ -8,14 +8,12 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボードのリセット
-function mad:system/setting/scoreboards
+## タグ削除
+tag @s remove mad_team_a
+tag @s remove mad_team_b
+tag @s remove mad_team_c
+tag @s remove mad_team_d
+tag @s remove mad_indie_player
 
-## ダイアログクリア
-dialog clear @a
-
-## チーム編成ランダム設定
-function mad:system/setting/team_member/attach_random
-
-## 待機フェーズへ移動
-function mad:system/wait/initialize/
+## チーム追加
+team join mad_player @s

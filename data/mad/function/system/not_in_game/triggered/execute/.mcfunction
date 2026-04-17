@@ -10,16 +10,13 @@
 
 ## ゲーム開始処理
 #### ソロ戦開始
-execute if predicate mad:gamerule/num_of_players/solo \
-  as @p[predicate=mad:system/not_in_game/triggered/execute/solo] run \
+execute as @p[predicate=mad:system/not_in_game/triggered/execute/solo] run \
   function mad:system/start/ {type:'solo'}
 #### 個人戦開始
-execute if predicate mad:gamerule/num_of_players/not_solo \
-  as @p[predicate=mad:system/not_in_game/triggered/execute/individual] run \
+execute as @p[predicate=mad:system/not_in_game/triggered/execute/individual] run \
   function mad:system/start/ {type:'individual'}
 #### チーム戦開始
-execute if predicate mad:gamerule/num_of_players/not_solo \
-  as @p[predicate=mad:system/not_in_game/triggered/execute/team] run \
+execute as @p[predicate=mad:system/not_in_game/triggered/execute/team] run \
   function mad:system/start/ {type:'team'}
 #### 詳細設定開始
 execute as @p[predicate=mad:system/not_in_game/triggered/execute/details] run \
