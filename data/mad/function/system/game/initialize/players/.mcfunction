@@ -13,16 +13,12 @@ gamemode survival @a[predicate=mad:player/]
 gamemode spectator @a[predicate=mad:player/spectator]
 
 ## ペットをキル
-execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
+execute as @e[type=!minecraft:player] \
+  if data entity @s Owner run \
+  kill @s
 
 ## インベントリ
 clear @a
-
-## 各プレイヤーのエンダーチェストからアイテムを消去
-function mad:system/game/initialize/players/clear_enderchest
-
-## 初期物資
-loot give @a[predicate=mad:player/] loot mad:system/game/first_items
 
 ## 経験値
 experience set @a 0 levels
@@ -40,3 +36,6 @@ advancement grant @a until mad:achievement/root
 
 ## レシピ剥奪
 recipe take @a *
+
+## 初期物資
+loot give @a[predicate=mad:player/] loot mad:system/game/first_items

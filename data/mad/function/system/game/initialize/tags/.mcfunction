@@ -9,7 +9,8 @@
 #####################################
 
 ## タグ付与
-function mad:system/game/initialize/tags/set_storage
-
-## タグ付与
-function mad:system/game/initialize/tags/add_tag with storage mad: count_players
+#### プレイヤー番号をストレージに一時格納
+execute store result storage mad: player.tmp int 1 run \
+  scoreboard players get @s PlayerNumber
+#### プレイヤー番号をそのままタグ付与
+function mad:system/game/initialize/tags/add_tag with storage mad: player

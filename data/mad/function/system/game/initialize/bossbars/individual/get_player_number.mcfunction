@@ -8,6 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ストレージ格納
-execute store result storage mad: count_players.individual.number int 1 run scoreboard players get @s PlayerNumber
-data modify storage mad: count_players.individual.name set from entity @s EnderItems[0].components.'minecraft:profile'.name
+## プレイヤー番号とプレイヤー名をボスバー表示用ストレージに格納
+$data modify storage mad: player.display set from storage mad: player.$(tmp)

@@ -9,4 +9,4 @@
 #####################################
 
 ## タグ付与
-$tag @s add MAD_Player$(number)
+$tag @s add mad_player$(tmp)
