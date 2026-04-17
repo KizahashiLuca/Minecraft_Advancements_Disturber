@@ -21,5 +21,5 @@ execute as @a[predicate=mad:player/] run \
   function mad:system/common/count_players/count
 
 ## テスト用
-execute if entity @p[tag=mad_test] run \
+execute if entity @p[predicate=mad:player/test] run \
   scoreboard players set #mad_player NumberOfPlayers 6

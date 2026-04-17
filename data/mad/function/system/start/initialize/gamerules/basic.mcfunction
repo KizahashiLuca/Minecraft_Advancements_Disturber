@@ -96,7 +96,10 @@ gamerule minecraft:reduced_debug_info false
 #### リスポーン地点の半径
 gamerule minecraft:respawn_radius 0
 #### コマンドの実行結果の表示
-gamerule minecraft:send_command_feedback false
+execute if entity @p[predicate=mad:player/test] run \
+  gamerule minecraft:send_command_feedback true
+execute unless entity @p[predicate=mad:player/test] run \
+  gamerule minecraft:send_command_feedback false
 #### 進捗達成の通知
 gamerule minecraft:show_advancement_messages false
 #### 死亡メッセージの表示
