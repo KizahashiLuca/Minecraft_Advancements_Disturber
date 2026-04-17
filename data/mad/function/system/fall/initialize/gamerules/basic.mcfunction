@@ -125,7 +125,7 @@ gamerule minecraft:spread_vines true
 #### TNTの点火及び爆発の許可
 gamerule minecraft:tnt_explodes true
 #### TNT爆発時にブロックがドロップアイテムを落とさない可能性
-gamerule minecraft:tnt_explosion_drop_decay false
+gamerule minecraft:tnt_explosion_drop_decay true
 #### 敵対の共有
 gamerule minecraft:universal_anger false
 #### 水流から水源への変化
