@@ -9,7 +9,7 @@
 #####################################
 
 ## ボスバー設定
-$bossbar add minecraft:bossbar_individual_$(number) \
+$bossbar add minecraft:bossbar_individual_$(tmp) \
   [\
     '',\
     {\
@@ -31,10 +31,10 @@ $bossbar add minecraft:bossbar_individual_$(number) \
       ],\
     },\
   ]
-$bossbar set minecraft:bossbar_individual_$(number) color white
-$bossbar set minecraft:bossbar_individual_$(number) style notched_10
-$bossbar set minecraft:bossbar_individual_$(number) visible true
-$execute store result bossbar minecraft:bossbar_individual_$(number) max run \
+$bossbar set minecraft:bossbar_individual_$(tmp) color white
+$bossbar set minecraft:bossbar_individual_$(tmp) style notched_10
+$bossbar set minecraft:bossbar_individual_$(tmp) visible true
+$execute store result bossbar minecraft:bossbar_individual_$(tmp) max run \
   scoreboard players get @s TimeLimit
-$execute store result bossbar minecraft:bossbar_individual_$(number) value run \
+$execute store result bossbar minecraft:bossbar_individual_$(tmp) value run \
   scoreboard players get @s Second

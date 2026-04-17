@@ -9,7 +9,8 @@
 #####################################
 
 ## ストレージ格納
-function mad:system/wait/initialize/bossbars/individual/set_storage
-
-## ボスバー設定
-function mad:system/wait/initialize/bossbars/individual/set_bossbar with storage mad: count_players.individual
+#### プレイヤー番号をストレージに一時格納
+execute store result storage mad: player.tmp int 1 run \
+  scoreboard players get @s PlayerNumber
+#### プレイヤー番号をもとにボスバー設定
+function mad:system/wait/initialize/bossbars/individual/set_bossbar with storage mad: player
