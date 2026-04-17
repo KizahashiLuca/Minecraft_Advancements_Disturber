@@ -29,6 +29,9 @@ execute if predicate mad:gamerule/number_of_care_packages/ge_5 run \
 function mad:system/wait/initialize/gamerules/
 #### プレイヤー情報設定
 function mad:system/wait/initialize/players
+#### プレイヤー名格納
+execute as @a[predicate=mad:player/] run \
+  function mad:system/wait/initialize/player_name/
 #### チーム設定
 function mad:system/wait/initialize/teams/
 #### ワールド設定
