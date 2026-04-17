@@ -39,6 +39,8 @@ kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:trident]
 #### マーカー
 kill @e[type=minecraft:marker]
+#### テキストディスプレイ
+kill @e[type=minecraft:text_display]
 #### エリアエフェクトクラウド
 kill @e[type=minecraft:area_effect_cloud]
 #### 支援物資
