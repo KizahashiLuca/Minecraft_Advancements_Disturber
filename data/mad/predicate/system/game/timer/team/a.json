@@ -6,17 +6,8 @@
       "name": "mad:gamerule/team_rules/number_of_teams/ge_1"
     },
     {
-      "condition": "minecraft:value_check",
-      "value": {
-        "type": "minecraft:score",
-        "target": {
-          "type": "minecraft:fixed",
-          "name": "#mad_team_a"
-        },
-        "score": "Phase",
-        "scale": 1
-      },
-      "range": 61
+      "condition": "minecraft:reference",
+      "name": "mad:phase/game/a"
     }
   ]
 }

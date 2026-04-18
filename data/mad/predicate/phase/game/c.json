@@ -4,13 +4,10 @@
     "type": "minecraft:score",
     "target": {
       "type": "minecraft:fixed",
-      "name": "#mad"
+      "name": "#mad_team_c"
     },
-    "score": "Tick",
+    "score": "Phase",
     "scale": 1
   },
-  "range": {
-    "min": -2147483648,
-    "max": -1
-  }
+  "range": 61
 }
