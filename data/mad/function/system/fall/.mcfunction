@@ -16,7 +16,7 @@ execute as @a[predicate=mad:system/common/login_midtime/new_commer] run \
 #### 着地判定に使用。
 #### 降下直後だとOnGround=1の時があり着地判定が働いてしまうため、
 #### 1ティック以上経ってから着地判定を処理する。
-execute if predicate mad:system/fall/timer/second/ge_zero run \
+execute if predicate mad:system/common/time/second/ge_zero run \
   function mad:system/fall/timer/tick
 
 ## ポジション
@@ -29,7 +29,7 @@ function mad:system/common/position/
 ####  - 地面に着地したとき
 ####  - 水源/水流に着水, 溶岩源/溶岩流に着地したとき
 ####  - エンティティに乗ったとき
-execute if predicate mad:system/fall/timer/second/lt_zero \
+execute if predicate mad:system/common/time/second/lt_zero \
   as @a[predicate=mad:system/fall/detect_on_ground/not_on_ground] \
   at @s run \
   function mad:system/fall/detect_on_ground/
@@ -42,6 +42,6 @@ execute as @a[predicate=mad:system/fall/detect_on_ground/on_ground] run \
 
 ## 全員着地後フェーズ変更
 #### 着地していないプレイヤーがゼロになったらゲーム開始
-execute if predicate mad:system/fall/timer/second/lt_zero \
+execute if predicate mad:system/common/time/second/lt_zero \
   unless entity @p[predicate=mad:system/fall/detect_on_ground/not_on_ground] run \
   function mad:system/game/initialize/

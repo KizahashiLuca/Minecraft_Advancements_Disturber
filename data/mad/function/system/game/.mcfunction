@@ -23,7 +23,8 @@ function mad:system/common/position/
 function mad:system/game/timer/tick with storage mad: rules.match_mode
 
 ## PvPカウント
-execute if predicate mad:system/game/timer/pvp/tick/eq_zero run function mad:system/game/timer/pvp/
+execute if predicate mad:system/game/timer/pvp/tick/eq_zero run \
+  function mad:system/game/timer/pvp/
 
 ## 支援物資
 #### カウント

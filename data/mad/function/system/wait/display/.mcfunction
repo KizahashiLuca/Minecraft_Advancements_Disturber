@@ -49,23 +49,23 @@ execute if predicate mad:system/wait/time/gamerule/reset run \
 ## タイトル
 #### ゲージ 15秒前
 execute if predicate mad:system/wait/time/eq_half run \
-  function mad:message/wait/title/eq_second
+  function mad:message/wait/title/15
 #### 黄ゲージ 4-10秒前
-execute if predicate mad:system/wait/time/yellow_gage run \
-  function mad:message/wait/title/yellow_gage
+execute if predicate mad:system/common/time/second/from_4_to_10 run \
+  function mad:message/wait/title/ {color: 'yellow'}
 #### 赤ゲージ 1-3秒前
-execute if predicate mad:system/wait/time/red_gage run \
-  function mad:message/wait/title/red_gage
+execute if predicate mad:system/common/time/second/from_1_to_3 run \
+  function mad:message/wait/title/ {color: 'red'}
 #### ゲージ 0秒
 execute if predicate mad:system/common/time/second/eq_zero run \
-  function mad:message/wait/title/eq_zero
+  function mad:message/wait/title/0
 
 ## サウンドイベント
 #### 黄ゲージ 4-10秒前
-execute if predicate mad:system/wait/time/yellow_gage run \
+execute if predicate mad:system/common/time/second/from_4_to_10 run \
   function mad:system/wait/sound_event/yellow_gage
 #### 赤ゲージ 1-3秒前
-execute if predicate mad:system/wait/time/red_gage run \
+execute if predicate mad:system/common/time/second/from_1_to_3 run \
   function mad:system/wait/sound_event/red_gage
 #### ゲージ 0秒
 execute if predicate mad:system/common/time/second/eq_zero run \

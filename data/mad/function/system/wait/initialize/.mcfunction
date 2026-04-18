@@ -44,6 +44,6 @@ function mad:system/wait/initialize/bossbars/
 
 ## 待機メッセージ表示
 #### タイトル
-function mad:message/wait/title/
+function mad:message/wait/title/30
 #### メッセージ
 function mad:message/wait/

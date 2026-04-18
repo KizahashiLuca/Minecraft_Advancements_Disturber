@@ -9,19 +9,19 @@
 #####################################
 
 ## タイトルメッセージ表示
-title @a title \
+$title @a subtitle \
   [\
     '',\
     {\
-      translate: '待機フェーズ',\
-      color: 'light_purple',\
+      translate: '%s',\
+      with: [\
+        {\
+          score: {\
+            name: '#mad',\
+            objective: 'Second',\
+          },\
+        },\
+      ],\
+      color: '$(color)',\
     },\
   ]
-title @a subtitle \
-  [\
-    '',\
-    {\
-      translate: '30秒前',\
-    },\
-  ]
-title @a times 0 600 0
