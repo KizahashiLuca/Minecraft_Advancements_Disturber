@@ -18,5 +18,8 @@ function mad:system/common/triggered/teleport/care_package/set_storage with stor
 #### テレポート
 function mad:system/common/triggered/teleport/care_package/teleport with storage mad: teleport.pos
 
+## メッセージ
+function mad:message/common/triggered/teleport/care_package with storage mad: teleport.care_package
+
 ## ストレージ削除
 data remove storage mad: teleport

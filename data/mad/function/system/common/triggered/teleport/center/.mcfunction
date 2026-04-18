@@ -10,3 +10,6 @@
 
 ## ワールド中心へのテレポート
 tp @s @e[predicate=mad:marker/world_spawn,limit=1]
+
+## メッセージ
+function mad:message/common/triggered/teleport/center
