@@ -15,7 +15,7 @@ scoreboard players set #mad_team_a Phase 61
 scoreboard players set #mad_team_b Phase 61
 scoreboard players set #mad_team_c Phase 61
 scoreboard players set #mad_team_d Phase 61
-#### 死亡数 - 統計用
+#### 死亡数 - 死亡判定用
 scoreboard players set @a[predicate=mad:player/] NumberOfDeaths 0
 #### キル数 - 統計用
 scoreboard players set @a[predicate=mad:player/] NumberOfKills 0
@@ -47,6 +47,8 @@ scoreboard players set #mad_team_b Tick 0
 scoreboard players set #mad_team_c Tick 0
 scoreboard players set #mad_team_d Tick 0
 scoreboard players set @a[predicate=mad:player/] Tick 0
+#### タイマー - 経過秒数(離脱確認用)
+scoreboard players set @a[predicate=mad:player/] GeneralSecond 2147483647
 #### タイマー - 制限時間(秒数)
 execute store result score #mad_team_a TimeLimit run \
   data get storage mad: rules.initial_time 1

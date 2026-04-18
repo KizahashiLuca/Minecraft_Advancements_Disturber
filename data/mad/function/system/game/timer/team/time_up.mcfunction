@@ -13,9 +13,13 @@ $function mad:message/game/time_up/team with storage mad: team.$(team)
 
 ## 生存者のキル
 $kill @a[predicate=mad:player/alive/$(team)]
-$gamemode spectator @a[predicate=mad:player/alive/$(team)]
+$gamemode spectator @a[predicate=mad:player/team/$(team)]
 
 ## スコアボード設定
+#### ゲームフェーズ
+$execute as @a[predicate=mad:player/team/$(team)] run \
+  function mad:phase/game/dead
+#### 死亡数 - 死亡判定用
 $scoreboard players set @a[predicate=mad:player/team/$(team)] NumberOfDeaths 2
-$scoreboard players set @a[predicate=mad:player/team/$(team)] Phase 81
+#### タイマー - 残り時間(秒数)
 $scoreboard players set #mad_team_$(team) Second 0

@@ -14,9 +14,9 @@ execute if predicate mad:system/common/time/tick/eq_zero run \
 
 ## 1ティック減算
 scoreboard players remove #mad Tick 1
-#### 0ティック未満の場合、19ティックにセット
+#### 0ティック未満の場合、20ティックを加算
 execute if predicate mad:system/common/time/tick/lt_zero run \
-  scoreboard players set #mad Tick 19
+  scoreboard players add #mad Tick 20
 
 ## ボスバーに反映
 scoreboard players operation #mad GeneralTick = #mad Second

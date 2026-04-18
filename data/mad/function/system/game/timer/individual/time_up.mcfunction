@@ -16,5 +16,9 @@ kill @s
 gamemode spectator @s
 
 ## スコアボード設定
-function mad:system/game/detect_dying/kill/scoreboards/victim/pvp_on
+#### ゲームフェーズ
+function mad:phase/game/dead
+#### 死亡数 - 死亡判定用
+scoreboard players set @s NumberOfDeaths 2
+#### タイマー - 残り時間(秒数)
 scoreboard players set @s Second 0

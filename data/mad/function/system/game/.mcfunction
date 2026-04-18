@@ -9,7 +9,8 @@
 #####################################
 
 ## 途中でログインしたプレイヤーの処理
-execute as @a[predicate=mad:system/common/login_midtime/new_commer] run function mad:system/common/login_midtime/new_commer
+execute as @a[predicate=mad:system/common/login_midtime/new_commer] run \
+  function mad:system/common/login_midtime/new_commer
 
 ## クリックによるテレポート
 execute as @a[predicate=mad:system/common/triggered/teleport/] run \

@@ -9,6 +9,20 @@
 #####################################
 
 ## タイトルメッセージ表示
-title @s title ['',{text:'死んでしまった！',color:'red',bold:true}]
-title @s subtitle ['',{text:'死因：時間切れ'}]
+title @s title \
+  [\
+    '',\
+    {\
+      text: '死んでしまった！',\
+      color: 'red',\
+      bold: true,\
+    },\
+  ]
+title @s subtitle \
+  [\
+    '',\
+    {\
+      text: '死因：時間切れ',\
+    },\
+  ]
 title @s times 20 80 20

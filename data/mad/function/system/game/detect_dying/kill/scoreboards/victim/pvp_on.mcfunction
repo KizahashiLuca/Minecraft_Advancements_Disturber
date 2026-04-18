@@ -9,5 +9,7 @@
 #####################################
 
 ## スコアボード設定
-scoreboard players set @s NumberOfDeaths 2
+#### ゲームフェーズ
 function mad:phase/game/dead
+#### 死亡数 - 死亡判定用
+scoreboard players set @s NumberOfDeaths 2
