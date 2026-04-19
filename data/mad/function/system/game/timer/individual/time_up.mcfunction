@@ -17,7 +17,7 @@ gamemode spectator @s
 
 ## スコアボード設定
 #### ゲームフェーズ
-function mad:phase/dead/individual
+function mad:phase/dead/player
 #### 死亡数 - 死亡判定用
 scoreboard players set @s NumberOfDeaths 2
 #### タイマー - 残り時間(秒数)

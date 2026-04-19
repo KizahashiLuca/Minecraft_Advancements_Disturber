@@ -18,7 +18,7 @@ $gamemode spectator @a[predicate=mad:player/team/$(team)]
 ## スコアボード設定
 #### ゲームフェーズ
 $execute as @a[predicate=mad:player/team/$(team)] run \
-  function mad:phase/dead/individual
+  function mad:phase/dead/player
 #### 死亡数 - 死亡判定用
 $scoreboard players set @a[predicate=mad:player/team/$(team)] NumberOfDeaths 2
 #### タイマー - 残り時間(秒数)
