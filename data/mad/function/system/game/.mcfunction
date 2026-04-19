@@ -39,7 +39,10 @@ execute as @e[predicate=mad:care_package/] run \
 function mad:system/game/advancement/execute/
 
 ## デス検出
-execute as @a[predicate=mad:player/attacked/] run function mad:system/game/detect_attack/
+#### 加害者のプレイヤー番号を犠牲者側で保持
+execute as @a[predicate=mad:player/attacked/] run \
+  function mad:system/game/detect_attacked/
+#### 死亡したプレイヤー
 execute as @a[predicate=mad:player/dying/] run \
   function mad:system/game/detect_dying/
 
