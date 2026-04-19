@@ -8,13 +8,21 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボード設定
+## 1秒減算
 scoreboard players remove #mad TimeOfPvPStart 1
-execute if predicate mad:system/game/timer/pvp/second/eq_zero run function mad:system/game/timer/pvp/set_pvp_on
+
+## PvPスタート
+execute if predicate mad:system/game/timer/pvp/second/eq_zero run \
+  function mad:system/game/timer/pvp/set_pvp_on
 
 ## メッセージ表示
-execute if predicate mad:system/game/timer/pvp/second/eq_ten_minutes run function mad:message/game/pvp/before_ten_minutes
-execute if predicate mad:system/game/timer/pvp/second/eq_five_minutes run function mad:message/game/pvp/before_five_minutes
-execute if predicate mad:system/game/timer/pvp/second/eq_three_minutes run function mad:message/game/pvp/before_three_minutes
-execute if predicate mad:system/game/timer/pvp/second/eq_one_minute run function mad:message/game/pvp/before_one_minute
-execute if predicate mad:system/game/timer/pvp/second/eq_zero run function mad:message/game/pvp/set_pvp_on
+execute if predicate mad:system/game/timer/pvp/second/600 run \
+  function mad:message/game/pvp/announcement {sec: '10'}
+execute if predicate mad:system/game/timer/pvp/second/300 run \
+  function mad:message/game/pvp/announcement {sec: '5'}
+execute if predicate mad:system/game/timer/pvp/second/180 run \
+  function mad:message/game/pvp/announcement {sec: '3'}
+execute if predicate mad:system/game/timer/pvp/second/60 run \
+  function mad:message/game/pvp/announcement {sec: '1'}
+execute if predicate mad:system/game/timer/pvp/second/eq_zero run \
+  function mad:message/game/pvp/
