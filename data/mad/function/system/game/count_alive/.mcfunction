@@ -8,8 +8,15 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## チーム戦生存者検出
-execute if predicate mad:gamerule/team_rules/number_of_teams/ge_1 run function mad:system/game/count_alive/each_team with storage mad: team.a
-execute if predicate mad:gamerule/team_rules/number_of_teams/ge_2 run function mad:system/game/count_alive/each_team with storage mad: team.b
-execute if predicate mad:gamerule/team_rules/number_of_teams/ge_3 run function mad:system/game/count_alive/each_team with storage mad: team.c
-execute if predicate mad:gamerule/team_rules/number_of_teams/ge_4 run function mad:system/game/count_alive/each_team with storage mad: team.d
+## スペクテイターモードへ変更
+$execute as @a[predicate=mad:player/dead/$(team)] \
+  at @s run \
+  function mad:system/game/count_alive/spectate with storage mad: team.$(team)
+
+## チーム終了を検出
+#### もし同チームの生存しているプレイヤーが居なければ、
+#### チームを死亡フェーズに移行する
+$execute unless entity @p[predicate=mad:player/alive/$(team)] \
+  unless entity @p[predicate=mad:player/dying/$(team)] \
+  if predicate mad:phase/game/$(team) run \
+  function mad:system/game/count_alive/set_end with storage mad: team.$(team)

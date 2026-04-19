@@ -10,6 +10,6 @@
 
 ## スコアボード設定
 #### ゲームフェーズ
-function mad:phase/game/revival
+function mad:phase/game/individual
 #### 死亡数 - 死亡判定用
 scoreboard players set @s NumberOfDeaths 0

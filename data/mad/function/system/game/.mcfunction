@@ -41,11 +41,20 @@ function mad:system/game/advancement/execute/
 execute as @a[predicate=mad:player/attacked/] run function mad:system/game/detect_attack/
 execute as @a[predicate=mad:player/dying/] run function mad:system/game/detect_dying/
 
-## 生存検出
-execute if predicate mad:gamerule/match_mode/team run function mad:system/game/team
+## チーム戦での生存検出
+execute if predicate mad:gamerule/match_mode/team run \
+  function mad:system/game/team
 
 ## ゲーム終了処理
+#### 生存チーム(プレイヤー)の数をスコアボードに格納
 $scoreboard players operation #mad NumberOfLiving = #mad $(number_of_living)
 scoreboard players operation #mad NumberOfLiving -= #mad NumberOfDead
-execute if predicate mad:system/game/exit/ run function mad:system/game/exit
-execute as @p[predicate=mad:system/game/exit/triggered] run function mad:phase/exit
+#### ゲーム全体の終了トリガー(#mad ExitTrigger) が 0 のとき、
+#### かつ ゲームの終了条件を満たしたときに終了メッセージを表示
+execute if predicate mad:system/game/exit/ run \
+  function mad:system/game/exit
+#### ゲーム全体の終了トリガー(#mad ExitTrigger) が立ったとき、
+#### かつ ホストの終了トリガー(@p ExitTrigger) が立ったときに、
+#### ゲーム終了
+execute as @p[predicate=mad:system/game/exit/triggered] run \
+  function mad:phase/exit

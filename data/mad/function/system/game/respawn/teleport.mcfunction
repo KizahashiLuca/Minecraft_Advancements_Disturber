@@ -8,8 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 一番近くのプレイヤーにテレポート
-$tp @s @p[predicate=mad:player/alive/$(team),sort=nearest]
-
-## スペクテイターモードへ変更
-$spectate @p[predicate=mad:player/alive/$(team),sort=nearest] @s
+## テレポート
+$spreadplayers $(x) $(z) 0 1 false @s

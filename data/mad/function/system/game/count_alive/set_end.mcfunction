@@ -9,7 +9,11 @@
 #####################################
 
 ## スコアボード設定
-scoreboard players add #mad NumberOfDead 1
-$scoreboard players set #mad_team_$(team) Phase 81
+#### 死亡フェーズ
+$function mad:phase/dead/ with storage mad: team.$(team)
+#### タイマー - 残り時間(秒数)
 $scoreboard players set #mad_team_$(team) Second 0
+#### タイマー - 残り時間(ティック数)
 $scoreboard players set #mad_team_$(team) Tick 0
+#### 死亡プレイヤー(死亡チーム)数を加算
+scoreboard players add #mad NumberOfDead 1

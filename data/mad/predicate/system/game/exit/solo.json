@@ -7,7 +7,7 @@
     },
     {
       "condition": "minecraft:reference",
-      "name": "mad:system/game/exit/not_triggered"
+      "name": "mad:system/common/triggered/exit/not"
     },
     {
       "condition": "minecraft:reference",

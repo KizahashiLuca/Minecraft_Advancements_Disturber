@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## テレポート
-$spreadplayers $(x) $(z) 0 1 false @s
+## 死亡フェーズへ移動
+$scoreboard players set #mad_team_$(team) Phase 81

@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ゲームフェーズへ移動
+## 死亡フェーズへ移動
 scoreboard players set @s Phase 81

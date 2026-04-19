@@ -61,7 +61,7 @@ scoreboard objectives add NumberOfPlayers dummy ['',{text:'プレイヤー数'}]
 scoreboard objectives add NumberOfPlayersTmp dummy ['',{text:'プレイヤー数 一時変数'}]
 scoreboard objectives add PlayerNumberSkip dummy ['',{text:'プレイヤー番号 スキップ可否'}]
 scoreboard objectives add NumberOfLiving dummy ['',{text:'生存プレイヤー数'}]
-scoreboard objectives add NumberOfDead dummy ['',{text:'死亡プレイヤー数'}]
+scoreboard objectives add NumberOfDead dummy ['',{text:'死亡プレイヤー(死亡チーム)数'}]
 #### 接地判定
 scoreboard objectives add OnGround dummy ['',{text:'接地判定'}]
 #### アクションバー
