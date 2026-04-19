@@ -19,7 +19,11 @@
           "type": [
             "minecraft:chest_minecart"
           ],
-          "nbt": "{Tags:[\"MAD_CarePackage\"]}"
+          "nbt": {
+            "Tags": [
+              "mad_care_package"
+            ]
+          }
         }
       }
     }

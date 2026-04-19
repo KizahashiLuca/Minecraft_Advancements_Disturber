@@ -9,34 +9,22 @@
     },
     "description": {
       "translate": "ブタに乗って崖から落ちる"
-    },
-    "frame": "challenge"
+    }
   },
   "criteria": {
     "fly_pig": {
       "trigger": "minecraft:tick",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "vehicle": {
-                "type": "minecraft:pig"
+        "player": {
+          "vehicle": {
+            "type": "minecraft:pig",
+            "movement": {
+              "fall_distance": {
+                "min": 5.0
               }
-            },
-            "entity": "this"
-          },
-          {
-            "condition": "minecraft:entity_scores",
-            "scores": {
-              "FallDistance": {
-                "min": 5,
-                "max": 256
-              }
-            },
-            "entity": "this"
+            }
           }
-        ]
+        }
       }
     }
   },
