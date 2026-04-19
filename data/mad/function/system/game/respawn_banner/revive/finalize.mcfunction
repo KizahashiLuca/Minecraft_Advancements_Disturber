@@ -11,9 +11,6 @@
 ## 蘇生
 $execute as @p[name=$(name)] run function mad:system/game/detect_dying/kill/pvp_off
 
-## アイテム付与
-$execute as @p[name=$(name)] run loot give @s loot mad:system/game/first_items
-
 ## アーマースタンド削除
 $kill @e[predicate=mad:respawn_banner/armor_stand/initialized,nbt={data:{name:'$(name)'}}]
 

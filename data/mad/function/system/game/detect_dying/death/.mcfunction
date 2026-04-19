@@ -11,9 +11,6 @@
 ## チーム分岐
 $function mad:system/game/detect_dying/death/$(type)/
 
-## ルートアイテム
-loot give @s loot mad:system/game/first_items
-
 ## メッセージ表示
 function mad:message/game/detect_dying/death/ with storage mad: death
 
