@@ -23,14 +23,14 @@ tellraw @s \
   [\
     '',\
     {\
-      translate: 'chat.type.advancement.challenge',\
+      translate: 'chat.type.advancement.task',\
       with: [\
         {\
           selector: '@s',\
         },\
         {\
           translate: '[%s]',\
-          color: 'dark_purple',\
+          color: 'green',\
           with: [\
             {\
               translate: 'ブタさんの飛ぶ頃に',\
@@ -39,7 +39,7 @@ tellraw @s \
                 value: [\
                   {\
                     translate: '%s\n%s',\
-                    color: 'dark_purple',\
+                    color: 'green',\
                     with: [\
                       {\
                         translate: 'ブタさんの飛ぶ頃に',\

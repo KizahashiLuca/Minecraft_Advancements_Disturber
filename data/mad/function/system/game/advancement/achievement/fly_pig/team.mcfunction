@@ -28,7 +28,7 @@ $tellraw @a[predicate=mad:player/team/$(team)] \
   [\
     '',\
     {\
-      translate: 'chat.type.advancement.challenge',\
+      translate: 'chat.type.advancement.task',\
       with: [\
         {\
           text: '$(text)チーム',\
@@ -37,7 +37,7 @@ $tellraw @a[predicate=mad:player/team/$(team)] \
         },\
         {\
           translate: '[%s]',\
-          color: 'dark_purple',\
+          color: 'green',\
           with: [\
             {\
               translate: 'ブタさんの飛ぶ頃に',\
@@ -46,7 +46,7 @@ $tellraw @a[predicate=mad:player/team/$(team)] \
                 value: [\
                   {\
                     translate: '%s\n%s',\
-                    color: 'dark_purple',\
+                    color: 'green',\
                     with: [\
                       {\
                         translate: 'ブタさんの飛ぶ頃に',\
