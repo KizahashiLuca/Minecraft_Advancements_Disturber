@@ -12,7 +12,14 @@
         "entity": "this",
         "predicate": {
           "type": "minecraft:item",
-          "nbt": "{Item:{components:{\"minecraft:item_model\":\"minecraft:player_head\"}}}"
+          "nbt": {
+            "Item": {
+              "id": "minecraft:armor_stand",
+              "components": {
+                "minecraft:item_model": "minecraft:player_head"
+              }
+            }
+          }
         }
       }
     }

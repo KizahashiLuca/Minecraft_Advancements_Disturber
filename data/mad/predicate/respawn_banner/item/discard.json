@@ -9,14 +9,22 @@
           "entity": "this",
           "predicate": {
             "type": "minecraft:item",
-            "nbt": "{Item:{id:\"minecraft:armor_stand\"}}"
+            "nbt": {
+              "Item": {
+                "id": "minecraft:armor_stand"
+              }
+            }
           }
         },
         {
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "nbt": "{Item:{components:{}}}"
+            "nbt": {
+              "Item": {
+                "components": {}
+              }
+            }
           }
         },
         {
@@ -25,7 +33,19 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{Item:{components:{\"minecraft:entity_data\":{data:{Tags:[\"MAD_RespawnBanner\"]}}}}}"
+              "nbt": {
+                "Item": {
+                  "components": {
+                    "minecraft:entity_data": {
+                      "data": {
+                        "Tags": [
+                          "mad_respawn_banner"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -36,7 +56,16 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{components:{\"minecraft:enchantments\":{\"minecraft:vanishing_curse\":1}},id:\"minecraft:player_head\"}}"
+        "nbt": {
+          "Item": {
+            "id": "minecraft:player_head",
+            "components": {
+              "minecraft:enchantments": {
+                "minecraft:vanishing_curse": 1
+              }
+            }
+          }
+        }
       }
     }
   ]

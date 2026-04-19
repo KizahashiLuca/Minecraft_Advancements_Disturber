@@ -9,7 +9,9 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{HurtTime:10s}"
+        "nbt": {
+          "HurtTime": "10s"
+        }
       }
     }
   ]

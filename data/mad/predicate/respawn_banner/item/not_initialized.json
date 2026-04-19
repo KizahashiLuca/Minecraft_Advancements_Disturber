@@ -12,7 +12,9 @@
         "entity": "this",
         "predicate": {
           "type": "minecraft:item",
-          "nbt": "{Age:-32768s}"
+          "nbt": {
+            "Age": -32768
+          }
         }
       }
     }
