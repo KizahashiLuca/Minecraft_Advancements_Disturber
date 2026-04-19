@@ -9,7 +9,11 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"mad_give_time_randomly\"]}"
+        "nbt": {
+          "Tags": [
+            "mad_give_time_randomly"
+          ]
+        }
       }
     }
   ]

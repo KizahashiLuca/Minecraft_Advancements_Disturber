@@ -14,7 +14,11 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"mad_player\"]}"
+          "nbt": {
+            "Tags": [
+              "mad_player"
+            ]
+          }
         }
       }
     }

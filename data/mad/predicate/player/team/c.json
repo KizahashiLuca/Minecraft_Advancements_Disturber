@@ -4,6 +4,10 @@
   "predicate": {
     "type": "minecraft:player",
     "team": "mad_team_c",
-    "nbt": "{Tags:[\"mad_player\"]}"
+    "nbt": {
+      "Tags": [
+        "mad_player"
+      ]
+    }
   }
 }

@@ -3,6 +3,17 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:item",
-    "nbt": "{Item:{components:{\"minecraft:custom_data\":{Tags:[\"MAD_RespawnBanner\"]}}}}"
+    "nbt": {
+      "Item": {
+        "id": "minecraft:armor_stand",
+        "components": {
+          "minecraft:custom_data": {
+            "Tags": [
+              "mad_respawn_banner"
+            ]
+          }
+        }
+      }
+    }
   }
 }

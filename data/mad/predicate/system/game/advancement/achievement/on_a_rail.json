@@ -11,7 +11,9 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{RootVehicle:{Entity:{id:\"minecraft:minecart\"}}}"
+          "vehicle": {
+            "type": "minecraft:minecart"
+          }
         }
       }
     }
