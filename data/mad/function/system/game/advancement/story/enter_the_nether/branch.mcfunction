@@ -17,19 +17,23 @@ execute if predicate mad:gamerule/match_mode/individual/ \
 execute if predicate mad:gamerule/match_mode/team \
   if score #mad_team_a Advancements_Story_enter_the_nether matches 0 \
   as @s[predicate=mad:player/team/a] run \
-  function mad:system/game/advancement/story/enter_the_nether/team with storage mad: team.a
+  function mad:system/game/advancement/story/enter_the_nether/team \
+    with storage mad: team.a
 execute if predicate mad:gamerule/match_mode/team \
   if score #mad_team_b Advancements_Story_enter_the_nether matches 0 \
   as @s[predicate=mad:player/team/b] run \
-  function mad:system/game/advancement/story/enter_the_nether/team with storage mad: team.b
+  function mad:system/game/advancement/story/enter_the_nether/team \
+    with storage mad: team.b
 execute if predicate mad:gamerule/match_mode/team \
   if score #mad_team_c Advancements_Story_enter_the_nether matches 0 \
   as @s[predicate=mad:player/team/c] run \
-  function mad:system/game/advancement/story/enter_the_nether/team with storage mad: team.c
+  function mad:system/game/advancement/story/enter_the_nether/team \
+    with storage mad: team.c
 execute if predicate mad:gamerule/match_mode/team \
   if score #mad_team_d Advancements_Story_enter_the_nether matches 0 \
   as @s[predicate=mad:player/team/d] run \
-  function mad:system/game/advancement/story/enter_the_nether/team with storage mad: team.d
+  function mad:system/game/advancement/story/enter_the_nether/team \
+    with storage mad: team.d
 
 ## スコアボード設定
 scoreboard players set @s[scores={Advancements_Story_enter_the_nether=0}] Advancements_Story_enter_the_nether 1

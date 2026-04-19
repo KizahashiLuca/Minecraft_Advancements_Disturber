@@ -104,19 +104,23 @@ execute if predicate mad:gamerule/match_mode/individual/ \\
 execute if predicate mad:gamerule/match_mode/team \\
   if score #mad_team_a ${ADV_OBJECTIVE} matches 0 \\
   as @s[predicate=mad:player/team/a] run \\
-  function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.a
+  function mad:system/game/advancement/${DIR}/${STEM}/team \\
+    with storage mad: team.a
 execute if predicate mad:gamerule/match_mode/team \\
   if score #mad_team_b ${ADV_OBJECTIVE} matches 0 \\
   as @s[predicate=mad:player/team/b] run \\
-  function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.b
+  function mad:system/game/advancement/${DIR}/${STEM}/team \\
+    with storage mad: team.b
 execute if predicate mad:gamerule/match_mode/team \\
   if score #mad_team_c ${ADV_OBJECTIVE} matches 0 \\
   as @s[predicate=mad:player/team/c] run \\
-  function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.c
+  function mad:system/game/advancement/${DIR}/${STEM}/team \\
+    with storage mad: team.c
 execute if predicate mad:gamerule/match_mode/team \\
   if score #mad_team_d ${ADV_OBJECTIVE} matches 0 \\
   as @s[predicate=mad:player/team/d] run \\
-  function mad:system/game/advancement/${DIR}/${STEM}/team with storage mad: team.d
+  function mad:system/game/advancement/${DIR}/${STEM}/team \\
+    with storage mad: team.d
 
 ## スコアボード設定
 scoreboard players set @s[scores={${ADV_OBJECTIVE}=0}] ${ADV_OBJECTIVE} 1
