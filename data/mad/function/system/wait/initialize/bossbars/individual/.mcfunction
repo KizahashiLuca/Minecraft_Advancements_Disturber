@@ -13,4 +13,5 @@
 execute store result storage mad: player.tmp int 1 run \
   scoreboard players get @s PlayerNumber
 #### プレイヤー番号をもとにボスバー設定
-function mad:system/wait/initialize/bossbars/individual/set_bossbar with storage mad: player
+function mad:system/wait/initialize/bossbars/individual/set_bossbar \
+  with storage mad: player

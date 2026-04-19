@@ -15,4 +15,5 @@ loot replace entity @s enderchest.0 loot mad:system/wait/player_head
 execute store result storage mad: player.tmp int 1 run \
   scoreboard players get @s PlayerNumber
 #### プレイヤー名を格納
-function mad:system/wait/initialize/player_name/storage with storage mad: player
+function mad:system/wait/initialize/player_name/storage \
+  with storage mad: player

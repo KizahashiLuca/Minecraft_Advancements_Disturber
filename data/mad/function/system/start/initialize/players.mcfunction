@@ -12,7 +12,9 @@
 gamemode adventure @a[predicate=mad:player/]
 
 ## ペットをキル
-execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
+execute as @e[type=!minecraft:player] \
+  if data entity @s Owner run \
+  kill @s
 
 ## インベントリ
 clear @a

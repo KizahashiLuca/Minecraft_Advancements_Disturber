@@ -12,4 +12,5 @@
 $execute store result score #mad Tmp$(axis) run \
   random value $(min)..$(max)
 $scoreboard players operation #mad Tmp$(axis) += #mad Pos$(axis)
-$return run scoreboard players get #mad Tmp$(axis)
+$return run \
+  scoreboard players get #mad Tmp$(axis)

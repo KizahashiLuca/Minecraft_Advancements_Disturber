@@ -38,7 +38,8 @@ execute if predicate mad:system/common/time/second/lt_zero \
 #### 着地判定を受けたプレイヤーは、
 #### プレイヤー名と同じタグを持つマーカーの位置に強制テレポート。
 execute as @a[predicate=mad:system/fall/detect_on_ground/on_ground] run \
-  function mad:system/fall/detect_on_ground/teleport with entity @s EnderItems[0].components.'minecraft:profile'
+  function mad:system/fall/detect_on_ground/teleport \
+    with entity @s EnderItems[0].components.'minecraft:profile'
 
 ## 全員着地後フェーズ変更
 #### 着地していないプレイヤーがゼロになったらゲーム開始

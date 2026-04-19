@@ -34,8 +34,11 @@ kill @e[type=minecraft:armor_stand,tag=mad_minecart_item]
 #### その他
 kill @e[type=minecraft:zombie_villager,nbt=!{ConversionTime:-1}]
 execute as @e[type=minecraft:allay] run \
-  data modify entity @s Brain.memories set value {}
+  data modify entity @s Brain.memories \
+    set value {}
 execute as @e[type=minecraft:allay] run \
-  data modify entity @s equipment set value {}
+  data modify entity @s equipment \
+    set value {}
 execute as @e[type=minecraft:allay] run \
-  data modify entity @s Inventory set value []
+  data modify entity @s Inventory \
+    set value []

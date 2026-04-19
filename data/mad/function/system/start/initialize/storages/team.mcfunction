@@ -9,7 +9,8 @@
 #####################################
 
 ## チーム用ストレージ初期化
-data modify storage mad: team.a set value \
+data modify storage mad: team.a \
+  set value \
   {\
     team: 'a',\
     text: '赤',\
@@ -17,7 +18,8 @@ data modify storage mad: team.a set value \
     uppercase: 'A',\
     limit: 0,\
   }
-data modify storage mad: team.b set value \
+data modify storage mad: team.b \
+  set value \
   {\
     team: 'b',\
     text: '青',\
@@ -25,7 +27,8 @@ data modify storage mad: team.b set value \
     uppercase: 'B',\
     limit: 0,\
   }
-data modify storage mad: team.c set value \
+data modify storage mad: team.c \
+  set value \
   {\
     team: 'c',\
     text: '黄',\
@@ -33,7 +36,8 @@ data modify storage mad: team.c set value \
     uppercase: 'C',\
     limit: 0,\
   }
-data modify storage mad: team.d set value \
+data modify storage mad: team.d \
+  set value \
   {\
     team: 'd',\
     text: '緑',\

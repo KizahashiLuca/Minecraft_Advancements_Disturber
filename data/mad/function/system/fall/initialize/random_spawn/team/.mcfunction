@@ -71,7 +71,11 @@ $execute store result storage mad: team.d.z int 1 run \
     }
 
 ## テレポート
-function mad:system/fall/initialize/random_spawn/team/teleport with storage mad: team.a
-function mad:system/fall/initialize/random_spawn/team/teleport with storage mad: team.b
-function mad:system/fall/initialize/random_spawn/team/teleport with storage mad: team.c
-function mad:system/fall/initialize/random_spawn/team/teleport with storage mad: team.d
+function mad:system/fall/initialize/random_spawn/team/teleport \
+  with storage mad: team.a
+function mad:system/fall/initialize/random_spawn/team/teleport \
+  with storage mad: team.b
+function mad:system/fall/initialize/random_spawn/team/teleport \
+  with storage mad: team.c
+function mad:system/fall/initialize/random_spawn/team/teleport \
+  with storage mad: team.d

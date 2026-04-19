@@ -23,7 +23,8 @@ $team join mad_team_$(team) @s
 $tag @s add mad_team_$(team)
 
 ## チーム変更メッセージ表示
-$function mad:message/setting/team_member/join_team with storage mad: team.$(team)
+$function mad:message/setting/team_member/join_team \
+  with storage mad: team.$(team)
 
 ## 頭防具変更
 $item replace entity @s armor.head with minecraft:$(color)_banner\

@@ -15,4 +15,5 @@ function mad:phase/setting/team_rules
 function mad:system/setting/scoreboards
 
 ## チーム戦ルール設定ダイアログ表示
-function mad:dialog/system/setting/team_rules with storage mad: rules
+function mad:dialog/system/setting/team_rules \
+  with storage mad: rules

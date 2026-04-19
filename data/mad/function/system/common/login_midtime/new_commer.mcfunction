@@ -14,7 +14,9 @@ tag @s add mad_spectator
 #### プレイヤーゲームモード
 gamemode spectator @s
 #### ペットをキル
-execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
+execute as @e[type=!minecraft:player] \
+  if data entity @s Owner run \
+  kill @s
 #### インベントリ
 clear @s
 #### 経験値

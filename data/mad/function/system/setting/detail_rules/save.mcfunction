@@ -9,7 +9,8 @@
 #####################################
 
 ## 設定値保存
-$data modify storage mad: rules merge value \
+$data modify storage mad: rules \
+  merge value \
   {\
     is_team: $(is_team),\
     initial_time: $(initial_time),\

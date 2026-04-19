@@ -12,5 +12,6 @@
 bossbar set minecraft:bossbar color yellow
 
 ## サウンドイベント
-execute as @a at @s run \
+execute as @a \
+  at @s run \
   playsound minecraft:item.trident.return master @s ~ ~ ~ 1 1 1

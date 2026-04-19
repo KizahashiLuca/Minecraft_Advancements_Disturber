@@ -13,4 +13,5 @@
 execute store result storage mad: player.tmp int 1 run \
   scoreboard players get @s PlayerNumber
 #### プレイヤー番号をそのままタグ付与
-function mad:system/game/initialize/tags/add_tag with storage mad: player
+function mad:system/game/initialize/tags/add_tag \
+  with storage mad: player

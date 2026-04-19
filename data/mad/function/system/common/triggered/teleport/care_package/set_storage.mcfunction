@@ -9,6 +9,9 @@
 #####################################
 
 ## テレポート先座標のストレージ格納
-$data modify storage mad: teleport.pos.x set from storage mad: care_package.$(number).x
-$data modify storage mad: teleport.pos.y set from storage mad: care_package.$(number).y
-$data modify storage mad: teleport.pos.z set from storage mad: care_package.$(number).z
+$data modify storage mad: teleport.pos.x \
+  set from storage mad: care_package.$(number).x
+$data modify storage mad: teleport.pos.y \
+  set from storage mad: care_package.$(number).y
+$data modify storage mad: teleport.pos.z \
+  set from storage mad: care_package.$(number).z

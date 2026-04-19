@@ -17,7 +17,8 @@ execute if predicate mad:phase/exit run \
   function mad:system/end/exit/
 #### ゲームフェーズ
 execute if predicate mad:phase/game/ run \
-  function mad:system/game/ with storage mad: rules.match_mode
+  function mad:system/game/ \
+    with storage mad: rules.match_mode
 execute if predicate mad:phase/game/ run \
   function mad:system/item/
 #### 落下フェーズ

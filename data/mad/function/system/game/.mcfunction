@@ -20,7 +20,8 @@ execute as @a[predicate=mad:system/common/triggered/teleport/] run \
 function mad:system/common/position/
 
 ## タイマー
-function mad:system/game/timer/tick with storage mad: rules.match_mode
+function mad:system/game/timer/tick \
+  with storage mad: rules.match_mode
 
 ## PvP解禁タイマー
 execute if predicate mad:system/game/timer/pvp/tick/eq_zero run \
@@ -39,7 +40,8 @@ function mad:system/game/advancement/execute/
 
 ## デス検出
 execute as @a[predicate=mad:player/attacked/] run function mad:system/game/detect_attack/
-execute as @a[predicate=mad:player/dying/] run function mad:system/game/detect_dying/
+execute as @a[predicate=mad:player/dying/] run \
+  function mad:system/game/detect_dying/
 
 ## チーム戦での生存検出
 execute if predicate mad:gamerule/match_mode/team run \

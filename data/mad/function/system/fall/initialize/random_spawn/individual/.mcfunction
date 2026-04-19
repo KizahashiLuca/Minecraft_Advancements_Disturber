@@ -25,4 +25,5 @@ $execute store result storage mad: individual.z int 1 run \
     }
 
 ## テレポート
-function mad:system/fall/initialize/random_spawn/individual/teleport with storage mad: individual
+function mad:system/fall/initialize/random_spawn/individual/teleport \
+  with storage mad: individual

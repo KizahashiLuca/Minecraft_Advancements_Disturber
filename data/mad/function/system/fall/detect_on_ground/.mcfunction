@@ -20,4 +20,5 @@ scoreboard players set @s[predicate=mad:system/fall/detect_on_ground/is_riding] 
 
 ## テレポート先召喚
 execute as @s[predicate=mad:system/fall/detect_on_ground/on_ground] run \
-  function mad:system/fall/detect_on_ground/summon_marker with entity @s EnderItems[0].components.'minecraft:profile'
+  function mad:system/fall/detect_on_ground/summon_marker \
+    with entity @s EnderItems[0].components.'minecraft:profile'

@@ -9,7 +9,8 @@
 #####################################
 
 ## ゲームルール - チーム戦
-data modify storage mad: rules merge value \
+data modify storage mad: rules \
+  merge value \
   {\
     is_team: 1,\
     care_package_interval: 300,\

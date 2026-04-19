@@ -23,7 +23,8 @@ function mad:system/game/initialize/sidebars
 #### ゲームルール
 function mad:system/game/initialize/gamerules/
 #### ワールド
-function mad:system/game/initialize/world with storage mad: rules
+function mad:system/game/initialize/world \
+  with storage mad: rules
 #### ボスバー
 function mad:system/game/initialize/bossbars/
 ## タグ

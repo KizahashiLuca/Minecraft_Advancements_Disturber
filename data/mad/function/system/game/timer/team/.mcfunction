@@ -13,7 +13,8 @@ $scoreboard players remove #mad_team_$(team) Second 1
 
 ## タイムアップ判定
 $execute if score #mad_team_$(team) Second matches 0 run \
-  function mad:system/game/timer/team/time_up with storage mad: team.$(team)
+  function mad:system/game/timer/team/time_up \
+    with storage mad: team.$(team)
 
 ## ボスバー設定
 $execute store result bossbar minecraft:mad_team_$(team) max run \

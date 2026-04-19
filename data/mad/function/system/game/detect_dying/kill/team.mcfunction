@@ -10,6 +10,10 @@
 
 ## ストレージ格納
 #### 犠牲者
-$execute as @s[predicate=mad:player/dying/$(victim_team)] run function mad:system/game/detect_dying/kill/storages/victim/team with storage mad: team.$(victim_team)
+$execute as @s[predicate=mad:player/dying/$(victim_team)] run \
+  function mad:system/game/detect_dying/kill/storages/victim/team \
+    with storage mad: team.$(victim_team)
 #### 攻撃者
-$execute as @p[tag=MAD_Player$(killer_number)] run function mad:system/game/detect_dying/kill/storages/killer/team with storage mad: team.$(killer_team)
+$execute as @p[tag=MAD_Player$(killer_number)] run \
+  function mad:system/game/detect_dying/kill/storages/killer/team \
+    with storage mad: team.$(killer_team)

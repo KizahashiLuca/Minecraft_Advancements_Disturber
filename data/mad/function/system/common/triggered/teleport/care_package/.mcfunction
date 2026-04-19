@@ -14,12 +14,15 @@
 execute store result storage mad: teleport.care_package.number int 0.0001 run \
   scoreboard players get @s TeleportTrigger
 #### テレポート先の支援物資の座標をストレージに格納
-function mad:system/common/triggered/teleport/care_package/set_storage with storage mad: teleport.care_package
+function mad:system/common/triggered/teleport/care_package/set_storage \
+  with storage mad: teleport.care_package
 #### テレポート
-function mad:system/common/triggered/teleport/care_package/teleport with storage mad: teleport.pos
+function mad:system/common/triggered/teleport/care_package/teleport \
+  with storage mad: teleport.pos
 
 ## メッセージ
-function mad:message/common/triggered/teleport/care_package with storage mad: teleport.care_package
+function mad:message/common/triggered/teleport/care_package \
+  with storage mad: teleport.care_package
 
 ## ストレージ削除
 data remove storage mad: teleport

@@ -72,10 +72,14 @@ $execute store result storage mad: team.d.z int 1 run \
 
 ## テレポート
 execute as @s[predicate=mad:player/team/a] run \
-  function mad:system/game/respawn/teleport with storage mad: team.a
+  function mad:system/game/respawn/teleport \
+    with storage mad: team.a
 execute as @s[predicate=mad:player/team/b] run \
-  function mad:system/game/respawn/teleport with storage mad: team.b
+  function mad:system/game/respawn/teleport \
+    with storage mad: team.b
 execute as @s[predicate=mad:player/team/c] run \
-  function mad:system/game/respawn/teleport with storage mad: team.c
+  function mad:system/game/respawn/teleport \
+    with storage mad: team.c
 execute as @s[predicate=mad:player/team/d] run \
-  function mad:system/game/respawn/teleport with storage mad: team.d
+  function mad:system/game/respawn/teleport \
+    with storage mad: team.d

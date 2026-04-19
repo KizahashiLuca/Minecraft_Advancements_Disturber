@@ -26,7 +26,8 @@ execute if predicate mad:system/wait/time/gamerule/world_border run \
   function mad:system/wait/display/world_border
 #### 難易度
 execute if predicate mad:system/wait/time/gamerule/difficulty run \
-  function mad:system/wait/display/difficulty with storage mad: rules
+  function mad:system/wait/display/difficulty \
+    with storage mad: rules
 #### 天気サイクル
 execute if predicate mad:system/wait/time/gamerule/advance_weather run \
   function mad:system/wait/display/advance_weather
@@ -52,10 +53,16 @@ execute if predicate mad:system/wait/time/eq_half run \
   function mad:message/wait/title/15
 #### 黄ゲージ 4-10秒前
 execute if predicate mad:system/common/time/second/from_4_to_10 run \
-  function mad:message/wait/title/ {color: 'yellow'}
+  function mad:message/wait/title/ \
+    {\
+      color: 'yellow',\
+    }
 #### 赤ゲージ 1-3秒前
 execute if predicate mad:system/common/time/second/from_1_to_3 run \
-  function mad:message/wait/title/ {color: 'red'}
+  function mad:message/wait/title/ \
+    {\
+      color: 'red',\
+    }
 #### ゲージ 0秒
 execute if predicate mad:system/common/time/second/eq_zero run \
   function mad:message/wait/title/0

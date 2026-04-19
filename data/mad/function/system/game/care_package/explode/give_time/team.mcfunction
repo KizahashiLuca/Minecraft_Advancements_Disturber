@@ -19,7 +19,8 @@ $scoreboard players operation #mad_team_$(team) TimeLimit += #mad RandomizerResu
 $scoreboard players add #mad_team_$(team) GetCarePackageCount 1
 
 ## ボーナス取得メッセージ表示
-$function mad:message/game/care_package/give_time/team with storage mad: team.$(team)
+$function mad:message/game/care_package/give_time/team \
+  with storage mad: team.$(team)
 
 ## 進捗付与
 # advancement grant @s only mad:original/open_care_package

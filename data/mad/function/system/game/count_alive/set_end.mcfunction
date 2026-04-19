@@ -10,7 +10,8 @@
 
 ## スコアボード設定
 #### 死亡フェーズ
-$function mad:phase/dead/ with storage mad: team.$(team)
+$function mad:phase/dead/ \
+  with storage mad: team.$(team)
 #### タイマー - 残り時間(秒数)
 $scoreboard players set #mad_team_$(team) Second 0
 #### タイマー - 残り時間(ティック数)

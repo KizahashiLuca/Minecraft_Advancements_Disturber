@@ -22,4 +22,5 @@ scoreboard players operation @s RandomizerResult = #mad RandomizerSeed
 scoreboard players operation @s RandomizerResult %= #mad 100
 
 ## 乱数生成カウントが1以上のプレイヤーは再度乱数生成を行う
-execute as @s[scores={RandomizerCount=1..}] run function mad:system/common/randomizer/randomize
+execute as @s[scores={RandomizerCount=1..}] run \
+  function mad:system/common/randomizer/randomize

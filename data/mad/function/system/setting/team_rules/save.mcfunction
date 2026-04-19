@@ -9,7 +9,8 @@
 #####################################
 
 ## 設定値保存
-$data modify storage mad: rules merge value \
+$data modify storage mad: rules \
+  merge value \
   {\
     set_team_manual: $(set_team_manual),\
     number_of_teams: $(number_of_teams),\

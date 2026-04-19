@@ -11,19 +11,19 @@
 ## 終了用メッセージ表示
 execute if predicate mad:gamerule/match_mode/individual/solo run \
   function mad:message/game/exit/ \
-  {\
-    text: 'プレイヤーが死亡',\
-  }
+    {\
+      text: 'プレイヤーが死亡',\
+    }
 execute if predicate mad:gamerule/match_mode/individual/not_solo run \
   function mad:message/game/exit/ \
-  {\
-    text: '勝者が決定',\
-  }
+    {\
+      text: '勝者が決定',\
+    }
 execute if predicate mad:gamerule/match_mode/team run \
   function mad:message/game/exit/ \
-  {\
-    text: '勝者が決定',\
-  }
+    {\
+      text: '勝者が決定',\
+    }
 
 ## ゲーム全体終了トリガーをセット
 #### 以下の両方のフラグが経たないとゲームは終了しない

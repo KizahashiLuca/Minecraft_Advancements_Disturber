@@ -14,4 +14,7 @@ execute if predicate mad:phase/in_game run \
 
 ## ゲームが実行されていない場合 新しいゲームを準備
 $execute if predicate mad:phase/not_in_game run \
-  function mad:system/start/initialize/ {type:'$(type)'}
+  function mad:system/start/initialize/ \
+    {\
+      type: '$(type)',\
+    }

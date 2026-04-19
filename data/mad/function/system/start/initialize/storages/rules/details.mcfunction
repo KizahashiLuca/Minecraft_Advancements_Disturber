@@ -11,7 +11,8 @@
 ## ゲームルール - 詳細設定用
 #### 1人
 execute if predicate mad:gamerule/num_of_players/solo run \
-  data modify storage mad: rules merge value \
+  data modify storage mad: rules \
+    merge value \
     {\
       is_team: 0,\
       care_package_interval: 100,\
@@ -20,7 +21,8 @@ execute if predicate mad:gamerule/num_of_players/solo run \
     }
 #### 複数人
 execute if predicate mad:gamerule/num_of_players/not_solo run \
-  data modify storage mad: rules merge value \
+  data modify storage mad: rules \
+    merge value \
     {\
       is_team: 1,\
       care_package_interval: 300,\

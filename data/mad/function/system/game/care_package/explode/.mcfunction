@@ -17,16 +17,20 @@ execute if predicate mad:gamerule/match_mode/individual/ \
   function mad:system/game/care_package/explode/give_time/individual
 execute if predicate mad:gamerule/match_mode/team \
   as @a[predicate=mad:player/give_time/a] run \
-  function mad:system/game/care_package/explode/give_time/team with storage mad: team.a
+  function mad:system/game/care_package/explode/give_time/team \
+    with storage mad: team.a
 execute if predicate mad:gamerule/match_mode/team \
   as @a[predicate=mad:player/give_time/b] run \
-  function mad:system/game/care_package/explode/give_time/team with storage mad: team.b
+  function mad:system/game/care_package/explode/give_time/team \
+    with storage mad: team.b
 execute if predicate mad:gamerule/match_mode/team \
   as @a[predicate=mad:player/give_time/c] run \
-  function mad:system/game/care_package/explode/give_time/team with storage mad: team.c
+  function mad:system/game/care_package/explode/give_time/team \
+    with storage mad: team.c
 execute if predicate mad:gamerule/match_mode/team \
   as @a[predicate=mad:player/give_time/d] run \
-  function mad:system/game/care_package/explode/give_time/team with storage mad: team.d
+  function mad:system/game/care_package/explode/give_time/team \
+    with storage mad: team.d
 
 ## プレイヤーからタグを削除
 tag @a remove mad_give_time_randomly
@@ -45,4 +49,5 @@ particle minecraft:explosion ~ ~ ~ 1 1 1 0.5 10 force @a
 kill @s
 
 ## 次期支援物資場所決定
-function mad:system/game/care_package/explode/next_position with storage mad: care_package.drop
+function mad:system/game/care_package/explode/next_position \
+  with storage mad: care_package.drop

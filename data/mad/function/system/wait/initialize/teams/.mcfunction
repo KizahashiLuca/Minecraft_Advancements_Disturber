@@ -17,10 +17,15 @@ team modify mad_player nametagVisibility never
 team modify mad_player seeFriendlyInvisibles false
 team modify mad_player deathMessageVisibility never
 #### チーム戦用チーム
-function mad:system/wait/initialize/teams/each_team with storage mad: team.a
-function mad:system/wait/initialize/teams/each_team with storage mad: team.b
-function mad:system/wait/initialize/teams/each_team with storage mad: team.c
-function mad:system/wait/initialize/teams/each_team with storage mad: team.d
+function mad:system/wait/initialize/teams/each_team \
+  with storage mad: team.a
+function mad:system/wait/initialize/teams/each_team \
+  with storage mad: team.b
+function mad:system/wait/initialize/teams/each_team \
+  with storage mad: team.c
+function mad:system/wait/initialize/teams/each_team \
+  with storage mad: team.d
 
 ## チームルール
-function mad:system/wait/initialize/teams/team_rules with storage mad: rules
+function mad:system/wait/initialize/teams/team_rules \
+  with storage mad: rules

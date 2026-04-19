@@ -10,6 +10,8 @@
 
 ## ストレージ格納
 #### 犠牲者
-function mad:system/game/detect_dying/kill/storages/victim/individual with storage mad: death
+function mad:system/game/detect_dying/kill/storages/victim/individual \
+  with storage mad: death
 #### 攻撃者
-function mad:system/game/detect_dying/kill/storages/killer/individual with storage mad: death
+function mad:system/game/detect_dying/kill/storages/killer/individual \
+  with storage mad: death

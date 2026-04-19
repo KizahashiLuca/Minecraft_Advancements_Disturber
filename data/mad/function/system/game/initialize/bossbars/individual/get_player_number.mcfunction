@@ -9,4 +9,5 @@
 #####################################
 
 ## プレイヤー番号とプレイヤー名をボスバー表示用ストレージに格納
-$data modify storage mad: player.display set from storage mad: player.$(tmp)
+$data modify storage mad: player.display \
+  set from storage mad: player.$(tmp)

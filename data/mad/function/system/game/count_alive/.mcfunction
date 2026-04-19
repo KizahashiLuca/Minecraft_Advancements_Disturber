@@ -11,7 +11,8 @@
 ## スペクテイターモードへ変更
 $execute as @a[predicate=mad:player/dead/$(team)] \
   at @s run \
-  function mad:system/game/count_alive/spectate with storage mad: team.$(team)
+  function mad:system/game/count_alive/spectate \
+    with storage mad: team.$(team)
 
 ## チーム終了を検出
 #### もし同チームの生存しているプレイヤーが居なければ、
@@ -19,4 +20,5 @@ $execute as @a[predicate=mad:player/dead/$(team)] \
 $execute unless entity @p[predicate=mad:player/alive/$(team)] \
   unless entity @p[predicate=mad:player/dying/$(team)] \
   if predicate mad:phase/game/$(team) run \
-  function mad:system/game/count_alive/set_end with storage mad: team.$(team)
+  function mad:system/game/count_alive/set_end \
+    with storage mad: team.$(team)

@@ -9,4 +9,5 @@
 #####################################
 
 ## ストレージ格納
-data modify storage mad: death.message set value 'たため、 %s に %s%s 付与され'
+data modify storage mad: death.message \
+  set value 'たため、 %s に %s%s 付与され'

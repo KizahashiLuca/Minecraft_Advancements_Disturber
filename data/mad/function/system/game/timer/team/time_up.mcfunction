@@ -9,7 +9,8 @@
 #####################################
 
 ## タイトル表示
-$function mad:message/game/time_up/team with storage mad: team.$(team)
+$function mad:message/game/time_up/team \
+  with storage mad: team.$(team)
 
 ## 生存者のキル
 $kill @a[predicate=mad:player/alive/$(team)]

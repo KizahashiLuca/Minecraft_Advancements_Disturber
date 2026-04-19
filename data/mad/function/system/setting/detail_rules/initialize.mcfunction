@@ -15,4 +15,5 @@ function mad:phase/setting/detail_rules
 function mad:system/setting/scoreboards
 
 ## 詳細設定ダイアログ表示
-function mad:dialog/system/setting/detail_rules with storage mad: rules
+function mad:dialog/system/setting/detail_rules \
+  with storage mad: rules

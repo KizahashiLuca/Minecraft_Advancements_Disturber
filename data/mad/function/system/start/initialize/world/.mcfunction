@@ -54,11 +54,14 @@ kill @e[type=minecraft:armor_stand,tag=mad_minecart_item]
 #### その他
 kill @e[type=minecraft:zombie_villager,nbt=!{ConversionTime:-1}]
 execute as @e[type=minecraft:allay] run \
-  data modify entity @s Brain.memories set value {}
+  data modify entity @s Brain.memories \
+    set value {}
 execute as @e[type=minecraft:allay] run \
-  data modify entity @s equipment set value {}
+  data modify entity @s equipment \
+    set value {}
 execute as @e[type=minecraft:allay] run \
-  data modify entity @s Inventory set value []
+  data modify entity @s Inventory \
+    set value []
 
 ## 強制ロード領域
 #### 常時読み込みチャンクの削除
@@ -71,7 +74,14 @@ execute at @p[predicate=mad:player/host] run \
 #### ホストの位置にワールドスポーンを設定
 execute at @p[predicate=mad:player/host] \
   align xyz run \
-  summon minecraft:marker ~0.5 ~ ~0.5 {Tags:['mad_world_spawn'],NoGravity:1b,Invulnerable:1b}
+  summon minecraft:marker ~0.5 ~ ~0.5 \
+    {\
+      Tags: [\
+        'mad_world_spawn',\
+      ],\
+      NoGravity:1b,\
+      Invulnerable:1b,\
+    }
 #### ワールドスポーンの座標をスコアボードに格納
 execute store result score #mad PosX run \
   data get entity @e[predicate=mad:marker/world_spawn,limit=1] Pos[0] 1.0
@@ -80,7 +90,8 @@ execute store result score #mad PosY run \
 execute store result score #mad PosZ run \
   data get entity @e[predicate=mad:marker/world_spawn,limit=1] Pos[2] 1.0
 #### オーバーワールドのワールドスポーンをストレージ格納
-data modify storage mad: world_spawn.overworld.dimension set value 'overworld'
+data modify storage mad: world_spawn.overworld.dimension \
+  set value 'overworld'
 execute store result storage mad: world_spawn.overworld.x int 1 run \
   scoreboard players get #mad PosX
 execute store result storage mad: world_spawn.overworld.y int 1 run \
@@ -88,9 +99,11 @@ execute store result storage mad: world_spawn.overworld.y int 1 run \
 execute store result storage mad: world_spawn.overworld.z int 1 run \
   scoreboard players get #mad PosZ
 execute in minecraft:overworld run \
-  function mad:system/start/initialize/world/world_border with storage mad: world_spawn.overworld
+  function mad:system/start/initialize/world/world_border \
+    with storage mad: world_spawn.overworld
 #### ネザーのワールドスポーンをストレージ格納
-data modify storage mad: world_spawn.the_nether.dimension set value 'the_nether'
+data modify storage mad: world_spawn.the_nether.dimension \
+  set value 'the_nether'
 execute store result storage mad: world_spawn.the_nether.x int 0.125 run \
   scoreboard players get #mad PosX
 execute store result storage mad: world_spawn.the_nether.y int 1 run \
@@ -98,9 +111,11 @@ execute store result storage mad: world_spawn.the_nether.y int 1 run \
 execute store result storage mad: world_spawn.the_nether.z int 0.125 run \
   scoreboard players get #mad PosZ
 execute in minecraft:the_nether run \
-  function mad:system/start/initialize/world/world_border with storage mad: world_spawn.the_nether
+  function mad:system/start/initialize/world/world_border \
+    with storage mad: world_spawn.the_nether
 #### エンドのワールドスポーンをストレージ格納
-data modify storage mad: world_spawn.the_end.dimension set value 'the_end'
+data modify storage mad: world_spawn.the_end.dimension \
+  set value 'the_end'
 execute store result storage mad: world_spawn.the_end.x int 1 run \
   scoreboard players get #mad PosX
 execute store result storage mad: world_spawn.the_end.y int 1 run \
@@ -108,22 +123,38 @@ execute store result storage mad: world_spawn.the_end.y int 1 run \
 execute store result storage mad: world_spawn.the_end.z int 1 run \
   scoreboard players get #mad PosZ
 execute in minecraft:the_end run \
-  function mad:system/start/initialize/world/world_border with storage mad: world_spawn.the_end
+  function mad:system/start/initialize/world/world_border \
+    with storage mad: world_spawn.the_end
 
 ## ポジション表示用
 #### 方角の表示をストレージに格納
-data modify storage mad: position.0 set value '南'
-data modify storage mad: position.1 set value '南西'
-data modify storage mad: position.2 set value '西'
-data modify storage mad: position.3 set value '北西'
-data modify storage mad: position.4 set value '北'
-data modify storage mad: position.5 set value '北東'
-data modify storage mad: position.6 set value '東'
-data modify storage mad: position.7 set value '南東'
+data modify storage mad: position.0 \
+  set value '南'
+data modify storage mad: position.1 \
+  set value '南西'
+data modify storage mad: position.2 \
+  set value '西'
+data modify storage mad: position.3 \
+  set value '北西'
+data modify storage mad: position.4 \
+  set value '北'
+data modify storage mad: position.5 \
+  set value '北東'
+data modify storage mad: position.6 \
+  set value '東'
+data modify storage mad: position.7 \
+  set value '南東'
 
 ## リスポーンビーコン設置
 execute at @e[predicate=mad:marker/world_spawn,limit=1] run \
-  summon minecraft:marker ~ ~ ~ {Tags:['mad_respawn_beacon'],NoGravity:1b,Invulnerable:1b}
+  summon minecraft:marker ~ ~ ~ \
+    {\
+      Tags: [\
+        'mad_respawn_beacon',\
+      ],\
+      NoGravity: 1b,\
+      Invulnerable: 1b,\
+    }
 execute store result storage mad: respawn_beacon.x int 1 run \
   data get entity @e[predicate=mad:marker/respawn_beacon,limit=1] Pos[0]
 execute store result storage mad: respawn_beacon.y int 1 run \

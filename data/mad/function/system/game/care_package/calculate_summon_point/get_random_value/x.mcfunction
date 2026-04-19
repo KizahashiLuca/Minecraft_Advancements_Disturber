@@ -9,6 +9,8 @@
 #####################################
 
 ## 乱数値出力
-$execute store result score #mad TmpX run random value $(x2)..$(x4)
+$execute store result score #mad TmpX run \
+  random value $(x2)..$(x4)
 scoreboard players operation #mad TmpX += #mad PosX
-return run scoreboard players get #mad TmpX
+return run \
+  scoreboard players get #mad TmpX

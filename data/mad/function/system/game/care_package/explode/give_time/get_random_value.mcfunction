@@ -9,4 +9,5 @@
 #####################################
 
 ## 乱数値出力
-return run random value 0..100
+return run \
+  random value 0..100

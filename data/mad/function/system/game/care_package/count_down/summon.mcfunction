@@ -24,10 +24,13 @@ $summon minecraft:chest_minecart $(x) $(y) $(z) \
   }
 
 ## 投下時メッセージ表示
-$function mad:message/game/care_package/dropped with storage mad: care_package.$(number)
+$function mad:message/game/care_package/dropped \
+  with storage mad: care_package.$(number)
 
 ## 投下時サイドバー設定
-$function mad:system/game/care_package/count_down/sidebar with storage mad: care_package.$(number)
+$function mad:system/game/care_package/count_down/sidebar \
+  with storage mad: care_package.$(number)
 
 ## 投下済みフラグを立てる
-$data modify storage mad: care_package.$(number).flag set value 1
+$data modify storage mad: care_package.$(number).flag \
+  set value 1

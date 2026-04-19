@@ -9,7 +9,8 @@
 #####################################
 
 ## ゲームルール - ソロ戦
-data modify storage mad: rules merge value \
+data modify storage mad: rules \
+  merge value \
   {\
     is_team: 0,\
     care_package_interval: 100,\

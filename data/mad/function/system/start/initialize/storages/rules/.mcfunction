@@ -9,7 +9,8 @@
 #####################################
 
 ## ゲームルール
-data modify storage mad: rules set value \
+data modify storage mad: rules \
+  set value \
   {\
     is_team: 1,\
     initial_time: 300,\

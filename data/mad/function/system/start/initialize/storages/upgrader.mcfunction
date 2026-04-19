@@ -9,7 +9,8 @@
 #####################################
 
 ## アップグレードキット用 - 防具
-data modify storage mad: item.armor_upgrader.head set value \
+data modify storage mad: item.armor_upgrader.head \
+  set value \
   {\
     'minecraft:air': {\
       id: 'leather_helmet',\
@@ -59,7 +60,8 @@ data modify storage mad: item.armor_upgrader.head set value \
   }
 
 ## アップグレードキット用 - ツール/武器
-data modify storage mad: item.tool_upgrader set value \
+data modify storage mad: item.tool_upgrader \
+  set value \
   {\
     'minecraft:wooden_axe': {\
       id: 'stone_axe'\

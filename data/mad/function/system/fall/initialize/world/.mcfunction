@@ -43,11 +43,14 @@ kill @e[type=minecraft:armor_stand,tag=mad_minecart_item]
 #### その他
 kill @e[type=minecraft:zombie_villager,nbt=!{ConversionTime:-1}]
 execute as @e[type=minecraft:allay] run \
-  data modify entity @s Brain.memories set value {}
+  data modify entity @s Brain.memories \
+    set value {}
 execute as @e[type=minecraft:allay] run \
-  data modify entity @s equipment set value {}
+  data modify entity @s equipment \
+    set value {}
 execute as @e[type=minecraft:allay] run \
-  data modify entity @s Inventory set value []
+  data modify entity @s Inventory \
+    set value []
 
 ## ワールドスポーン設定
 execute at @e[predicate=mad:marker/world_spawn,limit=1] run \
@@ -56,10 +59,13 @@ execute at @e[predicate=mad:marker/world_spawn,limit=1] run \
 ## ワールド範囲設定
 #### オーバーワールド
 execute in minecraft:overworld run \
-  function mad:system/fall/initialize/world/world_border with storage mad: world_spawn.overworld
+  function mad:system/fall/initialize/world/world_border \
+    with storage mad: world_spawn.overworld
 #### ネザー
 execute in minecraft:the_nether run \
-  function mad:system/fall/initialize/world/world_border with storage mad: world_spawn.the_nether
+  function mad:system/fall/initialize/world/world_border \
+    with storage mad: world_spawn.the_nether
 #### エンド
 execute in minecraft:the_end run \
-  function mad:system/fall/initialize/world/world_border with storage mad: world_spawn.the_end
+  function mad:system/fall/initialize/world/world_border \
+    with storage mad: world_spawn.the_end

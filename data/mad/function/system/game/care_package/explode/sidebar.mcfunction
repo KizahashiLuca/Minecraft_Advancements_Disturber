@@ -16,4 +16,5 @@ scoreboard players operation #mad TmpZ -= #mad PosZ
 
 ## 投下時にサイドバーの表示を変更
 #### ポジション
-$function mad:message/game/care_package/sidebar/position with storage mad: care_package.$(number)
+$function mad:message/game/care_package/sidebar/position \
+  with storage mad: care_package.$(number)

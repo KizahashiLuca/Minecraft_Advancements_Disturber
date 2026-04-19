@@ -9,4 +9,5 @@
 #####################################
 
 ## 設定値保存
-$data modify storage mad: rules.difficulty_color set from storage mad: rules.difficulty_color_list.$(difficulty)
+$data modify storage mad: rules.difficulty_color \
+  set from storage mad: rules.difficulty_color_list.$(difficulty)

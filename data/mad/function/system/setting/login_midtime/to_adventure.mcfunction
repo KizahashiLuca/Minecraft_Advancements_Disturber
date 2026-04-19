@@ -16,7 +16,9 @@ tag @s add mad_indie_player
 #### プレイヤーゲームモード
 gamemode adventure @s
 #### ペットをキル
-execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s
+execute as @e[type=!minecraft:player] \
+  if data entity @s Owner run \
+  kill @s
 #### インベントリ
 clear @s
 #### 経験値
