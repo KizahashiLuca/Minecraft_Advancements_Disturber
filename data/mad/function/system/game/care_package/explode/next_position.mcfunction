@@ -8,12 +8,18 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 次期支援物資場所決定
-$function mad:system/game/care_package/calculate_summon_point/set_storage {number:'$(number)'}
+## 召喚地点決定
+$function mad:system/game/care_package/calculate_summon_point/set_storage \
+  {\
+    number: '$(number)',\
+  }
 
-## メッセージ表示
-$function mad:message/game/care_package/before_drop/ with storage mad: care_package.$(number)
+## 投下地点サイドバー設定
+$function mad:system/game/care_package/explode/sidebar with storage mad: care_package.$(number)
+
+## 投下地点メッセージ表示
+$function mad:message/game/care_package/announcement with storage mad: care_package.$(number)
 
 ## サイドバー設定
-$function mad:message/game/care_package/before_drop/sidebar/time with storage mad: care_package.$(number)
-$function mad:message/game/care_package/before_drop/sidebar/position with storage mad: care_package.$(number)
+$function mad:message/game/care_package/sidebar/time with storage mad: care_package.$(number)
+$function mad:message/game/care_package/sidebar/position with storage mad: care_package.$(number)

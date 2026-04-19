@@ -22,15 +22,17 @@ function mad:system/common/position/
 ## タイマー
 function mad:system/game/timer/tick with storage mad: rules.match_mode
 
-## PvPカウント
+## PvP解禁タイマー
 execute if predicate mad:system/game/timer/pvp/tick/eq_zero run \
   function mad:system/game/timer/pvp/
 
 ## 支援物資
-#### カウント
-execute if predicate mad:system/game/timer/care_package/tick/eq_zero run function mad:system/game/care_package/count_down/
-#### 取得確認
-execute as @e[predicate=mad:care_package/] run function mad:system/game/care_package/
+#### 投下タイマー
+execute if predicate mad:system/common/time/eq_zero run \
+  function mad:system/game/care_package/count_down/
+#### 投下済みの支援物資の処理
+execute as @e[predicate=mad:care_package/] run \
+  function mad:system/game/care_package/
 
 ## 進捗用スコアボード設定
 function mad:system/game/advancement/execute/

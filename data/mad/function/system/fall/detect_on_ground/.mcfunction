@@ -13,9 +13,9 @@
 #### 普通に着地
 execute store result score @s OnGround run \
   data get entity @s OnGround 2.0
-#### 着水/着溶岩
+#### 水面/溶岩面/水流/溶岩流に降着
 scoreboard players set @s[predicate=mad:system/fall/detect_on_ground/is_in_fluids] OnGround 2
-#### 着水/着溶岩
+#### エンティティに乗った
 scoreboard players set @s[predicate=mad:system/fall/detect_on_ground/is_riding] OnGround 2
 
 ## テレポート先召喚

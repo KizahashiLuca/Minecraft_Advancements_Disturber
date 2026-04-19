@@ -8,7 +8,7 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 召喚地点算出
+## 召喚地点決定
 execute if predicate mad:gamerule/number_of_care_packages/ge_1 run \
   function mad:system/game/care_package/calculate_summon_point/set_storage \
     {\

@@ -9,4 +9,30 @@
 #####################################
 
 ## メッセージ表示
-$tellraw @a[predicate=mad:player/team/$(team)] ['',{translate:'[支援物資]  %s に %s%s のボーナスタイムが付与されました。',with:[{text:'$(text)チーム',color:'$(color)',bold:true},{score:{name:'#mad',objective:'RandomizerResult'},color:'green',bold:true},{text:'秒',color:'green',bold:true}],color:'green'}]
+$tellraw @a[predicate=mad:player/team/$(team)] [\
+  '',\
+  {\
+    translate: '[支援物資]  %s に %s%s のボーナスタイムが付与されました。',\
+    with: [\
+      {\
+        translate: '$(text)チーム',\
+        color: '$(color)',\
+        bold: true,\
+      },\
+      {\
+        score: {\
+          name: '#mad',\
+          objective: 'RandomizerResult',\
+        },\
+        color: 'green',\
+        bold: true,\
+      },\
+      {\
+        translate: '秒',\
+        color: 'green',\
+        bold: true,\
+      },\
+    ],\
+    color: 'green',\
+  },\
+]

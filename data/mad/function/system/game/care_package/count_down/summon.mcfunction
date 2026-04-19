@@ -9,13 +9,25 @@
 #####################################
 
 ## 支援物資召喚
-$summon minecraft:chest_minecart $(x) $(y) $(z) {Invulnerable:1b,Tags:['MAD_CarePackage','MAD_CarePackage_$(number)'],UUID:[I;$(number),$(number),$(number),$(number)],LootTable:'mad:care_package/$(type)_$(with)_end'}
+#### 投下場所、UUID、ルートテーブルを指定して召喚
+$summon minecraft:chest_minecart $(x) $(y) $(z) \
+  {\
+    Invulnerable: 1b,\
+    Tags: [\
+      'MAD_CarePackage',\
+      'MAD_CarePackage_$(number)'\
+    ],\
+    UUID: [\
+      I; $(number), $(number), $(number), $(number),\
+    ],\
+    LootTable: 'mad:care_package/$(type)_$(with)_end',\
+  }
 
-## メッセージ表示
-$function mad:message/game/care_package/after_drop/ with storage mad: care_package.$(number)
+## 投下時メッセージ表示
+$function mad:message/game/care_package/dropped with storage mad: care_package.$(number)
 
-## サイドバー設定
-$function mad:message/game/care_package/after_drop/sidebar/ with storage mad: care_package.$(number)
+## 投下時サイドバー設定
+$function mad:system/game/care_package/count_down/sidebar with storage mad: care_package.$(number)
 
-## ストレージ格納
+## 投下済みフラグを立てる
 $data modify storage mad: care_package.$(number).flag set value 1
