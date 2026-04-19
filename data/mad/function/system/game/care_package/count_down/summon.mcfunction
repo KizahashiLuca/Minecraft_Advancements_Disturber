@@ -14,8 +14,8 @@ $summon minecraft:chest_minecart $(x) $(y) $(z) \
   {\
     Invulnerable: 1b,\
     Tags: [\
-      'MAD_CarePackage',\
-      'MAD_CarePackage_$(number)'\
+      'mad_care_package',\
+      'mad_care_package_$(number)'\
     ],\
     UUID: [\
       I; $(number), $(number), $(number), $(number),\

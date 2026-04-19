@@ -39,7 +39,7 @@ data remove storage mad: team
 
 ## エンティティ
 kill @e[type=minecraft:marker]
-kill @e[type=minecraft:chest_minecart,tag=MAD_CarePackage]
+kill @e[predicate=mad:care_package/]
 kill @e[predicate=mad:system/item/return_portal/armor_stand]
 kill @e[predicate=mad:system/item/maze_maker/monster_egg]
 kill @e[type=minecraft:armor_stand,tag=MAD_MinecartItem]

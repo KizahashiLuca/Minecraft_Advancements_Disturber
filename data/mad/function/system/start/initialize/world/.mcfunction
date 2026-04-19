@@ -44,7 +44,7 @@ kill @e[type=minecraft:text_display]
 #### エリアエフェクトクラウド
 kill @e[type=minecraft:area_effect_cloud]
 #### 支援物資
-kill @e[type=minecraft:chest_minecart,tag=mad_care_package]
+kill @e[predicate=mad:care_package/]
 #### 帰還ポータル
 kill @e[predicate=mad:system/item/return_portal/armor_stand]
 #### メイズメイカー
