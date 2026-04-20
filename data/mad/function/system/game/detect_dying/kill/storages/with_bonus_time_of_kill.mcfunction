@@ -8,6 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ストレージ格納
+## 撃破ボーナスありの場合の追加メッセージ
 data modify storage mad: death.message \
   set value 'たため、 %s に %s%s 付与され'

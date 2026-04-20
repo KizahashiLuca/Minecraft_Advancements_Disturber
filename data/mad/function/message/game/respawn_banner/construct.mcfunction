@@ -9,4 +9,27 @@
 #####################################
 
 ## 死亡地点通知
-$tellraw @a ['',{translate:'%s が %s にて死亡しました。',with:[{selector:'@s',color:'$(victim_color)',bold:true},{translate:'%s [$(x), $(y), $(z)]',with:[{storage:'mad:',nbt:'dimension.\'$(dimension)\''}],color:'green'}]}]
+$tellraw @a \
+  [\
+    '',\
+    {\
+      translate: '%s が %s にて死亡しました。',\
+      with: [\
+        {\
+          selector: '@s',\
+          color: '$(victim_color)',\
+          bold: true,\
+        },\
+        {\
+          translate: '%s [$(x), $(y), $(z)]',\
+          with: [\
+            {\
+              storage: 'mad:',\
+              nbt: 'dimension.\'$(dimension)\'',\
+            },\
+          ],\
+          color: 'green',\
+        },\
+      ],\
+    },\
+  ]

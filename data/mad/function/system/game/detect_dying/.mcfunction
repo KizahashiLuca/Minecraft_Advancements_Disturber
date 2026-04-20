@@ -9,24 +9,38 @@
 #####################################
 
 ## ストレージ削除
+#### 犠牲者のプレイヤー番号
 data remove storage mad: death.victim_number
+#### 加害者のプレイヤー番号
 data remove storage mad: death.killer_number
 
-## スコアボード設定
+## 攻撃された時間からの経過時間を算出
+#### 攻撃された時間から現在の時間を減算
 scoreboard players operation @s AttackedSecond -= #mad Second
 scoreboard players operation @s AttackedTick -= #mad Tick
+#### 攻撃された時間(ティック数)を合計
 scoreboard players operation @s AttackedSecond *= #mad 20
 scoreboard players operation @s AttackedTick += @s AttackedSecond
 
-## ストレージ格納
-execute store result storage mad: death.victim_number int 1 run scoreboard players get @s PlayerNumber
-execute if score @s AttackedTick matches ..100 store result storage mad: death.killer_number int 1 run scoreboard players get @s AttackerNumber
+## 加害者と犠牲者の関係を取得
+#### 犠牲者のプレイヤー番号をストレージに保持
+execute store result storage mad: death.victim_number int 1 run \
+  scoreboard players get @s PlayerNumber
+#### 攻撃された時間からの経過時間が5秒(100ティック)以上の場合、
+#### 加害者のプレイヤー番号をストレージに保持
+execute if score @s AttackedTick matches ..100 \
+  store result storage mad: death.killer_number int 1 run \
+  scoreboard players get @s AttackerNumber
 
-## キル検出
-execute if data storage mad: death.killer_number run function mad:system/game/detect_dying/kill/ with storage mad: gamerule.match_mode
-
-## デス検出
-execute unless data storage mad: death.killer_number run function mad:system/game/detect_dying/death/ with storage mad: gamerule.match_mode
+## 加害者の有無によりキル/通常デスを判定
+#### キルによる犠牲の場合
+execute if data storage mad: death.killer_number run \
+  function mad:system/game/detect_dying/kill/ \
+    with storage mad: rules.match_mode
+#### 通常デスによる犠牲の場合
+execute unless data storage mad: death.killer_number run \
+  function mad:system/game/detect_dying/death/ \
+    with storage mad: rules.match_mode
 
 ## ストレージ削除
 data remove storage mad: death

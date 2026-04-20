@@ -9,6 +9,23 @@
 #####################################
 
 ## タイトルメッセージ表示
-title @s title ['',{text:'死んでしまった！',color:'red'}]
-$title @s subtitle ['',{text:'死因：'},{selector:'$(killer)',color:'$(killer_color)'},{text:'によるキル'}]
+title @s title \
+  [\
+    '',\
+    {\
+      translate: '死んでしまった！',\
+      color: 'red',\
+    },\
+  ]
+$title @s subtitle \
+  [\
+    '',\
+    {\
+      selector: '$(killer)',\
+      color: '$(killer_color)',\
+    },\
+    {\
+      translate: 'に殺された',\
+    },\
+  ]
 title @s times 20 80 20

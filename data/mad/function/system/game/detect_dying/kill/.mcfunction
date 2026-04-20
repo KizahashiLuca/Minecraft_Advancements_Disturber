@@ -10,21 +10,32 @@
 
 ## ストレージ格納
 #### 犠牲者
-function mad:system/game/detect_dying/kill/storages/victim/ with storage mad: death
+function mad:system/game/detect_dying/kill/storages/victim/ \
+  with storage mad: death
 #### 攻撃者
-function mad:system/game/detect_dying/kill/storages/killer/ with storage mad: death
+function mad:system/game/detect_dying/kill/storages/killer/ \
+  with storage mad: death
 #### マッチモードごと
-$function mad:system/game/detect_dying/kill/$(type) with storage mad: death
+$function mad:system/game/detect_dying/kill/$(type) \
+  with storage mad: death
 
 ## PvP分岐
-execute if predicate mad:system/game/timer/pvp/mode/pvp_on run function mad:system/game/detect_dying/kill/pvp_on
-execute if predicate mad:system/game/timer/pvp/mode/pvp_off run function mad:system/game/detect_dying/kill/pvp_off
+#### PvP解禁後、犠牲者は蘇生しない
+execute if predicate mad:system/game/timer/pvp/mode/pvp_on run \
+  function mad:system/game/detect_dying/kill/pvp_on
+#### PvP解禁前、犠牲者は蘇生する
+execute if predicate mad:system/game/timer/pvp/mode/pvp_off run \
+  function mad:system/game/detect_dying/kill/pvp_off
 
 ## リスポーンバナー設置
-execute if predicate mad:system/game/timer/pvp/mode/pvp_on run function mad:system/game/respawn_banner/construct/
+execute if predicate mad:system/game/timer/pvp/mode/pvp_on run \
+  function mad:system/game/respawn_banner/construct/
 
 ## メッセージ表示
-function mad:message/game/detect_dying/kill/ with storage mad: death
+#### 加害者と犠牲者(チーム戦の場合チームも)に死亡通知
+function mad:message/game/detect_dying/kill/ \
+  with storage mad: death
 
 ## タイトル表示
-function mad:message/game/detect_dying/kill/title with storage mad: death
+function mad:message/game/detect_dying/kill/title \
+  with storage mad: death

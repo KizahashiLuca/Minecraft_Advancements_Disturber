@@ -9,8 +9,18 @@
 #####################################
 
 ## ストレージ格納
-$data modify storage mad: death.killer_color set value '$(color)'
-$data modify storage mad: death.killer_address set value '#mad_team_$(team)'
-$data modify storage mad: death.killer_target_selector set value '@a[predicate=mad:player/team/$(team)]'
-data modify storage mad: death.message_selector set value 'text'
-$data modify storage mad: death.killer_name set value '$(text)チーム'
+#### 加害者チームの色(個人戦では緑色)
+$data modify storage mad: death.killer_color \
+  set value '$(color)'
+#### 加害者チームのターゲットセレクタ(スコア設定用)
+$data modify storage mad: death.killer_address \
+  set value '#mad_team_$(team)'
+#### 加害者チームのターゲットセレクタ(メッセージ表示用)
+$data modify storage mad: death.killer_target_selector \
+  set value '@a[predicate=mad:player/team/$(team)]'
+#### 加害者のチーム表示のJSONの本文タグ(メッセージ表示用)
+data modify storage mad: death.message_selector \
+  set value 'text'
+#### 加害者のチーム表示(メッセージ表示用)
+$data modify storage mad: death.killer_name \
+  set value '$(text)チーム'

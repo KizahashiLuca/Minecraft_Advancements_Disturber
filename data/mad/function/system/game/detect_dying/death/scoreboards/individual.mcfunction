@@ -9,8 +9,5 @@
 #####################################
 
 ## スコアボード設定
-#### 残り秒数/制限時間に加算
-$scoreboard players operation $(killer_address) Second += #mad BonusTimeOfKill
-$scoreboard players operation $(killer_address) TimeLimit += #mad BonusTimeOfKill
-#### 総獲得時間を更新
-$scoreboard players operation $(killer_address) GetBonusTime += #mad BonusTimeOfKill
+#### 死亡ペナルティ
+scoreboard players operation @s Second -= #mad DeathPenaltyTime

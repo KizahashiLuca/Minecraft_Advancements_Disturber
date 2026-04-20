@@ -8,15 +8,23 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## チーム分岐
-$function mad:system/game/detect_dying/death/$(type)/
+## 通常デス時の詳細設定
+#### ゲームモード(ハードコア時のみスペクテイターモード(観戦)に)
+execute unless predicate mad:gamerule/difficulty/hardcore run \
+  function mad:system/game/detect_dying/death/hardcore/false
+execute if predicate mad:gamerule/difficulty/hardcore run \
+  function mad:system/game/detect_dying/death/hardcore/true
+#### ストレージ
+$function mad:system/game/detect_dying/death/storages/$(type) \
+  with storage mad: 
+#### スコアボード
+$function mad:system/game/detect_dying/death/scoreboards/$(type) \
+  with storage mad: death
 
 ## メッセージ表示
-function mad:message/game/detect_dying/death/ with storage mad: death
+function mad:message/game/detect_dying/death/ \
+  with storage mad: death
 
 ## タイトル表示
-function mad:message/game/detect_dying/death/title with storage mad: death
-
-## ストレージ再設定
-execute store result storage mad: death.x int 1.0 run scoreboard players get #mad TmpX
-execute store result storage mad: death.z int 1.0 run scoreboard players get #mad TmpZ
+function mad:message/game/detect_dying/death/title \
+  with storage mad: death
