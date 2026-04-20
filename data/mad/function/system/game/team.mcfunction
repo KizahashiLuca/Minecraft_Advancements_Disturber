@@ -37,11 +37,3 @@ execute if predicate mad:gamerule/team_rules/number_of_teams/ge_4 run \
 ## リスポーンバナー判定処理
 execute if entity @p[predicate=mad:player/dead/] run \
   function mad:system/game/respawn_banner/
-
-# ## リスポーンビーコン処理(現在使用予定なし)
-# execute as @e[predicate=mad:area_effect_cloud/respawn_beacon/structure] \
-#  at @s run \
-#  function mad:system/common/respawn_beacon/main
-# execute as @e[predicate=mad:marker/respawn_beacon/position] \
-#  at @s run \
-#  function mad:system/common/respawn_beacon/construct
