@@ -40,7 +40,7 @@ team join mad_player @s
 bossbar set minecraft:bossbar players @a
 
 ## テレポート
-tp @s @e[predicate=mad:marker/respawn_beacon,limit=1]
+tp @s @e[predicate=mad:marker/world_spawn,limit=1]
 
 ## スコアボード設定
 function mad:system/start/initialize/set_scoreboards/player/

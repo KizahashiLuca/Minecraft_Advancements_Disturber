@@ -24,8 +24,6 @@ weather clear
 ## ストレージ
 #### ワールドスポーン
 data remove storage mad: world_spawn
-#### リスポーンビーコン 不要？
-data remove storage mad: respawn_beacon
 #### 支援物資 ポジション表示用
 data remove storage mad: care_package
 #### 死亡情報

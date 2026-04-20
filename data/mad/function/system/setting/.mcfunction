@@ -20,8 +20,8 @@ execute as @a[predicate=mad:system/setting/login_midtime/to_spectator] run \
   function mad:system/setting/login_midtime/to_spectator
 
 ## スペクテイターモードの処理
-execute at @e[predicate=mad:marker/respawn_beacon,limit=1] run \
-  tp @a[distance=12..] @e[predicate=mad:marker/respawn_beacon,limit=1]
+execute at @e[predicate=mad:marker/world_spawn,limit=1] run \
+  tp @a[distance=12..] @e[predicate=mad:marker/world_spawn,limit=1]
 
 ## トリガーの処理
 #### ルートダイアログにおける処理

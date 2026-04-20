@@ -20,7 +20,7 @@ function mad:system/common/position/
 
 ## ディスプレイ召喚 : TODO
 execute if predicate mad:system/common/time/tick/eq_zero \
-  at @e[predicate=mad:marker/respawn_beacon,limit=1] \
+  at @e[predicate=mad:marker/world_spawn,limit=1] \
   positioned ~ ~1 ~6.45 run \
   function mad:system/wait/display/
 

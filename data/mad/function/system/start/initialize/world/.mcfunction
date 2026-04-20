@@ -20,8 +20,6 @@ weather clear
 ## ストレージ 削除
 #### ワールドスポーン
 data remove storage mad: world_spawn
-#### リスポーンビーコン 不要？
-data remove storage mad: respawn_beacon
 #### 支援物資 ポジション表示用
 data remove storage mad: care_package
 #### 死亡情報
@@ -143,22 +141,5 @@ data modify storage mad: position.6 \
 data modify storage mad: position.7 \
   set value '南東'
 
-## リスポーンビーコン設置
-execute at @e[predicate=mad:marker/world_spawn,limit=1] run \
-  summon minecraft:marker ~ ~ ~ \
-    {\
-      Tags: [\
-        'mad_respawn_beacon',\
-      ],\
-      NoGravity: 1b,\
-      Invulnerable: 1b,\
-    }
-execute store result storage mad: respawn_beacon.x int 1 run \
-  data get entity @e[predicate=mad:marker/respawn_beacon,limit=1] Pos[0]
-execute store result storage mad: respawn_beacon.y int 1 run \
-  data get entity @e[predicate=mad:marker/respawn_beacon,limit=1] Pos[1]
-execute store result storage mad: respawn_beacon.z int 1 run \
-  data get entity @e[predicate=mad:marker/respawn_beacon,limit=1] Pos[2]
-
 ## 全員移動
-tp @a @e[predicate=mad:marker/respawn_beacon,limit=1]
+tp @a @e[predicate=mad:marker/world_spawn,limit=1]
