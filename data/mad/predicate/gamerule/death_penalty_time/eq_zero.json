@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:storage",
+    "storage": "mad:",
+    "path": "rules.death_penalty_time"
+  },
+  "range": 0
+}

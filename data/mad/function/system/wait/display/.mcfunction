@@ -15,15 +15,24 @@ execute if predicate mad:system/wait/time/gamerule/match_mode run \
 #### 初期時間
 execute if predicate mad:system/wait/time/gamerule/initial_time run \
   function mad:system/wait/display/initial_time
-#### 追加時間
+#### 追加時間(進捗達成ボーナス)
 execute if predicate mad:system/wait/time/gamerule/bonus_time_of_advancements run \
   function mad:system/wait/display/bonus_time_of_advancements
-#### 支援物資間隔
-execute if predicate mad:system/wait/time/gamerule/care_package_interval run \
-  function mad:system/wait/display/care_package_interval
 #### ワールド範囲
 execute if predicate mad:system/wait/time/gamerule/world_border run \
   function mad:system/wait/display/world_border
+#### 支援物資投下数
+execute if predicate mad:system/wait/time/gamerule/number_of_care_packages run \
+  function mad:system/wait/display/number_of_care_packages
+#### 支援物資間隔
+execute if predicate mad:system/wait/time/gamerule/care_package_interval run \
+  function mad:system/wait/display/care_package_interval
+#### 撃破ボーナス
+execute if predicate mad:system/wait/time/gamerule/bonus_time_of_kill run \
+  function mad:system/wait/display/bonus_time_of_kill
+#### 死亡ペナルティ
+execute if predicate mad:system/wait/time/gamerule/death_penalty_time run \
+  function mad:system/wait/display/death_penalty_time
 #### 難易度
 execute if predicate mad:system/wait/time/gamerule/difficulty run \
   function mad:system/wait/display/difficulty \
@@ -34,12 +43,6 @@ execute if predicate mad:system/wait/time/gamerule/advance_weather run \
 #### 昼夜サイクル
 execute if predicate mad:system/wait/time/gamerule/advance_time run \
   function mad:system/wait/display/advance_time
-#### 支援物資投下数
-execute if predicate mad:system/wait/time/gamerule/number_of_care_packages run \
-  function mad:system/wait/display/number_of_care_packages
-#### 撃破ボーナス
-execute if predicate mad:system/wait/time/gamerule/bonus_time_of_kill run \
-  function mad:system/wait/display/bonus_time_of_kill
 #### まもなく開始
 execute if predicate mad:system/wait/time/gamerule/start_soon run \
   function mad:system/wait/display/start_soon

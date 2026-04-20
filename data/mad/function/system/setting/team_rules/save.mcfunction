@@ -14,7 +14,6 @@ $data modify storage mad: rules \
   {\
     set_team_manual: $(set_team_manual),\
     number_of_teams: $(number_of_teams),\
-    death_penalty_time: $(death_penalty_time),\
     friendly_fire: '$(friendly_fire)',\
     collision_rule: '$(collision_rule)',\
     nametag_visibility: '$(nametag_visibility)',\

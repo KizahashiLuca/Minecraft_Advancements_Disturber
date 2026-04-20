@@ -44,16 +44,6 @@ $dialog show @p[predicate=mad:player/host] \
         step: 1,\
       },\
       {\
-        type: 'minecraft:number_range',\
-        key: 'death_penalty_time',\
-        label: '死亡ペナルティ時間',\
-        start: 0,\
-        end: 1000,\
-        initial: $(death_penalty_time),\
-        label_format: '%1$s: %2$s 秒',\
-        step: 1,\
-      },\
-      {\
         type: 'minecraft:boolean',\
         key: 'friendly_fire',\
         label: 'フレンドリーファイア',\
@@ -102,7 +92,7 @@ $dialog show @p[predicate=mad:player/host] \
       tooltip: '設定を保存して、戻ります。',\
       action: {\
         type: 'minecraft:dynamic/run_command',\
-        template: 'function mad:system/setting/team_rules/save {set_team_manual: $(set_team_manual_string), number_of_teams: $(number_of_teams_string), death_penalty_time: $(death_penalty_time_string), friendly_fire: \'$(friendly_fire_string)\', collision_rule: \'$(collision_rule_string)\', nametag_visibility: \'$(nametag_visibility_string)\', see_friendly_invisibles: \'$(see_friendly_invisibles_string)\', death_message_visibility: \'$(death_message_visibility_string)\'}',\
+        template: 'function mad:system/setting/team_rules/save {set_team_manual: $(set_team_manual_string), number_of_teams: $(number_of_teams_string), friendly_fire: \'$(friendly_fire_string)\', collision_rule: \'$(collision_rule_string)\', nametag_visibility: \'$(nametag_visibility_string)\', see_friendly_invisibles: \'$(see_friendly_invisibles_string)\', death_message_visibility: \'$(death_message_visibility_string)\'}',\
       },\
     },\
     no: {\

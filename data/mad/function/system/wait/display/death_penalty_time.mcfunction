@@ -17,7 +17,7 @@ kill @e[tag=MAD_TextDisplay_Wait_CheckList]
 summon minecraft:text_display ~ ~ ~ \
   {\
     text: {\
-      translate: 'プレイヤー撃破ボーナス',\
+      translate: '死亡ペナルティ',\
       color: 'black',\
       bold: true,\
     },\
@@ -36,7 +36,7 @@ summon minecraft:text_display ~ ~-0.3 ~ \
       translate: '%s秒',\
       with: [\
         {\
-          nbt: 'rules.bonus_time_of_kill',\
+          nbt: 'rules.death_penalty_time',\
           storage: 'mad:',\
           color: 'white',\
         },\

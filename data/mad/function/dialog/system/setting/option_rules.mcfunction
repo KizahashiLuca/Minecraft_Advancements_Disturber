@@ -77,6 +77,16 @@ $dialog show @p[predicate=mad:player/host] \
         label_format: '%1$s: %2$s 秒',\
         step: 10,\
       },\
+      {\
+        type: 'minecraft:number_range',\
+        key: 'death_penalty_time',\
+        label: '死亡ペナルティ時間',\
+        start: 0,\
+        end: 1000,\
+        initial: $(death_penalty_time),\
+        label_format: '%1$s: %2$s 秒',\
+        step: 1,\
+      },\
     ],\
     can_close_with_escape: false,\
     after_action: 'close',\
@@ -86,7 +96,7 @@ $dialog show @p[predicate=mad:player/host] \
       tooltip: '設定を保存して、戻ります。',\
       action: {\
         type: 'minecraft:dynamic/run_command',\
-        template: 'function mad:system/setting/option_rules/save {advance_weather: \'$(advance_weather_string)\', advance_time: \'$(advance_time_string)\', difficulty: \'$(difficulty_string)\', number_of_care_packages: $(number_of_care_packages_string), bonus_time_of_kill: $(bonus_time_of_kill_string)}',\
+        template: 'function mad:system/setting/option_rules/save {advance_weather: \'$(advance_weather_string)\', advance_time: \'$(advance_time_string)\', difficulty: \'$(difficulty_string)\', number_of_care_packages: $(number_of_care_packages_string), bonus_time_of_kill: $(bonus_time_of_kill_string), death_penalty_time: $(death_penalty_time_string)}',\
       },\
     },\
     no: {\

@@ -17,7 +17,7 @@ kill @e[tag=MAD_TextDisplay_Wait_CheckList]
 summon minecraft:text_display ~ ~ ~ \
   {\
     text: {\
-      translate: '追加時間',\
+      translate: '進捗達成ボーナス',\
       color: 'black',\
       bold: true,\
     },\
