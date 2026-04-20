@@ -3,6 +3,13 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:armor_stand",
-    "nbt": "{data:{Tags:[\"MAD_RespawnBanner\",\"MAD_InitializedRespawnBanner\"]}}"
+    "nbt": {
+      "data": {
+        "Tags": [
+          "mad_respawn_banner",
+          "mad_initialized_respawn_banner"
+        ]
+      }
+    }
   }
 }

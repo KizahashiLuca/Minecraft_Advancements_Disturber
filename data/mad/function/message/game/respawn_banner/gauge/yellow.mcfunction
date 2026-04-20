@@ -9,11 +9,86 @@
 #####################################
 
 ## アクションバー
-title @a[distance=..2] title ['']
-execute as @s[scores={Second=13}] run title @a[distance=..2] subtitle ['',{text:'■■■■■■■',color:'yellow'},{text:'■■■■■■■■■■■■■',color:'gray'}]
-execute as @s[scores={Second=12}] run title @a[distance=..2] subtitle ['',{text:'■■■■■■■■',color:'yellow'},{text:'■■■■■■■■■■■■',color:'gray'}]
-execute as @s[scores={Second=11}] run title @a[distance=..2] subtitle ['',{text:'■■■■■■■■■',color:'yellow'},{text:'■■■■■■■■■■■',color:'gray'}]
-execute as @s[scores={Second=10}] run title @a[distance=..2] subtitle ['',{text:'■■■■■■■■■■',color:'yellow'},{text:'■■■■■■■■■■',color:'gray'}]
-execute as @s[scores={Second=9}] run title @a[distance=..2] subtitle ['',{text:'■■■■■■■■■■■',color:'yellow'},{text:'■■■■■■■■■',color:'gray'}]
-execute as @s[scores={Second=8}] run title @a[distance=..2] subtitle ['',{text:'■■■■■■■■■■■■',color:'yellow'},{text:'■■■■■■■■',color:'gray'}]
+title @a[distance=..2] title \
+  [\
+    '',\
+  ]
+execute as @s[scores={Second=13}] run \
+  title @a[distance=..2] subtitle \
+    [\
+      '',\
+      {\
+        text:'■■■■■■■',\
+        color:'yellow',\
+      },\
+      {\
+        text:'■■■■■■■■■■■■■',\
+        color:'gray',\
+      },\
+    ]
+execute as @s[scores={Second=12}] run \
+  title @a[distance=..2] subtitle \
+    [\
+      '',\
+      {\
+        text:'■■■■■■■■',\
+        color:'yellow',\
+      },\
+      {\
+        text:'■■■■■■■■■■■■',\
+        color:'gray',\
+      },\
+    ]
+execute as @s[scores={Second=11}] run \
+  title @a[distance=..2] subtitle \
+    [\
+      '',\
+      {\
+        text:'■■■■■■■■■',\
+        color:'yellow',\
+      },\
+      {\
+        text:'■■■■■■■■■■■',\
+        color:'gray',\
+      },\
+    ]
+execute as @s[scores={Second=10}] run \
+  title @a[distance=..2] subtitle \
+    [\
+      '',\
+      {\
+        text:'■■■■■■■■■■',\
+        color:'yellow',\
+      },\
+      {\
+        text:'■■■■■■■■■■',\
+        color:'gray',\
+      },\
+    ]
+execute as @s[scores={Second=9}] run \
+  title @a[distance=..2] subtitle \
+    [\
+      '',\
+      {\
+        text:'■■■■■■■■■■■',\
+        color:'yellow',\
+      },\
+      {\
+        text:'■■■■■■■■■',\
+        color:'gray',\
+      },\
+    ]
+execute as @s[scores={Second=8}] run \
+  title @a[distance=..2] subtitle \
+    [\
+      '',\
+      {\
+        text:'■■■■■■■■■■■■',\
+        color:'yellow',\
+      },\
+      {\
+        text:'■■■■■■■■',\
+        color:'gray',\
+      },\
+    ]
 title @a[distance=..2] times 0 20 0
