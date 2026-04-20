@@ -28,8 +28,6 @@ kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 #### トライデント
 kill @e[type=minecraft:trident]
-#### エリアエフェクトクラウド
-kill @e[type=minecraft:area_effect_cloud]
 #### テキストディスプレイ
 kill @e[type=minecraft:text_display]
 #### 支援物資
