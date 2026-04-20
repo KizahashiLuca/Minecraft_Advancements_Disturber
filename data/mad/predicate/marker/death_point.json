@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:marker",
-    "nbt": "{Tags:[\"MAD_DeathPoint\"]}"
+    "nbt": "{Tags:[\"mad_death_point\"]}"
   }
 }
