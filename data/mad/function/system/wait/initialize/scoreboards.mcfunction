@@ -201,7 +201,3 @@ scoreboard players set @a[predicate=mad:player/] ArrowTeleportPosZ 0
 scoreboard players set @a[predicate=mad:player/] AttackerNumber 0
 scoreboard players set @a[predicate=mad:player/] AttackedSecond 0
 scoreboard players set @a[predicate=mad:player/] AttackedTick 0
-#### リスポーンビーコン用
-scoreboard players set #mad CompareNames 1
-scoreboard players set #mad ExistsTeam 1
-scoreboard players set @a[predicate=mad:player/] BeaconTmp 0

@@ -60,5 +60,3 @@ scoreboard players reset @s ArrowTeleportPosZ
 scoreboard players reset @s AttackerNumber
 scoreboard players reset @s AttackedSecond
 scoreboard players reset @s AttackedTick
-#### リスポーンビーコン
-scoreboard players reset @s BeaconTmp

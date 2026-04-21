@@ -30,17 +30,7 @@ scoreboard objectives remove SidebarB
 scoreboard objectives remove SidebarC
 scoreboard objectives remove SidebarD
 #### タイマー
-scoreboard objectives remove 2
-scoreboard objectives remove 10
 scoreboard objectives remove 20
-scoreboard objectives remove 100
-scoreboard objectives remove 1000
-scoreboard objectives remove 10000
-scoreboard objectives remove Digit00001
-scoreboard objectives remove Digit00010
-scoreboard objectives remove Digit00100
-scoreboard objectives remove Digit01000
-scoreboard objectives remove Digit10000
 scoreboard objectives remove Second
 scoreboard objectives remove Tick
 scoreboard objectives remove GeneralSecond
@@ -129,11 +119,6 @@ scoreboard objectives remove ArrowTeleportPosZ
 scoreboard objectives remove AttackerNumber
 scoreboard objectives remove AttackedSecond
 scoreboard objectives remove AttackedTick
-#### リスポーンビーコン
-scoreboard objectives remove BeaconNumber
-scoreboard objectives remove CompareNames
-scoreboard objectives remove ExistsTeam
-scoreboard objectives remove BeaconTmp
 
 ## プレイヤーのスコアボードをリセット
 scoreboard players reset @e

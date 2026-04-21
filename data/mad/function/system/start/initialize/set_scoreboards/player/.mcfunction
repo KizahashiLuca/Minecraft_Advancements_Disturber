@@ -64,5 +64,3 @@ scoreboard players set @s ArrowTeleportPosZ 0
 scoreboard players set @s AttackerNumber 0
 scoreboard players set @s AttackedSecond 0
 scoreboard players set @s AttackedTick 0
-#### リスポーンビーコン
-scoreboard players set @s BeaconTmp 0

@@ -32,12 +32,7 @@ scoreboard players set #mad ExitTrigger 0
 scoreboard players set @a[predicate=mad:player/host] ExitTrigger 0
 scoreboard players enable @a[predicate=mad:player/host] ExitTrigger
 #### タイマー
-scoreboard players set #mad 2 2
-scoreboard players set #mad 10 10
 scoreboard players set #mad 20 20
-scoreboard players set #mad 100 100
-scoreboard players set #mad 1000 1000
-scoreboard players set #mad 10000 10000
 scoreboard players set @a[predicate=mad:player/] Second 0
 scoreboard players set @a[predicate=mad:player/] Tick 0
 scoreboard players set #mad GeneralSecond 0
@@ -136,7 +131,3 @@ scoreboard players set @a[predicate=mad:player/] ArrowTeleportPosZ 0
 scoreboard players set @a[predicate=mad:player/] AttackerNumber 0
 scoreboard players set @a[predicate=mad:player/] AttackedSecond 0
 scoreboard players set @a[predicate=mad:player/] AttackedTick 0
-#### リスポーンビーコン
-scoreboard players set #mad CompareNames 1
-scoreboard players set #mad ExistsTeam 1
-scoreboard players set @a[predicate=mad:player/] BeaconTmp 0
