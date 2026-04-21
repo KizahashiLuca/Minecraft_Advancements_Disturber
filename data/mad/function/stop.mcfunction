@@ -9,4 +9,5 @@
 #####################################
 
 ## ゲーム中止
-execute if predicate mad:phase/in_game run function mad:phase/stop
+execute if predicate mad:phase/in_game run \
+  function mad:phase/stop
