@@ -9,9 +9,30 @@
 #####################################
 
 ## タイトル表示
-title @a title ['',{text:'DRAW',bold:true}]
+title @a title \
+  [\
+    '',\
+    {\
+      translate: 'DRAW',\
+      bold: true,\
+    },\
+  ]
 title @a times 20 80 20
 
 ## 試合終了メッセージ表示
-tellraw @a ['',{translate:'  試合が終了しました。'}]
-tellraw @a ['',{translate:'  %s です！',with: [{text:'勝者無し',bold:true}]}]
+tellraw @a \
+  [\
+    '',\
+    {\
+      translate: '  試合が終了しました。\n',\
+    },\
+    {\
+      translate: '  %s です！',\
+      with: [\
+        {\
+          translate: '勝者無し',\
+          bold: true,\
+        },\
+      ],\
+    },\
+  ]

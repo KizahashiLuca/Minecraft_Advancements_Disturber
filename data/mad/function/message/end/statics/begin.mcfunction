@@ -9,5 +9,17 @@
 #####################################
 
 ## 統計開始メッセージ表示
-tellraw @a ['',{text:'---------------------------------'}]
-tellraw @a ['',{text:'  '},{text:'進捗 統計',bold:true}]
+function mad:message/line_break
+tellraw @a \
+  [\
+    '',\
+    {\
+      translate: '  %s',\
+      with: [\
+        {\
+          translate: '進捗 統計',\
+          bold: true,\
+        },\
+      ],\
+    },\
+  ]

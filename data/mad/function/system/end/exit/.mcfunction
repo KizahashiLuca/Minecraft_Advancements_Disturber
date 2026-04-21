@@ -12,9 +12,12 @@
 function mad:message/begin
 
 ## 勝者確定メッセージ表示
-execute if predicate mad:system/end/winner/one run function mad:message/end/winner/one
-execute if predicate mad:system/end/winner/draw run function mad:message/end/winner/none
-execute if predicate mad:system/end/winner/ run function mad:system/end/exit/winner
+execute if predicate mad:system/end/winner/one run \
+  function mad:message/end/winner/one
+execute if predicate mad:system/end/winner/draw run \
+  function mad:message/end/winner/none
+execute if predicate mad:system/end/winner/ run \
+  function mad:system/end/exit/winner
 
 ## 統計メッセージ表示
 function mad:system/end/statics

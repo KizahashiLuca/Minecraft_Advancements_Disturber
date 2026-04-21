@@ -9,10 +9,41 @@
 #####################################
 
 ## タイトル表示
-$title @a title ['',{text:'$(text)チーム',color:'$(color)',bold:true}]
-$title @a subtitle ['',{text:'WIN',color:'$(color)',bold:true}]
+$title @a title \
+  [\
+    '',\
+    {\
+      translate: '$(text)チーム',\
+      color: '$(color)',\
+      bold: true,\
+    },\
+  ]
+$title @a subtitle \
+  [\
+    '',\
+    {\
+      translate: 'WIN',\
+      color: '$(color)',\
+      bold: true,\
+    },\
+  ]
 title @a times 20 80 20
 
 ## 試合終了メッセージ表示
-tellraw @a ['',{translate:'  試合が終了しました。'}]
-$tellraw @a ['',{translate:'  勝者は %s です！',with: [{text:'$(text)チーム',color:'$(color)',bold:true}]}]
+$tellraw @a \
+  [\
+    '',\
+    {\
+      translate: '  試合が終了しました。\n',\
+    },\
+    {\
+      translate: '  勝者は %s です！',\
+      with: [\
+        {\
+          translate: '$(text)チーム',\
+          color: '$(color)',\
+          bold: true,\
+        },\
+      ],\
+    },\
+  ]
