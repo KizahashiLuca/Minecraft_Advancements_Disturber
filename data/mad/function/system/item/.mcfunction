@@ -18,10 +18,10 @@ execute as @a[predicate=mad:system/item/upgrader/armor/] at @s run function mad:
 execute as @a[predicate=mad:system/item/upgrader/tool/] at @s run function mad:system/item/upgrader/tool/
 
 ## 怪盗予告
-execute as @a[predicate=mad:system/item/notice_of_thief/] at @s run function mad:system/item/notice_of_thief/ with storage mad: gamerule.match_mode
+execute as @a[predicate=mad:system/item/notice_of_thief/] at @s run function mad:system/item/notice_of_thief/ with storage mad: rules.match_mode
 
 ## 緊急招集
-execute as @a[predicate=mad:system/item/emergency_call/] at @s run function mad:system/item/emergency_call/ with storage mad: gamerule.match_mode
+execute as @a[predicate=mad:system/item/emergency_call/] at @s run function mad:system/item/emergency_call/ with storage mad: rules.match_mode
 
 ## ウォーデンの牙の杖
 execute as @a[predicate=mad:system/item/warden_fangs_wand/] at @s run function mad:system/item/warden_fangs_wand/

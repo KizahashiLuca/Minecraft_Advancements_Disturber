@@ -21,19 +21,27 @@ time set noon
 ## 天気
 weather clear
 
-## ストレージ
+## ストレージ 削除
 #### ワールドスポーン
 data remove storage mad: world_spawn
+#### ポジション表示
+data remove storage mad: position
+#### テレポートトリガー
+data remove storage mad: teleport
 #### 支援物資 ポジション表示用
 data remove storage mad: care_package
+#### 攻撃情報
+data remove storage mad: attack
 #### 死亡情報
 data remove storage mad: death
 #### ゲームルール
 data remove storage mad: rules
-data remove storage mad: gamerule
-data remove storage mad: count_players
+#### 個人戦
 data remove storage mad: individual
+#### チーム戦
 data remove storage mad: team
+#### アイテム
+data remove storage mad: item
 
 ## エンティティ
 kill @e[type=minecraft:marker]
