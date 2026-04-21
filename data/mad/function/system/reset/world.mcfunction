@@ -8,10 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ランダムな生存者の場所に全員をテレポート
-execute if entity @p[predicate=mad:player/alive/] run \
-  tp @a @p[predicate=mad:player/alive/,sort=random]
-
 ## 難易度
 difficulty peaceful
 
@@ -43,12 +39,41 @@ data remove storage mad: team
 #### アイテム
 data remove storage mad: item
 
-## エンティティ
+## エンティティ 削除
+#### アイテム
+kill @e[type=minecraft:item]
+#### 矢
+kill @e[type=minecraft:arrow]
+kill @e[type=minecraft:spectral_arrow]
+#### トライデント
+kill @e[type=minecraft:trident]
+#### マーカー
 kill @e[type=minecraft:marker]
+#### テキストディスプレイ
+kill @e[type=minecraft:text_display]
+#### 支援物資
 kill @e[predicate=mad:care_package/]
+#### 帰還ポータル
 kill @e[predicate=mad:system/item/return_portal/armor_stand]
+#### メイズメイカー
 kill @e[predicate=mad:system/item/maze_maker/monster_egg]
-kill @e[type=minecraft:armor_stand,tag=MAD_MinecartItem]
+#### アップグレードキット
+kill @e[type=minecraft:armor_stand,tag=mad_minecart_item]
+#### その他
+kill @e[type=minecraft:zombie_villager,nbt=!{ConversionTime:-1}]
+execute as @e[type=minecraft:allay] run \
+  data modify entity @s Brain.memories \
+    set value {}
+execute as @e[type=minecraft:allay] run \
+  data modify entity @s equipment \
+    set value {}
+execute as @e[type=minecraft:allay] run \
+  data modify entity @s Inventory \
+    set value []
+
+## 強制ロード領域
+#### 常時読み込みチャンクの削除
+forceload remove all
 
 ## ワールド範囲をリセット
 execute in minecraft:overworld run \
@@ -64,5 +89,7 @@ execute in minecraft:the_end run \
 execute in minecraft:the_end run \
   worldborder set 59999968
 
-## 常時読み込みチャンクの削除
-forceload remove all
+## 全員移動
+#### ランダムな生存者の場所に全員をテレポート
+execute if entity @p[predicate=mad:player/alive/] run \
+  tp @a @p[predicate=mad:player/alive/,sort=random]

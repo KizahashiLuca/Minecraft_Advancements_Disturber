@@ -61,13 +61,3 @@ tag @a remove mad_detect_maze_maker
 tag @a remove mad_maze_player
 #### 支援物資 - どっか行け矢
 tag @a remove mad_arrow_teleportee
-#### 支援物資 - リスポーンバナー
-tag @a remove mad_respawn_banner_set
-tag @a remove mad_respawn_banner_set_tmp
-tag @a remove mad_detected_banner_owner
-#### 支援物資 - モバイルリスポーンビーコン
-tag @a remove mad_mobile_respawn_banner_set
-tag @a remove mad_mobile_respawn_banner_set_tmp
-tag @a remove mad_detect_mobile_beacon_tag
-tag @a remove mad_detect_respawn_player
-tag @a remove mad_set_respawn_player
