@@ -9,7 +9,7 @@
 #####################################
 
 ## プレイヤーゲームモード
-#gamemode adventure @a
+# gamemode adventure @a
 
 ## ペットをキル
 execute as @e[type=!minecraft:player] \
@@ -17,14 +17,17 @@ execute as @e[type=!minecraft:player] \
   kill @s
 
 ## インベントリ
-#clear @a
+# clear @a
 
 ## 経験値
-#experience set @a 0 levels
-#experience set @a 0 points
+# experience set @a 0 levels
+# experience set @a 0 points
 
 ## ステータス効果
 effect clear @a
 
 ## 全進捗剥奪
-#advancement revoke @a everything
+# advancement revoke @a everything
+
+## レシピ剥奪
+# recipe take @a *
