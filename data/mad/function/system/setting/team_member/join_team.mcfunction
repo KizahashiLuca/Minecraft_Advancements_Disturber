@@ -27,27 +27,28 @@ $function mad:message/setting/team_member/join_team \
   with storage mad: team.$(team)
 
 ## 頭防具変更
-$item replace entity @s armor.head with minecraft:$(color)_banner\
-  [\
-    minecraft:enchantments={\
-      'minecraft:binding_curse': 1,\
-    },\
-    minecraft:item_name=[\
-      {\
-        translate: '%s を選択中',\
-        color: 'white',\
-        with: [\
-          {\
-            translate: '$(text)チーム',\
-            color: '$(color)',\
-          },\
+$item replace entity @s armor.head \
+  with minecraft:$(color)_banner\
+    [\
+      minecraft:enchantments={\
+        'minecraft:binding_curse': 1,\
+      },\
+      minecraft:item_name=[\
+        {\
+          translate: '%s を選択中',\
+          color: 'white',\
+          with: [\
+            {\
+              translate: '$(text)チーム',\
+              color: '$(color)',\
+            },\
+          ],\
+        },\
+      ],\
+      minecraft:tooltip_display={\
+        hidden_components: [\
+          'minecraft:enchantments',\
         ],\
       },\
-    ],\
-    minecraft:tooltip_display={\
-      hidden_components: [\
-        'minecraft:enchantments',\
-      ],\
-    },\
-  ] \
-  1
+    ] \
+      1

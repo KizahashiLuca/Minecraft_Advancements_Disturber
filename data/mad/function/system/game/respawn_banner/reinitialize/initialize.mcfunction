@@ -9,4 +9,5 @@
 #####################################
 
 ## 非デスポーン設定
-data modify entity @s Age set value -32768s
+data modify entity @s Age \
+  set value -32768s

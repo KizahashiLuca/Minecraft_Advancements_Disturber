@@ -49,9 +49,11 @@ execute store result storage mad: death.z int 1.0 run \
   scoreboard players get @s TmpZ
 #### 追加メッセージ(死亡ペナルティありの場合のメッセージ表示用)
 execute if predicate mad:gamerule/death_penalty_time/eq_zero run \
-  data modify storage mad: death.message set value ''
+  data modify storage mad: death.message \
+    set value ''
 execute if predicate mad:gamerule/death_penalty_time/neq_zero run \
-  data modify storage mad: death.message set value 'たため %s%s 失い'
+  data modify storage mad: death.message \
+    set value 'たため %s%s 失い'
 #### 死因(サブタイトル表示用)
 data modify storage mad: death.text \
   set value ''

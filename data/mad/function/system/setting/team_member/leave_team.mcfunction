@@ -28,4 +28,5 @@ team join mad_player @s
 function mad:message/setting/team_member/leave_team
 
 ## 頭防具変更
-item replace entity @s armor.head with minecraft:air
+item replace entity @s armor.head \
+  with minecraft:air
