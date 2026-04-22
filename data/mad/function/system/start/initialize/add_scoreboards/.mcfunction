@@ -96,10 +96,6 @@ scoreboard objectives add UseToolUpgrader minecraft.used:minecraft.turtle_spawn_
 #### 支援物資用 - 緊急招集
 scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn_egg ['',{text:'怪盗予告 - 使用トリガー'}]
 scoreboard objectives add NumberOfItemCandidates dummy ['',{text:'怪盗予告 - 怪盗候補アイテム数'}]
-#### 支援物資用 - ウォーデンの牙の杖
-scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick ['',{text:'ウォーデンの牙の杖 - 使用トリガー'}]
-scoreboard objectives add NumberOfSonicBooms dummy ['',{text:'ウォーデンの牙の杖 - 衝撃波番号'}]
-scoreboard objectives add SonicBoomCount dummy ['',{text:'ウォーデンの牙の杖 - 衝撃波回数'}]
 #### 支援物資用 - メイズメイカー
 scoreboard objectives add UseMazeMaker minecraft.used:minecraft.allay_spawn_egg ['',{text:'メイズメイカー - 使用トリガー'}]
 scoreboard objectives add RandomMax dummy ['',{text:'メイズメイカー - 疑似乱数最大周回値'}]

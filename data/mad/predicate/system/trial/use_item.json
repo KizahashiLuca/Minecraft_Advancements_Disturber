@@ -15,10 +15,6 @@
     },
     {
       "condition": "minecraft:reference",
-      "name": "mad:system/trial/use_warden_fangs_wand"
-    },
-    {
-      "condition": "minecraft:reference",
       "name": "mad:system/trial/use_notice_of_thief"
     },
     {

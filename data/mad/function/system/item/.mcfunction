@@ -23,9 +23,6 @@ execute as @a[predicate=mad:system/item/notice_of_thief/] at @s run function mad
 ## 緊急招集
 execute as @a[predicate=mad:system/item/emergency_call/] at @s run function mad:system/item/emergency_call/ with storage mad: rules.match_mode
 
-## ウォーデンの牙の杖
-execute as @a[predicate=mad:system/item/warden_fangs_wand/] at @s run function mad:system/item/warden_fangs_wand/
-
 ## 帰還ポータル
 execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run function mad:system/item/return_portal/
 

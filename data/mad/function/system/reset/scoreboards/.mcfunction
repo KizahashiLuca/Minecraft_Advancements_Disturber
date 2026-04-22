@@ -96,10 +96,6 @@ scoreboard objectives remove UseToolUpgrader
 #### 支援物資用 - 緊急招集
 scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove NumberOfItemCandidates
-#### 支援物資用 - ウォーデンの牙の杖
-scoreboard objectives remove UseFungusStick
-scoreboard objectives remove NumberOfSonicBooms
-scoreboard objectives remove SonicBoomCount
 #### 支援物資用 - メイズメイカー
 scoreboard objectives remove UseMazeMaker
 scoreboard objectives remove RandomMax

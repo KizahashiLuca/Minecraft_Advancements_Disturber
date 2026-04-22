@@ -17,7 +17,6 @@ loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/return_p
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/transmitter
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/emergency_call
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/notice_of_thief
-loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/warden_fangs_wand
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/energy_drink
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/broken_elytra
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/diamond_pickaxe
