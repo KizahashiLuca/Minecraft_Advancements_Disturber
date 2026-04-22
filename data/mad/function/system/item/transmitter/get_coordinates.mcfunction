@@ -8,8 +8,14 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
+## ディメンション算出
+data modify storage mad: item.transmitter.dimension \
+  set from entity @s Dimension
+
 ## 座標算出
-data modify storage mad: item.transmitter.dimension set from entity @s Dimension
-$execute store result storage mad: item.transmitter.x int 1 run scoreboard players get @p[tag=MAD_Player$(player_number)] PosX
-$execute store result storage mad: item.transmitter.y int 1 run scoreboard players get @p[tag=MAD_Player$(player_number)] PosY
-$execute store result storage mad: item.transmitter.z int 1 run scoreboard players get @p[tag=MAD_Player$(player_number)] PosZ
+$execute store result storage mad: item.transmitter.x int 1 run \
+  scoreboard players get @p[tag=mad_player$(player_number)] PosX
+$execute store result storage mad: item.transmitter.y int 1 run \
+  scoreboard players get @p[tag=mad_player$(player_number)] PosY
+$execute store result storage mad: item.transmitter.z int 1 run \
+  scoreboard players get @p[tag=mad_player$(player_number)] PosZ

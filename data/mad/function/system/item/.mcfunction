@@ -9,7 +9,9 @@
 #####################################
 
 ## 支援物資アイテム - 発信機
-execute as @a[predicate=mad:system/item/transmitter/] at @s run function mad:system/item/transmitter/
+execute as @a[predicate=mad:item/transmitter/trigger] \
+  at @s run \
+  function mad:system/item/transmitter/
 
 ## 防具アップグレード
 execute as @a[predicate=mad:system/item/upgrader/armor/] at @s run function mad:system/item/upgrader/armor/

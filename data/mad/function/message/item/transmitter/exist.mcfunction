@@ -9,4 +9,16 @@
 #####################################
 
 ## メッセージ表示
-$tellraw @s ['',{translate:'[発 信 機]  %s が $(dimension) [$(x), $(y), $(z)] にいます。',with:[{selector:'@p[tag=MAD_Player$(player_number)]'}],color:'green'}]
+$tellraw @s \
+  [\
+    '',\
+    {\
+      translate: '[発 信 機]  %s が $(dimension) [$(x), $(y), $(z)] にいます。',\
+      with: [\
+        {\
+          selector: '@p[tag=mad_player$(player_number)]',\
+        },\
+      ],\
+      color: 'green',\
+    },\
+  ]

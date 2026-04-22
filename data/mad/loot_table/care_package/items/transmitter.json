@@ -13,7 +13,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "発信機",
+                "translate": "発信機",
                 "italic": false
               }
             },
@@ -23,7 +23,7 @@
               "entity": "this",
               "lore": [
                 {
-                  "text": "近くの敵プレイヤーの現在の座標を取得できる",
+                  "translate": "近くの敵プレイヤーの現在の座標を取得できる",
                   "color": "gray",
                   "italic": false
                 },
@@ -46,15 +46,15 @@
                 "minecraft:rarity": "rare",
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_Transmitter"
+                    "mad_minecart_item",
+                    "mad_transmitter"
                   ]
                 },
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_Transmitter"
+                    "mad_minecart_item",
+                    "mad_transmitter"
                   ]
                 }
               }

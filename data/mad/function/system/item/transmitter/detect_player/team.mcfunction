@@ -9,4 +9,6 @@
 #####################################
 
 ## ランダムプレイヤー設定
-$execute if entity @p[predicate=mad:player/alive/,predicate=mad:player/team/not_$(team),sort=nearest] store result storage mad: item.transmitter.player_number int 1 run scoreboard players get @p[predicate=mad:player/alive/,predicate=mad:player/team/not_$(team),sort=nearest] PlayerNumber
+$execute if entity @p[predicate=mad:player/alive/,predicate=mad:player/team/not_$(team)] \
+  store result storage mad: item.transmitter.player_number int 1 run \
+  scoreboard players get @p[predicate=mad:player/alive/,predicate=mad:player/team/not_$(team),sort=nearest] PlayerNumber
