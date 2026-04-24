@@ -76,15 +76,15 @@
                 "minecraft:rarity": "rare",
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_ArmorUpgrader"
+                    "mad_minecart_item",
+                    "mad_armor_upgrader"
                   ]
                 },
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_ArmorUpgrader"
+                    "mad_minecart_item",
+                    "mad_armor_upgrader"
                   ]
                 }
               }

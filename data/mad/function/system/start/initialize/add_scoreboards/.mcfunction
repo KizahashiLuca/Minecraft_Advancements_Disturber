@@ -86,11 +86,11 @@ scoreboard objectives add RailDistance minecraft.custom:minecraft.minecart_one_c
 scoreboard objectives add GetCarePackageCount dummy ['',{text:'取得支援物資個数'}]
 scoreboard objectives add UnsetLootTable dummy ['',{text:'ルートテーブル未設定'}]
 #### 支援物資用 - 発信機
-scoreboard objectives add UseTransmitter minecraft.used:minecraft.bat_spawn_egg ['',{text:'発信機 - 使用トリガー'}]
+scoreboard objectives add UseTransmitter minecraft.used:minecraft.bat_spawn_egg ['',{text:'トリガー - 発信機使用'}]
 #### 支援物資用 - 緊急招集
 scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse_spawn_egg ['',{text:'緊急招集 - 使用トリガー'}]
 #### 支援物資用 - 防具アップグレード
-scoreboard objectives add UseArmorUpgrader minecraft.used:minecraft.wolf_spawn_egg ['',{text:'防具アップグレード - 使用トリガー'}]
+scoreboard objectives add UseArmorUpgrader minecraft.used:minecraft.wolf_spawn_egg ['',{text:'トリガー - 防具アップグレード使用'}]
 #### 支援物資用 - ツールアップグレード
 scoreboard objectives add UseToolUpgrader minecraft.used:minecraft.turtle_spawn_egg ['',{text:'ツールアップグレード - 使用トリガー'}]
 #### 支援物資用 - 緊急招集

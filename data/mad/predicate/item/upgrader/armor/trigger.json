@@ -3,7 +3,7 @@
   "terms": [
     {
       "condition": "minecraft:reference",
-      "name": "mad:player/alive/"
+      "name": "mad:player/"
     },
     {
       "condition": "minecraft:entity_scores",
