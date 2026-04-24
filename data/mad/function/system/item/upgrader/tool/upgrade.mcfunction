@@ -8,5 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ストレージ格納 - アップグレード後のアイテムID
-$data modify storage mad: item.tool_upgrader.equipment.tool.next_id set from storage mad: item.tool_upgrader.$(id).id
+## アップグレード後のアイテムIDを取得
+$data modify storage mad: item.tool_upgrader.equipment.tool.next_id \
+  set from storage mad: item.tool_upgrader.$(id).id

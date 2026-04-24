@@ -13,7 +13,7 @@
           "entity": "this",
           "predicate": {
             "equipment": {
-              "mainhand": {
+              "offhand": {
                 "items": "#mad:axes"
               }
             }
@@ -24,7 +24,7 @@
           "entity": "this",
           "predicate": {
             "equipment": {
-              "mainhand": {
+              "offhand": {
                 "items": "#mad:pickaxes"
               }
             }
@@ -35,7 +35,7 @@
           "entity": "this",
           "predicate": {
             "equipment": {
-              "mainhand": {
+              "offhand": {
                 "items": "#mad:shovels"
               }
             }
@@ -46,7 +46,7 @@
           "entity": "this",
           "predicate": {
             "equipment": {
-              "mainhand": {
+              "offhand": {
                 "items": "#mad:hoes"
               }
             }
@@ -57,7 +57,7 @@
           "entity": "this",
           "predicate": {
             "equipment": {
-              "mainhand": {
+              "offhand": {
                 "items": "#mad:swords"
               }
             }

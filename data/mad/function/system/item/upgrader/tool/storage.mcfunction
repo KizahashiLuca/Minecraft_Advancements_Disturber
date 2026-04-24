@@ -9,7 +9,13 @@
 #####################################
 
 ## ストレージ初期化
-$data modify storage mad: item.tool_upgrader.equipment.tool set value {type:'$(type)',components:{}}
+$data modify storage mad: item.tool_upgrader.equipment.tool \
+  set value \
+    {\
+      type: '$(type)',\
+      components: {},\
+    }
 
 ## ストレージ格納 - 現アイテム
-$data modify storage mad: item.tool_upgrader.equipment.tool merge from entity @s $(nbt)
+$data modify storage mad: item.tool_upgrader.equipment.tool \
+  merge from entity @s $(nbt)

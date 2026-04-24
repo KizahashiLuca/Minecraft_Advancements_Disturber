@@ -12,14 +12,27 @@
 scoreboard players set @s UseToolUpgrader 0
 
 ## ストレージ初期化
-data modify storage mad: item.tool_upgrader.equipment set value {}
+data modify storage mad: item.tool_upgrader.equipment \
+  set value {}
 
-## アップグレードアイテム - 無い時
-execute as @s[predicate=!mad:system/item/upgrader/tool/mainhand,predicate=!mad:system/item/upgrader/tool/offhand] run function mad:system/item/upgrader/tool/upgradable/none
-
-## アップグレードアイテム - ある時
-execute as @s[predicate=mad:system/item/upgrader/tool/mainhand] run function mad:system/item/upgrader/tool/upgradable/ {type:'mainhand',nbt:'SelectedItem'}
-execute as @s[predicate=mad:system/item/upgrader/tool/offhand] run function mad:system/item/upgrader/tool/upgradable/ {type:'offhand',nbt:'equipment.offhand'}
+## アップグレード
+#### 対象ツールを持っていない時 -> アイテム返却
+execute as @s[predicate=!mad:item/upgrader/tool/mainhand,predicate=!mad:item/upgrader/tool/offhand] run \
+  function mad:system/item/upgrader/tool/upgradable/none
+#### 対象ツールを持っている時 - メインハンド
+execute as @s[predicate=mad:item/upgrader/tool/mainhand] run \
+  function mad:system/item/upgrader/tool/upgradable/ \
+    {\
+      type: 'mainhand',\
+      nbt: 'SelectedItem',\
+    }
+#### 対象ツールを持っている時 - オフハンド
+execute as @s[predicate=mad:item/upgrader/tool/offhand] run \
+  function mad:system/item/upgrader/tool/upgradable/ \
+    {\
+      type: 'offhand',\
+      nbt: 'equipment.offhand',\
+    }
 
 ## マーカーキル
-kill @e[type=minecraft:marker,tag=MAD_MinecartItem,tag=MAD_ToolUpgrader,sort=nearest,limit=1]
+kill @e[predicate=mad:item/upgrader/tool/marker,sort=nearest,limit=1]

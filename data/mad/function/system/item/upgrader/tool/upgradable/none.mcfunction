@@ -8,7 +8,7 @@
 ## Licensed under CC BY-SA 4.0.
 #####################################
 
-## 道具アップグレード 再配布
+## 道具アップグレード 返却
 loot give @s loot mad:care_package/items/upgrader/tool_upgrader
 
 ## サウンドイベント

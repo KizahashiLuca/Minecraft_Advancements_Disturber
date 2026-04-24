@@ -18,8 +18,10 @@ execute as @a[predicate=mad:item/upgrader/armor/trigger] \
   at @s run \
   function mad:system/item/upgrader/armor/
 
-## ツールアップグレード
-execute as @a[predicate=mad:system/item/upgrader/tool/] at @s run function mad:system/item/upgrader/tool/
+## 支援物資アイテム - ツールアップグレード
+execute as @a[predicate=mad:item/upgrader/tool/trigger] \
+  at @s run \
+  function mad:system/item/upgrader/tool/
 
 ## 怪盗予告
 execute as @a[predicate=mad:system/item/notice_of_thief/] at @s run function mad:system/item/notice_of_thief/ with storage mad: rules.match_mode
