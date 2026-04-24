@@ -8,7 +8,7 @@
 ## Licensed under CC BY-SA 4.0.
 #####################################
 
-## スコアボードリセット
+## 使用トリガーリセット
 scoreboard players set @s UseToolUpgrader 0
 
 ## ストレージ初期化

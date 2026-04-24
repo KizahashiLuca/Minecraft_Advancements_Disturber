@@ -8,7 +8,7 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボードリセット
+## 使用トリガーリセット
 scoreboard players set @s UseArmorUpgrader 0
 
 ## ストレージ初期化
@@ -37,12 +37,12 @@ data modify storage mad: item.armor_upgrader.equipment \
       },\
     }
 
+## サウンドイベント
+playsound minecraft:block.anvil.use block @s ~ ~ ~ 1.0 1.0 1.0
+
 ## プレイヤーの防具をストレージに格納
 data modify storage mad: item.armor_upgrader.equipment \
   merge from entity @s equipment
-
-## サウンドイベント
-playsound minecraft:block.anvil.use block @s ~ ~ ~ 1.0 1.0 1.0
 
 ## アップグレード
 #### 頭部の防具をアップグレードしてストレージに格納

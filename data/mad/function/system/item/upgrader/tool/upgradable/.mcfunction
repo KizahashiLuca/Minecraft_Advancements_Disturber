@@ -26,8 +26,8 @@ function mad:system/item/upgrader/tool/upgrade \
 function mad:system/item/upgrader/tool/replace \
   with storage mad: item.tool_upgrader.equipment.tool
 
-## ストレージ削除
-data remove storage mad: item.tool_upgrader.equipment
-
 ## メッセージ表示
 function mad:message/item/upgrader/tool/
+
+## ストレージ削除
+data remove storage mad: item.tool_upgrader.equipment
