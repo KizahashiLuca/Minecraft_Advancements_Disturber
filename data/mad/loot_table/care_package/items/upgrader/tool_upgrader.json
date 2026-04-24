@@ -13,7 +13,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "ツールアップグレードキット",
+                "translate": "ツールアップグレードキット",
                 "italic": false
               }
             },
@@ -23,37 +23,37 @@
               "entity": "this",
               "lore": [
                 {
-                  "text": "使用者のオフハンドにある道具をアップグレード",
+                  "translate": "使用者のオフハンドにある道具をアップグレード",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  対象ツール: 斧, クワ, ツルハシ, シャベル, 剣",
+                  "translate": "  対象ツール: 斧, クワ, ツルハシ, シャベル, 剣",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  木ツール → 石ツール",
+                  "translate": "  木ツール → 石ツール",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  石ツール → 金ツール",
+                  "translate": "  石ツール → 金ツール",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  金ツール → 鉄ツール",
+                  "translate": "  金ツール → 鉄ツール",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  鉄ツール → ダイヤモンドツール",
+                  "translate": "  鉄ツール → ダイヤモンドツール",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  ダイヤモンドツール → ネザライトツール",
+                  "translate": "  ダイヤモンドツール → ネザライトツール",
                   "color": "gray",
                   "italic": false
                 },

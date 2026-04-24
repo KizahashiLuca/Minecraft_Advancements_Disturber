@@ -13,7 +13,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "防具アップグレードキット",
+                "translate": "防具アップグレードキット",
                 "italic": false
               }
             },
@@ -23,37 +23,37 @@
               "entity": "this",
               "lore": [
                 {
-                  "text": "使用者の着用した防具をアップグレード",
+                  "translate": "使用者の着用した防具をアップグレード",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  無着用 → 革防具",
+                  "translate": "  無着用 → 革防具",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  革防具 → 金防具",
+                  "translate": "  革防具 → 金防具",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  金防具 → チェーン防具",
+                  "translate": "  金防具 → チェーン防具",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  チェーン防具 → 鉄防具",
+                  "translate": "  チェーン防具 → 鉄防具",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  鉄防具 → ダイヤモンド防具",
+                  "translate": "  鉄防具 → ダイヤモンド防具",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "  ダイヤモンド防具 → ネザライト防具",
+                  "translate": "  ダイヤモンド防具 → ネザライト防具",
                   "color": "gray",
                   "italic": false
                 },
