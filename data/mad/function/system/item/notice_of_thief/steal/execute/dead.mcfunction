@@ -9,7 +9,8 @@
 #####################################
 
 ## サウンドイベント
-$execute at @p[tag=mad_player$(thief_number)] run \
+$execute as @p[tag=mad_player$(thief_number)] \
+  at @s run \
   playsound minecraft:entity.allay.ambient_without_item block @a ~ ~ ~ 1.0 1.0 1.0
 
 ## メッセージ表示

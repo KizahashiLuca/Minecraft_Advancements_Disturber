@@ -9,7 +9,7 @@
 #####################################
 
 ## 怪盗へのメッセージ
-$tellraw @a[tag=mad_player$(thief_number)] \
+$tellraw @p[tag=mad_player$(thief_number)] \
   [\
     '',\
     {\
