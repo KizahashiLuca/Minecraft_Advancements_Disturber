@@ -7,20 +7,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_pickaxe",
+          "name": "minecraft:iron_pickaxe",
           "functions": [
             {
               "function": "minecraft:set_damage",
               "damage": {
                 "type": "minecraft:uniform",
-                "min": 0.5,
-                "max": 1.0
+                "min": 0.01,
+                "max": 0.05
               }
             },
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "minecraft:efficiency": 5
+                "minecraft:fortune": 3
               }
             },
             {
@@ -29,8 +29,8 @@
                 "minecraft:rarity": "rare",
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_EfficiencyPickaxe"
+                    "mad_minecart_item",
+                    "mad_fortune_pickaxe"
                   ]
                 }
               }

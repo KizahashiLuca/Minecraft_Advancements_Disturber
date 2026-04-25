@@ -37,7 +37,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/pickaxe"
+          "value": "mad:care_package/items/pickaxe/"
         },
         {
           "type": "minecraft:loot_table",

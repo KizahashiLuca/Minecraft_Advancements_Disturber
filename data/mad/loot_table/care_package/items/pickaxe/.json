@@ -2,16 +2,15 @@
   "type": "minecraft:generic",
   "pools": [
     {
-      "bonus_rolls": 0.0,
-      "rolls": 1.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "mad:care_package/items/efficiency_pickaxe"
+          "value": "mad:care_package/items/pickaxe/efficiency_pickaxe"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "mad:care_package/items/fortune_pickaxe"
+          "value": "mad:care_package/items/pickaxe/fortune_pickaxe"
         }
       ]
     }
