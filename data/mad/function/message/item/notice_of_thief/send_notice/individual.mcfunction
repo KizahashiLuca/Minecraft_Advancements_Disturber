@@ -9,7 +9,21 @@
 #####################################
 
 ## 怪盗へのメッセージ
-$tellraw @a[tag=MAD_Player$(thief_number)] ['',{text:'[怪盗予告] 怪盗予告しました。 5秒後に誰かからアイテムを盗みます。',color:'green'}]
+$tellraw @a[tag=mad_player$(thief_number)] \
+  [\
+    '',\
+    {\
+      translate: '[怪盗予告] 怪盗予告しました。 5秒後に誰かからアイテムを盗みます。',\
+      color: 'green',\
+    },\
+  ]
 
 ## 全員へのメッセージ
-$tellraw @a[tag=!MAD_Player$(thief_number)] ['',{text:'[怪盗予告] 怪盗予告が誰かから出されました。 5秒後に誰かのアイテムが盗まれます。',color:'green'}]
+$tellraw @a[tag=!mad_player$(thief_number)] \
+  [\
+    '',\
+    {\
+      translate: '[怪盗予告] 怪盗予告が誰かから出されました。 5秒後に誰かのアイテムが盗まれます。',\
+      color: 'green',\
+    },\
+  ]

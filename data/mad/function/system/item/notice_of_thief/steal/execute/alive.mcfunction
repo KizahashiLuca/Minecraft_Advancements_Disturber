@@ -8,15 +8,32 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 怪盗
-$execute at @p[tag=MAD_Player$(thief_number)] run summon minecraft:item ~ ~ ~ {Item:{id:'$(id)',count:$(count),components:$(components)},PickupDelay:0s}
-
-## 被害
-$item replace entity @p[tag=MAD_Player$(victim_number)] hotbar.$(Slot) with minecraft:air
+## 怪盗処理
+#### 怪盗で得たアイテムを、怪盗予告したプレイヤーの地点に召喚
+#### (怪盗予告したプレイヤーのインベントリがいっぱいの可能性があるため)
+$execute at @p[tag=mad_player$(thief_number)] run \
+  summon minecraft:item ~ ~ ~ \
+    {\
+      Item: {\
+        id: '$(id)',\
+        count: $(count),\
+        components: $(components),\
+      },\
+      PickupDelay: 0s,\
+    }
+#### 怪盗で盗まれたアイテムのインベントリを空気で置換
+$item replace entity @p[tag=mad_player$(victim_number)] hotbar.$(Slot) \
+  with minecraft:air
 
 ## サウンドイベント
-$execute at @p[tag=MAD_Player$(thief_number)] run playsound minecraft:entity.allay.ambient_with_item block @a ~ ~ ~ 1.0 1.0 1.0
-$execute at @p[tag=MAD_Player$(victim_number)] run playsound minecraft:entity.allay.hurt block @a ~ ~ ~ 1.0 1.0 1.0
+$execute at @p[tag=mad_player$(thief_number)] run \
+  playsound minecraft:entity.allay.ambient_with_item block @a ~ ~ ~ 1.0 1.0 1.0
+$execute at @p[tag=mad_player$(victim_number)] run \
+  playsound minecraft:entity.allay.hurt block @a ~ ~ ~ 1.0 1.0 1.0
 
 ## メッセージ表示
-$function mad:message/item/notice_of_thief/accept {thief_number:'$(thief_number)',victim_number:'$(victim_number)'}
+function mad:message/item/notice_of_thief/accept \
+  {\
+    thief_number: '$(thief_number)',\
+    victim_number: '$(victim_number)',\
+  }

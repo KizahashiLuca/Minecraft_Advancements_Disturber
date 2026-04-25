@@ -93,8 +93,8 @@ scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse
 scoreboard objectives add UseArmorUpgrader minecraft.used:minecraft.wolf_spawn_egg ['',{text:'トリガー - 防具アップグレード使用'}]
 #### 支援物資用 - ツールアップグレード
 scoreboard objectives add UseToolUpgrader minecraft.used:minecraft.turtle_spawn_egg ['',{text:'トリガー - ツールアップグレード使用'}]
-#### 支援物資用 - 緊急招集
-scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn_egg ['',{text:'怪盗予告 - 使用トリガー'}]
+#### 支援物資用 - 怪盗予告
+scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn_egg ['',{text:'トリガー - 怪盗予告使用'}]
 scoreboard objectives add NumberOfItemCandidates dummy ['',{text:'怪盗予告 - 怪盗候補アイテム数'}]
 #### 支援物資用 - メイズメイカー
 scoreboard objectives add UseMazeMaker minecraft.used:minecraft.allay_spawn_egg ['',{text:'メイズメイカー - 使用トリガー'}]

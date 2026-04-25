@@ -13,7 +13,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "怪盗予告",
+                "translate": "怪盗予告",
                 "bold": false,
                 "italic": false
               }
@@ -24,12 +24,12 @@
               "entity": "this",
               "lore": [
                 {
-                  "text": "5秒後に敵プレイヤーのホットバーから",
+                  "translate": "5秒後に敵プレイヤーのホットバーから",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "どれか1つランダムでアイテムを盗む",
+                  "translate": "どれか1つランダムでアイテムを盗む",
                   "color": "gray",
                   "italic": false
                 },
@@ -52,15 +52,15 @@
                 "minecraft:rarity": "rare",
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_NoticeOfThief"
+                    "mad_minecart_item",
+                    "mad_notice_of_thief"
                   ]
                 },
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_NoticeOfThief"
+                    "mad_minecart_item",
+                    "mad_notice_of_thief"
                   ]
                 }
               }

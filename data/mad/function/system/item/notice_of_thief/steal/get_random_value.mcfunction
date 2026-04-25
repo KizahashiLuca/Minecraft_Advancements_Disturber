@@ -9,4 +9,5 @@
 #####################################
 
 ## 乱数値出力
-$return run random value 0..$(number_of_item_candidates)
+$return run \
+  random value 0..$(number_of_item_candidates)

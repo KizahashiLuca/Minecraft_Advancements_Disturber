@@ -9,7 +9,11 @@
 #####################################
 
 ## サウンドイベント
-$execute at @p[tag=MAD_Player$(thief_number)] run playsound minecraft:entity.allay.ambient_without_item block @a ~ ~ ~ 1.0 1.0 1.0
+$execute at @p[tag=mad_player$(thief_number)] run \
+  playsound minecraft:entity.allay.ambient_without_item block @a ~ ~ ~ 1.0 1.0 1.0
 
 ## メッセージ表示
-$function mad:message/item/notice_of_thief/dead {thief_number:'$(thief_number)'}
+$function mad:message/item/notice_of_thief/dead \
+  {\
+    thief_number: '$(thief_number)',\
+  }

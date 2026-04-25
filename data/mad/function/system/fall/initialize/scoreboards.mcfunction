@@ -116,7 +116,7 @@ scoreboard players set @a[predicate=mad:player/] UseEmergencyCall 0
 scoreboard players set @a[predicate=mad:player/] UseArmorUpgrader 0
 #### 支援物資用 - ツールアップグレード用
 scoreboard players set @a[predicate=mad:player/] UseToolUpgrader 0
-#### 支援物資用 - 緊急招集用
+#### 支援物資用 - 怪盗予告用
 scoreboard players set @a[predicate=mad:player/] UseNoticeOfThief 0
 scoreboard players set @a[predicate=mad:player/] NumberOfItemCandidates 0
 #### 支援物資用 - メイズメイカー用
