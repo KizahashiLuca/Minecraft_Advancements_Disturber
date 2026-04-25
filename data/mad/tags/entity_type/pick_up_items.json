@@ -1,20 +1,23 @@
 {
   "replace": false,
   "values": [
-    "minecraft:zombie",
-    "minecraft:zombie_villager",
-    "minecraft:zombified_piglin",
-    "minecraft:husk",
+    "minecraft:allay",
+    "minecraft:bogged",
+    "minecraft:cat",
+    "minecraft:copper_golem",
     "minecraft:drowned",
+    "minecraft:fox",
+    "minecraft:giant",
+    "minecraft:husk",
+    "minecraft:parched",
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:player",
     "minecraft:skeleton",
     "minecraft:stray",
     "minecraft:wither_skeleton",
-    "minecraft:bogged",
-    "minecraft:piglin",
-    "minecraft:piglin_brute",
-    "minecraft:fox",
-    "minecraft:cat",
-    "minecraft:allay",
-    "minecraft:player"
+    "minecraft:zombie",
+    "minecraft:zombie_villager",
+    "minecraft:zombified_piglin"
   ]
 }
