@@ -44,17 +44,4 @@ tag @a remove mad_player20
 #### 支援物資
 tag @a remove mad_give_time_randomly
 #### 支援物資 - どっか行け矢
-tag @a remove mad_transmit_player
-#### 支援物資 - 緊急招集
-tag @a remove mad_emergency_callee
-tag @a remove mad_detect_emergency_call
-#### 支援物資 - 怪盗予告
-tag @a remove mad_thief
-tag @a remove mad_detect_thief
-tag @a remove mad_detect_thief_team
-tag @a remove mad_set_thief
-tag @a remove mad_not_steal_player
-tag @a remove mad_stolen_player
-tag @a remove mad_thief_team
-#### 支援物資 - どっか行け矢
 tag @a remove mad_arrow_teleportee
