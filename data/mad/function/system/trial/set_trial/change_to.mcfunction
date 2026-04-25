@@ -11,7 +11,6 @@
 ## Give items
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/armor_upgrader
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/tool_upgrader
-loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/maze_maker
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/end_portal_frame
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/return_portal
 loot give @a[predicate=mad:player/] loot mad:system/game/minecart/items/transmitter

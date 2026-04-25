@@ -186,9 +186,6 @@ scoreboard players set @a[predicate=mad:player/] UseToolUpgrader 0
 #### 支援物資用 - 怪盗予告用
 scoreboard players set @a[predicate=mad:player/] UseNoticeOfThief 0
 scoreboard players set @a[predicate=mad:player/] NumberOfItemCandidates 0
-#### 支援物資用 - メイズメイカー用
-scoreboard players set @a[predicate=mad:player/] UseMazeMaker 0
-scoreboard players set #mad MazeNumber 1
 #### 支援物資用 - どっか行け矢用
 scoreboard players set @a[predicate=mad:player/] ArrowTeleportTick 0
 scoreboard players set @a[predicate=mad:player/] ArrowTeleportPosX 0

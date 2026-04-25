@@ -34,8 +34,6 @@ kill @e[type=minecraft:marker,tag=mad_teleporter]
 kill @e[type=minecraft:text_display]
 #### 帰還ポータル
 kill @e[predicate=mad:system/item/return_portal/armor_stand]
-#### メイズメイカー
-kill @e[predicate=mad:system/item/maze_maker/monster_egg]
 #### アップグレードキット
 kill @e[type=minecraft:armor_stand,tag=mad_minecart_item]
 #### その他

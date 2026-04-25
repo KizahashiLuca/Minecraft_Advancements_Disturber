@@ -55,8 +55,6 @@ kill @e[type=minecraft:text_display]
 kill @e[predicate=mad:care_package/]
 #### 帰還ポータル
 kill @e[predicate=mad:system/item/return_portal/armor_stand]
-#### メイズメイカー
-kill @e[predicate=mad:system/item/maze_maker/monster_egg]
 #### アップグレードキット
 kill @e[type=minecraft:armor_stand,tag=mad_minecart_item]
 #### その他

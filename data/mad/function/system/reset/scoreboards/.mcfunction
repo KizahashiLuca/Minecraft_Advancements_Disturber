@@ -96,16 +96,6 @@ scoreboard objectives remove UseToolUpgrader
 #### 支援物資用 - 緊急招集
 scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove NumberOfItemCandidates
-#### 支援物資用 - メイズメイカー
-scoreboard objectives remove UseMazeMaker
-scoreboard objectives remove RandomMax
-scoreboard objectives remove RandomAngle
-scoreboard objectives remove MazeNumber
-scoreboard objectives remove MazeNumberTmp
-scoreboard objectives remove MazePosX
-scoreboard objectives remove MazePosZ
-scoreboard objectives remove DeadEnd
-scoreboard objectives remove HasExit
 #### 支援物資用 - どっか行け矢
 scoreboard objectives remove ArrowTeleportTick
 scoreboard objectives remove ArrowTeleportPosX

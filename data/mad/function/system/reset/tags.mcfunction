@@ -56,8 +56,5 @@ tag @a remove mad_set_thief
 tag @a remove mad_not_steal_player
 tag @a remove mad_stolen_player
 tag @a remove mad_thief_team
-#### 支援物資 - メイズメイカー
-tag @a remove mad_detect_maze_maker
-tag @a remove mad_maze_player
 #### 支援物資 - どっか行け矢
 tag @a remove mad_arrow_teleportee

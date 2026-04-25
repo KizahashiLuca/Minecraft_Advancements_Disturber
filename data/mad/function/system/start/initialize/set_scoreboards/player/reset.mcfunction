@@ -47,8 +47,6 @@ scoreboard players reset @s UseToolUpgrader
 #### 支援物資用 - 緊急招集
 scoreboard players reset @s UseNoticeOfThief
 scoreboard players reset @s NumberOfItemCandidates
-#### 支援物資用 - メイズメイカー
-scoreboard players reset @s UseMazeMaker
 #### 支援物資用 - どっか行け矢
 scoreboard players reset @s ArrowTeleportTick
 scoreboard players reset @s ArrowTeleportPosX

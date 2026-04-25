@@ -37,10 +37,6 @@ execute as @a[predicate=mad:item/emergency_call/trigger] \
 ## 帰還ポータル
 execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run function mad:system/item/return_portal/
 
-## Maze maker
-# execute as @a[predicate=mad:system/item/maze_maker/use] at @s run function mad:system/item/maze_maker/main
-# execute as @e[predicate=mad:system/item/maze_maker/maze_marker] at @s run function mad:system/item/maze_maker/make_maze/main
-
 ## どっか行け矢(仮)
 #execute as @e[predicate=mad:system/item/teleport_arrow/onground_arrow] at @s run function mad:system/item/teleport_arrow/modify_data
 # execute as @a[predicate=mad:system/item/teleport_arrow/shot_arrow] at @s run function mad:system/item/teleport_arrow/

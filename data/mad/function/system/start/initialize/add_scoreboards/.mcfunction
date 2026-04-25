@@ -96,16 +96,6 @@ scoreboard objectives add UseToolUpgrader minecraft.used:minecraft.turtle_spawn_
 #### 支援物資用 - 怪盗予告
 scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn_egg ['', {translate: 'トリガー - 怪盗予告使用'}]
 scoreboard objectives add NumberOfItemCandidates dummy ['', {translate: '怪盗予告 - 怪盗候補アイテム数'}]
-#### 支援物資用 - メイズメイカー
-scoreboard objectives add UseMazeMaker minecraft.used:minecraft.allay_spawn_egg ['', {translate: 'トリガー - メイズメイカー使用'}]
-scoreboard objectives add RandomMax dummy ['', {translate: 'メイズメイカー - 疑似乱数最大周回値'}]
-scoreboard objectives add RandomAngle dummy ['', {translate: 'メイズメイカー - 出口方角'}]
-scoreboard objectives add MazeNumber dummy ['', {translate: 'メイズメイカー - 迷路番号'}]
-scoreboard objectives add MazeNumberTmp dummy ['', {translate: 'メイズメイカー - 迷路番号一時値'}]
-scoreboard objectives add MazePosX dummy ['', {translate: 'メイズメイカー - X座標'}]
-scoreboard objectives add MazePosZ dummy ['', {translate: 'メイズメイカー - Z座標'}]
-scoreboard objectives add DeadEnd dummy ['', {translate: 'メイズメイカー - 行き止まり'}]
-scoreboard objectives add HasExit dummy ['', {translate: 'メイズメイカー - 出口設定済'}]
 #### 支援物資用 - どっか行け矢(仮)
 scoreboard objectives add ArrowTeleportTick dummy ['', {translate: 'どっか行け矢 - 経過ティック数'}]
 scoreboard objectives add ArrowTeleportPosX dummy ['', {translate: 'どっか行け矢 - テレポート先 - X座標'}]

@@ -1,8 +1,0 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "type": "minecraft:allay",
-    "nbt": "{Tags:[\"mad_minecart_item\",\"mad_maze_maker\"]}"
-  }
-}

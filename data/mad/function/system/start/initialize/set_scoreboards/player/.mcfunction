@@ -51,8 +51,6 @@ scoreboard players set @s UseToolUpgrader 0
 #### 支援物資用 - 緊急招集
 scoreboard players set @s UseNoticeOfThief 0
 scoreboard players set @s NumberOfItemCandidates 0
-#### 支援物資用 - メイズメイカー
-scoreboard players set @s UseMazeMaker 0
 #### 支援物資用 - どっか行け矢
 scoreboard players set @s ArrowTeleportTick 0
 scoreboard players set @s ArrowTeleportPosX 0
