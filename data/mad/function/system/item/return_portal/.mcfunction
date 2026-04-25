@@ -8,11 +8,13 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ディメンション検知 - エンド以外
-execute unless predicate mad:dimension/the_end run function mad:system/item/return_portal/not_construct
-
-## ディメンション検知 - エンド
-execute if predicate mad:dimension/the_end run function mad:system/item/return_portal/construct
+## ディメンション検知
+#### エンド以外の場合
+execute unless predicate mad:dimension/the_end run \
+  function mad:system/item/return_portal/not_construct
+#### エンドの場合
+execute if predicate mad:dimension/the_end run \
+  function mad:system/item/return_portal/construct
 
 ## アーマースタンドキル
 kill @s

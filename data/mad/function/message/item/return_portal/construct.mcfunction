@@ -8,5 +8,12 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## メッセージ表示
-tellraw @a[distance=..5] ['',{translate:'[帰還装置] 帰還ポータルを設置しました。',color:'green'}]
+## 帰還ポータル設置メッセージ表示
+tellraw @a[distance=..5] \
+  [\
+    '',\
+    {\
+      translate: '[帰還装置] 帰還ポータルを設置しました。',\
+      color: 'green',\
+    },\
+  ]

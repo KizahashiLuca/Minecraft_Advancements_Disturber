@@ -54,7 +54,7 @@ kill @e[type=minecraft:text_display]
 #### 支援物資
 kill @e[predicate=mad:care_package/]
 #### 帰還ポータル
-kill @e[predicate=mad:system/item/return_portal/armor_stand]
+kill @e[predicate=mad:item/return_portal/armor_stand]
 #### アップグレードキット
 kill @e[type=minecraft:armor_stand,tag=mad_minecart_item]
 #### その他

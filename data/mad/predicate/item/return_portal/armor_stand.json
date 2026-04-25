@@ -3,6 +3,11 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:armor_stand",
-    "nbt": "{Tags:[\"mad_minecart_item\",\"mad_return_portal\"]}"
+    "nbt": {
+      "Tags": [
+        "mad_minecart_item",
+        "mad_return_portal"
+      ]
+    }
   }
 }

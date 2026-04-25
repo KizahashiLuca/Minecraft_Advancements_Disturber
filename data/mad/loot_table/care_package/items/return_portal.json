@@ -46,15 +46,15 @@
                 "minecraft:rarity": "rare",
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_WardenFangsWand"
+                    "mad_minecart_item",
+                    "mad_return_portal"
                   ]
                 },
                 "minecraft:entity_data": {
                   "id": "minecraft:armor_stand",
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_ReturnPortal"
+                    "mad_minecart_item",
+                    "mad_return_portal"
                   ]
                 }
               }

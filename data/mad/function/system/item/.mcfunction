@@ -35,7 +35,9 @@ execute as @a[predicate=mad:item/emergency_call/trigger] \
     with storage mad: rules.match_mode
 
 ## 帰還ポータル
-execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run function mad:system/item/return_portal/
+execute as @e[predicate=mad:item/return_portal/armor_stand] \
+  at @s run \
+  function mad:system/item/return_portal/
 
 ## どっか行け矢(仮)
 #execute as @e[predicate=mad:system/item/teleport_arrow/onground_arrow] at @s run function mad:system/item/teleport_arrow/modify_data
