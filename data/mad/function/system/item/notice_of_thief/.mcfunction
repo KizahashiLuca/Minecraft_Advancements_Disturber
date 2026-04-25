@@ -18,7 +18,7 @@ data remove storage mad: item.notice_of_thief.tmp
 playsound minecraft:entity.allay.death block @a ~ ~ ~ 1.0 1.0 1.0
  
 ## 怪盗プレイヤーを設定
-#### 個人戦 - 自分のプレイヤー番号を保持
+#### 怪盗プレイヤー番号を保持
 execute store result storage mad: item.notice_of_thief.tmp.thief_number int 1.0 run \
   scoreboard players get @s PlayerNumber
 #### チーム戦 - 自分のチームのチーム番号を保持

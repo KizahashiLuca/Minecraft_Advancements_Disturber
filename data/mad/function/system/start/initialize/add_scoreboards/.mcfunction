@@ -88,7 +88,7 @@ scoreboard objectives add UnsetLootTable dummy ['',{text:'ルートテーブル�
 #### 支援物資用 - 発信機
 scoreboard objectives add UseTransmitter minecraft.used:minecraft.bat_spawn_egg ['',{text:'トリガー - 発信機使用'}]
 #### 支援物資用 - 緊急招集
-scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse_spawn_egg ['',{text:'緊急招集 - 使用トリガー'}]
+scoreboard objectives add UseEmergencyCall minecraft.used:minecraft.zombie_horse_spawn_egg ['',{text:'トリガー - 緊急招集使用'}]
 #### 支援物資用 - 防具アップグレード
 scoreboard objectives add UseArmorUpgrader minecraft.used:minecraft.wolf_spawn_egg ['',{text:'トリガー - 防具アップグレード使用'}]
 #### 支援物資用 - ツールアップグレード

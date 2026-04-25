@@ -13,7 +13,7 @@
 $execute if predicate mad:gamerule/match_mode/individual/ \
   store result storage mad: item.notice_of_thief.tmp.victim_number int 1.0 run \
   scoreboard players get @a[tag=!mad_player$(thief_number),predicate=mad:player/alive/,sort=random,limit=1] PlayerNumber
-#### 個人戦 - 怪盗予告したプレイヤーのいるチーム以外の生存者のプレイヤー番号を取得
+#### チーム戦 - 怪盗予告したプレイヤーのいるチーム以外の生存者のプレイヤー番号を取得
 $execute if predicate mad:gamerule/match_mode/team \
   store result storage mad: item.notice_of_thief.tmp.victim_number int 1.0 run \
   scoreboard players get @a[predicate=mad:player/alive/,predicate=mad:player/team/not_$(thief_team),sort=random,limit=1] PlayerNumber

@@ -11,7 +11,7 @@
 ## 使用トリガーリセット
 scoreboard players set @s UseTransmitter 0
 
-## ストレージ削除
+## ストレージ初期化
 data remove storage mad: item.transmitter
 
 ## サウンドイベント
