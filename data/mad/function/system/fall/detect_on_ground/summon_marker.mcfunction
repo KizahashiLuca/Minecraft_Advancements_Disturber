@@ -15,7 +15,7 @@ effect clear @s minecraft:slow_falling
 $summon minecraft:marker ~ ~ ~ \
   {\
     Tags: [\
-      'MAD_Teleporter',\
+      'mad_teleporter',\
       '$(name)',\
     ],\
     NoGravity: 1b,\
