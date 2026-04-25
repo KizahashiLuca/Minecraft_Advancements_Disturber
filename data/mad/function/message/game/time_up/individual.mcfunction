@@ -13,7 +13,7 @@ title @s title \
   [\
     '',\
     {\
-      text: '死んでしまった！',\
+      translate: '死んでしまった！',\
       color: 'red',\
       bold: true,\
     },\
@@ -22,7 +22,7 @@ title @s subtitle \
   [\
     '',\
     {\
-      text: '死因：時間切れ',\
+      translate: '死因：時間切れ',\
     },\
   ]
 title @s times 20 80 20

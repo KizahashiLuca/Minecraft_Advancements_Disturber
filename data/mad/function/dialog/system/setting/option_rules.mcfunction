@@ -13,7 +13,7 @@ $dialog show @p[predicate=mad:player/host] \
   {\
     type: 'minecraft:confirmation',\
     title: {\
-      text: 'オプション設定',\
+      translate: 'オプション設定',\
     },\
     inputs: [\
       {\

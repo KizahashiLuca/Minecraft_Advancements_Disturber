@@ -18,12 +18,12 @@ execute as @s[scores={Second=7}] run \
     [\
       '',\
       {\
-        text:'■■■■■■■■■■■■■',\
-        color:'green',\
+        translate: '■■■■■■■■■■■■■',\
+        color: 'green',\
       },\
       {\
-        text:'■■■■■■■',\
-        color:'gray',\
+        translate: '■■■■■■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=6}] run \
@@ -31,12 +31,12 @@ execute as @s[scores={Second=6}] run \
     [\
       '',\
       {\
-        text:'■■■■■■■■■■■■■■',\
-        color:'green',\
+        translate: '■■■■■■■■■■■■■■',\
+        color: 'green',\
       },\
       {\
-        text:'■■■■■■',\
-        color:'gray',\
+        translate: '■■■■■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=5}] run \
@@ -44,12 +44,12 @@ execute as @s[scores={Second=5}] run \
     [\
       '',\
       {\
-        text:'■■■■■■■■■■■■■■■',\
-        color:'green',\
+        translate: '■■■■■■■■■■■■■■■',\
+        color: 'green',\
       },\
       {\
-        text:'■■■■■',\
-        color:'gray',\
+        translate: '■■■■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=4}] run \
@@ -57,12 +57,12 @@ execute as @s[scores={Second=4}] run \
     [\
       '',\
       {\
-        text:'■■■■■■■■■■■■■■■■',\
-        color:'green',\
+        translate: '■■■■■■■■■■■■■■■■',\
+        color: 'green',\
       },\
       {\
-        text:'■■■■',\
-        color:'gray',\
+        translate: '■■■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=3}] run \
@@ -70,12 +70,12 @@ execute as @s[scores={Second=3}] run \
     [\
       '',\
       {\
-        text:'■■■■■■■■■■■■■■■■■',\
-        color:'green',\
+        translate: '■■■■■■■■■■■■■■■■■',\
+        color: 'green',\
       },\
       {\
-        text:'■■■',\
-        color:'gray',\
+        translate: '■■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=2}] run \
@@ -83,12 +83,12 @@ execute as @s[scores={Second=2}] run \
     [\
       '',\
       {\
-        text:'■■■■■■■■■■■■■■■■■■',\
-        color:'green',\
+        translate: '■■■■■■■■■■■■■■■■■■',\
+        color: 'green',\
       },\
       {\
-        text:'■■',\
-        color:'gray',\
+        translate: '■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=1}] run \
@@ -96,12 +96,12 @@ execute as @s[scores={Second=1}] run \
     [\
       '',\
       {\
-        text:'■■■■■■■■■■■■■■■■■■■',\
-        color:'green',\
+        translate: '■■■■■■■■■■■■■■■■■■■',\
+        color: 'green',\
       },\
       {\
-        text:'■',\
-        color:'gray',\
+        translate: '■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=..0}] run \
@@ -109,12 +109,12 @@ execute as @s[scores={Second=..0}] run \
     [\
       '',\
       {\
-        text:'■■■■■■■■■■■■■■■■■■■■',\
-        color:'green',\
+        translate: '■■■■■■■■■■■■■■■■■■■■',\
+        color: 'green',\
       },\
       {\
-        text:'',\
-        color:'gray',\
+        translate: '',\
+        color: 'gray',\
       },\
     ]
 title @a[distance=..2] times 0 20 0

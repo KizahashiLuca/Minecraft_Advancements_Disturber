@@ -15,7 +15,7 @@ bossbar set minecraft:bossbar name \
   [\
     '',\
     {\
-      text: '降下フェーズ',\
+      translate: '降下フェーズ',\
     }\
   ]
 bossbar set minecraft:bossbar max 100

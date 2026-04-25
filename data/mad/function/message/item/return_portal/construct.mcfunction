@@ -9,4 +9,4 @@
 #####################################
 
 ## メッセージ表示
-tellraw @a[distance=..5] ['',{text:'[帰還装置] 帰還ポータルを設置しました。',color:'green'}]
+tellraw @a[distance=..5] ['',{translate:'[帰還装置] 帰還ポータルを設置しました。',color:'green'}]

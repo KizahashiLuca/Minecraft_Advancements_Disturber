@@ -14,7 +14,7 @@ bossbar add minecraft:bossbar \
   [\
     '',\
     {\
-      text: '初期設定フェーズ',\
+      translate: '初期設定フェーズ',\
     },\
   ]
 bossbar set minecraft:bossbar players @a
@@ -22,7 +22,7 @@ bossbar set minecraft:bossbar name \
   [\
     '',\
     {\
-      text: '初期設定フェーズ',\
+      translate: '初期設定フェーズ',\
     },\
   ]
 bossbar set minecraft:bossbar max 100

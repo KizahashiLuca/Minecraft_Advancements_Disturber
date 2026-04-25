@@ -16,7 +16,7 @@ $bossbar add minecraft:mad_team_$(team) \
       translate: '%s - 生存時間 残り %s 秒',\
       with: [\
         {\
-          text: '$(text)チーム',\
+          translate: '$(text)チーム',\
           color: '$(color)',\
           bold: true,\
         },\

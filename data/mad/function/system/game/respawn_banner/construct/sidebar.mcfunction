@@ -24,7 +24,7 @@ $scoreboard players display numberformat 【リスポーンバナー座標】 $(
 $scoreboard players display name 【リスポーンバナー座標】 $(victim_sidebar) \
   [\
     {\
-      text: '【リスポーンバナー座標】',\
+      translate: '【リスポーンバナー座標】',\
       color: '$(victim_color)',\
       bold: true,\
     },\
@@ -35,7 +35,7 @@ $scoreboard players remove $(victim_address) $(victim_sidebar) 1
 $scoreboard players display numberformat @s $(victim_sidebar) fixed \
   [\
     {\
-      text: '[$(x), $(y), $(z)]',\
+      translate: '[$(x), $(y), $(z)]',\
       color: 'green',\
     },\
   ]

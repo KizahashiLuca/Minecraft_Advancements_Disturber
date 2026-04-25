@@ -14,6 +14,6 @@ tellraw @s \
     '',\
     {\
       translate: '[MAD] チーム編成設定: チームを離脱',\
-      color:'green',\
+      color: 'green',\
     },\
   ]

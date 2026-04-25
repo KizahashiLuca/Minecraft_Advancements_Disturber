@@ -30,7 +30,7 @@ $tellraw $(victim_target_selector) \
           translate: '%s [$(x), $(y), $(z)]',\
           with: [\
             {\
-              storage:'mad:',\
+              storage: 'mad:',\
               nbt: 'dimension.$(dimension)',\
             },\
           ],\

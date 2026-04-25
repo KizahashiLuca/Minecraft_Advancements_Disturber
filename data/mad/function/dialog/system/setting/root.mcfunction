@@ -14,7 +14,7 @@ execute if predicate mad:gamerule/match_mode/individual/ run \
     {\
       type: 'minecraft:multi_action',\
       title: {\
-        text: 'ゲーム設定',\
+        translate: 'ゲーム設定',\
       },\
       can_close_with_escape: false,\
       after_action: 'close',\
@@ -62,7 +62,7 @@ $execute if predicate mad:gamerule/match_mode/team run \
     {\
       type: 'minecraft:multi_action',\
       title: {\
-        text: 'ゲーム設定',\
+        translate: 'ゲーム設定',\
       },\
       can_close_with_escape: false,\
       after_action: 'close',\

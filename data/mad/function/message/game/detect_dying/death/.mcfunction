@@ -36,7 +36,7 @@ $tellraw @a$(address) \
           bold: true,\
         },\
         {\
-          text: '秒',\
+          translate: '秒',\
           color: 'green',\
           bold: true,\
         },\

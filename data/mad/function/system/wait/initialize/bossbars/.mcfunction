@@ -19,7 +19,7 @@ bossbar set minecraft:bossbar name \
   [\
     '',\
     {\
-      text: '待機フェーズ',\
+      translate: '待機フェーズ',\
       color: 'light_purple',\
     },\
   ]

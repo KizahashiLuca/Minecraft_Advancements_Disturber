@@ -87,8 +87,8 @@ execute at @p[predicate=mad:player/host] \
       Tags: [\
         'mad_world_spawn',\
       ],\
-      NoGravity:1b,\
-      Invulnerable:1b,\
+      NoGravity: 1b,\
+      Invulnerable: 1b,\
     }
 #### ワールドスポーンの座標をスコアボードに格納
 execute store result score #mad PosX run \

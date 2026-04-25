@@ -21,6 +21,6 @@ $tellraw @s \
           color: '$(color)',\
         },\
       ],\
-      color:'green',\
+      color: 'green',\
     },\
   ]

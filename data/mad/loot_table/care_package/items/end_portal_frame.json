@@ -18,8 +18,8 @@
               "components": {
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_EndPortalFrame"
+                    "mad_minecart_item",
+                    "mad_end_portal_frame"
                   ]
                 }
               }

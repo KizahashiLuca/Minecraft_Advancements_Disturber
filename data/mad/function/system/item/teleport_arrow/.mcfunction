@@ -8,7 +8,7 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-tellraw @a [{text:'撃たれた'}]
+tellraw @a [{translate:'撃たれた'}]
 
 ## Calculate tick
 # scoreboard players add @s ArrowTeleportTick 1

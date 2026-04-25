@@ -208,7 +208,7 @@ scoreboard players add @s HasAdvancements 1
       translate: 'chat.type.advancement.${FRAME}',\\
       with: [\\
         {\\
-          text: '\$(text)チーム',\\
+          translate: '\$(text)チーム',\\
           color: '\$(color)',\\
           bold: true\\
         },\\
@@ -273,7 +273,7 @@ echo "## 進捗用スコアボード追加" >> "${ADD_SCORE}"
 i=0
 for objective in ${objectives[@]}; do
   ## add objective
-  echo "scoreboard objectives add ${objective} dummy ['', {text: '${titles[i]}'}]" >> "${ADD_SCORE}"
+  echo "scoreboard objectives add ${objective} dummy ['', {translate: '${titles[i]}'}]" >> "${ADD_SCORE}"
   ## increment
   i=$((i+1))
 done

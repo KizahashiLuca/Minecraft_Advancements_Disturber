@@ -14,7 +14,7 @@ bossbar set minecraft:bossbar name \
   [\
     '',\
     {\
-      text: 'ゲームフェーズ',\
+      translate: 'ゲームフェーズ',\
     },\
   ]
 bossbar set minecraft:bossbar players @a[predicate=mad:player/spectator]

@@ -46,7 +46,7 @@ execute if predicate mad:gamerule/match_mode/individual/solo run \
       background: -16777046,\
       alignment: 'center',\
       Rotation: [180.0f, 0.0f],\
-      Tags:[\
+      Tags: [\
         'MAD_TextDisplay',\
         'MAD_TextDisplay_Wait',\
         'MAD_TextDisplay_Wait_CheckList',\
@@ -56,8 +56,8 @@ execute if predicate mad:gamerule/match_mode/individual/not_solo run \
   summon minecraft:text_display ~ ~-0.3 ~ \
     {\
       text: {\
-        translate:'個人戦',\
-        color:'white',\
+        translate: '個人戦',\
+        color: 'white',\
       },\
       transformation: {\
         left_rotation: [0f, 0f, 0f, 1f],\
@@ -78,8 +78,8 @@ execute if predicate mad:gamerule/match_mode/team run \
   summon minecraft:text_display ~ ~-0.3 ~ \
     {\
       text: {\
-        translate:'チーム戦',\
-        color:'white',\
+        translate: 'チーム戦',\
+        color: 'white',\
       },\
       transformation: {\
         left_rotation: [0f, 0f, 0f, 1f],\

@@ -13,7 +13,7 @@ dialog show @s[predicate=mad:player/,predicate=!mad:player/host] \
   {\
     type: 'minecraft:confirmation',\
     title: {\
-      text: 'チーム編成のマニュアル設定',\
+      translate: 'チーム編成のマニュアル設定',\
     },\
     body: [\
       {\
@@ -31,35 +31,35 @@ dialog show @s[predicate=mad:player/,predicate=!mad:player/host] \
           {\
             id: '10',\
             display: {\
-              text: '未選択',\
+              translate: '未選択',\
               color: 'white',\
             },\
           },\
           {\
             id: '11',\
             display: {\
-              text: '赤チーム',\
+              translate: '赤チーム',\
               color: 'red',\
             },\
           },\
           {\
             id: '12',\
             display: {\
-              text: '青チーム',\
+              translate: '青チーム',\
               color: 'blue',\
             },\
           },\
           {\
             id: '13',\
             display: {\
-              text: '黄チーム',\
+              translate: '黄チーム',\
               color: 'yellow',\
             },\
           },\
           {\
             id: '14',\
             display: {\
-              text: '緑チーム',\
+              translate: '緑チーム',\
               color: 'green',\
             },\
           },\
@@ -88,7 +88,7 @@ dialog show @s[predicate=mad:player/host] \
   {\
     type: 'minecraft:multi_action',\
     title: {\
-      text: 'チーム編成のマニュアル設定',\
+      translate: 'チーム編成のマニュアル設定',\
     },\
     body: [\
       {\
@@ -106,35 +106,35 @@ dialog show @s[predicate=mad:player/host] \
           {\
             id: '10',\
             display: {\
-              text: '未選択',\
+              translate: '未選択',\
               color: 'white',\
             },\
           },\
           {\
             id: '11',\
             display: {\
-              text: '赤チーム',\
+              translate: '赤チーム',\
               color: 'red',\
             },\
           },\
           {\
             id: '12',\
             display: {\
-              text: '青チーム',\
+              translate: '青チーム',\
               color: 'blue',\
             },\
           },\
           {\
             id: '13',\
             display: {\
-              text: '黄チーム',\
+              translate: '黄チーム',\
               color: 'yellow',\
             },\
           },\
           {\
             id: '14',\
             display: {\
-              text: '緑チーム',\
+              translate: '緑チーム',\
               color: 'green',\
             },\
           },\

@@ -25,10 +25,10 @@ $bossbar set minecraft:mad_team_$(team) name \
   [\
     '',\
     {\
-      translate:　'%s - 生存時間 残り %s 秒',\
+      translate: '%s - 生存時間 残り %s 秒',\
       with: [\
         {\
-          text: '$(text)チーム',\
+          translate: '$(text)チーム',\
           color: '$(color)',\
           bold: true,\
         },\

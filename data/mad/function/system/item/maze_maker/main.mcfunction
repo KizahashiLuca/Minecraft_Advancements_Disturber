@@ -37,8 +37,8 @@ execute as @p[predicate=mad:system/item/maze_maker/set_player/maze_player] at @s
 execute as @e[predicate=mad:system/item/maze_maker/set_player/not_set_maze_marker,sort=nearest,limit=1] at @s run function mad:system/item/maze_maker/set_player/initialize_digger
 
 ## Message
-tellraw @s ['',{text:'[メイズメイカー] 一番近くの敵プレイヤーを迷路に送り込みました。',color:'green'}]
-tellraw @p[predicate=mad:system/item/maze_maker/set_player/maze_player] ['',{text:'[メイズメイカー] 誰かにより迷路に送り込まれました。',color:'green'}]
+tellraw @s ['',{translate:'[メイズメイカー] 一番近くの敵プレイヤーを迷路に送り込みました。',color:'green'}]
+tellraw @p[predicate=mad:system/item/maze_maker/set_player/maze_player] ['',{translate:'[メイズメイカー] 誰かにより迷路に送り込まれました。',color:'green'}]
 
 ## Remove tags
 tag @a remove MAD_MazePlayer

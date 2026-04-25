@@ -9,5 +9,5 @@
 #####################################
 
 ## メッセージ表示
-execute if predicate mad:dimension/overworld run tellraw @a[distance=..5] ['',{text:'[帰還装置] オーバーワールドには帰還ポータルを設置できません。',color:'green'}]
-execute if predicate mad:dimension/the_nether run tellraw @a[distance=..5] ['',{text:'[帰還装置] ネザーには帰還ポータルを設置できません。',color:'green'}]
+execute if predicate mad:dimension/overworld run tellraw @a[distance=..5] ['',{translate:'[帰還装置] オーバーワールドには帰還ポータルを設置できません。',color:'green'}]
+execute if predicate mad:dimension/the_nether run tellraw @a[distance=..5] ['',{translate:'[帰還装置] ネザーには帰還ポータルを設置できません。',color:'green'}]

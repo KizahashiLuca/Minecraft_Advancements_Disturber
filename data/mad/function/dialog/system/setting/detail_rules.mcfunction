@@ -14,7 +14,7 @@ $execute if predicate mad:gamerule/num_of_players/solo run \
     {\
       type: 'minecraft:confirmation',\
       title: {\
-        text: '詳細設定',\
+        translate: '詳細設定',\
       },\
       inputs: [\
         {\
@@ -100,7 +100,7 @@ $execute if predicate mad:gamerule/match_mode/team \
     {\
       type: 'minecraft:confirmation',\
       title: {\
-        text: '詳細設定',\
+        translate: '詳細設定',\
       },\
       inputs: [\
         {\
@@ -188,7 +188,7 @@ $execute if predicate mad:gamerule/match_mode/individual/ \
     {\
       type: 'minecraft:confirmation',\
       title: {\
-        text: '詳細設定',\
+        translate: '詳細設定',\
       },\
       inputs: [\
         {\

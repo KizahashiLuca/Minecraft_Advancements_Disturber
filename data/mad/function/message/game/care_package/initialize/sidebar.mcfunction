@@ -27,7 +27,7 @@ $scoreboard players display numberformat 支援物資$(number)-投下時間 Side
       with: [\
         {\
           translate: '?',\
-          color:'red',\
+          color: 'red',\
         },\
       ],\
     },\
@@ -71,7 +71,7 @@ $scoreboard players display numberformat 支援物資$(number)-投下時間 Side
       with: [\
         {\
           translate: '?',\
-          color:'red',\
+          color: 'red',\
         },\
       ],\
     },\
@@ -115,7 +115,7 @@ $scoreboard players display numberformat 支援物資$(number)-投下時間 Side
       with: [\
         {\
           translate: '?',\
-          color:'red',\
+          color: 'red',\
         },\
       ],\
     },\
@@ -159,7 +159,7 @@ $scoreboard players display numberformat 支援物資$(number)-投下時間 Side
       with: [\
         {\
           translate: '?',\
-          color:'red',\
+          color: 'red',\
         },\
       ],\
     },\
@@ -203,7 +203,7 @@ $scoreboard players display numberformat 支援物資$(number)-投下時間 Side
       with: [\
         {\
           translate: '?',\
-          color:'red',\
+          color: 'red',\
         },\
       ],\
     },\

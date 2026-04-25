@@ -13,7 +13,7 @@ data modify storage mad: team.a \
   set value \
   {\
     team: 'a',\
-    text: '赤',\
+    translate: '赤',\
     color: 'red',\
     uppercase: 'A',\
     limit: 0,\
@@ -22,7 +22,7 @@ data modify storage mad: team.b \
   set value \
   {\
     team: 'b',\
-    text: '青',\
+    translate: '青',\
     color: 'blue',\
     uppercase: 'B',\
     limit: 0,\
@@ -31,7 +31,7 @@ data modify storage mad: team.c \
   set value \
   {\
     team: 'c',\
-    text: '黄',\
+    translate: '黄',\
     color: 'yellow',\
     uppercase: 'C',\
     limit: 0,\
@@ -40,7 +40,7 @@ data modify storage mad: team.d \
   set value \
   {\
     team: 'd',\
-    text: '緑',\
+    translate: '緑',\
     color: 'green',\
     uppercase: 'D',\
     limit: 0,\

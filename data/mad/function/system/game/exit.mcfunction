@@ -12,17 +12,17 @@
 execute if predicate mad:gamerule/match_mode/individual/solo run \
   function mad:message/game/exit/ \
     {\
-      text: 'プレイヤーが死亡',\
+      translate: 'プレイヤーが死亡',\
     }
 execute if predicate mad:gamerule/match_mode/individual/not_solo run \
   function mad:message/game/exit/ \
     {\
-      text: '勝者が決定',\
+      translate: '勝者が決定',\
     }
 execute if predicate mad:gamerule/match_mode/team run \
   function mad:message/game/exit/ \
     {\
-      text: '勝者が決定',\
+      translate: '勝者が決定',\
     }
 
 ## ゲーム全体終了トリガーをセット

@@ -18,12 +18,12 @@ execute as @s[scores={Second=19}] run \
     [\
       '',\
       {\
-        text:'■',\
-        color:'red',\
+        translate: '■',\
+        color: 'red',\
       },\
       {\
-        text:'■■■■■■■■■■■■■■■■■■■',\
-        color:'gray',\
+        translate: '■■■■■■■■■■■■■■■■■■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=18}] run \
@@ -31,12 +31,12 @@ execute as @s[scores={Second=18}] run \
     [\
       '',\
       {\
-        text:'■■',\
-        color:'red',\
+        translate: '■■',\
+        color: 'red',\
       },\
       {\
-        text:'■■■■■■■■■■■■■■■■■■',\
-        color:'gray',\
+        translate: '■■■■■■■■■■■■■■■■■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=17}] run \
@@ -44,12 +44,12 @@ execute as @s[scores={Second=17}] run \
     [\
       '',\
       {\
-        text:'■■■',\
-        color:'red',\
+        translate: '■■■',\
+        color: 'red',\
       },\
       {\
-        text:'■■■■■■■■■■■■■■■■■',\
-        color:'gray',\
+        translate: '■■■■■■■■■■■■■■■■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=16}] run \
@@ -57,12 +57,12 @@ execute as @s[scores={Second=16}] run \
     [\
       '',\
       {\
-        text:'■■■■',\
-        color:'red',\
+        translate: '■■■■',\
+        color: 'red',\
       },\
       {\
-        text:'■■■■■■■■■■■■■■■■',\
-        color:'gray',\
+        translate: '■■■■■■■■■■■■■■■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=15}] run \
@@ -70,12 +70,12 @@ execute as @s[scores={Second=15}] run \
     [\
       '',\
       {\
-        text:'■■■■■',\
-        color:'red',\
+        translate: '■■■■■',\
+        color: 'red',\
       },\
       {\
-        text:'■■■■■■■■■■■■■■■',\
-        color:'gray',\
+        translate: '■■■■■■■■■■■■■■■',\
+        color: 'gray',\
       },\
     ]
 execute as @s[scores={Second=14}] run \
@@ -83,12 +83,12 @@ execute as @s[scores={Second=14}] run \
     [\
       '',\
       {\
-        text:'■■■■■■',\
-        color:'red',\
+        translate: '■■■■■■',\
+        color: 'red',\
       },\
       {\
-        text:'■■■■■■■■■■■■■■',\
-        color:'gray',\
+        translate: '■■■■■■■■■■■■■■',\
+        color: 'gray',\
       },\
     ]
 title @a[distance=..2] times 0 20 0

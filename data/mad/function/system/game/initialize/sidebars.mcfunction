@@ -17,7 +17,7 @@ scoreboard objectives modify Sidebar displayname \
   [\
     '',\
     {\
-      text: '支援物資 投下情報',\
+      translate: '支援物資 投下情報',\
     },\
   ]
 #### 赤チーム用
@@ -28,14 +28,14 @@ scoreboard objectives modify SidebarA displayname \
   [\
     '',\
     {\
-      text: '情報',\
+      translate: '情報',\
     },\
   ]
 scoreboard players set 【支援物資情報】 SidebarA 2147483647
 scoreboard players display name 【支援物資情報】 SidebarA \
   [\
     {\
-      text: '【支援物資情報】',\
+      translate: '【支援物資情報】',\
       bold: true,\
     },\
   ]
@@ -47,14 +47,14 @@ scoreboard objectives modify SidebarB displayname \
   [\
     '',\
     {\
-      text: '情報',\
+      translate: '情報',\
     },\
   ]
 scoreboard players set 【支援物資情報】 SidebarB 2147483647
 scoreboard players display name 【支援物資情報】 SidebarB \
   [\
     {\
-      text: '【支援物資情報】',\
+      translate: '【支援物資情報】',\
       bold: true,\
     },\
   ]
@@ -66,14 +66,14 @@ scoreboard objectives modify SidebarC displayname \
   [\
     '',\
     {\
-      text: '情報',\
+      translate: '情報',\
     },\
   ]
 scoreboard players set 【支援物資情報】 SidebarC 2147483647
 scoreboard players display name 【支援物資情報】 SidebarC \
   [\
     {\
-      text: '【支援物資情報】',\
+      translate: '【支援物資情報】',\
       bold: true,\
     },\
   ]
@@ -85,14 +85,14 @@ scoreboard objectives modify SidebarD displayname \
   [\
     '',\
     {\
-      text: '情報',\
+      translate: '情報',\
     },\
   ]
 scoreboard players set 【支援物資情報】 SidebarD 2147483647
 scoreboard players display name 【支援物資情報】 SidebarD \
   [\
     {\
-      text: '【支援物資情報】',\
+      translate: '【支援物資情報】',\
       bold: true,\
     },\
   ]

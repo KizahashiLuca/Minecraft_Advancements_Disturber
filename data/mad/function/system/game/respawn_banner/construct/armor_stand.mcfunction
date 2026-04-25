@@ -25,7 +25,7 @@ $execute as @e[type=minecraft:marker,tag=mad_player$(victim_number),limit=1] \
       equipment: {\
         chest: {\
           id: 'minecraft:leather_chestplate',\
-          count:1b,\
+          count: 1b,\
           components: {\
             custom_data: {\
               Tags: [\
@@ -73,7 +73,7 @@ $execute as @e[type=minecraft:marker,tag=mad_player$(victim_number),limit=1] \
             },\
           },\
         },\
-        legs:{\
+        legs: {\
           id: 'minecraft:leather_leggings',\
           count: 1b,\
           components: {\

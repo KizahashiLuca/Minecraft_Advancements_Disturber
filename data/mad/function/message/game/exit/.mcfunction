@@ -13,7 +13,7 @@ $tellraw @a \
   [\
     '',\
     {\
-      text: '\n[試合終了] $(text)しました。\n',\
+      translate: '\n[試合終了] $(text)しました。\n',\
       color: 'green',\
     },\
   ]
@@ -28,7 +28,7 @@ tellraw @p[predicate=mad:player/host] \
       translate: '  %sを押してください。\n',\
       with: [\
         {\
-          text: 'こちら',\
+          translate: 'こちら',\
           color: 'light_purple',\
           bold: true,\
           underlined: true,\

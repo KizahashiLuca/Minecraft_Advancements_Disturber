@@ -31,7 +31,7 @@ $tellraw @a[predicate=mad:player/team/$(team)] \
       translate: 'chat.type.advancement.challenge',\
       with: [\
         {\
-          text: '$(text)チーム',\
+          translate: '$(text)チーム',\
           color: '$(color)',\
           bold: true\
         },\

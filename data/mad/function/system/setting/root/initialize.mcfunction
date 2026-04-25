@@ -20,7 +20,7 @@ execute if predicate mad:gamerule/match_mode/individual/ run \
   function mad:dialog/system/setting/root \
     {\
       label: 'ゲーム開始',\
-      text: 'ゲームを開始します。',\
+      translate: 'ゲームを開始します。',\
       score: 50,\
     }
 #### チームメンバー選択がランダムの場合
@@ -28,7 +28,7 @@ execute if predicate mad:gamerule/team_rules/set_team_manual/false run \
   function mad:dialog/system/setting/root \
     {\
       label: 'ゲーム開始',\
-      text: 'ゲームを開始します。',\
+      translate: 'ゲームを開始します。',\
       score: 50,\
     }
 #### チームメンバー選択がマニュアルの場合
@@ -36,6 +36,6 @@ execute if predicate mad:gamerule/team_rules/set_team_manual/true run \
   function mad:dialog/system/setting/root \
     {\
       label: 'チームメンバー選択',\
-      text: 'チームメンバー手動設定に移ります。',\
+      translate: 'チームメンバー手動設定に移ります。',\
       score: 40,\
     }
