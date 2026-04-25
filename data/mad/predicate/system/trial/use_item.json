@@ -7,6 +7,10 @@
     },
     {
       "condition": "minecraft:reference",
+      "name": "mad:system/trial/use_emergency_call"
+    },
+    {
+      "condition": "minecraft:reference",
       "name": "mad:system/trial/use_energy_drink"
     },
     {
@@ -20,10 +24,6 @@
     {
       "condition": "minecraft:reference",
       "name": "mad:system/trial/use_tool_upgrader"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mad:system/trial/use_totem_of_undying"
     },
     {
       "condition": "minecraft:reference",

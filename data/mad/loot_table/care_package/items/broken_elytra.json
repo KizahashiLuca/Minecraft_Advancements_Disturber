@@ -23,8 +23,8 @@
                 "minecraft:rarity": "epic",
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_BrokenElytra"
+                    "mad_minecart_item",
+                    "mad_broken_elytra"
                   ]
                 }
               }

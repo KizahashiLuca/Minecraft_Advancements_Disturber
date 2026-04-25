@@ -4,7 +4,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{Inventory:[{tag:{Tags:[\"MAD_ToolUpgrader\"]}}]}"
+      "nbt": "{Inventory:[{tag:{Tags:[\"mad_tool_upgrader\"]}}]}"
     }
   }
 }

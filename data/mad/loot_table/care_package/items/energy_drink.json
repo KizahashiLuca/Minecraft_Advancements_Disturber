@@ -13,7 +13,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "栄養ドリンク",
+                "translate": "栄養ドリンク",
                 "italic": false
               }
             },
@@ -48,8 +48,8 @@
                 },
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_EnergyDrink"
+                    "mad_minecart_item",
+                    "mad_energy_drink"
                   ]
                 }
               }

@@ -13,7 +13,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "どっか行け矢",
+                "translate": "どっか行け矢",
                 "italic": false
               }
             },
@@ -23,13 +23,13 @@
               "entity": "this",
               "lore": [
                 {
-                  "text": "当たった相手をランダムな箇所に飛ばす",
+                  "translate": "当たった相手をランダムな箇所に飛ばす",
                   "color": "gray",
                   "italic": false
                 },
                 "",
                 {
-                  "text": "弓もしくはクロスボウで使用",
+                  "translate": "弓もしくはクロスボウで使用",
                   "color": "dark_purple",
                   "italic": false
                 }
@@ -42,8 +42,8 @@
                 "minecraft:entity_data": {
                   "id": "minecraft:arrow",
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_TeleportArrow"
+                    "mad_minecart_item",
+                    "mad_teleport_arrow"
                   ]
                 },
                 "minecraft:potion_contents": {

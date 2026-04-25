@@ -47,8 +47,8 @@
                 "minecraft:repair_cost": 2147483647,
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_GoldenBoots"
+                    "mad_minecart_item",
+                    "mad_golden_boots"
                   ]
                 }
               }

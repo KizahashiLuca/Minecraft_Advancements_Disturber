@@ -32,8 +32,8 @@
                 "minecraft:rarity": "rare",
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_BrokenTrident"
+                    "mad_minecart_item",
+                    "mad_broken_trident"
                   ]
                 }
               }

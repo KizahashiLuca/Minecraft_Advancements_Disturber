@@ -14,8 +14,8 @@
               "components": {
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_TotemOfUndying"
+                    "mad_minecart_item",
+                    "mad_totem_of_undying"
                   ]
                 }
               }
