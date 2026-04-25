@@ -10,7 +10,7 @@
 
 ## エンティティ削除
 #### テキストディスプレイ
-kill @e[tag=MAD_TextDisplay_Wait_CheckList]
+kill @e[tag=mad_text_display_wait_wait_check_list]
 
 ## エンティティ召喚
 #### 確認事項
@@ -25,9 +25,9 @@ summon minecraft:text_display ~ ~ ~ \
     alignment: 'center',\
     Rotation: [180.0f, 0.0f],\
     Tags: [\
-      'MAD_TextDisplay',\
-      'MAD_TextDisplay_Wait',\
-      'MAD_TextDisplay_Wait_CheckList',\
+      'mad_text_display',\
+      'mad_text_display_wait',\
+      'mad_text_display_wait_wait_check_list',\
     ],\
   }
 execute if predicate mad:gamerule/match_mode/individual/solo run \
@@ -47,9 +47,9 @@ execute if predicate mad:gamerule/match_mode/individual/solo run \
       alignment: 'center',\
       Rotation: [180.0f, 0.0f],\
       Tags: [\
-        'MAD_TextDisplay',\
-        'MAD_TextDisplay_Wait',\
-        'MAD_TextDisplay_Wait_CheckList',\
+        'mad_text_display',\
+        'mad_text_display_wait',\
+        'mad_text_display_wait_wait_check_list',\
       ],\
     }
 execute if predicate mad:gamerule/match_mode/individual/not_solo run \
@@ -69,9 +69,9 @@ execute if predicate mad:gamerule/match_mode/individual/not_solo run \
       alignment: 'center',\
       Rotation: [180.0f, 0.0f],\
       Tags: [\
-        'MAD_TextDisplay',\
-        'MAD_TextDisplay_Wait',\
-        'MAD_TextDisplay_Wait_CheckList',\
+        'mad_text_display',\
+        'mad_text_display_wait',\
+        'mad_text_display_wait_wait_check_list',\
       ],\
     }
 execute if predicate mad:gamerule/match_mode/team run \
@@ -91,8 +91,8 @@ execute if predicate mad:gamerule/match_mode/team run \
       alignment: 'center',\
       Rotation: [180.0f, 0.0f],\
       Tags: [\
-        'MAD_TextDisplay',\
-        'MAD_TextDisplay_Wait',\
-        'MAD_TextDisplay_Wait_CheckList',\
+        'mad_text_display',\
+        'mad_text_display_wait',\
+        'mad_text_display_wait_wait_check_list',\
       ],\
     }

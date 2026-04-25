@@ -10,4 +10,4 @@
 
 ## エンティティ削除
 #### テキストディスプレイ
-kill @e[tag=MAD_TextDisplay_Wait]
+kill @e[tag=mad_text_display_wait]
