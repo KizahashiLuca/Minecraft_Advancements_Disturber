@@ -31,7 +31,8 @@ execute as @a[predicate=mad:item/notice_of_thief/trigger] \
 
 ## 緊急招集
 execute as @a[predicate=mad:item/emergency_call/trigger] \
-  at @s run function mad:system/item/emergency_call/ \
+  at @s run \
+  function mad:system/item/emergency_call/ \
     with storage mad: rules.match_mode
 
 ## 帰還ポータル
