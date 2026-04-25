@@ -30,7 +30,9 @@ execute as @a[predicate=mad:item/notice_of_thief/trigger] \
     with storage mad: rules.match_mode
 
 ## 緊急招集
-execute as @a[predicate=mad:system/item/emergency_call/] at @s run function mad:system/item/emergency_call/ with storage mad: rules.match_mode
+execute as @a[predicate=mad:item/emergency_call/trigger] \
+  at @s run function mad:system/item/emergency_call/ \
+    with storage mad: rules.match_mode
 
 ## 帰還ポータル
 execute as @e[predicate=mad:system/item/return_portal/armor_stand] at @s run function mad:system/item/return_portal/

@@ -8,18 +8,18 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## ストレージ取得 - FIFO 緊急招集発信者プレイヤー番号
-data modify storage mad: item.emergency_call.tmp.caller_number set from storage mad: item.emergency_call.callers[0]
+## ストレージ初期化
+data remove storage mad: item.emergency_call.tmp
 
-## ストレージ削除 - DEQUEUE
+## 緊急招集を発信したプレイヤー取得
+#### 配列から緊急招集を発信したプレイヤー(もしくはチーム)をdequeue
+data modify storage mad: item.emergency_call.tmp \
+  merge from storage mad: item.emergency_call.callers[0]
 data remove storage mad: item.emergency_call.callers[0]
- 
-## テレポートされるチーム決定
-execute if predicate mad:gamerule/match_mode/individual/ run function mad:system/item/emergency_call/call/individual with storage mad: item.emergency_call.tmp
-execute if predicate mad:gamerule/match_mode/team run function mad:system/item/emergency_call/call/team with storage mad: item.emergency_call.tmp
 
 ## 招集実行
-function mad:system/item/emergency_call/call/teleport/ with storage mad: item.emergency_call.tmp
+function mad:system/item/emergency_call/call/execute/ \
+  with storage mad: item.emergency_call.tmp
 
 ## ストレージ削除
 data remove storage mad: item.emergency_call.tmp

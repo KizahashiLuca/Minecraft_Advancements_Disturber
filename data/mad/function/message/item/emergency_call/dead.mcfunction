@@ -8,8 +8,34 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 招集プレイヤーへのメッセージ
-tellraw @s ['',{text:'[緊急招集] あなたが死亡しているため、 緊急招集されませんでした。',color:'green'}]
-
 ## 全員へのメッセージ
-$tellraw @a[tag=!MAD_Player$(caller_number),predicate=mad:player/team/$(call_team)] ['',{text:'[緊急招集] 招集したプレイヤーが死亡しているため、 緊急招集は実行されませんでした。',color:'green'}]
+#### チーム戦の場合
+$execute if predicate mad:gamerule/match_mode/individual/ run \
+  tellraw @a[predicate=mad:player/] \
+    [\
+      '',\
+      {\
+        translate: '[緊急招集] 招集者 %s が死亡しているため、 緊急招集は実行されませんでした。',\
+        with: [\
+          {\
+            selector: '@p[tag=mad_player$(caller_number)]',\
+          },\
+        ],\
+        color: 'green',\
+      },\
+    ]
+#### チーム戦の場合
+$execute if predicate mad:gamerule/match_mode/team run \
+  tellraw @a[predicate=mad:player/team/$(caller_team)] \
+    [\
+      '',\
+      {\
+        translate: '[緊急招集] 招集者 %s が死亡しているため、 緊急招集は実行されませんでした。',\
+        with: [\
+          {\
+            selector: '@p[tag=mad_player$(caller_number)]',\
+          },\
+        ],\
+        color: 'green',\
+      },\
+    ]

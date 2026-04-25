@@ -8,27 +8,48 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボードリセット
+## 使用トリガーリセット
 scoreboard players set @s UseEmergencyCall 0
 
-## ストレージ削除
+## ストレージ初期化
 data remove storage mad: item.emergency_call.tmp
 
 ## サウンドイベント
-playsound minecraft:entity.zombie_horse.death block @a
- 
-## ストレージ格納 - 緊急招集発信者プレイヤー番号
-execute store result storage mad: item.emergency_call.tmp.caller_number int 1.0 run scoreboard players get @s PlayerNumber
-data modify storage mad: item.emergency_call.callers append from storage mad: item.emergency_call.tmp.caller_number
+playsound minecraft:entity.zombie_horse.death block @a ~ ~ ~ 1.0 1.0 1.0
+
+## 緊急招集発信プレイヤーを設定
+#### 緊急招集を発信したプレイヤー番号を保持
+execute store result storage mad: item.emergency_call.tmp.caller_number int 1.0 run \
+  scoreboard players get @s PlayerNumber
+#### チーム戦 - 自分のチームのチーム番号を保持
+execute as @s[predicate=mad:player/team/a] run \
+  data modify storage mad: item.emergency_call.tmp.caller_team \
+    set value 'a'
+execute as @s[predicate=mad:player/team/b] run \
+  data modify storage mad: item.emergency_call.tmp.caller_team \
+    set value 'b'
+execute as @s[predicate=mad:player/team/c] run \
+  data modify storage mad: item.emergency_call.tmp.caller_team \
+    set value 'c'
+execute as @s[predicate=mad:player/team/d] run \
+  data modify storage mad: item.emergency_call.tmp.caller_team \
+    set value 'd'
+
+## ファイナライズ
+#### 緊急招集を発信したプレイヤー(もしくはチーム)を配列にqueue
+data modify storage mad: item.emergency_call.callers \
+  append from storage mad: item.emergency_call.tmp
 
 ## メッセージ表示
-$function mad:system/item/emergency_call/$(type)
+$function mad:message/item/emergency_call/send_call/$(type) \
+  with storage mad: item.emergency_call.tmp
 
 ## ストレージ削除
 data remove storage mad: item.emergency_call.tmp
 
 ## 関数スケジュール
-schedule function mad:system/item/emergency_call/call/ 5s append
+schedule function mad:system/item/emergency_call/call/ \
+  5s append
 
 ## マーカーキル
-kill @e[type=minecraft:marker,tag=MAD_MinecartItem,tag=MAD_EmergencyCall,sort=nearest,limit=1]
+kill @e[predicate=mad:item/emergency_call/marker,sort=nearest,limit=1]

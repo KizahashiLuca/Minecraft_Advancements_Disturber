@@ -13,7 +13,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "緊急招集",
+                "translate": "緊急招集",
                 "italic": false
               }
             },
@@ -23,7 +23,8 @@
               "entity": "this",
               "lore": [
                 {
-                  "text": "チームメンバーを使用者の場所にテレポートさせる","color": "gray",
+                  "translate": "チームメンバーを使用者の場所にテレポートさせる",
+                  "color": "gray",
                   "italic": false
                 },
                 "",
@@ -45,15 +46,15 @@
                 "minecraft:rarity": "rare",
                 "minecraft:custom_data": {
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_EmergencyCall"
+                    "mad_minecart_item",
+                    "mad_emergency_call"
                   ]
                 },
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": [
-                    "MAD_MinecartItem",
-                    "MAD_EmergencyCall"
+                    "mad_minecart_item",
+                    "mad_emergency_call"
                   ]
                 }
               }
