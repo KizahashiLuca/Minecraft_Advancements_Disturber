@@ -8,19 +8,36 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-tellraw @a [{translate:'撃たれた'}]
+## ストレージ初期化
+data remove storage mad: item.teleport_arrow.tmp
 
-## Calculate tick
-# scoreboard players add @s ArrowTeleportTick 1
+## サウンドイベント
+playsound minecraft:block.portal.trigger block @a ~ ~ ~ 1.0 1.0 1.0
 
-# ## Particle
-# execute at @s run particle minecraft:portal ~ ~2 ~ 0.1 0.1 0.1 5 10 normal @a
+## パーティクル
+execute at @s run \
+  particle minecraft:portal ~3 ~2 ~ 0.1 0.1 0.1 5 300 normal @a
+ 
+## テレポートするプレイヤーを設定
+#### テレポートするプレイヤー番号を保持
+execute store result storage mad: item.teleport_arrow.tmp.teleportee_number int 1.0 run \
+  scoreboard players get @s PlayerNumber
 
-# ## Change dimension
-# execute as @s[predicate=mad:system/item/teleport_arrow/change_dimension_tick] run function mad:system/item/teleport_arrow/change_dimension
+## ファイナライズ
+#### テレポートするプレイヤー(もしくはチーム)を配列にqueue
+data modify storage mad: item.teleport_arrow.teleportees \
+  append from storage mad: item.teleport_arrow.tmp
 
-# ## Teleport
-# execute as @s[predicate=mad:system/item/teleport_arrow/teleport_tick] run function mad:system/item/teleport_arrow/teleport
+## メッセージ表示
+function mad:message/item/teleport_arrow/send_notice/ \
+  with storage mad: item.teleport_arrow.tmp
 
-# ## Send message
-# execute as @s[predicate=mad:system/item/teleport_arrow/message_tick] run function mad:system/item/teleport_arrow/send_message
+## ストレージ削除
+data remove storage mad: item.teleport_arrow.tmp
+
+## 関数スケジュール
+schedule function mad:system/item/teleport_arrow/teleport/ \
+  5s append
+
+## 撃たれたことを検知して不運効果を削除
+effect clear @s minecraft:unluck

@@ -50,13 +50,16 @@
                   "custom_effects": [
                     {
                       "id": "minecraft:glowing",
-                      "amplifier": 1,
-                      "duration": 4000
+                      "duration": 1600
                     },
                     {
                       "id": "minecraft:levitation",
-                      "amplifier": 1,
-                      "duration": 2000
+                      "duration": 1600
+                    },
+                    {
+                      "id": "minecraft:unluck",
+                      "show_icon": false,
+                      "duration": -1
                     }
                   ]
                 }

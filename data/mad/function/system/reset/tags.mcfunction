@@ -43,5 +43,3 @@ tag @a remove mad_player19
 tag @a remove mad_player20
 #### 支援物資
 tag @a remove mad_give_time_randomly
-#### 支援物資 - どっか行け矢
-tag @a remove mad_arrow_teleportee

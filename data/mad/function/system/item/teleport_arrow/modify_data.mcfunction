@@ -8,5 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Modify data
+## 矢の拾得ができないように設定
 data modify entity @s pickup set value 2b

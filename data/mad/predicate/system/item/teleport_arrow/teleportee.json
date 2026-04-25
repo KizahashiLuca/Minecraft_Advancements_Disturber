@@ -1,7 +1,0 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "nbt": "{Tags:[\"mad_arrow_teleportee\"]}"
-  }
-}

@@ -96,11 +96,6 @@ scoreboard objectives remove UseToolUpgrader
 #### 支援物資用 - 緊急招集
 scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove NumberOfItemCandidates
-#### 支援物資用 - どっか行け矢
-scoreboard objectives remove ArrowTeleportTick
-scoreboard objectives remove ArrowTeleportPosX
-scoreboard objectives remove ArrowTeleportPosY
-scoreboard objectives remove ArrowTeleportPosZ
 #### リスポーンバナー
 scoreboard objectives remove AttackerNumber
 scoreboard objectives remove AttackedSecond

@@ -96,11 +96,6 @@ scoreboard objectives add UseToolUpgrader minecraft.used:minecraft.turtle_spawn_
 #### 支援物資用 - 怪盗予告
 scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn_egg ['', {translate: 'トリガー - 怪盗予告使用'}]
 scoreboard objectives add NumberOfItemCandidates dummy ['', {translate: '怪盗予告 - 怪盗候補アイテム数'}]
-#### 支援物資用 - どっか行け矢(仮)
-scoreboard objectives add ArrowTeleportTick dummy ['', {translate: 'どっか行け矢 - 経過ティック数'}]
-scoreboard objectives add ArrowTeleportPosX dummy ['', {translate: 'どっか行け矢 - テレポート先 - X座標'}]
-scoreboard objectives add ArrowTeleportPosY dummy ['', {translate: 'どっか行け矢 - テレポート先 - Y座標'}]
-scoreboard objectives add ArrowTeleportPosZ dummy ['', {translate: 'どっか行け矢 - テレポート先 - Z座標'}]
 #### リスポーンバナー
 scoreboard objectives add AttackerNumber dummy ['', {translate: '攻撃プレイヤー番号'}]
 scoreboard objectives add AttackedSecond dummy ['', {translate: '被攻撃時秒数'}]

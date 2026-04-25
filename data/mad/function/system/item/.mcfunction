@@ -40,6 +40,12 @@ execute as @e[predicate=mad:item/return_portal/armor_stand] \
   at @s run \
   function mad:system/item/return_portal/
 
-## どっか行け矢(仮)
-#execute as @e[predicate=mad:system/item/teleport_arrow/onground_arrow] at @s run function mad:system/item/teleport_arrow/modify_data
-# execute as @a[predicate=mad:system/item/teleport_arrow/shot_arrow] at @s run function mad:system/item/teleport_arrow/
+## 支援物資アイテム - どっか行け矢
+#### 矢の拾得ができないように設定
+execute as @e[predicate=mad:item/teleport_arrow/onground_arrow] \
+  at @s run \
+  function mad:system/item/teleport_arrow/modify_data
+#### 矢に当たった際の処理
+execute as @a[predicate=mad:item/teleport_arrow/shot_arrow] \
+  at @s run \
+  function mad:system/item/teleport_arrow/
