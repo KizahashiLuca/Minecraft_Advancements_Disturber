@@ -27,5 +27,5 @@ $execute if score @p[tag=mad_player$(thief_number)] NumberOfItemCandidates match
 $execute if score @p[tag=mad_player$(thief_number)] NumberOfItemCandidates matches 0.. \
   as @p[tag=mad_player$(thief_number),predicate=mad:player/alive/] \
   at @s run \
-  function mad:system/item/notice_of_thief/steal/execute/alive \
+  function mad:system/item/notice_of_thief/steal/execute/accept \
     with storage mad: item.notice_of_thief.tmp

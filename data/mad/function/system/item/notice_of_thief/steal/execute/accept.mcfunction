@@ -26,14 +26,13 @@ $item replace entity @p[tag=mad_player$(victim_number)] hotbar.$(Slot) \
   with minecraft:air
 
 ## サウンドイベント
-$execute at @p[tag=mad_player$(thief_number)] run \
+$execute as @p[tag=mad_player$(thief_number)] \
+  at @s run \
   playsound minecraft:entity.allay.ambient_with_item block @a ~ ~ ~ 1.0 1.0 1.0
-$execute at @p[tag=mad_player$(victim_number)] run \
+$execute as @p[tag=mad_player$(victim_number)] \
+  at @s run \
   playsound minecraft:entity.allay.hurt block @a ~ ~ ~ 1.0 1.0 1.0
 
 ## メッセージ表示
 function mad:message/item/notice_of_thief/accept \
-  {\
-    thief_number: '$(thief_number)',\
-    victim_number: '$(victim_number)',\
-  }
+  with storage mad: item.notice_of_thief.tmp
