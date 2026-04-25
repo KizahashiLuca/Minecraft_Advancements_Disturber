@@ -54,7 +54,7 @@ tellraw @a[predicate=mad:player/host] \
           },\
           click_event: {\
             action: 'run_command',\
-            command: 'trigger ExecuteTrigger set 10',\
+            command: 'trigger ExecuteTrigger set 5',\
           },\
         },\
       ],\
