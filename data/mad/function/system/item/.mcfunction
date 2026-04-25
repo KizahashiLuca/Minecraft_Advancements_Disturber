@@ -23,19 +23,19 @@ execute as @a[predicate=mad:item/upgrader/tool/trigger] \
   at @s run \
   function mad:system/item/upgrader/tool/
 
-## 怪盗予告
+## 支援物資アイテム - 怪盗予告
 execute as @a[predicate=mad:item/notice_of_thief/trigger] \
   at @s run \
   function mad:system/item/notice_of_thief/ \
     with storage mad: rules.match_mode
 
-## 緊急招集
+## 支援物資アイテム - 緊急招集
 execute as @a[predicate=mad:item/emergency_call/trigger] \
   at @s run \
   function mad:system/item/emergency_call/ \
     with storage mad: rules.match_mode
 
-## 帰還ポータル
+## 支援物資アイテム - 帰還ポータル
 execute as @e[predicate=mad:item/return_portal/armor_stand] \
   at @s run \
   function mad:system/item/return_portal/
