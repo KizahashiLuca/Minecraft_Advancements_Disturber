@@ -39,12 +39,23 @@ kill @e[type=minecraft:trident]
 kill @e[type=minecraft:text_display]
 #### 支援物資
 kill @e[predicate=mad:care_package/]
-#### 帰還ポータル
+#### 支援物資アイテム - 発信機
+kill @e[predicate=mad:item/transmitter/marker]
+#### 支援物資アイテム - 防具アップグレード
+kill @e[predicate=mad:item/upgrader/armor/marker]
+#### 支援物資アイテム - ツールアップグレード
+kill @e[predicate=mad:item/upgrader/tool/marker]
+#### 支援物資アイテム - 怪盗予告
+kill @e[predicate=mad:item/notice_of_thief/marker]
+#### 支援物資アイテム - 緊急招集
+kill @e[predicate=mad:item/emergency_call/marker]
+#### 支援物資アイテム - 帰還ポータル
 kill @e[predicate=mad:item/return_portal/armor_stand]
-#### アップグレードキット
-kill @e[type=minecraft:armor_stand,tag=mad_minecart_item]
-#### その他
+#### その他 - 回復途中の村人ゾンビ
 kill @e[type=minecraft:zombie_villager,nbt=!{ConversionTime:-1}]
+
+## エンティティデータの初期化
+#### なついている状態のアレイ
 execute as @e[type=minecraft:allay] run \
   data modify entity @s Brain.memories \
     set value {}
