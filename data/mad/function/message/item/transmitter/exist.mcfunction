@@ -13,10 +13,14 @@ $tellraw @s \
   [\
     '',\
     {\
-      translate: '[発 信 機]  %s が $(dimension) [$(x), $(y), $(z)] にいます。',\
+      translate: '[発 信 機]  %s が %s [$(x), $(y), $(z)] にいます。',\
       with: [\
         {\
           selector: '@p[tag=mad_player$(player_number)]',\
+        },\
+        {\
+          storage: 'mad:',\
+          nbt: 'dimension.\'$(dimension)\'',\
         },\
       ],\
       color: 'green',\
