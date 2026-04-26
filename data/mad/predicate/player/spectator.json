@@ -3,6 +3,10 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:player",
-    "nbt": "{Tags:[\"mad_spectator\"]}"
+    "nbt": {
+      "Tags": [
+        "mad_spectator"
+      ]
+    }
   }
 }
