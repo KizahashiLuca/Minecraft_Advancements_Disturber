@@ -34,3 +34,8 @@ scoreboard players set @s Tick 0
 #### 配置されたアーマースタンドに対して
 data modify entity @s data.Tags \
   append value 'mad_initialized_respawn_banner'
+
+## データタグ設定
+#### 配置されたアーマースタンドに対して
+data modify entity @s NoGravity \
+  set value 1b
