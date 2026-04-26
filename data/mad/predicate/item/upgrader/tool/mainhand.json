@@ -47,6 +47,17 @@
           "predicate": {
             "equipment": {
               "mainhand": {
+                "items": "#mad:spears"
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
                 "items": "#mad:hoes"
               }
             }
