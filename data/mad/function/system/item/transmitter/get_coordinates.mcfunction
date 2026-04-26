@@ -9,8 +9,8 @@
 #####################################
 
 ## ディメンション算出
-data modify storage mad: item.transmitter.dimension \
-  set from entity @s Dimension
+$data modify storage mad: item.transmitter.dimension \
+  set from entity @p[tag=mad_player$(player_number)] Dimension
 
 ## 座標算出
 $execute store result storage mad: item.transmitter.x int 1 run \
