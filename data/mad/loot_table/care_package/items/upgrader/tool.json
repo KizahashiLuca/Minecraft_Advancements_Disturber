@@ -28,7 +28,7 @@
                   "italic": false
                 },
                 {
-                  "translate": "  対象ツール: 斧, クワ, ツルハシ, シャベル, 剣",
+                  "translate": "  対象ツール: 斧, クワ, ツルハシ, シャベル, 剣, 槍",
                   "color": "gray",
                   "italic": false
                 },
@@ -38,7 +38,12 @@
                   "italic": false
                 },
                 {
-                  "translate": "  石ツール → 金ツール",
+                  "translate": "  石ツール → 銅ツール",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "  銅ツール → 金ツール",
                   "color": "gray",
                   "italic": false
                 },
@@ -75,17 +80,11 @@
               "components": {
                 "minecraft:rarity": "rare",
                 "minecraft:custom_data": {
-                  "Tags": [
-                    "mad_minecart_item",
-                    "mad_tool_upgrader"
-                  ]
+                  "Tags": ["mad_minecart_item", "mad_tool_upgrader"]
                 },
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
-                  "Tags": [
-                    "mad_minecart_item",
-                    "mad_tool_upgrader"
-                  ]
+                  "Tags": ["mad_minecart_item", "mad_tool_upgrader"]
                 }
               }
             }

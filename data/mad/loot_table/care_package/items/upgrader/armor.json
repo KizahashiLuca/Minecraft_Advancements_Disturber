@@ -33,7 +33,12 @@
                   "italic": false
                 },
                 {
-                  "translate": "  革防具 → 金防具",
+                  "translate": "  革防具 → 銅防具",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "  銅防具 → 金防具",
                   "color": "gray",
                   "italic": false
                 },
