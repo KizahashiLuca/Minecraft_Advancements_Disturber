@@ -29,7 +29,7 @@ execute if predicate mad:system/game/timer/pvp/tick/eq_zero run \
 
 ## 支援物資
 #### 投下タイマー
-execute if predicate mad:system/common/time/eq_zero run \
+execute if predicate mad:system/common/time/tick/eq_zero run \
   function mad:system/game/care_package/count_down/
 #### 投下済みの支援物資の処理
 execute as @e[predicate=mad:care_package/] run \
