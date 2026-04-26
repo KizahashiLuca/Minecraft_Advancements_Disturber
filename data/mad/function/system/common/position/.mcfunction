@@ -11,7 +11,7 @@
 ## ポジション算出
 #### 座標/角度取得
 execute as @a run \
-  function mad:system/common/position/get_data
+  function mad:system/common/position/get_data/
 #### 角度調整
 scoreboard players add @a Angle 225
 #### 負の角度を 0-360 の範囲に合わせる

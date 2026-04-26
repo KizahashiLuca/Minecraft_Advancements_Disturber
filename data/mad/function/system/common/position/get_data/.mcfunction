@@ -21,6 +21,17 @@ execute store result score @s PosZ run \
 #### 角度(方向)を取得
 execute store result score @s Angle run \
   data get entity @s Rotation[0] 10
-#### 中心座標との差分を抽出
-scoreboard players operation @s PosX -= #mad PosX
-scoreboard players operation @s PosZ -= #mad PosZ
+
+## 中心座標との差分を抽出
+#### オーバーワールド
+execute as @s[predicate=mad:dimension/overworld] run \
+  function mad:system/common/position/get_data/difference \
+    with storage mad: world_spawn.overworld
+#### ネザー
+execute as @s[predicate=mad:dimension/the_nether] run \
+  function mad:system/common/position/get_data/difference \
+    with storage mad: world_spawn.the_nether
+#### エンド
+execute as @s[predicate=mad:dimension/the_end] run \
+  function mad:system/common/position/get_data/difference \
+    with storage mad: world_spawn.the_end

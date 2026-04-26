@@ -136,10 +136,14 @@ execute in minecraft:the_nether run \
 data modify storage mad: world_spawn.the_end.dimension \
   set value 'the_end'
 execute store result storage mad: world_spawn.the_end.x int 1 run \
+  return 0
+# execute store result storage mad: world_spawn.the_end.x int 1 run \
   scoreboard players get #mad PosX
 execute store result storage mad: world_spawn.the_end.y int 1 run \
   scoreboard players get #mad PosY
 execute store result storage mad: world_spawn.the_end.z int 1 run \
+  return 0
+# execute store result storage mad: world_spawn.the_end.z int 1 run \
   scoreboard players get #mad PosZ
 execute in minecraft:the_end run \
   function mad:system/start/initialize/world/world_border \
