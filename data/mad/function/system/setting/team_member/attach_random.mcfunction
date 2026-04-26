@@ -29,10 +29,6 @@ execute if predicate mad:gamerule/team_rules/number_of_teams/ge_4 \
   function mad:system/setting/team_member/join_team \
     with storage mad: team.d
 
-## メンバー個人設定
-execute if predicate mad:gamerule/match_mode/individual/ run \
-  function mad:system/setting/team_member/individual
-
 ## 所属チーム無しメンバーが居れば追加でランダム設定
 execute if entity @p[predicate=mad:player/team/indie] run \
   function mad:system/setting/team_member/attach_random

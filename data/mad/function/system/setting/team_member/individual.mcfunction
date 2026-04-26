@@ -9,11 +9,11 @@
 #####################################
 
 ## タグ削除
-tag @s remove mad_team_a
-tag @s remove mad_team_b
-tag @s remove mad_team_c
-tag @s remove mad_team_d
-tag @s remove mad_indie_player
+tag @a remove mad_team_a
+tag @a remove mad_team_b
+tag @a remove mad_team_c
+tag @a remove mad_team_d
+tag @a remove mad_indie_player
 
 ## チーム追加
-team join mad_player @s
+team join mad_player @a[predicate=mad:player/]
