@@ -7,12 +7,17 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/broken_elytra"
+          "value": "mad:care_package/items/broken/"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/broken_trident"
+          "value": "mad:care_package/items/pickaxe/"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/upgrader/"
         },
         {
           "type": "minecraft:loot_table",
@@ -32,17 +37,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/pickaxe/"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
           "value": "mad:care_package/items/totem_of_undying"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "mad:care_package/items/upgrader/"
         }
       ]
     }

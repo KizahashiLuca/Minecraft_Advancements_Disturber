@@ -7,12 +7,17 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/broken_elytra"
+          "value": "mad:care_package/items/broken/"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/broken_trident"
+          "value": "mad:care_package/items/pickaxe/"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/upgrader/"
         },
         {
           "type": "minecraft:loot_table",
@@ -32,7 +37,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/pickaxe/"
+          "value": "mad:care_package/items/teleport_arrow"
         },
         {
           "type": "minecraft:loot_table",
@@ -42,18 +47,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/transmitter",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 3
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "mad:care_package/items/upgrader/"
+          "value": "mad:care_package/items/transmitter"
         }
       ]
     }

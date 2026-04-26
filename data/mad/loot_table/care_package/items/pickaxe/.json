@@ -6,11 +6,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "mad:care_package/items/pickaxe/efficiency_pickaxe"
+          "weight": 1,
+          "value": "mad:care_package/items/pickaxe/efficiency"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "mad:care_package/items/pickaxe/fortune_pickaxe"
+          "weight": 1,
+          "value": "mad:care_package/items/pickaxe/fortune"
         }
       ]
     }

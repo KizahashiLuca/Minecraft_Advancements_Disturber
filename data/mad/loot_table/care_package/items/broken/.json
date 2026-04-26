@@ -7,12 +7,12 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/upgrader/armor"
+          "value": "mad:care_package/items/broken/elytra"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "mad:care_package/items/upgrader/tool"
+          "value": "mad:care_package/items/broken/trident"
         }
       ]
     }

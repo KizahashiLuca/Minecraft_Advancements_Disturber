@@ -9,7 +9,7 @@
 #####################################
 
 ## 道具アップグレード 返却
-loot give @s loot mad:care_package/items/upgrader/tool_upgrader
+loot give @s loot mad:care_package/items/upgrader/tool
 
 ## サウンドイベント
 playsound minecraft:block.anvil.fall block @s ~ ~ ~ 1.0 1.0 1.0
