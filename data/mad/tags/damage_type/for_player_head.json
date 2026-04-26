@@ -4,6 +4,7 @@
     "#minecraft:is_fire",
     "#minecraft:is_lightning",
     "#always_kills_armor_stands",
-    "#burns_armor_stands"
+    "#burns_armor_stands",
+    "minecraft:cactus"
   ]
 }
