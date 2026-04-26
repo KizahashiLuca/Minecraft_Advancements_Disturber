@@ -32,6 +32,8 @@ data remove storage mad: item
 kill @e[type=minecraft:marker,tag=mad_teleporter]
 #### テキストディスプレイ
 kill @e[type=minecraft:text_display]
+#### リスポーンバナー
+kill @e[predicate=mad:respawn_banner/]
 #### 支援物資アイテム - 発信機
 kill @e[predicate=mad:item/transmitter/marker]
 #### 支援物資アイテム - 防具アップグレード

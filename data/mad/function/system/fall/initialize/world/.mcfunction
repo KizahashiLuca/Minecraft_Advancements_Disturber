@@ -37,6 +37,8 @@ kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:trident]
 #### テキストディスプレイ
 kill @e[type=minecraft:text_display]
+#### リスポーンバナー
+kill @e[predicate=mad:respawn_banner/]
 #### 支援物資
 kill @e[predicate=mad:care_package/]
 #### 支援物資アイテム - 発信機
