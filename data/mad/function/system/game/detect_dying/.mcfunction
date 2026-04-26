@@ -14,13 +14,12 @@ data remove storage mad: death.victim_number
 #### 加害者のプレイヤー番号
 data remove storage mad: death.killer_number
 
-## 攻撃された時間からの経過時間を算出
-#### 攻撃された時間から現在の時間を減算
-scoreboard players operation @s AttackedSecond -= #mad Second
-scoreboard players operation @s AttackedTick -= #mad Tick
-#### 攻撃された時間(ティック数)を合計
-scoreboard players operation @s AttackedSecond *= #mad 20
-scoreboard players operation @s AttackedTick += @s AttackedSecond
+## 加害者のプレイヤー番号を格納
+execute on attacker \
+  store result storage mad: death.attacker_number int 1 run \
+  scoreboard players get @s[predicate=mad:player/] PlayerNumber
+execute store result score @s AttackerNumber run \
+  data get storage mad: death.attacker_number 1.0
 
 ## 加害者と犠牲者の関係を取得
 #### 犠牲者のプレイヤー番号をストレージに保持
@@ -28,8 +27,7 @@ execute store result storage mad: death.victim_number int 1 run \
   scoreboard players get @s PlayerNumber
 #### 攻撃された時間からの経過時間が5秒(100ティック)以上の場合、
 #### 加害者のプレイヤー番号をストレージに保持
-execute if score @s AttackedTick matches ..100 \
-  store result storage mad: death.killer_number int 1 run \
+execute store result storage mad: death.killer_number int 1 run \
   scoreboard players get @s AttackerNumber
 
 ## 加害者の有無によりキル/通常デスを判定

@@ -98,5 +98,3 @@ scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn
 scoreboard objectives add NumberOfItemCandidates dummy ['', {translate: '怪盗予告 - 怪盗候補アイテム数'}]
 #### リスポーンバナー
 scoreboard objectives add AttackerNumber dummy ['', {translate: '攻撃プレイヤー番号'}]
-scoreboard objectives add AttackedSecond dummy ['', {translate: '被攻撃時秒数'}]
-scoreboard objectives add AttackedTick dummy ['', {translate: '被攻撃時ティック数'}]

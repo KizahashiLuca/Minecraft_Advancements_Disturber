@@ -118,5 +118,3 @@ scoreboard players set @a[predicate=mad:player/] UseNoticeOfThief 0
 scoreboard players set @a[predicate=mad:player/] NumberOfItemCandidates 0
 #### リスポーンバナー
 scoreboard players set @a[predicate=mad:player/] AttackerNumber 0
-scoreboard players set @a[predicate=mad:player/] AttackedSecond 0
-scoreboard players set @a[predicate=mad:player/] AttackedTick 0

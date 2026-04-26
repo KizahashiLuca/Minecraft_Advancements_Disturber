@@ -98,8 +98,6 @@ scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove NumberOfItemCandidates
 #### リスポーンバナー
 scoreboard objectives remove AttackerNumber
-scoreboard objectives remove AttackedSecond
-scoreboard objectives remove AttackedTick
 
 ## プレイヤーのスコアボードをリセット
 scoreboard players reset @e

@@ -49,5 +49,3 @@ scoreboard players reset @s UseNoticeOfThief
 scoreboard players reset @s NumberOfItemCandidates
 #### リスポーンバナー
 scoreboard players reset @s AttackerNumber
-scoreboard players reset @s AttackedSecond
-scoreboard players reset @s AttackedTick

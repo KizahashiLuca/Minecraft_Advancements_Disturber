@@ -53,5 +53,3 @@ scoreboard players set @s UseNoticeOfThief 0
 scoreboard players set @s NumberOfItemCandidates 0
 #### リスポーンバナー
 scoreboard players set @s AttackerNumber 0
-scoreboard players set @s AttackedSecond 0
-scoreboard players set @s AttackedTick 0
