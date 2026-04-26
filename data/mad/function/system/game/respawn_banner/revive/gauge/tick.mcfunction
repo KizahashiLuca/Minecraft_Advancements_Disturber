@@ -18,3 +18,6 @@ $execute if entity @p[predicate=mad:player/alive/$(team),predicate=mad:player/al
 ## 1ティック減算
 $execute as @a[predicate=mad:player/alive/$(team),predicate=mad:player/alive/on_sneak,distance=..2] run \
   scoreboard players remove @e[predicate=mad:respawn_banner/armor_stand/initialized,nbt={data:{name:'$(name)'}}] Tick 1
+#### 0ティック未満の場合、20ティックを加算
+$execute as @a[predicate=mad:player/alive/$(team),predicate=mad:player/alive/on_sneak,distance=..2] run \
+  scoreboard players add @e[predicate=mad:respawn_banner/armor_stand/initialized,nbt={data:{name:'$(name)'}}] Tick 20
