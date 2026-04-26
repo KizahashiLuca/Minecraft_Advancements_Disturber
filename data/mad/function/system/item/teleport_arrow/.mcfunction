@@ -12,7 +12,7 @@
 data remove storage mad: item.teleport_arrow.tmp
 
 ## サウンドイベント
-playsound minecraft:block.portal.trigger block @a ~ ~ ~ 1.0 1.0 1.0
+playsound minecraft:block.portal.trigger block @s ~ ~ ~ 0.5 1.0 1.0
 
 ## パーティクル
 execute at @s run \

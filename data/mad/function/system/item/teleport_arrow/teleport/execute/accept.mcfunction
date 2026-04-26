@@ -19,7 +19,7 @@ particle minecraft:sonic_boom ~ ~1 ~ 0.1 -3 0.1 1 10 normal @a
 effect give @s minecraft:resistance 5 6 false
 
 ## サウンドイベント
-playsound minecraft:block.portal.travel block @a ~ ~ ~ 1.0 2.0 1.0
+playsound minecraft:block.portal.travel block @s ~ ~ ~ 0.5 2.0 1.0
 
 ## メッセージ表示
 function mad:message/item/teleport_arrow/accept \

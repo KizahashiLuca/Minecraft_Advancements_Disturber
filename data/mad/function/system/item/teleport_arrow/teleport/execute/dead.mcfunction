@@ -11,7 +11,7 @@
 ## サウンドイベント
 $execute as @p[tag=mad_player$(teleportee_number)] \
   at @s run \
-  playsound minecraft:particle.soul_escape block @a ~ ~ ~ 1.0 2.0 1.0
+  playsound minecraft:particle.soul_escape block @s ~ ~ ~ 0.5 2.0 1.0
 
 ## メッセージ表示
 $function mad:message/item/teleport_arrow/dead \
