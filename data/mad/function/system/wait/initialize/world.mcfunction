@@ -24,8 +24,6 @@ data remove storage mad: teleport
 data remove storage mad: attack
 #### 死亡情報
 data remove storage mad: death
-#### アイテム
-data remove storage mad: item
 
 ## エンティティ 削除
 #### アイテム
