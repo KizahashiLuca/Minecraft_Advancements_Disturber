@@ -36,6 +36,7 @@ function mad:system/start/initialize/storages/team
 function mad:system/start/initialize/storages/upgrader
 #### ゲームルール用ストレージ
 function mad:system/start/initialize/storages/rules/
+function mad:system/wait/initialize/storages/
 #### ワールド
 function mad:system/game/initialize/world \
   with storage mad: rules
