@@ -12,6 +12,11 @@
 #### 停止フェーズ
 execute if predicate mad:phase/stop run \
   function mad:system/end/stop
+#### トライアルフェーズ
+execute if predicate mad:phase/trial run \
+  function mad:system/trial/
+execute if predicate mad:phase/trial run \
+  function mad:system/item/
 #### 終了フェーズ
 execute if predicate mad:phase/exit run \
   function mad:system/end/exit/

@@ -8,10 +8,5 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Send messages
-function mad:message/begin
-tellraw @a ['',{translate:'  個人戦のトライアルを開始します。',color:'white',bold:false,italic:false}]
-function mad:message/end
-
-## Change to choose setting
-function mad:system/trial/set_trial/change_to
+## トライアルフェーズへ移動
+scoreboard players set #mad Phase 100

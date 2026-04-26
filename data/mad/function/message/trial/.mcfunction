@@ -8,6 +8,17 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Add tags
-tag @p[sort=nearest] add mad_host
-tag @a[gamemode=!spectator] add mad_player 
+## 共通開始メッセージ表示
+function mad:message/begin
+
+## トライアル開始メッセージ表示
+tellraw @a \
+  [\
+    '',\
+    {\
+      translate: '  トライアルを開始します',\
+    },\
+  ]
+
+## 共通終了メッセージ表示
+function mad:message/end

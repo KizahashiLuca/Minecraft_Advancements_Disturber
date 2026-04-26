@@ -8,6 +8,11 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## Detect Gamemode
-execute if entity @p[predicate=mad:player/host] run function mad:system/trial/set_trial/reject
-execute unless entity @p[predicate=mad:player/host] run function mad:system/trial/set_trial/main
+## ゲームが既に実行されている場合 新しいゲームを拒否
+execute if predicate mad:phase/in_game run \
+  function mad:message/ongoing/
+
+## ゲームが実行されていない場合 新しいゲームを準備
+execute if predicate mad:phase/not_in_game run \
+  function mad:system/trial/initialize/
+  
