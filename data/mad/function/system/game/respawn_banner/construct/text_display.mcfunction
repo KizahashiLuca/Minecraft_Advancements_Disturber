@@ -19,7 +19,7 @@ $execute as @e[type=minecraft:marker,tag=mad_player$(victim_number),limit=1] \
       ],\
       alignment: 'center',\
       billboard: 'center',\
-      translate: [\
+      text: [\
         [\
           {\
             translate: '%sのリスポーンバナー\n',\
