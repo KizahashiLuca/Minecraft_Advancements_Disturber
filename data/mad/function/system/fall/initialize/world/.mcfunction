@@ -74,12 +74,12 @@ execute at @e[predicate=mad:marker/world_spawn,limit=1] run \
 #### オーバーワールド
 execute in minecraft:overworld run \
   function mad:system/fall/initialize/world/world_border \
-    with storage mad: world_spawn.overworld
+    with storage mad: world_spawn.minecraft:overworld
 #### ネザー
 execute in minecraft:the_nether run \
   function mad:system/fall/initialize/world/world_border \
-    with storage mad: world_spawn.the_nether
+    with storage mad: world_spawn.minecraft:the_nether
 #### エンド
 execute in minecraft:the_end run \
   function mad:system/fall/initialize/world/world_border \
-    with storage mad: world_spawn.the_end
+    with storage mad: world_spawn.minecraft:the_end

@@ -41,11 +41,11 @@ execute store result storage mad: rules.world_size.half double 1 run \
 execute store result storage mad: rules.world_size.quarter double 1 run \
   data get storage mad: rules.world_border 0.25
 #### ワールド範囲 - ワールドボーダー設定用
-data modify storage mad: world_spawn.overworld.world_border \
+data modify storage mad: world_spawn.minecraft:overworld.world_border \
   set from storage mad: rules.world_border
-data modify storage mad: world_spawn.the_nether.world_border \
+data modify storage mad: world_spawn.minecraft:the_nether.world_border \
   set from storage mad: rules.world_border
-data modify storage mad: world_spawn.the_end.world_border \
+data modify storage mad: world_spawn.minecraft:the_end.world_border \
   set from storage mad: rules.world_border
 #### 死亡メッセージ - ゲームルールコマンドの置換
 execute if predicate mad:gamerule/match_mode/individual/ run \

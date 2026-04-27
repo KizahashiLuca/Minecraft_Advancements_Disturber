@@ -109,45 +109,47 @@ execute store result score #mad PosY run \
 execute store result score #mad PosZ run \
   data get entity @e[predicate=mad:marker/world_spawn,limit=1] Pos[2] 1.0
 #### オーバーワールドのワールドスポーンをストレージ格納
-data modify storage mad: world_spawn.overworld.dimension \
+data modify storage mad: world_spawn.minecraft:overworld.dimension \
   set value 'overworld'
-execute store result storage mad: world_spawn.overworld.x int 1 run \
+execute store result storage mad: world_spawn.minecraft:overworld.x int 1 run \
   scoreboard players get #mad PosX
-execute store result storage mad: world_spawn.overworld.y int 1 run \
+execute store result storage mad: world_spawn.minecraft:overworld.y int 1 run \
   scoreboard players get #mad PosY
-execute store result storage mad: world_spawn.overworld.z int 1 run \
+execute store result storage mad: world_spawn.minecraft:overworld.z int 1 run \
   scoreboard players get #mad PosZ
 execute in minecraft:overworld run \
   function mad:system/start/initialize/world/world_border \
-    with storage mad: world_spawn.overworld
+    with storage mad: world_spawn.minecraft:overworld
 #### ネザーのワールドスポーンをストレージ格納
-data modify storage mad: world_spawn.the_nether.dimension \
+data modify storage mad: world_spawn.minecraft:the_nether.dimension \
   set value 'the_nether'
-execute store result storage mad: world_spawn.the_nether.x int 0.125 run \
+execute store result storage mad: world_spawn.minecraft:the_nether.x int 0.125 run \
   scoreboard players get #mad PosX
-execute store result storage mad: world_spawn.the_nether.y int 1 run \
+execute store result storage mad: world_spawn.minecraft:the_nether.y int 1 run \
   scoreboard players get #mad PosY
-execute store result storage mad: world_spawn.the_nether.z int 0.125 run \
+execute store result storage mad: world_spawn.minecraft:the_nether.z int 0.125 run \
   scoreboard players get #mad PosZ
 execute in minecraft:the_nether run \
   function mad:system/start/initialize/world/world_border \
-    with storage mad: world_spawn.the_nether
+    with storage mad: world_spawn.minecraft:the_nether
 #### エンドのワールドスポーンをストレージ格納
-data modify storage mad: world_spawn.the_end.dimension \
+data modify storage mad: world_spawn.minecraft:the_end.dimension \
   set value 'the_end'
-execute store result storage mad: world_spawn.the_end.x int 1 run \
-  return 0
-# execute store result storage mad: world_spawn.the_end.x int 1 run \
+data modify storage mad: world_spawn.minecraft:the_end.x set value 0
+# execute store result storage mad: world_spawn.minecraft:the_end.x int 1 run \
   scoreboard players get #mad PosX
-execute store result storage mad: world_spawn.the_end.y int 1 run \
+execute store result storage mad: world_spawn.minecraft:the_end.y int 1 run \
   scoreboard players get #mad PosY
-execute store result storage mad: world_spawn.the_end.z int 1 run \
-  return 0
-# execute store result storage mad: world_spawn.the_end.z int 1 run \
+data modify storage mad: world_spawn.minecraft:the_end.z set value 0
+# execute store result storage mad: world_spawn.minecraft:the_end.z int 1 run \
   scoreboard players get #mad PosZ
 execute in minecraft:the_end run \
   function mad:system/start/initialize/world/world_border \
-    with storage mad: world_spawn.the_end
+    with storage mad: world_spawn.minecraft:the_end
+
+## ワールドスポーン設定
+execute at @e[predicate=mad:marker/world_spawn,limit=1] run \
+  setworldspawn ~ ~ ~
 
 ## ポジション表示用
 #### 方角の表示をストレージに格納

@@ -25,28 +25,9 @@ execute as @s[predicate=mad:player/dying/d] run \
 #### 死亡した地点のディメンション
 data modify storage mad: death.dimension \
   set from entity @s LastDeathLocation.dimension
-#### 死亡した地点の絶対座標
-execute store result storage mad: death.absolute_x int 1.0 run \
-  data get entity @s LastDeathLocation.pos[0] 1.0
-execute store result storage mad: death.absolute_y int 1.0 run \
-  data get entity @s LastDeathLocation.pos[1] 1.0
-execute store result storage mad: death.absolute_z int 1.0 run \
-  data get entity @s LastDeathLocation.pos[2] 1.0
-#### 死亡した地点の相対座標(ゲームの開始地点からの相対座標(メッセージ表示用))
-execute store result score @s TmpX run \
-  data get entity @s LastDeathLocation.pos[0] 1.0
-execute store result score @s TmpY run \
-  data get entity @s LastDeathLocation.pos[1] 1.0
-execute store result score @s TmpZ run \
-  data get entity @s LastDeathLocation.pos[2] 1.0
-scoreboard players operation @s TmpX -= #mad PosX
-scoreboard players operation @s TmpZ -= #mad PosZ
-execute store result storage mad: death.x int 1.0 run \
-  scoreboard players get @s TmpX
-execute store result storage mad: death.y int 1.0 run \
-  scoreboard players get @s TmpY
-execute store result storage mad: death.z int 1.0 run \
-  scoreboard players get @s TmpZ
+#### 死亡した地点の座標算出
+function mad:system/game/detect_dying/death/storages/get_coordinates/ \
+  with storage mad: death
 #### 追加メッセージ(死亡ペナルティありの場合のメッセージ表示用)
 execute if predicate mad:gamerule/death_penalty_time/eq_zero run \
   data modify storage mad: death.message \
