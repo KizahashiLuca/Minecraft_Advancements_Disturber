@@ -44,6 +44,30 @@
               }
             }
           }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": {
+              "data": {
+                "Tags": [
+                  "mad_respawn_banner"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": {
+              "Tags": [
+                "mad_respawn_banner"
+              ]
+            }
+          }
         }
       ]
     }
