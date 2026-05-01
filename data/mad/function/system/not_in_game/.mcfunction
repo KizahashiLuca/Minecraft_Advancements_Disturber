@@ -10,8 +10,10 @@
 
 ## トリガーの処理
 #### スペクテイタートリガー
-execute if entity @p[predicate=mad:system/not_in_game/triggered/spectator/] run \
+execute as @a[predicate=mad:system/not_in_game/triggered/spectator/] \
+  at @s run \
   function mad:system/not_in_game/triggered/spectator/
 #### ゲーム制御トリガー
-execute if entity @p[predicate=mad:system/not_in_game/triggered/execute/] run \
+execute as @p[predicate=mad:system/not_in_game/triggered/execute/] \
+  at @s run \
   function mad:system/not_in_game/triggered/execute/
