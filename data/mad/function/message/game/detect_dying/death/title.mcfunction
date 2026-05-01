@@ -17,16 +17,4 @@ title @s title \
       color: 'red',\
     },\
   ]
-$title @s subtitle \
-  [\
-    '',\
-    {\
-      translate: '死因：%s',\
-      with: [\
-        {\
-          translate: $(text),\
-        },\
-      ],\
-    },\
-  ]
 title @s times 20 80 20
