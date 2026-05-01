@@ -40,7 +40,7 @@ scoreboard players display name 【支援物資情報】 SidebarA \
     },\
   ]
 #### 青チーム用
-scoreboard objectives setdisplay sidebar.team.red SidebarB
+scoreboard objectives setdisplay sidebar.team.blue SidebarB
 scoreboard objectives modify SidebarB numberformat blank
 scoreboard objectives modify SidebarB displayautoupdate true
 scoreboard objectives modify SidebarB displayname \
@@ -59,7 +59,7 @@ scoreboard players display name 【支援物資情報】 SidebarB \
     },\
   ]
 #### 黄チーム用
-scoreboard objectives setdisplay sidebar.team.red SidebarC
+scoreboard objectives setdisplay sidebar.team.yellow SidebarC
 scoreboard objectives modify SidebarC numberformat blank
 scoreboard objectives modify SidebarC displayautoupdate true
 scoreboard objectives modify SidebarC displayname \
@@ -78,7 +78,7 @@ scoreboard players display name 【支援物資情報】 SidebarC \
     },\
   ]
 #### 緑チーム用
-scoreboard objectives setdisplay sidebar.team.red SidebarD
+scoreboard objectives setdisplay sidebar.team.green SidebarD
 scoreboard objectives modify SidebarD numberformat blank
 scoreboard objectives modify SidebarD displayautoupdate true
 scoreboard objectives modify SidebarD displayname \
