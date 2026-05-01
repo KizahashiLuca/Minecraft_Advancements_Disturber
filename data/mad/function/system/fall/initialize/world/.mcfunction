@@ -25,6 +25,11 @@ data remove storage mad: attack
 #### 死亡情報
 data remove storage mad: death
 
+## リスポーンバナー 削除
+execute as @e[predicate=mad:marker/death_point] \
+  at @s run \
+  setblock ~ ~ ~ minecraft:air replace
+
 ## エンティティ 削除
 #### アイテム
 kill @e[type=minecraft:item]
