@@ -6,17 +6,20 @@
       "name": "mad:marker/death_point"
     },
     {
-      "condition": "minecraft:location_check",
-      "offsetX": 0,
-      "offsetY": 0,
-      "offsetZ": 0,
-      "predicate": {
-        "block": {
-          "blocks": [
-            "minecraft:air"
-          ]
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "blocks": [
+              "minecraft:player_head"
+            ]
+          }
         }
-      } 
+      }
     }
   ]
 }
