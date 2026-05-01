@@ -9,17 +9,17 @@
 #####################################
 
 ## 通常デス時の詳細設定
-#### ゲームモード(ハードコア時のみスペクテイターモード(観戦)に)
-execute unless predicate mad:gamerule/difficulty/hardcore run \
-  function mad:system/game/detect_dying/death/hardcore/false
-execute if predicate mad:gamerule/difficulty/hardcore run \
-  function mad:system/game/detect_dying/death/hardcore/true
 #### ストレージ
 $function mad:system/game/detect_dying/death/storages/$(type) \
   with storage mad: 
 #### スコアボード
 $function mad:system/game/detect_dying/death/scoreboards/$(type) \
   with storage mad: death
+#### ゲームモード(ハードコア時のみスペクテイターモード(観戦)に)
+execute unless predicate mad:gamerule/difficulty/hardcore run \
+  function mad:system/game/detect_dying/death/hardcore/false
+execute if predicate mad:gamerule/difficulty/hardcore run \
+  function mad:system/game/detect_dying/death/hardcore/true
 
 ## メッセージ表示
 function mad:message/game/detect_dying/death/ \
