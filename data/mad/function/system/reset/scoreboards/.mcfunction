@@ -96,8 +96,17 @@ scoreboard objectives remove UseToolUpgrader
 #### 支援物資用 - 緊急招集
 scoreboard objectives remove UseNoticeOfThief
 scoreboard objectives remove NumberOfItemCandidates
-#### リスポーンバナー
-scoreboard objectives remove AttackerNumber
+#### リスポーンバナー用
+scoreboard objectives remove PlayerUUID0
+scoreboard objectives remove PlayerUUID1
+scoreboard objectives remove PlayerUUID2
+scoreboard objectives remove PlayerUUID3
+scoreboard objectives remove LastHurtByPlayerNumber
+scoreboard objectives remove LastHurtByPlayerUUID0
+scoreboard objectives remove LastHurtByPlayerUUID1
+scoreboard objectives remove LastHurtByPlayerUUID2
+scoreboard objectives remove LastHurtByPlayerUUID3
+scoreboard objectives remove LastHurtByPlayerMemoryTime
 
 ## プレイヤーのスコアボードをリセット
 scoreboard players reset @e

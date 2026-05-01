@@ -96,5 +96,14 @@ scoreboard objectives add UseToolUpgrader minecraft.used:minecraft.turtle_spawn_
 #### 支援物資用 - 怪盗予告
 scoreboard objectives add UseNoticeOfThief minecraft.used:minecraft.rabbit_spawn_egg ['', {translate: 'トリガー - 怪盗予告使用'}]
 scoreboard objectives add NumberOfItemCandidates dummy ['', {translate: '怪盗予告 - 怪盗候補アイテム数'}]
-#### リスポーンバナー
-scoreboard objectives add AttackerNumber dummy ['', {translate: '攻撃プレイヤー番号'}]
+#### リスポーンバナー用
+scoreboard objectives add PlayerUUID0 dummy ['', {translate: 'UUID[0]'}]
+scoreboard objectives add PlayerUUID1 dummy ['', {translate: 'UUID[1]'}]
+scoreboard objectives add PlayerUUID2 dummy ['', {translate: 'UUID[2]'}]
+scoreboard objectives add PlayerUUID3 dummy ['', {translate: 'UUID[3]'}]
+scoreboard objectives add LastHurtByPlayerNumber dummy ['', {translate: '最後に攻撃したプレイヤー番号'}]
+scoreboard objectives add LastHurtByPlayerUUID0 dummy ['', {translate: '最後に攻撃したプレイヤー - UUID[0]'}]
+scoreboard objectives add LastHurtByPlayerUUID1 dummy ['', {translate: '最後に攻撃したプレイヤー - UUID[1]'}]
+scoreboard objectives add LastHurtByPlayerUUID2 dummy ['', {translate: '最後に攻撃したプレイヤー - UUID[2]'}]
+scoreboard objectives add LastHurtByPlayerUUID3 dummy ['', {translate: '最後に攻撃したプレイヤー - UUID[3]'}]
+scoreboard objectives add LastHurtByPlayerMemoryTime dummy ['', {translate: '最後に攻撃されてからの時間'}]

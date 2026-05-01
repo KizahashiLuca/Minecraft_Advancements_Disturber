@@ -120,4 +120,15 @@ scoreboard players set @a[predicate=mad:player/] UseToolUpgrader 0
 scoreboard players set @a[predicate=mad:player/] UseNoticeOfThief 0
 scoreboard players set @a[predicate=mad:player/] NumberOfItemCandidates 0
 #### リスポーンバナー用
-scoreboard players set @a[predicate=mad:player/] AttackerNumber 0
+execute as @a[predicate=mad:player/] \
+  store result score @s PlayerUUID0 run \
+  data get entity @s UUID[0]
+execute as @a[predicate=mad:player/] \
+  store result score @s PlayerUUID1 run \
+  data get entity @s UUID[1]
+execute as @a[predicate=mad:player/] \
+  store result score @s PlayerUUID2 run \
+  data get entity @s UUID[2]
+execute as @a[predicate=mad:player/] \
+  store result score @s PlayerUUID3 run \
+  data get entity @s UUID[3]

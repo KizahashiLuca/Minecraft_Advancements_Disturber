@@ -47,5 +47,8 @@ scoreboard players reset @s UseToolUpgrader
 #### 支援物資用 - 緊急招集
 scoreboard players reset @s UseNoticeOfThief
 scoreboard players reset @s NumberOfItemCandidates
-#### リスポーンバナー
-scoreboard players reset @s AttackerNumber
+#### リスポーンバナー用
+scoreboard players reset @s PlayerUUID0
+scoreboard players reset @s PlayerUUID1
+scoreboard players reset @s PlayerUUID2
+scoreboard players reset @s PlayerUUID3

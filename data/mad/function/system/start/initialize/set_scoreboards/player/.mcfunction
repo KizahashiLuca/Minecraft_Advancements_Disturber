@@ -51,5 +51,12 @@ scoreboard players set @s UseToolUpgrader 0
 #### 支援物資用 - 緊急招集
 scoreboard players set @s UseNoticeOfThief 0
 scoreboard players set @s NumberOfItemCandidates 0
-#### リスポーンバナー
-scoreboard players set @s AttackerNumber 0
+#### リスポーンバナー用
+execute store result score @s PlayerUUID0 run \
+  data get entity @s UUID[0]
+execute store result score @s PlayerUUID1 run \
+  data get entity @s UUID[1]
+execute store result score @s PlayerUUID2 run \
+  data get entity @s UUID[2]
+execute store result score @s PlayerUUID3 run \
+  data get entity @s UUID[3]
