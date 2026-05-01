@@ -10,4 +10,4 @@
 
 ## 撃破ボーナスありの場合の追加メッセージ
 data modify storage mad: death.message \
-  set value 'たため、 %s に %s%s 付与され'
+  set value 'ました。また %s に %s%s 付与され'
