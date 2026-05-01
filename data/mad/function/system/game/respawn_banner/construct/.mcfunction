@@ -13,17 +13,23 @@
 function mad:system/game/respawn_banner/construct/marker \
   with storage mad: death
 #### アーマースタンド
-function mad:system/game/respawn_banner/construct/armor_stand \
-  with storage mad: death
+$execute as @e[type=minecraft:marker,tag=mad_player$(victim_number),limit=1] \
+  at @s run \
+  function mad:system/game/respawn_banner/construct/armor_stand \
+    with storage mad: death
 #### ストレージ
-function mad:system/game/respawn_banner/construct/storage \
-  with storage mad: death
+$execute as @p[tag=mad_player$(victim_number)] run \
+  function mad:system/game/respawn_banner/construct/storage
 #### プレイヤーの頭
-function mad:system/game/respawn_banner/construct/player_head \
-  with storage mad: death
+$execute as @e[type=minecraft:marker,tag=mad_player$(victim_number),limit=1] \
+  at @s run \
+  function mad:system/game/respawn_banner/construct/player_head \
+    with storage mad: death
 #### テキストディスプレイ
-function mad:system/game/respawn_banner/construct/text_display \
-  with storage mad: death
+$execute as @e[type=minecraft:marker,tag=mad_player$(victim_number),limit=1] \
+  at @s run \
+  function mad:system/game/respawn_banner/construct/text_display \
+    with storage mad: death
 
 ## サイドバー
 function mad:system/game/respawn_banner/construct/sidebar \

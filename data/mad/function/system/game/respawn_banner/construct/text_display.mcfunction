@@ -9,38 +9,36 @@
 #####################################
 
 ## リスポーンバナー矢印
-$execute as @e[type=minecraft:marker,tag=mad_player$(victim_number),limit=1] \
-  at @s run \
-  summon minecraft:text_display ~ ~1 ~ \
-    {\
-      Tags: [\
-        'mad_respawn_banner_point',\
-        'mad_player$(victim_number)',\
+$summon minecraft:text_display ~ ~1 ~ \
+  {\
+    Tags: [\
+      'mad_respawn_banner_point',\
+      'mad_player$(victim_number)',\
+    ],\
+    alignment: 'center',\
+    billboard: 'center',\
+    text: [\
+      [\
+        {\
+          translate: '%sのリスポーンバナー\n',\
+          with: [\
+            {\
+              translate: '$(victim_id)',\
+              color: '$(victim_color)',\
+            },\
+          ],\
+        },\
       ],\
-      alignment: 'center',\
-      billboard: 'center',\
-      text: [\
-        [\
-          {\
-            translate: '%sのリスポーンバナー\n',\
-            with: [\
-              {\
-                translate: '$(victim_id)',\
-                color: '$(victim_color)',\
-              },\
-            ],\
-          },\
-        ],\
-        [\
-          {\
-            translate: '（プレイヤーの頭を取得）\n',\
-          },\
-        ],\
-        [\
-          {\
-            translate: '↓',\
-          },\
-        ],\
+      [\
+        {\
+          translate: '（プレイヤーの頭を取得）\n',\
+        },\
       ],\
-      background: 0,\
-    }
+      [\
+        {\
+          translate: '↓',\
+        },\
+      ],\
+    ],\
+    background: 0,\
+  }

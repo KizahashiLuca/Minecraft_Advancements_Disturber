@@ -29,7 +29,8 @@ execute if predicate mad:system/game/timer/pvp/mode/pvp_off run \
 
 ## リスポーンバナー設置
 execute if predicate mad:system/game/timer/pvp/mode/pvp_on run \
-  function mad:system/game/respawn_banner/construct/
+  function mad:system/game/respawn_banner/construct/ \
+    with storage mad: death
 
 ## メッセージ表示
 #### 加害者と犠牲者(チーム戦の場合チームも)に死亡通知
