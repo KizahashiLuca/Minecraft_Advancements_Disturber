@@ -21,14 +21,17 @@ $function mad:system/game/detect_dying/kill/storages/$(type) \
 
 ## PvP分岐
 #### PvP解禁後、犠牲者は蘇生しない
-execute if predicate mad:system/game/timer/pvp/mode/pvp_on run \
+execute if predicate mad:system/game/timer/pvp/mode/pvp_on \
+  if predicate mad:system/game/detect_dying/other_team run \
   function mad:system/game/detect_dying/kill/pvp_on
 #### PvP解禁前、犠牲者は蘇生する
-execute if predicate mad:system/game/timer/pvp/mode/pvp_off run \
+execute if predicate mad:system/game/timer/pvp/mode/pvp_off \
+  if predicate mad:system/game/detect_dying/same_team run \
   function mad:system/game/detect_dying/kill/pvp_off
 
 ## リスポーンバナー設置
-execute if predicate mad:system/game/timer/pvp/mode/pvp_on run \
+execute if predicate mad:system/game/timer/pvp/mode/pvp_on \
+  if predicate mad:system/game/detect_dying/other_team run \
   function mad:system/game/respawn_banner/construct/ \
     with storage mad: death
 

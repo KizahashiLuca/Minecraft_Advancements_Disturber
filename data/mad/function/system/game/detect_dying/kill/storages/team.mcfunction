@@ -19,5 +19,7 @@ $execute as @p[tag=mad_player$(killer_number)] run \
     with storage mad: team.$(killer_team)
 
 ## 同チームでのキルかの確認
-# execute if data storage mad: {death:{killer_team:"$(victim_team)"}} run \
-#   function 
+$execute if data storage mad: {death:{killer_team:"$(victim_team)"}} run \
+  data modify storage mad: death.same_team set value 1
+$execute unless data storage mad: {death:{killer_team:"$(victim_team)"}} run \
+  data modify storage mad: death.same_team set value 0
