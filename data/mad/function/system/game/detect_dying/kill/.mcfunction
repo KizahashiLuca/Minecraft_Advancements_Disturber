@@ -16,7 +16,7 @@ function mad:system/game/detect_dying/kill/storages/victim/ \
 function mad:system/game/detect_dying/kill/storages/killer/ \
   with storage mad: death
 #### マッチモードごと
-$function mad:system/game/detect_dying/kill/$(type) \
+$function mad:system/game/detect_dying/kill/storages/$(type) \
   with storage mad: death
 
 ## PvP分岐

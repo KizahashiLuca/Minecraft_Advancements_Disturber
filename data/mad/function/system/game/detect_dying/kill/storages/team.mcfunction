@@ -17,3 +17,7 @@ $execute as @s[predicate=mad:player/dying/$(victim_team)] run \
 $execute as @p[tag=mad_player$(killer_number)] run \
   function mad:system/game/detect_dying/kill/storages/killer/team \
     with storage mad: team.$(killer_team)
+
+## 同チームでのキルかの確認
+# execute if data storage mad: {death:{killer_team:"$(victim_team)"}} run \
+#   function 
