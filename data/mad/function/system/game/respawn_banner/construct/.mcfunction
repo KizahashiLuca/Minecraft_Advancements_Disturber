@@ -25,10 +25,6 @@ function mad:system/game/respawn_banner/construct/player_head \
 function mad:system/game/respawn_banner/construct/text_display \
   with storage mad: death
 
-## メッセージ
-function mad:message/game/respawn_banner/construct \
-  with storage mad: death
-
 ## サイドバー
 function mad:system/game/respawn_banner/construct/sidebar \
   with storage mad: death
