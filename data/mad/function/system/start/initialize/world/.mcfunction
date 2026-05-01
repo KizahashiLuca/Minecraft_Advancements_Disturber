@@ -39,6 +39,11 @@ data remove storage mad: team
 #### アイテム
 data remove storage mad: item
 
+## リスポーンバナー 削除
+execute as @e[predicate=mad:marker/death_point] \
+  at @s run \
+  setblock ~ ~ ~ minecraft:air replace
+
 ## エンティティ 削除
 #### アイテム
 kill @e[type=minecraft:item]
