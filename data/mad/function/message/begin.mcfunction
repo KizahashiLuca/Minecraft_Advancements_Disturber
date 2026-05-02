@@ -25,7 +25,7 @@ tellraw @a \
       bold: true,\
     },\
     {\
-      translate: '   Disturber β-3.0 - JE 21.6\n',\
+      translate: '   Disturber β-3.0 - JE 26.1\n',\
       color: 'red',\
       bold: true,\
     },\
