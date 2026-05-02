@@ -9,5 +9,5 @@
 #####################################
 
 ## 中心座標との差分を抽出
-$scoreboard players remove @s PosX $(x)
-$scoreboard players remove @s PosZ $(z)
+$scoreboard players $(x_operator) @s PosX $(abs_x)
+$scoreboard players $(z_operator) @s PosZ $(abs_z)
