@@ -21,7 +21,7 @@ $tellraw @a \
       color: 'green',\
       hover_event: {\
         action: 'show_text',\
-        contents: {\
+        value: {\
           translate: 'スペクテイター時、クリックでテレポート',\
           color: 'gray',\
         },\
