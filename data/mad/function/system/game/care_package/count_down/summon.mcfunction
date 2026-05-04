@@ -10,7 +10,7 @@
 
 ## 支援物資召喚
 #### 投下場所、UUID、ルートテーブルを指定して召喚
-$summon minecraft:chest_minecart $(x) $(y) $(z) \
+$summon minecraft:chest_minecart $(absolute_x) $(y) $(absolute_z) \
   {\
     Invulnerable: 1b,\
     Tags: [\

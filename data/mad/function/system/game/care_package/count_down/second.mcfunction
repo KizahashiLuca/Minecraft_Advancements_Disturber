@@ -22,7 +22,7 @@ $execute if score #mad_care_package_$(number) Second matches 1.. run \
     with storage mad: care_package.$(number)
 #### 0秒の場合は、投下予定のチャンクを強制読込
 $execute if score #mad_care_package_$(number) Second matches 0 run \
-  forceload add $(x) $(z) $(x) $(z)
+  forceload add $(absolute_x) $(absolute_z) $(absolute_x) $(absolute_z)
 #### 0秒以下の場合は、支援物資召喚
 $execute if score #mad_care_package_$(number) Second matches ..0 \
   at @e[predicate=mad:marker/world_spawn,limit=1] run \

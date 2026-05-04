@@ -8,12 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スコアボード設定
-$scoreboard players set #mad TmpX $(x)
-scoreboard players operation #mad TmpX -= #mad PosX
-$scoreboard players set #mad TmpZ $(z)
-scoreboard players operation #mad TmpZ -= #mad PosZ
-
 ## 投下時にサイドバーの表示を変更
 #### 投下時間
 $function mad:message/game/care_package/sidebar/dropped \

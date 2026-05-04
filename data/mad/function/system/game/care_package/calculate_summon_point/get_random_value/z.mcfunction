@@ -8,9 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## 乱数値出力
+## 乱数値出力(相対座標)
 $execute store result score #mad TmpZ run \
   random value $(z2)..$(z4)
-scoreboard players operation #mad TmpZ += #mad PosZ
 return run \
   scoreboard players get #mad TmpZ

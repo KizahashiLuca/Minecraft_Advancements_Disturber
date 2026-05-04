@@ -17,17 +17,11 @@ $scoreboard players display numberformat 支援物資$(number)-投下場所 Side
       translate: '[%s, %s]',\
       with: [\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpX',\
-          },\
+          translate: '$(x)',\
           color: 'green',\
         },\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpZ',\
-          },\
+          translate: '$(z)',\
           color: 'green',\
         },\
       ],\
@@ -40,17 +34,11 @@ $scoreboard players display numberformat 支援物資$(number)-投下場所 Side
       translate: '[%s, %s]',\
       with: [\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpX',\
-          },\
+          translate: '$(x)',\
           color: 'green',\
         },\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpZ',\
-          },\
+          translate: '$(z)',\
           color: 'green',\
         },\
       ],\
@@ -64,17 +52,11 @@ $scoreboard players display numberformat 支援物資$(number)-投下場所 Side
       translate: '[%s, %s]',\
       with: [\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpX',\
-          },\
+          translate: '$(x)',\
           color: 'green',\
         },\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpZ',\
-          },\
+          translate: '$(z)',\
           color: 'green',\
         },\
       ],\
@@ -88,17 +70,11 @@ $scoreboard players display numberformat 支援物資$(number)-投下場所 Side
       translate: '[%s, %s]',\
       with: [\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpX',\
-          },\
+          translate: '$(x)',\
           color: 'green',\
         },\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpZ',\
-          },\
+          translate: '$(z)',\
           color: 'green',\
         },\
       ],\
@@ -112,17 +88,11 @@ $scoreboard players display numberformat 支援物資$(number)-投下場所 Side
       translate: '[%s, %s]',\
       with: [\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpX',\
-          },\
+          translate: '$(x)',\
           color: 'green',\
         },\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpZ',\
-          },\
+          translate: '$(z)',\
           color: 'green',\
         },\
       ],\
@@ -136,17 +106,11 @@ $scoreboard players display numberformat 支援物資$(number)-投下場所 Side
       translate: '[%s, %s]',\
       with: [\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpX',\
-          },\
+          translate: '$(x)',\
           color: 'green',\
         },\
         {\
-          score: {\
-            name: '#mad',\
-            objective: 'TmpZ',\
-          },\
+          translate: '$(z)',\
           color: 'green',\
         },\
       ],\
