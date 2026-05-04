@@ -13,12 +13,6 @@ function mad:message/game/time_up/individual
 
 ## 生存者のキル
 kill @s
-gamemode spectator @s
 
-## スコアボード設定
-#### ゲームフェーズ
-function mad:phase/dead/player
-#### 死亡数 - 死亡判定用
-scoreboard players set @s NumberOfDeaths 2
-#### タイマー - 残り時間(秒数)
-scoreboard players set @s Second 0
+## タイムアップ時の詳細設定
+function mad:system/game/detect_dying/death/hardcore/true

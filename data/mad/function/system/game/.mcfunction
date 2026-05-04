@@ -49,7 +49,7 @@ execute if predicate mad:gamerule/match_mode/team run \
 
 ## ゲーム終了処理
 #### 生存チーム(プレイヤー)の数をスコアボードに格納
-$scoreboard players operation #mad NumberOfLiving = #mad $(number_of_living)
+$scoreboard players operation #mad NumberOfLiving = #$(number_of_living_target) $(number_of_living)
 scoreboard players operation #mad NumberOfLiving -= #mad NumberOfDead
 #### ゲーム全体の終了トリガー(#mad ExitTrigger) が 0 のとき、
 #### かつ ゲームの終了条件を満たしたときに終了メッセージを表示

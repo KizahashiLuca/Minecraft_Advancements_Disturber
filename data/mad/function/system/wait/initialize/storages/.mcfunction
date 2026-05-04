@@ -23,6 +23,13 @@ execute if predicate mad:gamerule/match_mode/individual/ run \
 execute if predicate mad:gamerule/match_mode/team run \
   data modify storage mad: rules.match_mode.type \
     set value 'team'
+#### 生存者数スコアボード - ゲーム終了処理用(スコアボードターゲットの置換)
+execute if predicate mad:gamerule/match_mode/individual/ run \
+  data modify storage mad: rules.match_mode.number_of_living_target \
+    set value 'mad_player'
+execute if predicate mad:gamerule/match_mode/team run \
+  data modify storage mad: rules.match_mode.number_of_living_target \
+    set value 'mad'
 #### 生存者数スコアボード - ゲーム終了処理用(スコアボード名の置換)
 execute if predicate mad:gamerule/match_mode/individual/ run \
   data modify storage mad: rules.match_mode.number_of_living \
