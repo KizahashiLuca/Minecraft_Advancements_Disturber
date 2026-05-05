@@ -10,6 +10,6 @@
 
 ## 乱数値出力(相対座標)
 $execute store result score #mad TmpZ run \
-  random value $(z2)..$(z4)
+  random value $(z_north)..$(z_south)
 return run \
   scoreboard players get #mad TmpZ

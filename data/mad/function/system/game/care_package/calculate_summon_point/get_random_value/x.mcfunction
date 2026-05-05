@@ -10,6 +10,6 @@
 
 ## 乱数値出力(相対座標)
 $execute store result score #mad TmpX run \
-  random value $(x2)..$(x4)
+  random value $(x_west)..$(x_east)
 return run \
   scoreboard players get #mad TmpX

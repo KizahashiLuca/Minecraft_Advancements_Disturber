@@ -13,15 +13,15 @@
 $execute store result storage mad: individual.absolute_x int 1 run \
   function mad:system/fall/initialize/random_spawn/get_random_value \
     {\
-      min: '$(x2)',\
-      max: '$(x4)',\
+      min: '$(x_west)',\
+      max: '$(x_east)',\
       axis: 'X',\
     }
 $execute store result storage mad: individual.absolute_z int 1 run \
   function mad:system/fall/initialize/random_spawn/get_random_value \
     {\
-      min: '$(z2)',\
-      max: '$(z4)',\
+      min: '$(z_north)',\
+      max: '$(z_south)',\
       axis: 'Z',\
     }
 #### 赤チーム
@@ -29,28 +29,28 @@ $execute store result storage mad: team.a.absolute_x int 1 run \
   function mad:system/fall/initialize/random_spawn/get_random_value \
     {\
       min: '$(x)',\
-      max: '$(x4)',\
+      max: '$(x_east)',\
       axis: 'X',\
     }
 $execute store result storage mad: team.a.absolute_z int 1 run \
   function mad:system/fall/initialize/random_spawn/get_random_value \
     {\
       min: '$(z)',\
-      max: '$(z4)',\
+      max: '$(z_south)',\
       axis: 'Z',\
     }
 #### 青チーム
 $execute store result storage mad: team.b.absolute_x int 1 run \
   function mad:system/fall/initialize/random_spawn/get_random_value \
     {\
-      min: '$(x2)',\
+      min: '$(x_west)',\
       max: '$(x)',\
       axis: 'X',\
     }
 $execute store result storage mad: team.b.absolute_z int 1 run \
   function mad:system/fall/initialize/random_spawn/get_random_value \
     {\
-      min: '$(z2)',\
+      min: '$(z_north)',\
       max: '$(z)',\
       axis: 'Z',\
     }
@@ -59,13 +59,13 @@ $execute store result storage mad: team.c.absolute_x int 1 run \
   function mad:system/fall/initialize/random_spawn/get_random_value \
     {\
       min: '$(x)',\
-      max: '$(x1)',\
+      max: '$(x_east)',\
       axis: 'X',\
     }
 $execute store result storage mad: team.c.absolute_z int 1 run \
   function mad:system/fall/initialize/random_spawn/get_random_value \
     {\
-      min: '$(z1)',\
+      min: '$(z_north)',\
       max: '$(z)',\
       axis: 'Z',\
     }
@@ -73,7 +73,7 @@ $execute store result storage mad: team.c.absolute_z int 1 run \
 $execute store result storage mad: team.d.absolute_x int 1 run \
   function mad:system/fall/initialize/random_spawn/get_random_value \
     {\
-      min: '$(x3)',\
+      min: '$(x_west)',\
       max: '$(x)',\
       axis: 'X',\
     }
@@ -81,7 +81,7 @@ $execute store result storage mad: team.d.absolute_z int 1 run \
   function mad:system/fall/initialize/random_spawn/get_random_value \
     {\
       min: '$(z)',\
-      max: '$(z3)',\
+      max: '$(z_south)',\
       axis: 'Z',\
     }
 

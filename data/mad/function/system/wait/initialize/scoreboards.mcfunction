@@ -115,30 +115,22 @@ data modify storage mad: rules.world_size.z \
 #### ワールド範囲 X軸正(東) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
 execute store result score #mad TmpX run \
   data get storage mad: rules.world_size.half 1.0
-execute store result storage mad: rules.world_size.x1 int 1 run \
-  scoreboard players get #mad TmpX
-execute store result storage mad: rules.world_size.x4 int 1 run \
+execute store result storage mad: rules.world_size.x_east int 1 run \
   scoreboard players get #mad TmpX
 #### ワールド範囲 Z軸正(南) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
 execute store result score #mad TmpZ run \
   data get storage mad: rules.world_size.half 1.0
-execute store result storage mad: rules.world_size.z3 int 1 run \
-  scoreboard players get #mad TmpZ
-execute store result storage mad: rules.world_size.z4 int 1 run \
+execute store result storage mad: rules.world_size.z_south int 1 run \
   scoreboard players get #mad TmpZ
 #### ワールド範囲 X軸負(西) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
 execute store result score #mad TmpX run \
   data get storage mad: rules.world_size.half -1.0
-execute store result storage mad: rules.world_size.x2 int 1 run \
-  scoreboard players get #mad TmpX
-execute store result storage mad: rules.world_size.x3 int 1 run \
+execute store result storage mad: rules.world_size.x_west int 1 run \
   scoreboard players get #mad TmpX
 #### ワールド範囲 Z軸負(北) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
 execute store result score #mad TmpZ run \
   data get storage mad: rules.world_size.half -1.0
-execute store result storage mad: rules.world_size.z1 int 1 run \
-  scoreboard players get #mad TmpZ
-execute store result storage mad: rules.world_size.z2 int 1 run \
+execute store result storage mad: rules.world_size.z_north int 1 run \
   scoreboard players get #mad TmpZ
 #### 残り生存者数 - 勝敗判定用
 scoreboard players set #mad NumberOfLiving 0
