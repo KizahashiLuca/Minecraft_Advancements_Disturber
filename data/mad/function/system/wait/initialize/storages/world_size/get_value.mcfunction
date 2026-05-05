@@ -8,5 +8,8 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## テレポート
-$spreadplayers $(x_inner) $(z_inner) 0 $(size) false @s
+## 乱数値出力
+$scoreboard players set #mad Tmp$(axis) $(center)
+$scoreboard players operation #mad Tmp$(axis) += #mad Pos$(axis)
+$return run \
+  scoreboard players get #mad Tmp$(axis)

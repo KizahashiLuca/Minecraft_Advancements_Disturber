@@ -69,8 +69,6 @@ scoreboard objectives add RandomizerCount dummy ['', {translate: '疑似乱数 -
 scoreboard objectives add RandomizerResult dummy ['', {translate: '疑似乱数 - 結果'}]
 scoreboard objectives add RandomizerModder dummy ['', {translate: '疑似乱数 - 最大周期'}]
 scoreboard objectives add RandomizerMultiplier dummy ['', {translate: '疑似乱数 - 乗数'}]
-#### 範囲内にエンド大陸が存在するか - 支援物資「エンドポータルフレーム」判定用
-scoreboard objectives add ExistsTheEndInWorldBorder dummy ['', {translate: '範囲内にエンド大陸が存在するか'}]
 #### チーム数 - 勝敗判定用
 scoreboard objectives add NumberOfTeams dummy ['', {translate: 'チーム数'}]
 #### 死亡ペナルティ - 制限時間減算用

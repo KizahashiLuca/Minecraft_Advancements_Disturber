@@ -69,8 +69,6 @@ scoreboard objectives remove RandomizerCount
 scoreboard objectives remove RandomizerResult
 scoreboard objectives remove RandomizerModder
 scoreboard objectives remove RandomizerMultiplier
-#### 範囲内にエンド大陸が存在するか - 支援物資「エンドポータルフレーム」判定用
-scoreboard objectives remove ExistsTheEndInWorldBorder
 #### チーム数 - 勝敗判定用
 scoreboard objectives remove NumberOfTeams
 #### 死亡ペナルティ - 制限時間減算用

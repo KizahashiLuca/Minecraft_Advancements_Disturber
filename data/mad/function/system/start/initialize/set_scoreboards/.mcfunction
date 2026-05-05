@@ -80,8 +80,6 @@ scoreboard players set #mad RandomizerCount 10
 scoreboard players set #mad RandomizerResult 0
 scoreboard players set #mad RandomizerModder 2147483647
 scoreboard players set #mad RandomizerMultiplier 48271
-#### 範囲内にエンド大陸が存在するか - 支援物資「エンドポータルフレーム」判定用
-scoreboard players set #mad ExistsTheEndInWorldBorder 0
 #### チーム数 - 勝敗判定用
 scoreboard players set #mad NumberOfTeams 2
 #### 死亡ペナルティ - 制限時間減算用

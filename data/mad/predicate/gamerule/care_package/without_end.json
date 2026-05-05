@@ -1,13 +1,9 @@
 {
   "condition": "minecraft:value_check",
   "value": {
-    "type": "minecraft:score",
-    "target": {
-      "type": "minecraft:fixed",
-      "name": "#mad"
-    },
-    "score": "ExistsTheEndInWorldBorder",
-    "scale": 1
+    "type": "minecraft:storage",
+    "storage": "mad:",
+    "path": "rules.the_end_exists"
   },
   "range": 0
 }

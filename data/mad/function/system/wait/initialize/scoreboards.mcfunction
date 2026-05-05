@@ -79,59 +79,6 @@ execute store result score #mad BonusTimeOfAdvancements run \
   data get storage mad: rules.bonus_time_of_advancements 1
 #### 接地判定
 scoreboard players set @a[predicate=mad:player/] OnGround 0
-#### ワールド範囲 X軸正(東) - 範囲内にエンド大陸が存在するかの算出用
-execute store result score #mad TmpX run \
-  data get storage mad: rules.world_size.half 1.0
-scoreboard players operation #mad TmpX += #mad PosX
-execute store result storage mad: rules.world_size.x_east int 1 run \
-  scoreboard players get #mad TmpX
-#### ワールド範囲 Z軸正(南) - 範囲内にエンド大陸が存在するかの算出用
-execute store result score #mad TmpZ run \
-  data get storage mad: rules.world_size.half 1.0
-scoreboard players operation #mad TmpZ += #mad PosZ
-execute store result storage mad: rules.world_size.z_south int 1 run \
-  scoreboard players get #mad TmpZ
-#### ワールド範囲 X軸負(西) - 範囲内にエンド大陸が存在するかの算出用
-execute store result score #mad TmpX run \
-  data get storage mad: rules.world_size.half -1.0
-scoreboard players operation #mad TmpX += #mad PosX
-execute store result storage mad: rules.world_size.x_west int 1 run \
-  scoreboard players get #mad TmpX
-#### ワールド範囲 Z軸負(北) - 範囲内にエンド大陸が存在するかの算出用
-execute store result score #mad TmpZ run \
-  data get storage mad: rules.world_size.half -1.0
-scoreboard players operation #mad TmpZ += #mad PosZ
-execute store result storage mad: rules.world_size.z_north int 1 run \
-  scoreboard players get #mad TmpZ
-#### 範囲内にエンド大陸が存在するか - 支援物資「エンドポータルフレーム」判定用
-scoreboard players set #mad ExistsTheEndInWorldBorder 0
-execute if predicate mad:system/wait/initialize/check_the_end run \
-  scoreboard players set #mad ExistsTheEndInWorldBorder 1
-#### ワールド中心
-data modify storage mad: rules.world_size.x \
-  set value 0
-data modify storage mad: rules.world_size.z \
-  set value 0
-#### ワールド範囲 X軸正(東) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
-execute store result score #mad TmpX run \
-  data get storage mad: rules.world_size.half 1.0
-execute store result storage mad: rules.world_size.x_east int 1 run \
-  scoreboard players get #mad TmpX
-#### ワールド範囲 Z軸正(南) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
-execute store result score #mad TmpZ run \
-  data get storage mad: rules.world_size.half 1.0
-execute store result storage mad: rules.world_size.z_south int 1 run \
-  scoreboard players get #mad TmpZ
-#### ワールド範囲 X軸負(西) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
-execute store result score #mad TmpX run \
-  data get storage mad: rules.world_size.half -1.0
-execute store result storage mad: rules.world_size.x_west int 1 run \
-  scoreboard players get #mad TmpX
-#### ワールド範囲 Z軸負(北) - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
-execute store result score #mad TmpZ run \
-  data get storage mad: rules.world_size.half -1.0
-execute store result storage mad: rules.world_size.z_north int 1 run \
-  scoreboard players get #mad TmpZ
 #### 残り生存者数 - 勝敗判定用
 scoreboard players set #mad NumberOfLiving 0
 scoreboard players set #mad_team_a NumberOfLiving 0
