@@ -15,6 +15,15 @@ scoreboard players set #mad_team_a Phase 61
 scoreboard players set #mad_team_b Phase 61
 scoreboard players set #mad_team_c Phase 61
 scoreboard players set #mad_team_d Phase 61
+execute if predicate mad:gamerule/num_of_players/solo run \
+  scoreboard players set #mad PvP 1
+execute if predicate mad:gamerule/num_of_players/not_solo run \
+  scoreboard players set #mad PvP 0
+#### タイマー
+execute if predicate mad:gamerule/num_of_players/solo run \
+  scoreboard players set #mad TimeOfPvPStart 0
+execute if predicate mad:gamerule/num_of_players/not_solo run \
+  scoreboard players set #mad TimeOfPvPStart 900
 #### 死亡数 - 死亡判定用
 scoreboard players set @a[predicate=mad:player/] NumberOfDeaths 0
 #### キル数 - 統計用

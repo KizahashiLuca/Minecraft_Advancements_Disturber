@@ -16,7 +16,6 @@ scoreboard players set #mad MinorVersion 0
 scoreboard players set #mad PatchVersion 0
 scoreboard players set #mad Phase 1
 scoreboard players set @a[predicate=mad:player/] Phase 0
-scoreboard players set #mad PvP 0
 scoreboard players set @a[predicate=mad:player/] NumberOfDeaths 0
 scoreboard players set @a[predicate=mad:player/] NumberOfKills 0
 scoreboard players set @a[predicate=mad:player/] TimeSinceDeath 0
@@ -38,7 +37,6 @@ scoreboard players set @a[predicate=mad:player/] Tick 0
 scoreboard players set #mad GeneralSecond 0
 scoreboard players set @a[predicate=mad:player/] GeneralSecond 0
 scoreboard players set #mad GeneralTick 0
-scoreboard players set #mad TimeOfPvPStart 900
 scoreboard players set #mad TimeOfWaitPhase 30
 scoreboard players set #mad TimeOfFallPhase 5
 scoreboard players set #mad TimeLimit 300
