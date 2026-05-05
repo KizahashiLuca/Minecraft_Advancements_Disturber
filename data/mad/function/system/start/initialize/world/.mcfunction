@@ -20,6 +20,8 @@ weather clear
 ## ストレージ 削除
 #### ワールドスポーン
 data remove storage mad: world_spawn
+#### ディメンション
+data remove storage mad: dimension
 #### ポジション表示
 data remove storage mad: position
 #### テレポートトリガー
@@ -33,6 +35,7 @@ data remove storage mad: death
 #### ゲームルール
 data remove storage mad: rules
 #### 個人戦
+data remove storage mad: player
 data remove storage mad: individual
 #### チーム戦
 data remove storage mad: team
