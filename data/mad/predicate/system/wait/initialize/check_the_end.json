@@ -6,7 +6,7 @@
       "value": {
         "type": "minecraft:storage",
         "storage": "mad:",
-        "path": "rules.world_size.x4"
+        "path": "rules.world_size.x_east"
       },
       "range": {
         "min": 200
@@ -17,7 +17,7 @@
       "value": {
         "type": "minecraft:storage",
         "storage": "mad:",
-        "path": "rules.world_size.y4"
+        "path": "rules.world_size.z_south"
       },
       "range": {
         "min": 200
@@ -28,7 +28,7 @@
       "value": {
         "type": "minecraft:storage",
         "storage": "mad:",
-        "path": "rules.world_size.x2"
+        "path": "rules.world_size.x_west"
       },
       "range": {
         "max": -200
@@ -39,7 +39,7 @@
       "value": {
         "type": "minecraft:storage",
         "storage": "mad:",
-        "path": "rules.world_size.y2"
+        "path": "rules.world_size.z_north"
       },
       "range": {
         "max": -200

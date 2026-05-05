@@ -83,25 +83,25 @@ scoreboard players set @a[predicate=mad:player/] OnGround 0
 execute store result score #mad TmpX run \
   data get storage mad: rules.world_size.half 1.0
 scoreboard players operation #mad TmpX += #mad PosX
-execute store result storage mad: rules.world_size.x4 int 1 run \
+execute store result storage mad: rules.world_size.x_east int 1 run \
   scoreboard players get #mad TmpX
 #### ワールド範囲 Z軸正(南) - 範囲内にエンド大陸が存在するかの算出用
 execute store result score #mad TmpZ run \
   data get storage mad: rules.world_size.half 1.0
 scoreboard players operation #mad TmpZ += #mad PosZ
-execute store result storage mad: rules.world_size.z4 int 1 run \
+execute store result storage mad: rules.world_size.z_south int 1 run \
   scoreboard players get #mad TmpZ
 #### ワールド範囲 X軸負(西) - 範囲内にエンド大陸が存在するかの算出用
 execute store result score #mad TmpX run \
   data get storage mad: rules.world_size.half -1.0
 scoreboard players operation #mad TmpX += #mad PosX
-execute store result storage mad: rules.world_size.x2 int 1 run \
+execute store result storage mad: rules.world_size.x_west int 1 run \
   scoreboard players get #mad TmpX
 #### ワールド範囲 Z軸負(北) - 範囲内にエンド大陸が存在するかの算出用
 execute store result score #mad TmpZ run \
   data get storage mad: rules.world_size.half -1.0
 scoreboard players operation #mad TmpZ += #mad PosZ
-execute store result storage mad: rules.world_size.z2 int 1 run \
+execute store result storage mad: rules.world_size.z_north int 1 run \
   scoreboard players get #mad TmpZ
 #### 範囲内にエンド大陸が存在するか - 支援物資「エンドポータルフレーム」判定用
 scoreboard players set #mad ExistsTheEndInWorldBorder 0
