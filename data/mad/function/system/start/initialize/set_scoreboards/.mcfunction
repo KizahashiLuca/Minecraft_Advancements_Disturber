@@ -74,12 +74,6 @@ scoreboard players set #mad PosX 0
 scoreboard players set #mad PosY 63
 scoreboard players set #mad PosZ 0
 scoreboard players set #mad 450 450
-#### 疑似乱数生成器
-scoreboard players set #mad RandomizerSeed 0
-scoreboard players set #mad RandomizerCount 10
-scoreboard players set #mad RandomizerResult 0
-scoreboard players set #mad RandomizerModder 2147483647
-scoreboard players set #mad RandomizerMultiplier 48271
 #### チーム数 - 勝敗判定用
 scoreboard players set #mad NumberOfTeams 2
 #### 死亡ペナルティ - 制限時間減算用
@@ -101,6 +95,7 @@ scoreboard players set #mad_team_b GetCarePackageCount 0
 scoreboard players set #mad_team_c GetCarePackageCount 0
 scoreboard players set #mad_team_d GetCarePackageCount 0
 scoreboard players set @a[predicate=mad:player/] GetCarePackageCount 0
+scoreboard players set #mad RandomValue 0
 #### 支援物資用 - 発信機
 scoreboard players set @a[predicate=mad:player/] UseTransmitter 0
 #### 支援物資用 - 緊急招集

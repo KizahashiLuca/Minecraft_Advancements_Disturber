@@ -39,8 +39,6 @@ function mad:system/start/initialize/storages/upgrader
 function mad:system/start/initialize/storages/rules/
 #### ボスバー
 function mad:system/start/initialize/bossbar
-#### 疑似乱数生成器
-function mad:system/common/randomizer/initialize
 #### バージョン確認
 function mad:system/common/detect_version/
 #### プレイヤー計数

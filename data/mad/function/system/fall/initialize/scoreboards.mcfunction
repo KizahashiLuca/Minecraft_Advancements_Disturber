@@ -108,6 +108,7 @@ scoreboard players set #mad_team_b GetCarePackageCount 0
 scoreboard players set #mad_team_c GetCarePackageCount 0
 scoreboard players set #mad_team_d GetCarePackageCount 0
 scoreboard players set @a[predicate=mad:player/] GetCarePackageCount 0
+scoreboard players set #mad RandomValue 0
 #### 支援物資用 - 発信機用
 scoreboard players set @a[predicate=mad:player/] UseTransmitter 0
 #### 支援物資用 - 緊急招集用

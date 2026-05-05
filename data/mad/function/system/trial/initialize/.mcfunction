@@ -40,8 +40,6 @@ function mad:system/wait/initialize/storages/
 #### ワールド
 function mad:system/game/initialize/world \
   with storage mad: rules
-#### 疑似乱数生成器
-function mad:system/common/randomizer/initialize
 #### バージョン確認
 function mad:system/common/detect_version/
 #### プレイヤー番号設定

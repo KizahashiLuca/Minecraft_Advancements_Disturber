@@ -63,12 +63,6 @@ scoreboard objectives add TmpY dummy ['', {translate: 'Y座標 - 一時値'}]
 scoreboard objectives add TmpZ dummy ['', {translate: 'Z座標 - 一時値'}]
 scoreboard objectives add 450 dummy ['', {translate: '定数 - 450'}]
 scoreboard objectives add Angle dummy ['', {translate: '方角'}]
-#### 疑似乱数生成器
-scoreboard objectives add RandomizerSeed dummy ['', {translate: '疑似乱数 - シード値'}]
-scoreboard objectives add RandomizerCount dummy ['', {translate: '疑似乱数 - カウント'}]
-scoreboard objectives add RandomizerResult dummy ['', {translate: '疑似乱数 - 結果'}]
-scoreboard objectives add RandomizerModder dummy ['', {translate: '疑似乱数 - 最大周期'}]
-scoreboard objectives add RandomizerMultiplier dummy ['', {translate: '疑似乱数 - 乗数'}]
 #### チーム数 - 勝敗判定用
 scoreboard objectives add NumberOfTeams dummy ['', {translate: 'チーム数'}]
 #### 死亡ペナルティ - 制限時間減算用
@@ -83,6 +77,7 @@ scoreboard objectives add RailDistance minecraft.custom:minecraft.minecart_one_c
 #### 支援物資
 scoreboard objectives add GetCarePackageCount dummy ['', {translate: '取得支援物資個数'}]
 scoreboard objectives add UnsetLootTable dummy ['', {translate: 'ルートテーブル未設定'}]
+scoreboard objectives add RandomValue dummy ['', {translate: '乱数値'}]
 #### 支援物資用 - 発信機
 scoreboard objectives add UseTransmitter minecraft.used:minecraft.bat_spawn_egg ['', {translate: 'トリガー - 発信機使用'}]
 #### 支援物資用 - 緊急招集

@@ -63,12 +63,6 @@ scoreboard objectives remove TmpY
 scoreboard objectives remove TmpZ
 scoreboard objectives remove 450
 scoreboard objectives remove Angle
-#### 疑似乱数生成器
-scoreboard objectives remove RandomizerSeed
-scoreboard objectives remove RandomizerCount
-scoreboard objectives remove RandomizerResult
-scoreboard objectives remove RandomizerModder
-scoreboard objectives remove RandomizerMultiplier
 #### チーム数 - 勝敗判定用
 scoreboard objectives remove NumberOfTeams
 #### 死亡ペナルティ - 制限時間減算用
@@ -83,6 +77,7 @@ scoreboard objectives remove RailDistance
 #### 支援物資
 scoreboard objectives remove GetCarePackageCount
 scoreboard objectives remove UnsetLootTable
+scoreboard objectives remove RandomValue
 #### 支援物資用 - 発信機
 scoreboard objectives remove UseTransmitter
 #### 支援物資用 - 緊急招集

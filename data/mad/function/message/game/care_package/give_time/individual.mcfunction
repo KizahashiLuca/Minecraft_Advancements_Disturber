@@ -23,7 +23,7 @@ tellraw @s \
         {\
           score: {\
             name: '#mad',\
-            objective: 'RandomizerResult',\
+            objective: 'RandomValue',\
           },\
           color: 'green',\
           bold: true,\
