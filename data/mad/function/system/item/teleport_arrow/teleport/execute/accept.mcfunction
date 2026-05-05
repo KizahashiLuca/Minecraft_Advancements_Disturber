@@ -10,7 +10,7 @@
 
 ## テレポート処理
 $execute in minecraft:overworld run \
-  spreadplayers $(x) $(z) 0 1 true @s
+  spreadplayers $(absolute_x) $(absolute_z) 0 1 true @s
 
 ## パーティクル
 particle minecraft:sonic_boom ~ ~1 ~ 0.1 -3 0.1 1 10 normal @a

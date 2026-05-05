@@ -8,14 +8,6 @@
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
-## スポーンポイント設定
-#### スポーンポイントが設定されていない場合、
-#### リスポーン直後にそれぞれチーム範囲にテレポート
-execute as @a[predicate=mad:player/alive/respawn] \
-  unless data entity @s respawn run \
-  function mad:system/game/respawn/ \
-    with storage mad: rules.world_size
-
 ## 死亡処理
 #### チームのプレイヤーが死亡した場合、スペクテイターモードに変更されて、
 #### 同チームの生存しているプレイヤーの視点になる。

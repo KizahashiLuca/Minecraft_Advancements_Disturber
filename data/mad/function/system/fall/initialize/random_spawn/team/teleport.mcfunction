@@ -9,4 +9,4 @@
 #####################################
 
 ## テレポート
-$tp @a[predicate=mad:player/team/$(team)] $(x) 320 $(z)
+$tp @a[predicate=mad:player/team/$(team)] $(absolute_x) 320 $(absolute_z)

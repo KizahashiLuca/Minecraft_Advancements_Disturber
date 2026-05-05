@@ -9,4 +9,4 @@
 #####################################
 
 ## テレポート
-$spreadplayers $(x) $(z) 0 1 false @s
+$spreadplayers $(absolute_x) $(absolute_z) 0 1 false @s
