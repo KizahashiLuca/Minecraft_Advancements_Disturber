@@ -409,6 +409,11 @@ scoreboard players set #mad_team_a Advancements_Husbandry_tame_an_animal 0
 scoreboard players set #mad_team_b Advancements_Husbandry_tame_an_animal 0
 scoreboard players set #mad_team_c Advancements_Husbandry_tame_an_animal 0
 scoreboard players set #mad_team_d Advancements_Husbandry_tame_an_animal 0
+scoreboard players set @a[predicate=mad:player/] Advancements_Husbandry_uh_oh 0
+scoreboard players set #mad_team_a Advancements_Husbandry_uh_oh 0
+scoreboard players set #mad_team_b Advancements_Husbandry_uh_oh 0
+scoreboard players set #mad_team_c Advancements_Husbandry_uh_oh 0
+scoreboard players set #mad_team_d Advancements_Husbandry_uh_oh 0
 scoreboard players set @a[predicate=mad:player/] Advancements_Husbandry_wax_off 0
 scoreboard players set #mad_team_a Advancements_Husbandry_wax_off 0
 scoreboard players set #mad_team_b Advancements_Husbandry_wax_off 0

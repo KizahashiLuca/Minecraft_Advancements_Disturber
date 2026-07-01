@@ -89,6 +89,7 @@ scoreboard players set @s Advancements_Husbandry_silk_touch_nest 0
 scoreboard players set @s Advancements_Husbandry_tactical_fishing 0
 scoreboard players set @s Advancements_Husbandry_tadpole_in_a_bucket 0
 scoreboard players set @s Advancements_Husbandry_tame_an_animal 0
+scoreboard players set @s Advancements_Husbandry_uh_oh 0
 scoreboard players set @s Advancements_Husbandry_wax_off 0
 scoreboard players set @s Advancements_Husbandry_wax_on 0
 scoreboard players set @s Advancements_Husbandry_whole_pack 0

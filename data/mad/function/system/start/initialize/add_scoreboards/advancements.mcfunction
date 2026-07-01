@@ -89,6 +89,7 @@ scoreboard objectives add Advancements_Husbandry_silk_touch_nest dummy ['', {tra
 scoreboard objectives add Advancements_Husbandry_tactical_fishing dummy ['', {translate: 'advancements.husbandry.tactical_fishing.title'}]
 scoreboard objectives add Advancements_Husbandry_tadpole_in_a_bucket dummy ['', {translate: 'advancements.husbandry.tadpole_in_a_bucket.title'}]
 scoreboard objectives add Advancements_Husbandry_tame_an_animal dummy ['', {translate: 'advancements.husbandry.tame_an_animal.title'}]
+scoreboard objectives add Advancements_Husbandry_uh_oh dummy ['', {translate: 'advancements.husbandry.uh_oh.title'}]
 scoreboard objectives add Advancements_Husbandry_wax_off dummy ['', {translate: 'advancements.husbandry.wax_off.title'}]
 scoreboard objectives add Advancements_Husbandry_wax_on dummy ['', {translate: 'advancements.husbandry.wax_on.title'}]
 scoreboard objectives add Advancements_Husbandry_whole_pack dummy ['', {translate: 'advancements.husbandry.whole_pack.title'}]
