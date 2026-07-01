@@ -1,9 +1,9 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 26.1
+## MC-Version: Java Edit. 26.2
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 11 Apr 2026
+## Date      : 02 Sep 2026
 ## MCVersion   : β-2.5
 ## Licensed under CC BY-SA 4.0. 
 #####################################

@@ -7,7 +7,7 @@
 
 ## Caution!!
 
-- マインクラフト Java版 v26.1 以降対応です。
+- マインクラフト Java版 v26.2 以降対応です。
 - 実況でご利用の際は以下項目の記載をお願い致します。
   - 企画者 : ぽたーじゅ
     - Twitter : [https://twitter.com/potagegatop](https://twitter.com/potagegatop)
@@ -20,7 +20,7 @@
 
 ダウンロードは 以下リンクからお願いします。
 
-- Java Edition v26.1 移行対応
+- Java Edition v26.2 移行対応
   - [β-4.0](https://github.com/KizahashiLuca/Minecraft_Advancements_Disturber/releases/tag/beta-4.0)
 
 ## ルール解説動画

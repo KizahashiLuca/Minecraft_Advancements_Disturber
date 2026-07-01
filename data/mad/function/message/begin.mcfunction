@@ -1,10 +1,10 @@
 #####################################
 ## Minecraft Advancements Disturber
-## MC-Version: Java Edit. 26.1
+## MC-Version: Java Edit. 26.2
 ## Author    : @potagegatop
 ## Author    : @KizahashiLuca
-## Date      : 11 Apr 2026
-## Version   : β-3.0
+## Date      : 02 Sep 2026
+## Version   : β-4.0
 ## Licensed under CC BY-SA 4.0. 
 #####################################
 
@@ -25,7 +25,7 @@ tellraw @a \
       bold: true,\
     },\
     {\
-      translate: '   Disturber β-3.0 - JE 26.1\n',\
+      translate: '   Disturber β-4.0 - JE 26.1\n',\
       color: 'red',\
       bold: true,\
     },\
