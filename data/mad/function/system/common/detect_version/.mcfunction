@@ -17,3 +17,5 @@ execute if predicate mad:version/26.1/ run \
   function mad:system/common/detect_version/26/1
 execute if predicate mad:version/26.2/ run \
   function mad:system/common/detect_version/26/2
+execute if predicate mad:version/26.3/ run \
+  function mad:system/common/detect_version/26/3
