@@ -11,7 +11,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "type": "minecraft:armor_stand",
+          "entity_type": "minecraft:armor_stand",
           "nbt": {
             "data": {
               "Tags": [

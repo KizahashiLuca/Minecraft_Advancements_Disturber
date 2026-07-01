@@ -17,7 +17,7 @@
       "conditions": {
         "player": {
           "vehicle": {
-            "type": "minecraft:pig",
+            "entity_type": "minecraft:pig",
             "movement": {
               "fall_distance": {
                 "min": 5

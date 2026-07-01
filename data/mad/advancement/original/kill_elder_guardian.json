@@ -20,7 +20,7 @@
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "minecraft:elder_guardian"
+              "entity_type": "minecraft:elder_guardian"
             },
             "entity": "this"
           }

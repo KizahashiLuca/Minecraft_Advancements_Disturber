@@ -24,7 +24,7 @@
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "#mad:pick_up_items"
+              "entity_type": "#mad:pick_up_items"
             },
             "entity": "this"
           }

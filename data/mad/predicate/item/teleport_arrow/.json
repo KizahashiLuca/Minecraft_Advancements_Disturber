@@ -2,7 +2,7 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "type": "minecraft:arrow",
+    "entity_type": "minecraft:arrow",
     "nbt": {
       "item": {
         "id": "minecraft:tipped_arrow",

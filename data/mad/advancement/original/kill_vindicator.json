@@ -19,7 +19,7 @@
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "minecraft:vindicator"
+              "entity_type": "minecraft:vindicator"
             },
             "entity": "this"
           }

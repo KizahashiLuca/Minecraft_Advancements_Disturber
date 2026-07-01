@@ -156,7 +156,11 @@
       }
     }
   },
-  "requirements": [["in_this_corner_of_the_world"]],
+  "requirements": [
+    [
+      "in_this_corner_of_the_world"
+    ]
+  ],
   "rewards": {
     "function": "mad:system/game/advancement/original/in_this_corner_of_the_world/"
   }

@@ -16,7 +16,7 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "type": [
+          "entity_type": [
             "minecraft:chest_minecart"
           ],
           "nbt": {

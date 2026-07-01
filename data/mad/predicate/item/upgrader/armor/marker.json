@@ -9,7 +9,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:marker",
+        "entity_type": "minecraft:marker",
         "nbt": {
           "Tags": [
             "mad_armor_upgrader"

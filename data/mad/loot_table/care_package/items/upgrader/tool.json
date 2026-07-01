@@ -80,11 +80,17 @@
               "components": {
                 "minecraft:rarity": "rare",
                 "minecraft:custom_data": {
-                  "Tags": ["mad_minecart_item", "mad_tool_upgrader"]
+                  "Tags": [
+                    "mad_minecart_item",
+                    "mad_tool_upgrader"
+                  ]
                 },
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
-                  "Tags": ["mad_minecart_item", "mad_tool_upgrader"]
+                  "Tags": [
+                    "mad_minecart_item",
+                    "mad_tool_upgrader"
+                  ]
                 }
               }
             }

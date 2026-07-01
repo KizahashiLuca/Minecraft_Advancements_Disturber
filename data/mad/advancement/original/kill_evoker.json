@@ -20,7 +20,7 @@
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "minecraft:evoker"
+              "entity_type": "minecraft:evoker"
             },
             "entity": "this"
           }

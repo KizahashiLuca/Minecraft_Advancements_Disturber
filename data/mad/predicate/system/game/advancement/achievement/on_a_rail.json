@@ -12,7 +12,7 @@
         "entity": "this",
         "predicate": {
           "vehicle": {
-            "type": "minecraft:minecart"
+            "entity_type": "minecraft:minecart"
           }
         }
       }
