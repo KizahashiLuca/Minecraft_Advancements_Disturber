@@ -43,13 +43,6 @@ function mad:system/game/advancement/execute/
 execute as @a[predicate=mad:player/dying/] run \
   function mad:system/game/detect_dying/
 
-#### スポーンポイントが設定されていない場合、
-#### リスポーン直後にそれぞれチーム範囲にテレポート
-execute as @a[predicate=mad:player/alive/respawn] \
-  unless data entity @s respawn run \
-  function mad:system/game/respawn/ \
-    with storage mad: rules.world_size
-
 ## チーム戦での生存検出
 execute if predicate mad:gamerule/match_mode/team run \
   function mad:system/game/team

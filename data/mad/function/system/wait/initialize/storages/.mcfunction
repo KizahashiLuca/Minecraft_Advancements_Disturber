@@ -39,7 +39,7 @@ execute if predicate mad:gamerule/match_mode/team run \
     set value 'NumberOfTeams'
 #### ワールド範囲 - スポーン範囲用(ゲームルールコマンドの置換)
 data modify storage mad: rules.spawn_radius \
-  set from storage mad: rules.world_border
+  set value 0
 #### ワールド範囲 - ランダムスポーン/支援物資投下地点/進捗「この世界の片隅に」算出用
 execute store result storage mad: rules.world_size.full double 1 run \
   data get storage mad: rules.world_border 1

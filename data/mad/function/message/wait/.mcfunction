@@ -17,7 +17,7 @@ tellraw @a \
       color: 'green',\
     },\
     {\
-      translate: '[MAD] ボイスチャット移動やルール確認してください。\n',\
+      translate: '[MAD] ボイスチャット移動やルール確認をしてください。\n',\
       color: 'green',\
     },\
   ]
