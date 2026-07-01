@@ -18,7 +18,6 @@ scoreboard objectives remove Phase
 scoreboard objectives remove PvP
 scoreboard objectives remove NumberOfDeaths
 scoreboard objectives remove NumberOfKills
-scoreboard objectives remove TimeSinceDeath
 scoreboard objectives remove SpectatorTrigger
 scoreboard objectives remove ExecuteTrigger
 scoreboard objectives remove SetTeamTrigger

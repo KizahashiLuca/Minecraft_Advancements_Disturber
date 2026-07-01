@@ -18,7 +18,6 @@ scoreboard players set #mad Phase 1
 scoreboard players set @a[predicate=mad:player/] Phase 0
 scoreboard players set @a[predicate=mad:player/] NumberOfDeaths 0
 scoreboard players set @a[predicate=mad:player/] NumberOfKills 0
-scoreboard players set @a[predicate=mad:player/] TimeSinceDeath 0
 scoreboard players set @a SpectatorTrigger 0
 scoreboard players enable @a SpectatorTrigger
 scoreboard players set @a[predicate=mad:player/host] ExecuteTrigger 0

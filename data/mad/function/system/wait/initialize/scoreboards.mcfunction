@@ -15,8 +15,6 @@ scoreboard players set @a[predicate=mad:player/] Phase 0
 scoreboard players set @a[predicate=mad:player/] NumberOfDeaths 0
 #### キル数 - 統計用
 scoreboard players set @a[predicate=mad:player/] NumberOfKills 0
-#### 死亡からの経過時間 - リスポーン場所選定用
-scoreboard players set @a[predicate=mad:player/] TimeSinceDeath 0
 #### テレポート用トリガー
 scoreboard players set @a TeleportTrigger 0
 scoreboard players enable @a[predicate=mad:player/spectator] TeleportTrigger
