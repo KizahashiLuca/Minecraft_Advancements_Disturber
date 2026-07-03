@@ -24,7 +24,7 @@ tellraw @s \
       ],\
     },\
     {\
-      translate: '[MAD] ワールド中心にテレポートしました。\n',\
+      translate: '[MAD] ワールド中心にテレポートしました。',\
       color: 'green',\
     },\
   ]

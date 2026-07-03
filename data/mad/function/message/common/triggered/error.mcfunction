@@ -24,7 +24,7 @@ tellraw @s \
       ],\
     },\
     {\
-      translate: '[MAD] 現在このトリガーは受け付けていません。\n',\
+      translate: '[MAD] 現在このトリガーは受け付けていません。',\
       color: 'yellow',\
     },\
   ]

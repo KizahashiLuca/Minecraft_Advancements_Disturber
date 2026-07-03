@@ -24,7 +24,7 @@ $tellraw @s \
       ],\
     },\
     {\
-      translate: '[MAD] 支援物資$(number) にテレポートしました。\n',\
+      translate: '[MAD] 支援物資$(number) にテレポートしました。',\
       color: 'green',\
     },\
   ]
