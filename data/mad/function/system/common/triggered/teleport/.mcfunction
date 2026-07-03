@@ -16,5 +16,5 @@ execute as @s[predicate=mad:system/common/triggered/teleport/care_package] run \
 execute as @s[predicate=mad:system/common/triggered/teleport/center] run \
   function mad:system/common/triggered/teleport/center/
 
-## トリガーの処理 - その他
-function mad:system/common/triggered/error
+## スコアボードのリセット
+function mad:system/common/triggered/scoreboards

@@ -9,6 +9,9 @@
 #####################################
 
 ## テレポート
-#### テレポート先が読み込みチャンクではないときにテレポートできないことがあるため、
-#### spreadplayers コマンドでテレポート
-$spreadplayers $(x) $(z) 0 1 true @s
+#### 投下フラグが降りているときは未投下のため座標にテレポート
+$execute if predicate mad:care_package/is_down_flag/$(number) run \
+  teleport @s $(x) $(y) $(z)
+#### 投下フラグが立っているときは投下済のため支援物資にテレポート
+$execute unless predicate mad:care_package/is_down_flag/$(number) run \
+  teleport @s @e[predicate=mad:care_package/,tag=mad_care_package_$(number),limit=1]
