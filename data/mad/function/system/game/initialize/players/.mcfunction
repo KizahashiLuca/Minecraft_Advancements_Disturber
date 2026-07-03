@@ -41,5 +41,9 @@ execute as @a[predicate=mad:player/] run \
 ## レシピ剥奪
 recipe take @a *
 
+## ウェイポイント
+execute as @a run \
+  attribute @s minecraft:waypoint_transmit_range base set 0
+
 ## 初期物資
 loot give @a[predicate=mad:player/] loot mad:system/game/first_items

@@ -52,7 +52,7 @@ gamerule minecraft:lava_source_conversion false
 #### クラフトにレシピを要求
 gamerule minecraft:limited_crafting true
 #### プレイヤーの方向バーの有効化
-gamerule minecraft:locator_bar false
+gamerule minecraft:locator_bar true
 #### 管理者ログへのコマンドの実行結果の通知
 gamerule minecraft:log_admin_commands true
 #### コマンドによるブロックの最大変更数

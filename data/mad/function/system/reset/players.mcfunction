@@ -31,3 +31,7 @@ effect clear @a
 
 ## レシピ剥奪
 # recipe take @a *
+
+## ウェイポイント
+execute as @a run \
+  attribute @s minecraft:waypoint_transmit_range base set 60000000

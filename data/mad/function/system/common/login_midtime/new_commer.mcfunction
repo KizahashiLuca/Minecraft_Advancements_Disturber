@@ -30,6 +30,9 @@ advancement revoke @s everything
 ## ボスバー
 bossbar set minecraft:bossbar players @a
 
+## ウェイポイント
+attribute @s minecraft:waypoint_transmit_range base set 0
+
 ## テレポート
 tp @s @e[predicate=mad:marker/world_spawn,limit=1]
 
