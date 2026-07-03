@@ -21,7 +21,7 @@ tellraw @a \
       color: 'green',\
     },\
     {\
-      translate: '[MAD]   ホスト : %s\n',\
+      translate: '[MAD]   ホスト : %s',\
       color: 'green',\
       with: [\
         {\
@@ -40,7 +40,7 @@ tellraw @a[predicate=mad:player/host] \
       color: 'green',\
     },\
     {\
-      translate: '[MAD] %s をクリックしてください。\n',\
+      translate: '[MAD] %s をクリックしてください。',\
       color: 'green',\
       with: [\
         {\

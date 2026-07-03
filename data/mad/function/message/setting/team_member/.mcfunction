@@ -37,7 +37,7 @@ tellraw @s \
       ],\
     },\
     {\
-      translate: '[MAD] 参加チームを決めてください。\n',\
+      translate: '[MAD] 参加チームを決めてください。',\
       color: 'green',\
     },\
   ]

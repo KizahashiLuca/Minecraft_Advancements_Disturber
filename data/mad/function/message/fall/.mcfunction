@@ -14,5 +14,6 @@ tellraw @a \
     '',\
     {\
       translate: '[MAD] 降下を開始します',\
+      color: 'green',\
     },\
   ]

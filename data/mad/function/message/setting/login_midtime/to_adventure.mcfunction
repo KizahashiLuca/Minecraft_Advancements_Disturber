@@ -21,7 +21,7 @@ tellraw @s \
       color: 'green',\
     },\
     {\
-      translate: '[MAD]   > %s\n',\
+      translate: '[MAD]   > %s',\
       color: 'green',\
       with: [\
         {\

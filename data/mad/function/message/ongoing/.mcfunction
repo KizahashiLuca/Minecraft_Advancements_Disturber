@@ -32,7 +32,7 @@ tellraw @a \
       color: 'yellow',\
     },\
     {\
-      translate: '[MAD]   >> %s\n',\
+      translate: '[MAD]   >> %s',\
       color: 'yellow',\
       with: [\
         {\
@@ -52,6 +52,3 @@ tellraw @a \
       ],\
     },\
   ]
-
-## 共通終了メッセージ表示
-function mad:message/end
