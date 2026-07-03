@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "entity_type": [
+      "minecraft:armor_stand"
+    ],
+    "nbt": {
+      "Tags": [
+        "mad_care_package"
+      ]
+    }
+  }
+}

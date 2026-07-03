@@ -63,6 +63,7 @@ kill @e[type=minecraft:text_display]
 kill @e[predicate=mad:respawn_banner/]
 #### 支援物資
 kill @e[predicate=mad:care_package/]
+kill @e[predicate=mad:care_package/armor_stand]
 #### 支援物資アイテム - 発信機
 kill @e[predicate=mad:item/transmitter/marker]
 #### 支援物資アイテム - 防具アップグレード

@@ -40,6 +40,10 @@ tag @a remove mad_give_time_randomly
 execute store result storage mad: care_package.drop.number int 1 run \
   data get entity @s UUID[0] 1
 
+## アーマースタンド削除
+function mad:system/game/care_package/explode/armor_stand \
+  with storage mad: care_package.drop
+
 ## 爆破
 #### サウンドイベント
 playsound minecraft:entity.firework_rocket.twinkle ambient @a
