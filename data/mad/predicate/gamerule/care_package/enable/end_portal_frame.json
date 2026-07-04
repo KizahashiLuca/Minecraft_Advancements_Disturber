@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:storage",
+    "storage": "mad:",
+    "path": "rules.care_package.enable_end_portal_frame"
+  },
+  "range": 1
+}

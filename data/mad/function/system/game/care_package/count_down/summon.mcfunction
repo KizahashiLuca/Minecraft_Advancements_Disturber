@@ -20,7 +20,7 @@ $summon minecraft:chest_minecart $(absolute_x) $(y) $(absolute_z) \
     UUID: [\
       I; $(number), $(number), $(number), $(number),\
     ],\
-    LootTable: 'mad:care_package/$(type)_$(with)_end',\
+    LootTable: 'mad:care_package/',\
   }
 #### 投下時にアーマースタンドを召喚
 $summon minecraft:armor_stand $(absolute_x) $(y) $(absolute_z) \

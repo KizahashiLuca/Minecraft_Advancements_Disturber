@@ -56,4 +56,20 @@ data modify storage mad: rules \
       hard: -5636096,\
       hardcore: -16777216,\
     },\
+    care_package: {\
+      enable_elytra: 1,\
+      enable_trident: 1,\
+      enable_efficiency_pickaxe: 1,\
+      enable_fortune_pickaxe: 1,\
+      enable_armor_upgrader: 1,\
+      enable_tool_upgrader: 1,\
+      enable_emergency_call: 1,\
+      enable_end_portal_frame: 1,\
+      enable_energy_drink: 1,\
+      enable_golden_boots: 1,\
+      enable_notice_of_thief: 1,\
+      enable_teleport_arrow: 1,\
+      enable_totem_of_undying: 1,\
+      enable_transmitter: 1,\
+    },\
   }

@@ -1,0 +1,184 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/broken/elytra",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/broken/elytra"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/broken/trident",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/broken/trident"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/pickaxe/efficiency",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/pickaxe/efficiency"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/pickaxe/fortune",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/pickaxe/fortune"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/upgrader/armor",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/upgrader/armor"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/upgrader/tool",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/upgrader/tool"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/emergency_call",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/emergency_call"
+            },
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/match_mode/team"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/end_portal_frame",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/end_portal_frame"
+            },
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/with_end"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/energy_drink",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/energy_drink"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/golden_boots",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/golden_boots"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/notice_of_thief",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/notice_of_thief"
+            },
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/num_of_players/not_solo"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/teleport_arrow",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/teleport_arrow"
+            },
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/num_of_players/not_solo"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/totem_of_undying",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/totem_of_undying"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mad:care_package/items/transmitter",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/care_package/enable/transmitter"
+            },
+            {
+              "condition": "minecraft:reference",
+              "name": "mad:gamerule/num_of_players/not_solo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

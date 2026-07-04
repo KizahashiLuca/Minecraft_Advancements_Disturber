@@ -38,30 +38,3 @@ execute if predicate mad:system/wait/initialize/check_the_end run \
   data modify storage mad: rules.the_end_exists set value 1
 execute unless predicate mad:system/wait/initialize/check_the_end run \
   data modify storage mad: rules.the_end_exists set value 0
-
-## 各支援物資のタイプ/ルートテーブル
-execute if predicate mad:gamerule/number_of_care_packages/ge_1 run \
-  function mad:system/wait/initialize/storages/care_package/set_type \
-    {\
-      number: '1',\
-    }
-execute if predicate mad:gamerule/number_of_care_packages/ge_2 run \
-  function mad:system/wait/initialize/storages/care_package/set_type \
-    {\
-      number: '2',\
-    }
-execute if predicate mad:gamerule/number_of_care_packages/ge_3 run \
-  function mad:system/wait/initialize/storages/care_package/set_type \
-    {\
-      number: '3',\
-    }
-execute if predicate mad:gamerule/number_of_care_packages/ge_4 run \
-  function mad:system/wait/initialize/storages/care_package/set_type \
-    {\
-      number: '4',\
-    }
-execute if predicate mad:gamerule/number_of_care_packages/ge_5 run \
-  function mad:system/wait/initialize/storages/care_package/set_type \
-    {\
-      number: '5',\
-    }
