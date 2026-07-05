@@ -28,6 +28,12 @@ $summon minecraft:armor_stand $(absolute_x) $(y) $(absolute_z) \
     Invulnerable: 1b,\
     NoGravity: 1b,\
     Invisible: 1b,\
+    attributes: [\
+      {\
+        id: 'minecraft:waypoint_transmit_range',\
+        base: 60000000,\
+      },\
+    ],\
     Tags: [\
       'mad_care_package',\
       'mad_care_package_$(number)',\

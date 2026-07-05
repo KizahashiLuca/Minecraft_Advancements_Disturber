@@ -13,5 +13,3 @@
 $waypoint modify @e[predicate=mad:care_package/armor_stand,tag=mad_care_package_$(number),limit=1] color gold
 #### スタイル
 $waypoint modify @e[predicate=mad:care_package/armor_stand,tag=mad_care_package_$(number),limit=1] style set minecraft:bowtie
-#### 伝達距離
-$attribute @e[predicate=mad:care_package/armor_stand,tag=mad_care_package_$(number),limit=1] minecraft:waypoint_transmit_range base set 60000000
