@@ -38,6 +38,14 @@ execute if predicate mad:gamerule/match_mode/individual/ run \
           },\
         },\
         {\
+          label: '支援物資設定',\
+          width: 200,\
+          action: {\
+            type: 'minecraft:run_command',\
+            command: 'trigger ExecuteTrigger set 25',\
+          },\
+        },\
+        {\
           label: 'キャンセル',\
           width: 200,\
           action: {\
@@ -83,6 +91,14 @@ $execute if predicate mad:gamerule/match_mode/team run \
           action: {\
             type: 'minecraft:run_command',\
             command: 'trigger ExecuteTrigger set 20',\
+          },\
+        },\
+        {\
+          label: '支援物資設定',\
+          width: 200,\
+          action: {\
+            type: 'minecraft:run_command',\
+            command: 'trigger ExecuteTrigger set 25',\
           },\
         },\
         {\

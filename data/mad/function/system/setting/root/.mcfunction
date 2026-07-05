@@ -15,6 +15,9 @@ execute if entity @p[predicate=mad:system/setting/triggered/execute/detail_rules
 #### オプション設定ダイアログへ
 execute if entity @p[predicate=mad:system/setting/triggered/execute/option_rules] run \
   function mad:system/setting/option_rules/initialize
+#### 支援物資設定ダイアログへ
+execute if entity @p[predicate=mad:system/setting/triggered/execute/care_package] run \
+  function mad:system/setting/care_package/initialize
 #### チーム戦ルール設定ダイアログへ
 execute if entity @p[predicate=mad:system/setting/triggered/execute/team_rules] run \
   function mad:system/setting/team_rules/initialize

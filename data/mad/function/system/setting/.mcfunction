@@ -30,13 +30,16 @@ execute if predicate mad:phase/setting/root run \
 #### 詳細設定ダイアログにおける処理
 execute if predicate mad:phase/setting/detail_rules run \
   function mad:system/setting/detail_rules/
-#### 詳細設定ダイアログにおける処理
+#### オプション設定ダイアログにおける処理
 execute if predicate mad:phase/setting/option_rules run \
   function mad:system/setting/option_rules/
-#### 詳細設定ダイアログにおける処理
+#### 支援物資設定ダイアログにおける処理
+execute if predicate mad:phase/setting/care_package run \
+  function mad:system/setting/care_package/
+#### チーム戦ルール設定ダイアログにおける処理
 execute if predicate mad:phase/setting/team_rules run \
   function mad:system/setting/team_rules/
-#### 詳細設定ダイアログにおける処理
+#### チームメンバー設定ダイアログにおける処理
 execute if predicate mad:phase/setting/team_member run \
   function mad:system/setting/team_member/
 

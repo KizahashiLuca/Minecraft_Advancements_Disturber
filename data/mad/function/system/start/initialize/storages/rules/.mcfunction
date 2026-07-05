@@ -71,5 +71,19 @@ data modify storage mad: rules \
       enable_teleport_arrow: 1,\
       enable_totem_of_undying: 1,\
       enable_transmitter: 1,\
+      enable_elytra_string: '$(enable_elytra)',\
+      enable_trident_string: '$(enable_trident)',\
+      enable_efficiency_pickaxe_string: '$(enable_efficiency_pickaxe)',\
+      enable_fortune_pickaxe_string: '$(enable_fortune_pickaxe)',\
+      enable_armor_upgrader_string: '$(enable_armor_upgrader)',\
+      enable_tool_upgrader_string: '$(enable_tool_upgrader)',\
+      enable_emergency_call_string: '$(enable_emergency_call)',\
+      enable_end_portal_frame_string: '$(enable_end_portal_frame)',\
+      enable_energy_drink_string: '$(enable_energy_drink)',\
+      enable_golden_boots_string: '$(enable_golden_boots)',\
+      enable_notice_of_thief_string: '$(enable_notice_of_thief)',\
+      enable_teleport_arrow_string: '$(enable_teleport_arrow)',\
+      enable_totem_of_undying_string: '$(enable_totem_of_undying)',\
+      enable_transmitter_string: '$(enable_transmitter)',\
     },\
   }
