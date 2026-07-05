@@ -35,7 +35,7 @@ advancement grant @a until mad:original/root
 advancement grant @a until mad:achievement/root
 
 ## スポーン地点設定
-execute as @a[predicate=mad:player/] run \
+execute as @a[predicate=mad:player/] at @s run \
   spawnpoint @s ~ ~ ~
 
 ## レシピ剥奪
