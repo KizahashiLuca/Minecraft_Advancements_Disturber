@@ -44,6 +44,10 @@ execute store result storage mad: care_package.drop.number int 1 run \
 function mad:system/game/care_package/explode/armor_stand \
   with storage mad: care_package.drop
 
+## 同じチャンク内にワールドスポーンのマーカーが無ければ強制読み込み解除
+execute unless entity @e[predicate=mad:marker/world_spawn,dx=15,dy=15,dz=15] run \
+  forceload remove ~ ~ ~ ~
+
 ## 爆破
 #### サウンドイベント
 playsound minecraft:entity.firework_rocket.twinkle ambient @a

@@ -22,6 +22,3 @@ execute store result storage mad: care_package.drop.number int 1 run \
 #### 支援物資の番号を基にサイドバーを設定
 function mad:message/game/care_package/sidebar/landed \
   with storage mad: care_package.drop
-
-## 強制読み込み解除
-forceload remove ~ ~ ~ ~
