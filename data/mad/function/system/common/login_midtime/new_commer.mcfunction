@@ -28,7 +28,7 @@ effect clear @s
 advancement revoke @s everything
 
 ## ボスバー
-bossbar set minecraft:bossbar players @a
+bossbar set minecraft:bossbar players @a[predicate=mad:player/spectator]
 
 ## ウェイポイント
 attribute @s minecraft:waypoint_transmit_range base set 0
