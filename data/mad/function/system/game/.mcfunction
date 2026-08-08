@@ -42,6 +42,8 @@ function mad:system/game/advancement/execute/
 #### 死亡したプレイヤー
 execute as @a[predicate=mad:player/dying/] run \
   function mad:system/game/detect_dying/
+#### リスポーン直後のプレイヤー
+loot give @a[predicate=mad:player/respawn] loot mad:system/game/first_items
 
 ## チーム戦での生存検出
 execute if predicate mad:gamerule/match_mode/team run \

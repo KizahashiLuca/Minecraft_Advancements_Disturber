@@ -20,6 +20,3 @@ clear @s
 ## スコアボード設定
 #### 犠牲者は蘇生
 function mad:system/game/detect_dying/kill/scoreboards/victim/pvp_off
-
-## 初期アイテムを配布
-loot give @s loot mad:system/game/first_items
