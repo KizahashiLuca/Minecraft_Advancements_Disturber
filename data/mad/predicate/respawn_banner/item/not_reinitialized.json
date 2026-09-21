@@ -1,17 +1,14 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
+    "mad:respawn_banner/item/",
     {
-      "condition": "minecraft:reference",
-      "name": "mad:respawn_banner/item/"
-    },
-    {
-      "condition": "minecraft:inverted",
+      "type": "minecraft:inverted",
       "term": {
-        "condition": "minecraft:entity_properties",
+        "type": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "type": "minecraft:item",
+          "entity_type": "minecraft:item",
           "nbt": {
             "Item": {
               "id": "minecraft:armor_stand",

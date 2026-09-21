@@ -3,14 +3,14 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "rolls": 1.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:armor_stand",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:copy_components",
+              "type": "minecraft:copy_components",
               "include": [
                 "minecraft:profile",
                 "minecraft:custom_name",
@@ -23,7 +23,7 @@
               "source": "block_entity"
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "minecraft:player_head"
               }

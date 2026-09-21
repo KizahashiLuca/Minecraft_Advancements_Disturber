@@ -3,27 +3,25 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "rolls": 1.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:armor_stand",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "nbt": "{data:{Tags:[\"mad_respawn_banner\"]}}"
-              }
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{data:{Tags:[\"mad_respawn_banner\"]}}"
             }
-          ],
-          "functions": [
+          },
+          "modifier": [
             {
-              "function": "minecraft:copy_name",
+              "type": "minecraft:copy_name",
               "source": "this"
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:entity_data": {
                   "id": "minecraft:armor_stand",
@@ -45,7 +43,7 @@
               }
             },
             {
-              "function": "minecraft:copy_custom_data",
+              "type": "minecraft:copy_custom_data",
               "source": "this",
               "ops": [
                 {

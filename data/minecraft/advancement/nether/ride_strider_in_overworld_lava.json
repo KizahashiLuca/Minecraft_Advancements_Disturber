@@ -5,23 +5,21 @@
       "conditions": {
         "distance": {
           "horizontal": {
-            "min": 50
+            "min": 50.0
           }
         },
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:location": {
-                "dimension": "minecraft:overworld"
-              },
-              "minecraft:vehicle": {
-                "minecraft:entity_type": "minecraft:strider"
-              }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "dimension": "minecraft:overworld"
+            },
+            "minecraft:vehicle": {
+              "minecraft:entity_type": "minecraft:strider"
             }
           }
-        ]
+        }
       },
       "trigger": "minecraft:ride_entity_in_lava"
     }

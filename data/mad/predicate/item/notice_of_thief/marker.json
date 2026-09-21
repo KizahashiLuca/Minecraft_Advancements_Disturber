@@ -1,12 +1,9 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
+    "mad:item/",
     {
-      "condition": "minecraft:reference",
-      "name": "mad:item/"
-    },
-    {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "entity_type": "minecraft:marker",

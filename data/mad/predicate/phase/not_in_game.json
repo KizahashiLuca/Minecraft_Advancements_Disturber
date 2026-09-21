@@ -1,7 +1,4 @@
 {
-  "condition": "minecraft:inverted",
-  "term": {
-    "condition": "minecraft:reference",
-    "name": "mad:phase/in_game"
-  }
+  "type": "minecraft:inverted",
+  "term": "mad:phase/in_game"
 }

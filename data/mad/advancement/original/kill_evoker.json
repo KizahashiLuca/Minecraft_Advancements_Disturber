@@ -16,20 +16,22 @@
     "kill_evoker": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "entity_type": "minecraft:evoker"
-            },
-            "entity": "this"
-          }
-        ],
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "predicate": {
+            "entity_type": "minecraft:evoker"
+          },
+          "entity": "this"
+        },
         "player": {
-          "location": {
-            "structures": [
-              "minecraft:mansion"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "structures": [
+                "minecraft:mansion"
+              ]
+            }
           }
         }
       }

@@ -1,9 +1,9 @@
 {
-  "condition": "minecraft:value_check",
+  "type": "minecraft:int_value_check",
   "value": {
     "type": "minecraft:storage",
     "storage": "mad:",
-    "path": "care_package.1.flag"
+    "path": "care_package.\"1\".flag"
   },
-  "range": 0
+  "test": 0
 }

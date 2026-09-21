@@ -15,144 +15,142 @@
     "in_this_corner_of_the_world": {
       "trigger": "minecraft:tick",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:all_of",
-            "terms": [
-              {
-                "condition": "minecraft:location_check",
-                "predicate": {
-                  "dimension": "minecraft:overworld"
-                }
-              },
-              {
-                "condition": "minecraft:any_of",
-                "terms": [
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "PosX": {
-                        "min": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.x_east"
-                        },
-                        "max": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.x_east"
-                        }
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:overworld"
+              }
+            },
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "PosX": {
+                      "min": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.x_east"
                       },
-                      "PosZ": {
-                        "min": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.z_north"
-                        },
-                        "max": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.z_north"
-                        }
+                      "max": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.x_east"
                       }
-                    }
-                  },
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "PosX": {
-                        "min": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.x_west"
-                        },
-                        "max": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.x_west"
-                        }
+                    },
+                    "PosZ": {
+                      "min": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.z_north"
                       },
-                      "PosZ": {
-                        "min": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.z_north"
-                        },
-                        "max": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.z_north"
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "PosX": {
-                        "min": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.x_west"
-                        },
-                        "max": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.x_west"
-                        }
-                      },
-                      "PosZ": {
-                        "min": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.z_south"
-                        },
-                        "max": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.z_south"
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "condition": "minecraft:entity_scores",
-                    "entity": "this",
-                    "scores": {
-                      "PosX": {
-                        "min": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.x_east"
-                        },
-                        "max": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.x_east"
-                        }
-                      },
-                      "PosZ": {
-                        "min": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.z_south"
-                        },
-                        "max": {
-                          "type": "minecraft:storage",
-                          "storage": "mad:",
-                          "path": "rules.world_size.z_south"
-                        }
+                      "max": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.z_north"
                       }
                     }
                   }
-                ]
-              }
-            ]
-          }
-        ]
+                },
+                {
+                  "type": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "PosX": {
+                      "min": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.x_west"
+                      },
+                      "max": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.x_west"
+                      }
+                    },
+                    "PosZ": {
+                      "min": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.z_north"
+                      },
+                      "max": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.z_north"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "PosX": {
+                      "min": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.x_west"
+                      },
+                      "max": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.x_west"
+                      }
+                    },
+                    "PosZ": {
+                      "min": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.z_south"
+                      },
+                      "max": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.z_south"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "PosX": {
+                      "min": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.x_east"
+                      },
+                      "max": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.x_east"
+                      }
+                    },
+                    "PosZ": {
+                      "min": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.z_south"
+                      },
+                      "max": {
+                        "type": "minecraft:storage",
+                        "storage": "mad:",
+                        "path": "rules.world_size.z_south"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
       }
     }
   },

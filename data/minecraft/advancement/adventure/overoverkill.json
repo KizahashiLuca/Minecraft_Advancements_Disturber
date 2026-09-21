@@ -16,12 +16,12 @@
             "tags": [
               {
                 "expected": true,
-                "id": "minecraft:mace_smash"
+                "id": "#minecraft:mace_smash"
               }
             ]
           },
           "dealt": {
-            "min": 100
+            "min": 100.0
           }
         }
       },

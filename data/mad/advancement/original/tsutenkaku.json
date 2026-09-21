@@ -19,10 +19,14 @@
       "trigger": "minecraft:location",
       "conditions": {
         "player": {
-          "location": {
-            "position": {
-              "y": {
-                "min": 171
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "position": {
+                "y": {
+                  "min": 171
+                }
               }
             }
           }

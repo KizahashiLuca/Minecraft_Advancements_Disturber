@@ -16,13 +16,17 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "entity_type": [
-            "minecraft:chest_minecart"
-          ],
-          "nbt": {
-            "Tags": [
-              "mad_care_package"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": [
+              "minecraft:chest_minecart"
+            ],
+            "nbt": {
+              "Tags": [
+                "mad_care_package"
+              ]
+            }
           }
         }
       }

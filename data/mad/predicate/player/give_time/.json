@@ -1,12 +1,9 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
+    "mad:player/alive/",
     {
-      "condition": "minecraft:reference",
-      "name": "mad:player/alive/"
-    },
-    {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "nbt": {

@@ -1,17 +1,8 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
-    {
-      "condition": "minecraft:reference",
-      "name": "mad:gamerule/match_mode/individual/solo"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mad:system/common/triggered/exit/not"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mad:system/game/exit/number_of_livings/zero"
-    }
+    "mad:gamerule/match_mode/individual/solo",
+    "mad:system/common/triggered/exit/not",
+    "mad:system/game/exit/number_of_livings/zero"
   ]
 }

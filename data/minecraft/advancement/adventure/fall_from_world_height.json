@@ -5,28 +5,26 @@
       "conditions": {
         "distance": {
           "y": {
-            "min": 379
+            "min": 379.0
           }
         },
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:location": {
-                "position": {
-                  "y": {
-                    "max": -59
-                  }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "position": {
+                "y": {
+                  "max": -59.0
                 }
               }
             }
           }
-        ],
+        },
         "start_position": {
           "position": {
             "y": {
-              "min": 319
+              "min": 319.0
             }
           }
         }

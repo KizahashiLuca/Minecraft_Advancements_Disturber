@@ -1,12 +1,9 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
+    "mad:player/",
     {
-      "condition": "minecraft:reference",
-      "name": "mad:player/"
-    },
-    {
-      "condition": "minecraft:entity_scores",
+      "type": "minecraft:entity_scores",
       "entity": "this",
       "scores": {
         "Phase": 81,
@@ -17,7 +14,7 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "type_specific/player": {

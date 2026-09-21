@@ -5,7 +5,7 @@
       "conditions": {
         "distance": {
           "y": {
-            "min": 50
+            "min": 50.0
           }
         }
       },

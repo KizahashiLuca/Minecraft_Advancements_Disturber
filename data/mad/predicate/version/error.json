@@ -1,7 +1,4 @@
 {
-  "condition": "minecraft:inverted",
-  "term": {
-    "condition": "minecraft:reference",
-    "name": "mad:version/accept"
-  }
+  "type": "minecraft:inverted",
+  "term": "mad:version/accept"
 }

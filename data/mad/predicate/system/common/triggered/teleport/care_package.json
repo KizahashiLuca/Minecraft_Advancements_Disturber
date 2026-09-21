@@ -1,12 +1,9 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
+    "mad:player/spectator",
     {
-      "condition": "minecraft:reference",
-      "name": "mad:player/spectator"
-    },
-    {
-      "condition": "minecraft:entity_scores",
+      "type": "minecraft:entity_scores",
       "entity": "this",
       "scores": {
         "TeleportTrigger": {

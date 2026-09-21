@@ -16,18 +16,16 @@
     "on_a_rail": {
       "trigger": "minecraft:tick",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "RailDistance": {
-                "min": 100000,
-                "max": 2147483647
-              }
+        "player": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "RailDistance": {
+              "min": 100000,
+              "max": 2147483647
             }
           }
-        ]
+        }
       }
     }
   },

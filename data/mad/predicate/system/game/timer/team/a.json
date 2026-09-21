@@ -1,13 +1,7 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
-    {
-      "condition": "minecraft:reference",
-      "name": "mad:gamerule/team_rules/number_of_teams/ge_1"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mad:phase/game/a"
-    }
+    "mad:gamerule/team_rules/number_of_teams/ge_1",
+    "mad:phase/game/a"
   ]
 }

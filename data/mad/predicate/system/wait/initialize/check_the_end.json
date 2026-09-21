@@ -1,47 +1,47 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
     {
-      "condition": "minecraft:value_check",
+      "type": "minecraft:int_value_check",
       "value": {
         "type": "minecraft:storage",
         "storage": "mad:",
         "path": "rules.world_size.x_east"
       },
-      "range": {
+      "test": {
         "min": 200
       }
     },
     {
-      "condition": "minecraft:value_check",
+      "type": "minecraft:int_value_check",
       "value": {
         "type": "minecraft:storage",
         "storage": "mad:",
         "path": "rules.world_size.z_south"
       },
-      "range": {
+      "test": {
         "min": 200
       }
     },
     {
-      "condition": "minecraft:value_check",
+      "type": "minecraft:int_value_check",
       "value": {
         "type": "minecraft:storage",
         "storage": "mad:",
         "path": "rules.world_size.x_west"
       },
-      "range": {
+      "test": {
         "max": -200
       }
     },
     {
-      "condition": "minecraft:value_check",
+      "type": "minecraft:int_value_check",
       "value": {
         "type": "minecraft:storage",
         "storage": "mad:",
         "path": "rules.world_size.z_north"
       },
-      "range": {
+      "test": {
         "max": -200
       }
     }

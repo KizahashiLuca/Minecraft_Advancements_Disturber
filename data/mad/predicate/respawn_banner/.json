@@ -1,18 +1,18 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
     {
-      "condition": "minecraft:entity_properties",
+      "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "entity_type": "minecraft:armor_stand"
       }
     },
     {
-      "condition": "minecraft:any_of",
+      "type": "minecraft:any_of",
       "terms": [
         {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
             "equipment": {
@@ -29,7 +29,7 @@
           }
         },
         {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
             "equipment": {
@@ -46,7 +46,7 @@
           }
         },
         {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
             "nbt": {
@@ -59,7 +59,7 @@
           }
         },
         {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
             "nbt": {

@@ -1,9 +1,6 @@
 {
-  "condition": "minecraft:any_of",
+  "type": "minecraft:any_of",
   "terms": [
-    {
-      "condition": "minecraft:reference",
-      "name": "mad:version/26.2/0"
-    }
+    "mad:version/26.2/0"
   ]
 }

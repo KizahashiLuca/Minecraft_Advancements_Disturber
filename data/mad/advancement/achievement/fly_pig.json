@@ -16,11 +16,15 @@
       "trigger": "minecraft:tick",
       "conditions": {
         "player": {
-          "vehicle": {
-            "entity_type": "minecraft:pig",
-            "movement": {
-              "fall_distance": {
-                "min": 5
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "vehicle": {
+              "entity_type": "minecraft:pig",
+              "movement": {
+                "fall_distance": {
+                  "min": 5
+                }
               }
             }
           }

@@ -1,8 +1,8 @@
 {
-  "condition": "minecraft:entity_properties",
+  "type": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "type": "minecraft:item",
+    "entity_type": "minecraft:item",
     "nbt": {
       "Item": {
         "id": "minecraft:armor_stand",

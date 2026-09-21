@@ -1,13 +1,7 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
-    {
-      "condition": "minecraft:reference",
-      "name": "mad:system/game/timer/pvp/mode/pvp_off"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mad:system/common/time/tick/eq_zero"
-    }
+    "mad:system/game/timer/pvp/mode/pvp_off",
+    "mad:system/common/time/tick/eq_zero"
   ]
 }
