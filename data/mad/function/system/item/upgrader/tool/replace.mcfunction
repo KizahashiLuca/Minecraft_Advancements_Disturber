@@ -13,6 +13,6 @@ $item replace entity @s weapon.$(type) \
   with minecraft:$(next_id)
 $item modify entity @s weapon.$(type) \
   {\
-    function: 'minecraft:set_components',\
+    type: 'minecraft:set_components',\
     components: $(components),\
   }

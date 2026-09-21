@@ -10,4 +10,4 @@
 
 ## アップグレード後のアイテムIDを取得
 $data modify storage mad: item.tool_upgrader.equipment.tool.next_id \
-  set from storage mad: item.tool_upgrader.$(id).id
+  set from storage mad: item.tool_upgrader.'$(id)'.id
