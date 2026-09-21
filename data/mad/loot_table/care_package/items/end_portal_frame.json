@@ -3,18 +3,18 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "rolls": 1.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:end_portal_frame",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": 12
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": {
                   "Tags": [
@@ -30,14 +30,14 @@
     },
     {
       "bonus_rolls": 0.0,
-      "rolls": 1.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:ender_eye",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": 12
             }
           ]
@@ -46,7 +46,7 @@
     },
     {
       "bonus_rolls": 0.0,
-      "rolls": 1.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:loot_table",

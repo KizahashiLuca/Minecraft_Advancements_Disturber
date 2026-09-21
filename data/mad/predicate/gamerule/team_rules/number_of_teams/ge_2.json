@@ -1,10 +1,7 @@
 {
   "type": "minecraft:all_of",
   "terms": [
-    {
-      "type": "minecraft:reference",
-      "name": "mad:gamerule/match_mode/team"
-    },
+    "mad:gamerule/match_mode/team",
     {
       "type": "minecraft:int_value_check",
       "value": {

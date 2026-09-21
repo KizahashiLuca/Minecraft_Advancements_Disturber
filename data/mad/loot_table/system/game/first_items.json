@@ -7,9 +7,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_axe",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "vanishing_curse": 1
               }
@@ -24,9 +24,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_pickaxe",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "vanishing_curse": 1
               }
@@ -41,9 +41,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_shovel",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "vanishing_curse": 1
               }
