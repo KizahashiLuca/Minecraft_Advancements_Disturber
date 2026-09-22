@@ -30,7 +30,8 @@ execute if predicate mad:system/game/timer/pvp/mode/pvp_off \
   function mad:system/game/detect_dying/kill/pvp_off
 
 ## リスポーンバナー設置
-execute if predicate mad:system/game/timer/pvp/mode/pvp_on \
+execute if predicate mad:gamerule/match_mode/team \
+  if predicate mad:system/game/timer/pvp/mode/pvp_on \
   if predicate mad:system/game/detect_dying/other_team run \
   function mad:system/game/respawn_banner/construct/ \
     with storage mad: death
