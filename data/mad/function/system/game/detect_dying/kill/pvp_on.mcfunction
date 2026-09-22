@@ -22,3 +22,10 @@ function mad:system/game/detect_dying/kill/scoreboards/victim/pvp_on
 #### 攻撃者には撃破ボーナスを付与
 function mad:system/game/detect_dying/kill/scoreboards/killer/pvp_on \
   with storage mad: death
+#### 個人戦の場合
+execute if predicate mad:gamerule/match_mode/individual/ run \
+  scoreboard players add #mad NumberOfDead 1
+execute if predicate mad:gamerule/match_mode/individual/ run \
+  scoreboard players set @s Second 0
+execute if predicate mad:gamerule/match_mode/individual/ run \
+  scoreboard players set @s Tick 0
