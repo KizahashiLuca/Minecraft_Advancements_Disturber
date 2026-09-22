@@ -22,6 +22,8 @@ playsound minecraft:entity.allay.death block @a ~ ~ ~ 1.0 1.0 1.0
 execute store result storage mad: item.notice_of_thief.tmp.thief_number int 1.0 run \
   scoreboard players get @s PlayerNumber
 #### チーム戦 - 自分のチームのチーム番号を保持
+data modify storage mad: item.notice_of_thief.tmp.thief_team \
+  set value ''
 execute as @s[predicate=mad:player/team/a] run \
   data modify storage mad: item.notice_of_thief.tmp.thief_team \
     set value 'a'

@@ -20,7 +20,7 @@ data modify storage mad: item.notice_of_thief.tmp \
 data modify storage mad: item.notice_of_thief.tmp \
   merge from storage mad: item.notice_of_thief.thieves[0]
 data remove storage mad: item.notice_of_thief.thieves[0]
- 
+
 ## アイテムを盗まれるプレイヤーを決定
 function mad:system/item/notice_of_thief/steal/decide_player \
   with storage mad: item.notice_of_thief.tmp
