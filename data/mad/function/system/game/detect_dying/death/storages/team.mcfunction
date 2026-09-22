@@ -10,6 +10,8 @@
 
 ## ストレージ格納
 #### 通知先のターゲットセレクタ(メッセージ表示用)
+data modify storage mad: death.address \
+  set value ''
 execute as @s[predicate=mad:player/dying/a] run \
   data modify storage mad: death.address \
     set value '[predicate=mad:player/team/a]'

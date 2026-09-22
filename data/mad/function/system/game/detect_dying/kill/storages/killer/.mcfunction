@@ -16,6 +16,8 @@ $data modify storage mad: death.killer \
 $data modify storage mad: death.killer_number \
   set value $(killer_number)
 #### 加害者のチーム番号(メッセージ表示用)
+data modify storage mad: death.killer_team \
+  set value ''
 $execute as @p[tag=mad_player$(killer_number),predicate=mad:player/team/a] run \
   data modify storage mad: death.killer_team \
     set value 'a'

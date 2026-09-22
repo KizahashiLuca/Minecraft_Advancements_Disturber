@@ -22,6 +22,8 @@ function mad:system/game/detect_dying/kill/storages/get_coordinates/ \
 data modify storage mad: death.message \
   set value ''
 #### 犠牲者のチーム番号(メッセージ表示用)
+data modify storage mad: death.victim_team \
+  set value ''
 execute as @s[predicate=mad:player/team/a] run \
   data modify storage mad: death.victim_team \
     set value 'a'

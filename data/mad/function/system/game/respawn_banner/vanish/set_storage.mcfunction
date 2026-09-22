@@ -9,6 +9,8 @@
 #####################################
 
 ## 削除する死体のプレイヤーのチーム名を取得
+data modify storage mad: death.victim_team \
+  set value ''
 $execute as @p[tag=$(head_tag),predicate=mad:player/team/a] run \
   data modify storage mad: death.victim_team \
     set value 'a'
@@ -23,6 +25,8 @@ $execute as @p[tag=$(head_tag),predicate=mad:player/team/d] run \
     set value 'd'
 
 ## 削除する死体のプレイヤーのチームのサイドバーの変数を取得
+data modify storage mad: death.victim_sidebar \
+  set value ''
 $execute as @p[tag=$(head_tag),predicate=mad:player/team/a] run \
   data modify storage mad: death.victim_sidebar \
     set value 'SidebarA'
